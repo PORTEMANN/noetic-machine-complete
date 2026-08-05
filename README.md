@@ -8,7 +8,7 @@
 > Zéro paramètre ajusté. Levier discriminant. Invariance réplicable (SHA). Échecs publiés.
 
 **Auteur :** Patrice PORTEMANN — patrice@portemann.eu — corpus [histoire-des-sciences.eu](https://histoire-des-sciences.eu)
-**Licence :** MIT (voir `LICENSE`). **Bilan du chantier P0–P31 : 24 succès / 7 partiels-négatifs.**
+**Licence :** MIT (voir `LICENSE`). **Bilan du chantier P0–P33 : 24 succès / 9 partiels-négatifs.**
 **Référence figée (Zenodo) :** [doi.org/10.5281/zenodo.21807052](https://doi.org/10.5281/zenodo.21807052)
 
 ---
@@ -37,9 +37,9 @@ La physique est « bon marché » en information dans son **régime discret** (s
 
 ---
 
-## Bilan du chantier P0–P31
+## Bilan du chantier P0–P33
 
-Le chantier complet court de **P0** (monopole SU(2) banc calibré) à **P31** (frontière r₁₂ constitutive). Le dépôt contient **tous** les artefacts : 34 scripts, 45 JSON, 31 figures, 45 notes PDF, + SHASUMS. Les douze chantiers P20–P31 (cette série) :
+Le chantier complet court de **P0** (monopole SU(2) banc calibré) à **P33** (décroissance asymptotique). Les chantiers P20–P33 (cette série) :
 
 | Ch. | Objet | Score | Statut |
 |-----|-------|-------|--------|
@@ -55,8 +55,16 @@ Le chantier complet court de **P0** (monopole SU(2) banc calibré) à **P31** (f
 | P29 | isovecteur / peaux | 5/6 | partiel |
 | P30 | cusp de Kato | 3/5 | partiel |
 | P31 | portée dérivée | 3/5 | **frontière r₁₂ constitutive** |
+| P32 | cartographie frontière (Z=2–6) | 4/5 | **frontière Z-dépendante (loi)** |
+| P33 | décroissance asymptotique | 3/5 | partiel — **P31 renforcée** |
 
-**La frontière est mesurée, pas conjecturée** : tout ce qui est discret/cinématique/à un corps est dérivable (24 succès) ; la réponse corrélée continue à deux corps ne l'est pas sans liberté de forme (7 partiels). Voir `Note_Synthese_Machine_Noetique_Complete.pdf`.
+**La frontière est mesurée, pas conjecturée** : tout ce qui est discret/cinématique/à un corps est dérivable (24 succès) ; la réponse corrélée continue à deux corps ne l'est pas sans liberté de forme (9 partiels). Voir `Note_Synthese_Machine_Noetique_Complete.pdf`.
+
+### La trilogie de la frontière r₁₂ (P31 → P33)
+
+P31 a déclaré la frontière **constitutive** (structurelle, pas paramétrique) ; P32 lui a donné une **loi** (elle se ferme quand la corrélation relative 1/Z devient trop faible pour qu'une portée dérivée batte Hartree-Fock) ; P33 a montré qu'**aucun cumul de contraintes exactes** (cusp + queue asymptotique √(2I)) ne la franchit — les deux contraintes se contredisent dans un Jastrow à un terme. La frontière r₁₂ est un **objet mesuré**, pas une limite subie.
+
+Artefacts P32/P33 : scripts `src/p32_frontiere.py`, `src/p33_queue.py` ; protocoles figés et verdicts `data/p32_*.json`, `data/p33_*.json`. Les figures se régénèrent en exécutant les scripts ; les notes PDF compilées (`Note_P32…`, `Note_P33…`) rejoignent `docs/`.
 
 ---
 
@@ -82,10 +90,10 @@ Le chantier complet court de **P0** (monopole SU(2) banc calibré) à **P31** (f
 ├── docs/                            # notes PDF (verdicts + synthèses)
 │   └── Note_*.pdf
 ├── src/                             # scripts Python par chantier
-│   ├── p20_h2plus.py  …  p31_portee.py
+│   ├── p20_h2plus.py  …  p33_queue.py
 │   └── (fondateurs : p12, p16, p17, p18…)
 ├── data/                            # artefacts JSON (verdicts machine-lisibles)
-│   └── p20_*.json … p31_*.json
+│   └── p20_*.json … p33_*.json
 ├── figures/                         # figures PNG
 │   └── p*.png
 └── SHASUMS.txt                      # empreintes SHA-256 de tous les artefacts
@@ -101,6 +109,8 @@ Environnement : Python 3.12, NumPy, SciPy, Matplotlib. Chaque script est autonom
 
 ```bash
 python3 src/p24_jain.py        # → data/p24_jain.json + figures/p24_jain.png + shas
+python3 src/p32_frontiere.py   # → série isoelectronique Z=2..6 (frontière r₁₂)
+python3 src/p33_queue.py       # → double contrainte cusp + queue asymptotique
 ```
 
 ## Règles permanentes du chantier
