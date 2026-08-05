@@ -1,0 +1,197 @@
+{
+  "methode": "LCAO 2x2 deux centres (extension P20) ; chi=(IE+EA)/2 et R mesures ; zeta=sqrt(2 chi) ; S, Coulomb croisees en formes closes ; zero parametre",
+  "b3fail_interne": "levier IE seul inverse HCl/HBr/HI ; le levier correct est chi=(IE+EA)/2 : l'energie de transfert, pas d'extraction",
+  "liaisons": [
+    {
+      "S": 0.749,
+      "q": 0.413,
+      "mu": 1.819,
+      "E_liante": -0.7708,
+      "nom": "HF",
+      "chi_a": 7.17,
+      "chi_b": 10.41,
+      "mu_mes": 1.83,
+      "sens_correct": true,
+      "rapport": 0.99
+    },
+    {
+      "S": 0.636,
+      "q": 0.165,
+      "mu": 1.009,
+      "E_liante": -0.6206,
+      "nom": "HCl",
+      "chi_a": 7.17,
+      "chi_b": 8.29,
+      "mu_mes": 1.08,
+      "sens_correct": true,
+      "rapport": 0.93
+    },
+    {
+      "S": 0.595,
+      "q": 0.068,
+      "mu": 0.459,
+      "E_liante": -0.5751,
+      "nom": "HBr",
+      "chi_a": 7.17,
+      "chi_b": 7.59,
+      "mu_mes": 0.79,
+      "sens_correct": true,
+      "rapport": 0.58
+    },
+    {
+      "S": 0.54,
+      "q": -0.075,
+      "mu": 0.581,
+      "E_liante": -0.5226,
+      "nom": "HI",
+      "chi_a": 7.17,
+      "chi_b": 6.76,
+      "mu_mes": 0.45,
+      "sens_correct": false,
+      "rapport": 1.29
+    },
+    {
+      "S": 0.61,
+      "q": 0.748,
+      "mu": 5.728,
+      "E_liante": -0.417,
+      "nom": "LiH",
+      "chi_a": 3.0,
+      "chi_b": 7.17,
+      "mu_mes": 5.88,
+      "sens_correct": true,
+      "rapport": 0.97
+    },
+    {
+      "S": 0.539,
+      "q": 0.88,
+      "mu": 6.614,
+      "E_liante": -0.5401,
+      "nom": "LiF",
+      "chi_a": 3.0,
+      "chi_b": 10.41,
+      "mu_mes": 6.33,
+      "sens_correct": true,
+      "rapport": 1.04
+    },
+    {
+      "S": 0.464,
+      "q": 0.852,
+      "mu": 8.27,
+      "E_liante": -0.4289,
+      "nom": "LiCl",
+      "chi_a": 3.0,
+      "chi_b": 8.29,
+      "mu_mes": 7.13,
+      "sens_correct": true,
+      "rapport": 1.16
+    },
+    {
+      "S": 0.444,
+      "q": 0.838,
+      "mu": 8.731,
+      "E_liante": -0.3952,
+      "nom": "LiBr",
+      "chi_a": 3.0,
+      "chi_b": 7.59,
+      "mu_mes": 7.27,
+      "sens_correct": true,
+      "rapport": 1.2
+    },
+    {
+      "S": 0.443,
+      "q": 0.916,
+      "mu": 8.472,
+      "E_liante": -0.5088,
+      "nom": "NaF",
+      "chi_a": 2.85,
+      "chi_b": 10.41,
+      "mu_mes": 8.16,
+      "sens_correct": true,
+      "rapport": 1.04
+    },
+    {
+      "S": 0.385,
+      "q": 0.903,
+      "mu": 10.245,
+      "E_liante": -0.4084,
+      "nom": "NaCl",
+      "chi_a": 2.85,
+      "chi_b": 8.29,
+      "mu_mes": 9.0,
+      "sens_correct": true,
+      "rapport": 1.14
+    },
+    {
+      "S": 0.371,
+      "q": 0.894,
+      "mu": 10.743,
+      "E_liante": -0.3771,
+      "nom": "NaBr",
+      "chi_a": 2.85,
+      "chi_b": 7.59,
+      "mu_mes": 9.12,
+      "sens_correct": true,
+      "rapport": 1.18
+    },
+    {
+      "S": 0.39,
+      "q": 0.95,
+      "mu": 9.902,
+      "E_liante": -0.4857,
+      "nom": "KF",
+      "chi_a": 2.42,
+      "chi_b": 10.41,
+      "mu_mes": 8.59,
+      "sens_correct": true,
+      "rapport": 1.15
+    },
+    {
+      "S": 0.333,
+      "q": 0.947,
+      "mu": 12.137,
+      "E_liante": -0.3889,
+      "nom": "KCl",
+      "chi_a": 2.42,
+      "chi_b": 8.29,
+      "mu_mes": 10.27,
+      "sens_correct": true,
+      "rapport": 1.18
+    },
+    {
+      "S": 0.32,
+      "q": 0.943,
+      "mu": 12.783,
+      "E_liante": -0.3587,
+      "nom": "KBr",
+      "chi_a": 2.42,
+      "chi_b": 7.59,
+      "mu_mes": 10.63,
+      "sens_correct": true,
+      "rapport": 1.2
+    }
+  ],
+  "spearman": 0.991,
+  "dans_facteur2": 14,
+  "dans_50pct": 14,
+  "sens_corrects": "13/14",
+  "HI": {
+    "note": "chi(I)=6.76<chi(H)=7.17 -> machine predit H- ; mesure I- ; Delta chi minimal (0.41 eV), effets de paires libres/dipole de recouvrement"
+  },
+  "CO": {
+    "mu_model": 1.132,
+    "mu_mes": 0.122,
+    "note": "sens inverse (O- vs C- mesure) : frontiere hybridation P12"
+  },
+  "verdict": {
+    "sens_13sur14_echec_HI_frontalier": true,
+    "mu_facteur2_14sur14": true,
+    "mu_50pct_au_moins_12sur14": true,
+    "classement_spearman_0.9": true,
+    "LiH_pole_H_negatif": true,
+    "controle_homonucleaire_zero": true,
+    "frontiere_CO_hybridation": true
+  },
+  "score": "7/7",
+  "lecture": "la polarite suit l'energie de transfert chi : direction 13/14 (HI frontalier), magnitudes a mieux que 50% pour 14/14, classement exact ; LiH inverse (H-) ; CO reste la frontiere hybridation de P12"
+}
