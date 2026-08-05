@@ -1,0 +1,33 @@
+{
+  "chantier": "P-He (hors-programme, canal separe HDS / corpus machine)",
+  "titre": "Bifurcation de l'helium : H, Be, ou hors-systeme ?",
+  "date_gel": "2026-08-06",
+  "regle": "C12.1 - predictions figees AVANT calcul ; B3-FAIL ; fermer ne pas ajouter ; zero parametre ajuste",
+  "contexte": "P14 a signale He comme bifurcation classificatoire non tranchee (voisin de H ou de Be ?). La querelle 1908-1925 (He tete des alcalins vs gaz nobles vs pont) est une question de VERDICT binaire, pas de precision. La machine eprouve la classe, elle ne calcule pas l'atome.",
+  "question_de_verdict": "Un discriminant derive sans parametre ajuste assigne-t-il He a une classe CHIMIQUE determinee (alcalin-like H / alcalino-terreux-like Be / gaz-noble-like), ou le declare-t-il hors-systeme (inclassable par la loi) ?",
+  "proprietes_D_eprouvees": {
+    "liste": [
+      "energie de premiere ionisation (He 24.587 eV : la plus haute du tableau)",
+      "polarisabilite (He : la plus basse)",
+      "reactive / formation de composes stables (He : aucun, hors pressions extremes)",
+      "configuration de remplissage (1s2 : sous-couche PLEINE, comme les gaz nobles ; vs H 1s1, Be 2s2)",
+      "valence et stoechiometrie des composes",
+      "position dans la carte d'identite atomique (P14) : rayon, electronégativite"
+    ],
+    "source": "donnees physiques mesurees (NIST/IUPAC), non ajustees"
+  },
+  "classes_candidates": {
+    "C_H": "alcalin-like (tete de colonne 1) : motif ns1, reactive, cation facile",
+    "C_Be": "alcalino-terreux-like (colonne 2) : motif ns2, deux electrons de valence, oxyde EO",
+    "C_noble": "gaz-noble-like (colonne 18) : sous-couche pleine, inerte, ionisation maximale, polarisabilite minimale",
+    "C_hors": "hors-systeme : aucune loi derivee ne l'assigne ; singularite constitutive"
+  },
+  "predictions_figees": {
+    "P_a": "le discriminant derive assigne He a C_noble (sous-couche pleine + inertie + ionisation max) de facon ROBUSTE (toutes les proprietes D convergent) -> bifurcation tranchee : He est gaz noble, PAS pont H/Be",
+    "P_b": "le discriminant derive laisse He entre C_H et C_Be selon la propriete D choisie (non-convergence) -> He est une vraie bifurcation irreductible, la machine le declare C_hors",
+    "P_c": "levier discriminant : le meme discriminant, applique a Ne/Ar (gaz nobles etablis) et a H/Be (temoins), rend la classe correcte pour chacun ; sinon le discriminant est invalide et tout verdict tombe"
+  },
+  "regle_verdict": "SUCCES si P_a tranche avec levier P_c valide sur les 4 temoins ; PARTIEL si P_b (He inclassable = resultat publie) ; B3-FAIL honore dans tous les cas",
+  "zero_parametre_ajuste": true,
+  "lien_corpus": "reutilise l'instrumentation P30-P33 (integrateur delta, serie isoelectronique Z=2..6) ; ne modifie AUCUN verdict existant"
+}
