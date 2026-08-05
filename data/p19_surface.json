@@ -1,0 +1,68 @@
+{
+ "noyaux": [
+  {
+   "nom": "48Ca",
+   "A": 48,
+   "Z": 20,
+   "peau_mes": 0.121,
+   "peau_sharp_a0": 0.0,
+   "a_requis_fm": 0.242,
+   "peau_predite_a_opt": 0.148,
+   "ecart": 0.027
+  },
+  {
+   "nom": "208Pb",
+   "A": 208,
+   "Z": 82,
+   "peau_mes": 0.283,
+   "peau_sharp_a0": 0.0,
+   "a_requis_fm": 0.446,
+   "peau_predite_a_opt": 0.188,
+   "ecart": -0.095
+  },
+  {
+   "nom": "132Sn",
+   "A": 132,
+   "Z": 50,
+   "peau_mes": 0.17,
+   "peau_sharp_a0": 0.0,
+   "a_requis_fm": 0.234,
+   "peau_predite_a_opt": 0.215,
+   "ecart": 0.045
+  },
+  {
+   "nom": "120Sn",
+   "A": 120,
+   "Z": 50,
+   "peau_mes": 0.12,
+   "peau_sharp_a0": 0.0,
+   "a_requis_fm": 0.24,
+   "peau_predite_a_opt": 0.148,
+   "ecart": 0.028
+  },
+  {
+   "nom": "40Ca",
+   "A": 40,
+   "Z": 20,
+   "peau_mes": 0.05,
+   "peau_sharp_a0": 0.0,
+   "a_requis_fm": null,
+   "peau_predite_a_opt": 0.0,
+   "ecart": -0.05
+  }
+ ],
+ "borne": {
+  "a_optimal_fm": 0.296,
+  "rms_sans_diffusivite": 0.168,
+  "rms_avec_diffusivite": 0.055,
+  "diffusivite_surface_requise_fm": 0.296,
+  "lecture": "le modele sharp (a=0) de P9/P11 donne une peau NULLE ; il faut injecter a~0.3 fm de surface diffuse pour la reproduire -> borne quantitative"
+ },
+ "verdict": {
+  "a_optimal_physique": true,
+  "diffusivite_ameliore": true,
+  "sharp_insuffisant": true,
+  "basculement_ca_pb": true,
+  "ordre_grandeur": true
+ }
+}
