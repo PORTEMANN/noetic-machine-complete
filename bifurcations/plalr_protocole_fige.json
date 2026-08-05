@@ -1,0 +1,32 @@
+{
+  "chantier": "P-LaLr (hors-programme, suite de P-He)",
+  "titre": "Bifurcation du bloc f : ouvrir par La/Ac ou fermer par Lu/Lr ?",
+  "date_gel": "2026-08-06",
+  "regle": "C12.1 - predictions figees AVANT calcul ; B3-FAIL ; zero parametre ajuste ; meme discriminant que P-He",
+  "contexte": "P14 a signale la tete du bloc f non tranchee : La et Ac (5d1 6s2 / 6d1 7s2) ouvrent-ils le bloc f, ou le bloc f se ferme-t-il par Lu/Lr (4f14 5d1 6s2) avec La/Ac reintegres au bloc d ? Querelle IUPAC non formellement tranchee ; question de VERDICT binaire.",
+  "question_de_verdict": "Un discriminant derive sans parametre assigne-t-il La et Ac au bloc d (avec Sc/Y -> colonne 3 complete) ou au bloc f (tete des lanthanides/actinides) ? Et symetriquement Lu/Lr sont-ils bloc f (f14) ou bloc d ?",
+  "proprietes_D_eprouvees": {
+    "liste": [
+      "configuration de remplissage (presence/absence d'electrons f : La/Ac = f0, Lu/Lr = f14)",
+      "energie de premiere ionisation",
+      "rayon atomique / metallique",
+      "enthalpie d'atomisation (cohesion metal)",
+      "dents de la contraction lanthanidique (La->Lu) : decroissance du rayon",
+      "valence dominante et stoechiometrie des oxydes"
+    ],
+    "source": "donnees physiques mesurees (NIST/IUPAC), non ajustees"
+  },
+  "classes_candidates": {
+    "C_d3": "bloc d colonne 3 (archetype Sc, Y) : motif (n-1)d1 ns2, rayon fort, oxyde E2O3",
+    "C_f": "bloc f (archetype Ce, Gd cote La ; Th, U cote Ac) : electrons f, contraction, chimie homogene",
+    "C_f_ferme": "bloc f complet f14 (Lu, Lr) : sous-couche f PLEINE, retour de valence d"
+  },
+  "predictions_figees": {
+    "P_a": "le discriminant assigne La/Ac au bloc f (tete) ET Lu/Lr au bloc f (fermeture f14) -> lecture traditionnelle : bloc f = La..Yb et Ac..No, Lu/Lr rentrent au bloc d. C'est la lecture 'chimique historique'.",
+    "P_b": "le discriminant assigne La/Ac au bloc d (colonne 3) ET Lu/Lr au bloc f -> lecture structurale moderne : le bloc f est Ce..Lu, La/Ac sont des metaux d. C'est la lecture 'configuration electronique stricte'.",
+    "P_c": "levier discriminant : le meme discriminant classe correctement les temoins Sc (d3), Y (d3), Ce (f), Gd (f), Yb (f14), Th (f) ; sinon discriminant invalide, tout verdict tombe"
+  },
+  "regle_verdict": "SUCCES si P_a ou P_b tranche avec levier P_c valide sur les temoins ; PARTIEL si La et Lu divergent (asymetrie debut/fin = resultat publie) ; B3-FAIL honore",
+  "zero_parametre_ajuste": true,
+  "lien_corpus": "meme discriminant que P-He (distance aux prototypes, etendue-normalisee) ; aucun verdict existant modifie"
+}
