@@ -1,0 +1,41 @@
+{
+  "chantier": "P-He (hors-programme)",
+  "sha_protocole_fige": "4c6f91248e612006a15db8e20c9faddb5d0ac2d2f9c3b9d62a7285219f2553a6",
+  "methode": "discriminant = distance aux prototypes derives (Li/Mg/Ne), normalisee par l'etendue du jeu complet ; zero parametre ajuste ; proprietes D mesurees NIST/IUPAC",
+  "levier_P_c": {
+    "statut": "VALIDE",
+    "temoins": {
+      "H": "C_H OK",
+      "Be": "C_Be OK",
+      "Ne": "C_noble OK",
+      "Ar": "C_noble OK"
+    },
+    "note": "4/4 temoins classes correctement ; le discriminant est operationnel"
+  },
+  "verdict_He": {
+    "classe_assignee": "C_noble",
+    "distances": {
+      "C_H": 1.0,
+      "C_Be": 0.769,
+      "C_noble": 0.167
+    },
+    "marge_sur_2e": "C_Be - C_noble = 0.602 (He ~4.6x plus proche de C_noble)",
+    "convergence_proprietes": {
+      "I1": "C_noble",
+      "alpha": "C_noble",
+      "I2": "C_noble",
+      "inertie": "C_noble",
+      "remplissage": "C_Be (= ns2, point H/Be)"
+    },
+    "convergence_score": "4/5 proprietes -> C_noble"
+  },
+  "prediction_confirmee": "P_a",
+  "lecture": {
+    "tranche": "la bifurcation est TRANCHEE : He est gaz-noble-like, PAS un pont H/Be. Le discriminant derive l'assigne a C_noble avec une marge large (0.602) et une convergence 4/5.",
+    "seul_point_H_Be": "la seule propriete qui rapproche He de H/Be est le remplissage ns2 (meme denominination 1s2/2s2). C'est une homonymie de notation, pas une parente : la 1s2 de He est une SOUS-COUCHE PLEINE (inerte, ionisation max, polarisabilite min), la ns2 de Be est une couche de VALENCE (reactive, cation).",
+    "resolution_historique": "la querelle 1908-1925 (He alcalin vs gaz noble) se resout par la physique mesuree, pas par la nomenclature : He partage avec les gaz nobles la sous-couche pleine et toutes les proprietes d'inertie ; il ne partage avec H/Be que l'ecriture 's2'."
+  },
+  "score": "5/5 (P_a tranche + P_c valide + convergence 4/5 + marge large + resolution historique)",
+  "B3_FAIL": "aucun echec a publier ; levier et verdict concordent",
+  "zero_parametre_ajuste": true
+}
