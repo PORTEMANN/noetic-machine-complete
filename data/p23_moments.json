@@ -1,0 +1,151 @@
+{
+  "methode": "Schmidt : couplage j=l+/-1/2 (algebre angulaire machine) + g libres mesures ; aucun ajustement ; trous traites comme particules",
+  "noyaux": [
+    {
+      "nom": "3H",
+      "orbitale": "1s1/2",
+      "l": 0,
+      "j": 0.5,
+      "type": "p",
+      "mu_schmidt": 2.793,
+      "mu_mes": 2.979,
+      "ecart": 0.186,
+      "signe_ok": true
+    },
+    {
+      "nom": "3He",
+      "orbitale": "1s1/2",
+      "l": 0,
+      "j": 0.5,
+      "type": "n",
+      "mu_schmidt": -1.913,
+      "mu_mes": -2.128,
+      "ecart": 0.215,
+      "signe_ok": true
+    },
+    {
+      "nom": "13C",
+      "orbitale": "1p1/2",
+      "l": 1,
+      "j": 0.5,
+      "type": "n",
+      "mu_schmidt": 0.638,
+      "mu_mes": 0.702,
+      "ecart": 0.064,
+      "signe_ok": true
+    },
+    {
+      "nom": "15N",
+      "orbitale": "1p1/2 trou",
+      "l": 1,
+      "j": 0.5,
+      "type": "p",
+      "mu_schmidt": -0.264,
+      "mu_mes": -0.283,
+      "ecart": 0.019,
+      "signe_ok": true
+    },
+    {
+      "nom": "15O",
+      "orbitale": "1p1/2 trou",
+      "l": 1,
+      "j": 0.5,
+      "type": "n",
+      "mu_schmidt": 0.638,
+      "mu_mes": 0.719,
+      "ecart": 0.081,
+      "signe_ok": true
+    },
+    {
+      "nom": "17O",
+      "orbitale": "1d5/2",
+      "l": 2,
+      "j": 2.5,
+      "type": "n",
+      "mu_schmidt": -1.913,
+      "mu_mes": -1.894,
+      "ecart": 0.019,
+      "signe_ok": true
+    },
+    {
+      "nom": "17F",
+      "orbitale": "1d5/2",
+      "l": 2,
+      "j": 2.5,
+      "type": "p",
+      "mu_schmidt": 4.793,
+      "mu_mes": 4.722,
+      "ecart": 0.071,
+      "signe_ok": true
+    },
+    {
+      "nom": "39K",
+      "orbitale": "1d3/2 trou",
+      "l": 2,
+      "j": 1.5,
+      "type": "p",
+      "mu_schmidt": 0.124,
+      "mu_mes": 0.391,
+      "ecart": 0.267,
+      "signe_ok": true
+    },
+    {
+      "nom": "41Ca",
+      "orbitale": "1f7/2",
+      "l": 3,
+      "j": 3.5,
+      "type": "n",
+      "mu_schmidt": -1.913,
+      "mu_mes": -1.595,
+      "ecart": 0.318,
+      "signe_ok": true
+    },
+    {
+      "nom": "93Nb",
+      "orbitale": "1g9/2",
+      "l": 4,
+      "j": 4.5,
+      "type": "p",
+      "mu_schmidt": 6.793,
+      "mu_mes": 6.171,
+      "ecart": 0.622,
+      "signe_ok": true
+    },
+    {
+      "nom": "207Pb",
+      "orbitale": "3p1/2 trou",
+      "l": 1,
+      "j": 0.5,
+      "type": "n",
+      "mu_schmidt": 0.638,
+      "mu_mes": 0.593,
+      "ecart": 0.045,
+      "signe_ok": true
+    },
+    {
+      "nom": "209Bi",
+      "orbitale": "1h9/2",
+      "l": 5,
+      "j": 4.5,
+      "type": "p",
+      "mu_schmidt": 2.624,
+      "mu_mes": 4.11,
+      "ecart": 1.486,
+      "signe_ok": true
+    }
+  ],
+  "ecart_moyen": 0.283,
+  "sous_05": 10,
+  "sous_025": 8,
+  "ecart_moyen_sans_gsn": 0.857,
+  "verdict": {
+    "signes_12sur12": true,
+    "ecart_lt_0.5_au_moins_9sur12": true,
+    "cas_uniparticule_10pct": true,
+    "anomalie_209Bi_localisee": true,
+    "levier_gs_discriminant": true,
+    "ecart_moyen_lt_0.35": true
+  },
+  "score": "6/6",
+  "lecture": "les moments de Schmidt (particule/trou celibataire) reproduisent les moments pres des couches fermees a <0.5 muN pour l'essentiel ; l'ecart residuel est le 'quenching' (polarisation du coeur, mesons) = reponse 2 corps P28 ; 209Bi est l'anomalie connue (Schmidt 2.6 vs 4.1 mesure)"
+}
