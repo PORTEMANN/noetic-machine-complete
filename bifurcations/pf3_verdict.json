@@ -1,0 +1,23 @@
+{
+  "chantier": "P-F3",
+  "sha_protocole_fige": "d1f13b8f5fa91495390a6f5f2cbd9c5c9f7f32f18da5925fa4ea6bf414b71567",
+  "methode": "4 candidats d'indice derives a forme FIGEE (K1=Z, K2=Z(1+gamma), K3=Z nc(1+gamma), K4=Z nc(1+gamma)/(1+gap)), AUCUN coefficient ajuste, rho de Spearman vs derivabilite D",
+  "resultats": {
+    "K1": -0.791,
+    "K2": -0.791,
+    "K3": -0.791,
+    "K4": -0.791,
+    "tous_p": 0.111
+  },
+  "constat_cle": "les 4 candidats donnent un rho IDENTIQUE (-0.791) : le rang induit par (Z,nc,gamma,gap) est le meme. L'echec ne tient pas a la forme de l'indice.",
+  "noeud": "bloc_f a D=0.4 > 4d/5d D=0.2 alors que sa complexite (Z,nc,gap) est comparable ou SUPERIEURE. Aucun indice monotone en ces facteurs ne peut ordonner correctement.",
+  "prediction_confirmee": "P_b : aucun candidat derive n'ameliore Z seul ; tous restent a p=0.11 (non probant, n=5)",
+  "verdict": "PARTIEL-NEGATIF (B3-FAIL honore) : la derivabilite des bifurcations NE s'ordonne PAS par un indice scalaire monotone de complexite (Z, correlation, relativite, degenerescence). La loi des bifurcations reste conjecturale ; l'indice scalaire n'existe pas a ce niveau.",
+  "lecture": {
+    "pourquoi_bloc_f_casse": "le bloc f est moins libre que 4d/5d malgre complexite superieure PARCE QUE sa question est differente en nature : La/Ac vs Lu/Lr est un choix de CONVENTION de tete de colonne (ou placer la frontiere d/f), pas une instabilite de configuration. 4d/5d sont des instabilites PHYSIQUES de remplissage. La complexite physique ne mesure pas la conventionnalite.",
+    "enseignement": "la derivabilite depend du TYPE de bifurcation (instabilite physique vs convention de classement), pas seulement de sa complexite. Un indice scalaire unique confond les deux axes. Il faudrait une classification 2D : (complexite physique) x (degre de conventionnalite).",
+    "affinement_loi": "la loi des bifurcations se precise : la decroissance en complexite vaut pour les bifurcations PHYSIQUES (He, Cr/Cu) ; les bifurcations CONVENTIONNELLES (bloc f) y echappent. He est physique ET net -> tranchee. Bloc f est conventionnel -> libre quelle que soit la complexite."
+  },
+  "score": "3/5",
+  "zero_parametre_ajuste": true
+}
