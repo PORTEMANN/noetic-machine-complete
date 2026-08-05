@@ -169,3 +169,15 @@ ec16ccd7910af6e3028ff040284a794aea28a41a9ddaf0dac5e5f28d14daa6b7  src/p8_emc.py
 # figures/p33_queue.png      sha256 local : 438b3864ab70... (regenerer : python src/p33_queue.py)
 # docs/Note_P32_Frontiere_r12_Zdependante_Verdict.pdf  sha256 local : 2bed3aafc6ef...
 # docs/Note_P33_Decroissance_Asymptotique_Verdict.pdf  sha256 local : f92ef6c8bc07...
+
+# Chantier hors-programme bifurcations (P-He/P-LaLr/P-CrCu/P-F3) — ajoute 2026-08-06
+# sha256 calcules sur les versions POUSSEES (GitHub = source de verite) ;
+# phe/pf3 protocoles et plalr_verdict ont un é/— litteral la ou le JSON local utilise  XXXX (meme donnee).
+1a6da9b7097a7742fbc2e600027cdcfea9695b8251b4eb37c1f4d01d8ca3bd93  bifurcations/phe_protocole_fige.json
+2d52852323a42a8cf603a46a7ad5790314acbe097a990cceb851a7e0650223db  bifurcations/phe_verdict.json
+bbedead51521910ff02c8c419230ea0f87d898fd8e7d8e4db6ad12a303304fec  bifurcations/plalr_protocole_fige.json
+2f437b559e7182cc935de1f3ef2e20dc5cf7798f3fa471b4a8c2585e32107877  bifurcations/plalr_verdict.json
+6b918941f1e8a721dd701dc335bebaca05b9878c98a08564eddc590a06366361  bifurcations/pcrcu_protocole_fige.json
+73dca5f8fe1035aa99ddf9057807b3661f50d1dfaf709430e68e985b1df3d4f7  bifurcations/pcrcu_verdict.json
+7d3ab6447bca715be26b6fc7393fa08a24a146be9567cb4c649eb66e21fe45ca  bifurcations/pf3_protocole_fige.json
+4d8a0dd54b13ad735dd7b4111bd6f131db1eca03461b96b781928cdc7d2ed8e7  bifurcations/pf3_verdict.json
