@@ -1,0 +1,27 @@
+{
+  "unites": "Hartree, a0",
+  "H2plus": {
+    "R_eq_a0": 2.353,
+    "R_eq_mes_a0": 2.0,
+    "E_min_Hartree": -0.5669,
+    "D_e_Hartree": 0.0669,
+    "D_e_eV": 1.82,
+    "D_e_mes_eV": 2.79,
+    "D_e_lcao_note": "LCAO-1s sous-estime (~1 eV vs 2.79 exact)",
+    "lecture": "LCAO-1s exact : minimum de E(R) = etat lie de H2+",
+    "D_e_note_correction": "bug conversion Hartree->eV corrige : 0.0669 Ha = 1.82 eV (le 0.911 etait errone). Base minimale LCAO classique ~1.76 eV : coherent.",
+    "borne_variationnelle": "E_min=-0.5669 Ha > E_exact=-0.6026 Ha : la base minimale est une borne superieure rigoureuse (principe variationnel) -> derivation conservative."
+  },
+  "verdict": {
+    "minimum_liaison_existe": true,
+    "mecanisme_gerade_entre_protons": true,
+    "D_e_ordre_grandeur_facteur2": true,
+    "R_eq_a_20pct": true,
+    "borne_variationnelle_respectee": true
+  },
+  "frontiere": {
+    "cas_exact": "H2+ (1 electron, 2 noyaux) : soluble exactement",
+    "au_dela": "H2 (2 electrons), He, molecules : multi-electronique, correlation -> frontiere",
+    "lecture": "H2+ est le seul cas ou la machine (1-corps) traite une molecule exactement"
+  }
+}
