@@ -33,7 +33,12 @@ La physique est « bon marché » en information dans son **régime discret** (s
 
 ---
 
-## Bilan P20–P31 (cette série)
+## Bilan du chantier P0–P31
+
+Le chantier complet court de **P0** (monopole SU(2) banc calibré) à **P31** (frontière r₁₂ constitutive). Le dépôt contient **tous** les artefacts : 34 scripts, 45 JSON, 31 figures, 45 notes PDF, + SHASUMS. Les douze chantiers P20–P31 (cette série) :
+
+| Ch. | Objet | Score | Statut |
+|-----|-------|-------|--------|
 
 | Ch. | Objet | Score | Statut |
 |-----|-------|-------|--------|
