@@ -68,6 +68,23 @@ Artefacts P32/P33 : scripts `src/p32_frontiere.py`, `src/p33_queue.py` ; protoco
 
 ---
 
+## Chantier hors-programme : bifurcations classificatoires
+
+Série distincte du noyau P0–P33 : la machine éprouve les **bifurcations de classement** du tableau périodique par discriminant dérivé à zéro paramètre. Voir `bifurcations/`.
+
+| Chantier | Question | Score | Verdict |
+|---|---|---|---|
+| P-He | He : H / Be / gaz noble ? | 5/5 | **tranchée** — He gaz noble (le « ns² » est sous-couche pleine, pas parenté Be) |
+| P-LaLr | bloc f : La/Ac ou Lu/Lr ? | 2/5 | **B3-FAIL** — frontière d/f = zone de liberté constitutive (conventionnelle) |
+| P-CrCu | anomalies d⁵/d¹⁰ : loi ou bruit ? | 3/5 | **partiel** — loi exacte en 3d, liberté en 4d/5d |
+| P-F3 | indice de complexité dérivé ? | 3/5 | **partiel-négatif** — pas d'indice scalaire ; révèle l'axe *conventionnalité* |
+
+**Résultat transverse — la loi des bifurcations (conjecture, catégorie II candidate)** : pour une bifurcation *physique*, la dérivabilité décroît avec la complexité (tranchable à bas Z, libre à haut Z) ; une bifurcation *conventionnelle* est libre quelle que soit la complexité. C'est la **formulation classificatoire de la frontière r₁₂** (P32). La machine **discrimine les bifurcations résolubles des constitutives** et cartographie deux sortes de zones de liberté.
+
+*Statut : la loi des bifurcations est une conjecture étiquetée (catégorie II), non un théorème. Distincte du noyau certifié.*
+
+---
+
 ## Citation
 
 ```bibtex
@@ -94,6 +111,10 @@ Artefacts P32/P33 : scripts `src/p32_frontiere.py`, `src/p33_queue.py` ; protoco
 │   └── (fondateurs : p12, p16, p17, p18…)
 ├── data/                            # artefacts JSON (verdicts machine-lisibles)
 │   └── p20_*.json … p33_*.json
+├── bifurcations/                    # chantier hors-programme (bifurcations classificatoires)
+│   ├── README.md                    # index + verdicts P-He/P-LaLr/P-CrCu/P-F3
+│   ├── Loi_des_Bifurcations.md      # conjecture v1 + addendum v2
+│   └── *.json                       # protocoles figés + verdicts
 ├── figures/                         # figures PNG
 │   └── p*.png
 └── SHASUMS.txt                      # empreintes SHA-256 de tous les artefacts
