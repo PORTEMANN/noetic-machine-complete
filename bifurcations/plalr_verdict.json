@@ -1,0 +1,23 @@
+{
+  "chantier": "P-LaLr",
+  "sha_protocole_fige": "bbedead51521910ff02c8c419230ea0f87d898fd8e7d8e4db6ad12a303304fec",
+  "levier_P_c": {
+    "statut": "INVALIDE",
+    "temoin_fautif": "Y",
+    "cause": "discriminant global trop aveugle : I1 et rayon tirent Y vers C_f (lanthanido-similarite), bien que Y n'ait AUCUN electron f"
+  },
+  "verdict_principal": "B3-FAIL — le discriminant de P-He NE TRANSMUTE PAS au bloc f ; aucune classe assignee a La/Ac/Lu/Lr au titre du protocole gele",
+  "constat_physique": "Y EST lui-meme l'anomalie : metal d colonne 3 (f0, comme Sc) mais chimiquement lanthanide (I1 bas, rayon 180, cohesion ~lanthanides). La frontiere d/f n'est pas nette la ou P-He l'etait (He).",
+  "robustesse_post_hoc": {
+    "discriminant_structurel_f_plus_cohesion": "AUSSI INVALIDE (Ce et Th mal classes : cohesion de metal d les tire vers C_d3)",
+    "conclusion": "AUCUN discriminant derive simple (global ni structurel) ne valide le levier P_c ; la bifurcation du bloc f resiste la ou He a tranche"
+  },
+  "verdict_formel": "PARTIEL-NEGATIF publie (B3-FAIL) : bifurcation du bloc f NON tranchable par discriminant derive ; frontiere d/f = zone de liberte constitutive. Asymetrie avec He (tranchable) = le vrai resultat.",
+  "score": "2/5",
+  "zero_parametre_ajuste": true,
+  "lecture": {
+    "asymetrie_He_blocf": "He etait tranchable (5/5) car ses proprietes CONVERGEAIENT vers C_noble ; le bloc f n'est PAS tranchable car les proprietes DIVERGENT : la configuration (f0/f14) dit une chose, la cohesion et le rayon en disent une autre, l'ionisation une troisieme.",
+    "resultat_physique": "le bloc f n'a pas de tete tranchee par les donnees mesurees : La/Ac (f0) sont configurationnellement des metaux d MAIS chimiquement des lanthanides ; Lu/Lr (f14) ferment f MAIS retrouvent une valence d. La frontiere d/f est une VRAIE zone de liberte du classement (categorie V), pas une anomalie resoluble.",
+    "pourquoi_c_est_un_resultat": "la machine a tranche He (frontiere nette) et REFUSE de trancher le bloc f (frontiere floue) : elle discrimine les bifurcations resolubles des bifurcations constitutives. C'est la cartographie des zones de liberte, coeur du programme."
+  }
+}
