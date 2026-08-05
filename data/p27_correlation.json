@@ -1,0 +1,48 @@
+{
+  "He": {
+    "E_HF": -2.84765625,
+    "E_exact": -2.903724,
+    "E_c_Ha": 0.0561,
+    "E_c_eV": 1.53,
+    "ecart_relatif_pct": 1.93,
+    "ionisation_HF_eV": 23.07,
+    "ionisation_mes_eV": 24.587,
+    "ecart_ion_pct": 6.2,
+    "split_zeta": {
+      "a": 1.1600000000000001,
+      "b": 2.2,
+      "E": -2.8766,
+      "reference_Eckart": -2.8757,
+      "E_c_recuperee_pct": 51.5
+    }
+  },
+  "H2": {
+    "MO": {
+      "R_eq": 1.5999999999999999,
+      "zeta": 1.05,
+      "D_e_eV": 2.75,
+      "E_diss": -0.756,
+      "contamination_ionique_eV": 6.64
+    },
+    "VB": {
+      "R_eq": 1.4,
+      "zeta": 1.1500000000000001,
+      "D_e_eV": 3.8,
+      "E_diss": -1.0,
+      "gap_recupere_pct": 52.4
+    },
+    "exact": {
+      "R_eq": 1.401,
+      "D_e_eV": 4.75
+    }
+  },
+  "lecture": "la frontiere multi-corps est un gradient : la correlation radiale (He in-out) et covalente (H2 VB) s'expriment en orbitales 1-corps et recuperent ~50-65% ; le mur residuel est la correlation angulaire (r12 explicite)",
+  "verdict": {
+    "He_energie_2pct": true,
+    "He_ionisation_10pct": true,
+    "He_inout_recupere_45pct": true,
+    "H2_liaison_MO_R_eq_15pct": true,
+    "H2_VB_recupere_50pct_du_gap": true
+  },
+  "score": "5/5"
+}
