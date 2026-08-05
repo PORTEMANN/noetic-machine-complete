@@ -1,4 +1,7 @@
 # Machine Noétique — `noetic-machine-complete`
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/PORTEMANN/noetic-machine-complete)](https://github.com/PORTEMANN/noetic-machine-complete/releases)
+[![DOI](https://img.shields.io/badge/DOI-Zenodo%20(a%20activer)-lightgrey.svg)](https://zenodo.org)
 
 > **Une sixième classe de machine : la « machine à éprouver ».**
 > Entrée : des données mesurées + une structure candidate. Sortie : un **verdict**.
