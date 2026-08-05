@@ -1,5 +1,5 @@
 # Empreintes SHA-256 des artefacts — Machine Noetique (noetic-machine-complete)
-# Chantier P0-P31 — genere le 3 aout 2027 — replicabilite B3-FAIL
+# Chantier P0-P33 — genere le 3 aout 2027, etendu P32/P33 — replicabilite B3-FAIL
 
 0f113af3c462396229e502d2539aac8c2e01893c435886c52b7775227c39ebad  data/p0_p0_r0.json
 7d522eb5171a92bba78a7ca0f0d75c65dd72a83544e1d699ac2adc9c0064d047  data/p0_p0_r05.json
@@ -38,6 +38,10 @@ f1cdd8fbc93df4a6580063cf0e84b2b06f631dbbb477cd502ede378aa08d8f1e  data/p2bis_m00
 8a1008af148cb29885e2aa40ac3b75bb3dd36dd795bf17e3cd99854bb5fc96c1  data/p2bis_m020_s20.json
 788b6f7ff6174d8f4916a58716986c689084e6ed6f6c02fcaba941359f82c341  data/p30_cusp.json
 88f44a53730c1dee445c3300841aaa09b03ac24630bddc32450cfff87ecb80b4  data/p31_portee.json
+23a741a4a67f53003ddbc759f20c47bec55831a1f874e2e8a4a1345d84778e2d  data/p32_frontiere.json
+56c5d5d554a2948ffe0d2199d51549e2533e37168f880f38ed197ecd4a3b0d50  data/p32_protocole_fige.json
+503f1d069d1a446968dfd87e97f0f39ecdefcff219b43b49f326dd092cd3dc0a  data/p33_protocole_fige.json
+978351517b6ed4db5df271c0a5577554c3573dc3381ff0007223b50b4c887cbe  data/p33_queue.json
 8c60106f2b996b89769fd4c05e1ac70f3fa71603409ef4ef4dbdc644ef364b0a  data/p3_pont.json
 91d2751acc380384354bc2847d4bc832930e45a17ee6d296bc1586d8c6abe2e1  data/p4_phases.json
 11f76560fd22aca82186c0e88484d167e16be58fa0d957001fc3dcf0581c406f  data/p4discri_mratio008.json
@@ -152,8 +156,16 @@ d443fa8836de249c043cb4d3b6ec861c7b90fc4237cf06ea723d8a01987f8d2f  src/p29_pb.py
 ea8c796a0ebc95aadb4a33a6865cd7c19f49393f459457c5cd51d50cbb9a3561  src/p2bis_rigidite.py
 6a2cab68e93bc95ac39236f338f31dd6f6bd48b12f7821eb6b411d07556b58aa  src/p30_cusp.py
 32c6f335e8eb5c94c345c0e586b3bf2d4a0c5b754d95f449c9f358b81845ed3e  src/p31_portee.py
+60a868bd57b83b0a595879b6771418d8b065b005f52c95971b168f86625dac28  src/p32_frontiere.py
+286f98885f4558dcf794950fa55d593b5bf3641a8d93d958d7825783ab10ff0a  src/p33_queue.py
 8b70f0aef78a35df79e750383a49c9d8b78dae5d71ec516a306c69590eb5771a  src/p4_phases.py
 da7b46d314b9ea7de1311400776dad04e0d3c178df6740befa5060e575ad3dd7  src/p6_cartes.py
 adbf4938f5f4a7ae1d2db259ff34fcee670cb95bb6e5567d4aeec4952bf3be28  src/p7_isotopes.py
 ec16ccd7910af6e3028ff040284a794aea28a41a9ddaf0dac5e5f28d14daa6b7  src/p8_emc.py
 76ad2e84ff79dbb7c10ddf6494407546c6b3f69f2aa966ec75fd1790a66581c7  src/p9_prex.py
+
+# Artefacts P32/P33 locaux non pousses (limites du connecteur) — regenerables via scripts
+# figures/p32_frontiere.png  sha256 local : ac80fea10dd4... (regenerer : python src/p32_frontiere.py)
+# figures/p33_queue.png      sha256 local : 438b3864ab70... (regenerer : python src/p33_queue.py)
+# docs/Note_P32_Frontiere_r12_Zdependante_Verdict.pdf  sha256 local : 2bed3aafc6ef...
+# docs/Note_P33_Decroissance_Asymptotique_Verdict.pdf  sha256 local : f92ef6c8bc07...
