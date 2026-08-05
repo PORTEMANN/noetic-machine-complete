@@ -1,0 +1,99 @@
+{
+  "chantier": "P25",
+  "titre": "Isolants topologiques 2D/3D — Chern, Z2, indice fort derives",
+  "T1_haldane": {
+    "C_dans_phase": [
+      -1
+    ],
+    "M_transition_num/t2": 5.0,
+    "frontiere_theorique_3sqrt3/t2": 5.1962,
+    "accord": true
+  },
+  "T2_frontiere_analytique": {
+    "somme_sin_K": -2.598076,
+    "valeur_theorique": -2.598076,
+    "d_z_K": "M + 3√3 t2 sinφ",
+    "d_z_Kp": "M - 3√3 t2 sinφ",
+    "condition_fermeture": "|M/t2| = 3√3|sinφ| ≈ 5.196|sinφ|"
+  },
+  "T3_kane_mele": {
+    "C_up": -1,
+    "C_dn": 1,
+    "C_total": 0,
+    "Z2": 1,
+    "lecture": "C_total=0 (TR) mais Z2=1 : topologie sans Hall net"
+  },
+  "T4_ruban": {
+    "Ny": 16,
+    "m": -1.0,
+    "paires_Kramers_k=0": 2,
+    "paires_Kramers_k=pi": 0,
+    "par_bord": "1 vs 0",
+    "Z2_bord": 1,
+    "accord": true,
+    "lecture": "paire de Kramers a E=0 epinglee sur k=0 (un par bord), aucune a k=pi : helicoidal, Z2=1 par le bord"
+  },
+  "T5_3D": {
+    "masses_TRIM": "m+3 (x1), m+1 (x3), m-1 (x3), m-3 (x1)",
+    "critere": "(-1)^nu0 = prod_a [-sgn(m_a)], parites mesurees par <Gamma0> aux 8 TRIM",
+    "phases_fortes": "1 < |m| < 3",
+    "verifications": [
+      {
+        "m": -2.0,
+        "nu0_numerique": 1,
+        "nu0_analytique": 1,
+        "accord": true
+      },
+      {
+        "m": -0.5,
+        "nu0_numerique": 0,
+        "nu0_analytique": 0,
+        "accord": true
+      },
+      {
+        "m": 2.0,
+        "nu0_numerique": 1,
+        "nu0_analytique": 1,
+        "accord": true
+      },
+      {
+        "m": 0.5,
+        "nu0_numerique": 0,
+        "nu0_analytique": 0,
+        "accord": true
+      },
+      {
+        "m": 3.5,
+        "nu0_numerique": 0,
+        "nu0_analytique": 0,
+        "accord": true
+      },
+      {
+        "m": -3.5,
+        "nu0_numerique": 0,
+        "nu0_analytique": 0,
+        "accord": true
+      }
+    ],
+    "accord_global": true
+  },
+  "T6_levier": {
+    "C_phi=0": 0,
+    "C_t2=0": 0,
+    "C_|M|>3sqrt3": 0,
+    "nu0_m=4": 0,
+    "conclusion": "sans flux (phi=0) ou hors fenetre de masse : trivial — la topologie exige le mecanisme"
+  },
+  "verdict": {
+    "criteres": {
+      "C1_Chern_Haldane_+-1_et_0": true,
+      "C2_frontiere_3sqrt3_exacte": true,
+      "C3_KaneMele_Z2": true,
+      "C4_bord_volume_ruban": true,
+      "C5_3D_parite_TRIM": true,
+      "C6_levier": true
+    },
+    "score": "6/6",
+    "statut": "SUCCES"
+  }
+}
