@@ -66,13 +66,13 @@ res["verdict"]=verdict
 # figure
 fig,ax=plt.subplots(1,2,figsize=(13,5.0))
 a=ax[0]
-a.plot(R,Et,color="steelblue",lw=2,label="E(R) gerade (liante)")
-a.axhline(E_diss,color="gray",ls=":",lw=1,label="dissociation H + p+")
+a.plot(R,Et,color="steelblue",lw=2,label="E(R) gérade (liante)")
+a.axhline(E_diss,color="gray",ls=":",lw=1,label="dissociation H + p⁺")
 a.plot(R_eq,E_min,"o",color="indianred",ms=10,zorder=5)
-a.annotate(f"liaison\nR={R_eq:.2f} a0\nD={D_e*RY/2:.2f} eV",(R_eq,E_min),
+a.annotate(f"liaison\nR={R_eq:.2f} a₀\nD={D_e*RY/2:.2f} eV",(R_eq,E_min),
            textcoords="offset points",xytext=(15,-10),fontsize=9,color="indianred")
-a.set_xlabel("R internucleaire (a0)"); a.set_ylabel("E (Hartree)")
-a.set_title("A -- H2+ : courbe d'energie\nminimum = etat lie (la liaison covalente)",fontsize=9.5)
+a.set_xlabel("R internucléaire (a₀)"); a.set_ylabel("E (Hartree)")
+a.set_title("A -- H₂⁺ : courbe d'énergie\nminimum = état lié (la liaison covalente)",fontsize=9.5)
 a.legend(fontsize=9); a.grid(alpha=0.3); a.set_ylim(-0.75,0.5)
 
 a=ax[1]
@@ -80,15 +80,15 @@ a=ax[1]
 x=np.linspace(-4,4,200); Rb=2.0
 def psi_g(x): return np.exp(-np.abs(x-Rb/2))+np.exp(-np.abs(x+Rb/2))
 def psi_u(x): return np.exp(-np.abs(x-Rb/2))-np.exp(-np.abs(x+Rb/2))
-a.plot(x,psi_g(x)**2/np.max(psi_g(x)**2),color="seagreen",lw=2,label="gerade (liante)")
-a.plot(x,psi_u(x)**2/np.max(psi_u(x)**2),color="indianred",lw=2,ls="--",label="ungerade (antiliante)")
+a.plot(x,psi_g(x)**2/np.max(psi_g(x)**2),color="seagreen",lw=2,label="gérade (liante)")
+a.plot(x,psi_u(x)**2/np.max(psi_u(x)**2),color="indianred",lw=2,ls="--",label="ungérade (antiliante)")
 a.axvline(Rb/2,color="k",lw=3); a.axvline(-Rb/2,color="k",lw=3)
 a.text(Rb/2,1.02,"p",ha="center",fontsize=12); a.text(-Rb/2,1.02,"p",ha="center",fontsize=12)
-a.set_xlabel("x (a0)"); a.set_ylabel("densite electronique")
-a.set_title("B -- Pourquoi ca lie : l'electron gerade\ns'accumule ENTRE les protons",fontsize=9.5)
+a.set_xlabel("x (a₀)"); a.set_ylabel("densité électronique")
+a.set_title("B -- Pourquoi ça lie : l'électron gérade\ns'accumule ENTRE les protons",fontsize=9.5)
 a.legend(fontsize=9); a.grid(alpha=0.3)
 
-fig.suptitle("P20 -- H2+ : le seul cas moleculaire exact (test de la frontiere multi-corps)",fontsize=12)
+fig.suptitle("P20 -- H₂⁺ : le seul cas moléculaire exact (test de la frontière multi-corps)",fontsize=12)
 fig.tight_layout(rect=[0,0,1,0.95]); fig.savefig(f"{OUT}/p20_h2plus.png",dpi=150)
 
 with open(f"{OUT}/p20_h2plus.json","w") as f: json.dump(res,f,indent=1,ensure_ascii=False)
