@@ -1,7 +1,7 @@
 # Machine Noétique — `noetic-machine-complete`
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Release](https://img.shields.io/github/v/release/PORTEMANN/noetic-machine-complete)](https://github.com/PORTEMANN/noetic-machine-complete/releases)
-[![DOI](https://img.shields.io/badge/DOI-Zenodo%20(a%20activer)-lightgrey.svg)](https://doi.org/10.5281/zenodo.21807052)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21807052.svg)](https://doi.org/10.5281/zenodo.21807052)
 
 > **Une sixième classe de machine : la « machine à éprouver ».**
 > Entrée : des données mesurées + une structure candidate. Sortie : un **verdict**.
@@ -9,6 +9,7 @@
 
 **Auteur :** Patrice PORTEMANN — patrice@portemann.eu — corpus [histoire-des-sciences.eu](https://histoire-des-sciences.eu)
 **Licence :** MIT (voir `LICENSE`). **Bilan du chantier P0–P31 : 24 succès / 7 partiels-négatifs.**
+**Référence figée (Zenodo) :** [doi.org/10.5281/zenodo.21807052](https://doi.org/10.5281/zenodo.21807052)
 
 ---
 
@@ -42,9 +43,6 @@ Le chantier complet court de **P0** (monopole SU(2) banc calibré) à **P31** (f
 
 | Ch. | Objet | Score | Statut |
 |-----|-------|-------|--------|
-
-| Ch. | Objet | Score | Statut |
-|-----|-------|-------|--------|
 | P20 | liaison H₂⁺ dérivée | 5/5 | succès |
 | P21 | polarité des liaisons | 7/7 | succès |
 | P22 | double-β | 5/6 | partiel |
@@ -59,6 +57,20 @@ Le chantier complet court de **P0** (monopole SU(2) banc calibré) à **P31** (f
 | P31 | portée dérivée | 3/5 | **frontière r₁₂ constitutive** |
 
 **La frontière est mesurée, pas conjecturée** : tout ce qui est discret/cinématique/à un corps est dérivable (24 succès) ; la réponse corrélée continue à deux corps ne l'est pas sans liberté de forme (7 partiels). Voir `Note_Synthese_Machine_Noetique_Complete.pdf`.
+
+---
+
+## Citation
+
+```bibtex
+@misc{portemann2026noetic,
+  author = {Portemann, Patrice},
+  title  = {La Machine No\'etique : un op\'erateur de verdict unique \`a z\'ero param\`etre ajustable --- synth\`ese du programme P0--P31},
+  year   = {2026},
+  doi    = {10.5281/zenodo.21807052},
+  url    = {https://doi.org/10.5281/zenodo.21807052}
+}
+```
 
 ---
 
