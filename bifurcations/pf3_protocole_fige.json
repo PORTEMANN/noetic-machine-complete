@@ -1,0 +1,39 @@
+{
+  "chantier": "P-F3 (machine, indice de complexite derive)",
+  "titre": "Indice de complexite derive : ordonner les bifurcations mieux que Z seul",
+  "date_gel": "2026-08-06",
+  "regle": "C12.1 - candidats d'indice et criteres de verdict figes AVANT calcul ; B3-FAIL ; AUCUN poids ajuste (interdit) ; motivation pas postulat",
+  "risque_majeur": "ajuster des coefficients pour ameliorer la correlation = parametrage interdit. L'indice doit etre DERIVE : forme fixee par la physique, sans degre de liberte ajuste.",
+  "question_de_verdict": "Existe-t-il un indice de complexite DERIVE (combinaison fixee a priori de facteurs physiques) qui ordonne la derivabilite des bifurcations de facon monotone, la ou Z seul echoue partiellement ?",
+  "facteurs_physiques_derives": {
+    "charge": "Z — echelle brute du probleme",
+    "correlation": "nc = nombre d'electrons de la couche de valence incomplete (proxy du degre de liberte 2-corps, mur r12)",
+    "degenerescence": "gap = ecart d'energie relatif entre sous-couches concurrentes (d/s ou f/d) ; quasi-degenerescence -> bascule facile",
+    "relativite": "gamma = (Z*alpha)^2 — correction relativiste du premier ordre (alpha=1/137), derivee, non ajustee"
+  },
+  "candidats_indices_figes": {
+    "K1": "K = Z  (temoin : indice nul, reference a battre)",
+    "K2": "K = Z * (1 + gamma)  (charge corrigee de la relativite, forme fixee)",
+    "K3": "K = Z * nc * (1 + gamma)  (charge x correlation x relativite)",
+    "K4": "K = Z * nc * (1 + gamma) / (1 + gap)  (idem module par la degenerescence : gap petit = complexite grande)",
+    "note": "chaque candidat est une forme FIGEE derivee des facteurs physiques ; AUCUN coefficient libre"
+  },
+  "jeu_bifurcations": {
+    "liste": [
+      "He (Z2, nc2, net)",
+      "CrCu_3d (Z24)",
+      "CrCu_4d (Z42)",
+      "CrCu_5d (Z79)",
+      "bloc_f (Z64)"
+    ],
+    "derivabilite_D": "score publie / 5 (He 1.0, 3d 1.0, 4d 0.2, 5d 0.2, bloc_f 0.4)"
+  },
+  "predictions_figees": {
+    "P_a": "au moins UN candidat derive (K2/K3/K4) ordonne les bifurcations avec |rho| > |rho(Z)| et p < 0.05 -> indice de complexite TROUVE (categorie II -> I)",
+    "P_b": "aucun candidat derive n'ameliore nettement Z seul (p reste > 0.05 ou |rho| non superieur) -> la loi des bifurcations reste conjecturale, l'indice scalaire n'existe pas a ce niveau",
+    "P_c": "levier : tout candidat retenant un coefficient ajuste est REJETE par construction ; la validite se mesure sur forme figee seule"
+  },
+  "regle_verdict": "SUCCES si P_a avec forme figee ; PARTIEL si P_b (resultat publie) ; B3-FAIL honore. n=5 petit : verdict declare exploratoire si 0.05 < p < 0.2.",
+  "zero_parametre_ajuste": true,
+  "lien_corpus": "eprouve la loi des bifurcations (conjecture) ; aucun verdict anterieur modifie"
+}
