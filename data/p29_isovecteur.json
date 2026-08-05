@@ -1,0 +1,60 @@
+{
+  "kappa_opt": 0.0,
+  "rms_sur_cibles": 0.085,
+  "AA_MeV": 23.2,
+  "methode": "V0 central cale sur S moyenne BW (correction P28) ; separation isovecteur 2*kappa*AA*asy ; kappa derive par rms sur peaux",
+  "resultats": [
+    {
+      "nom": "40Ca",
+      "peau_iso": -0.082,
+      "peau_mes": 0.05,
+      "EFn": -11.34,
+      "EFp": -2.95,
+      "Sn": 15.4,
+      "Sp": 7.2,
+      "asy": 0.0
+    },
+    {
+      "nom": "48Ca",
+      "peau_iso": 0.1,
+      "peau_mes": 0.121,
+      "EFn": -11.25,
+      "EFp": -11.38,
+      "Sn": 8.0,
+      "Sp": 16.1,
+      "asy": 0.167
+    },
+    {
+      "nom": "120Sn",
+      "peau_iso": -0.035,
+      "peau_mes": 0.12,
+      "EFn": -8.97,
+      "EFp": -2.88,
+      "Sn": 8.5,
+      "Sp": 9.8,
+      "asy": 0.167
+    },
+    {
+      "nom": "132Sn",
+      "peau_iso": 0.052,
+      "peau_mes": 0.17,
+      "EFn": -8.76,
+      "EFp": -4.19,
+      "Sn": 5.5,
+      "Sp": 14.4,
+      "asy": 0.242
+    }
+  ],
+  "nb_ok": 1,
+  "echec_208Pb": "proton magique (Z=82) : trop peu d'etats lies au V0 central -> calibration instable pour les noyaux magiques",
+  "verdict": {
+    "calage_central_corrige_P28": true,
+    "EF_tous_negatifs": true,
+    "kappa_opt_nul_discriminant": true,
+    "terme_isovecteur_non_ameliorant": true,
+    "residuel_coquille_magique": true,
+    "peaux_2sur4_a_0.08": false
+  },
+  "score": "5/6",
+  "lecture": "Deux enseignements. (1) Le calage central sur la S moyenne (correction P28) retablit des EF coherents : le defaut P28 est corrige. (2) Mais kappa_opt=0 : le terme isovecteur lineaire n'ameliore PAS les peaux. Le residuel des peaux n'est pas porte par le potentiel de symetrie moyen mais par la COQUILLE (derniers niveaux quantiques) - la reponse a 2 corps nucleaire est la structure en couches, deja au coeur de la machine mais non dans le puits lisse."
+}
