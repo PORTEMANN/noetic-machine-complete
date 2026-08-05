@@ -1,0 +1,193 @@
+{
+  "methode": "Q1 et Qbb par Bethe-Weizsacker P16 (memes coefficients) ; critere enrichi : pair-pair + Qbb>0.5 + Q1<0.5 ; controle du levier : meme selection sans AP",
+  "emetteurs": [
+    {
+      "nom": "48Ca",
+      "A": 48,
+      "Z": 20,
+      "Q1": 3.35,
+      "Q2": 9.38,
+      "Q2_mes": 4.27,
+      "T12_mes": 6.4e+19,
+      "selectionne": false,
+      "Q_ok_1p5": false
+    },
+    {
+      "nom": "76Ge",
+      "A": 76,
+      "Z": 32,
+      "Q1": 1.08,
+      "Q2": 4.88,
+      "Q2_mes": 2.04,
+      "T12_mes": 1.9e+21,
+      "selectionne": false,
+      "Q_ok_1p5": false
+    },
+    {
+      "nom": "82Se",
+      "A": 82,
+      "Z": 34,
+      "Q1": 2.08,
+      "Q2": 6.87,
+      "Q2_mes": 3.0,
+      "T12_mes": 9.6e+19,
+      "selectionne": false,
+      "Q_ok_1p5": false
+    },
+    {
+      "nom": "96Zr",
+      "A": 96,
+      "Z": 40,
+      "Q1": 0.78,
+      "Q2": 4.22,
+      "Q2_mes": 3.35,
+      "T12_mes": 2.3e+19,
+      "selectionne": false,
+      "Q_ok_1p5": true
+    },
+    {
+      "nom": "100Mo",
+      "A": 100,
+      "Z": 42,
+      "Q1": -0.19,
+      "Q2": 2.26,
+      "Q2_mes": 3.03,
+      "T12_mes": 7.1e+18,
+      "selectionne": true,
+      "Q_ok_1p5": true
+    },
+    {
+      "nom": "116Cd",
+      "A": 116,
+      "Z": 48,
+      "Q1": 0.14,
+      "Q2": 2.85,
+      "Q2_mes": 2.81,
+      "T12_mes": 3e+19,
+      "selectionne": true,
+      "Q_ok_1p5": true
+    },
+    {
+      "nom": "130Te",
+      "A": 130,
+      "Z": 52,
+      "Q1": 2.32,
+      "Q2": 7.14,
+      "Q2_mes": 2.53,
+      "T12_mes": 7e+20,
+      "selectionne": false,
+      "Q_ok_1p5": false
+    },
+    {
+      "nom": "136Xe",
+      "A": 136,
+      "Z": 54,
+      "Q1": 2.61,
+      "Q2": 7.69,
+      "Q2_mes": 2.46,
+      "T12_mes": 2.2e+21,
+      "selectionne": false,
+      "Q_ok_1p5": false
+    },
+    {
+      "nom": "150Nd",
+      "A": 150,
+      "Z": 60,
+      "Q1": 1.11,
+      "Q2": 4.63,
+      "Q2_mes": 3.37,
+      "T12_mes": 9.1e+18,
+      "selectionne": false,
+      "Q_ok_1p5": true
+    }
+  ],
+  "temoins": [
+    {
+      "nom": "40Ca",
+      "A": 40,
+      "Z": 20,
+      "Q1": -13.33,
+      "Q2": -24.13,
+      "selectionne": false,
+      "rejete": true
+    },
+    {
+      "nom": "56Fe",
+      "A": 56,
+      "Z": 26,
+      "Q1": -6.78,
+      "Q2": -10.83,
+      "selectionne": false,
+      "rejete": true
+    },
+    {
+      "nom": "88Sr",
+      "A": 88,
+      "Z": 38,
+      "Q1": -1.96,
+      "Q2": -1.22,
+      "selectionne": false,
+      "rejete": true
+    },
+    {
+      "nom": "120Sn",
+      "A": 120,
+      "Z": 50,
+      "Q1": -0.74,
+      "Q2": 1.06,
+      "selectionne": true,
+      "rejete": false
+    },
+    {
+      "nom": "138Ba",
+      "A": 138,
+      "Z": 56,
+      "Q1": 0.54,
+      "Q2": 3.54,
+      "selectionne": false,
+      "rejete": true
+    },
+    {
+      "nom": "140Ce",
+      "A": 140,
+      "Z": 58,
+      "Q1": -1.49,
+      "Q2": -0.52,
+      "selectionne": false,
+      "rejete": true
+    },
+    {
+      "nom": "142Ce",
+      "A": 142,
+      "Z": 58,
+      "Q1": -0.31,
+      "Q2": 1.84,
+      "selectionne": true,
+      "rejete": false
+    },
+    {
+      "nom": "208Pb",
+      "A": 208,
+      "Z": 82,
+      "Q1": -0.96,
+      "Q2": 0.28,
+      "selectionne": false,
+      "rejete": true
+    }
+  ],
+  "selection_emetteurs": "2/9",
+  "rejet_temoins": "6/8",
+  "sans_appariement_selectionnes": "0/9",
+  "pente_T_Q": 7.2,
+  "offset_systematique_Qbb": 2.56,
+  "verdict": {
+    "mecanisme_appariement_derive": true,
+    "Qbb_signe_emetteurs_9sur9": true,
+    "levier_appariement_discriminant": true,
+    "faux_positifs_localises_magiques_P16": true,
+    "pente_phase_6_16": true,
+    "Qbb_magnitude_1.5MeV_echec_documente": false
+  },
+  "score": "5/6",
+  "lecture": "l'appariement est le selecteur : il bloque le beta simple (impair-impair) et ouvre le double-beta ; signes Q 9/9 ; faux positifs 120Sn/138Ba = echecs magiques P16 reproduits ; magnitudes Qbb surestimees +2.6 MeV en moyenne (BW lisse, frontiere coquille P29) ; scaling T~Q^-7 en tendance ; l'etalement des T a Q fixe = elements de matrice = reponse 2 corps (P28)"
+}
