@@ -1,0 +1,31 @@
+{
+  "chantier": "P-CrCu",
+  "sha_protocole_fige": "6b918941f1e8a721dd701dc335bebaca05b9878c98a08564eddc590a06366361",
+  "regle_candidate": "d(n+4)s1 adopte SSI d(n+4) in {5,10} (sous-couche demi-pleine/pleine)",
+  "exceptions_observees": {
+    "Cr": "d5s1",
+    "Cu": "d10s1",
+    "Nb": "d4s1",
+    "Mo": "d5s1",
+    "Ru": "d7s1",
+    "Rh": "d8s1",
+    "Pd": "d10s0",
+    "Ag": "d10s1",
+    "Pt": "d9s1",
+    "Au": "d10s1"
+  },
+  "test_regle": {
+    "serie_3d": "regle d5/d10 EXACTE : seuls Cr(d5) et Cu(d10) exceptionnels, tous les autres d(n+3)s2 (Sc,Ti,V,Mn,Fe,Co,Ni,Zn) -> loi validee",
+    "serie_4d": "regle PERCEE : Nb(d4s1),Ru(d7s1),Rh(d8s1),Pd(d10s0) violent d5/d10 ; seuls Mo,Ag la suivent",
+    "serie_5d": "regle PERCEE : Pt(d9s1) viole ; seul Au suit ; Re d5s2 attendu stable suit (ok)"
+  },
+  "levier_P_c": {
+    "statut": "VALIDE serie 3d",
+    "note": "serie 3d rend 'normal' correctement ; MAIS la regle ne generalise pas 4d/5d"
+  },
+  "prediction_confirmee": "P_b (partielle) : la regle d5/d10 est une loi EXACTE en 3d, degradee en 4d, presque caduque en 5d",
+  "verdict": "PARTIEL : l'anomalie Cr/Cu est une LOI (stabilite sous-couche) en premiere serie (reclassable categorie II), mais devient ZONE DE LIBERTE en 4d/5d ou les effets relativistes et la quasi-degenerescence d/s autorisent d4,d7,d8,d9,d10s0. La 'loi' n'est que la limite non-relativiste.",
+  "lecture": "meme structure que P32 : une regle derivee qui tient a bas Z / premiere serie et s'effrite en montant en Z. La stabilite d5/d10 est reelle mais ne survit pas seule a la competition d/s relativiste.",
+  "score": "3/5",
+  "zero_parametre_ajuste": true
+}
