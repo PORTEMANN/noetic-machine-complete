@@ -1,0 +1,24 @@
+{
+  "chantier": "P-CrCu (hors-programme, suite bifurcations)",
+  "titre": "Anomalies de remplissage Cr/Cu : loi de sous-couche ou bruit de liberte ?",
+  "date_gel": "2026-08-06",
+  "regle": "C12.1 - predictions figees AVANT calcul ; B3-FAIL ; zero parametre ajuste",
+  "contexte": "P14 a range Cr, Cu (et Mo, Ag, Au...) en zone de liberte residuelle : configuration d(n+4)s1 au lieu du d(n+3)s2 attendu par la regle de remplissage derivee. Question : cette exception suit-elle une LOI (stabilite de sous-couche demi-pleine d5 / pleine d10) ou est-elle non derivable ?",
+  "question_de_verdict": "Un discriminant derive sans parametre predit-il QUELS elements de transition adoptent d(n+4)s1 (exception) vs d(n+3)s2 (regle) ? Si la regle d5/d10 (demi-pleine/pleine) suffit a predire exactement Cr,Cu,Mo,Pd,Ag,Pt,Au et AUCUN autre, l'anomalie est une loi. Sinon zone de liberte.",
+  "proprietes_D_eprouvees": {
+    "liste": [
+      "configuration observee (NIST) : d et s de la couche de valence",
+      "regle candidate : d(n+4)s1 adopte SSI d(n+4) est demi-pleine (d5) ou pleine (d10)",
+      "comparaison premiere/2e/3e serie de transition (3d, 4d, 5d)"
+    ],
+    "source": "configurations mesurees, non ajustees"
+  },
+  "predictions_figees": {
+    "P_a": "la regle derivee d5/d10 predit EXACTEMENT les exceptions observees (Cr d5s1, Cu d10s1, Mo d5s1, Pd d10, Ag d10s1, Pt d9s1, Au d10s1) et n'en predit aucune fausse -> l'anomalie est une LOI (stabilite de sous-couche), reclassable categorie II",
+    "P_b": "la regle d5/d10 predit des exceptions qui ne sont PAS observees (ex. Mn, Tc d5 attendus stables mais restent d5s2) ou en manque -> l'anomalie est partiellement une loi, partiellement liberte",
+    "P_c": "levier : la regle d5/d10 rend correctement 'normal' (d(n+3)s2) pour les temoins sans exception (Sc,Ti,V,Mn,Fe,Co,Ni,Zn serie 3d) ; sinon regle invalide"
+  },
+  "regle_verdict": "SUCCES si P_a (loi exacte) avec levier P_c ; PARTIEL si P_b ; B3-FAIL honore",
+  "zero_parametre_ajuste": true,
+  "lien_corpus": "meme logique de verdict que P-He / P-LaLr ; aucun verdict existant modifie"
+}
