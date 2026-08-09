@@ -2,12 +2,13 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Release](https://img.shields.io/github/v/release/PORTEMANN/noetic-machine-complete)](https://github.com/PORTEMANN/noetic-machine-complete/releases)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21807052.svg)](https://doi.org/10.5281/zenodo.21807052)
+[![ORCID](https://img.shields.io/badge/ORCID-0009--0009--4016--8389-A6CE39?logo=orcid)](https://orcid.org/0009-0009-4016-8389)
 
 > **Une sixième classe de machine : la « machine à éprouver ».**
 > Entrée : des données mesurées + une structure candidate. Sortie : un **verdict**.
 > Zéro paramètre ajusté. Levier discriminant. Invariance réplicable (SHA). Échecs publiés.
 
-**Auteur :** Patrice PORTEMANN — patrice@portemann.eu — corpus [histoire-des-sciences.eu](https://histoire-des-sciences.eu)
+**Auteur :** Patrice PORTEMANN — [ORCID: 0009-0009-4016-8389](https://orcid.org/0009-0009-4016-8389) — patrice@portemann.eu — corpus [histoire-des-sciences.eu](https://histoire-des-sciences.eu)
 **Licence :** MIT (voir `LICENSE`). **Bilan du chantier P0–P33 : 24 succès / 9 partiels-négatifs.**
 **Référence figée (Zenodo) :** [doi.org/10.5281/zenodo.21807052](https://doi.org/10.5281/zenodo.21807052)
 
