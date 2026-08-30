@@ -203,16 +203,30 @@ FRONTIÈRES = [
         "p31_portee.py contient un intégrande cinétique défectueux (mélange "
         "de formes IBP — distorsion mesurée jusqu'à +0.13 Ha) — re-publication "
         "avec la forme |∇Ψ|² de P39",
-        "audit A3 + audit P39 (2026-08-30)", "SHASUMS.txt du dépôt", "ouverte",
+        "audit A3 + audit P39 (2026-08-30)", "SHASUMS.txt du dépôt", "fermée",
         "re-publier les sources Python propres (p32, p33) et corrigées (p31, "
         "forme |∇Ψ|²), régénérer les JSON/PNG, mettre SHASUMS.txt à jour — "
-        "coût : une republication",
+        "PAYÉ : p32/p33 restitués au commit 27b0db7 (npts=80 retrouvé par "
+        "scan, les 30 valeurs figées des JSON reproduites à 5 décimales) ; "
+        "p31 re-publié avec l'intégrande |∇Ψ|² portée de P39 — T1 mesure "
+        "les deux formes : écart jusqu'à 0.14 Ha avec changement de "
+        "signe (β≈2.7), et la forme corpus plonge sous E_ref à "
+        "grand β (anomalie variationnelle) ; avec la forme corrigée le verdict "
+        "historique de P31 bascule de 3/5 à 5/5 (R3 densité, gain 0.020 "
+        "Ha = 29 % du résiduel split-ζ) — la « frontière constitutive » "
+        "de P31 était un artefact de l'intégrande ; SHASUMS.txt régénéré "
+        "sur l'arbre complet",
         {"verdict": "hors-domaine",
          "justification": "frontière d'hygiène de publication — aucun "
                           "comptage de degrés de liberté ne s'applique"},
         {"sha_mesurés": "p32 bbf42182… vs registre 60a868bd… ; "
-                        "p33 1a4bb130… vs registre 286f9888…"},
-        "des sources conformes au registre tuent l'entrée"),
+                        "p33 1a4bb130… vs registre 286f9888…",
+         "sha_réparés": "p32 cc94ef3e… ; p33 29505862… (conformes aux "
+                        "valeurs figées)",
+         "scripts": "p31_portee.py (corrigé), p32_frontiere.py, p33_queue.py",
+         "verdicts": "p31_portee.json (5/5 corrigé), p32/p33 JSON figés"},
+        "des sources conformes au registre tuent l'entrée — conformes et "
+        "rejouées : entrée tuée (2026-08-30)"),
     entree(
         "F10-CODE-FRACTIONNAIRE", "hygiène",
         "Topological-Fractional-AI : résultats publiés (84.1 % AUC, 28 "
