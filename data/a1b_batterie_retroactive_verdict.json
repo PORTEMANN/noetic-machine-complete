@@ -1,0 +1,258 @@
+{
+  "chantier": "A1B-BATTERIE-RETROACTIVE",
+  "registre": "ferme F7-PARTIELS-PROTOCOLE (A4, REG-FR-1.0) : le coût de fermeture déclaré était l'encapsulation f(π) + la batterie A1 + la publication des couples (V, Σ) — payé",
+  "protocole": "PERT-BATT-1.0 (gelé, hérité d'A1) — plan factoriel axial, une coordonnée perturbée à la fois, axes déclarés avant exécution",
+  "discipline": "D repris à l'identique du corpus (p13_stabilite.py, p22_doublebeta.py) ; seuls les choix de protocole π sont perturbés ; les verdicts nominaux sont recalculés par les formules du corpus, non relitigés",
+  "rapports": {
+    "P13-STABILITE": {
+      "chantier": "P13-STABILITE",
+      "n_protocoles_testés": 13,
+      "protocole_nominal": {
+        "tol_gn": 0.15,
+        "seuil_hiérarchie": 15.0,
+        "cassure_bas": 1.0,
+        "cassure_haut": 2.0,
+        "tol_regge": 0.15
+      },
+      "axes_déclarés": {
+        "tol_gn": [
+          0.1,
+          0.2,
+          0.25
+        ],
+        "seuil_hiérarchie": [
+          12.0,
+          18.0
+        ],
+        "cassure_bas": [
+          0.8,
+          1.2
+        ],
+        "cassure_haut": [
+          1.8,
+          2.2
+        ],
+        "tol_regge": [
+          0.1,
+          0.2,
+          0.25
+        ]
+      },
+      "verdicts_nominaux": {
+        "geiger_nuttall_pente": true,
+        "hiérarchie_ordres": true,
+        "cassure_corde_calculée": true,
+        "regge_pente": true
+      },
+      "stabilité_par_composante": {
+        "geiger_nuttall_pente": 1.0,
+        "hiérarchie_ordres": 1.0,
+        "cassure_corde_calculée": 1.0,
+        "regge_pente": 1.0
+      },
+      "fragilités_publiées": {},
+      "dispersion_mesures": {
+        "pente_calc": {
+          "min": 1.602762,
+          "max": 1.602762,
+          "nominal": 1.602762
+        },
+        "pente_mes": {
+          "min": 1.574019,
+          "max": 1.574019,
+          "nominal": 1.574019
+        },
+        "marge_gn": {
+          "min": 0.018261,
+          "max": 0.018261,
+          "nominal": 0.018261
+        },
+        "ordres_couverts": {
+          "min": 32.688108,
+          "max": 32.688108,
+          "nominal": 32.688108
+        },
+        "r_casse_fm": {
+          "min": 1.699205,
+          "max": 1.699205,
+          "nominal": 1.699205
+        },
+        "alpha_p_GeV_2": {
+          "min": 0.884194,
+          "max": 0.884194,
+          "nominal": 0.884194
+        },
+        "marge_regge": {
+          "min": 0.017562,
+          "max": 0.017562,
+          "nominal": 0.017562
+        }
+      },
+      "mesures_nominales": {
+        "pente_calc": 1.6027624464692047,
+        "pente_mes": 1.574019095901817,
+        "marge_gn": 0.018261119348694788,
+        "ordres_couverts": 32.68810778176908,
+        "r_casse_fm": 1.6992047222222224,
+        "alpha_p_GeV_2": 0.8841941282883075,
+        "marge_regge": 0.017562079679658404
+      }
+    },
+    "P22-DOUBLE-BETA": {
+      "chantier": "P22-DOUBLE-BETA",
+      "n_protocoles_testés": 16,
+      "protocole_nominal": {
+        "seuil_q2": 0.5,
+        "seuil_q1": 0.5,
+        "tol_qok": 1.5,
+        "pente_min": 6.0,
+        "pente_max": 16.0,
+        "seuil_levier": 4,
+        "n_min_qok": 7
+      },
+      "axes_déclarés": {
+        "seuil_q2": [
+          0.3,
+          0.7,
+          1.0
+        ],
+        "seuil_q1": [
+          0.3,
+          0.7
+        ],
+        "tol_qok": [
+          1.0,
+          2.0
+        ],
+        "pente_min": [
+          5.0,
+          7.0
+        ],
+        "pente_max": [
+          14.0,
+          18.0
+        ],
+        "seuil_levier": [
+          3,
+          5
+        ],
+        "n_min_qok": [
+          6,
+          8
+        ]
+      },
+      "verdicts_nominaux": {
+        "mécanisme_appariement_dérivé": true,
+        "Qbb_signe_émetteurs_9sur9": true,
+        "levier_appariement_discriminant": true,
+        "faux_positifs_localisés_magiques_P16": true,
+        "pente_phase_bornée": true,
+        "Qbb_magnitude_échec_documenté": false
+      },
+      "stabilité_par_composante": {
+        "mécanisme_appariement_dérivé": 1.0,
+        "Qbb_signe_émetteurs_9sur9": 1.0,
+        "levier_appariement_discriminant": 1.0,
+        "faux_positifs_localisés_magiques_P16": 0.9375,
+        "pente_phase_bornée": 1.0,
+        "Qbb_magnitude_échec_documenté": 1.0
+      },
+      "fragilités_publiées": {
+        "faux_positifs_localisés_magiques_P16": [
+          "seuil_q1 = 0.7 → False (nominal : True)"
+        ]
+      },
+      "dispersion_mesures": {
+        "pente_n_phase": {
+          "min": 7.192892,
+          "max": 7.192892,
+          "nominal": 7.192892
+        },
+        "offset_systématique_qbb": {
+          "min": 2.56194,
+          "max": 2.56194,
+          "nominal": 2.56194
+        },
+        "sélection_émetteurs": {
+          "min": 2.0,
+          "max": 2.0,
+          "nominal": 2.0
+        },
+        "faux_positifs_témoins": {
+          "min": 2.0,
+          "max": 3.0,
+          "nominal": 2.0
+        },
+        "sans_appariement_sélectionnés": {
+          "min": 0.0,
+          "max": 0.0,
+          "nominal": 0.0
+        },
+        "n_qok": {
+          "min": 3.0,
+          "max": 4.0,
+          "nominal": 4.0
+        }
+      },
+      "mesures_nominales": {
+        "pente_n_phase": 7.192891771287254,
+        "offset_systématique_qbb": 2.5619396026779118,
+        "sélection_émetteurs": 2.0,
+        "faux_positifs_témoins": 2.0,
+        "sans_appariement_sélectionnés": 0.0,
+        "n_qok": 4.0
+      }
+    }
+  },
+  "prédictions_pré_enregistrées": {
+    "P-A1b-1_P13_intégralement_stable": {
+      "statut": "CONFIRMÉE",
+      "détail": {
+        "geiger_nuttall_pente": 1.0,
+        "hiérarchie_ordres": 1.0,
+        "cassure_corde_calculée": 1.0,
+        "regge_pente": 1.0
+      }
+    },
+    "P-A1b-2_P22_structurel_stable_fragilités_confinées_aux_seuils": {
+      "statut": "CONFIRMÉE",
+      "détail": {
+        "mécanisme_appariement_dérivé": 1.0,
+        "Qbb_signe_émetteurs_9sur9": 1.0,
+        "levier_appariement_discriminant": 1.0,
+        "faux_positifs_localisés_magiques_P16": 0.9375,
+        "pente_phase_bornée": 1.0,
+        "Qbb_magnitude_échec_documenté": 1.0
+      }
+    }
+  },
+  "verdict_global": {
+    "C0_reproductibilité": "PASS — deux exécutions, (V, Σ) identiques sur les deux chantiers",
+    "C1_D_et_S_intacts": "PASS — seul π est perturbé ; D copié du corpus sans retouche",
+    "C2_fragilités_publiées": "voir fragilités_publiées par chantier",
+    "couples_V_Σ": {
+      "P13": {
+        "V_nominal": {
+          "geiger_nuttall_pente": true,
+          "hiérarchie_ordres": true,
+          "cassure_corde_calculée": true,
+          "regge_pente": true
+        },
+        "Σ_min": 1.0
+      },
+      "P22": {
+        "V_nominal": {
+          "mécanisme_appariement_dérivé": true,
+          "Qbb_signe_émetteurs_9sur9": true,
+          "levier_appariement_discriminant": true,
+          "faux_positifs_localisés_magiques_P16": true,
+          "pente_phase_bornée": true,
+          "Qbb_magnitude_échec_documenté": false
+        },
+        "Σ_min": 0.9375
+      }
+    }
+  },
+  "falsifieur": "l'exécution de la batterie fixe le statut de F7 (registre A4) — exécutée",
+  "sha256_script": "950ba05c3d90d39aeeb4a0aac2c14e5b293aeb3761381bc90aabf0c865e71d2e"
+}

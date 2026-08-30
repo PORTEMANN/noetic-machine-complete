@@ -3,7 +3,7 @@
   "protocole": "CONJ-FR-1.0 (gelé) — registre A4 comme donnée figée, domaine déclaré avant agrégation, aucune réinterprétation",
   "donnée": {
     "registre": "A4-FRONTIÈRES-MESURÉES",
-    "sha256_registre": "4b82ca3fdbb5ae882a224798f4dcab2ab1d7d1d5f8cf7b914ff9e8b931976224"
+    "sha256_registre": "45dc0619d66f285083f61bcabb6907a7bbb8b6d44562738ec3ac42acb375584b"
   },
   "points_mesurés": {
     "F1-XOR": "déficit",
@@ -12,6 +12,7 @@
     "F4-KO6-ENUMERATION": "déficit",
     "F5-BPS-ECHELLE": "mode non contraint",
     "F6-COEUR-DIFFUS": "déficit",
+    "F7-PARTIELS-PROTOCOLE": "équilibre",
     "F8-ZMAX-E8": "déficit",
     "F11-MEMOIRE-FRACTIONNAIRE": "déficit",
     "F12-PROFONDEUR-CONSTITUTIVE": "déficit",
@@ -19,26 +20,26 @@
     "F14-PONT-120-E8": "équilibre",
     "F15-EXCITABILITE-REELLE": "déficit"
   },
-  "n_points": 12,
+  "n_points": 13,
   "conjecture_v1": {
     "énoncé": "toute frontière mesurée est un déficit de dimension/degré de liberté",
-    "conformes": "10/12",
+    "conformes": "10/13",
     "contre_exemples": {
       "F5-BPS-ECHELLE": "mode non contraint",
+      "F7-PARTIELS-PROTOCOLE": "équilibre",
       "F14-PONT-120-E8": "équilibre"
     },
-    "statut": "RÉFUTÉE par F5-BPS-ECHELLE, F14-PONT-120-E8"
+    "statut": "RÉFUTÉE par F5-BPS-ECHELLE, F7-PARTIELS-PROTOCOLE, F14-PONT-120-E8"
   },
   "conjecture_v2": {
     "énoncé": "v2 (raffinée sur le contre-exemple publié) : toute frontière mesurée est un DÉFAUT DE COMPTAGE des degrés de liberté — déficit (structure manquante : hyperplan, état, champ, 2-corps, représentations) ou MODE NON CONTRAINT (direction sans coût : mode zéro d'échelle au point BPS)",
-    "couverture_domaine": "11/12",
+    "couverture_domaine": "11/13",
     "statut": "en vigueur — éprouvée prospectivement sur les points pré-enregistrés"
   },
-  "points_pré_enregistrés_en_attente": {
-    "F7-PARTIELS-PROTOCOLE": "sa fermeture devra être un défaut de comptage de ddll (sinon v2 tombe)"
-  },
+  "points_pré_enregistrés_en_attente": {},
   "b3_fail": [
     "v1 réfutée par F5-BPS-ECHELLE (mode non contraint)",
+    "v1 réfutée par F7-PARTIELS-PROTOCOLE (équilibre)",
     "v1 réfutée par F14-PONT-120-E8 (équilibre)"
   ],
   "falsifieur": "v2 est tuée par toute frontière mesurée dont la fermeture ne change aucun comptage de degrés de liberté (ni ajout, ni contrainte, ni fixation de mode)",

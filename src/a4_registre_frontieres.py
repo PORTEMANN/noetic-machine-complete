@@ -152,16 +152,27 @@ FRONTIÈRES = [
         "F7-PARTIELS-PROTOCOLE", "méthode",
         "P13 (stabilité) et P22 (double bêta) sont partiels — le programme A1 "
         "prédit une sensibilité au protocole non encore mesurée",
-        "P13, P22 (corpus) — batterie rétroactive A1 à exécuter",
-        "PERT-BATT-1.0 (application rétroactive planifiée)", "ouverte",
+        "P13, P22 (corpus) — batterie rétroactive A1b exécutée (2026-08-30)",
+        "PERT-BATT-1.0 (application rétroactive A1b)", "fermée",
         "encapsuler P13/P22 en f(π) et passer la batterie A1 ; publier les "
-        "couples (V, Σ)",
-        {"verdict": "hors-domaine (en attente de mesure)",
-         "justification": "tant que la batterie n'a pas tourné, le comptage "
-                          "de ddll est indéterminé — le registre refuse les "
-                          "verdicts anticipés"},
-        {"pré-requis": "a1_batterie_perturbation.py"},
-        "l'exécution de la batterie fixe le statut"),
+        "couples (V, Σ) — PAYÉ par A1b : P13 (V=4/4, Σ_min=1.00, 13 "
+        "protocoles) ; P22 (V=5/6 nominal inchangé, Σ_min=0.94, 16 "
+        "protocoles ; une fragilité publiée : faux_positifs sous seuil_q1 "
+        "= 0.7, B3-FAIL de protocole) ; prédictions pré-enregistrées "
+        "P-A1b-1 (P13 intégralement stable) et P-A1b-2 (fragilités P22 "
+        "confinées aux composantes à seuil) CONFIRMÉES toutes les deux",
+        {"verdict": "équilibre",
+         "justification": "la fermeture n'ajoute ni ne retire de ddll "
+                          "physique : les axes de protocole existaient déjà "
+                          "dans les scripts du corpus — ils sont désormais "
+                          "déclarés, perturbés et mesurés ; la sensibilité "
+                          "prédite est mesurée (1 composante fragile sur 10)"},
+        {"pré-requis": "a1_batterie_perturbation.py",
+         "script": "a1b_batterie_retroactive.py",
+         "verdict": "a1b_batterie_retroactive_verdict.json"},
+        "l'exécution de la batterie fixe le statut — exécutée : toute "
+        "réexécution de a1b donnant un couple (V, Σ) différent rouvre "
+        "l'entrée"),
     entree(
         "F8-ZMAX-E8", "physique",
         "Z_max ≈ 179 (échelle koïlon 2^(1/12), N = 12·log₂(1/α) = 120 = "

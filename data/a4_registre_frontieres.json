@@ -20,8 +20,8 @@
   ],
   "n_entrées": 15,
   "par_statut": {
-    "fermée": 4,
-    "ouverte": 6,
+    "fermée": 5,
+    "ouverte": 5,
     "partielle": 5
   },
   "par_type": {
@@ -148,19 +148,21 @@
       "id": "F7-PARTIELS-PROTOCOLE",
       "type": "méthode",
       "énoncé": "P13 (stabilité) et P22 (double bêta) sont partiels — le programme A1 prédit une sensibilité au protocole non encore mesurée",
-      "chantier_source": "P13, P22 (corpus) — batterie rétroactive A1 à exécuter",
-      "protocole": "PERT-BATT-1.0 (application rétroactive planifiée)",
-      "statut": "ouverte",
-      "coût_de_fermeture_exact": "encapsuler P13/P22 en f(π) et passer la batterie A1 ; publier les couples (V, Σ)",
+      "chantier_source": "P13, P22 (corpus) — batterie rétroactive A1b exécutée (2026-08-30)",
+      "protocole": "PERT-BATT-1.0 (application rétroactive A1b)",
+      "statut": "fermée",
+      "coût_de_fermeture_exact": "encapsuler P13/P22 en f(π) et passer la batterie A1 ; publier les couples (V, Σ) — PAYÉ par A1b : P13 (V=4/4, Σ_min=1.00, 13 protocoles) ; P22 (V=5/6 nominal inchangé, Σ_min=0.94, 16 protocoles ; une fragilité publiée : faux_positifs sous seuil_q1 = 0.7, B3-FAIL de protocole) ; prédictions pré-enregistrées P-A1b-1 (P13 intégralement stable) et P-A1b-2 (fragilités P22 confinées aux composantes à seuil) CONFIRMÉES toutes les deux",
       "comptage_ddll": {
-        "verdict": "hors-domaine (en attente de mesure)",
-        "justification": "tant que la batterie n'a pas tourné, le comptage de ddll est indéterminé — le registre refuse les verdicts anticipés"
+        "verdict": "équilibre",
+        "justification": "la fermeture n'ajoute ni ne retire de ddll physique : les axes de protocole existaient déjà dans les scripts du corpus — ils sont désormais déclarés, perturbés et mesurés ; la sensibilité prédite est mesurée (1 composante fragile sur 10)"
       },
       "artefacts": {
-        "pré-requis": "a1_batterie_perturbation.py"
+        "pré-requis": "a1_batterie_perturbation.py",
+        "script": "a1b_batterie_retroactive.py",
+        "verdict": "a1b_batterie_retroactive_verdict.json"
       },
-      "falsifieur": "l'exécution de la batterie fixe le statut",
-      "sha256_entrée": "8036c823915cdfd55055af53b3ba07f505c4be5223ca6facf6cf10c8cacff8b9"
+      "falsifieur": "l'exécution de la batterie fixe le statut — exécutée : toute réexécution de a1b donnant un couple (V, Σ) différent rouvre l'entrée",
+      "sha256_entrée": "4e0fa553ae57987ebefc04bc8460028c2c44f88a1d8774e1f0af3e0537c6696e"
     },
     {
       "id": "F8-ZMAX-E8",
@@ -315,6 +317,6 @@
       "sha256_entrée": "f5e0ffaa08459749384507328c89301460bb8b07ac223bfbe10a4ead91d28216"
     }
   ],
-  "sha256_registre": "4b82ca3fdbb5ae882a224798f4dcab2ab1d7d1d5f8cf7b914ff9e8b931976224",
-  "sha256_script": "0076fc0239e0c518618f9b0f1289ff77b1b53f30447f319aa97ba328ea401c6a"
+  "sha256_registre": "45dc0619d66f285083f61bcabb6907a7bbb8b6d44562738ec3ac42acb375584b",
+  "sha256_script": "7f6ca3525eff96f54d591e04cd3e5158dbf38f52d5461baeb79a6e4eedf03f01"
 }
