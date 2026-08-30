@@ -1,0 +1,448 @@
+{
+  "chantier": "P44-EEG-MI-REEL",
+  "protocole": "EEG-MI-1.0 (gelé)",
+  "D": {
+    "dataset": "BCICIV-2a (sessions T)",
+    "sha256_par_sujet": {
+      "A01T": "74d900ce83a115509f663c0ac45bd36d56f05be528064743c49b0c2efb5088a3",
+      "A02T": "66c9eaf971198d08c95dc272fd310dc2a2f8fe470b7a4f29971a75552cdc2a56",
+      "A03T": "b6327b61ad725062b538ac9bc4c4cbe792ff841a2b009b971ac151cb7a83f02d",
+      "A04T": "2ce34de240bbf3d25b0dc8b54ead5a9b1fea743b8184d60c2b6c57e1bf0c9409",
+      "A05T": "62558a31c342aa56fc93ae702a62fada9024b814a7adaab8069ca94027b2e917",
+      "A06T": "ae709d09ac15c19d3c0af3c32de7f7101c0699dd72cdcacc4d7234e9a57d3169",
+      "A07T": "331dae51fb07685b06526ee04994fb41230177d357c95e9d7cfa5977191a8155",
+      "A08T": "0aa60752dcf02d7a88a0fdaf7082b68b57bc7a2e16698c89174aadce45d627d8",
+      "A09T": "3e585fd3a4f10ded77003492529433abe6d172e80316cb068997ff4b498c3bc4"
+    },
+    "artefacts": "non rejetés (déclaré v1)"
+  },
+  "S": {
+    "noyau": "p43_ash_core_v100.py (ASH v1.0.0, blob c9dd73c2…)"
+  },
+  "π": {
+    "f0": 1.0,
+    "n_octaves": 5,
+    "window_duration": 3.0,
+    "overlap": 0.5,
+    "bande_μ_notes": [
+      36,
+      44
+    ],
+    "bande_θ_notes": [
+      24,
+      35
+    ],
+    "segment_MI": [
+      "repère+1.0s",
+      "repère+4.0s"
+    ]
+  },
+  "règle": "A = o_C3/(o_C3+o_C4) ; A<0.5 → droite, A>0.5 → gauche (ERD controlatérale) — zéro paramètre, zéro calibration",
+  "résultats_par_sujet": {
+    "A01T": {
+      "n_essais_par_classe": {
+        "gauche": 72,
+        "droite": 72,
+        "pieds": 72,
+        "langue": 72
+      },
+      "regle_mu_C3C4": {
+        "bon": 78,
+        "total": 144,
+        "précision": 0.5417
+      },
+      "levier_L1_theta": {
+        "bon": 75,
+        "total": 144,
+        "précision": 0.5208
+      },
+      "levier_L2_P1P2": {
+        "bon": 83,
+        "total": 144,
+        "précision": 0.5764
+      },
+      "v2_regle_mu_C3C4": {
+        "bon": 70,
+        "total": 144,
+        "précision": 0.4861
+      },
+      "v2_levier_L1_theta": 0.5556,
+      "v2_levier_L2_P1P2": 0.5486
+    },
+    "A02T": {
+      "n_essais_par_classe": {
+        "gauche": 72,
+        "droite": 72,
+        "pieds": 72,
+        "langue": 72
+      },
+      "regle_mu_C3C4": {
+        "bon": 72,
+        "total": 144,
+        "précision": 0.5
+      },
+      "levier_L1_theta": {
+        "bon": 67,
+        "total": 144,
+        "précision": 0.4653
+      },
+      "levier_L2_P1P2": {
+        "bon": 68,
+        "total": 144,
+        "précision": 0.4722
+      },
+      "v2_regle_mu_C3C4": {
+        "bon": 79,
+        "total": 144,
+        "précision": 0.5486
+      },
+      "v2_levier_L1_theta": 0.4722,
+      "v2_levier_L2_P1P2": 0.4653
+    },
+    "A03T": {
+      "n_essais_par_classe": {
+        "gauche": 72,
+        "droite": 72,
+        "pieds": 72,
+        "langue": 72
+      },
+      "regle_mu_C3C4": {
+        "bon": 111,
+        "total": 144,
+        "précision": 0.7708
+      },
+      "levier_L1_theta": {
+        "bon": 64,
+        "total": 144,
+        "précision": 0.4444
+      },
+      "levier_L2_P1P2": {
+        "bon": 88,
+        "total": 144,
+        "précision": 0.6111
+      },
+      "v2_regle_mu_C3C4": {
+        "bon": 77,
+        "total": 144,
+        "précision": 0.5347
+      },
+      "v2_levier_L1_theta": 0.4931,
+      "v2_levier_L2_P1P2": 0.5972
+    },
+    "A04T": {
+      "n_essais_par_classe": {
+        "gauche": 72,
+        "droite": 72,
+        "pieds": 72,
+        "langue": 72
+      },
+      "regle_mu_C3C4": {
+        "bon": 77,
+        "total": 144,
+        "précision": 0.5347
+      },
+      "levier_L1_theta": {
+        "bon": 70,
+        "total": 144,
+        "précision": 0.4861
+      },
+      "levier_L2_P1P2": {
+        "bon": 83,
+        "total": 144,
+        "précision": 0.5764
+      },
+      "v2_regle_mu_C3C4": {
+        "bon": 70,
+        "total": 144,
+        "précision": 0.4861
+      },
+      "v2_levier_L1_theta": 0.4306,
+      "v2_levier_L2_P1P2": 0.4514
+    },
+    "A05T": {
+      "n_essais_par_classe": {
+        "gauche": 72,
+        "droite": 72,
+        "pieds": 72,
+        "langue": 72
+      },
+      "regle_mu_C3C4": {
+        "bon": 73,
+        "total": 144,
+        "précision": 0.5069
+      },
+      "levier_L1_theta": {
+        "bon": 65,
+        "total": 144,
+        "précision": 0.4514
+      },
+      "levier_L2_P1P2": {
+        "bon": 67,
+        "total": 144,
+        "précision": 0.4653
+      },
+      "v2_regle_mu_C3C4": {
+        "bon": 81,
+        "total": 144,
+        "précision": 0.5625
+      },
+      "v2_levier_L1_theta": 0.5069,
+      "v2_levier_L2_P1P2": 0.4583
+    },
+    "A06T": {
+      "n_essais_par_classe": {
+        "gauche": 72,
+        "droite": 72,
+        "pieds": 72,
+        "langue": 72
+      },
+      "regle_mu_C3C4": {
+        "bon": 67,
+        "total": 144,
+        "précision": 0.4653
+      },
+      "levier_L1_theta": {
+        "bon": 69,
+        "total": 144,
+        "précision": 0.4792
+      },
+      "levier_L2_P1P2": {
+        "bon": 63,
+        "total": 144,
+        "précision": 0.4375
+      },
+      "v2_regle_mu_C3C4": {
+        "bon": 80,
+        "total": 144,
+        "précision": 0.5556
+      },
+      "v2_levier_L1_theta": 0.4514,
+      "v2_levier_L2_P1P2": 0.5556
+    },
+    "A07T": {
+      "n_essais_par_classe": {
+        "gauche": 72,
+        "droite": 72,
+        "pieds": 72,
+        "langue": 72
+      },
+      "regle_mu_C3C4": {
+        "bon": 70,
+        "total": 144,
+        "précision": 0.4861
+      },
+      "levier_L1_theta": {
+        "bon": 66,
+        "total": 144,
+        "précision": 0.4583
+      },
+      "levier_L2_P1P2": {
+        "bon": 62,
+        "total": 144,
+        "précision": 0.4306
+      },
+      "v2_regle_mu_C3C4": {
+        "bon": 73,
+        "total": 144,
+        "précision": 0.5069
+      },
+      "v2_levier_L1_theta": 0.4861,
+      "v2_levier_L2_P1P2": 0.5208
+    },
+    "A08T": {
+      "n_essais_par_classe": {
+        "gauche": 72,
+        "droite": 72,
+        "pieds": 72,
+        "langue": 72
+      },
+      "regle_mu_C3C4": {
+        "bon": 80,
+        "total": 144,
+        "précision": 0.5556
+      },
+      "levier_L1_theta": {
+        "bon": 71,
+        "total": 144,
+        "précision": 0.4931
+      },
+      "levier_L2_P1P2": {
+        "bon": 78,
+        "total": 144,
+        "précision": 0.5417
+      },
+      "v2_regle_mu_C3C4": {
+        "bon": 71,
+        "total": 144,
+        "précision": 0.4931
+      },
+      "v2_levier_L1_theta": 0.4931,
+      "v2_levier_L2_P1P2": 0.5
+    },
+    "A09T": {
+      "n_essais_par_classe": {
+        "gauche": 72,
+        "droite": 72,
+        "pieds": 72,
+        "langue": 72
+      },
+      "regle_mu_C3C4": {
+        "bon": 72,
+        "total": 144,
+        "précision": 0.5
+      },
+      "levier_L1_theta": {
+        "bon": 74,
+        "total": 144,
+        "précision": 0.5139
+      },
+      "levier_L2_P1P2": {
+        "bon": 74,
+        "total": 144,
+        "précision": 0.5139
+      },
+      "v2_regle_mu_C3C4": {
+        "bon": 73,
+        "total": 144,
+        "précision": 0.5069
+      },
+      "v2_levier_L1_theta": 0.5347,
+      "v2_levier_L2_P1P2": 0.5069
+    }
+  },
+  "P44-1": {
+    "précision_moyenne": 0.5401,
+    "seuil_moyenne_préenregistré": 0.6,
+    "sujets_significatifs": 1,
+    "seuil_sujets_préenregistré": "≥ 5/9",
+    "détail": {
+      "A01T": {
+        "bon": 78,
+        "total": 144,
+        "p_binomial": 0.35936
+      },
+      "A02T": {
+        "bon": 72,
+        "total": 144,
+        "p_binomial": 1.0
+      },
+      "A03T": {
+        "bon": 111,
+        "total": 144,
+        "p_binomial": 0.0
+      },
+      "A04T": {
+        "bon": 77,
+        "total": 144,
+        "p_binomial": 0.45337
+      },
+      "A05T": {
+        "bon": 73,
+        "total": 144,
+        "p_binomial": 0.93362
+      },
+      "A06T": {
+        "bon": 67,
+        "total": 144,
+        "p_binomial": 0.45337
+      },
+      "A07T": {
+        "bon": 70,
+        "total": 144,
+        "p_binomial": 0.80269
+      },
+      "A08T": {
+        "bon": 80,
+        "total": 144,
+        "p_binomial": 0.21115
+      },
+      "A09T": {
+        "bon": 72,
+        "total": 144,
+        "p_binomial": 1.0
+      }
+    },
+    "tenue": false
+  },
+  "P44-2": {
+    "L1_bande_θ_moyenne": 0.4792,
+    "L2_postérieur_moyenne": 0.5139,
+    "seuil_préenregistré": "≤ 0.55 (les deux)",
+    "tenue": true
+  },
+  "P44-3_exploratoire": {
+    "A01T": {
+      "gauche": 72,
+      "droite": 72,
+      "pieds": 72,
+      "langue": 72
+    },
+    "A02T": {
+      "gauche": 72,
+      "droite": 72,
+      "pieds": 72,
+      "langue": 72
+    },
+    "A03T": {
+      "gauche": 72,
+      "droite": 72,
+      "pieds": 72,
+      "langue": 72
+    },
+    "A04T": {
+      "gauche": 72,
+      "droite": 72,
+      "pieds": 72,
+      "langue": 72
+    },
+    "A05T": {
+      "gauche": 72,
+      "droite": 72,
+      "pieds": 72,
+      "langue": 72
+    },
+    "A06T": {
+      "gauche": 72,
+      "droite": 72,
+      "pieds": 72,
+      "langue": 72
+    },
+    "A07T": {
+      "gauche": 72,
+      "droite": 72,
+      "pieds": 72,
+      "langue": 72
+    },
+    "A08T": {
+      "gauche": 72,
+      "droite": 72,
+      "pieds": 72,
+      "langue": 72
+    },
+    "A09T": {
+      "gauche": 72,
+      "droite": 72,
+      "pieds": 72,
+      "langue": 72
+    }
+  },
+  "addendum_v2_baseline_intra_essai": {
+    "précision_moyenne": 0.5201,
+    "sujets_significatifs": 0,
+    "leviers_v2": {
+      "L1_θ": 0.4915,
+      "L2_P1P2": 0.5116
+    },
+    "tenue": false
+  },
+  "critères": {
+    "C0_reproductibilité": true,
+    "P44-1_règle_zéro_paramètre_bat_le_hasard": false,
+    "P44-2_leviers_effondrés": true
+  },
+  "score": "2/3",
+  "statut": "PARTIEL",
+  "falsifieur": "P44-1 non tenue → réfutation publiée ; un levier non effondré retire le verdict",
+  "durée_s": 51.1,
+  "sha256_script": "c305614e6d98ec07edba4757d7d948df3b3a600b5368141ce5fc8a4af84e62ee"
+}

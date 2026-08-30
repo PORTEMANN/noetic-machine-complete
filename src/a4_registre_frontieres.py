@@ -397,6 +397,30 @@ FRONTIÈRES = [
          "S_figée": "p43_ash_core_v100.py (ash_core v1.0.0, blob c9dd73c2…)"},
         "un ReN normalisé, invariant d'échelle, conservant la séparation "
         "des régimes sur la batterie P43 tue l'entrée"),
+    entree(
+        "F17-EEG-MI-Essai-Unique", "méthode",
+        "La chaîne ASH → M̂ à zéro paramètre ne lit PAS la direction "
+        "d'imagerie motrice en essai unique sur EEG réel (BCICIV-2a, "
+        "9 sujets) : règle d'asymétrie absolue 0.540 (1/9 sujets "
+        "significatifs) et règle relative à la baseline intra-essai "
+        "0.520 (0/9) — deux réfutations pré-enregistrées publiées ; "
+        "leviers effondrés (l'effet réside dans μ, canaux moteurs) ; "
+        "un sujet lisible (A03, 0.771) — l'illettrisme BCI est mesuré",
+        "P44-EEG-MI-REEL (2026-08-31)", "EEG-MI-1.0", "ouverte",
+        "trois voies déclarées : (i) agrégation de N essais (vote, "
+        "précision en √N si le signal existe — pilotage lent) ; "
+        "(ii) baseline de repos du sujet figée comme D (donnée C12.1, "
+        "pas paramètre fitté) ; (iii) filtrage spatial structurel dérivé "
+        "(CSP ajusté interdit) — chaque voie exige un protocole gelé et "
+        "une ré-exécution sur A01T–A09T",
+        {"verdict": "hors-domaine",
+         "justification": "frontière de méthode (capacité de la chaîne) — "
+                          "pas un comptage de ddll"},
+        {"script": "p44_eeg_mi_reel.py",
+         "verdict": "p44_eeg_mi_reel_verdict.json",
+         "données": "BCICIV-2a zip SHA 65fe93cb… (externe, non commité)"},
+        "toute règle zéro paramètre atteignant ≥ 0.60 de moyenne ET "
+        "≥ 5/9 sujets significatifs sur A01T–A09T tue l'entrée"),
 ]
 
 

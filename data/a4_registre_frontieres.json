@@ -18,15 +18,15 @@
     "ouverte",
     "partielle"
   ],
-  "n_entrées": 16,
+  "n_entrées": 17,
   "par_statut": {
     "fermée": 6,
-    "ouverte": 4,
+    "ouverte": 5,
     "partielle": 6
   },
   "par_type": {
     "hygiène": 2,
-    "méthode": 3,
+    "méthode": 4,
     "physique": 11
   },
   "entrées": [
@@ -338,8 +338,28 @@
       },
       "falsifieur": "un ReN normalisé, invariant d'échelle, conservant la séparation des régimes sur la batterie P43 tue l'entrée",
       "sha256_entrée": "368aacd69af6aa51001b5842824da963e8b1cff13a1aec7f4b0cafb47641aa4e"
+    },
+    {
+      "id": "F17-EEG-MI-Essai-Unique",
+      "type": "méthode",
+      "énoncé": "La chaîne ASH → M̂ à zéro paramètre ne lit PAS la direction d'imagerie motrice en essai unique sur EEG réel (BCICIV-2a, 9 sujets) : règle d'asymétrie absolue 0.540 (1/9 sujets significatifs) et règle relative à la baseline intra-essai 0.520 (0/9) — deux réfutations pré-enregistrées publiées ; leviers effondrés (l'effet réside dans μ, canaux moteurs) ; un sujet lisible (A03, 0.771) — l'illettrisme BCI est mesuré",
+      "chantier_source": "P44-EEG-MI-REEL (2026-08-31)",
+      "protocole": "EEG-MI-1.0",
+      "statut": "ouverte",
+      "coût_de_fermeture_exact": "trois voies déclarées : (i) agrégation de N essais (vote, précision en √N si le signal existe — pilotage lent) ; (ii) baseline de repos du sujet figée comme D (donnée C12.1, pas paramètre fitté) ; (iii) filtrage spatial structurel dérivé (CSP ajusté interdit) — chaque voie exige un protocole gelé et une ré-exécution sur A01T–A09T",
+      "comptage_ddll": {
+        "verdict": "hors-domaine",
+        "justification": "frontière de méthode (capacité de la chaîne) — pas un comptage de ddll"
+      },
+      "artefacts": {
+        "script": "p44_eeg_mi_reel.py",
+        "verdict": "p44_eeg_mi_reel_verdict.json",
+        "données": "BCICIV-2a zip SHA 65fe93cb… (externe, non commité)"
+      },
+      "falsifieur": "toute règle zéro paramètre atteignant ≥ 0.60 de moyenne ET ≥ 5/9 sujets significatifs sur A01T–A09T tue l'entrée",
+      "sha256_entrée": "585931e188b50f85203b1d10c7cb862d5cbf7d857e0b69c731afd8d87275bcc8"
     }
   ],
-  "sha256_registre": "ba2a0432ee63e67153b5b7fa177bcd50c06002b6374a088891c72f0c679138b5",
-  "sha256_script": "24d6a7bdf31ff9260a2780ba4fa61ff880236e0d08d583038715095eadd41e3a"
+  "sha256_registre": "cbf7651304fb9dc96bb33e03ea49b0eafc9828988efc217b40d154a66f05ff14",
+  "sha256_script": "77ece7965f1160c24089b0365a766d07caaec038db91a74af8a17f46d2e1eae3"
 }
