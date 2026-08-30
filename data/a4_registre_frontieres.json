@@ -20,8 +20,8 @@
   ],
   "n_entrées": 18,
   "par_statut": {
-    "fermée": 6,
-    "ouverte": 6,
+    "fermée": 7,
+    "ouverte": 5,
     "partielle": 6
   },
   "par_type": {
@@ -365,8 +365,8 @@
       "énoncé": "La table figée des benchmarks noetic-ash (juin 2026 : moteur sain/défaillant, EEG intention, ECG — Rc, Rtop, Rdyn, ReN) n'est reproduite à tolérance déclarée par AUCUN des deux pipelines publiés (fenêtre classe 1–2 s ; fenêtre 256 éch./hop 128), sauf moteur_sain (fenêtre classe) — les valeurs proviennent d'une pipeline non figée (P45-C1, B3-FAIL d'archive)",
       "chantier_source": "P45-BENCHMARKS-EEG-RENORMALISES (2026-08-31)",
       "protocole": "BM-RENORM-1.0",
-      "statut": "ouverte",
-      "coût_de_fermeture_exact": "re-figer la table des benchmarks avec le pipeline v1.0.0 déclaré (fenêtrage, domaines, versions) et publier les nouvelles empreintes dans SHASUMS.txt de noetic-ash — coût : une republication ; la classification par invariants normalisés (10/10 paires séparées, P45-C3) peut remplacer ReN",
+      "statut": "fermée",
+      "coût_de_fermeture_exact": "re-figer la table des benchmarks avec le pipeline déclaré et publier les nouvelles empreintes — PAYÉ (2026-08-31) : noyau v1.1.0 (= v1.0.0 + extension EEG 5 octaves déclarée, tests figés 3/3), pipeline benchmarks/refreeze_table_v110.py, table officielle benchmarks/results/table_bench_v110.csv sha256 1c9430c6f7676798… — C0 vérifié (deux exécutions, même empreinte) et contenu bit-à-bit identique sur GitHub ; SHASUMS de noetic-ash étendu ; classification officielle = invariants normalisés (10/10 paires, P45-C3) ; régime ReN retiré de la classification (F16 reste ouverte : ReN normalisé à valider sur la batterie P43)",
       "comptage_ddll": {
         "verdict": "hors-domaine",
         "justification": "frontière d'hygiène de publication — pas un comptage de ddll"
@@ -374,12 +374,12 @@
       "artefacts": {
         "script": "p45_bench_renormalise.py",
         "verdict": "p45_bench_renormalise_verdict.json",
-        "dépôt_concerné": "noetic-ash (benchmarks/README.md)"
+        "dépôt_concerné": "noetic-ash v1.1.0 (noyau sha256 2d0b83bb857a…, erratum docs/ERRATUM-F16-F18.md)"
       },
-      "falsifieur": "une table re-figée reproduite bit-à-bit par le pipeline v1.0.0 déclaré tue l'entrée",
-      "sha256_entrée": "a716f8aa4b3bb1feacdbb74adc72ce619b1d42a7f0119652f766150458737676"
+      "falsifieur": "une table re-figée reproduite bit-à-bit par le pipeline déclaré tue l'entrée — tuée (2026-08-31) ; toute exécution du pipeline v1.1.0 donnant une empreinte différente rouvre l'entrée",
+      "sha256_entrée": "165d0233a7a3dbfc6b0102028be34b229aafd8faafdd20de513640d0c74afdde"
     }
   ],
-  "sha256_registre": "5df457e8e0945d0facd7bbc348e6365f9882fd24c85d709d3268da171524d461",
-  "sha256_script": "45cfc79cca558e6e1a45f71db894eef19cf3774c73b8a6eb88b2a464225619e8"
+  "sha256_registre": "087031225358d06e4f9e49bee162bd064d0233505f9b55e21101e7032798c0d1",
+  "sha256_script": "11ec9f3c94549b967ae9ed37323146646bbd5f4d02f32cade2935b87644e5e71"
 }

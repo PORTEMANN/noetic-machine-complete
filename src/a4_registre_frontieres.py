@@ -431,20 +431,27 @@ FRONTIÈRES = [
         "proviennent d'une pipeline non figée (P45-C1, B3-FAIL "
         "d'archive)",
         "P45-BENCHMARKS-EEG-RENORMALISES (2026-08-31)",
-        "BM-RENORM-1.0", "ouverte",
-        "re-figer la table des benchmarks avec le pipeline v1.0.0 déclaré "
-        "(fenêtrage, domaines, versions) et publier les nouvelles "
-        "empreintes dans SHASUMS.txt de noetic-ash — coût : une "
-        "republication ; la classification par invariants normalisés "
-        "(10/10 paires séparées, P45-C3) peut remplacer ReN",
+        "BM-RENORM-1.0", "fermée",
+        "re-figer la table des benchmarks avec le pipeline déclaré et "
+        "publier les nouvelles empreintes — PAYÉ (2026-08-31) : noyau "
+        "v1.1.0 (= v1.0.0 + extension EEG 5 octaves déclarée, tests figés "
+        "3/3), pipeline benchmarks/refreeze_table_v110.py, table officielle "
+        "benchmarks/results/table_bench_v110.csv sha256 1c9430c6f7676798… "
+        "— C0 vérifié (deux exécutions, même empreinte) et contenu "
+        "bit-à-bit identique sur GitHub ; SHASUMS de noetic-ash étendu ; "
+        "classification officielle = invariants normalisés (10/10 paires, "
+        "P45-C3) ; régime ReN retiré de la classification (F16 reste "
+        "ouverte : ReN normalisé à valider sur la batterie P43)",
         {"verdict": "hors-domaine",
          "justification": "frontière d'hygiène de publication — pas un "
                           "comptage de ddll"},
         {"script": "p45_bench_renormalise.py",
          "verdict": "p45_bench_renormalise_verdict.json",
-         "dépôt_concerné": "noetic-ash (benchmarks/README.md)"},
-        "une table re-figée reproduite bit-à-bit par le pipeline v1.0.0 "
-        "déclaré tue l'entrée"),
+         "dépôt_concerné": "noetic-ash v1.1.0 (noyau sha256 2d0b83bb857a…, "
+                          "erratum docs/ERRATUM-F16-F18.md)"},
+        "une table re-figée reproduite bit-à-bit par le pipeline déclaré "
+        "tue l'entrée — tuée (2026-08-31) ; toute exécution du pipeline "
+        "v1.1.0 donnant une empreinte différente rouvre l'entrée"),
 ]
 
 
