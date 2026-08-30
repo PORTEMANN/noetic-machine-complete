@@ -1,0 +1,351 @@
+{
+  "npts": 128,
+  "zs": [
+    2,
+    3,
+    4
+  ],
+  "T0_levier_c0": true,
+  "E_ref": {
+    "2": -2.8475,
+    "3": -7.2225,
+    "4": -13.5975
+  },
+  "E_ref_analytique": {
+    "2": -2.84766,
+    "3": -7.22266,
+    "4": -13.59766
+  },
+  "table": {
+    "F1×R1": {
+      "par_Z": {
+        "2": {
+          "statut": "perd",
+          "passe": false,
+          "E": -2.69819,
+          "E_ref": -2.8475,
+          "gain": -0.14931,
+          "marge_variationnelle": 0.20553,
+          "beta": 1.6875
+        },
+        "3": {
+          "statut": "perd",
+          "passe": false,
+          "E": -7.00308,
+          "E_ref": -7.2225,
+          "gain": -0.21942,
+          "marge_variationnelle": 0.27684,
+          "beta": 2.6875
+        },
+        "4": {
+          "statut": "perd",
+          "passe": false,
+          "E": -13.30796,
+          "E_ref": -13.5975,
+          "gain": -0.28954,
+          "marge_variationnelle": 0.34761,
+          "beta": 3.6875
+        }
+      },
+      "n_Z_passés": 0,
+      "passe_le_tamis": false
+    },
+    "F1×R2": {
+      "par_Z": {
+        "2": {
+          "statut": "perd",
+          "passe": false,
+          "E": -2.75114,
+          "E_ref": -2.8475,
+          "gain": -0.09636,
+          "marge_variationnelle": 0.15258,
+          "beta": 2.6453
+        },
+        "3": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -8.17591,
+          "E_ref": -7.2225,
+          "gain": 0.95341,
+          "marge_variationnelle": -0.896,
+          "beta": 0.327
+        },
+        "4": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -14.98678,
+          "E_ref": -13.5975,
+          "gain": 1.38928,
+          "marge_variationnelle": -1.33121,
+          "beta": 0.3939
+        }
+      },
+      "n_Z_passés": 0,
+      "passe_le_tamis": false
+    },
+    "F1×R3": {
+      "par_Z": {
+        "2": {
+          "statut": "passe",
+          "passe": true,
+          "E": -2.85129,
+          "E_ref": -2.8475,
+          "gain": 0.00379,
+          "marge_variationnelle": 0.05244,
+          "beta": 0.7087
+        },
+        "3": {
+          "statut": "perd",
+          "passe": false,
+          "E": -7.21308,
+          "E_ref": -7.2225,
+          "gain": -0.00942,
+          "marge_variationnelle": 0.06683,
+          "beta": 1.1287
+        },
+        "4": {
+          "statut": "perd",
+          "passe": false,
+          "E": -13.57563,
+          "E_ref": -13.5975,
+          "gain": -0.02187,
+          "marge_variationnelle": 0.07994,
+          "beta": 1.5487
+        }
+      },
+      "n_Z_passés": 1,
+      "passe_le_tamis": false
+    },
+    "F2×R1": {
+      "par_Z": {
+        "2": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -2.97475,
+          "E_ref": -2.8475,
+          "gain": 0.12725,
+          "marge_variationnelle": -0.07103,
+          "beta": 1.6875
+        },
+        "3": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -7.40166,
+          "E_ref": -7.2225,
+          "gain": 0.17916,
+          "marge_variationnelle": -0.12174,
+          "beta": 2.6875
+        },
+        "4": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -13.82851,
+          "E_ref": -13.5975,
+          "gain": 0.23101,
+          "marge_variationnelle": -0.17294,
+          "beta": 3.6875
+        }
+      },
+      "n_Z_passés": 0,
+      "passe_le_tamis": false
+    },
+    "F2×R2": {
+      "par_Z": {
+        "2": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -3.34124,
+          "E_ref": -2.8475,
+          "gain": 0.49374,
+          "marge_variationnelle": -0.43751,
+          "beta": 0.4351
+        },
+        "3": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -8.10326,
+          "E_ref": -7.2225,
+          "gain": 0.88076,
+          "marge_variationnelle": -0.82334,
+          "beta": 0.5191
+        },
+        "4": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -14.90074,
+          "E_ref": -13.5975,
+          "gain": 1.30324,
+          "marge_variationnelle": -1.24517,
+          "beta": 0.5898
+        }
+      },
+      "n_Z_passés": 0,
+      "passe_le_tamis": false
+    },
+    "F2×R3": {
+      "par_Z": {
+        "2": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -3.17867,
+          "E_ref": -2.8475,
+          "gain": 0.33117,
+          "marge_variationnelle": -0.27494,
+          "beta": 0.7087
+        },
+        "3": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -7.70292,
+          "E_ref": -7.2225,
+          "gain": 0.48042,
+          "marge_variationnelle": -0.42301,
+          "beta": 1.1287
+        },
+        "4": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -14.2274,
+          "E_ref": -13.5975,
+          "gain": 0.6299,
+          "marge_variationnelle": -0.57183,
+          "beta": 1.5487
+        }
+      },
+      "n_Z_passés": 0,
+      "passe_le_tamis": false
+    },
+    "F4×R1": {
+      "par_Z": {
+        "2": {
+          "statut": "perd",
+          "passe": false,
+          "E": -2.66371,
+          "E_ref": -2.8475,
+          "gain": -0.18379,
+          "marge_variationnelle": 0.24001,
+          "beta": 1.6875
+        },
+        "3": {
+          "statut": "perd",
+          "passe": false,
+          "E": -6.97325,
+          "E_ref": -7.2225,
+          "gain": -0.24925,
+          "marge_variationnelle": 0.30666,
+          "beta": 2.6875
+        },
+        "4": {
+          "statut": "perd",
+          "passe": false,
+          "E": -13.28352,
+          "E_ref": -13.5975,
+          "gain": -0.31398,
+          "marge_variationnelle": 0.37205,
+          "beta": 3.6875
+        }
+      },
+      "n_Z_passés": 0,
+      "passe_le_tamis": false
+    },
+    "F4×R2": {
+      "par_Z": {
+        "2": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -3.48545,
+          "E_ref": -2.8475,
+          "gain": 0.63795,
+          "marge_variationnelle": -0.58173,
+          "beta": 0.2615
+        },
+        "3": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -8.32497,
+          "E_ref": -7.2225,
+          "gain": 1.10247,
+          "marge_variationnelle": -1.04506,
+          "beta": 0.3741
+        },
+        "4": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -15.19606,
+          "E_ref": -13.5975,
+          "gain": 1.59856,
+          "marge_variationnelle": -1.54049,
+          "beta": 0.4768
+        }
+      },
+      "n_Z_passés": 0,
+      "passe_le_tamis": false
+    },
+    "F4×R3": {
+      "par_Z": {
+        "2": {
+          "statut": "perd",
+          "passe": false,
+          "E": -2.47276,
+          "E_ref": -2.8475,
+          "gain": -0.37474,
+          "marge_variationnelle": 0.43096,
+          "beta": 0.7087
+        },
+        "3": {
+          "statut": "perd",
+          "passe": false,
+          "E": -6.66766,
+          "E_ref": -7.2225,
+          "gain": -0.55484,
+          "marge_variationnelle": 0.61225,
+          "beta": 1.1287
+        },
+        "4": {
+          "statut": "perd",
+          "passe": false,
+          "E": -12.86554,
+          "E_ref": -13.5975,
+          "gain": -0.73196,
+          "marge_variationnelle": 0.79003,
+          "beta": 1.5487
+        }
+      },
+      "n_Z_passés": 0,
+      "passe_le_tamis": false
+    },
+    "F3×R3": {
+      "par_Z": {
+        "2": {
+          "statut": "perd",
+          "passe": false,
+          "E": -2.69271,
+          "E_ref": -2.8475,
+          "gain": -0.15479,
+          "marge_variationnelle": 0.21101,
+          "beta": 0.7087
+        },
+        "3": {
+          "statut": "perd",
+          "passe": false,
+          "E": -6.84873,
+          "E_ref": -7.2225,
+          "gain": -0.37377,
+          "marge_variationnelle": 0.43119,
+          "beta": 1.1287
+        },
+        "4": {
+          "statut": "perd",
+          "passe": false,
+          "E": -12.95558,
+          "E_ref": -13.5975,
+          "gain": -0.64192,
+          "marge_variationnelle": 0.69999,
+          "beta": 1.5487
+        }
+      },
+      "n_Z_passés": 0,
+      "passe_le_tamis": false
+    }
+  }
+}

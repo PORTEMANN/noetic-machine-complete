@@ -1,0 +1,258 @@
+{
+  "npts": 96,
+  "zs": [
+    5,
+    6
+  ],
+  "T0_levier_c0": true,
+  "E_ref": {
+    "5": -21.9725,
+    "6": -32.3475
+  },
+  "E_ref_analytique": {
+    "5": -21.97266,
+    "6": -32.34766
+  },
+  "table": {
+    "F1×R1": {
+      "par_Z": {
+        "5": {
+          "statut": "perd",
+          "passe": false,
+          "E": -21.61638,
+          "E_ref": -21.9725,
+          "gain": -0.35612,
+          "marge_variationnelle": 0.41459,
+          "beta": 4.6875
+        },
+        "6": {
+          "statut": "perd",
+          "passe": false,
+          "E": -31.92214,
+          "E_ref": -32.3475,
+          "gain": -0.42536,
+          "marge_variationnelle": 0.48411,
+          "beta": 5.6875
+        }
+      },
+      "n_Z_passés": 0,
+      "passe_le_tamis": false
+    },
+    "F1×R2": {
+      "par_Z": {
+        "5": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -23.75411,
+          "E_ref": -21.9725,
+          "gain": 1.78161,
+          "marge_variationnelle": -1.72314,
+          "beta": 0.4975
+        },
+        "6": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -34.57476,
+          "E_ref": -32.3475,
+          "gain": 2.22726,
+          "marge_variationnelle": -2.16851,
+          "beta": 0.5654
+        }
+      },
+      "n_Z_passés": 0,
+      "passe_le_tamis": false
+    },
+    "F1×R3": {
+      "par_Z": {
+        "5": {
+          "statut": "perd",
+          "passe": false,
+          "E": -21.95059,
+          "E_ref": -21.9725,
+          "gain": -0.02191,
+          "marge_variationnelle": 0.08039,
+          "beta": 1.9688
+        },
+        "6": {
+          "statut": "perd",
+          "passe": false,
+          "E": -32.31603,
+          "E_ref": -32.3475,
+          "gain": -0.03147,
+          "marge_variationnelle": 0.09022,
+          "beta": 2.3887
+        }
+      },
+      "n_Z_passés": 0,
+      "passe_le_tamis": false
+    },
+    "F2×R1": {
+      "par_Z": {
+        "5": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -22.26918,
+          "E_ref": -21.9725,
+          "gain": 0.29668,
+          "marge_variationnelle": -0.23821,
+          "beta": 4.6875
+        },
+        "6": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -32.69898,
+          "E_ref": -32.3475,
+          "gain": 0.35148,
+          "marge_variationnelle": -0.29273,
+          "beta": 5.6875
+        }
+      },
+      "n_Z_passés": 0,
+      "passe_le_tamis": false
+    },
+    "F2×R2": {
+      "par_Z": {
+        "5": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -23.63972,
+          "E_ref": -21.9725,
+          "gain": 1.66722,
+          "marge_variationnelle": -1.60874,
+          "beta": 0.7454
+        },
+        "6": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -34.44568,
+          "E_ref": -32.3475,
+          "gain": 2.09818,
+          "marge_variationnelle": -2.03944,
+          "beta": 0.8253
+        }
+      },
+      "n_Z_passés": 0,
+      "passe_le_tamis": false
+    },
+    "F2×R3": {
+      "par_Z": {
+        "5": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -22.77526,
+          "E_ref": -21.9725,
+          "gain": 0.80276,
+          "marge_variationnelle": -0.74429,
+          "beta": 1.9688
+        },
+        "6": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -33.30454,
+          "E_ref": -32.3475,
+          "gain": 0.95704,
+          "marge_variationnelle": -0.89829,
+          "beta": 2.3887
+        }
+      },
+      "n_Z_passés": 0,
+      "passe_le_tamis": false
+    },
+    "F4×R1": {
+      "par_Z": {
+        "5": {
+          "statut": "perd",
+          "passe": false,
+          "E": -21.595,
+          "E_ref": -21.9725,
+          "gain": -0.3775,
+          "marge_variationnelle": 0.43597,
+          "beta": 4.6875
+        },
+        "6": {
+          "statut": "perd",
+          "passe": false,
+          "E": -31.90592,
+          "E_ref": -32.3475,
+          "gain": -0.44158,
+          "marge_variationnelle": 0.50033,
+          "beta": 5.6875
+        }
+      },
+      "n_Z_passés": 0,
+      "passe_le_tamis": false
+    },
+    "F4×R2": {
+      "par_Z": {
+        "5": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -24.03676,
+          "E_ref": -21.9725,
+          "gain": 2.06426,
+          "marge_variationnelle": -2.00579,
+          "beta": 0.6024
+        },
+        "6": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -34.91875,
+          "E_ref": -32.3475,
+          "gain": 2.57125,
+          "marge_variationnelle": -2.51251,
+          "beta": 0.7043
+        }
+      },
+      "n_Z_passés": 0,
+      "passe_le_tamis": false
+    },
+    "F4×R3": {
+      "par_Z": {
+        "5": {
+          "statut": "perd",
+          "passe": false,
+          "E": -21.0685,
+          "E_ref": -21.9725,
+          "gain": -0.904,
+          "marge_variationnelle": 0.96248,
+          "beta": 1.9688
+        },
+        "6": {
+          "statut": "perd",
+          "passe": false,
+          "E": -31.26877,
+          "E_ref": -32.3475,
+          "gain": -1.07873,
+          "marge_variationnelle": 1.13747,
+          "beta": 2.3887
+        }
+      },
+      "n_Z_passés": 0,
+      "passe_le_tamis": false
+    },
+    "F3×R3": {
+      "par_Z": {
+        "5": {
+          "statut": "perd",
+          "passe": false,
+          "E": -21.01969,
+          "E_ref": -21.9725,
+          "gain": -0.95281,
+          "marge_variationnelle": 1.01128,
+          "beta": 1.9688
+        },
+        "6": {
+          "statut": "perd",
+          "passe": false,
+          "E": -31.06529,
+          "E_ref": -32.3475,
+          "gain": -1.28221,
+          "marge_variationnelle": 1.34096,
+          "beta": 2.3887
+        }
+      },
+      "n_Z_passés": 0,
+      "passe_le_tamis": false
+    }
+  }
+}

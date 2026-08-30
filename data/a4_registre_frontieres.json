@@ -1,0 +1,320 @@
+{
+  "registre": "A4-FRONTIÈRES-MESURÉES",
+  "protocole": "REG-FR-1.0 (gelé) — schéma déclaré, SHA-256 par entrée et global, frontières mesurées uniquement",
+  "schéma": [
+    "id",
+    "type",
+    "énoncé",
+    "chantier_source",
+    "protocole",
+    "statut",
+    "coût_de_fermeture_exact",
+    "comptage_ddll",
+    "artefacts",
+    "falsifieur"
+  ],
+  "statuts": [
+    "fermée",
+    "ouverte",
+    "partielle"
+  ],
+  "n_entrées": 15,
+  "par_statut": {
+    "fermée": 4,
+    "ouverte": 6,
+    "partielle": 5
+  },
+  "par_type": {
+    "hygiène": 2,
+    "méthode": 2,
+    "physique": 11
+  },
+  "entrées": [
+    {
+      "id": "F1-XOR",
+      "type": "physique",
+      "énoncé": "XOR et XNOR inséparables par un neurone formel unique (hyperplan + seuil)",
+      "chantier_source": "P34-NEURONE",
+      "protocole": "LP-SEP-1.0",
+      "statut": "fermée",
+      "coût_de_fermeture_exact": "+1 couche cachée : 2 neurones, poids ENTIERS dérivés (h1=[x1−x2≥1], h2=[x2−x1≥1], sortie OU) — coût exact mesuré",
+      "comptage_ddll": {
+        "verdict": "déficit",
+        "justification": "1 hyperplan → 2 hyperplans : la fermeture ajoute une dimension de séparation (couche cachée)"
+      },
+      "artefacts": {
+        "script": "p34_neurone.py",
+        "verdict": "p34_neurone_verdict.json"
+      },
+      "falsifieur": "toute paire (w,b) séparant XOR avec marge > 0 tue la frontière",
+      "sha256_entrée": "2ae30b177f459caeff74c6b8ae67a03c427b88ce536dce2c4ecde8fc696b2481"
+    },
+    {
+      "id": "F2-SIGMA-DYNAMIQUE",
+      "type": "physique",
+      "énoncé": "le neurone formel σ(w·x+b) est réfuté comme modèle du neurone biologique (tout-ou-rien, train, f–I discontinue, état)",
+      "chantier_source": "P35-NEURONE-BIOLOGIQUE",
+      "protocole": "HH-VER-1.0",
+      "statut": "fermée",
+      "coût_de_fermeture_exact": "de 0 variable d'état à 2 (Izhikevich, plan) ou 1 sur S¹ (theta-neuron) — l'excitabilité minimale est une phase sur un cercle",
+      "comptage_ddll": {
+        "verdict": "déficit",
+        "justification": "0D → 2D plan ou 1D sur S¹ : la fermeture ajoute des dimensions d'état (la DYNAMIQUE était le constitutif manquant)"
+      },
+      "artefacts": {
+        "script": "p35_neurone_biologique.py",
+        "verdict": "p35_neurone_biologique_verdict.json"
+      },
+      "falsifieur": "toute expérience à entrée constante dont la sortie biologique est statique tue la frontière",
+      "sha256_entrée": "14cb7b6b4a8d2324a97e5cb0da8d3b260dade0dda370581cb75367fd3626868c"
+    },
+    {
+      "id": "F3-R12-PORTEE",
+      "type": "physique",
+      "énoncé": "r₁₂ : contact (cusp de Kato, c=1/2) dérivable ; portée du facteur à deux corps. FERMÉE par P39 (2026-08-30) : à l'intégrateur complet (forme |∇Ψ|², grille corpus 300×192), la règle de densité β = 0.42ζ₀ (F1×R3, zéro paramètre) bat la référence split-ζ en TOUT Z mesuré — Z=2..6 (+18.5→19.4 mHa, constant), Z=7..10 (+19.3 mHa), H⁻ (+17.2 mHa), Ps⁻ (+3.7 mHa) ; F2×R1/R2/R3 passent aussi 5/5 (gains jusqu'à 43 mHa). Le verdict P31 « portée non dérivable » était un artefact : son intégrande mélangeait deux formes IBP (distorsion mesurée jusqu'à +0.13 Ha, gain écrasé ×5). La loi P32 « R3 ne gagne qu'en Z=2 » était la signature du domaine de l'intégrateur delta, pas de la physique",
+      "chantier_source": "P39-FERMETURE-R12",
+      "protocole": "R12-FERM-1.0",
+      "statut": "fermée",
+      "coût_de_fermeture_exact": "coût payé et mesuré : reconstruction de l'intégrateur complet en forme |∇Ψ|² (0.7 s/évaluation, volet A : 1444 s) + correction de l'intégrande P31 (publiée en B3-FAIL corpus) ; la fermeture est la règle de densité du corpus elle-même, sans paramètre",
+      "comptage_ddll": {
+        "verdict": "déficit (confirmé et fermé)",
+        "justification": "le degré de liberté manquant était bien le 2-corps r₁₂ (déficit 1 corps → 2 corps) : une fois l'intégrateur corrigé, la portée se DÉRIVE (règle de densité) sans paramètre — le déficit se ferme par l'ajout du ddll, comme v2 le prédit"
+      },
+      "artefacts": {
+        "script": "p39_fermeture_r12.py",
+        "verdict": "p39_fermeture_r12_verdict.json",
+        "b3_fail_corpus": "intégrande P31 (mélange de formes IBP) — republication requise (voir F9)"
+      },
+      "falsifieur": "toute exécution de R12-FERM-1.0 donnant F1×R3 perdante en un Z du domaine variationnel rouvre la frontière",
+      "sha256_entrée": "c2fc75280ed83abb16782d4455dfc8fb0dae02821a0ea405ef3ccf38748ea83f"
+    },
+    {
+      "id": "F4-KO6-ENUMERATION",
+      "type": "méthode",
+      "énoncé": "« 63 160 réalisations certifiées KO-6 » : non reproductible par son propre moteur (0 solution, plafond inatteignable, certification vide)",
+      "chantier_source": "A3-KO6-REENUMERATION",
+      "protocole": "TAMIS-KO6-1.0",
+      "statut": "ouverte",
+      "coût_de_fermeture_exact": "implémenter les VRAIS axiomes KO-6 au niveau des représentations (J_F²=+1, J_FD_F=D_FJ_F, (J_Fγ_F)²=−1, ordre un sur les blocs de D_F), ré-énumérer sous bornes déclarées, publier le compte",
+      "comptage_ddll": {
+        "verdict": "déficit",
+        "justification": "les proxys (matrices de multiplicité) sont en déficit de structure : la fermeture exige les objets de dimension supérieure (opérateurs J_F, γ_F, D_F sur H_F), pas seulement leurs traces matricielles"
+      },
+      "artefacts": {
+        "script": "a3_ko6_reenumeration.py",
+        "verdict": "a3_ko6_reenumeration_verdict.json"
+      },
+      "falsifieur": "toute exécution du moteur commité (plafond retiré) produisant ≥ 1 solution tue l'entrée",
+      "sha256_entrée": "718488bda66f9d6e8eb520b136fdc0ba16f39ba186f23927c75f496574db65f0"
+    },
+    {
+      "id": "F5-BPS-ECHELLE",
+      "type": "physique",
+      "énoncé": "C(ρ=0) = 1 (BPS) n'est pas atteint par relaxation sur boîte finie : à masse de Higgs nulle, le cœur délocalise jusqu'au bord",
+      "chantier_source": "A2-MOTEUR-LEVIERS",
+      "protocole": "LEV-ENG-1.0",
+      "statut": "ouverte",
+      "coût_de_fermeture_exact": "fixer l'échelle (mode zéro) : condition asymptotique algébrique H ~ 1 − 1/ξ imposée, ou volume infini par changement de variable compact — puis relire C(ρ→0⁺)",
+      "comptage_ddll": {
+        "verdict": "mode non contraint",
+        "justification": "la frontière n'est pas un déficit mais un SURPLUS indéterminé : l'invariance d'échelle du point BPS (mode zéro) laisse une direction sans énergie — la relaxation la suit hors de la boîte"
+      },
+      "artefacts": {
+        "script": "a2_moteur_leviers.py",
+        "verdict": "a2_moteur_leviers_verdict.json"
+      },
+      "falsifieur": "toute relaxation sur boîte finie reproduisant C(ρ=0)=1 sans fixation d'échelle tue l'entrée",
+      "sha256_entrée": "c92cdec378e2a1386b4419e42e8ed9d9168759db260bf103a15c6415b7df8f33"
+    },
+    {
+      "id": "F6-COEUR-DIFFUS",
+      "type": "physique",
+      "énoncé": "P9/P11 : le cœur pointu (sharp) ne reproduit pas les rayons de matière (PREX) — la diffusivité est nécessaire",
+      "chantier_source": "P9-PREX, P11-VALLEE (corpus)",
+      "protocole": "C12.1 (corpus)",
+      "statut": "partielle",
+      "coût_de_fermeture_exact": "ajout d'un champ de diffusivité a — fermeture partielle mesurée dans le corpus",
+      "comptage_ddll": {
+        "verdict": "déficit",
+        "justification": "cœur pointu (0 champ) → +1 champ diffusif a : la fermeture ajoute un degré de liberté spatial"
+      },
+      "artefacts": {
+        "scripts": "p9_prex.py, p11_vallee.py (corpus)"
+      },
+      "falsifieur": "toute reproduction des rayons PREX avec cœur pointu sans champ additionnel tue l'entrée",
+      "sha256_entrée": "05dfdf9a1fd53bf7eb8b3b07e0b89c185e33e29b17bab7ec49d09c674f3ed40f"
+    },
+    {
+      "id": "F7-PARTIELS-PROTOCOLE",
+      "type": "méthode",
+      "énoncé": "P13 (stabilité) et P22 (double bêta) sont partiels — le programme A1 prédit une sensibilité au protocole non encore mesurée",
+      "chantier_source": "P13, P22 (corpus) — batterie rétroactive A1 à exécuter",
+      "protocole": "PERT-BATT-1.0 (application rétroactive planifiée)",
+      "statut": "ouverte",
+      "coût_de_fermeture_exact": "encapsuler P13/P22 en f(π) et passer la batterie A1 ; publier les couples (V, Σ)",
+      "comptage_ddll": {
+        "verdict": "hors-domaine (en attente de mesure)",
+        "justification": "tant que la batterie n'a pas tourné, le comptage de ddll est indéterminé — le registre refuse les verdicts anticipés"
+      },
+      "artefacts": {
+        "pré-requis": "a1_batterie_perturbation.py"
+      },
+      "falsifieur": "l'exécution de la batterie fixe le statut",
+      "sha256_entrée": "8036c823915cdfd55055af53b3ba07f505c4be5223ca6facf6cf10c8cacff8b9"
+    },
+    {
+      "id": "F8-ZMAX-E8",
+      "type": "physique",
+      "énoncé": "Z_max ≈ 179 (échelle koïlon 2^(1/12), N = 12·log₂(1/α) = 120 = racines E8) : 5 prédictions — P40 a confronté aux masses mesurées : Z_max EXACT = 180 recomputé à α=2^-10 gelé (le « ≈179 » tient), cohérent avec masses+modèles (dernière coquille publiée ≤ 168) ; P-FISSION RÉFUTÉE sur JEFF-3.1.1 (0/8 pics secondaires aux A gelés {63,110,126,173}) ; P-MASS-EFF, P-ALPHA-VAR, P-KOILON-SON non confrontables aujourd'hui (discriminateurs déclarés)",
+      "chantier_source": "koilon-scale-e8 (corpus)",
+      "protocole": "ZMAX-1.0 (P40)",
+      "statut": "partielle",
+      "coût_de_fermeture_exact": "2/5 prédictions tranchées (Z-MAX cohérente, FISSION réfutée) ; fermeture complète exige les expériences laser, quasars et ondes gravitationnelles — discriminateurs pré-enregistrés",
+      "comptage_ddll": {
+        "verdict": "déficit",
+        "justification": "α_K = 2^-10 est un input payé (1 ddll) : la fermeture causale achète son échelle"
+      },
+      "artefacts": {
+        "dépôt": "github.com/PORTEMANN/koilon-scale-e8",
+        "script": "p40_zmax.py",
+        "verdict": "p40_zmax_verdict.json"
+      },
+      "falsifieur": "Z_max recomputé hors {179,180} tue la dérivation ; un élément stable mesuré au-delà de Z=180 tue la prédiction ; magiques connus non récupérés tuent l'instrument",
+      "sha256_entrée": "f5c1cbb467b94424c0487234749687ece6fd7a8c9101d443e18c26a6e4825971"
+    },
+    {
+      "id": "F9-HYGIENE-P32-P33",
+      "type": "hygiène",
+      "énoncé": "p32_frontiere.py / p33_queue.py publiés en base64 re-wrapé corrompu (caractères perdus aux frontières de lignes : T<=R1+R2, _ckk]) et SHA-256 non conformes au registre SHASUMS.txt. Étendu par P39 : p31_portee.py contient un intégrande cinétique défectueux (mélange de formes IBP — distorsion mesurée jusqu'à +0.13 Ha) — re-publication avec la forme |∇Ψ|² de P39",
+      "chantier_source": "audit A3 + audit P39 (2026-08-30)",
+      "protocole": "SHASUMS.txt du dépôt",
+      "statut": "ouverte",
+      "coût_de_fermeture_exact": "re-publier les sources Python propres (p32, p33) et corrigées (p31, forme |∇Ψ|²), régénérer les JSON/PNG, mettre SHASUMS.txt à jour — coût : une republication",
+      "comptage_ddll": {
+        "verdict": "hors-domaine",
+        "justification": "frontière d'hygiène de publication — aucun comptage de degrés de liberté ne s'applique"
+      },
+      "artefacts": {
+        "sha_mesurés": "p32 bbf42182… vs registre 60a868bd… ; p33 1a4bb130… vs registre 286f9888…"
+      },
+      "falsifieur": "des sources conformes au registre tuent l'entrée",
+      "sha256_entrée": "116afa338c0ec096e0af3a9be6d177c89cff863a0a50aa631acac120a501e429"
+    },
+    {
+      "id": "F10-CODE-FRACTIONNAIRE",
+      "type": "hygiène",
+      "énoncé": "Topological-Fractional-AI : résultats publiés (84.1 % AUC, 28 paramètres) sans code exécutable — la signature fractionnaire (Mittag-Leffler) n'est pas rejouable",
+      "chantier_source": "audit empreinte web (2026-08-30)",
+      "protocole": "dépôt GitHub",
+      "statut": "ouverte",
+      "coût_de_fermeture_exact": "publier le script — coût : une republication ; la science suit. P37 (2026-08-30) fournit la première dynamique fractionnaire exécutable du corpus (E_α de Pollard contrôlée à 2.6e-16), mais ne ferme pas l'entrée : le script du modèle 84.1 % reste à publier",
+      "comptage_ddll": {
+        "verdict": "hors-domaine",
+        "justification": "frontière d'hygiène — pas un comptage de ddll"
+      },
+      "artefacts": {
+        "dépôt": "github.com/PORTEMANN/Topological-Fractional-AI",
+        "avancée": "p37_neurone_fractionnaire.py (corpus noétique, rejouable, zéro paramètre ajusté)"
+      },
+      "falsifieur": "un script publié et rejouable tue l'entrée",
+      "sha256_entrée": "57e41c4ece2e8802ae0abb679862246ead83be0ddbd68c11d35e7b26176050ce"
+    },
+    {
+      "id": "F11-MEMOIRE-FRACTIONNAIRE",
+      "type": "physique",
+      "énoncé": "P37 : le neurone fractionnaire (intégrateur ABC d'ordre α) est réfuté comme modèle du spike (superposition exacte mesurée : 0 spike sous tout courant constant) — la mémoire Mittag-Leffler n'est pas l'excitabilité. Queue algébrique t^{−α} constitutive (pentes −0.25/−0.49/−0.84 vs −α, fenêtre [20,200] ms) ; persistance mesurable à Δ=100 ms (2.6e-3) où l'exponentielle est morte (3.7e-44) ; fermeture de rang 2 refusée (erreur 0.152 sur grille déclarée) — la mémoire exacte est ∞D",
+      "chantier_source": "P37-NEURONE-FRACTIONNAIRE",
+      "protocole": "FRAC-NEU-1.0",
+      "statut": "ouverte",
+      "coût_de_fermeture_exact": "deux fermetures orthogonales mesurées : excitabilité = phase sur S¹ (+1 ddll, P35) ; mémoire biologique = approximation de rang fini du noyau ∞D (le vivant empile des canaux lents — coût mesuré : rang 2 insuffisant, 0.152 d'erreur max)",
+      "comptage_ddll": {
+        "verdict": "déficit",
+        "justification": "le candidat fractionnaire possède la mémoire (∞D de noyau distribué) mais pas l'excitabilité (seuil) : la fermeture exige l'ajout de la phase S¹ — et la version biologique de la mémoire exige elle-même un ajout de variables lentes (approximation de rang fini)"
+      },
+      "artefacts": {
+        "script": "p37_neurone_fractionnaire.py",
+        "verdict": "p37_neurone_fractionnaire_verdict.json"
+      },
+      "falsifieur": "toute trajectoire fractionnaire linéaire exhibant un spike tout-ou-rien ou un train sous courant constant tue l'entrée",
+      "sha256_entrée": "660b4a958d912fea03833305e975d7fbf5e2a93d29938e67b191fc7c6a6112f7"
+    },
+    {
+      "id": "F12-PROFONDEUR-CONSTITUTIVE",
+      "type": "physique",
+      "énoncé": "P36 : la profondeur devient constitutive dès que la tâche ITÈRE. Parité n bits : profondeur 1 impossible (LP infaisable, n=2..4), profondeur 2 exacte à n unités DÉRIVÉES entières (n=2..8). Oscillations (Telgarsky) : profondeur m largeur 2 exacte (m=1..8) ; loi serrée mesurée en profondeur 2 : w_min = 2^m unités (transitions aux demi-dyadiques) — séparation exponentielle 2^m/2m reproduite à construction exacte, zéro apprentissage",
+      "chantier_source": "P36-PROFONDEUR",
+      "protocole": "PROF-1.0",
+      "statut": "partielle",
+      "coût_de_fermeture_exact": "fermée sur les familles déclarées (séparation unique / parité / oscillation) ; ouverte en général : la loi complète profondeur-minimale vs structure de tâche reste à cartographier (symétries, fonctions périodiques à période non dyadique)",
+      "comptage_ddll": {
+        "verdict": "déficit",
+        "justification": "la fermeture paie en degrés de liberté : couches (réutilisation de coordonnées, coût 2m) ou largeur (copie, coût 2^m) — le déficit se paie en composition ou en exponentielle"
+      },
+      "artefacts": {
+        "script": "p36_profondeur.py",
+        "verdict": "p36_profondeur_verdict.json"
+      },
+      "falsifieur": "tout réseau de profondeur 2 et largeur < 2^m exact sur la tâche à m oscillations tue l'entrée",
+      "sha256_entrée": "fd299e6eba976e9a6a98b5f19538d513bece86505d5742712ced10a9a5aa7ca0"
+    },
+    {
+      "id": "F13-ATTENTION-CONSTITUTIVE",
+      "type": "physique",
+      "énoncé": "P38 : carte constitutive du bloc d'attention minimal, poids DÉRIVÉS, zéro apprentissage, exhaustivité déclarée. POSITION constitutive de tout ce qui n'est pas symétrique (copie : 8/262144 sans, 262144/262144 avec one-hot dérivé) ; SOFTMAX non constitutif (linéaire exact, coût d'échelle dérivé β ≥ ln((n−1)/ε)/Δ vérifié à 1e-3/1e-6/1e-9) ; PROFONDEUR constitutive pour la parité (1 couche : 0.6367 max ; 2 couches exactes — cohérence P36/F12) ; COMPARAISON non bilinéaire = constitutif manquant du tri (candidats dérivés 3/27) ; MULTI-TÊTE constitutif uniquement pour relations incompatibles simultanées (mono-tête 8/256, 2 têtes dérivées 256/256)",
+      "chantier_source": "P38-ATTENTION",
+      "protocole": "ATTN-1.0",
+      "statut": "fermée",
+      "coût_de_fermeture_exact": "fermée sur les tâches gelées déclarées (copie, binaire, parité, tri, double-relation) à vérification exhaustive — la généralisation aux tâches à contexte long est un chantier séparé",
+      "comptage_ddll": {
+        "verdict": "déficit",
+        "justification": "chaque constitutif est un degré de liberté ajouté : coordonnée de position (n dims), tête supplémentaire (1 distribution), non-linéarité de comparaison (absente, à payer)"
+      },
+      "artefacts": {
+        "script": "p38_attention.py",
+        "verdict": "p38_attention_verdict.json"
+      },
+      "falsifieur": "copie exacte sans position ; tri exact à scores bilinéaires ; double-relation exacte en mono-tête — chacun tue l'entrée",
+      "sha256_entrée": "f51b26eb311819d58ff07e593a57670c02d7e01bec0ce56cddf1c3614dc4d23e"
+    },
+    {
+      "id": "F14-PONT-120-E8",
+      "type": "physique",
+      "énoncé": "le « 120 » koilon (N_modes = 120, P40) et les 120 racines positives de E₈ ont une racine commune EXACTE, établie en arithmétique pure Q(φ) : le groupe binaire icosaédrique 2I (120 quaternions unitaires construits) a pour carquois de McKay le diagramme Ẽ₈ affine (A·d = 2d exact, isomorphisme prouvé contre la référence Bourbaki, det Cartan = 1), série de Molien calculée = (1+t³⁰)/((1−t¹²)(1−t²⁰)) exacte, d₁ = 12 ; réécriture N = d₁·log₂(1/α) = |2I| ⟺ α = 2^(−|2I|/d₁) = 2⁻¹⁰ (l'α_K gelé de P40). Le laplacien scalaire sur S³/2I donne λ₁ = 168/R² — distinct du 2/R² du laplacien tordu (champs de Killing, Ric = (2/R²)g vérifié symboliquement)",
+      "chantier_source": "P42-PONT-120-E8",
+      "protocole": "PONT-1.0",
+      "statut": "partielle",
+      "coût_de_fermeture_exact": "partielle : le pont arithmétique 2I ↔ Ẽ₈ ↔ α = 2⁻¹⁰ est un théorème exécuté (fermé) ; l'identification PHYSIQUE des « 12 demi-tons » koilon avec d₁(2I) = 12 reste une frontière déclarée (médiation par la musique/spectre non dérivée)",
+      "comptage_ddll": {
+        "verdict": "équilibre",
+        "justification": "théorème d'arithmétique exacte : rien n'est payé, tout est dérivé (groupes, caractères, spectre, Molien) — la frontière physique restante est déclarée, pas cachée"
+      },
+      "artefacts": {
+        "script": "p42_pont_120_e8.py",
+        "verdict": "p42_pont_120_e8_verdict.json"
+      },
+      "falsifieur": "A·d ≠ 2d ; carquois de McKay non isomorphe à Ẽ₈ ; Molien calculé ≠ série théorique ; Ric ≠ (2/R²)g — chacun tue l'entrée",
+      "sha256_entrée": "90f89ebf9027aca237ee9894d122b7155788a26fcd371f80b3efc0a38ca78c40"
+    },
+    {
+      "id": "F15-EXCITABILITE-REELLE",
+      "type": "physique",
+      "énoncé": "le modèle Hodgkin-Huxley (type II, f₀ = 60 Hz à la rhéobase) n'est PAS représentatif de l'onset cortical réel : sur 32 cellules Allen Cell Types sélectionnées sans choix humain, 31/32 sont type I (f₀ d'onset 1–10 Hz) au seuil gelé 20 Hz hérité de P35 — interneurones (aspiny) type II : 1/8 souris, 0/8 humain ; pyramidales (spiny) : 0/8 et 0/8. La classe d'excitabilité type II existe dans le réel (interneurone souris 313861411, f₀ = 26 Hz confirmé au brut) mais elle est rare (1/16 interneurones). Izhikevich RS est le modèle minimal représentatif de l'onset cortical",
+      "chantier_source": "P41-NEURONES-REELS",
+      "protocole": "REEL-1.0",
+      "statut": "partielle",
+      "coût_de_fermeture_exact": "partielle : la question pré-enregistrée est tranchée (NON) sur 32 cellules × 2 espèces × 2 classes morphologiques avec contrôle brut recoupé ±2 Hz ; l'extension à l'ensemble du catalogue (1781 cellules) et aux autres protocoles de stimulation reste ouverte",
+      "comptage_ddll": {
+        "verdict": "déficit",
+        "justification": "le seuil de classement (20 Hz) est payé une fois (hérité gelé de P35, non ré-ajusté) : la classification du réel achète sa frontière"
+      },
+      "artefacts": {
+        "script": "p41_neurones_reels.py",
+        "verdict": "p41_neurones_reels_verdict.json"
+      },
+      "falsifieur": "C0 échoue (HH non type II ou Izhikevich non type I au seuil gelé) → l'instrument tombe ; recoupement brut/table > ±2 Hz → la mesure tombe ; un rééchantillonnage 8-cellules donnant ≥ 4/8 interneurones type II tue l'entrée",
+      "sha256_entrée": "f5e0ffaa08459749384507328c89301460bb8b07ac223bfbe10a4ead91d28216"
+    }
+  ],
+  "sha256_registre": "4b82ca3fdbb5ae882a224798f4dcab2ab1d7d1d5f8cf7b914ff9e8b931976224",
+  "sha256_script": "0076fc0239e0c518618f9b0f1289ff77b1b53f30447f319aa97ba328ea401c6a"
+}

@@ -1,0 +1,858 @@
+{
+  "chantier": "A3-TAMIS-JASTROW",
+  "protocole": "TAMIS-J12-2.0 (gelé) — règles de portée figées en ζ₀ = Z−5/16 (fidélité corpus), porte variationnelle tol = 5e-3 Ha, intégrateur delta C12.1, npts 96 nominal",
+  "b3_fail_d_A3": "première version du tamis : énergies sous-variationnelles (gains jusqu'à 44× le résiduel) — défauts détectés et fermés : β couplé au ζ courant (déviation de protocole) et absence de porte variationnelle",
+  "contrôles": {
+    "T0_levier_c0_trois_grilles": "PASS",
+    "T1_croisement_corpus": {
+      "F1×R1_perd_tout_Z (P32)": true,
+      "F1×R3_gagne_Z2_perd_Z≥4 (P32, partie stable)": true,
+      "F3×R3_dégrade_tout_Z (P33)": true
+    },
+    "raffinement_mesuré_de_P32": {
+      "cellule_Z3": "frontière de résolution — N64 : passe ; N96/N128 : perd (~2.4e-3). La victoire de P32 à Z = 3 (+3.5e-3) était sous la résolution de l'intégrateur.",
+      "loi_P32_affûtée": "la règle de densité R3 ne gagne clairement qu'en Z = 2 — la loi Z-dépendante de la frontière est confirmée et durcie"
+    }
+  },
+  "tamis": {
+    "F1×R1": {
+      "tamis_N64_N96_N128": {
+        "64": false,
+        "96": false,
+        "128": false
+      },
+      "statuts_par_Z_et_npts": {
+        "2": {
+          "64": "perd",
+          "96": "perd",
+          "128": "perd"
+        },
+        "3": {
+          "64": "perd",
+          "96": "perd",
+          "128": "perd"
+        },
+        "4": {
+          "64": "perd",
+          "96": "perd",
+          "128": "perd"
+        },
+        "5": {
+          "64": "perd",
+          "96": "perd",
+          "128": "perd"
+        },
+        "6": {
+          "64": "perd",
+          "96": "perd",
+          "128": "perd"
+        }
+      },
+      "stabilité_A1": "STABLE",
+      "n_Z_passés_nominal": 0,
+      "détail_nominal": {
+        "2": {
+          "statut": "perd",
+          "passe": false,
+          "E": -2.69913,
+          "E_ref": -2.8475,
+          "gain": -0.14837,
+          "marge_variationnelle": 0.2046,
+          "beta": 1.6875
+        },
+        "3": {
+          "statut": "perd",
+          "passe": false,
+          "E": -7.00486,
+          "E_ref": -7.2225,
+          "gain": -0.21764,
+          "marge_variationnelle": 0.27506,
+          "beta": 2.6875
+        },
+        "4": {
+          "statut": "perd",
+          "passe": false,
+          "E": -13.31062,
+          "E_ref": -13.5975,
+          "gain": -0.28688,
+          "marge_variationnelle": 0.34495,
+          "beta": 3.6875
+        },
+        "5": {
+          "statut": "perd",
+          "passe": false,
+          "E": -21.61638,
+          "E_ref": -21.9725,
+          "gain": -0.35612,
+          "marge_variationnelle": 0.41459,
+          "beta": 4.6875
+        },
+        "6": {
+          "statut": "perd",
+          "passe": false,
+          "E": -31.92214,
+          "E_ref": -32.3475,
+          "gain": -0.42536,
+          "marge_variationnelle": 0.48411,
+          "beta": 5.6875
+        }
+      }
+    },
+    "F1×R2": {
+      "tamis_N64_N96_N128": {
+        "64": false,
+        "96": false,
+        "128": false
+      },
+      "statuts_par_Z_et_npts": {
+        "2": {
+          "64": "HORS DOMAINE",
+          "96": "HORS DOMAINE",
+          "128": "perd"
+        },
+        "3": {
+          "64": "HORS DOMAINE",
+          "96": "HORS DOMAINE",
+          "128": "HORS DOMAINE"
+        },
+        "4": {
+          "64": "HORS DOMAINE",
+          "96": "HORS DOMAINE",
+          "128": "HORS DOMAINE"
+        },
+        "5": {
+          "64": "HORS DOMAINE",
+          "96": "HORS DOMAINE",
+          "128": "HORS DOMAINE"
+        },
+        "6": {
+          "64": "HORS DOMAINE",
+          "96": "HORS DOMAINE",
+          "128": "HORS DOMAINE"
+        }
+      },
+      "stabilité_A1": "FRAGILE (publié)",
+      "n_Z_passés_nominal": 0,
+      "détail_nominal": {
+        "2": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -3.38985,
+          "E_ref": -2.8475,
+          "gain": 0.54235,
+          "marge_variationnelle": -0.48613,
+          "beta": 0.2583
+        },
+        "3": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -8.15271,
+          "E_ref": -7.2225,
+          "gain": 0.93021,
+          "marge_variationnelle": -0.8728,
+          "beta": 0.3477
+        },
+        "4": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -14.94477,
+          "E_ref": -13.5975,
+          "gain": 1.34727,
+          "marge_variationnelle": -1.2892,
+          "beta": 0.4257
+        },
+        "5": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -23.75411,
+          "E_ref": -21.9725,
+          "gain": 1.78161,
+          "marge_variationnelle": -1.72314,
+          "beta": 0.4975
+        },
+        "6": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -34.57476,
+          "E_ref": -32.3475,
+          "gain": 2.22726,
+          "marge_variationnelle": -2.16851,
+          "beta": 0.5654
+        }
+      }
+    },
+    "F1×R3": {
+      "tamis_N64_N96_N128": {
+        "64": true,
+        "96": false,
+        "128": false
+      },
+      "statuts_par_Z_et_npts": {
+        "2": {
+          "64": "passe",
+          "96": "passe",
+          "128": "passe"
+        },
+        "3": {
+          "64": "passe",
+          "96": "perd",
+          "128": "perd"
+        },
+        "4": {
+          "64": "passe",
+          "96": "perd",
+          "128": "perd"
+        },
+        "5": {
+          "64": "passe",
+          "96": "perd",
+          "128": "perd"
+        },
+        "6": {
+          "64": "passe",
+          "96": "perd",
+          "128": "perd"
+        }
+      },
+      "stabilité_A1": "FRAGILE (publié)",
+      "n_Z_passés_nominal": 1,
+      "détail_nominal": {
+        "2": {
+          "statut": "passe",
+          "passe": true,
+          "E": -2.85582,
+          "E_ref": -2.8475,
+          "gain": 0.00832,
+          "marge_variationnelle": 0.04791,
+          "beta": 0.7087
+        },
+        "3": {
+          "statut": "perd",
+          "passe": false,
+          "E": -7.22015,
+          "E_ref": -7.2225,
+          "gain": -0.00235,
+          "marge_variationnelle": 0.05977,
+          "beta": 1.1287
+        },
+        "4": {
+          "statut": "perd",
+          "passe": false,
+          "E": -13.58524,
+          "E_ref": -13.5975,
+          "gain": -0.01226,
+          "marge_variationnelle": 0.07033,
+          "beta": 1.5487
+        },
+        "5": {
+          "statut": "perd",
+          "passe": false,
+          "E": -21.95059,
+          "E_ref": -21.9725,
+          "gain": -0.02191,
+          "marge_variationnelle": 0.08039,
+          "beta": 1.9688
+        },
+        "6": {
+          "statut": "perd",
+          "passe": false,
+          "E": -32.31603,
+          "E_ref": -32.3475,
+          "gain": -0.03147,
+          "marge_variationnelle": 0.09022,
+          "beta": 2.3887
+        }
+      }
+    },
+    "F2×R1": {
+      "tamis_N64_N96_N128": {
+        "64": false,
+        "96": false,
+        "128": false
+      },
+      "statuts_par_Z_et_npts": {
+        "2": {
+          "64": "HORS DOMAINE",
+          "96": "HORS DOMAINE",
+          "128": "HORS DOMAINE"
+        },
+        "3": {
+          "64": "HORS DOMAINE",
+          "96": "HORS DOMAINE",
+          "128": "HORS DOMAINE"
+        },
+        "4": {
+          "64": "HORS DOMAINE",
+          "96": "HORS DOMAINE",
+          "128": "HORS DOMAINE"
+        },
+        "5": {
+          "64": "HORS DOMAINE",
+          "96": "HORS DOMAINE",
+          "128": "HORS DOMAINE"
+        },
+        "6": {
+          "64": "HORS DOMAINE",
+          "96": "HORS DOMAINE",
+          "128": "HORS DOMAINE"
+        }
+      },
+      "stabilité_A1": "STABLE",
+      "n_Z_passés_nominal": 0,
+      "détail_nominal": {
+        "2": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -2.9795,
+          "E_ref": -2.8475,
+          "gain": 0.132,
+          "marge_variationnelle": -0.07577,
+          "beta": 1.6875
+        },
+        "3": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -7.40942,
+          "E_ref": -7.2225,
+          "gain": 0.18692,
+          "marge_variationnelle": -0.12951,
+          "beta": 2.6875
+        },
+        "4": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -13.83932,
+          "E_ref": -13.5975,
+          "gain": 0.24182,
+          "marge_variationnelle": -0.18376,
+          "beta": 3.6875
+        },
+        "5": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -22.26918,
+          "E_ref": -21.9725,
+          "gain": 0.29668,
+          "marge_variationnelle": -0.23821,
+          "beta": 4.6875
+        },
+        "6": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -32.69898,
+          "E_ref": -32.3475,
+          "gain": 0.35148,
+          "marge_variationnelle": -0.29273,
+          "beta": 5.6875
+        }
+      }
+    },
+    "F2×R2": {
+      "tamis_N64_N96_N128": {
+        "64": false,
+        "96": false,
+        "128": false
+      },
+      "statuts_par_Z_et_npts": {
+        "2": {
+          "64": "HORS DOMAINE",
+          "96": "HORS DOMAINE",
+          "128": "HORS DOMAINE"
+        },
+        "3": {
+          "64": "HORS DOMAINE",
+          "96": "HORS DOMAINE",
+          "128": "HORS DOMAINE"
+        },
+        "4": {
+          "64": "HORS DOMAINE",
+          "96": "HORS DOMAINE",
+          "128": "HORS DOMAINE"
+        },
+        "5": {
+          "64": "HORS DOMAINE",
+          "96": "HORS DOMAINE",
+          "128": "HORS DOMAINE"
+        },
+        "6": {
+          "64": "HORS DOMAINE",
+          "96": "HORS DOMAINE",
+          "128": "HORS DOMAINE"
+        }
+      },
+      "stabilité_A1": "STABLE",
+      "n_Z_passés_nominal": 0,
+      "détail_nominal": {
+        "2": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -3.32799,
+          "E_ref": -2.8475,
+          "gain": 0.48049,
+          "marge_variationnelle": -0.42426,
+          "beta": 0.4672
+        },
+        "3": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -8.07161,
+          "E_ref": -7.2225,
+          "gain": 0.84911,
+          "marge_variationnelle": -0.7917,
+          "beta": 0.5709
+        },
+        "4": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -14.84623,
+          "E_ref": -13.5975,
+          "gain": 1.24873,
+          "marge_variationnelle": -1.19066,
+          "beta": 0.6615
+        },
+        "5": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -23.63972,
+          "E_ref": -21.9725,
+          "gain": 1.66722,
+          "marge_variationnelle": -1.60874,
+          "beta": 0.7454
+        },
+        "6": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -34.44568,
+          "E_ref": -32.3475,
+          "gain": 2.09818,
+          "marge_variationnelle": -2.03944,
+          "beta": 0.8253
+        }
+      }
+    },
+    "F2×R3": {
+      "tamis_N64_N96_N128": {
+        "64": false,
+        "96": false,
+        "128": false
+      },
+      "statuts_par_Z_et_npts": {
+        "2": {
+          "64": "HORS DOMAINE",
+          "96": "HORS DOMAINE",
+          "128": "HORS DOMAINE"
+        },
+        "3": {
+          "64": "HORS DOMAINE",
+          "96": "HORS DOMAINE",
+          "128": "HORS DOMAINE"
+        },
+        "4": {
+          "64": "HORS DOMAINE",
+          "96": "HORS DOMAINE",
+          "128": "HORS DOMAINE"
+        },
+        "5": {
+          "64": "HORS DOMAINE",
+          "96": "HORS DOMAINE",
+          "128": "HORS DOMAINE"
+        },
+        "6": {
+          "64": "HORS DOMAINE",
+          "96": "HORS DOMAINE",
+          "128": "HORS DOMAINE"
+        }
+      },
+      "stabilité_A1": "STABLE",
+      "n_Z_passés_nominal": 0,
+      "détail_nominal": {
+        "2": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -3.18753,
+          "E_ref": -2.8475,
+          "gain": 0.34003,
+          "marge_variationnelle": -0.28381,
+          "beta": 0.7087
+        },
+        "3": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -7.71663,
+          "E_ref": -7.2225,
+          "gain": 0.49413,
+          "marge_variationnelle": -0.43672,
+          "beta": 1.1287
+        },
+        "4": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -14.24594,
+          "E_ref": -13.5975,
+          "gain": 0.64844,
+          "marge_variationnelle": -0.59038,
+          "beta": 1.5487
+        },
+        "5": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -22.77526,
+          "E_ref": -21.9725,
+          "gain": 0.80276,
+          "marge_variationnelle": -0.74429,
+          "beta": 1.9688
+        },
+        "6": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -33.30454,
+          "E_ref": -32.3475,
+          "gain": 0.95704,
+          "marge_variationnelle": -0.89829,
+          "beta": 2.3887
+        }
+      }
+    },
+    "F4×R1": {
+      "tamis_N64_N96_N128": {
+        "64": false,
+        "96": false,
+        "128": false
+      },
+      "statuts_par_Z_et_npts": {
+        "2": {
+          "64": "perd",
+          "96": "perd",
+          "128": "perd"
+        },
+        "3": {
+          "64": "perd",
+          "96": "perd",
+          "128": "perd"
+        },
+        "4": {
+          "64": "perd",
+          "96": "perd",
+          "128": "perd"
+        },
+        "5": {
+          "64": "perd",
+          "96": "perd",
+          "128": "perd"
+        },
+        "6": {
+          "64": "perd",
+          "96": "perd",
+          "128": "perd"
+        }
+      },
+      "stabilité_A1": "STABLE",
+      "n_Z_passés_nominal": 0,
+      "détail_nominal": {
+        "2": {
+          "statut": "perd",
+          "passe": false,
+          "E": -2.66384,
+          "E_ref": -2.8475,
+          "gain": -0.18366,
+          "marge_variationnelle": 0.23989,
+          "beta": 1.6875
+        },
+        "3": {
+          "statut": "perd",
+          "passe": false,
+          "E": -6.97365,
+          "E_ref": -7.2225,
+          "gain": -0.24885,
+          "marge_variationnelle": 0.30626,
+          "beta": 2.6875
+        },
+        "4": {
+          "statut": "perd",
+          "passe": false,
+          "E": -13.2842,
+          "E_ref": -13.5975,
+          "gain": -0.3133,
+          "marge_variationnelle": 0.37136,
+          "beta": 3.6875
+        },
+        "5": {
+          "statut": "perd",
+          "passe": false,
+          "E": -21.595,
+          "E_ref": -21.9725,
+          "gain": -0.3775,
+          "marge_variationnelle": 0.43597,
+          "beta": 4.6875
+        },
+        "6": {
+          "statut": "perd",
+          "passe": false,
+          "E": -31.90592,
+          "E_ref": -32.3475,
+          "gain": -0.44158,
+          "marge_variationnelle": 0.50033,
+          "beta": 5.6875
+        }
+      }
+    },
+    "F4×R2": {
+      "tamis_N64_N96_N128": {
+        "64": false,
+        "96": false,
+        "128": false
+      },
+      "statuts_par_Z_et_npts": {
+        "2": {
+          "64": "HORS DOMAINE",
+          "96": "HORS DOMAINE",
+          "128": "HORS DOMAINE"
+        },
+        "3": {
+          "64": "HORS DOMAINE",
+          "96": "HORS DOMAINE",
+          "128": "HORS DOMAINE"
+        },
+        "4": {
+          "64": "HORS DOMAINE",
+          "96": "HORS DOMAINE",
+          "128": "HORS DOMAINE"
+        },
+        "5": {
+          "64": "HORS DOMAINE",
+          "96": "HORS DOMAINE",
+          "128": "HORS DOMAINE"
+        },
+        "6": {
+          "64": "HORS DOMAINE",
+          "96": "HORS DOMAINE",
+          "128": "HORS DOMAINE"
+        }
+      },
+      "stabilité_A1": "STABLE",
+      "n_Z_passés_nominal": 0,
+      "détail_nominal": {
+        "2": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -3.47977,
+          "E_ref": -2.8475,
+          "gain": 0.63227,
+          "marge_variationnelle": -0.57605,
+          "beta": 0.2678
+        },
+        "3": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -8.30766,
+          "E_ref": -7.2225,
+          "gain": 1.08516,
+          "marge_variationnelle": -1.02774,
+          "beta": 0.3869
+        },
+        "4": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -15.1644,
+          "E_ref": -13.5975,
+          "gain": 1.5669,
+          "marge_variationnelle": -1.50883,
+          "beta": 0.4972
+        },
+        "5": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -24.03676,
+          "E_ref": -21.9725,
+          "gain": 2.06426,
+          "marge_variationnelle": -2.00579,
+          "beta": 0.6024
+        },
+        "6": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -34.91875,
+          "E_ref": -32.3475,
+          "gain": 2.57125,
+          "marge_variationnelle": -2.51251,
+          "beta": 0.7043
+        }
+      }
+    },
+    "F4×R3": {
+      "tamis_N64_N96_N128": {
+        "64": false,
+        "96": false,
+        "128": false
+      },
+      "statuts_par_Z_et_npts": {
+        "2": {
+          "64": "perd",
+          "96": "perd",
+          "128": "perd"
+        },
+        "3": {
+          "64": "perd",
+          "96": "perd",
+          "128": "perd"
+        },
+        "4": {
+          "64": "perd",
+          "96": "perd",
+          "128": "perd"
+        },
+        "5": {
+          "64": "perd",
+          "96": "perd",
+          "128": "perd"
+        },
+        "6": {
+          "64": "perd",
+          "96": "perd",
+          "128": "perd"
+        }
+      },
+      "stabilité_A1": "STABLE",
+      "n_Z_passés_nominal": 0,
+      "détail_nominal": {
+        "2": {
+          "statut": "perd",
+          "passe": false,
+          "E": -2.47442,
+          "E_ref": -2.8475,
+          "gain": -0.37308,
+          "marge_variationnelle": 0.42931,
+          "beta": 0.7087
+        },
+        "3": {
+          "statut": "perd",
+          "passe": false,
+          "E": -6.67012,
+          "E_ref": -7.2225,
+          "gain": -0.55238,
+          "marge_variationnelle": 0.60979,
+          "beta": 1.1287
+        },
+        "4": {
+          "statut": "perd",
+          "passe": false,
+          "E": -12.86856,
+          "E_ref": -13.5975,
+          "gain": -0.72894,
+          "marge_variationnelle": 0.78701,
+          "beta": 1.5487
+        },
+        "5": {
+          "statut": "perd",
+          "passe": false,
+          "E": -21.0685,
+          "E_ref": -21.9725,
+          "gain": -0.904,
+          "marge_variationnelle": 0.96248,
+          "beta": 1.9688
+        },
+        "6": {
+          "statut": "perd",
+          "passe": false,
+          "E": -31.26877,
+          "E_ref": -32.3475,
+          "gain": -1.07873,
+          "marge_variationnelle": 1.13747,
+          "beta": 2.3887
+        }
+      }
+    },
+    "F3×R3": {
+      "tamis_N64_N96_N128": {
+        "64": false,
+        "96": false,
+        "128": false
+      },
+      "statuts_par_Z_et_npts": {
+        "2": {
+          "64": "perd",
+          "96": "perd",
+          "128": "perd"
+        },
+        "3": {
+          "64": "perd",
+          "96": "perd",
+          "128": "perd"
+        },
+        "4": {
+          "64": "perd",
+          "96": "perd",
+          "128": "perd"
+        },
+        "5": {
+          "64": "perd",
+          "96": "perd",
+          "128": "perd"
+        },
+        "6": {
+          "64": "perd",
+          "96": "perd",
+          "128": "perd"
+        }
+      },
+      "stabilité_A1": "STABLE",
+      "n_Z_passés_nominal": 0,
+      "détail_nominal": {
+        "2": {
+          "statut": "perd",
+          "passe": false,
+          "E": -2.69271,
+          "E_ref": -2.8475,
+          "gain": -0.15479,
+          "marge_variationnelle": 0.21102,
+          "beta": 0.7087
+        },
+        "3": {
+          "statut": "perd",
+          "passe": false,
+          "E": -6.84642,
+          "E_ref": -7.2225,
+          "gain": -0.37608,
+          "marge_variationnelle": 0.4335,
+          "beta": 1.1287
+        },
+        "4": {
+          "statut": "perd",
+          "passe": false,
+          "E": -12.95018,
+          "E_ref": -13.5975,
+          "gain": -0.64732,
+          "marge_variationnelle": 0.70539,
+          "beta": 1.5487
+        },
+        "5": {
+          "statut": "perd",
+          "passe": false,
+          "E": -21.01969,
+          "E_ref": -21.9725,
+          "gain": -0.95281,
+          "marge_variationnelle": 1.01128,
+          "beta": 1.9688
+        },
+        "6": {
+          "statut": "perd",
+          "passe": false,
+          "E": -31.06529,
+          "E_ref": -32.3475,
+          "gain": -1.28221,
+          "marge_variationnelle": 1.34096,
+          "beta": 2.3887
+        }
+      }
+    }
+  },
+  "verdict_global": {
+    "couples_déclarés": 10,
+    "couples_passant_le_tamis_N96_dans_le_domaine": 0,
+    "cellules_hors_domaine_N96": "25/50",
+    "déclaration": "frontière r₁₂ CONFIRMÉE au niveau du tamis déclaré : dans le domaine de validité de l'intégrateur delta, aucun couple (famille, règle) à zéro paramètre ne bat la référence en tout Z — la loi Z-dépendante de P32 est reproduite",
+    "frontière_intégrateur_mesurée": "l'intégrateur delta de C12.1 a un domaine de validité (corrélation faible) : les cellules HORS DOMAINE ne peuvent être jugées que par l'intégrateur d'espérance complet (type P31) — coût de fermeture : ×10, chantier déclaré"
+  },
+  "falsifieur": "tout couple (famille, règle) passant le tamis DANS le domaine variationnel attaque la frontière ; tout écart à T0/T1 tue l'intégrateur ou la fidélité de protocole",
+  "sha256_script": "8b795df54d3f921e6bf6d58fe2a288561f2a06a385803c465b4538d7422ff1af"
+}

@@ -1,0 +1,51 @@
+{
+  "chantier": "A3-KO6-REENUMERATION",
+  "protocole": "TAMIS-KO6-1.0 (gelé) — logique publiée, plafond supprimé, définitions déclarées, aucune rétro-ajustement",
+  "défauts_audités": {
+    "D1_plafond_codé_en_dur": "if len(solutions) >= 63160: break — le nombre est une entrée",
+    "D2_axiomes_proxys": "order_one = symétrie matricielle ; ko6 = k pair et dim ≥ 2k+1 — pas de J_F, γ_F, D_F",
+    "D3_certification_vide": "certify() retourne True inconditionnellement"
+  },
+  "contrôle_T1_sqf": {
+    "PASS": {
+      "sqf(15)=15": true,
+      "sqf(12)=6": true,
+      "sqf(8)=2": true,
+      "loi(4)=1": true,
+      "loi(7)=7": true
+    }
+  },
+  "étape_1_reproduction": {
+    "prédiction_pré_enregistrée": "0 solution — la cible 7 bandes est inatteignable (lignes ≤ k ≤ 3)",
+    "matrices_admissibles": 4067,
+    "solutions_logique_publiée_plafond_supprimé": 0,
+    "prédiction_confirmée": true
+  },
+  "étape_2_tamis_définitions": {
+    "bands_lignes": {
+      "avec_cible_7": 0,
+      "sans_cible_bandes": 29017,
+      "max_atteignable_sous_bornes": 3
+    },
+    "bands_entrees": {
+      "avec_cible_7": 7200,
+      "sans_cible_bandes": 29017,
+      "max_atteignable_sous_bornes": 9
+    },
+    "bands_paires": {
+      "avec_cible_7": 0,
+      "sans_cible_bandes": 29017,
+      "max_atteignable_sous_bornes": 6
+    }
+  },
+  "verdict_global": {
+    "statut_du_63160": "RÉFUTÉ COMME PUBLIÉ (B3-FAIL du corpus) — le moteur commité ne produit aucune solution ; le plafond 63160 est inatteignable et injustifié ; la certification est vide. Le nombre 63 160 n'est ni une sortie du code, ni un invariant de définition (voir tamis) : c'est un artefact.",
+    "frontière_mesurée": "énumération KO-6 propre — statut : OUVERTE",
+    "coût_de_fermeture_exact": "implémenter les axiomes KO-6 au niveau des représentations (J_F² = +1, J_F D_F = D_F J_F, (J_F γ_F)² = −1, condition d'ordre un sur les blocs de D_F), ré-énumérer sous bornes déclarées, publier le compte quel qu'il soit"
+  },
+  "b3_fail": [
+    "« 63 160 réalisations certifiées » — non reproductible par son propre moteur (0 solution), plafond codé en dur, certification vide"
+  ],
+  "falsifieur": "toute exécution du moteur commité (plafond retiré) produisant au moins une solution tue le verdict « 0 solution » ; toute définition déclarée atteignant 63160 sans rétro-ajustement réhabiliterait le nombre",
+  "sha256_script": "d766e4aa90190f3d2aba57d37bb388b63717f94b81ef54247367fadf300fbe9e"
+}

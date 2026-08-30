@@ -1,0 +1,259 @@
+{
+  "chantier": "A1-BATTERIE-PERTURBATION",
+  "protocole": "PERT-BATT-1.0 (gelé) — plan factoriel axial, une coordonnée perturbée à la fois, axes déclarés avant exécution",
+  "principe": "le verdict devient un couple (V, Σ) : un verdict stable survit à la perturbation du protocole ; un verdict fragile dépend d'un choix de protocole — et la fragilité est publiée, pas cachée",
+  "rapports": {
+    "P34-NEURONE": {
+      "chantier": "P34-NEURONE",
+      "n_protocoles_testés": 11,
+      "protocole_nominal": {
+        "marge_lp": 1.0,
+        "bp_seed": 0,
+        "bp_lr": 1.0,
+        "bp_epochs": 20000
+      },
+      "axes_déclarés": {
+        "marge_lp": [
+          0.5,
+          2.0,
+          10.0
+        ],
+        "bp_seed": [
+          1,
+          7,
+          42
+        ],
+        "bp_lr": [
+          0.5,
+          2.0
+        ],
+        "bp_epochs": [
+          5000,
+          40000
+        ]
+      },
+      "verdicts_nominaux": {
+        "C1_compte_12_sur_14": true,
+        "C1_XOR_inseparable": true,
+        "C1_XNOR_inseparable": true,
+        "L1_biais_constitutif_pour_12": true,
+        "L3_XOR_fermé_coût_+1_couche": true,
+        "témoin_backprop_concorde": true
+      },
+      "stabilité_par_composante": {
+        "C1_compte_12_sur_14": 1.0,
+        "C1_XOR_inseparable": 1.0,
+        "C1_XNOR_inseparable": 1.0,
+        "L1_biais_constitutif_pour_12": 1.0,
+        "L3_XOR_fermé_coût_+1_couche": 1.0,
+        "témoin_backprop_concorde": 1.0
+      },
+      "fragilités_publiées": {},
+      "dispersion_mesures": {
+        "n_séparables_non_triviales": {
+          "min": 12.0,
+          "max": 12.0,
+          "nominal": 12.0
+        },
+        "n_biais_constitutif": {
+          "min": 12.0,
+          "max": 12.0,
+          "nominal": 12.0
+        },
+        "mse_and": {
+          "min": 0.000228,
+          "max": 0.002073,
+          "nominal": 0.00047
+        },
+        "mse_xor": {
+          "min": 0.25,
+          "max": 0.25,
+          "nominal": 0.25
+        }
+      },
+      "mesures_nominales": {
+        "n_séparables_non_triviales": 12.0,
+        "n_biais_constitutif": 12.0,
+        "mse_and": 0.0004699130646962889,
+        "mse_xor": 0.25
+      }
+    },
+    "P35-NEURONE-BIOLOGIQUE": {
+      "chantier": "P35-NEURONE-BIOLOGIQUE",
+      "n_protocoles_testés": 17,
+      "protocole_nominal": {
+        "dt": 0.02,
+        "discard_ms": 50.0,
+        "c1_points": [
+          5.0,
+          6.3,
+          7.5
+        ],
+        "c1_tol_pic": 0.25,
+        "c3_pas_courant": 2.0,
+        "c3_saut_min": 20.0,
+        "ash_seuil_std": 1e-09,
+        "ash_frac_pic": 0.1
+      },
+      "axes_déclarés": {
+        "dt": [
+          0.01,
+          0.04
+        ],
+        "discard_ms": [
+          25.0,
+          100.0
+        ],
+        "c1_points": [
+          [
+            5.0,
+            6.5,
+            8.0
+          ],
+          [
+            4.5,
+            7.0,
+            9.0
+          ]
+        ],
+        "c1_tol_pic": [
+          0.1,
+          0.5
+        ],
+        "c3_pas_courant": [
+          1.0,
+          4.0
+        ],
+        "c3_saut_min": [
+          10.0,
+          40.0
+        ],
+        "ash_seuil_std": [
+          1e-12,
+          1e-06
+        ],
+        "ash_frac_pic": [
+          0.05,
+          0.2
+        ]
+      },
+      "verdicts_nominaux": {
+        "C1_bio_tout_ou_rien": true,
+        "C1_S_graduée_donc_réfutée": true,
+        "C2_bio_train_périodique": true,
+        "C3_fI_discontinue_type_II": true,
+        "C5_ASH_lite_sépare": true,
+        "L1_fermeture_2D_suffit": true,
+        "L3_fermeture_1D_sur_S1_suffit": true,
+        "VERDICT_GLOBAL_σ_réfutée": true
+      },
+      "stabilité_par_composante": {
+        "C1_bio_tout_ou_rien": 1.0,
+        "C1_S_graduée_donc_réfutée": 1.0,
+        "C2_bio_train_périodique": 1.0,
+        "C3_fI_discontinue_type_II": 1.0,
+        "C5_ASH_lite_sépare": 1.0,
+        "L1_fermeture_2D_suffit": 1.0,
+        "L3_fermeture_1D_sur_S1_suffit": 1.0,
+        "VERDICT_GLOBAL_σ_réfutée": 1.0
+      },
+      "fragilités_publiées": {},
+      "dispersion_mesures": {
+        "rate10_Hz": {
+          "min": 68.0,
+          "max": 70.0,
+          "nominal": 68.0
+        },
+        "saut_fI_Hz": {
+          "min": 60.0,
+          "max": 64.0,
+          "nominal": 60.0
+        },
+        "pic_seuil_mV": {
+          "min": 29.586008,
+          "max": 32.48282,
+          "nominal": 30.586941
+        },
+        "n_spikes_Izhikevich": {
+          "min": 5.0,
+          "max": 7.0,
+          "nominal": 6.0
+        },
+        "ash_bio_Rtop": {
+          "min": 4.0,
+          "max": 5.0,
+          "nominal": 4.0
+        },
+        "ash_bio_Rc": {
+          "min": 0.2391,
+          "max": 0.3869,
+          "nominal": 0.3075
+        }
+      },
+      "mesures_nominales": {
+        "rate10_Hz": 68.0,
+        "saut_fI_Hz": 60.0,
+        "pic_seuil_mV": 30.586941140125457,
+        "n_spikes_Izhikevich": 6.0,
+        "ash_bio_Rtop": 4.0,
+        "ash_bio_Rc": 0.3075
+      }
+    }
+  },
+  "certification_par_mutation": {
+    "principe": "les trois accidents historiques de P35, réintroduits comme protocoles mutés, doivent tous être détectés — sinon la batterie est elle-même un B3-FAIL",
+    "résultats": {
+      "M1_C1_testé_loin_du_seuil": {
+        "accident_reproduit": "comparer I=10 vs I=20 faisait paraître σ MEILLEURE que le biologique (saturation)",
+        "composantes_basculées": {
+          "C1_bio_tout_ou_rien": "True → False",
+          "C1_S_graduée_donc_réfutée": "True → False",
+          "VERDICT_GLOBAL_σ_réfutée": "True → False"
+        },
+        "détectée": true
+      },
+      "M2_bruit_injecté_dans_signal_statique": {
+        "accident_reproduit": "1e-9·randn injecté puis normalisé → spectre blanc fantôme (Rtop = 1503)",
+        "composantes_basculées": {
+          "C5_ASH_lite_sépare": "True → False"
+        },
+        "détectée": true
+      },
+      "M3_résidu_flottant_normalisé": {
+        "accident_reproduit": "signal constant sans la règle déclarée → résidu flottant (~ε machine au-delà de 2.2e-16) amplifié par la normalisation → pics fantômes (Rtop = 5)",
+        "composantes_basculées": {
+          "C5_ASH_lite_sépare": "True → False"
+        },
+        "détectée": true
+      }
+    },
+    "verdict": "PASS — les trois accidents sont détectés"
+  },
+  "synthèse": {
+    "P34-NEURONE": {
+      "couple_verdict_stabilité": {
+        "verdict_global": "12/14 séparables, XOR/XNOR frontière",
+        "Σ_global": 1.0,
+        "Σ_min_composantes": 1.0,
+        "composantes_fragiles": []
+      }
+    },
+    "P35-NEURONE-BIOLOGIQUE": {
+      "couple_verdict_stabilité": {
+        "verdict_global": "σ réfutée (B3-FAIL de structure)",
+        "Σ_global": 1.0,
+        "Σ_min_composantes": 1.0,
+        "composantes_fragiles": []
+      }
+    }
+  },
+  "verdict_global": {
+    "C0_reproductibilité": "PASS — fonctions pures, aucune graine cachée",
+    "C1_D_et_S_intacts": "PASS — seul π est perturbé",
+    "C2_fragilités_publiées": "voir fragilités_publiées par chantier",
+    "C3_prédictions_pré_enregistrées": "CONFIRMÉES — (i) P34 stable à 100 % : la faisabilité LP est invariante d'échelle, le verdict exact ne dépend d'aucun choix de protocole ; (ii) le verdict global de P35 survit à toute perturbation déclarée ; (iii) les MESURES de P35 sont sensibles au protocole (mse_and ×9, Rc ±25 %, spikes Izhikevich 5–7) sans qu'aucun verdict ne bascule — la distinction verdict/mesure est nécessaire",
+    "certification_mutation": "PASS"
+  },
+  "falsifieur": "tout protocole perturbé changeant un verdict de P34 tue « P34 stable à 100 % » ; tout protocole perturbé réhabilitant σ sur C1/C2/C3 tue « P35 globalement stable »",
+  "sha256_script": "c34d6065daf558436fc63cf1ec6be156d092db02619fcc8b4f310e002faebe09"
+}

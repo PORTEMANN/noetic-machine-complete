@@ -1,0 +1,258 @@
+{
+  "npts": 128,
+  "zs": [
+    5,
+    6
+  ],
+  "T0_levier_c0": true,
+  "E_ref": {
+    "5": -21.9725,
+    "6": -32.3475
+  },
+  "E_ref_analytique": {
+    "5": -21.97266,
+    "6": -32.34766
+  },
+  "table": {
+    "F1×R1": {
+      "par_Z": {
+        "5": {
+          "statut": "perd",
+          "passe": false,
+          "E": -21.61283,
+          "E_ref": -21.9725,
+          "gain": -0.35967,
+          "marge_variationnelle": 0.41814,
+          "beta": 4.6875
+        },
+        "6": {
+          "statut": "perd",
+          "passe": false,
+          "E": -31.91769,
+          "E_ref": -32.3475,
+          "gain": -0.42981,
+          "marge_variationnelle": 0.48855,
+          "beta": 5.6875
+        }
+      },
+      "n_Z_passés": 0,
+      "passe_le_tamis": false
+    },
+    "F1×R2": {
+      "par_Z": {
+        "5": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -23.81769,
+          "E_ref": -21.9725,
+          "gain": 1.84519,
+          "marge_variationnelle": -1.78672,
+          "beta": 0.4539
+        },
+        "6": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -34.66185,
+          "E_ref": -32.3475,
+          "gain": 2.31435,
+          "marge_variationnelle": -2.25561,
+          "beta": 0.5096
+        }
+      },
+      "n_Z_passés": 0,
+      "passe_le_tamis": false
+    },
+    "F1×R3": {
+      "par_Z": {
+        "5": {
+          "statut": "perd",
+          "passe": false,
+          "E": -21.93843,
+          "E_ref": -21.9725,
+          "gain": -0.03407,
+          "marge_variationnelle": 0.09254,
+          "beta": 1.9688
+        },
+        "6": {
+          "statut": "perd",
+          "passe": false,
+          "E": -32.30132,
+          "E_ref": -32.3475,
+          "gain": -0.04618,
+          "marge_variationnelle": 0.10493,
+          "beta": 2.3887
+        }
+      },
+      "n_Z_passés": 0,
+      "passe_le_tamis": false
+    },
+    "F2×R1": {
+      "par_Z": {
+        "5": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -22.25531,
+          "E_ref": -21.9725,
+          "gain": 0.28281,
+          "marge_variationnelle": -0.22434,
+          "beta": 4.6875
+        },
+        "6": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -32.68205,
+          "E_ref": -32.3475,
+          "gain": 0.33455,
+          "marge_variationnelle": -0.2758,
+          "beta": 5.6875
+        }
+      },
+      "n_Z_passés": 0,
+      "passe_le_tamis": false
+    },
+    "F2×R2": {
+      "par_Z": {
+        "5": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -23.72009,
+          "E_ref": -21.9725,
+          "gain": 1.74759,
+          "marge_variationnelle": -1.68911,
+          "beta": 0.6539
+        },
+        "6": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -34.55399,
+          "E_ref": -32.3475,
+          "gain": 2.20649,
+          "marge_variationnelle": -2.14774,
+          "beta": 0.7139
+        }
+      },
+      "n_Z_passés": 0,
+      "passe_le_tamis": false
+    },
+    "F2×R3": {
+      "par_Z": {
+        "5": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -22.75188,
+          "E_ref": -21.9725,
+          "gain": 0.77938,
+          "marge_variationnelle": -0.72091,
+          "beta": 1.9688
+        },
+        "6": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -33.27631,
+          "E_ref": -32.3475,
+          "gain": 0.92881,
+          "marge_variationnelle": -0.87007,
+          "beta": 2.3887
+        }
+      },
+      "n_Z_passés": 0,
+      "passe_le_tamis": false
+    },
+    "F4×R1": {
+      "par_Z": {
+        "5": {
+          "statut": "perd",
+          "passe": false,
+          "E": -21.59403,
+          "E_ref": -21.9725,
+          "gain": -0.37847,
+          "marge_variationnelle": 0.43694,
+          "beta": 4.6875
+        },
+        "6": {
+          "statut": "perd",
+          "passe": false,
+          "E": -31.90465,
+          "E_ref": -32.3475,
+          "gain": -0.44285,
+          "marge_variationnelle": 0.50159,
+          "beta": 5.6875
+        }
+      },
+      "n_Z_passés": 0,
+      "passe_le_tamis": false
+    },
+    "F4×R2": {
+      "par_Z": {
+        "5": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -24.0845,
+          "E_ref": -21.9725,
+          "gain": 2.112,
+          "marge_variationnelle": -2.05353,
+          "beta": 0.5736
+        },
+        "6": {
+          "statut": "HORS DOMAINE",
+          "passe": false,
+          "E": -34.98372,
+          "E_ref": -32.3475,
+          "gain": 2.63622,
+          "marge_variationnelle": -2.57747,
+          "beta": 0.6664
+        }
+      },
+      "n_Z_passés": 0,
+      "passe_le_tamis": false
+    },
+    "F4×R3": {
+      "par_Z": {
+        "5": {
+          "statut": "perd",
+          "passe": false,
+          "E": -21.06474,
+          "E_ref": -21.9725,
+          "gain": -0.90776,
+          "marge_variationnelle": 0.96623,
+          "beta": 1.9688
+        },
+        "6": {
+          "statut": "perd",
+          "passe": false,
+          "E": -31.26422,
+          "E_ref": -32.3475,
+          "gain": -1.08328,
+          "marge_variationnelle": 1.14203,
+          "beta": 2.3887
+        }
+      },
+      "n_Z_passés": 0,
+      "passe_le_tamis": false
+    },
+    "F3×R3": {
+      "par_Z": {
+        "5": {
+          "statut": "perd",
+          "passe": false,
+          "E": -21.02877,
+          "E_ref": -21.9725,
+          "gain": -0.94373,
+          "marge_variationnelle": 1.0022,
+          "beta": 1.9688
+        },
+        "6": {
+          "statut": "perd",
+          "passe": false,
+          "E": -31.07837,
+          "E_ref": -32.3475,
+          "gain": -1.26913,
+          "marge_variationnelle": 1.32788,
+          "beta": 2.3887
+        }
+      },
+      "n_Z_passés": 0,
+      "passe_le_tamis": false
+    }
+  }
+}

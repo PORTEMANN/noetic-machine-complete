@@ -1,0 +1,282 @@
+{
+  "chantier": "A2-MOTEUR-LEVIERS",
+  "protocole": "LEV-ENG-1.0 (gelé) — ablation binaire systématique, germe et solveur identiques à P0, critères d'existence gelés, contrôle tueur à ρ = 0",
+  "cible": "fonctionnelle radiale C(ρ) du monopole SU(2) (p0_monopole_su2.py, corpus P0)",
+  "carte_ρ1": {
+    "ρ": 1.0,
+    "étiquette": "ρ=1",
+    "C_nominal": 1.3098085976450555,
+    "lignes": {
+      "nominal": {
+        "C": 1.3098085976450555,
+        "termes": {
+          "c1_cinétique_jauge": 0.244633,
+          "c2_flux_magnétique": 0.283598,
+          "c3_cinétique_higgs": 0.12005,
+          "c4_couplage_jauge_higgs": 0.182509,
+          "c5_potentiel_higgs": 0.479019
+        },
+        "viriel": 1.7396168396289187,
+        "coeur_xi": 1.7699999999999998,
+        "niter": 207,
+        "convergé": true,
+        "fini": true,
+        "asymptotique_ok": true,
+        "coeur_effondré": false,
+        "monopole_existe": true
+      },
+      "moins_c1_cinétique_jauge": {
+        "C": 0.9656922399914328,
+        "termes": {
+          "c1_cinétique_jauge": 0.0,
+          "c2_flux_magnétique": 0.351932,
+          "c3_cinétique_higgs": 0.161654,
+          "c4_couplage_jauge_higgs": 0.083786,
+          "c5_potentiel_higgs": 0.368321
+        },
+        "viriel": 1.3504014353443512,
+        "coeur_xi": 1.3499999999999999,
+        "niter": 118,
+        "convergé": true,
+        "fini": true,
+        "asymptotique_ok": true,
+        "coeur_effondré": false,
+        "monopole_existe": true
+      },
+      "moins_c2_flux_magnétique": {
+        "C": 0.9284775635622877,
+        "termes": {
+          "c1_cinétique_jauge": 0.30627,
+          "c2_flux_magnétique": 0.0,
+          "c3_cinétique_higgs": 0.157326,
+          "c4_couplage_jauge_higgs": 0.117406,
+          "c5_potentiel_higgs": 0.347476
+        },
+        "viriel": 1.3171588905463931,
+        "coeur_xi": 1.2099999999999997,
+        "niter": 163,
+        "convergé": true,
+        "fini": true,
+        "asymptotique_ok": true,
+        "coeur_effondré": false,
+        "monopole_existe": true
+      },
+      "moins_c3_cinétique_higgs": {
+        "C": 1.1574201729593372,
+        "termes": {
+          "c1_cinétique_jauge": 0.272069,
+          "c2_flux_magnétique": 0.298492,
+          "c3_cinétique_higgs": 0.0,
+          "c4_couplage_jauge_higgs": 0.152111,
+          "c5_potentiel_higgs": 0.434749
+        },
+        "viriel": 1.4563565302782782,
+        "coeur_xi": 1.6099999999999997,
+        "niter": 631,
+        "convergé": true,
+        "fini": true,
+        "asymptotique_ok": true,
+        "coeur_effondré": false,
+        "monopole_existe": true
+      },
+      "moins_c4_couplage_jauge_higgs": {
+        "C": 0.5137070575100491,
+        "termes": {
+          "c1_cinétique_jauge": 0.031799,
+          "c2_flux_magnétique": 0.010738,
+          "c3_cinétique_higgs": 0.235551,
+          "c4_couplage_jauge_higgs": 0.0,
+          "c5_potentiel_higgs": 0.23562
+        },
+        "viriel": 0.9424102121865235,
+        "coeur_xi": 0.7699999999999999,
+        "niter": 928,
+        "convergé": true,
+        "fini": true,
+        "asymptotique_ok": false,
+        "coeur_effondré": false,
+        "monopole_existe": false
+      },
+      "moins_c5_potentiel_higgs": {
+        "C": 0.04853314708186149,
+        "termes": {
+          "c1_cinétique_jauge": 0.027531,
+          "c2_flux_magnétique": 0.012345,
+          "c3_cinétique_higgs": 0.007671,
+          "c4_couplage_jauge_higgs": 0.000986,
+          "c5_potentiel_higgs": 0.0
+        },
+        "viriel": 0.00865672743228459,
+        "coeur_xi": 29.99,
+        "niter": 2689,
+        "convergé": true,
+        "fini": true,
+        "asymptotique_ok": false,
+        "coeur_effondré": false,
+        "monopole_existe": false
+      }
+    },
+    "carte": {
+      "c1_cinétique_jauge": {
+        "ablation": {
+          "C": 0.9656922399914328,
+          "termes": {
+            "c1_cinétique_jauge": 0.0,
+            "c2_flux_magnétique": 0.351932,
+            "c3_cinétique_higgs": 0.161654,
+            "c4_couplage_jauge_higgs": 0.083786,
+            "c5_potentiel_higgs": 0.368321
+          },
+          "viriel": 1.3504014353443512,
+          "coeur_xi": 1.3499999999999999,
+          "niter": 118,
+          "convergé": true,
+          "fini": true,
+          "asymptotique_ok": true,
+          "coeur_effondré": false,
+          "monopole_existe": true
+        },
+        "classe": "constitutif de valeur (ΔC/C = 26.3%)",
+        "ΔC_relatif": 0.262723
+      },
+      "c2_flux_magnétique": {
+        "ablation": {
+          "C": 0.9284775635622877,
+          "termes": {
+            "c1_cinétique_jauge": 0.30627,
+            "c2_flux_magnétique": 0.0,
+            "c3_cinétique_higgs": 0.157326,
+            "c4_couplage_jauge_higgs": 0.117406,
+            "c5_potentiel_higgs": 0.347476
+          },
+          "viriel": 1.3171588905463931,
+          "coeur_xi": 1.2099999999999997,
+          "niter": 163,
+          "convergé": true,
+          "fini": true,
+          "asymptotique_ok": true,
+          "coeur_effondré": false,
+          "monopole_existe": true
+        },
+        "classe": "constitutif de valeur (ΔC/C = 29.1%)",
+        "ΔC_relatif": 0.291135
+      },
+      "c3_cinétique_higgs": {
+        "ablation": {
+          "C": 1.1574201729593372,
+          "termes": {
+            "c1_cinétique_jauge": 0.272069,
+            "c2_flux_magnétique": 0.298492,
+            "c3_cinétique_higgs": 0.0,
+            "c4_couplage_jauge_higgs": 0.152111,
+            "c5_potentiel_higgs": 0.434749
+          },
+          "viriel": 1.4563565302782782,
+          "coeur_xi": 1.6099999999999997,
+          "niter": 631,
+          "convergé": true,
+          "fini": true,
+          "asymptotique_ok": true,
+          "coeur_effondré": false,
+          "monopole_existe": true
+        },
+        "classe": "constitutif de valeur (ΔC/C = 11.6%)",
+        "ΔC_relatif": 0.116344
+      },
+      "c4_couplage_jauge_higgs": {
+        "ablation": {
+          "C": 0.5137070575100491,
+          "termes": {
+            "c1_cinétique_jauge": 0.031799,
+            "c2_flux_magnétique": 0.010738,
+            "c3_cinétique_higgs": 0.235551,
+            "c4_couplage_jauge_higgs": 0.0,
+            "c5_potentiel_higgs": 0.23562
+          },
+          "viriel": 0.9424102121865235,
+          "coeur_xi": 0.7699999999999999,
+          "niter": 928,
+          "convergé": true,
+          "fini": true,
+          "asymptotique_ok": false,
+          "coeur_effondré": false,
+          "monopole_existe": false
+        },
+        "classe": "CONSTITUTIF D'EXISTENCE",
+        "ΔC_relatif": 0.6078
+      },
+      "c5_potentiel_higgs": {
+        "ablation": {
+          "C": 0.04853314708186149,
+          "termes": {
+            "c1_cinétique_jauge": 0.027531,
+            "c2_flux_magnétique": 0.012345,
+            "c3_cinétique_higgs": 0.007671,
+            "c4_couplage_jauge_higgs": 0.000986,
+            "c5_potentiel_higgs": 0.0
+          },
+          "viriel": 0.00865672743228459,
+          "coeur_xi": 29.99,
+          "niter": 2689,
+          "convergé": true,
+          "fini": true,
+          "asymptotique_ok": false,
+          "coeur_effondré": false,
+          "monopole_existe": false
+        },
+        "classe": "CONSTITUTIF D'EXISTENCE",
+        "ΔC_relatif": 0.962946
+      }
+    }
+  },
+  "contrôle_moteur": {
+    "C_BPS_ρ0": 0.04853314708186149,
+    "C_BPS_sans_c5": 0.04853314708186149,
+    "ΔC_relatif": 0.0,
+    "verdict": "PASS — le moteur ne voit que ce qui existe",
+    "frontière_mesurée": "C(ρ=0) = 0.0485 ≠ 1 : à masse de Higgs nulle, l'infimum n'est pas atteint sur boîte finie (cœur au bord ξ=30.0) — le point BPS est un point d'invariance d'échelle, non générique ; sensibilité de protocole de P0 à ρ = 0, publiée"
+  },
+  "sensibilité_boîte_XMAX_60": {
+    "c4_couplage_jauge_higgs": {
+      "XMAX_30": {
+        "existe": false,
+        "coeur_xi": 0.7699999999999999,
+        "C": 0.5137070575100491
+      },
+      "XMAX_60": {
+        "existe": false,
+        "coeur_xi": 0.7699999999999999,
+        "C": 0.5046483938489124
+      },
+      "délocalisation_suit_le_bord": false,
+      "verdict_stable_sous_agrandissement": true
+    },
+    "c5_potentiel_higgs": {
+      "XMAX_30": {
+        "existe": false,
+        "coeur_xi": 29.99,
+        "C": 0.04853314708186149
+      },
+      "XMAX_60": {
+        "existe": false,
+        "coeur_xi": 0.03,
+        "C": 0.01913633840904033
+      },
+      "délocalisation_suit_le_bord": false,
+      "verdict_stable_sous_agrandissement": true
+    }
+  },
+  "lecture_structurelle": "la carte sépare nettement les TERMES DE MASSE (c₄ couplage jauge–Higgs, c₅ potentiel) — constitutifs d'EXISTENCE : sans eux, champs sans masse, queues algébriques, délocalisation — des TERMES DE GRADIENT/FLUX (c₁, c₂, c₃) — constitutifs de VALEUR seulement. L'existence du monopole comme objet localisé repose sur les masses qu'il génère. La prédiction humaine (c₂ flux magnétique constitutif d'existence) est INFIRMÉE par le moteur : le couplage Higgs suffit à faire décroître K.",
+  "prédictions_pré_enregistrées": {
+    "P1_c2_constitutif_existence": "INFIRMÉE",
+    "P2_c5_constitutif_valeur_pas_existence": "INFIRMÉE",
+    "P3_viriel_stationnaire_à_5%": "INFIRMÉE"
+  },
+  "stabilité_A1_DX_0.04": {
+    "nominal_existe": true,
+    "sans_c2_existe": true,
+    "verdicts_stables": true
+  },
+  "falsifieur": "toute solution régulière à énergie finie exhibée pour une ablation classée « constitutive d'existence » tue la carte ; un contrôle ρ = 0 non invisible tue le moteur",
+  "sha256_script": "8d9625964912c4ffd4dc4f76ca7829601eacdfe888160446d1ca643b5d06a15a"
+}
