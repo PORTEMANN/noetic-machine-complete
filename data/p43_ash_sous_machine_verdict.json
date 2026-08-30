@@ -1,0 +1,348 @@
+{
+  "chantier": "P43-ASH-SOUS-MACHINE",
+  "protocole": "ASH-MACH-1.0 (gelé) + addendum v2 (résolution effective, levier HF, peigne de spikes)",
+  "S_sous_test": {
+    "dépôt": "PORTEMANN/noetic-ash",
+    "fichier": "src/python/ash_core.py v1.0.0",
+    "blob_git": "c9dd73c208128fc03d58e49f66ad2f6b35cecee3",
+    "copie_figée": "data/p43_ash_core_v100.py",
+    "sha256_copie": "338dbda7b499fdc8ea00beb0ddc696270f47eda38253902edc77cba28eedeb0e"
+  },
+  "π_nominal": {
+    "f0": 1.0,
+    "n_octaves": 5,
+    "overlap": 0.5,
+    "nperseg": "auto(250)",
+    "seuil_pic": 0.1
+  },
+  "axes_perturbés": {
+    "f0": [
+      0.5,
+      2.0
+    ],
+    "n_octaves": [
+      4,
+      6
+    ],
+    "overlap": [
+      0.25,
+      0.75
+    ],
+    "nperseg": [
+      128,
+      512
+    ],
+    "seuil_pic": [
+      0.05,
+      0.2
+    ]
+  },
+  "critères": {
+    "C0_reproductibilité": true,
+    "C1_O1_par_fenêtre": true,
+    "C2_batterie_vérité_terrain": true,
+    "C3_réfutation_invariance_ReN_mesurée": true,
+    "C4_levier_Rdyn_constitutif": true,
+    "C5_Allen_conforme": true,
+    "C6_fidélité_noyau": true
+  },
+  "score": "7/7",
+  "statut": "SUCCÈS",
+  "C1_détail": {
+    "mesures": [
+      {
+        "durée_s": 8,
+        "n_fenêtres": 7,
+        "t_par_fenêtre_ms": 0.7097867143264531,
+        "mémoire_pic_Mo": 0.030132
+      },
+      {
+        "durée_s": 16,
+        "n_fenêtres": 15,
+        "t_par_fenêtre_ms": 0.7041950666765235,
+        "mémoire_pic_Mo": 0.034254
+      },
+      {
+        "durée_s": 32,
+        "n_fenêtres": 31,
+        "t_par_fenêtre_ms": 0.6499090000033902,
+        "mémoire_pic_Mo": 0.043676
+      },
+      {
+        "durée_s": 64,
+        "n_fenêtres": 63,
+        "t_par_fenêtre_ms": 0.6424010476217114,
+        "mémoire_pic_Mo": 0.072772
+      },
+      {
+        "durée_s": 128,
+        "n_fenêtres": 127,
+        "t_par_fenêtre_ms": 0.6432181496065609,
+        "mémoire_pic_Mo": 0.11008
+      }
+    ],
+    "ratio_temps_max_min": 1.1,
+    "ratio_mémoire_max_min": 1.0,
+    "critère_déclaré": "ratios < 2.0",
+    "PASS": true
+  },
+  "C2_v1_verdicts_nominaux": {
+    "S1_claim_README": true,
+    "S2_accord_tempéré_consonant": false,
+    "S3_harmoniques_désaccordées": false,
+    "S4_bruit_riche_en_pics": true,
+    "S5_constant_convention": true,
+    "S6_impulsion_distincte_de_S1": true,
+    "S7_sous_résolution_non_résolu": true,
+    "S8_invariants_d_amplitude": true
+  },
+  "C2_v1_mesures": {
+    "S1_octave_exacte": {
+      "Rc": 7.259999,
+      "Rtop": 2,
+      "Rdyn": 0.0,
+      "ReN": 3e-06,
+      "pic_dominant_note": 24
+    },
+    "S2_accord_tempéré": {
+      "Rc": 16.972517,
+      "Rtop": 3,
+      "Rdyn": 0.428571,
+      "ReN": 0.452025,
+      "pic_dominant_note": 12
+    },
+    "S3_harmoniques_vraies": {
+      "Rc": 20.163408,
+      "Rtop": 2,
+      "Rdyn": 0.0,
+      "ReN": 0.0,
+      "pic_dominant_note": 35
+    },
+    "S4_bruit_blanc": {
+      "Rc": 4.376722,
+      "Rtop": 7,
+      "Rdyn": 0.528941,
+      "ReN": 5.482904,
+      "pic_dominant_note": 40
+    },
+    "S5_constant": {
+      "Rc": 0.0,
+      "Rtop": 0,
+      "Rdyn": 1.0,
+      "ReN": 0.0,
+      "pic_dominant_note": 0
+    },
+    "S6_impulsion": {
+      "Rc": 0.0,
+      "Rtop": 0,
+      "Rdyn": 1.0,
+      "ReN": 0.0,
+      "pic_dominant_note": 0
+    },
+    "S7_sous_résolution": {
+      "Rc": 9.702306,
+      "Rtop": 1,
+      "Rdyn": 1.0,
+      "ReN": 0.322511,
+      "pic_dominant_note": 24
+    },
+    "S8_S1_x1000": {
+      "Rc": 7259.998826,
+      "Rtop": 2,
+      "Rdyn": 0.0,
+      "ReN": 0.0,
+      "pic_dominant_note": 24
+    },
+    "S1_régime": "Cosmologique (pression dominante)",
+    "S8_régime": "Cosmologique (pression dominante)"
+  },
+  "C2_v1_stabilité_Σ": {
+    "S1_claim_README": 0.9091,
+    "S2_accord_tempéré_consonant": 1.0,
+    "S3_harmoniques_désaccordées": 1.0,
+    "S4_bruit_riche_en_pics": 0.8182,
+    "S5_constant_convention": 1.0,
+    "S6_impulsion_distincte_de_S1": 1.0,
+    "S7_sous_résolution_non_résolu": 1.0,
+    "S8_invariants_d_amplitude": 1.0
+  },
+  "C2_v1_fragilités_publiées": {
+    "S4_bruit_riche_en_pics": [
+      "f0=0.5 → False",
+      "n_octaves=4 → False"
+    ],
+    "S1_claim_README": [
+      "nperseg=128 → False"
+    ]
+  },
+  "C2_v1_B3_FAIL_prédictions": [
+    "S2 accord tempéré BF : attendu Rtop=4/Rdyn<0.05, mesuré Rtop=3/Rdyn=0.43 — la résolution effective est bornée par Welch (fs/nperseg), pas par la grille, à basse fréquence",
+    "S3 harmoniques vraies BF : attendu Rtop=4/Rdyn>0.15, mesuré Rtop=2/Rdyn=0 — les harmoniques 2f et 6f sont absorbées ; l'instrument lit la sous-série d'octaves (4f, 8f) comme parfaitement consonante"
+  ],
+  "C2_v2_verdicts": {
+    "S2v2_accord_HF_consonant": true,
+    "S3v2_harmoniques_HF_désaccordées": true
+  },
+  "C3_détail": {
+    "balayage": [
+      {
+        "A": 1e-08,
+        "ReN": 284.77330964480115,
+        "regime": "Quantique (torsion dominante)",
+        "Rtop": 2,
+        "Rdyn": 0.0
+      },
+      {
+        "A": 1e-06,
+        "ReN": 3.22841721003275,
+        "regime": "Méso (industriel / transition)",
+        "Rtop": 2,
+        "Rdyn": 0.0
+      },
+      {
+        "A": 0.0001,
+        "ReN": 0.032327387255487956,
+        "regime": "Cosmologique (pression dominante)",
+        "Rtop": 2,
+        "Rdyn": 0.0
+      },
+      {
+        "A": 0.001,
+        "ReN": 0.0032327780651206003,
+        "regime": "Cosmologique (pression dominante)",
+        "Rtop": 2,
+        "Rdyn": 0.0
+      },
+      {
+        "A": 0.01,
+        "ReN": 0.00032327819991304454,
+        "regime": "Cosmologique (pression dominante)",
+        "Rtop": 2,
+        "Rdyn": 0.0
+      },
+      {
+        "A": 0.1,
+        "ReN": 3.2327823925319475e-05,
+        "regime": "Cosmologique (pression dominante)",
+        "Rtop": 2,
+        "Rdyn": 0.0
+      },
+      {
+        "A": 1.0,
+        "ReN": 3.2327824318721014e-06,
+        "regime": "Cosmologique (pression dominante)",
+        "Rtop": 2,
+        "Rdyn": 0.0
+      },
+      {
+        "A": 10.0,
+        "ReN": 3.232782435806127e-07,
+        "regime": "Cosmologique (pression dominante)",
+        "Rtop": 2,
+        "Rdyn": 0.0
+      },
+      {
+        "A": 100.0,
+        "ReN": 3.2327824361995174e-08,
+        "regime": "Cosmologique (pression dominante)",
+        "Rtop": 2,
+        "Rdyn": 0.0
+      }
+    ],
+    "pente_loglog_ReN_vs_A": -0.996,
+    "franchissements_de_régime": 2,
+    "réfutation_invariance_confirmée": true,
+    "pente_moins_un_confirmée": true
+  },
+  "C4_v1_invalide_publié": {
+    "S2": {
+      "Rc": 16.97251678688003,
+      "Rtop": 3,
+      "Rdyn": 0.4285714215051673,
+      "ReN": 0.45202463173359564,
+      "regime": "Cosmologique (pression dominante)",
+      "pic_dominant_note": 12
+    },
+    "S3": {
+      "Rc": 20.163408422693486,
+      "Rtop": 2,
+      "Rdyn": 0.0,
+      "ReN": 0.0,
+      "regime": "Cosmologique (pression dominante)",
+      "pic_dominant_note": 35
+    },
+    "séparable_sans_Rdyn": true,
+    "séparable_avec_Rdyn": true,
+    "Rdyn_constitutif": false
+  },
+  "C4bis_détail": {
+    "S2v2": {
+      "Rc": 2.823885792336576,
+      "Rtop": 4,
+      "Rdyn": 6.390487936499998e-16,
+      "ReN": 8.176824640750805e-05,
+      "regime": "Cosmologique (pression dominante)",
+      "pic_dominant_note": 52
+    },
+    "S3v2": {
+      "Rc": 2.3686921358484025,
+      "Rtop": 4,
+      "Rdyn": 0.367990028133533,
+      "ReN": 2.1885000866330406,
+      "regime": "Méso (industriel / transition)",
+      "pic_dominant_note": 52
+    },
+    "séparable_sans_Rdyn": false,
+    "séparable_avec_Rdyn": true,
+    "Rdyn_constitutif": true
+  },
+  "C5_détail": {
+    "313860745": {
+      "type_P41": "I",
+      "n_croisements": 11,
+      "ISI_médian_ms": 86.28,
+      "porteuse_Hz": 11.59,
+      "note_attendue_1/ISI": 42.42,
+      "note_pic_ASH": 43,
+      "écart_notes": 0.58,
+      "tolérance_notes_déclarée": 2.0,
+      "conforme": true,
+      "Rtop": 8,
+      "Rdyn": 0.4082
+    },
+    "313861411": {
+      "type_P41": "II",
+      "n_croisements": 26,
+      "ISI_médian_ms": 21.33,
+      "porteuse_Hz": 46.88,
+      "note_attendue_1/ISI": 66.61,
+      "note_pic_ASH": 67,
+      "écart_notes": 0.39,
+      "tolérance_notes_déclarée": 2.0,
+      "conforme": true,
+      "Rtop": 10,
+      "Rdyn": 1.0926
+    }
+  },
+  "C6_fidélité_par_signal": {
+    "S1_octave_exacte": true,
+    "S2_accord_tempéré": true,
+    "S3_harmoniques_vraies": true,
+    "S4_bruit_blanc": true,
+    "S5_constant": true,
+    "S6_impulsion": true,
+    "S7_sous_résolution": true,
+    "S8_S1_x1000": true
+  },
+  "verdict_sur_les_affirmations": {
+    "A1_O(1)_par_fenêtre": "CONFIRMÉE",
+    "A2_zéro_paramètre_ajusté": "CONFIRMÉE (structurelle — paramètres de grille issus de DEFAULTS ou de π déclaré, jamais de données)",
+    "A3_invariants_interprétables": "CONFIRMÉE À RÉSOLUTION SUFFISANTE — v1 : 6/8 attentes tenues au nominal, 2 réfutées publiées (absorption basse fréquence) ; v2 (f ≫ fs/nperseg) : 2/2 tenues",
+    "A4_ReN_discriminant_de_régime": "RÉFUTÉE COMME INVARIANT PHYSIQUE (pré-enregistré) — ReN suit la pente −1 en amplitude (mesuré -0.996) et franchit 2 seuils de régime à signal inchangé ; fermeture = normalisation d'amplitude déclarée",
+    "A5_résolution_grille_5.9%": "AFFINÉE — la résolution effective est max(5,9 %, (fs/nperseg)/f) : la claim grille seule est réfutée à basse fréquence (S2 v1), confirmée à f ≫ fs/nperseg (S2 v2) ; S7 (3 % d'écart) non résolu, comme prévu",
+    "A6_données_réelles_Allen": "CONFIRMÉE sur peigne de spikes (v2) ; la trace brute est dominée par la forme de spike (v1 publiée)"
+  },
+  "falsifieur": "toute attente v2 non tenue, toute fidélité rompue ou un ReN invariant d'amplitude bascule le verdict",
+  "durée_s": 1.3,
+  "sha256_script": "a834ff0c6ca3082501fc34abe6417ed835ae04cfaf6ea0b56c3652e684ad176d"
+}

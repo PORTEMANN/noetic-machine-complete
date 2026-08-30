@@ -376,6 +376,27 @@ FRONTIÈRES = [
         "gelé) → l'instrument tombe ; recoupement brut/table > ±2 Hz "
         "→ la mesure tombe ; un rééchantillonnage 8-cellules donnant "
         "≥ 4/8 interneurones type II tue l'entrée"),
+    entree(
+        "F16-REN-REGIME", "méthode",
+        "Le nombre de Reynolds noétique (ReN) de l'ASH n'est pas un "
+        "discriminant de régime PHYSIQUE : ReN suit la pente −1 en "
+        "amplitude (mesuré −0.996) et franchit 2 seuils de régime à "
+        "signal rigoureusement inchangé — il discrimine l'amplitude, "
+        "pas le régime (P43-C3, prédiction de réfutation pré-enregistrée "
+        "et confirmée ; le B3-FAIL était déjà documenté dans le code "
+        "noetic-ash du 26/08/2026, P43 l'a mesuré)",
+        "P43-ASH-SOUS-MACHINE (2026-08-30)", "ASH-MACH-1.0", "partielle",
+        "reformuler ReN avec une normalisation d'amplitude déclarée et "
+        "vérifier sur la batterie P43 que la séparation des régimes "
+        "survit à l'invariance d'échelle",
+        {"verdict": "hors-domaine",
+         "justification": "frontière de méthode (instrument de mesure) — "
+                          "pas un comptage de ddll"},
+        {"script": "p43_ash_sous_machine.py",
+         "verdict": "p43_ash_sous_machine_verdict.json",
+         "S_figée": "p43_ash_core_v100.py (ash_core v1.0.0, blob c9dd73c2…)"},
+        "un ReN normalisé, invariant d'échelle, conservant la séparation "
+        "des régimes sur la batterie P43 tue l'entrée"),
 ]
 
 

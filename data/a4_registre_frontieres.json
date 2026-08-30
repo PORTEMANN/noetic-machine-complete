@@ -18,15 +18,15 @@
     "ouverte",
     "partielle"
   ],
-  "n_entrées": 15,
+  "n_entrées": 16,
   "par_statut": {
     "fermée": 6,
     "ouverte": 4,
-    "partielle": 5
+    "partielle": 6
   },
   "par_type": {
     "hygiène": 2,
-    "méthode": 2,
+    "méthode": 3,
     "physique": 11
   },
   "entrées": [
@@ -318,8 +318,28 @@
       },
       "falsifieur": "C0 échoue (HH non type II ou Izhikevich non type I au seuil gelé) → l'instrument tombe ; recoupement brut/table > ±2 Hz → la mesure tombe ; un rééchantillonnage 8-cellules donnant ≥ 4/8 interneurones type II tue l'entrée",
       "sha256_entrée": "f5e0ffaa08459749384507328c89301460bb8b07ac223bfbe10a4ead91d28216"
+    },
+    {
+      "id": "F16-REN-REGIME",
+      "type": "méthode",
+      "énoncé": "Le nombre de Reynolds noétique (ReN) de l'ASH n'est pas un discriminant de régime PHYSIQUE : ReN suit la pente −1 en amplitude (mesuré −0.996) et franchit 2 seuils de régime à signal rigoureusement inchangé — il discrimine l'amplitude, pas le régime (P43-C3, prédiction de réfutation pré-enregistrée et confirmée ; le B3-FAIL était déjà documenté dans le code noetic-ash du 26/08/2026, P43 l'a mesuré)",
+      "chantier_source": "P43-ASH-SOUS-MACHINE (2026-08-30)",
+      "protocole": "ASH-MACH-1.0",
+      "statut": "partielle",
+      "coût_de_fermeture_exact": "reformuler ReN avec une normalisation d'amplitude déclarée et vérifier sur la batterie P43 que la séparation des régimes survit à l'invariance d'échelle",
+      "comptage_ddll": {
+        "verdict": "hors-domaine",
+        "justification": "frontière de méthode (instrument de mesure) — pas un comptage de ddll"
+      },
+      "artefacts": {
+        "script": "p43_ash_sous_machine.py",
+        "verdict": "p43_ash_sous_machine_verdict.json",
+        "S_figée": "p43_ash_core_v100.py (ash_core v1.0.0, blob c9dd73c2…)"
+      },
+      "falsifieur": "un ReN normalisé, invariant d'échelle, conservant la séparation des régimes sur la batterie P43 tue l'entrée",
+      "sha256_entrée": "368aacd69af6aa51001b5842824da963e8b1cff13a1aec7f4b0cafb47641aa4e"
     }
   ],
-  "sha256_registre": "fbee3aa684ae8e15c548db1266b211880298a8afba2c2ee44b8f17a2f393743b",
-  "sha256_script": "56b0df4e77725cd05c8356eedb9bb1ed00015b5f2b40942cddce9e0f691af90e"
+  "sha256_registre": "ba2a0432ee63e67153b5b7fa177bcd50c06002b6374a088891c72f0c679138b5",
+  "sha256_script": "24d6a7bdf31ff9260a2780ba4fa61ff880236e0d08d583038715095eadd41e3a"
 }
