@@ -86,6 +86,42 @@ Série distincte du noyau P0–P33 : la machine éprouve les **bifurcations de c
 
 ---
 
+## Suite du corpus — P34–P42, série A, méta-chantiers M1/M1b (août 2026)
+
+### Série P (suite) : P34–P42
+
+| Ch. | Objet | Verdict |
+|-----|-------|---------|
+| P34 | neurone formel : séparabilité et leviers | succès — 12/14 fonctions non triviales séparables ; biais constitutif, σ non constitutive, frontière XOR fermée à coût dérivé |
+| P35 | neurone biologique (σ face au spike) | **B3-FAIL** — σ réfuté comme modèle du neurone biologique |
+| P36 | profondeur des réseaux | succès — la profondeur devient constitutive dès que la tâche itère (parité : profondeur 2, n unités dérivées) |
+| P37 | neurone fractionnaire | partiel — réfuté comme modèle du spike, **éprouvé comme modèle de la mémoire** (queue algébrique t⁻ᵅ constitutive) |
+| P38 | bloc d'attention minimal | succès — POSITION constitutive (copie : 8/262144 sans, 262144/262144 avec) ; SOFTMAX non constitutif |
+| P39 | fermeture de la frontière r₁₂ | **frontière fermée** — un couple à zéro paramètre passe le tamis A3 en tout Z (domaine variationnel) |
+| P40 | Z_max et fission (AME2020 / JEFF-3.1.1 figées) | Z_max = **180** recomputé exactement (α gelé 2⁻¹⁰) ; P-FISSION **réfutée** (B3-FAIL) |
+| P41 | excitabilité de neurones corticaux réels (Allen Cell Types, NWB bruts) | population corticale type I (1/32 type II) ; **HH (type II) non représentatif**, Izhikevich RS si ; recoupement brut ±2 Hz sur les deux cellules de contrôle |
+| P42 | pont 120 ↔ E₈ (icosaèdre binaire / McKay) | pont **arithmétique** établi : \|2I\| = racines⁺(E₈) = 120, quiver de McKay calculé (A·d = 2d exact) — entrée F14 partielle |
+
+### Série A : la méthode s'éprouve elle-même
+
+| Ch. | Objet | Verdict |
+|-----|-------|---------|
+| A1 | batterie de perturbation (π perturbé, D et S intacts) | PASS — fragilités publiées par chantier, prédictions de fragilité éprouvées |
+| A2 | moteur de leviers | PASS — le moteur ne voit que ce qui existe |
+| A3 | tamis de Jastrow (N=64/96/128) + réénumération KO-6 | le plafond « 63 160 » est **réfuté comme publié** (B3-FAIL du corpus) ; l'énumération KO-6 propre reste ouverte, coût de fermeture déclaré |
+| A4 | registre des frontières REG-FR-1.0 | **15 entrées** F1–F15 (4 fermées, 6 ouvertes, 5 partielles), ddll par entrée, falsifieurs pré-enregistrés, SHA global `4b82ca3fdbb5ae88…` |
+| A5 | conjecture des frontières | v1 **réfutée** par F5 + F14 ; v2 en vigueur (11/12 points pré-enregistrés) |
+
+### Méta-chantiers M1 / M1b : l'économie de l'information mesurée
+
+M1 (ECO-1.0) éprouve le postulat central du corpus sur 23 chantiers, métriques uniformes gelées (S = SLOC, V₁ = feuilles numériques des JSON, V₂ = dénominateurs de scores). **Prédiction pré-enregistrée réfutée — avec inversion** : le ratio informationnel est *plus élevé* au voisinage de la frontière r₁₂ (ρ₁ médiane 0.898 vs 0.275). L'affinage mesuré : ce qui s'effondre à r₁₂, c'est le **taux de succès des confrontations externes** (τ : 0.60 vs 1.00), pas le ratio brut. M1b (ECO-1.1) réplique au proxy de Kolmogorov (taille gzip ; Spearman(SLOC, gzip) = 0.980) : **l'inversion survit — la réfutation est structurelle**. M1 a aussi confirmé indépendamment l'entrée F9 (corruption p32/p33), réparée au commit `27b0db7` : sources restituées, les 30 valeurs figées reproduites à 5 décimales.
+
+### Données figées hors dépôt
+
+Les gros artefacts de P41 (NWB bruts Allen Cell Types + catalogues, ≈ 80 Mo) sont publiés en **release `artefacts-donnees-v1.0`** ; leurs empreintes figurent dans `SHASUMS.txt`.
+
+---
+
 ## Citation
 
 ```bibtex
@@ -108,10 +144,12 @@ Série distincte du noyau P0–P33 : la machine éprouve les **bifurcations de c
 ├── docs/                            # notes PDF (verdicts + synthèses)
 │   └── Note_*.pdf
 ├── src/                             # scripts Python par chantier
-│   ├── p20_h2plus.py  …  p33_queue.py
+│   ├── p20_h2plus.py  …  p42_pont_120_e8.py
+│   ├── a1_batterie_perturbation.py … a5_conjecture_frontieres.py
+│   ├── m1_economie_information.py, m1b_economie_robustesse.py
 │   └── (fondateurs : p12, p16, p17, p18…)
 ├── data/                            # artefacts JSON (verdicts machine-lisibles)
-│   └── p20_*.json … p33_*.json
+│   └── p20_*.json … p42_*.json, a*/m1* + m1_corpus/ (miroir SHA-vérifié)
 ├── bifurcations/                    # chantier hors-programme (bifurcations classificatoires)
 │   ├── README.md                    # index + verdicts P-He/P-LaLr/P-CrCu/P-F3
 │   ├── Loi_des_Bifurcations.md      # conjecture v1 + addendum v2
