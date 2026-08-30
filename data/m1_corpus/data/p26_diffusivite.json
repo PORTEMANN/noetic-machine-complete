@@ -1,0 +1,171 @@
+{
+  "methode": "puits fini + operateur radial P6 ; V0 cale sur S(BW-P16) ; V1 bord sharp, V2 bord replie par sigma=Rp/sqrt(3)=0.485 fm ; a mesure par t90-10/4.394, sans fit",
+  "noyaux": [
+    {
+      "nom": "40Ca",
+      "Z": 20,
+      "N": 20,
+      "peau_mes": 0.05,
+      "Sn_BW": 15.41,
+      "Sp_BW": 7.25,
+      "sharp": {
+        "R": 4.103942272024073,
+        "V0n": 50.0,
+        "V0p": 50.5,
+        "EFn": -15.39,
+        "EFp": -7.08,
+        "rms_n": 3.106,
+        "rms_p": 3.152,
+        "peau": -0.047,
+        "a_eff": 0.315
+      },
+      "plie": {
+        "R": 4.103942272024073,
+        "V0n": 52.0,
+        "V0p": 52.5,
+        "EFn": -15.61,
+        "EFp": -7.42,
+        "rms_n": 3.077,
+        "rms_p": 3.131,
+        "peau": -0.054,
+        "a_eff": 0.345
+      }
+    },
+    {
+      "nom": "48Ca",
+      "Z": 20,
+      "N": 28,
+      "peau_mes": 0.121,
+      "Sn_BW": 7.97,
+      "Sp_BW": 16.09,
+      "sharp": {
+        "R": 4.361089422797135,
+        "V0n": 46.5,
+        "V0p": 56.5,
+        "EFn": -8.06,
+        "EFp": -15.97,
+        "rms_n": 3.423,
+        "rms_p": 3.239,
+        "peau": 0.184,
+        "a_eff": 0.283
+      },
+      "plie": {
+        "R": 4.361089422797135,
+        "V0n": 49.0,
+        "V0p": 58.5,
+        "EFn": -8.09,
+        "EFp": -15.95,
+        "rms_n": 3.395,
+        "rms_p": 3.185,
+        "peau": 0.21,
+        "a_eff": 0.322
+      }
+    },
+    {
+      "nom": "120Sn",
+      "Z": 50,
+      "N": 70,
+      "peau_mes": 0.12,
+      "Sn_BW": 8.47,
+      "Sp_BW": 9.78,
+      "sharp": {
+        "R": 5.9189089783931275,
+        "V0n": 49.0,
+        "V0p": 56.0,
+        "EFn": -8.43,
+        "EFp": -9.75,
+        "rms_n": 4.488,
+        "rms_p": 4.489,
+        "peau": -0.001,
+        "a_eff": 0.612
+      },
+      "plie": {
+        "R": 5.9189089783931275,
+        "V0n": 50.0,
+        "V0p": 58.5,
+        "EFn": -8.58,
+        "EFp": -9.88,
+        "rms_n": 4.46,
+        "rms_p": 4.4,
+        "peau": 0.06,
+        "a_eff": 0.421
+      }
+    },
+    {
+      "nom": "132Sn",
+      "Z": 50,
+      "N": 82,
+      "peau_mes": 0.17,
+      "Sn_BW": 5.55,
+      "Sp_BW": 14.38,
+      "sharp": {
+        "R": 6.109972043591386,
+        "V0n": 43.5,
+        "V0p": 58.5,
+        "EFn": -5.37,
+        "EFp": -14.24,
+        "rms_n": 4.764,
+        "rms_p": 4.595,
+        "peau": 0.169,
+        "a_eff": 0.306
+      },
+      "plie": {
+        "R": 6.109972043591386,
+        "V0n": 45.5,
+        "V0p": 61.0,
+        "EFn": -5.41,
+        "EFp": -14.42,
+        "rms_n": 4.726,
+        "rms_p": 4.493,
+        "peau": 0.233,
+        "a_eff": 0.348
+      }
+    },
+    {
+      "nom": "208Pb",
+      "Z": 82,
+      "N": 126,
+      "peau_mes": 0.283,
+      "Sn_BW": 7.16,
+      "Sp_BW": 7.32,
+      "sharp": {
+        "R": 7.109990564177688,
+        "V0n": 44.0,
+        "V0p": 57.0,
+        "EFn": -7.07,
+        "EFp": -7.54,
+        "rms_n": 5.528,
+        "rms_p": 5.524,
+        "peau": 0.003,
+        "a_eff": 0.242
+      },
+      "plie": {
+        "R": 7.109990564177688,
+        "V0n": 46.0,
+        "V0p": 59.0,
+        "EFn": -7.32,
+        "EFp": -7.51,
+        "rms_n": 5.471,
+        "rms_p": 5.323,
+        "peau": 0.149,
+        "a_eff": 0.294
+      }
+    }
+  ],
+  "rms_resid_peaux_plie": 0.094,
+  "nb_peaux_ok": 2,
+  "echecs_peau": [
+    "40Ca",
+    "48Ca",
+    "208Pb"
+  ],
+  "verdict": {
+    "profils_derives_5_noyaux": true,
+    "a_plie_enveloppe_P19_0.20_0.45": true,
+    "diffusivite_sharp_non_nulle": true,
+    "peaux_battent_sharp_P19": true,
+    "peaux_3sur5_a_0.08": false
+  },
+  "score": "4/5",
+  "lecture": "le spill-out des derniers lies donne deja a~0.24-0.35 (sharp) ; le repliement par Rp affine a~0.29-0.42, coherent avec a_opt=0.296 injecte en P19. Peaux : mieux que la baseline sharp (rms 0.094<0.168) mais 2/5 a +-0.08 ; le levier manquant est l'asymetrie isovectorielle du potentiel (Pb sous-estime, Ca48 surestime, Ca40 = magie+BW leger)"
+}

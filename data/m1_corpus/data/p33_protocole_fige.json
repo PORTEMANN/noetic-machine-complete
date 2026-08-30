@@ -1,0 +1,26 @@
+{
+  "chantier": "P33",
+  "titre": "Decroissance asymptotique imposee - double contrainte exacte (cusp + queue)",
+  "regle": "C12.1 - predictions figees avant calcul ; B3-FAIL ; fermer ne pas ajouter",
+  "date_gel": "2026-08-06",
+  "integrateur": "herite P30/P31/P32 (delta numerique, 1-corps analytique exact, levier c=0 exact)",
+  "question": "La decroissance asymptotique Psi ~ exp(-sqrt(2 I) r), fixee par l'energie d'ionisation I (donnee D), jointe au cusp c=1/2, ferme-t-elle le continu 2-corps laisse libre en P31/P32 ?",
+  "hypothese_C12.1": "deux contraintes EXACTES independantes (contact cusp + queue asymptotique) se rencontrent -> schema de sur-determination (categorie I). Prediction :",
+  "predictions_figees": {
+    "P_a": "la double contrainte (cusp + queue derivee de I) ameliore split-zeta a bas Z LA OU R3 seule gagnait (Z=2,3) -> le continu commence a se fermer",
+    "P_b": "meme avec DEUX contraintes exactes, le continu 2-corps resiste (pas de gain net stable) -> RENFORCE P31 : la frontiere tient a la liberte de FORME, pas au nombre de contraintes",
+    "P_c": "levier : c=0 et queue retiree -> retombe sur 1s2 exact (integrateur valide)"
+  },
+  "regle_verdict": "SUCCES si P_a tranche avec gain stable et levier valide ; PARTIEL si P_b ; B3-FAIL honore dans tous les cas",
+  "donnees_D": {
+    "I_eV_serie": {
+      "2": 24.587,
+      "3": 75.64,
+      "4": 153.896,
+      "5": 259.375,
+      "6": 392.087
+    },
+    "comment": "energies de 1ere ionisation He-like (NIST), en eV -> kappa=sqrt(2 I) en unites atomiques"
+  },
+  "zero_parametre_ajuste": true
+}

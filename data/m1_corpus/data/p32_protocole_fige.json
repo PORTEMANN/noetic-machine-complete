@@ -1,0 +1,25 @@
+{
+  "chantier": "P32",
+  "titre": "Cartographie de la frontiere r12 - serie isoelectronique de l'helium (Z=2..6)",
+  "regle": "C12.1 - predictions figees avant calcul ; B3-FAIL ; fermer ne pas ajouter",
+  "date_gel": "2026-08-06",
+  "integrateur": "herite de P30/P31 (poids 8pi^2 r1 r2 u, cusp c=1/2 impose, u(r)=c*r*exp(-beta*r))",
+  "question": "La frontiere r12 (partiel P31) depend-elle de Z ? Trois regles de portee derivees batent-elles split-zeta a chaque Z ?",
+  "predictions_figees": {
+    "P_a": "aucune regle de portee derivee (R1 echelle, R2 orthogonalite, R3 densite) ne bat le controle split-zeta a AUCUN Z -> frontiere universelle (confirme P31)",
+    "P_b": "si une regle bat split-zeta a certains Z seulement, la frontiere est Z-dependante -> loi de la frontiere (nouveau resultat)",
+    "P_c": "lever discriminant : a c=0, on retombe sur le controle HF-type a chaque Z (sinon integrateur invalide)"
+  },
+  "regle_verdict": "SUCCES si P_a ou P_b tranche nettement avec lever P_c valide a tout Z ; PARTIEL sinon ; echec publie tel quel (B3-FAIL)",
+  "donnees_D": {
+    "E_exact_serie": {
+      "2": -2.903724377,
+      "3": -7.279913,
+      "4": -13.655566,
+      "5": -22.030972,
+      "6": -32.406247
+    },
+    "comment": "energies exactes Pekeris-like serie He ; Z effectif split-zeta = Z - 5/16"
+  },
+  "zero_parametre_ajuste": true
+}

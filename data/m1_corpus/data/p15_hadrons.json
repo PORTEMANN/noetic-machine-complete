@@ -1,0 +1,74 @@
+{
+ "sigma_GeV2": 0.18,
+ "versantA_regge": {
+  "relation_universelle": "M^2 = 2 pi sigma (2n + L) ; pente = 1/(2 pi sigma)",
+  "pente_theorique": 0.884,
+  "radiale": {
+   "points": [
+    [
+     0,
+     0.775
+    ],
+    [
+     1,
+     1.465
+    ],
+    [
+     2,
+     1.7
+    ],
+    [
+     3,
+     2.15
+    ]
+   ],
+   "pente_mes": 0.765,
+   "ecart_pct": -13.5
+  },
+  "orbitale": {
+   "points": [
+    [
+     1,
+     0.775
+    ],
+    [
+     2,
+     1.318
+    ],
+    [
+     3,
+     1.691
+    ],
+    [
+     4,
+     1.978
+    ]
+   ],
+   "pente_mes": 0.904,
+   "ecart_pct": 2.2
+  },
+  "lecture": "les deux trajectoires encadrent la pente universelle 1/(2 pi sigma) = 0.884"
+ },
+ "versantB_charmonium": {
+  "mc_GeV": 1.84,
+  "k_GeVfm": 0.52,
+  "sigma": 0.18,
+  "ecarts": {
+   "SP_calc_MeV": 425.5,
+   "SP_mes_MeV": 429,
+   "S21_calc_MeV": 587.5,
+   "S21_mes_MeV": 589,
+   "P21_calc_MeV": 452.9,
+   "P21_mes_MeV": 514
+  },
+  "lecture": "V0 non derivable -> test sur les ecarts de niveaux (structure), pas les masses absolues"
+ },
+ "verdict": {
+  "regge_radial_pente_univ": true,
+  "regge_orbital_pente_univ": true,
+  "regge_pente_universelle": true,
+  "charmonium_ecart_SP": true,
+  "charmonium_ecart_2S1S": true,
+  "charmonium_ordre": true
+ }
+}

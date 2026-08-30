@@ -1,0 +1,298 @@
+{
+  "chantier": "M1B-ECONOMIE-ROBUSTESSE",
+  "protocole": "ECO-1.1 (gelé) — identique à ECO-1.0 sauf S = taille gzip du script (niveau 9, mtime=0) ; contrôle Spearman(SLOC, gzip) ≥ 0.5 ; V₃ littéraux descriptif",
+  "prédiction_pré_enregistrée": "l'inversion (médiane ρ F > NF) survit au changement de métrique S",
+  "données": {
+    "mêmes_que_M1": "m1_corpus miroir SHA-vérifié + verdicts locaux P34–P42"
+  },
+  "mesures": {
+    "P20": {
+      "S_sloc": 76,
+      "S_gzip": 2357,
+      "V3_littéraux": 24,
+      "V1_feuilles": 6,
+      "V2_confrontations": 5,
+      "succes": 5,
+      "sha_script_mesuré": "3f8df95f75fdbb316bf7f1f7356d96cdc77f55b23aa0a0e186fb439c3c0d1af7",
+      "rho1_gz": 0.002545608824777259,
+      "rho2_gz": 0.0021213406873143827
+    },
+    "P21": {
+      "S_sloc": 128,
+      "S_gzip": 2937,
+      "V3_littéraux": 62,
+      "V1_feuilles": 119,
+      "V2_confrontations": 7,
+      "succes": 7,
+      "sha_script_mesuré": "845a4bd118bab891c52c629ef6f32688c729cc1ac912cbbf44d0a2366d7752ec",
+      "rho1_gz": 0.040517534899557374,
+      "rho2_gz": 0.002383384405856316
+    },
+    "P22": {
+      "S_sloc": 110,
+      "S_gzip": 2868,
+      "V3_littéraux": 71,
+      "V1_feuilles": 92,
+      "V2_confrontations": 6,
+      "succes": 5,
+      "sha_script_mesuré": "08fce29ca7f2664499e7924a6059f007304e69bff163ee9a263f0f5ba91f7fa3",
+      "rho1_gz": 0.03207810320781032,
+      "rho2_gz": 0.0020920502092050207
+    },
+    "P23": {
+      "S_sloc": 84,
+      "S_gzip": 2098,
+      "V3_littéraux": 36,
+      "V1_feuilles": 65,
+      "V2_confrontations": 6,
+      "succes": 6,
+      "sha_script_mesuré": "f1446e462425017a85ed4aa51067b85c6c804a69ba95f79b367a03e96e430bbf",
+      "rho1_gz": 0.03098188751191611,
+      "rho2_gz": 0.002859866539561487
+    },
+    "P24": {
+      "S_sloc": 106,
+      "S_gzip": 3158,
+      "V3_littéraux": 32,
+      "V1_feuilles": 33,
+      "V2_confrontations": 6,
+      "succes": 6,
+      "sha_script_mesuré": "0e5227ada73542544f701fe80e187cb827d29d8471564671a73aeac59157e576",
+      "rho1_gz": 0.01044965167827739,
+      "rho2_gz": 0.0018999366687777073
+    },
+    "P25": {
+      "S_sloc": 180,
+      "S_gzip": 4239,
+      "V3_littéraux": 25,
+      "V1_feuilles": 37,
+      "V2_confrontations": 6,
+      "succes": 6,
+      "sha_script_mesuré": "9d970bdadf90d9fbcb53bc274af968fc2910a1200e060ebd046a3589643eb0b7",
+      "rho1_gz": 0.008728473696626562,
+      "rho2_gz": 0.0014154281670205238
+    },
+    "P26": {
+      "S_sloc": 156,
+      "S_gzip": 3579,
+      "V3_littéraux": 47,
+      "V1_feuilles": 73,
+      "V2_confrontations": 5,
+      "succes": 4,
+      "sha_script_mesuré": "7a9ffc666a78a9fc7a55959706a8a07dfde5dce17d8756ace9d60f747fe50973",
+      "rho1_gz": 0.02039675887119307,
+      "rho2_gz": 0.0013970382788488405
+    },
+    "P27": {
+      "S_sloc": 173,
+      "S_gzip": 3211,
+      "V3_littéraux": 44,
+      "V1_feuilles": 26,
+      "V2_confrontations": 5,
+      "succes": 5,
+      "sha_script_mesuré": "7a85ea482519028ff286ec160cfac64359894ecd47e7c65f25af728ec2e78a8e",
+      "rho1_gz": 0.008097165991902834,
+      "rho2_gz": 0.0015571473061351605
+    },
+    "P28": {
+      "S_sloc": 198,
+      "S_gzip": 4281,
+      "V3_littéraux": 61,
+      "V1_feuilles": null,
+      "V2_confrontations": 7,
+      "succes": 7,
+      "sha_script_mesuré": "4288ee2f08ebe68caa523642e7074605f74a1005187b3f66e35dd610661eb08a",
+      "rho1_gz": null,
+      "rho2_gz": 0.001635131978509694
+    },
+    "P29": {
+      "S_sloc": 144,
+      "S_gzip": 3371,
+      "V3_littéraux": 45,
+      "V1_feuilles": 33,
+      "V2_confrontations": 6,
+      "succes": 5,
+      "sha_script_mesuré": "6a1db071fb196fb171bc0a831a475e6f6353c7d5effb93ceaf2e99725c044f27",
+      "rho1_gz": 0.009789380005932958,
+      "rho2_gz": 0.0017798872738059924
+    },
+    "P30": {
+      "S_sloc": 105,
+      "S_gzip": 2556,
+      "V3_littéraux": 34,
+      "V1_feuilles": 27,
+      "V2_confrontations": 5,
+      "succes": 3,
+      "sha_script_mesuré": "6a2cab68e93bc95ac39236f338f31dd6f6bd48b12f7821eb6b411d07556b58aa",
+      "rho1_gz": 0.01056338028169014,
+      "rho2_gz": 0.0019561815336463224
+    },
+    "P31": {
+      "S_sloc": 172,
+      "S_gzip": 3794,
+      "V3_littéraux": 30,
+      "V1_feuilles": 82,
+      "V2_confrontations": 5,
+      "succes": 3,
+      "sha_script_mesuré": "32c6f335e8eb5c94c345c0e586b3bf2d4a0c5b754d95f449c9f358b81845ed3e",
+      "rho1_gz": 0.02161307327358988,
+      "rho2_gz": 0.0013178703215603585
+    },
+    "P32": {
+      "S_sloc": 31,
+      "S_gzip": 1029,
+      "V3_littéraux": 21,
+      "V1_feuilles": 31,
+      "V2_confrontations": 5,
+      "succes": 4,
+      "sha_script_mesuré": "616ed9796aa7998beab9fe2ae79b778c571da4aa441e9a4ca51367038a2350f0",
+      "rho1_gz": 0.03012633624878523,
+      "rho2_gz": 0.004859086491739553
+    },
+    "P33": {
+      "S_sloc": 31,
+      "S_gzip": 987,
+      "V3_littéraux": 21,
+      "V1_feuilles": 34,
+      "V2_confrontations": 5,
+      "succes": 3,
+      "sha_script_mesuré": "4d4ebb3251c60c97f745e9883d6a41f51ff65654343eec1ba6b197df52880709",
+      "rho1_gz": 0.034447821681864235,
+      "rho2_gz": 0.005065856129685917
+    },
+    "P34": {
+      "S_sloc": 160,
+      "S_gzip": 3468,
+      "V3_littéraux": 16,
+      "V1_feuilles": 2,
+      "V2_confrontations": 16,
+      "succes": null,
+      "sha_script_mesuré": "fbf082acd5dc8ce832079c082774aa4ab7866bbbda2e9d431196bba15d460cba",
+      "rho1_gz": 0.0005767012687427913,
+      "rho2_gz": 0.00461361014994233
+    },
+    "P35": {
+      "S_sloc": 253,
+      "S_gzip": 5234,
+      "V3_littéraux": 54,
+      "V1_feuilles": 6,
+      "V2_confrontations": 5,
+      "succes": null,
+      "sha_script_mesuré": "2441e91a93e30b283569ae3e5ce9166e7a22850c534dd149777b3791ead2d7b9",
+      "rho1_gz": 0.0011463507833397019,
+      "rho2_gz": 0.0009552923194497516
+    },
+    "P36": {
+      "S_sloc": 196,
+      "S_gzip": 4051,
+      "V3_littéraux": 10,
+      "V1_feuilles": 58,
+      "V2_confrontations": 4,
+      "succes": null,
+      "sha_script_mesuré": "ab7b0217086e92f81b898081a9fef2571265ff04f10bf434bc85c4fde5be9f6c",
+      "rho1_gz": 0.01431745248086892,
+      "rho2_gz": 0.0009874105159219946
+    },
+    "P37": {
+      "S_sloc": 283,
+      "S_gzip": 6540,
+      "V3_littéraux": 50,
+      "V1_feuilles": 20,
+      "V2_confrontations": 7,
+      "succes": null,
+      "sha_script_mesuré": "248fabdea7655f0b2763df34b8fc122843db03b51f0404e73db32ac1e230391c",
+      "rho1_gz": 0.0030581039755351682,
+      "rho2_gz": 0.0010703363914373089
+    },
+    "P38": {
+      "S_sloc": 221,
+      "S_gzip": 4838,
+      "V3_littéraux": 16,
+      "V1_feuilles": 14,
+      "V2_confrontations": 6,
+      "succes": null,
+      "sha_script_mesuré": "d2c857893439901c86a2fe847062913f733ca8cc77454faee3409355b694177e",
+      "rho1_gz": 0.0028937577511368336,
+      "rho2_gz": 0.0012401818933443572
+    },
+    "P39": {
+      "S_sloc": 436,
+      "S_gzip": 7556,
+      "V3_littéraux": 46,
+      "V1_feuilles": 347,
+      "V2_confrontations": 4,
+      "succes": null,
+      "sha_script_mesuré": "c8478fd81cd513a67117bf9f796d53a3e413854e0db073cadc3d009ac4b8709a",
+      "rho1_gz": 0.04592376919004765,
+      "rho2_gz": 0.0005293806246691371
+    },
+    "P40": {
+      "S_sloc": 307,
+      "S_gzip": 6333,
+      "V3_littéraux": 38,
+      "V1_feuilles": 99,
+      "V2_confrontations": 5,
+      "succes": null,
+      "sha_script_mesuré": "c6760b9778655f93328cfa96edd5b22ccc27d462c82847282a876016e7fa574b",
+      "rho1_gz": 0.015632401705352912,
+      "rho2_gz": 0.0007895152376440866
+    },
+    "P41": {
+      "S_sloc": 337,
+      "S_gzip": 6130,
+      "V3_littéraux": 19,
+      "V1_feuilles": 152,
+      "V2_confrontations": 3,
+      "succes": null,
+      "sha_script_mesuré": "eb1b903ffb615e02e294057ef04665f8b8060a278e685ebb943a3f65c843c728",
+      "rho1_gz": 0.024796084828711255,
+      "rho2_gz": 0.0004893964110929853
+    },
+    "P42": {
+      "S_sloc": 423,
+      "S_gzip": 7013,
+      "V3_littéraux": 18,
+      "V1_feuilles": 124,
+      "V2_confrontations": 6,
+      "succes": null,
+      "sha_script_mesuré": "114e28102247efe0f1d3136ea7cc4b38e61987e2a31511a1ce0923beb188f5a0",
+      "rho1_gz": 0.01768144873805789,
+      "rho2_gz": 0.0008555539711963497
+    }
+  },
+  "contrôle_métrique": {
+    "spearman_sloc_gzip": 0.9799852041204633,
+    "seuil": 0.5,
+    "pass": true
+  },
+  "ratios_critères": {
+    "rho1_gz": {
+      "médiane_F": 0.032287078965324734,
+      "médiane_NF": 0.010506515979983765,
+      "max_F": 0.04592376919004765,
+      "Q3_NF": 0.01768144873805789,
+      "inversion_survit": true
+    },
+    "rho2_gz": {
+      "médiane_F": 0.003088478406649956,
+      "médiane_NF": 0.0015571473061351605,
+      "max_F": 0.005065856129685917,
+      "Q3_NF": 0.0019561815336463224,
+      "inversion_survit": true
+    }
+  },
+  "verdicts": {
+    "C0_contrôle_métrique": true,
+    "inversion_ρ₁′_survit": true,
+    "inversion_ρ₂′_survit": true
+  },
+  "verdict_global": "Robustesse de l'inversion M1 au proxy de Kolmogorov gzip : prédiction CONFIRMÉE. ρ₁′ médiane F 0.0323 vs NF 0.0105 ; ρ₂′ médiane F 0.0031 vs NF 0.0016 ; Spearman(SLOC, gzip) = 0.980. L'inversion est structurelle : elle ne dépend pas du compteur de longueur choisi.",
+  "prédiction": "CONFIRMÉE",
+  "comptage_ddll": {
+    "verdict": "déficit",
+    "justification": "le proxy gzip et le seuil de contrôle 0.5 sont des conventions payées une fois, gelées avant calcul"
+  },
+  "b3_fail": [],
+  "falsifieur": "l'inversion disparaît sur l'une des deux métriques gzip → la réfutation M1 était fragile (publié)",
+  "sha256_script": "71ee5733d8b21d43ae3e1c1c4c7b2aca3b2296828d50ff6cb6f9b72efe94892d"
+}

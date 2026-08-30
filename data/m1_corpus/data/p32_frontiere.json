@@ -1,0 +1,78 @@
+{
+  "chantier": "P32",
+  "titre": "Cartographie de la frontiere r12 - serie isoelectronique de l'helium (Z=2..6)",
+  "sha_protocole": "81fb24f0c083977b",
+  "methode": "1-corps analytique exact ; correlation Jastrow u=c r e^{-beta r} en delta numerique ; levier c=0 exact (ecart 0.0)",
+  "levier_discriminant_P_c": {
+    "statut": "VALIDE",
+    "ecart_c0": "0.0 a tout Z"
+  },
+  "serie": {
+    "2": {
+      "Eref": -2.8475,
+      "R1": -2.70012,
+      "R3": -2.85955,
+      "dR1": 0.14738,
+      "dR3": -0.01205,
+      "R1_bat": false,
+      "R3_bat": true,
+      "exact": -2.903724377
+    },
+    "3": {
+      "Eref": -7.2225,
+      "R1": -7.00677,
+      "R3": -7.226,
+      "dR1": 0.21573,
+      "dR3": -0.0035,
+      "R1_bat": false,
+      "R3_bat": true,
+      "exact": -7.279913
+    },
+    "4": {
+      "Eref": -13.5975,
+      "R1": -13.31348,
+      "R3": -13.59324,
+      "dR1": 0.28402,
+      "dR3": 0.00426,
+      "R1_bat": false,
+      "R3_bat": false,
+      "exact": -13.655566
+    },
+    "5": {
+      "Eref": -21.9725,
+      "R1": -21.62022,
+      "R3": -21.96073,
+      "dR1": 0.35228,
+      "dR3": 0.01177,
+      "R1_bat": false,
+      "R3_bat": false,
+      "exact": -22.030972
+    },
+    "6": {
+      "Eref": -32.3475,
+      "R1": -31.92696,
+      "R3": -32.32832,
+      "dR1": 0.42054,
+      "dR3": 0.01918,
+      "R1_bat": false,
+      "R3_bat": false,
+      "exact": -32.406247
+    }
+  },
+  "lecture": {
+    "R1_echelle": "PERD a tout Z (trop de portee -> sur-correlation), confirme P30/P31",
+    "R3_densite": "BAT split-zeta a Z=2 (-0.012) et Z=3 (-0.0035) ; PERD a Z>=4",
+    "R2_orthogonalite": "instable numeriquement pour Z>=4 - regle non robuste, publiee comme telle (B3-FAIL)",
+    "loi_frontiere": "la frontiere r12 n'est PAS plate : la regle de portee derivee (densite) gagne a bas Z, perd a haut Z ; la correlation relative (1/Z) decroit, la marge d'une portee fixee s'effondre."
+  },
+  "verdict": {
+    "R1": false,
+    "R2_robuste": false,
+    "R3_bas_Z": true,
+    "R3_haut_Z": false,
+    "frontiere_Z_dependante": true
+  },
+  "score": "4/5",
+  "statut": "partiel - prediction P_b CONFIRMEE : frontiere Z-dependante (loi de la frontiere)",
+  "sha256": "b56b6d89d5876ee43a7533e7806f81c5ff7e94acd9b2a61d408e22f0dc3fdd2d"
+}

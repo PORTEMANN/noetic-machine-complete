@@ -1,0 +1,29 @@
+{
+ "effet_AB": {
+  "quantum_flux": "Phi0 = h/e",
+  "periodicite_fondamental": "E(phi) periodique de periode Phi0 (dent de scie)",
+  "harmoniques": {
+   "h1": 1.0,
+   "h2": 0.253,
+   "h3": 0.111,
+   "h4": 0.063
+  },
+  "lecture": "le spectre et l'energie sont periodiques du quantum de flux : la topologie d'anneau impose la periodicite h/e"
+ },
+ "gap_benzene": {
+  "phi_fermeture": 0.5,
+  "gap_0": 2.0,
+  "gap_demiflux": 0.0,
+  "lecture": "le gap aromatique (P12) se ferme a mi-flux : l'aromaticite est AB-sensible"
+ },
+ "courant_persistant": {
+  "amplitude": 0.99,
+  "lecture": "courant d'equilibre non nul dans l'anneau, periodique en Phi0 (mesoscopique)"
+ },
+ "verdict": {
+  "periodicite_Phi0": true,
+  "gap_ferme_a_demi_flux": true,
+  "courant_persistant_non_nul": true,
+  "oscillation_periodique": true
+ }
+}

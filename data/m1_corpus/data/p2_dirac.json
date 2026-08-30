@@ -1,0 +1,20 @@
+{
+ "test": "P2 - quantification de Dirac",
+ "charge_magnetique": {
+  "mesuree_depuis_K": 0.9999999999997207,
+  "theorique_4pi_sur_e_Heaviside": 12.566370614359172,
+  "K_infini": 2.792825724182563e-13,
+  "ratio_g": 1.0
+ },
+ "charge_electrique": {
+  "doublet_SU2": 0.5,
+  "origine": "charge minimale doublet fondamental"
+ },
+ "dirac": {
+  "eg": 6.283185307179586,
+  "eg_sur_2pi": 1.0,
+  "n": 1,
+  "convention": "Heaviside hbar=c=1, eg=2 pi n"
+ },
+ "conclusion": "condition de Dirac n=1 EXACTE, topologique, independante des parametres"
+}

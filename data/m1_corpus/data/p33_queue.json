@@ -1,0 +1,73 @@
+{
+  "chantier": "P33",
+  "titre": "Decroissance asymptotique imposee - double contrainte exacte (cusp + queue)",
+  "sha_protocole": "edd48a73de744843",
+  "methode": "double contrainte exacte : cusp c=1/2 (contact) + queue asymptotique kappa=sqrt(2I) (donnee I) ; integrateur delta, levier exact",
+  "levier_P_c": {
+    "statut": "VALIDE",
+    "ecart": "0.0 a tout Z"
+  },
+  "serie": {
+    "2": {
+      "z": 1.6875,
+      "Eref": -2.84766,
+      "R3": -2.84789,
+      "queue": -2.70115,
+      "A": 0.3432
+    },
+    "3": {
+      "z": 2.6875,
+      "Eref": -7.22266,
+      "R3": -7.21807,
+      "queue": -6.86187,
+      "A": 0.3297
+    },
+    "4": {
+      "z": 3.6875,
+      "Eref": -13.59766,
+      "R3": -13.58825,
+      "queue": -12.96821,
+      "A": 0.3243
+    },
+    "5": {
+      "z": 4.6875,
+      "Eref": -21.97266,
+      "R3": -21.9584,
+      "queue": -21.03817,
+      "A": 0.3213
+    },
+    "6": {
+      "z": 5.6875,
+      "Eref": -32.34766,
+      "R3": -32.32852,
+      "queue": -31.08368,
+      "A": 0.3193
+    }
+  },
+  "controles": {
+    "scan_A_Z2": {
+      "-0.5": -3.0348,
+      "-0.3": -2.9651,
+      "-0.1": -2.8899,
+      "0": -2.8504,
+      "0.1": -2.8088,
+      "0.343": -2.7013,
+      "0.5": -2.6261,
+      "0.8": -2.4696
+    }
+  },
+  "lecture": {
+    "P_b_confirmee": "meme avec DEUX contraintes exactes (cusp + queue), le continu 2-corps resiste : la queue physique degrade l'energie a tout Z",
+    "interpretation": "la queue asymptotique exacte (kappa=sqrt(2I) < zeta) IMPOSE une densite plus etendue ; or le gain de correlation exige une densite contractee. Les deux contraintes exactes se CONTRADISENT dans un Jastrow a un terme -> elles ne se rencontrent pas (pas de sur-determination)",
+    "renforce_P31": "la frontiere r12 ne tient pas au nombre de contraintes mais a la liberte de FORME : il faudrait un Jastrow multi-echelles (coefficients libres, Hylleraas) pour satisfaire a la fois le contact et la queue. Refuse par la regle zero-parametre",
+    "A_negatif": "descend sous l'exact (-3.03) = non variationnel : artefact de sur-correlation, pas une solution physique"
+  },
+  "verdict": {
+    "queue_ameliore": false,
+    "double_contrainte_ferme": false,
+    "renforce_P31": true
+  },
+  "score": "3/5",
+  "statut": "partiel-negatif publie (B3-FAIL) - prediction P_b confirmee : P31 renforcee",
+  "sha256": "3a46517a9de187dcba259dd54c973139121509d9baf83ec6b08087787db911d7"
+}

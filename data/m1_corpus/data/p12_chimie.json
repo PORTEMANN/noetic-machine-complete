@@ -1,0 +1,923 @@
+{
+ "unite": "|beta| (alpha=0)",
+ "beta": -1.0,
+ "octet": {
+  "capacite_s": 2,
+  "capacite_p": 6,
+  "capacite_valence": 8,
+  "derivation": "2(2l+1), l=0 et l=1, x spin 2 -> 2+6=8 (degenerescence de Lenz)"
+ },
+ "valence": {
+  "regle": "min(n_val, 8-n_val)",
+  "accord": "18/18",
+  "table": [
+   {
+    "el": "Li",
+    "n_val": 1,
+    "valence_predite": 1,
+    "valence_observee": 1,
+    "accord": true
+   },
+   {
+    "el": "Be",
+    "n_val": 2,
+    "valence_predite": 2,
+    "valence_observee": 2,
+    "accord": true
+   },
+   {
+    "el": "B",
+    "n_val": 3,
+    "valence_predite": 3,
+    "valence_observee": 3,
+    "accord": true
+   },
+   {
+    "el": "C",
+    "n_val": 4,
+    "valence_predite": 4,
+    "valence_observee": 4,
+    "accord": true
+   },
+   {
+    "el": "N",
+    "n_val": 5,
+    "valence_predite": 3,
+    "valence_observee": 3,
+    "accord": true
+   },
+   {
+    "el": "O",
+    "n_val": 6,
+    "valence_predite": 2,
+    "valence_observee": 2,
+    "accord": true
+   },
+   {
+    "el": "F",
+    "n_val": 7,
+    "valence_predite": 1,
+    "valence_observee": 1,
+    "accord": true
+   },
+   {
+    "el": "Ne",
+    "n_val": 8,
+    "valence_predite": 0,
+    "valence_observee": 0,
+    "accord": true
+   },
+   {
+    "el": "Na",
+    "n_val": 1,
+    "valence_predite": 1,
+    "valence_observee": 1,
+    "accord": true
+   },
+   {
+    "el": "Mg",
+    "n_val": 2,
+    "valence_predite": 2,
+    "valence_observee": 2,
+    "accord": true
+   },
+   {
+    "el": "Al",
+    "n_val": 3,
+    "valence_predite": 3,
+    "valence_observee": 3,
+    "accord": true
+   },
+   {
+    "el": "Si",
+    "n_val": 4,
+    "valence_predite": 4,
+    "valence_observee": 4,
+    "accord": true
+   },
+   {
+    "el": "P",
+    "n_val": 5,
+    "valence_predite": 3,
+    "valence_observee": 3,
+    "accord": true
+   },
+   {
+    "el": "S",
+    "n_val": 6,
+    "valence_predite": 2,
+    "valence_observee": 2,
+    "accord": true
+   },
+   {
+    "el": "Cl",
+    "n_val": 7,
+    "valence_predite": 1,
+    "valence_observee": 1,
+    "accord": true
+   },
+   {
+    "el": "Ar",
+    "n_val": 8,
+    "valence_predite": 0,
+    "valence_observee": 0,
+    "accord": true
+   },
+   {
+    "el": "K",
+    "n_val": 1,
+    "valence_predite": 1,
+    "valence_observee": 1,
+    "accord": true
+   },
+   {
+    "el": "Ca",
+    "n_val": 2,
+    "valence_predite": 2,
+    "valence_observee": 2,
+    "accord": true
+   }
+  ],
+  "frontieres": [
+   "geometrie des liaisons (angles, hybridation sp3)",
+   "hypervalence (PF5, SF6 : au-dela de l'octet)",
+   "metaux de transition (orbitales d, valences variables)"
+  ]
+ },
+ "controle_topologie": {
+  "N": 12,
+  "regle_huckel": "couche fermee <=> NE = 4n+2",
+  "regle_mobius": "couche fermee <=> NE = 4n",
+  "scan": [
+   {
+    "NE": 2,
+    "huckel": {
+     "N": 12,
+     "NE": 2,
+     "E": [
+      -2.0,
+      -1.732051,
+      -1.732051,
+      -1.0,
+      -1.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.732051,
+      1.732051,
+      2.0
+     ],
+     "Etot": -4.0,
+     "DE": -2.0,
+     "gap": 0.267949,
+     "unpaired": 0,
+     "closed_shell": true
+    },
+    "mobius": {
+     "N": 12,
+     "NE": 2,
+     "E": [
+      -1.931852,
+      -1.931852,
+      -1.414214,
+      -1.414214,
+      -0.517638,
+      -0.517638,
+      0.517638,
+      0.517638,
+      1.414214,
+      1.414214,
+      1.931852,
+      1.931852
+     ],
+     "Etot": -3.863703,
+     "DE": -1.863703,
+     "gap": 0.0,
+     "unpaired": 2,
+     "closed_shell": false
+    }
+   },
+   {
+    "NE": 4,
+    "huckel": {
+     "N": 12,
+     "NE": 4,
+     "E": [
+      -2.0,
+      -1.732051,
+      -1.732051,
+      -1.0,
+      -1.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.732051,
+      1.732051,
+      2.0
+     ],
+     "Etot": -7.464102,
+     "DE": -3.464102,
+     "gap": -0.0,
+     "unpaired": 2,
+     "closed_shell": false
+    },
+    "mobius": {
+     "N": 12,
+     "NE": 4,
+     "E": [
+      -1.931852,
+      -1.931852,
+      -1.414214,
+      -1.414214,
+      -0.517638,
+      -0.517638,
+      0.517638,
+      0.517638,
+      1.414214,
+      1.414214,
+      1.931852,
+      1.931852
+     ],
+     "Etot": -7.727407,
+     "DE": -3.727407,
+     "gap": 0.517638,
+     "unpaired": 0,
+     "closed_shell": true
+    }
+   },
+   {
+    "NE": 6,
+    "huckel": {
+     "N": 12,
+     "NE": 6,
+     "E": [
+      -2.0,
+      -1.732051,
+      -1.732051,
+      -1.0,
+      -1.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.732051,
+      1.732051,
+      2.0
+     ],
+     "Etot": -10.928203,
+     "DE": -4.928203,
+     "gap": 0.732051,
+     "unpaired": 0,
+     "closed_shell": true
+    },
+    "mobius": {
+     "N": 12,
+     "NE": 6,
+     "E": [
+      -1.931852,
+      -1.931852,
+      -1.414214,
+      -1.414214,
+      -0.517638,
+      -0.517638,
+      0.517638,
+      0.517638,
+      1.414214,
+      1.414214,
+      1.931852,
+      1.931852
+     ],
+     "Etot": -10.555834,
+     "DE": -4.555834,
+     "gap": -0.0,
+     "unpaired": 2,
+     "closed_shell": false
+    }
+   },
+   {
+    "NE": 8,
+    "huckel": {
+     "N": 12,
+     "NE": 8,
+     "E": [
+      -2.0,
+      -1.732051,
+      -1.732051,
+      -1.0,
+      -1.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.732051,
+      1.732051,
+      2.0
+     ],
+     "Etot": -12.928203,
+     "DE": -4.928203,
+     "gap": 0.0,
+     "unpaired": 2,
+     "closed_shell": false
+    },
+    "mobius": {
+     "N": 12,
+     "NE": 8,
+     "E": [
+      -1.931852,
+      -1.931852,
+      -1.414214,
+      -1.414214,
+      -0.517638,
+      -0.517638,
+      0.517638,
+      0.517638,
+      1.414214,
+      1.414214,
+      1.931852,
+      1.931852
+     ],
+     "Etot": -13.384261,
+     "DE": -5.384261,
+     "gap": 0.896575,
+     "unpaired": 0,
+     "closed_shell": true
+    }
+   },
+   {
+    "NE": 10,
+    "huckel": {
+     "N": 12,
+     "NE": 10,
+     "E": [
+      -2.0,
+      -1.732051,
+      -1.732051,
+      -1.0,
+      -1.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.732051,
+      1.732051,
+      2.0
+     ],
+     "Etot": -14.928203,
+     "DE": -4.928203,
+     "gap": 1.0,
+     "unpaired": 0,
+     "closed_shell": true
+    },
+    "mobius": {
+     "N": 12,
+     "NE": 10,
+     "E": [
+      -1.931852,
+      -1.931852,
+      -1.414214,
+      -1.414214,
+      -0.517638,
+      -0.517638,
+      0.517638,
+      0.517638,
+      1.414214,
+      1.414214,
+      1.931852,
+      1.931852
+     ],
+     "Etot": -14.419537,
+     "DE": -4.419537,
+     "gap": -0.0,
+     "unpaired": 2,
+     "closed_shell": false
+    }
+   }
+  ]
+ },
+ "controle_chaine_ouverte": {
+  "N": 8,
+  "note": "pas de regle 4n+2 sans topologie d'anneau",
+  "scan": [
+   {
+    "NE": 2,
+    "gap": 0.347296,
+    "closed_shell": true
+   },
+   {
+    "NE": 4,
+    "gap": 0.532089,
+    "closed_shell": true
+   },
+   {
+    "NE": 6,
+    "gap": 0.652704,
+    "closed_shell": true
+   },
+   {
+    "NE": 8,
+    "gap": 0.694593,
+    "closed_shell": true
+   }
+  ]
+ },
+ "benzene": {
+  "N": 6,
+  "NE": 6,
+  "E": [
+   -2.0,
+   -1.0,
+   -1.0,
+   1.0,
+   1.0,
+   2.0
+  ],
+  "Etot": -8.0,
+  "DE": -2.0,
+  "gap": 2.0,
+  "unpaired": 0,
+  "closed_shell": true
+ },
+ "cyclobutadiene": {
+  "N": 4,
+  "NE": 4,
+  "E": [
+   -2.0,
+   0.0,
+   0.0,
+   2.0
+  ],
+  "Etot": -4.0,
+  "DE": 0.0,
+  "gap": -0.0,
+  "unpaired": 2,
+  "closed_shell": false
+ },
+ "cyclopropenium_2pi": {
+  "N": 3,
+  "NE": 2,
+  "E": [
+   -2.0,
+   1.0,
+   1.0
+  ],
+  "Etot": -4.0,
+  "DE": -2.0,
+  "gap": 3.0,
+  "unpaired": 0,
+  "closed_shell": true
+ },
+ "cyclopentadienyle_6pi": {
+  "N": 5,
+  "NE": 6,
+  "E": [
+   -2.0,
+   -0.618034,
+   -0.618034,
+   1.618034,
+   1.618034
+  ],
+  "Etot": -6.472136,
+  "DE": -0.472136,
+  "gap": 2.236068,
+  "unpaired": 0,
+  "closed_shell": true
+ },
+ "distorsion": {
+  "benzene": [
+   [
+    0.0,
+    -8.0,
+    2.0
+   ],
+   [
+    0.01,
+    -8.0006,
+    2.0003
+   ],
+   [
+    0.02,
+    -8.0024,
+    2.0012
+   ],
+   [
+    0.03,
+    -8.0054,
+    2.0027
+   ],
+   [
+    0.04,
+    -8.0096,
+    2.0048
+   ],
+   [
+    0.05,
+    -8.015,
+    2.0075
+   ],
+   [
+    0.06,
+    -8.0215,
+    2.0108
+   ],
+   [
+    0.07,
+    -8.0293,
+    2.0146
+   ],
+   [
+    0.08,
+    -8.0382,
+    2.0191
+   ],
+   [
+    0.09,
+    -8.0483,
+    2.0242
+   ],
+   [
+    0.1,
+    -8.0596,
+    2.0298
+   ],
+   [
+    0.11,
+    -8.072,
+    2.036
+   ],
+   [
+    0.12,
+    -8.0855,
+    2.0427
+   ],
+   [
+    0.13,
+    -8.1001,
+    2.0501
+   ],
+   [
+    0.14,
+    -8.1159,
+    2.058
+   ],
+   [
+    0.15,
+    -8.1328,
+    2.0664
+   ],
+   [
+    0.16,
+    -8.1508,
+    2.0754
+   ],
+   [
+    0.17,
+    -8.1698,
+    2.0849
+   ],
+   [
+    0.18,
+    -8.1899,
+    2.0949
+   ],
+   [
+    0.19,
+    -8.211,
+    2.1055
+   ],
+   [
+    0.2,
+    -8.2332,
+    2.1166
+   ],
+   [
+    0.21,
+    -8.2564,
+    2.1282
+   ],
+   [
+    0.22,
+    -8.2806,
+    2.1403
+   ],
+   [
+    0.23,
+    -8.3057,
+    2.1529
+   ],
+   [
+    0.24,
+    -8.3318,
+    2.1659
+   ],
+   [
+    0.25,
+    -8.3589,
+    2.1794
+   ],
+   [
+    0.26,
+    -8.3869,
+    2.1934
+   ],
+   [
+    0.27,
+    -8.4158,
+    2.2079
+   ],
+   [
+    0.28,
+    -8.4456,
+    2.2228
+   ],
+   [
+    0.29,
+    -8.4762,
+    2.2381
+   ],
+   [
+    0.3,
+    -8.5078,
+    2.2539
+   ]
+  ],
+  "cyclobutadiene": [
+   [
+    0.0,
+    -4.0,
+    -0.0
+   ],
+   [
+    0.01,
+    -4.04,
+    0.04
+   ],
+   [
+    0.02,
+    -4.08,
+    0.08
+   ],
+   [
+    0.03,
+    -4.12,
+    0.12
+   ],
+   [
+    0.04,
+    -4.16,
+    0.16
+   ],
+   [
+    0.05,
+    -4.2,
+    0.2
+   ],
+   [
+    0.06,
+    -4.24,
+    0.24
+   ],
+   [
+    0.07,
+    -4.28,
+    0.28
+   ],
+   [
+    0.08,
+    -4.32,
+    0.32
+   ],
+   [
+    0.09,
+    -4.36,
+    0.36
+   ],
+   [
+    0.1,
+    -4.4,
+    0.4
+   ],
+   [
+    0.11,
+    -4.44,
+    0.44
+   ],
+   [
+    0.12,
+    -4.48,
+    0.48
+   ],
+   [
+    0.13,
+    -4.52,
+    0.52
+   ],
+   [
+    0.14,
+    -4.56,
+    0.56
+   ],
+   [
+    0.15,
+    -4.6,
+    0.6
+   ],
+   [
+    0.16,
+    -4.64,
+    0.64
+   ],
+   [
+    0.17,
+    -4.68,
+    0.68
+   ],
+   [
+    0.18,
+    -4.72,
+    0.72
+   ],
+   [
+    0.19,
+    -4.76,
+    0.76
+   ],
+   [
+    0.2,
+    -4.8,
+    0.8
+   ],
+   [
+    0.21,
+    -4.84,
+    0.84
+   ],
+   [
+    0.22,
+    -4.88,
+    0.88
+   ],
+   [
+    0.23,
+    -4.92,
+    0.92
+   ],
+   [
+    0.24,
+    -4.96,
+    0.96
+   ],
+   [
+    0.25,
+    -5.0,
+    1.0
+   ],
+   [
+    0.26,
+    -5.04,
+    1.04
+   ],
+   [
+    0.27,
+    -5.08,
+    1.08
+   ],
+   [
+    0.28,
+    -5.12,
+    1.12
+   ],
+   [
+    0.29,
+    -5.16,
+    1.16
+   ],
+   [
+    0.3,
+    -5.2,
+    1.2
+   ]
+  ],
+  "benzene_coef_quadratique": -5.68,
+  "cbd_pente_lineaire": -4.0,
+  "lecture": "Jahn-Teller : CBD (couche ouverte degeneree) gagne lineairement (-4|beta|*delta) -> distortion obligatoire, rectangle 158/135 pm ; benzene (couche fermee) ne gagne qu'au 2e ordre (-5.7|beta|*delta^2) -> la raideur sigma k*delta^2 garde l'hexagone symetrique"
+ },
+ "aharonov_bohm": {
+  "benzene_gap_vs_flux": [
+   [
+    0.0,
+    2.0
+   ],
+   [
+    0.02,
+    1.927
+   ],
+   [
+    0.04,
+    1.8532
+   ],
+   [
+    0.06,
+    1.7785
+   ],
+   [
+    0.08,
+    1.7031
+   ],
+   [
+    0.1,
+    1.6269
+   ],
+   [
+    0.12,
+    1.5501
+   ],
+   [
+    0.14,
+    1.4725
+   ],
+   [
+    0.16,
+    1.3943
+   ],
+   [
+    0.18,
+    1.3155
+   ],
+   [
+    0.2,
+    1.2361
+   ],
+   [
+    0.22,
+    1.1561
+   ],
+   [
+    0.24,
+    1.0757
+   ],
+   [
+    0.26,
+    0.9948
+   ],
+   [
+    0.28,
+    0.9134
+   ],
+   [
+    0.3,
+    0.8316
+   ],
+   [
+    0.32,
+    0.7495
+   ],
+   [
+    0.34,
+    0.6671
+   ],
+   [
+    0.36,
+    0.5843
+   ],
+   [
+    0.38,
+    0.5013
+   ],
+   [
+    0.4,
+    0.4181
+   ],
+   [
+    0.42,
+    0.3347
+   ],
+   [
+    0.44,
+    0.2512
+   ],
+   [
+    0.46,
+    0.1675
+   ],
+   [
+    0.48,
+    0.0838
+   ],
+   [
+    0.5,
+    -0.0
+   ]
+  ],
+  "lecture": "le gap se ferme a Phi/Phi0 = 1/2 : l'aromaticite est une propriete d'anneau de flux"
+ },
+ "verdict": {
+  "octet_derive": true,
+  "valence_accord": true,
+  "huckel_4n2_derive": true,
+  "mobius_4n_controle": true,
+  "benzene_aromatique": true,
+  "cbd_antiaromatique": true
+ }
+}

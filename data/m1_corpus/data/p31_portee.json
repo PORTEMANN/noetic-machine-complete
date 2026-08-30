@@ -1,0 +1,150 @@
+{
+  "chantier": "P31",
+  "titre": "Portee derivee du facteur a deux corps — frontiere r12 ?",
+  "T0_controle": {
+    "E_c=0_HF": -2.83506,
+    "cible": -2.84765625,
+    "accord": true,
+    "r1sq_Phi": 1.0522
+  },
+  "T1_diagnostic_beta_libre": {
+    "grille": [
+      {
+        "beta": 4.0,
+        "E": -2.84166,
+        "cross": -0.01619,
+        "r1sq": 1.0407
+      },
+      {
+        "beta": 3.0,
+        "E": -2.83066,
+        "cross": -0.00884,
+        "r1sq": 1.0316
+      },
+      {
+        "beta": 2.5,
+        "E": -2.81977,
+        "cross": 0.00078,
+        "r1sq": 1.0249
+      },
+      {
+        "beta": 2.0,
+        "E": -2.80331,
+        "cross": 0.01756,
+        "r1sq": 1.0171
+      },
+      {
+        "beta": 1.5,
+        "E": -2.78058,
+        "cross": 0.04423,
+        "r1sq": 1.0117
+      },
+      {
+        "beta": 1.0,
+        "E": -2.75497,
+        "cross": 0.07887,
+        "r1sq": 1.0223
+      },
+      {
+        "beta": 0.75,
+        "E": -2.74422,
+        "cross": 0.0923,
+        "r1sq": 1.0467
+      },
+      {
+        "beta": 0.5,
+        "E": -2.73571,
+        "cross": 0.08785,
+        "r1sq": 1.1047
+      },
+      {
+        "beta": 0.25,
+        "E": -2.71855,
+        "cross": 0.02127,
+        "r1sq": 1.2514
+      }
+    ],
+    "beta*_E_non_contraint": 4.0
+  },
+  "R1_echelle": {
+    "regle": "beta=(a+b)/2",
+    "E_min": -2.79011,
+    "(a,b)": [
+      1.7,
+      1.6
+    ],
+    "beta": 1.65
+  },
+  "R2_orthogonalite": {
+    "regle": "<u' cos theta> = 0 dans l'etat d'essai",
+    "cross_par_beta": {
+      "0.25": 0.02127,
+      "0.5": 0.08785,
+      "0.75": 0.0923,
+      "1.0": 0.07887,
+      "1.5": 0.04423,
+      "2.0": 0.01756,
+      "2.5": 0.00078,
+      "3.0": -0.00884,
+      "4.0": -0.01619
+    },
+    "beta_R2": 2.5313,
+    "E_a_Phi_HF": -2.8206,
+    "E_min": -2.82135,
+    "(a,b)": [
+      1.6,
+      1.7
+    ]
+  },
+  "R3_densite": {
+    "regle": "<r1^2>_{Psi J} = <r1^2>_Phi",
+    "r1sq_Phi": 1.0522,
+    "delta_par_beta": {
+      "0.25": 0.1992,
+      "0.5": 0.0525,
+      "0.75": -0.0055,
+      "1.0": -0.0299,
+      "1.5": -0.0405,
+      "2.0": -0.0351,
+      "2.5": -0.0273,
+      "3.0": -0.0206,
+      "4.0": -0.0116
+    },
+    "beta_R3": 0.7146,
+    "E_a_Phi_HF": -2.74292,
+    "E_min": -2.74232,
+    "(a,b)": [
+      1.7,
+      1.7
+    ]
+  },
+  "reference_split_zeta": {
+    "E_min": -2.83472,
+    "(a,b)": [
+      1.7,
+      1.7
+    ],
+    "P27_51.5pct": "E ~ -2.8765 (MC P27)"
+  },
+  "verdict": {
+    "criteres": {
+      "C0_integrateur_valide": true,
+      "C1_une_regle_bat_split-zeta": false,
+      "C2_gain_>=20pct_residuel": false,
+      "C3_beta_derive_proche_beta*": true,
+      "C4_zero_parametre": true
+    },
+    "score": "3/5",
+    "statut": "SUCCES PARTIEL",
+    "meilleure_regle": "R2",
+    "E_best": -2.82135,
+    "E_split": -2.83472,
+    "gain_Ha": -0.01336,
+    "residuel_split_Ha": 0.06901,
+    "declaration": "progres partiel — la portee reste partiellement libre"
+  },
+  "meta": {
+    "grille": "r 300, u 192",
+    "duree_s": 405.3
+  }
+}

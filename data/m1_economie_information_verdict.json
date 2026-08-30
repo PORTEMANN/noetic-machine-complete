@@ -1,0 +1,341 @@
+{
+  "chantier": "M1-ECONOMIE-INFORMATION",
+  "protocole": "ECO-1.0 (gelé) — métriques uniformes S, V₁, V₂ ; groupe frontière {P31,P32,P33,P39} ; critère médiane+Q3 binaire",
+  "données": {
+    "corpus_SHA_vérifiés": 83,
+    "corpus_SHA_écarts": [
+      "src/p32_frontiere.py",
+      "src/p33_queue.py"
+    ],
+    "README_sha": "b939f37b67ee0ae8d1d8bbbeb2c2a1e9180bceeedf93f46c6ba7a869d24433ec",
+    "SHASUMS_sha": "d473bc3276e21acff8d1659af2190698fd09cbf60d8a08bedfbbbbee3a7c87b0"
+  },
+  "mesures": {
+    "P20": {
+      "S_sloc": 76,
+      "V1_feuilles": 6,
+      "V2_confrontations": 5,
+      "succes": 5,
+      "script": "p20_h2plus.py",
+      "base64_publié": false,
+      "sha_script_mesuré": "3f8df95f75fdbb316bf7f1f7356d96cdc77f55b23aa0a0e186fb439c3c0d1af7",
+      "rho1": 0.07894736842105263,
+      "rho2": 0.06578947368421052,
+      "tau": 1.0
+    },
+    "P21": {
+      "S_sloc": 128,
+      "V1_feuilles": 119,
+      "V2_confrontations": 7,
+      "succes": 7,
+      "script": "p21_polarite.py",
+      "base64_publié": false,
+      "sha_script_mesuré": "845a4bd118bab891c52c629ef6f32688c729cc1ac912cbbf44d0a2366d7752ec",
+      "rho1": 0.9296875,
+      "rho2": 0.0546875,
+      "tau": 1.0
+    },
+    "P22": {
+      "S_sloc": 110,
+      "V1_feuilles": 92,
+      "V2_confrontations": 6,
+      "succes": 5,
+      "script": "p22_doublebeta.py",
+      "base64_publié": false,
+      "sha_script_mesuré": "08fce29ca7f2664499e7924a6059f007304e69bff163ee9a263f0f5ba91f7fa3",
+      "rho1": 0.8363636363636363,
+      "rho2": 0.05454545454545454,
+      "tau": 0.8333333333333334
+    },
+    "P23": {
+      "S_sloc": 84,
+      "V1_feuilles": 65,
+      "V2_confrontations": 6,
+      "succes": 6,
+      "script": "p23_moments.py",
+      "base64_publié": false,
+      "sha_script_mesuré": "f1446e462425017a85ed4aa51067b85c6c804a69ba95f79b367a03e96e430bbf",
+      "rho1": 0.7738095238095238,
+      "rho2": 0.07142857142857142,
+      "tau": 1.0
+    },
+    "P24": {
+      "S_sloc": 106,
+      "V1_feuilles": 33,
+      "V2_confrontations": 6,
+      "succes": 6,
+      "script": "p24_jain.py",
+      "base64_publié": false,
+      "sha_script_mesuré": "0e5227ada73542544f701fe80e187cb827d29d8471564671a73aeac59157e576",
+      "rho1": 0.3113207547169811,
+      "rho2": 0.05660377358490566,
+      "tau": 1.0
+    },
+    "P25": {
+      "S_sloc": 180,
+      "V1_feuilles": 37,
+      "V2_confrontations": 6,
+      "succes": 6,
+      "script": "p25_topologie.py",
+      "base64_publié": false,
+      "sha_script_mesuré": "9d970bdadf90d9fbcb53bc274af968fc2910a1200e060ebd046a3589643eb0b7",
+      "rho1": 0.20555555555555555,
+      "rho2": 0.03333333333333333,
+      "tau": 1.0
+    },
+    "P26": {
+      "S_sloc": 156,
+      "V1_feuilles": 73,
+      "V2_confrontations": 5,
+      "succes": 4,
+      "script": "p26_diffusivite.py",
+      "base64_publié": false,
+      "sha_script_mesuré": "7a9ffc666a78a9fc7a55959706a8a07dfde5dce17d8756ace9d60f747fe50973",
+      "rho1": 0.46794871794871795,
+      "rho2": 0.03205128205128205,
+      "tau": 0.8
+    },
+    "P27": {
+      "S_sloc": 173,
+      "V1_feuilles": 26,
+      "V2_confrontations": 5,
+      "succes": 5,
+      "script": "p27_correlation.py",
+      "base64_publié": false,
+      "sha_script_mesuré": "7a85ea482519028ff286ec160cfac64359894ecd47e7c65f25af728ec2e78a8e",
+      "rho1": 0.15028901734104047,
+      "rho2": 0.028901734104046242,
+      "tau": 1.0
+    },
+    "P28": {
+      "S_sloc": 198,
+      "V1_feuilles": null,
+      "V2_confrontations": 7,
+      "succes": 7,
+      "script": "p28_unification.py",
+      "base64_publié": false,
+      "sha_script_mesuré": "4288ee2f08ebe68caa523642e7074605f74a1005187b3f66e35dd610661eb08a",
+      "rho1": null,
+      "rho2": 0.03535353535353535,
+      "tau": 1.0
+    },
+    "P29": {
+      "S_sloc": 144,
+      "V1_feuilles": 33,
+      "V2_confrontations": 6,
+      "succes": 5,
+      "script": "p29_isovecteur.py",
+      "base64_publié": false,
+      "sha_script_mesuré": "6a1db071fb196fb171bc0a831a475e6f6353c7d5effb93ceaf2e99725c044f27",
+      "rho1": 0.22916666666666666,
+      "rho2": 0.041666666666666664,
+      "tau": 0.8333333333333334
+    },
+    "P30": {
+      "S_sloc": 105,
+      "V1_feuilles": 27,
+      "V2_confrontations": 5,
+      "succes": 3,
+      "script": "p30_cusp.py",
+      "base64_publié": false,
+      "sha_script_mesuré": "6a2cab68e93bc95ac39236f338f31dd6f6bd48b12f7821eb6b411d07556b58aa",
+      "rho1": 0.2571428571428571,
+      "rho2": 0.047619047619047616,
+      "tau": 0.6
+    },
+    "P31": {
+      "S_sloc": 172,
+      "V1_feuilles": 82,
+      "V2_confrontations": 5,
+      "succes": 3,
+      "script": "p31_portee.py",
+      "base64_publié": false,
+      "sha_script_mesuré": "32c6f335e8eb5c94c345c0e586b3bf2d4a0c5b754d95f449c9f358b81845ed3e",
+      "rho1": 0.47674418604651164,
+      "rho2": 0.029069767441860465,
+      "tau": 0.6
+    },
+    "P32": {
+      "S_sloc": 31,
+      "V1_feuilles": 31,
+      "V2_confrontations": 5,
+      "succes": 4,
+      "script": "p32_frontiere.py",
+      "base64_publié": true,
+      "sha_script_mesuré": "616ed9796aa7998beab9fe2ae79b778c571da4aa441e9a4ca51367038a2350f0",
+      "rho1": 1.0,
+      "rho2": 0.16129032258064516,
+      "tau": 0.8
+    },
+    "P33": {
+      "S_sloc": 31,
+      "V1_feuilles": 34,
+      "V2_confrontations": 5,
+      "succes": 3,
+      "script": "p33_queue.py",
+      "base64_publié": true,
+      "sha_script_mesuré": "4d4ebb3251c60c97f745e9883d6a41f51ff65654343eec1ba6b197df52880709",
+      "rho1": 1.096774193548387,
+      "rho2": 0.16129032258064516,
+      "tau": 0.6
+    },
+    "P34": {
+      "S_sloc": 160,
+      "V1_feuilles": 2,
+      "V2_confrontations": 16,
+      "succes": null,
+      "script": "p34_neurone.py",
+      "base64_publié": false,
+      "sha_script_mesuré": "fbf082acd5dc8ce832079c082774aa4ab7866bbbda2e9d431196bba15d460cba",
+      "rho1": 0.0125,
+      "rho2": 0.1,
+      "tau": null
+    },
+    "P35": {
+      "S_sloc": 253,
+      "V1_feuilles": 6,
+      "V2_confrontations": 5,
+      "succes": null,
+      "script": "p35_neurone_biologique.py",
+      "base64_publié": false,
+      "sha_script_mesuré": "2441e91a93e30b283569ae3e5ce9166e7a22850c534dd149777b3791ead2d7b9",
+      "rho1": 0.023715415019762844,
+      "rho2": 0.019762845849802372,
+      "tau": null
+    },
+    "P36": {
+      "S_sloc": 196,
+      "V1_feuilles": 58,
+      "V2_confrontations": 4,
+      "succes": null,
+      "script": "p36_profondeur.py",
+      "base64_publié": false,
+      "sha_script_mesuré": "ab7b0217086e92f81b898081a9fef2571265ff04f10bf434bc85c4fde5be9f6c",
+      "rho1": 0.29591836734693877,
+      "rho2": 0.02040816326530612,
+      "tau": null
+    },
+    "P37": {
+      "S_sloc": 283,
+      "V1_feuilles": 20,
+      "V2_confrontations": 7,
+      "succes": null,
+      "script": "p37_neurone_fractionnaire.py",
+      "base64_publié": false,
+      "sha_script_mesuré": "248fabdea7655f0b2763df34b8fc122843db03b51f0404e73db32ac1e230391c",
+      "rho1": 0.0706713780918728,
+      "rho2": 0.024734982332155476,
+      "tau": null
+    },
+    "P38": {
+      "S_sloc": 221,
+      "V1_feuilles": 14,
+      "V2_confrontations": 6,
+      "succes": null,
+      "script": "p38_attention.py",
+      "base64_publié": false,
+      "sha_script_mesuré": "d2c857893439901c86a2fe847062913f733ca8cc77454faee3409355b694177e",
+      "rho1": 0.06334841628959276,
+      "rho2": 0.027149321266968326,
+      "tau": null
+    },
+    "P39": {
+      "S_sloc": 436,
+      "V1_feuilles": 347,
+      "V2_confrontations": 4,
+      "succes": null,
+      "script": "p39_fermeture_r12.py",
+      "base64_publié": false,
+      "sha_script_mesuré": "c8478fd81cd513a67117bf9f796d53a3e413854e0db073cadc3d009ac4b8709a",
+      "rho1": 0.7958715596330275,
+      "rho2": 0.009174311926605505,
+      "tau": null
+    },
+    "P40": {
+      "S_sloc": 307,
+      "V1_feuilles": 99,
+      "V2_confrontations": 5,
+      "succes": null,
+      "script": "p40_zmax.py",
+      "base64_publié": false,
+      "sha_script_mesuré": "c6760b9778655f93328cfa96edd5b22ccc27d462c82847282a876016e7fa574b",
+      "rho1": 0.32247557003257327,
+      "rho2": 0.016286644951140065,
+      "tau": null
+    },
+    "P42": {
+      "S_sloc": 423,
+      "V1_feuilles": 124,
+      "V2_confrontations": 6,
+      "succes": null,
+      "script": "p42_pont_120_e8.py",
+      "base64_publié": false,
+      "sha_script_mesuré": "114e28102247efe0f1d3136ea7cc4b38e61987e2a31511a1ce0923beb188f5a0",
+      "rho1": 0.29314420803782504,
+      "rho2": 0.014184397163120567,
+      "tau": null
+    },
+    "P41": {
+      "S_sloc": 337,
+      "V1_feuilles": 152,
+      "V2_confrontations": 3,
+      "succes": null,
+      "script": "p41_neurones_reels.py",
+      "base64_publié": false,
+      "sha_script_mesuré": "eb1b903ffb615e02e294057ef04665f8b8060a278e685ebb943a3f65c843c728",
+      "rho1": 0.45103857566765576,
+      "rho2": 0.008902077151335312,
+      "tau": null
+    }
+  },
+  "ratios_critères": {
+    "rho1": {
+      "médiane_F": 0.8979357798165137,
+      "médiane_NF": 0.2751435325903411,
+      "max_F": 1.096774193548387,
+      "Q3_NF": 0.32247557003257327,
+      "inversion": true,
+      "critère(i+ii)": false
+    },
+    "rho2": {
+      "médiane_F": 0.09518004501125281,
+      "médiane_NF": 0.03333333333333333,
+      "max_F": 0.16129032258064516,
+      "Q3_NF": 0.05454545454545454,
+      "inversion": true,
+      "critère(i+ii)": false
+    },
+    "tau_corpus_seul": {
+      "médiane_F": 0.6,
+      "médiane_NF": 1.0,
+      "max_F": 0.8,
+      "Q3_NF": 1.0,
+      "critère(i+ii)": true,
+      "note": "corpus P20–P33 uniquement (restriction déclarée)"
+    }
+  },
+  "exemple_pré_enregistré_P24": {
+    "prospection": "P24 : « ~100 lignes → 148 fractions »",
+    "S_mesuré": 106,
+    "fractions_dérivées_déclarées": 148,
+    "fractions_testées": 11,
+    "écart_S": "la prospection estimait ~100 lignes ; mesure : 106"
+  },
+  "verdicts": {
+    "C0_chaîne_corpus": false,
+    "contrôle_τ_sépare": true,
+    "prédiction_ρ₁": false,
+    "prédiction_ρ₂": false
+  },
+  "verdict_global": "Prédiction pré-enregistrée (ratio V/S élevé en discret, s'effondrant à r₁₂) : RÉFUTÉE sur les métriques uniformes gelées. ρ₁ (feuilles/S) : médiane F 0.898 vs NF 0.275 ; ρ₂ (confrontations/S) : médiane F 0.095 vs NF 0.033 — INVERSION mesurée sur les deux métriques : le ratio est plus ÉLEVÉ à la frontière (petits scripts de diagnostic minimaux), pas plus bas. Le contrôle τ (scores publiés, corpus P20–P33) sépare F de NF : True (médiane 0.60 vs 1.00). Affinage mesuré : ce qui s'effondre à r₁₂ n'est pas le ratio informationnel brut V/S mais le taux de réussite des confrontations externes — le postulat est précisé, pas confirmé dans sa forme brute.",
+  "prédiction": "RÉFUTÉE",
+  "comptage_ddll": {
+    "verdict": "déficit",
+    "justification": "les métriques S (SLOC), V₁ (feuilles), V₂ (score publié) et le critère médiane+Q3 sont des conventions payées une fois, gelées avant calcul ; rien n'est ré-ajusté après mesure"
+  },
+  "b3_fail": [
+    "corpus : src/p32_frontiere.py et src/p33_queue.py publiés encodés base64 ; SHA brut/décodé ≠ SHASUMS.txt (chaîne documentaire rompue sur 2/85 artefacts) — écart publié, sources décodées pour S"
+  ],
+  "falsifieur": "un chantier frontière avec ρ au-dessus du Q3 non-frontière, ou des médianes inversées, tuait la prédiction brute — mesuré ci-dessus",
+  "sha256_script": "785a176935e86acdd0fc72caa25a4b6e55ce30fa4ed0cc0fb9e8126dd6703cdc"
+}

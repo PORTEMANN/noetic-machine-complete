@@ -1,0 +1,110 @@
+{
+  "chantier": "P24",
+  "titre": "Borne Hall fractionnaire — suite de Jain derivee (P17+P18)",
+  "T1_statistiques": {
+    "argument": "phase d'echange supplementaire exp(i*pi*q) doit valoir +1 pour conserver le fermion",
+    "q_1_phase": "(-1+0j)",
+    "q_2_phase": "(1-0j)",
+    "conclusion": "q pair obligatoire : attachement de 2p flux => denominateur 2pn±1 TOUJOURS impair"
+  },
+  "T2_suite": {
+    "formule": "nu = n/(2pn±1), p=1..4, n=1..11, + conjugués 1-nu",
+    "nb_fractions_derivees_(0,1)": 148
+  },
+  "T3_couverture": {
+    "fractions_testees": 11,
+    "dans_suite": 11,
+    "detail": [
+      {
+        "nu": "0.3333",
+        "gap_e2_epslB": 0.1,
+        "dans_suite": true
+      },
+      {
+        "nu": "0.4000",
+        "gap_e2_epslB": 0.033,
+        "dans_suite": true
+      },
+      {
+        "nu": "0.4286",
+        "gap_e2_epslB": 0.013,
+        "dans_suite": true
+      },
+      {
+        "nu": "0.4444",
+        "gap_e2_epslB": 0.006,
+        "dans_suite": true
+      },
+      {
+        "nu": "0.4545",
+        "gap_e2_epslB": 0.003,
+        "dans_suite": true
+      },
+      {
+        "nu": "0.6667",
+        "gap_e2_epslB": 0.08,
+        "dans_suite": true
+      },
+      {
+        "nu": "0.6000",
+        "gap_e2_epslB": 0.025,
+        "dans_suite": true
+      },
+      {
+        "nu": "0.5714",
+        "gap_e2_epslB": 0.01,
+        "dans_suite": true
+      },
+      {
+        "nu": "0.5556",
+        "gap_e2_epslB": 0.005,
+        "dans_suite": true
+      },
+      {
+        "nu": "0.2000",
+        "gap_e2_epslB": 0.025,
+        "dans_suite": true
+      },
+      {
+        "nu": "0.2857",
+        "gap_e2_epslB": 0.008,
+        "dans_suite": true
+      }
+    ]
+  },
+  "T4_gaps": {
+    "direction_decroissante": true,
+    "loi_ajustee": "Delta = 0.001 / q^-2.39 (e^2/eps lB)",
+    "exposant_alpha": -2.39,
+    "residus_relatifs": [
+      -0.881,
+      0.219,
+      5.911
+    ],
+    "lecture": "direction derivee de B* ; magnitude+exposant = frontiere P28 (masse CF)"
+  },
+  "T5_nu_demi": {
+    "B*/B_a_nu=1/2": 0.0,
+    "prediction": "aucun plateau aux denominateurs pairs par ce mecanisme ; l'exception 5/2 = appariement CF (frontiere P28)",
+    "nb_denominateurs_pairs_dans_suite": 0,
+    "nb_denominateurs_pairs_produisibles": 0
+  },
+  "T6_levier": {
+    "p=0": "nu = n entiers uniquement — aucune fraction derivee",
+    "q=1_impair": "phase d'echange -1 supplementaire : statistiques perdues (T1)",
+    "conclusion": "l'attachement de 2p flux est le levier ; sans lui la machine ne derive rien de fractionnaire"
+  },
+  "verdict": {
+    "criteres": {
+      "C1_statistiques_q_pair": true,
+      "C2_suite_Jain_derivee_sans_parametre": true,
+      "C3_couverture_fractions_observees": true,
+      "C4_hierarchie_gaps_direction": true,
+      "C5_nu_demi_gapless_discriminant": true,
+      "C6_levier_discriminant": true
+    },
+    "score": "6/6",
+    "statut": "SUCCES",
+    "frontiere": "magnitude des gaps (masse CF) et 5/2 (appariement CF) = reponse a deux corps P28"
+  }
+}
