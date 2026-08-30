@@ -1,0 +1,569 @@
+{
+  "chantier": "P45-BENCHMARKS-EEG-RENORMALISES",
+  "protocole": "BM-RENORM-1.0 (gelé)",
+  "motivation": "conséquence obligatoire de F16 (P43) : la table figée des benchmarks noetic-ash classait par ReN, réfuté comme invariant d'échelle — rejeu sur invariants normalisés",
+  "empreintes_régénérées": {
+    "sinusoïde": "1feb353663a06ae8146a3424832896a3b46157383ffac62a92bb0252b6301990",
+    "moteur_sain": "bb20c04d7d0de99ba37ed323b14ea97bcda58adca066bf35fb7e417ea27924e6",
+    "moteur_défaillant": "375d649ee279e38cf673a0cb271299f07a8ae99b243a57ab41411d9f09c9b634",
+    "ecg_normal": "d25d65f9297bf94c1b37300ad5065dc105e432b23eaf70782ae905b9f3b161ed",
+    "eeg_intention": "228c615550a60eed84d7b9bf02b4e4f9555bc56f9d533ec9096e8afdf2883d1f"
+  },
+  "conformité_SHASUMS_noetic_ash": {
+    "ecg_normal": true,
+    "eeg_intention": true,
+    "moteur_sain": true,
+    "moteur_défaillant": true
+  },
+  "table_figée_juin2026": {
+    "moteur_sain": {
+      "Rc": 1.107,
+      "Rtop": 2.0,
+      "Rdyn": 0.0,
+      "ReN": 0.00015,
+      "regime": "Cosmologique"
+    },
+    "moteur_défaillant": {
+      "Rc": 1.03,
+      "Rtop": 3.67,
+      "Rdyn": 0.302,
+      "ReN": 74.3,
+      "regime": "Quantique"
+    },
+    "eeg_intention": {
+      "Rc": 1.661,
+      "Rtop": 1.22,
+      "Rdyn": 0.778,
+      "ReN": 40.4,
+      "regime": "Quantique"
+    },
+    "ecg_normal": {
+      "Rc": 1.233,
+      "Rtop": 2.0,
+      "Rdyn": 0.411,
+      "ReN": 1.55,
+      "regime": "Cosmologique"
+    }
+  },
+  "C1": {
+    "moteur_sain": {
+      "rejeu_classe": {
+        "Rc": 1.09897,
+        "Rtop": 2.0,
+        "Rdyn": 0.0,
+        "ReN": 0.00015
+      },
+      "rejeu_256": {
+        "Rc": 1.46126,
+        "Rtop": 2.0,
+        "Rdyn": 0.0,
+        "ReN": 0.00013
+      },
+      "figé_juin2026": {
+        "Rc": 1.107,
+        "Rtop": 2.0,
+        "Rdyn": 0.0,
+        "ReN": 0.00015,
+        "regime": "Cosmologique"
+      },
+      "écarts_classe": {
+        "Rc": 0.008,
+        "Rdyn": 0.0,
+        "ReN": 0.0,
+        "Rtop": 0.0
+      },
+      "écarts_256": {
+        "Rc": 0.3543,
+        "Rdyn": 0.0,
+        "ReN": 0.0,
+        "Rtop": 0.0
+      },
+      "dans_tolérance_classe": true,
+      "dans_tolérance_256": false,
+      "dans_tolérance": true
+    },
+    "moteur_défaillant": {
+      "rejeu_classe": {
+        "Rc": 0.75807,
+        "Rtop": 3.36842,
+        "Rdyn": 0.28224,
+        "ReN": 81.88411
+      },
+      "rejeu_256": {
+        "Rc": 1.01813,
+        "Rtop": 3.63636,
+        "Rdyn": 0.30707,
+        "ReN": 78.08357
+      },
+      "figé_juin2026": {
+        "Rc": 1.03,
+        "Rtop": 3.67,
+        "Rdyn": 0.302,
+        "ReN": 74.3,
+        "regime": "Quantique"
+      },
+      "écarts_classe": {
+        "Rc": 0.2719,
+        "Rdyn": 0.0198,
+        "ReN": 7.5841,
+        "Rtop": 0.3016
+      },
+      "écarts_256": {
+        "Rc": 0.0119,
+        "Rdyn": 0.0051,
+        "ReN": 3.7836,
+        "Rtop": 0.0336
+      },
+      "dans_tolérance_classe": false,
+      "dans_tolérance_256": false,
+      "dans_tolérance": false
+    },
+    "eeg_intention": {
+      "rejeu_classe": {
+        "Rc": 1.68576,
+        "Rtop": 1.11111,
+        "Rdyn": 0.88889,
+        "ReN": 41.52134
+      },
+      "rejeu_256": {
+        "Rc": 1.65461,
+        "Rtop": 1.5,
+        "Rdyn": 0.59402,
+        "ReN": 34.41355
+      },
+      "figé_juin2026": {
+        "Rc": 1.661,
+        "Rtop": 1.22,
+        "Rdyn": 0.778,
+        "ReN": 40.4,
+        "regime": "Quantique"
+      },
+      "écarts_classe": {
+        "Rc": 0.0248,
+        "Rdyn": 0.1109,
+        "ReN": 1.1213,
+        "Rtop": 0.1089
+      },
+      "écarts_256": {
+        "Rc": 0.0064,
+        "Rdyn": 0.184,
+        "ReN": 5.9864,
+        "Rtop": 0.28
+      },
+      "dans_tolérance_classe": false,
+      "dans_tolérance_256": false,
+      "dans_tolérance": false
+    },
+    "ecg_normal": {
+      "rejeu_classe": {
+        "Rc": 1.20768,
+        "Rtop": 1.66667,
+        "Rdyn": 0.44444,
+        "ReN": 0.58951
+      },
+      "rejeu_256": {
+        "Rc": 0.92387,
+        "Rtop": 2.48148,
+        "Rdyn": 0.52606,
+        "ReN": 47.01879
+      },
+      "figé_juin2026": {
+        "Rc": 1.233,
+        "Rtop": 2.0,
+        "Rdyn": 0.411,
+        "ReN": 1.55,
+        "regime": "Cosmologique"
+      },
+      "écarts_classe": {
+        "Rc": 0.0253,
+        "Rdyn": 0.0334,
+        "ReN": 0.9605,
+        "Rtop": 0.3333
+      },
+      "écarts_256": {
+        "Rc": 0.3091,
+        "Rdyn": 0.1151,
+        "ReN": 45.4688,
+        "Rtop": 0.4815
+      },
+      "dans_tolérance_classe": false,
+      "dans_tolérance_256": false,
+      "dans_tolérance": false
+    }
+  },
+  "C2": {
+    "détail": {
+      "sinusoïde": {
+        "H_moyen": -7.943061961269914e-13,
+        "ReNxA_constant": false,
+        "balayage": [
+          {
+            "A": 0.01,
+            "Rc": 0.019949777698940185,
+            "Rtop": 1.0,
+            "Rdyn": 1.0,
+            "ReN": 9804424726.524683
+          },
+          {
+            "A": 0.1,
+            "Rc": 0.19949777698940185,
+            "Rtop": 1.0,
+            "Rdyn": 1.0,
+            "ReN": 8336907508.845788
+          },
+          {
+            "A": 1.0,
+            "Rc": 1.9949777698940185,
+            "Rtop": 1.0,
+            "Rdyn": 1.0,
+            "ReN": 3339049430.469102
+          },
+          {
+            "A": 10.0,
+            "Rc": 19.949777698940185,
+            "Rtop": 1.0,
+            "Rdyn": 1.0,
+            "ReN": 477357656.97451824
+          },
+          {
+            "A": 100.0,
+            "Rc": 199.4977769894018,
+            "Rtop": 1.0,
+            "Rdyn": 1.0,
+            "ReN": 49878658.82403348
+          }
+        ],
+        "régimes_ReN_moyen": [
+          "Quantique",
+          "Quantique",
+          "Quantique",
+          "Quantique",
+          "Quantique"
+        ],
+        "franchit": false
+      },
+      "moteur_sain": {
+        "H_moyen": 0.7859228843993935,
+        "ReNxA_constant": true,
+        "balayage": [
+          {
+            "A": 0.01,
+            "Rc": 0.010989653315538445,
+            "Rtop": 2.0,
+            "Rdyn": 0.0,
+            "ReN": 0.01522513783504754
+          },
+          {
+            "A": 0.1,
+            "Rc": 0.10989653315538445,
+            "Rtop": 2.0,
+            "Rdyn": 0.0,
+            "ReN": 0.0015225153018240132
+          },
+          {
+            "A": 1.0,
+            "Rc": 1.0989653315538446,
+            "Rtop": 2.0,
+            "Rdyn": 0.0,
+            "ReN": 0.00015225154536561053
+          },
+          {
+            "A": 10.0,
+            "Rc": 10.989653315538444,
+            "Rtop": 2.0,
+            "Rdyn": 0.0,
+            "ReN": 1.522515468839316e-05
+          },
+          {
+            "A": 100.0,
+            "Rc": 109.89653315538445,
+            "Rtop": 2.0,
+            "Rdyn": 0.0,
+            "ReN": 1.5225154703576373e-06
+          }
+        ],
+        "régimes_ReN_moyen": [
+          "Cosmologique",
+          "Cosmologique",
+          "Cosmologique",
+          "Cosmologique",
+          "Cosmologique"
+        ],
+        "franchit": false
+      },
+      "moteur_défaillant": {
+        "H_moyen": 0.874350800706708,
+        "ReNxA_constant": true,
+        "balayage": [
+          {
+            "A": 0.01,
+            "Rc": 0.007580719046640623,
+            "Rtop": 3.3684210526315788,
+            "Rdyn": 0.2822429914849892,
+            "ReN": 8188.39994568011
+          },
+          {
+            "A": 0.1,
+            "Rc": 0.07580719046640622,
+            "Rtop": 3.3684210526315788,
+            "Rdyn": 0.2822429914849892,
+            "ReN": 818.8410101717286
+          },
+          {
+            "A": 1.0,
+            "Rc": 0.7580719046640623,
+            "Rtop": 3.3684210526315788,
+            "Rdyn": 0.2822429914849892,
+            "ReN": 81.88411117322414
+          },
+          {
+            "A": 10.0,
+            "Rc": 7.580719046640623,
+            "Rtop": 3.3684210526315788,
+            "Rdyn": 0.2822429914849892,
+            "ReN": 8.18841121888294
+          },
+          {
+            "A": 100.0,
+            "Rc": 75.80719046640621,
+            "Rtop": 3.3684210526315788,
+            "Rdyn": 0.2822429914849892,
+            "ReN": 0.8188411229038995
+          }
+        ],
+        "régimes_ReN_moyen": [
+          "Quantique",
+          "Quantique",
+          "Quantique",
+          "Méso",
+          "Cosmologique"
+        ],
+        "franchit": true
+      },
+      "ecg_normal": {
+        "H_moyen": 1.250748796486887,
+        "ReNxA_constant": true,
+        "balayage": [
+          {
+            "A": 0.01,
+            "Rc": 0.012076805528487203,
+            "Rtop": 1.6666666666666667,
+            "Rdyn": 0.4444444444444444,
+            "ReN": 58.95122882672513
+          },
+          {
+            "A": 0.1,
+            "Rc": 0.12076805528487206,
+            "Rtop": 1.6666666666666667,
+            "Rdyn": 0.4444444444444444,
+            "ReN": 5.89512596100525
+          },
+          {
+            "A": 1.0,
+            "Rc": 1.2076805528487204,
+            "Rtop": 1.6666666666666667,
+            "Rdyn": 0.4444444444444444,
+            "ReN": 0.5895126268838718
+          },
+          {
+            "A": 10.0,
+            "Rc": 12.076805528487206,
+            "Rtop": 1.6666666666666667,
+            "Rdyn": 0.4444444444444444,
+            "ReN": 0.05895126299622059
+          },
+          {
+            "A": 100.0,
+            "Rc": 120.76805528487203,
+            "Rtop": 1.6666666666666667,
+            "Rdyn": 0.4444444444444444,
+            "ReN": 0.005895126302700384
+          }
+        ],
+        "régimes_ReN_moyen": [
+          "Quantique",
+          "Méso",
+          "Cosmologique",
+          "Cosmologique",
+          "Cosmologique"
+        ],
+        "franchit": true
+      },
+      "eeg_intention": {
+        "H_moyen": 1.0810156835940639,
+        "ReNxA_constant": true,
+        "balayage": [
+          {
+            "A": 0.01,
+            "Rc": 0.016857622509145076,
+            "Rtop": 1.1111111111111112,
+            "Rdyn": 0.8888888888888888,
+            "ReN": 4152.131650326026
+          },
+          {
+            "A": 0.1,
+            "Rc": 0.16857622509145076,
+            "Rtop": 1.1111111111111112,
+            "Rdyn": 0.8888888888888888,
+            "ReN": 415.2133942670114
+          },
+          {
+            "A": 1.0,
+            "Rc": 1.6857622509145074,
+            "Rtop": 1.1111111111111112,
+            "Rdyn": 0.8888888888888888,
+            "ReN": 41.52134171904663
+          },
+          {
+            "A": 10.0,
+            "Rc": 16.857622509145074,
+            "Rtop": 1.1111111111111112,
+            "Rdyn": 0.8888888888888888,
+            "ReN": 4.152134194828118
+          },
+          {
+            "A": 100.0,
+            "Rc": 168.57622509145074,
+            "Rtop": 1.1111111111111112,
+            "Rdyn": 0.8888888888888888,
+            "ReN": 0.41521341971204656
+          }
+        ],
+        "régimes_ReN_moyen": [
+          "Quantique",
+          "Quantique",
+          "Quantique",
+          "Méso",
+          "Cosmologique"
+        ],
+        "franchit": true
+      }
+    },
+    "ReNxA_constant_±5%": true,
+    "signaux_franchissant": 3,
+    "invariants_normalisés_stables": true,
+    "tenue": true
+  },
+  "C3": {
+    "paires": {
+      "sinusoïde × moteur_sain": [
+        "Rtop",
+        "Rdyn",
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "sinusoïde × moteur_défaillant": [
+        "Rtop",
+        "Rdyn",
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "sinusoïde × ecg_normal": [
+        "E1",
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "sinusoïde × eeg_intention": [
+        "E1",
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "moteur_sain × moteur_défaillant": [
+        "Rtop",
+        "Rdyn",
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "moteur_sain × ecg_normal": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "moteur_sain × eeg_intention": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "moteur_défaillant × ecg_normal": [
+        "E1",
+        "E2",
+        "E3",
+        "E5"
+      ],
+      "moteur_défaillant × eeg_intention": [
+        "Rtop",
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "ecg_normal × eeg_intention": [
+        "E1",
+        "E2",
+        "E3",
+        "E4"
+      ]
+    },
+    "séparées": 10,
+    "sur": 10,
+    "règle": "au moins un invariant normalisé (Rtop, Rdyn, E1..E7) à intervalles inter-fenêtres disjoints",
+    "tenue": true
+  },
+  "C4": {
+    "v1_grille_figée_écart_max": 1,
+    "v1_intention_invisible": false,
+    "v2_E5_intention": [
+      0.5725,
+      0.638,
+      0.635,
+      0.5816
+    ],
+    "v2_E5_repos": [
+      0.1391,
+      0.1563,
+      0.1386,
+      0.1543,
+      0.1365
+    ],
+    "v2_ratio": 3.66,
+    "v2_pics_dominants_intention": [
+      52,
+      52,
+      52,
+      40
+    ],
+    "v2_tenue": true,
+    "v2_critère": "≥ 3/4 fenêtres d'intention au pic 51–53 (la fenêtre [6,8] s ne couvre l'intention qu'à moitié — justification déclarée à l'addendum v2) ET ratio E5 > 3"
+  },
+  "critères": {
+    "C1_rejeu_fidèle_table_figée": false,
+    "C2_ReN_non_portable_mesuré_et_normalisés_invariants": true,
+    "C3_séparation_sans_amplitude_10sur10": true,
+    "C4_β_invisible_grille_figée_visible_grille_étendue": true
+  },
+  "score": "3/4",
+  "statut": "PARTIEL",
+  "note_C1": "la table figée de juin 2026 n'est reproduite à tolérance par AUCUN des deux pipelines déclarés (fenêtre classe 1–2 s ; fenêtre 256 éch./hop 128) sauf moteur_sain (fenêtre classe) — B3-FAIL de reproductibilité de l'archive, publié : les valeurs de juin 2026 proviennent d'une pipeline non figée",
+  "verdict_sur_la_table_figée": {
+    "ReN_et_régimes": "non portables (pente −1 en amplitude, franchissements mesurés) — à retirer des classifications publiées",
+    "invariants_normalisés": "Rtop, Rdyn, E1..E7 — invariants d'amplitude mesurés à 1e-9",
+    "EEG_intention": "la bouffée β (20 Hz) est HORS de la grille figée (4 octaves → 15,1 Hz) : la table de juin 2026 n'a jamais vu l'intention ; elle devient lisible avec n_octaves=5"
+  },
+  "falsifieur": "voir docstring — tout écart publié tel quel",
+  "durée_s": 0.6,
+  "sha256_script": "99eb7870369b3196521c3bec2f3a15aa0b59bc23053411cbd28b5d3744dc4129"
+}

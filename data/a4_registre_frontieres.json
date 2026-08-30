@@ -18,14 +18,14 @@
     "ouverte",
     "partielle"
   ],
-  "n_entrées": 17,
+  "n_entrées": 18,
   "par_statut": {
     "fermée": 6,
-    "ouverte": 5,
+    "ouverte": 6,
     "partielle": 6
   },
   "par_type": {
-    "hygiène": 2,
+    "hygiène": 3,
     "méthode": 4,
     "physique": 11
   },
@@ -358,8 +358,28 @@
       },
       "falsifieur": "toute règle zéro paramètre atteignant ≥ 0.60 de moyenne ET ≥ 5/9 sujets significatifs sur A01T–A09T tue l'entrée",
       "sha256_entrée": "585931e188b50f85203b1d10c7cb862d5cbf7d857e0b69c731afd8d87275bcc8"
+    },
+    {
+      "id": "F18-ARCHIVE-BENCH-ASH",
+      "type": "hygiène",
+      "énoncé": "La table figée des benchmarks noetic-ash (juin 2026 : moteur sain/défaillant, EEG intention, ECG — Rc, Rtop, Rdyn, ReN) n'est reproduite à tolérance déclarée par AUCUN des deux pipelines publiés (fenêtre classe 1–2 s ; fenêtre 256 éch./hop 128), sauf moteur_sain (fenêtre classe) — les valeurs proviennent d'une pipeline non figée (P45-C1, B3-FAIL d'archive)",
+      "chantier_source": "P45-BENCHMARKS-EEG-RENORMALISES (2026-08-31)",
+      "protocole": "BM-RENORM-1.0",
+      "statut": "ouverte",
+      "coût_de_fermeture_exact": "re-figer la table des benchmarks avec le pipeline v1.0.0 déclaré (fenêtrage, domaines, versions) et publier les nouvelles empreintes dans SHASUMS.txt de noetic-ash — coût : une republication ; la classification par invariants normalisés (10/10 paires séparées, P45-C3) peut remplacer ReN",
+      "comptage_ddll": {
+        "verdict": "hors-domaine",
+        "justification": "frontière d'hygiène de publication — pas un comptage de ddll"
+      },
+      "artefacts": {
+        "script": "p45_bench_renormalise.py",
+        "verdict": "p45_bench_renormalise_verdict.json",
+        "dépôt_concerné": "noetic-ash (benchmarks/README.md)"
+      },
+      "falsifieur": "une table re-figée reproduite bit-à-bit par le pipeline v1.0.0 déclaré tue l'entrée",
+      "sha256_entrée": "a716f8aa4b3bb1feacdbb74adc72ce619b1d42a7f0119652f766150458737676"
     }
   ],
-  "sha256_registre": "cbf7651304fb9dc96bb33e03ea49b0eafc9828988efc217b40d154a66f05ff14",
-  "sha256_script": "77ece7965f1160c24089b0365a766d07caaec038db91a74af8a17f46d2e1eae3"
+  "sha256_registre": "5df457e8e0945d0facd7bbc348e6365f9882fd24c85d709d3268da171524d461",
+  "sha256_script": "45cfc79cca558e6e1a45f71db894eef19cf3774c73b8a6eb88b2a464225619e8"
 }

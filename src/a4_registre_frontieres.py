@@ -421,6 +421,30 @@ FRONTIÈRES = [
          "données": "BCICIV-2a zip SHA 65fe93cb… (externe, non commité)"},
         "toute règle zéro paramètre atteignant ≥ 0.60 de moyenne ET "
         "≥ 5/9 sujets significatifs sur A01T–A09T tue l'entrée"),
+    entree(
+        "F18-ARCHIVE-BENCH-ASH", "hygiène",
+        "La table figée des benchmarks noetic-ash (juin 2026 : moteur "
+        "sain/défaillant, EEG intention, ECG — Rc, Rtop, Rdyn, ReN) "
+        "n'est reproduite à tolérance déclarée par AUCUN des deux "
+        "pipelines publiés (fenêtre classe 1–2 s ; fenêtre 256 éch./hop "
+        "128), sauf moteur_sain (fenêtre classe) — les valeurs "
+        "proviennent d'une pipeline non figée (P45-C1, B3-FAIL "
+        "d'archive)",
+        "P45-BENCHMARKS-EEG-RENORMALISES (2026-08-31)",
+        "BM-RENORM-1.0", "ouverte",
+        "re-figer la table des benchmarks avec le pipeline v1.0.0 déclaré "
+        "(fenêtrage, domaines, versions) et publier les nouvelles "
+        "empreintes dans SHASUMS.txt de noetic-ash — coût : une "
+        "republication ; la classification par invariants normalisés "
+        "(10/10 paires séparées, P45-C3) peut remplacer ReN",
+        {"verdict": "hors-domaine",
+         "justification": "frontière d'hygiène de publication — pas un "
+                          "comptage de ddll"},
+        {"script": "p45_bench_renormalise.py",
+         "verdict": "p45_bench_renormalise_verdict.json",
+         "dépôt_concerné": "noetic-ash (benchmarks/README.md)"},
+        "une table re-figée reproduite bit-à-bit par le pipeline v1.0.0 "
+        "déclaré tue l'entrée"),
 ]
 
 
