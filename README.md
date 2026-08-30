@@ -103,7 +103,7 @@ Série distincte du noyau P0–P33 : la machine éprouve les **bifurcations de c
 | P42 | pont 120 ↔ E₈ (icosaèdre binaire / McKay) | pont **arithmétique** établi : \|2I\| = racines⁺(E₈) = 120, quiver de McKay calculé (A·d = 2d exact) — entrée F14 partielle |
 | P43 | l'ASH sous la machine (l'instrument audité, noyau v1.0.0 figé) | succès 7/7 — O(1)/fenêtre confirmé, zéro paramètre ajusté confirmé, **ReN réfuté comme invariant physique** (pente d'amplitude −0,996, 2 franchissements de régime → F16), résolution effective affinée (max(5,9 %, (fs/nperseg)/f)), signatures Allen conformes (porteuse = 1/ISI médian) |
 | P44 | EEG imagerie motrice réelle (BCICIV-2a, 9 sujets) — la chaîne lit-elle la pensée ? | partiel 2/3 — **les deux règles zéro paramètre RÉFUTÉES** (0,540 et 0,520 vs seuil 0,60 ; B3-FAIL publié) ; leviers tenus (l'effet vit dans μ, canaux moteurs) ; 1 sujet lisible (A03, 0,771 — illettrisme BCI mesuré) ; **F17 ouverte** : agrégation d'essais / baseline figée / filtrage spatial dérivé |
-| P45 | benchmarks EEG renormales (consequence F16) | partiel 3/4 — **la classification survit sans ReN** (10/10 paires separees par invariants normalises, invariants a 1e-9) ; ReN pente -1 exacte (hors entropie degeneree, saturation au plancher +1e-8 publiee) ; 3/5 signaux franchissent un regime par amplitude seule ; **table figee juin 2026 non reproductible** par les pipelines declares (B3-FAIL d archive -> F18) ; bouffee beta EEG lisible a n_octaves=5 (E5 x3,66) |
+| P45 | benchmarks EEG renormales (consequence F16) | partiel 3/4 — **la classification survit sans ReN** (10/10 paires separees par invariants normalises, invariants a 1e-9) ; ReN pente -1 exacte (hors entropie degeneree, saturation au plancher +1e-8 publiee) ; 3/5 signaux franchissent un regime par amplitude seule ; **table figee juin 2026 non reproductible** par les pipelines declares (B3-FAIL d archive -> F18) ; bouffee beta EEG lisible a n_octaves=5 (E5 x3,66) | — **conséquences appliquées à noetic-ash v1.1.0** (ReN retiré de la classification officielle, table re-figée F18 fermée, grille EEG 5 octaves, erratum publié) |
 
 ### Série A : la méthode s'éprouve elle-même
 
@@ -112,7 +112,7 @@ Série distincte du noyau P0–P33 : la machine éprouve les **bifurcations de c
 | A1 | batterie de perturbation (π perturbé, D et S intacts) | PASS — fragilités publiées par chantier, prédictions de fragilité éprouvées |
 | A2 | moteur de leviers | PASS — le moteur ne voit que ce qui existe |
 | A3 | tamis de Jastrow (N=64/96/128) + réénumération KO-6 | le plafond « 63 160 » est **réfuté comme publié** (B3-FAIL du corpus) ; l'énumération KO-6 propre reste ouverte, coût de fermeture déclaré |
-| A4 | registre des frontières REG-FR-1.0 | **18 entrées** F1–F18 (6 fermées, **6 ouvertes**, 6 partielles), ddll par entrée, falsifieurs pré-enregistrés, SHA global `5df457e8e0945d0f…` |
+| A4 | registre des frontières REG-FR-1.0 | **18 entrées** F1–F18 (**7 fermées**, 5 ouvertes, 6 partielles), ddll par entrée, falsifieurs pré-enregistrés, SHA global `087031225358d06e…` |
 | A5 | conjecture des frontières | v1 **réfutée** par F5 + F7 + F14 (10/13) ; v2 en vigueur (11/13 points) |
 | A1b | batterie rétroactive P13/P22 (ferme F7) | couples (V, Σ) publiés : P13 Σ=1 (4/4) ; P22 Σ_min=0.94 (5/6 inchangé), une fragilité de seuil publiée ; prédictions pré-enregistrées confirmées |
 
