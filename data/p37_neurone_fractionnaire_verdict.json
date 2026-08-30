@@ -1,0 +1,66 @@
+{
+  "chantier": "P37-NEURONE-FRACTIONNAIRE",
+  "protocole": "FRAC-NEU-1.0 (gelé) — Mittag-Leffler série+asymptotique contrôlée, fenêtres déclarées, zéro paramètre ajusté",
+  "D": "HH figé (P35) + définition exacte E_α(−t^α)",
+  "S": "intégrateur fuyard fractionnaire ABC : D^α V = −V + I",
+  "mesures": {
+    "pentes_relaxation_loglog": {
+      "0.3": -0.2528,
+      "0.5": -0.4926,
+      "0.8": -0.837
+    },
+    "écart_superposition": 0.0,
+    "mémoire_100ms": {
+      "fractionnaire": 0.0031,
+      "exponentiel": "3.7e-44",
+      "ratio": "8.4e+40"
+    },
+    "ash_lite": {
+      "sigma": {
+        "Rc": 0.0,
+        "Rtop": 0,
+        "Rdyn": 0.0
+      },
+      "fractionnaire": {
+        "Rc": 0.5312,
+        "Rtop": 1,
+        "Rdyn": 0.0
+      },
+      "hh": {
+        "Rc": 0.3075,
+        "Rtop": 4,
+        "Rdyn": 0.3881
+      }
+    },
+    "fermeture_rang2": {
+      "grille": "τ ∈ {1,3,10,30,100}, w déclarés",
+      "meilleur": [
+        1.0,
+        10.0,
+        0.8
+      ],
+      "erreur_max": 0.1523
+    }
+  },
+  "verdicts": {
+    "T0_mittag_leffler_exacte": true,
+    "C1_levier_α1_=_exponentielle": true,
+    "C2_queue_algébrique_mesurée": true,
+    "C3_réfutée_comme_spike_motif_linéarité": true,
+    "C4_mémoire_persistante_mesurée": true,
+    "C5_ASH_lite_sépare_trois_dispositifs": true,
+    "C6_coût_rang_fini_mesuré": true
+  },
+  "verdict_global": "PARTIEL — le neurone fractionnaire est RÉFUTÉ comme modèle du spike (C3 : linéarité, pas de seuil, pas de train) mais ÉPROUVÉ comme modèle de la mémoire : la queue algébrique t^{−α} est constitutive (C2), persistante (C4), et sa fermeture de rang fini coûte cher (C6)",
+  "frontière_mesurée": "deux axes orthogonaux du neurone : excitabilité = phase sur S¹ (1D, P35) ; mémoire/adaptation = noyau Mittag-Leffler (∞D exact, rang fini approché — le vivant empile des canaux lents)",
+  "comptage_ddll": "σ : 0D · θ : 1D(S¹) · Izhikevich : 2D · HH : 4D · fractionnaire : ∞D (noyau distribué) — la mémoire exacte est infiniment coûteuse en degrés de liberté",
+  "b3_fail": [
+    "S = neurone fractionnaire comme modèle du spike — réfutée par linéarité (superposition exacte mesurée)",
+    "B3-FAIL interne 1 : E_α v1 (série+asymptotique, jonction z=2) perdait 7e-3 — l'asymptotique de E_1(−t) est identiquement nulle alors que e^{−5}=6.7e-3",
+    "B3-FAIL interne 2 : Pollard v2 rappelée avec le mauvais exposant (e^{−r·t^α} au lieu de e^{−r·t}) — exacte par coïncidence en t=1, réfutée par T0 hors de ce point ; corrigée (paire de Laplace s^{α−1}/(s^α+1))",
+    "B3-FAIL interne 3 : critère C4 v1 (rétention > 20 % à Δ=100 ms) réfuté — remplacé par la mesure absolue des queues déclarée",
+    "B3-FAIL interne 4 : critère C5 v1 (Rtop=0 exigé pour le fractionnaire) réfuté — un spectre 1/f monotone produit un pic local en bord de bande ; critère corrigé sur le triplet (Rc, Rtop, Rdyn)"
+  ],
+  "falsifieur": "toute trajectoire fractionnaire linéaire exhibant un spike tout-ou-rien ou un train sous courant constant tue le verdict",
+  "sha256_script": "248fabdea7655f0b2763df34b8fc122843db03b51f0404e73db32ac1e230391c"
+}

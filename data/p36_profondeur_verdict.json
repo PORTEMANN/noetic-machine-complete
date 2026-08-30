@@ -1,0 +1,179 @@
+{
+  "chantier": "P36-PROFONDEUR",
+  "protocole": "PROF-1.0 (gelé) — poids DÉRIVÉS (entiers/exacts), zéro apprentissage ; LP P34 pour la profondeur 1 ; exactitude vérifiée sur tous les points déclarés",
+  "mesures": {
+    "parité": {
+      "LP_prof1_faisable": {
+        "2": false,
+        "3": false,
+        "4": false
+      },
+      "construction_prof2_exacte": {
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": true,
+        "8": true
+      },
+      "unités_cachées": "n (dérivées, entières)"
+    },
+    "oscillations": {
+      "profondeur_m_largeur_2_exacte": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": true,
+        "8": true
+      },
+      "loi_serrée_prof2": {
+        "1": {
+          "w_construit": 2,
+          "w_min_predit": 2,
+          "exacte": true
+        },
+        "2": {
+          "w_construit": 4,
+          "w_min_predit": 4,
+          "exacte": true
+        },
+        "3": {
+          "w_construit": 8,
+          "w_min_predit": 8,
+          "exacte": true
+        },
+        "4": {
+          "w_construit": 16,
+          "w_min_predit": 16,
+          "exacte": true
+        },
+        "5": {
+          "w_construit": 32,
+          "w_min_predit": 32,
+          "exacte": true
+        }
+      }
+    },
+    "séparation_exponentielle": {
+      "1": {
+        "alternances": 2,
+        "profond": {
+          "profondeur": 1,
+          "largeur": 2,
+          "unités_totales": 2
+        },
+        "profondeur_2": {
+          "largeur_min": 2
+        }
+      },
+      "2": {
+        "alternances": 4,
+        "profond": {
+          "profondeur": 2,
+          "largeur": 2,
+          "unités_totales": 4
+        },
+        "profondeur_2": {
+          "largeur_min": 4
+        }
+      },
+      "3": {
+        "alternances": 8,
+        "profond": {
+          "profondeur": 3,
+          "largeur": 2,
+          "unités_totales": 6
+        },
+        "profondeur_2": {
+          "largeur_min": 8
+        }
+      },
+      "4": {
+        "alternances": 16,
+        "profond": {
+          "profondeur": 4,
+          "largeur": 2,
+          "unités_totales": 8
+        },
+        "profondeur_2": {
+          "largeur_min": 16
+        }
+      },
+      "5": {
+        "alternances": 32,
+        "profond": {
+          "profondeur": 5,
+          "largeur": 2,
+          "unités_totales": 10
+        },
+        "profondeur_2": {
+          "largeur_min": 32
+        }
+      },
+      "6": {
+        "alternances": 64,
+        "profond": {
+          "profondeur": 6,
+          "largeur": 2,
+          "unités_totales": 12
+        },
+        "profondeur_2": {
+          "largeur_min": 64
+        }
+      },
+      "7": {
+        "alternances": 128,
+        "profond": {
+          "profondeur": 7,
+          "largeur": 2,
+          "unités_totales": 14
+        },
+        "profondeur_2": {
+          "largeur_min": 128
+        }
+      },
+      "8": {
+        "alternances": 256,
+        "profond": {
+          "profondeur": 8,
+          "largeur": 2,
+          "unités_totales": 16
+        },
+        "profondeur_2": {
+          "largeur_min": 256
+        }
+      }
+    },
+    "ratios_largeur_2m−1_sur_2m": {
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.3333333333333333,
+      "4": 2.0,
+      "5": 3.2,
+      "6": 5.333333333333333,
+      "7": 9.142857142857142,
+      "8": 16.0
+    }
+  },
+  "verdicts": {
+    "C1_contrôle_P34": true,
+    "C2_parité_profondeur2_constitutive": true,
+    "C3_loi_oscillations_serrée": true,
+    "C4_séparation_exponentielle": true
+  },
+  "verdict_global": "SUCCÈS — la profondeur devient constitutive dès que la tâche ITÈRE : parité (somme puis alternance) : profondeur 2, n unités dérivées ; oscillations (composition de triangles) : profondeur m à largeur 2 = 2^m alternances, contre largeur minimale 2^m à profondeur 2 (loi serrée mesurée). La séparation de Telgarsky est reproduite à construction exacte, sans apprentissage",
+  "frontière_mesurée": "profondeur minimale vs structure de la tâche : séparation unique → 1 couche ; itération finie (parité) → 2 ; composition d'ordre m → m couches × largeur 2 ÉQUIVALENT à 1 couche × largeur 2^m — la profondeur est de la réutilisation de coordonnées",
+  "comptage_ddll": {
+    "verdict": "déficit",
+    "justification": "la fermeture ajoute des degrés de liberté : soit des couches (réutilisation : coût 2m), soit de la largeur (copie : coût 2^m) — le déficit se paie en composition ou en exponentielle"
+  },
+  "b3_fail": [
+    "loi v1 « w_min = 2^m − 1 sauts aux dyadiques k/2^m » réfutée par la construction : les transitions de t^m ≥ 1/2 sont aux demi-dyadiques (2j+1)/2^{m+1}, au nombre de 2^m — loi corrigée w_min = 2^m, serrée"
+  ],
+  "falsifieur": "tout réseau profondeur 2 largeur < 2^m exact sur la tâche m tue la loi ; toute séparation LP de la parité tue C2",
+  "sha256_script": "ab7b0217086e92f81b898081a9fef2571265ff04f10bf434bc85c4fde5be9f6c"
+}

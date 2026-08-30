@@ -1,0 +1,257 @@
+{
+  "chantier": "P40-ZMAX",
+  "protocole": "ZMAX-1.0 (gelé) — corpus koilon-scale-e8 (2026-08-22) confronté à AME2020 + JEFF-3.1.1, zéro paramètre ajusté",
+  "données": {
+    "AME2020": "e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307",
+    "FY_U235": "74e0dd81cfb98aca97b3b2898925b8bf645cc16b43389eedb6d499608c0930fd",
+    "FY_Pu239": "278ccb0cca3d687f61301795d5955c26c568daca613a861d9dece59eb0c2ef2c"
+  },
+  "mesures": {
+    "C1": {
+      "Z_max": 180,
+      "marge_Zmax": 0.0018805639560475207,
+      "excès_Zmax+1": 0.02926558626779663,
+      "N_modes": 120.0,
+      "alpha": 0.0009765625
+    },
+    "C2": {
+      "maxima_locaux_pairs": [
+        7,
+        8,
+        15,
+        16,
+        19,
+        20,
+        28,
+        29,
+        38,
+        39,
+        45,
+        46,
+        50,
+        51,
+        54,
+        55,
+        60,
+        61,
+        64,
+        65,
+        71,
+        75,
+        76,
+        81,
+        82,
+        87,
+        88,
+        92,
+        96,
+        97,
+        100,
+        101,
+        107,
+        108
+      ],
+      "récupération": {
+        "8": true,
+        "20": true,
+        "28": true,
+        "50": true,
+        "82": true
+      },
+      "gaps_MeV": {
+        "8": 12.986,
+        "20": 7.296,
+        "28": 6.193,
+        "50": 5.531,
+        "82": 3.685
+      },
+      "B_208Pb_MeV": 1636.43
+    },
+    "C3": {
+      "100": {
+        "gap_MeV": 1.92,
+        "n_isotones": 13,
+        "tout_expérimental": false,
+        "maximum_local": true
+      },
+      "102": {
+        "gap_MeV": 1.595,
+        "n_isotones": 12,
+        "tout_expérimental": false,
+        "maximum_local": false
+      },
+      "104": {
+        "gap_MeV": 1.575,
+        "n_isotones": 11,
+        "tout_expérimental": false,
+        "maximum_local": false
+      },
+      "106": {
+        "gap_MeV": 1.818,
+        "n_isotones": 10,
+        "tout_expérimental": false,
+        "maximum_local": false
+      },
+      "108": {
+        "gap_MeV": 2.363,
+        "n_isotones": 11,
+        "tout_expérimental": false,
+        "maximum_local": true
+      },
+      "110": {
+        "gap_MeV": 1.274,
+        "n_isotones": 9,
+        "tout_expérimental": false,
+        "maximum_local": false
+      },
+      "112": {
+        "gap_MeV": 1.531,
+        "n_isotones": 5,
+        "tout_expérimental": false,
+        "maximum_local": false
+      },
+      "114": {
+        "gap_MeV": 1.664,
+        "n_isotones": 4,
+        "tout_expérimental": false,
+        "maximum_local": false
+      },
+      "116": {
+        "gap_MeV": 1.779,
+        "n_isotones": 3,
+        "tout_expérimental": false,
+        "maximum_local": false
+      }
+    },
+    "C6_grille_koilon": [
+      {
+        "paire": "8→20",
+        "demi_tons": 15.863137138648348,
+        "écart": -0.13686286135165204
+      },
+      {
+        "paire": "20→28",
+        "demi_tons": 5.8251219260429,
+        "écart": -0.17487807395709964
+      },
+      {
+        "paire": "28→50",
+        "demi_tons": 10.038015212605448,
+        "écart": 0.0380152126054476
+      },
+      {
+        "paire": "50→82",
+        "demi_tons": 8.564349778120306,
+        "écart": -0.43565022187969404
+      }
+    ],
+    "C4": {
+      "modèles": [
+        {
+          "modèle": "mac-mic (Möller et al., FRLDM, ADNDT 59 (1995) 185)",
+          "dernière_coquille_Z": 114,
+          "N_assoc": 184
+        },
+        {
+          "modèle": "RMF (Bender, Rutz et al., PRC 60 (1999) 034304)",
+          "dernière_coquille_Z": 120,
+          "N_assoc": 172
+        },
+        {
+          "modèle": "RCHB (Zhang, Meng et al., JPG 37 (2010) 085103)",
+          "dernière_coquille_Z": 126,
+          "N_assoc": 184
+        },
+        {
+          "modèle": "table étendue, chimie (Pyykkö, PCCP 13 (2011) 161)",
+          "dernière_coquille_Z": 168,
+          "N_assoc": null
+        }
+      ],
+      "dernière_coquille_max_modèles": 168,
+      "Z_max_causal_koilon": 180
+    },
+    "C5_pics_trouvés_sur_8": 0,
+    "C5_détail": {
+      "U-235": {
+        "63": {
+          "statut": "hors-couverture JEFF",
+          "Y_brut": null
+        },
+        "110": {
+          "statut": "pas de pic",
+          "Y_brut": 0.000251401238482,
+          "Y_lissé": 0.00028559230331426,
+          "proéminence_relative": 0.001698622935937176,
+          "maximum_local": false
+        },
+        "126": {
+          "statut": "pas de pic",
+          "Y_brut": 0.00059407803153,
+          "Y_lissé": 0.00113586273709282,
+          "proéminence_relative": 0.012388847753555445,
+          "maximum_local": false
+        },
+        "173": {
+          "statut": "hors-couverture JEFF",
+          "Y_brut": null
+        }
+      },
+      "Pu-239": {
+        "63": {
+          "statut": "pas de pic",
+          "Y_brut": 2.0870939999999999e-10,
+          "Y_lissé": 5.442002099999999e-10,
+          "proéminence_relative": 6.9451474102377664e-09,
+          "maximum_local": false
+        },
+        "110": {
+          "statut": "pas de pic",
+          "Y_brut": 0.005190831577111,
+          "Y_lissé": 0.00936901078510128,
+          "proéminence_relative": 0.10328586726172982,
+          "maximum_local": false
+        },
+        "126": {
+          "statut": "pas de pic",
+          "Y_brut": 0.0031360987995,
+          "Y_lissé": 0.0037063109971904006,
+          "proéminence_relative": 0.03262529237304424,
+          "maximum_local": false
+        },
+        "173": {
+          "statut": "pas de pic",
+          "Y_brut": 1.0349732e-09,
+          "Y_lissé": 2.64838448e-09,
+          "proéminence_relative": 3.367652226031273e-08,
+          "maximum_local": false
+        }
+      }
+    }
+  },
+  "verdicts": {
+    "C1_zmax_recomputé": true,
+    "C2_magiques_récupérés": true,
+    "C3_région_superlourde_publiée": true,
+    "C4_cohérence_causale_vs_coquilles": true,
+    "C5_fission_confrontée": true
+  },
+  "prédictions_corpus": {
+    "P-Z-MAX": "confrontée — cohérente (pas de contradiction mesurée)",
+    "P-FISSION": "confrontée — RÉFUTÉE sur JEFF-3.1.1 (0/8 pics aux positions gelées)",
+    "P-MASS-EFF": "non confrontable (expérience laser requise)",
+    "P-ALPHA-VAR": "non confrontable (spectroscopie quasars requise)",
+    "P-KOILON-SON": "non confrontable (dispersion ondes grav. requise)"
+  },
+  "verdict_global": "P-Z-MAX : Z_max = 180 recomputé exactement à α gelé (2^-10) (corpus : ≈179 — le « ≈ » tient, l'exact est 180) — cohérent avec masses+modèles (dernière coquille publiée ≤ 168). P-FISSION : RÉFUTÉE sur JEFF-3.1.1 (0/8 pics aux positions gelées). P-MASS-EFF, P-ALPHA-VAR, P-KOILON-SON : non confrontables aux masses mesurées aujourd'hui — discriminateurs déclarés, statut inchangé.",
+  "comptage_ddll": {
+    "verdict": "déficit",
+    "justification": "α_K = 2^-10 est un input payé (1 ddll) : la fermeture causale achète son échelle"
+  },
+  "b3_fail": [
+    "corpus P-FISSION : pics secondaires à A ∈ {63,110,126,173} — réfutée sur JEFF-3.1.1 (indépendant thermique, critère gelé) : 0/8 pics ; A=63/173 hors couverture ou en queue monotone",
+    "chantier v1 : contrôle B(208Pb) codé sur une valeur littérature (1636.446 MeV) au lieu de la convention atomique du fichier — écart = liaison électronique (~16 keV) ; corrigé en auto-contrôle interne au fichier, avant gel"
+  ],
+  "falsifieur": "Z_max recomputé hors {179,180} tue la dérivation ; magiques connus non récupérés tuent l'instrument",
+  "sha256_script": "c6760b9778655f93328cfa96edd5b22ccc27d462c82847282a876016e7fa574b"
+}

@@ -1,0 +1,200 @@
+{
+  "chantier": "P42-PONT-120-E8",
+  "protocole": "PONT-1.0 (gelé) — arithmétique exacte Q(φ) en Fraction, identités entières vérifiées exactement, zéro paramètre ajusté",
+  "mesures": {
+    "C1": {
+      "ordre": 120,
+      "fermeture_échantillon_gelé_13x13": true,
+      "n_classes": 9,
+      "tailles_classes": [
+        1,
+        1,
+        12,
+        12,
+        12,
+        12,
+        20,
+        20,
+        30
+      ]
+    },
+    "C4": {
+      "dimensions_irréductibles": [
+        1,
+        2,
+        2,
+        3,
+        3,
+        4,
+        4,
+        5,
+        6
+      ],
+      "somme_d²": 120,
+      "A·d_=_2d": true,
+      "isomorphe_à_Ẽ8_référence_construite": true,
+      "spectre_A": [
+        -2.0,
+        -1.61803398875,
+        -1.0,
+        -0.61803398875,
+        -0.0,
+        0.61803398875,
+        1.0,
+        1.61803398875,
+        2.0
+      ],
+      "spectre_Ẽ8_référence": [
+        -2.0,
+        -1.61803398875,
+        -1.0,
+        -0.61803398875,
+        -0.0,
+        0.61803398875,
+        1.0,
+        1.61803398875,
+        2.0
+      ],
+      "spectres_égaux_1e-12": true,
+      "adjacence": [
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "C5": {
+      "égalité_série_théorique_ordre_60": true,
+      "premier_degré_d1": 12
+    },
+    "C2": {
+      "λ1_scalaire_S³_sur_2I": "168/R²",
+      "multiplicité": 13,
+      "règle": "λ_l = l(l+2)/R² aux l avec m_l > 0"
+    },
+    "C3": {
+      "Ric_egal_(2/R²)·g_symbolique_exact": true,
+      "interprétation": "2/R² = valeur propre du laplacien brut de connexion sur les champs de Killing de S³ (Weitzenböck) — distinct de λ1 scalaire 168/R²"
+    },
+    "C6": {
+      "racines_E8": 240,
+      "racines_positives": 120,
+      "réécriture": "N = d₁·log₂(1/α) = |2I| ⟺ α = 2^(−|2I|/d₁) = 2^−10"
+    }
+  },
+  "verdicts": {
+    "C1_ordre_120": true,
+    "C4_mckay_e8": true,
+    "C5_molien": true,
+    "C2_spectre_scalaire_publié": true,
+    "C3_tordu_2surR2": true,
+    "C6_racine_commune": true
+  },
+  "verdict_global": "PONT ÉTABLI AU NIVEAU ARITHMÉTIQUE. Les deux 120 coïncident et ont une racine commune exécutée : |2I| = racines⁺(E₈) = 120, reliés par le quiver de McKay CALCULÉ (A·d = 2d entier exact, spectre = Ẽ₈ à 1e-12, dims {1,2,2,3,3,4,4,5,6}). La réécriture N = 12·log₂(1/α) = |2I| est exacte avec le « 12 » lu comme premier degré de Molien d₁(2I) = 12 : α = 2^(−|2I|/d₁) = 2⁻¹⁰. DISTINCTION PUBLIÉE : sur S³/2I, λ1 du laplacien SCALAIRE = 168/R² (mult. 13) — la valeur 2/R² est celle du laplacien TORDU sur les champs de Killing (Ricci, vérifiée symboliquement exacte). L'identification physique du « 12 » koilon (demi-tons) avec d₁(2I) reste une hypothèse déclarée — frontière au registre.",
+  "b3_fail": [
+    "v1 : sympy générique trop lent (deadline) — v2 en arithmétique exacte dédiée Q(φ), même protocole",
+    "v2 : erreur de signe dans la partie réelle du produit de quaternions (−cg+dh au lieu de −cg−dh) — attrapée par le test de fermeture C1",
+    "v2 : cible spectrale « exposants de E₈ » codée de mémoire FAUSSE (les exposants donnent le spectre de l'adjacence FINIE, pas affine) — remplacée par la construction directe Bourbaki (det Cartan = 1, θ vérifiée) + test d'isomorphisme de graphes"
+  ],
+  "comptage_ddll": {
+    "verdict": "équilibre",
+    "justification": "le pont est un théorème arithmétique — rien payé, rien ajusté ; l'identification physique 12(demi-tons) = d₁(2I) reste déclarée, hors théorème"
+  },
+  "falsifieur": "A·d ≠ 2d ; spectre ≠ Ẽ₈ ; Molien calculé ≠ série théorique ; Ric ≠ (2/R²)g — chacun tue le pont",
+  "sha256_script": "114e28102247efe0f1d3136ea7cc4b38e61987e2a31511a1ce0923beb188f5a0"
+}

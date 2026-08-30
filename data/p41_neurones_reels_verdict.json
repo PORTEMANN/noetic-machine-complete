@@ -1,0 +1,324 @@
+{
+  "chantier": "P41-NEURONES-REELS",
+  "protocole": "REEL-1.0 (gelé) — Allen Cell Types, sélection sans choix humain, seuil type II hérité gelé de P35 (20 Hz)",
+  "données": {
+    "catalogue": "9c1c904f2cea7e7cf07b6a1c9ab2c01fcd3ccb3fb95ce605bb6cd8bfd036499b",
+    "sweeps": "b21d88344ee613f1145b86df09b91614fce312541bbdf177d19e1047ae54a6a4",
+    "NWB_contrôles": {
+      "Mus musculus|spiny": "32c894c973aead3f6d3f1ca6ae3417fff66e0de0ced961c503c7fde26a14ecb6",
+      "Mus musculus|aspiny": "68024b8a135d978227ba0a9fab7b99bb4191f1bdc491f42d9807f22146d8657b"
+    }
+  },
+  "mesures": {
+    "C0": {
+      "hh": {
+        "I0": 8.0,
+        "f0": 60.0,
+        "type": "II"
+      },
+      "izhikevich": {
+        "I0": 4.0,
+        "f0": 8.0,
+        "type": "I"
+      },
+      "ok": true
+    },
+    "C1": {
+      "Mus musculus|spiny": {
+        "cellules": [
+          {
+            "specimen": 313860745,
+            "rheobase_pA": 59.9999980255284,
+            "f0_Hz": 2.0,
+            "type": "I",
+            "n_points": 13
+          },
+          {
+            "specimen": 313861794,
+            "rheobase_pA": 110.000002162547,
+            "f0_Hz": 1.0,
+            "type": "I",
+            "n_points": 14
+          },
+          {
+            "specimen": 313862022,
+            "rheobase_pA": 190.000001842883,
+            "f0_Hz": 1.0,
+            "type": "I",
+            "n_points": 16
+          },
+          {
+            "specimen": 314529406,
+            "rheobase_pA": 50.0000006675716,
+            "f0_Hz": 4.0,
+            "type": "I",
+            "n_points": 16
+          },
+          {
+            "specimen": 314642645,
+            "rheobase_pA": 69.9999988529321,
+            "f0_Hz": 10.0,
+            "type": "I",
+            "n_points": 9
+          },
+          {
+            "specimen": 314800874,
+            "rheobase_pA": 69.9999988529321,
+            "f0_Hz": 4.0,
+            "type": "I",
+            "n_points": 11
+          },
+          {
+            "specimen": 314831019,
+            "rheobase_pA": 90.0000005077395,
+            "f0_Hz": 1.0,
+            "type": "I",
+            "n_points": 16
+          },
+          {
+            "specimen": 318733871,
+            "rheobase_pA": 69.9999988529321,
+            "f0_Hz": 2.0,
+            "type": "I",
+            "n_points": 13
+          }
+        ],
+        "type_II": 0,
+        "type_I": 8
+      },
+      "Mus musculus|aspiny": {
+        "cellules": [
+          {
+            "specimen": 313861411,
+            "rheobase_pA": 159.999999360672,
+            "f0_Hz": 26.0,
+            "type": "II",
+            "n_points": 19
+          },
+          {
+            "specimen": 313861539,
+            "rheobase_pA": 370.000002858362,
+            "f0_Hz": 1.0,
+            "type": "I",
+            "n_points": 23
+          },
+          {
+            "specimen": 313861608,
+            "rheobase_pA": 289.999996239132,
+            "f0_Hz": 1.0,
+            "type": "I",
+            "n_points": 24
+          },
+          {
+            "specimen": 313862134,
+            "rheobase_pA": 110.000002162547,
+            "f0_Hz": 1.0,
+            "type": "I",
+            "n_points": 11
+          },
+          {
+            "specimen": 313862167,
+            "rheobase_pA": 129.99999687846,
+            "f0_Hz": 9.0,
+            "type": "I",
+            "n_points": 14
+          },
+          {
+            "specimen": 313862306,
+            "rheobase_pA": 29.9999990127642,
+            "f0_Hz": 2.0,
+            "type": "I",
+            "n_points": 7
+          },
+          {
+            "specimen": 313862373,
+            "rheobase_pA": 629.999996615282,
+            "f0_Hz": 1.0,
+            "type": "I",
+            "n_points": 40
+          },
+          {
+            "specimen": 318331264,
+            "rheobase_pA": 170.000000188075,
+            "f0_Hz": 1.0,
+            "type": "I",
+            "n_points": 5
+          }
+        ],
+        "type_II": 1,
+        "type_I": 7
+      },
+      "Homo Sapiens|spiny": {
+        "cellules": [
+          {
+            "specimen": 486940963,
+            "rheobase_pA": 149.999998533268,
+            "f0_Hz": 2.0,
+            "type": "I",
+            "n_points": 18
+          },
+          {
+            "specimen": 488386431,
+            "rheobase_pA": 249.999992929517,
+            "f0_Hz": 1.0,
+            "type": "I",
+            "n_points": 26
+          },
+          {
+            "specimen": 488392806,
+            "rheobase_pA": 170.000000188075,
+            "f0_Hz": 2.0,
+            "type": "I",
+            "n_points": 21
+          },
+          {
+            "specimen": 488400701,
+            "rheobase_pA": 69.9999988529321,
+            "f0_Hz": 5.0,
+            "type": "I",
+            "n_points": 12
+          },
+          {
+            "specimen": 488402499,
+            "rheobase_pA": 129.99999687846,
+            "f0_Hz": 1.0,
+            "type": "I",
+            "n_points": 18
+          },
+          {
+            "specimen": 488418919,
+            "rheobase_pA": 209.999989619902,
+            "f0_Hz": 1.0,
+            "type": "I",
+            "n_points": 21
+          },
+          {
+            "specimen": 488701127,
+            "rheobase_pA": 100.000001335143,
+            "f0_Hz": 2.0,
+            "type": "I",
+            "n_points": 16
+          },
+          {
+            "specimen": 488707479,
+            "rheobase_pA": 370.000002858362,
+            "f0_Hz": 1.0,
+            "type": "I",
+            "n_points": 26
+          }
+        ],
+        "type_II": 0,
+        "type_I": 8
+      },
+      "Homo Sapiens|aspiny": {
+        "cellules": [
+          {
+            "specimen": 488386504,
+            "rheobase_pA": 129.99999687846,
+            "f0_Hz": 2.0,
+            "type": "I",
+            "n_points": 19
+          },
+          {
+            "specimen": 488386626,
+            "rheobase_pA": 190.000001842883,
+            "f0_Hz": 2.0,
+            "type": "I",
+            "n_points": 18
+          },
+          {
+            "specimen": 488400343,
+            "rheobase_pA": 170.000000188075,
+            "f0_Hz": 1.0,
+            "type": "I",
+            "n_points": 25
+          },
+          {
+            "specimen": 488418027,
+            "rheobase_pA": 100.000001335143,
+            "f0_Hz": 1.0,
+            "type": "I",
+            "n_points": 17
+          },
+          {
+            "specimen": 508281653,
+            "rheobase_pA": 289.999996239132,
+            "f0_Hz": 1.0,
+            "type": "I",
+            "n_points": 28
+          },
+          {
+            "specimen": 508381644,
+            "rheobase_pA": 59.9999980255284,
+            "f0_Hz": 1.0,
+            "type": "I",
+            "n_points": 12
+          },
+          {
+            "specimen": 508400236,
+            "rheobase_pA": 139.999997705864,
+            "f0_Hz": 1.0,
+            "type": "I",
+            "n_points": 24
+          },
+          {
+            "specimen": 519853636,
+            "rheobase_pA": 149.999998533268,
+            "f0_Hz": 1.0,
+            "type": "I",
+            "n_points": 21
+          }
+        ],
+        "type_II": 0,
+        "type_I": 8
+      }
+    },
+    "C2": {
+      "Mus musculus|spiny": {
+        "statut": "mesuré",
+        "rheobase_brute_pA": 60.0,
+        "f0_brut_Hz": 1.98,
+        "f0_table_Hz": 2.0,
+        "recoupement_±2Hz": true,
+        "type_brut": "I",
+        "ash_rhéobase": {
+          "Rc": 0.5177,
+          "Rtop": 1.0,
+          "Rdyn": 0.0
+        },
+        "sweep": "Sweep_41"
+      },
+      "Mus musculus|aspiny": {
+        "statut": "mesuré",
+        "rheobase_brute_pA": 160.0,
+        "f0_brut_Hz": 26.0,
+        "f0_table_Hz": 26.0,
+        "recoupement_±2Hz": true,
+        "type_brut": "II",
+        "ash_rhéobase": {
+          "Rc": 0.4967,
+          "Rtop": 1.0,
+          "Rdyn": 0.0
+        },
+        "sweep": "Sweep_47"
+      }
+    }
+  },
+  "verdicts": {
+    "C0_instrument": true,
+    "C1_classification": true,
+    "C2_contrôle_brut": true
+  },
+  "question_pré_enregistrée": "les interneurones sont-ils type II comme HH ?",
+  "verdict_global": "C0 instrument OK (HH type II à 60 Hz, Izhikevich type I). Population : interneurones (aspiny) type II = 1/8 souris, 0/8 humain ; pyramidales (spiny) type II = 0/8 souris, 0/8 humain. Question pré-enregistrée « les interneurones sont-ils type II comme HH ? » → réponse mesurée ci-dessus. Seuil gelé 20.0 Hz hérité de P35.",
+  "comptage_ddll": {
+    "verdict": "déficit",
+    "justification": "le seuil de classement (20 Hz) est payé une fois (hérité P35, pas ré-ajusté) : la classification du réel achète sa frontière"
+  },
+  "b3_fail": [
+    "chantier v1 : C2 cherchait le nom du stimulus dans les attributs des sweeps NWB v1 (aibs_stimulus_name) — absents (ils sont dans /stimulus/templates) → 0 sweep Long Square trouvé ; corrigé : sweep de rhéobase identifié par la table API gelée (sweep_number)",
+    "téléchargement : deux NWB de contrôle corrompus par reprise curl pendant une coupure du montage de sortie (mauvaise signature HDF5) ; re-téléchargés en une passe, intégrité vérifiée (48/92 sweeps lisibles)"
+  ],
+  "falsifieur": "C0 (HH type II / Izhikevich type I au seuil gelé) échoue → l'instrument tombe",
+  "sha256_script": "eb1b903ffb615e02e294057ef04665f8b8060a278e685ebb943a3f65c843c728"
+}

@@ -1,0 +1,93 @@
+{
+  "chantier": "P34-NEURONE",
+  "protocole": "LP-SEP-1.0 (gelé)",
+  "D": "16 fonctions booléennes sur {0,1}² (figées)",
+  "S": "neurone formel z = w·x + b, a = σ(z), seuil 1/2",
+  "verdicts_C1": {
+    "00 (FAUX)": "TRIVIAL",
+    "01 (NOR)": "SÉPARABLE",
+    "02 (¬x1∧x2)": "SÉPARABLE",
+    "03 (¬x1)": "SÉPARABLE",
+    "04 (x1∧¬x2)": "SÉPARABLE",
+    "05 (¬x2)": "SÉPARABLE",
+    "06 (XOR)": "INSÉPARABLE",
+    "07 (NAND)": "SÉPARABLE",
+    "08 (AND)": "SÉPARABLE",
+    "09 (XNOR)": "INSÉPARABLE",
+    "10 (x2)": "SÉPARABLE",
+    "11 (x1⇒x2)": "SÉPARABLE",
+    "12 (x1)": "SÉPARABLE",
+    "13 (x2⇒x1)": "SÉPARABLE",
+    "14 (OR)": "SÉPARABLE",
+    "15 (VRAI)": "TRIVIAL"
+  },
+  "compte": {
+    "séparables": "12/16 (dont 2 constantes triviales)",
+    "inséparables": [
+      "6 (XOR)",
+      "9 (XNOR)"
+    ]
+  },
+  "leviers_C2": {
+    "L1_biais_supprimé": {
+      "verdicts": {
+        "00": "TRIVIAL",
+        "01": "INSÉPARABLE",
+        "02": "INSÉPARABLE",
+        "03": "INSÉPARABLE",
+        "04": "INSÉPARABLE",
+        "05": "INSÉPARABLE",
+        "06": "INSÉPARABLE",
+        "07": "INSÉPARABLE",
+        "08": "INSÉPARABLE",
+        "09": "INSÉPARABLE",
+        "10": "INSÉPARABLE",
+        "11": "INSÉPARABLE",
+        "12": "INSÉPARABLE",
+        "13": "INSÉPARABLE",
+        "14": "INSÉPARABLE",
+        "15": "TRIVIAL"
+      },
+      "fonctions_tuées": [
+        "1 (NOR)",
+        "2 (¬x1∧x2)",
+        "3 (¬x1)",
+        "4 (x1∧¬x2)",
+        "5 (¬x2)",
+        "7 (NAND)",
+        "8 (AND)",
+        "10 (x2)",
+        "11 (x1⇒x2)",
+        "12 (x1)",
+        "13 (x2⇒x1)",
+        "14 (OR)"
+      ],
+      "lecture": "le biais est CONSTITUTIF pour 12 fonctions (dont AND, OR, NAND)"
+    },
+    "L2_sigma_supprimée": {
+      "lecture": "σ strictement monotone ⇒ verdict de décision INVARIANT. σ n'est PAS constitutive de la séparation ; elle ne sert qu'à l'apprentissage par gradient. Le mécanisme constitutif est l'hyperplan, pas la non-linéarité."
+    },
+    "L3_couche_cachée": {
+      "xor_fermé": true,
+      "coût_exact": "+1 couche (2 neurones cachés, poids entiers dérivés)"
+    }
+  },
+  "témoin_induction": {
+    "mse_finale_AND_après_20000_epochs": 0.00047,
+    "mse_finale_XOR_après_20000_epochs": 0.25,
+    "lecture": "la descente de gradient CONSTATE l'échec XOR (erreur résiduelle ~0.25) sans pouvoir le prouver ; la LP le tranche exactement, en une passe, sans données d'entraînement."
+  },
+  "verdict_global": {
+    "C0_reproductibilité": "PASS",
+    "C1_verdict_binaire": "PASS — 12/14 fonctions non triviales séparables",
+    "C2_leviers": "PASS — biais constitutif mesuré ; σ non constitutive ; frontière XOR fermée à coût +1 couche",
+    "C3_B3_FAIL": "XOR (6) et XNOR (9) — échecs publiés, convertis en frontière : la séparabilité linéaire, pas σ, est le mur",
+    "C4_coût_fermeture": "PASS — +1 couche cachée (2 neurones, poids dérivés)"
+  },
+  "b3_fail": [
+    "XOR (k=6)",
+    "XNOR (k=9)"
+  ],
+  "falsifieur": "toute paire (w,b) séparant XOR avec marge > 0 tue le verdict ; toute 15e fonction séparable exhibée tue le compte 14/16",
+  "sha256_script": "fbf082acd5dc8ce832079c082774aa4ab7866bbbda2e9d431196bba15d460cba"
+}

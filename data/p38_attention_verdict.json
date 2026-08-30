@@ -1,0 +1,54 @@
+{
+  "chantier": "P38-ATTENTION",
+  "protocole": "ATTN-1.0 (gelé) — bloc minimal à poids DÉRIVÉS, exhaustivité déclarée (8^6 copie, 2^8 binaire, 3^3 tri), zéro apprentissage",
+  "mesures": {
+    "copie_sans_position": "8/262144 (constantes)",
+    "copie_avec_position_onehot": "262144/262144",
+    "comptage_sans_position_exact": true,
+    "coût_échelle_softmax": {
+      "0.001": {
+        "beta_min_dérivé": 8.517,
+        "erreur_max_mesurée": 0.0009990009990008542
+      },
+      "1e-06": {
+        "beta_min_dérivé": 15.425,
+        "erreur_max_mesurée": 9.99998999939855e-07
+      },
+      "1e-09": {
+        "beta_min_dérivé": 22.333,
+        "erreur_max_mesurée": 1.000000082740371e-09
+      }
+    },
+    "parité_1couche_meilleur": 0.6367,
+    "parité_2couches_exacte": true,
+    "tri_bilinéaire_échecs": {
+      "x_i·x_j": 3,
+      "x_i": 3,
+      "x_j": 3
+    },
+    "double_relation": {
+      "mono_tête": 8,
+      "deux_têtes": 256,
+      "total": 256
+    }
+  },
+  "verdicts": {
+    "C1_sans_position_sac_uniquement": true,
+    "C2_position_constitutive_copie": true,
+    "C3_softmax_non_constitutif_coût_mesuré": true,
+    "C4_profondeur_constitutive_cohérence_P36": true,
+    "C5_comparaison_constitutif_manquant": true,
+    "C6_multi_tête_constitutif_relations_incompatibles": true
+  },
+  "verdict_global": "SUCCÈS — carte constitutive du bloc d'attention minimal : POSITION constitutive de tout ce qui n'est pas symétrique (copie : 8/262144 sans, 262144/262144 avec) ; SOFTMAX non constitutif (linéaire exact, softmax à coût d'échelle dérivé β ≥ ln((n−1)/ε)/Δ) ; PROFONDEUR constitutive pour la parité (cohérence P36) ; COMPARAISON non bilinéaire = constitutif manquant du tri ; MULTI-TÊTE constitutif uniquement pour relations incompatibles simultanées (raffinement mesuré de la prédiction pré-enregistrée)",
+  "prédiction_pré_enregistrée": "position constitutive pour la copie (CONFIRMÉE), multi-tête non constitutif (CONFIRMÉE pour tâches à une relation, RÉFUTÉE pour relations incompatibles simultanées — raffinement publié)",
+  "comptage_ddll": {
+    "verdict": "déficit",
+    "justification": "chaque constitutif est un degré de liberté ajouté : coordonnée de position (n dims), tête supplémentaire (1 distribution), non-linéarité de comparaison"
+  },
+  "b3_fail": [
+    "S = bloc d'attention minimal comme trieur : réfutée — la comparaison n'est pas bilinéaire (échecs publiés)"
+  ],
+  "falsifieur": "copie exacte sans position ; tri exact à scores bilinéaires ; double-relation exacte en mono-tête",
+  "sha256_script": "d2c857893439901c86a2fe847062913f733ca8cc77454faee3409355b694177e"
+}

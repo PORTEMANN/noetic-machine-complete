@@ -1,0 +1,693 @@
+{
+  "chantier": "P39-FERMETURE-R12",
+  "protocole": "R12-FERM-1.0 (gelé) — intégrateur complet périmétrique forme |∇Ψ|², grille corpus 300×192, règles figées en ζ₀ résolues dans le même intégrateur, porte variationnelle 5e-3, zéro paramètre ajusté",
+  "b3_fail_corpus": {
+    "intégrande_P31": "mélange de deux formes IBP (u′² de |∇Ψ|² + −(u″+2u′/U) du laplacien) et terme croisé u′cosθ₁₂(a+b) sans facteur géométrique — le coût cinétique du facteur de Jastrow y est gonflé (distorsion mesurée jusqu'à +0.13 Ha à β = 0.5), l'optimum apparent déplacé vers les courtes portées, le gain écrasé d'un facteur > 3 (mesuré : 4.9 mHa vs 26.4 mHa)",
+    "conséquence": "le verdict P31 « aucune règle dérivée ne bat split-ζ à l'intégrateur complet » (Z=2) était un artefact d'intégrande ; l'intégrateur delta de C12.1 (A3) n'est PAS concerné (construction différente, 1-corps analytique)",
+    "b3_fail_du_chantier": "critère T1 v1 (« la forme P31 dégrade pour tout β ») réfuté par la mesure — elle gagne ~5 mHa à β ≥ 3 ; critère corrigé sur la distorsion et le ratio de gains",
+    "statut": "publié et corrigé dans ce chantier"
+  },
+  "T1_réfutation_intégrande_P31": {
+    "E_ref_grille": -2.84345,
+    "diagnostic": [
+      {
+        "beta": 0.25,
+        "E_integrande_P31": -2.72157,
+        "E_forme_grad": -2.86455
+      },
+      {
+        "beta": 0.5,
+        "E_integrande_P31": -2.73804,
+        "E_forme_grad": -2.86988
+      },
+      {
+        "beta": 0.75,
+        "E_integrande_P31": -2.74648,
+        "E_forme_grad": -2.85919
+      },
+      {
+        "beta": 1.0,
+        "E_integrande_P31": -2.75775,
+        "E_forme_grad": -2.84844
+      },
+      {
+        "beta": 1.5,
+        "E_integrande_P31": -2.78491,
+        "E_forme_grad": -2.83509
+      },
+      {
+        "beta": 2.0,
+        "E_integrande_P31": -2.80891,
+        "E_forme_grad": -2.83004
+      },
+      {
+        "beta": 2.5,
+        "E_integrande_P31": -2.82614,
+        "E_forme_grad": -2.82907
+      },
+      {
+        "beta": 3.0,
+        "E_integrande_P31": -2.83738,
+        "E_forme_grad": -2.82982
+      },
+      {
+        "beta": 4.0,
+        "E_integrande_P31": -2.84834,
+        "E_forme_grad": -2.83265
+      }
+    ],
+    "gain_max_forme_grad_Ha": 0.02643,
+    "gain_max_intégrande_P31_Ha": 0.00489,
+    "distorsion_max_Ha": 0.14298,
+    "forme_grad_variationnelle": true,
+    "T1_PASS": true
+  },
+  "volet_A_cellules_hors_domaine_rejugées": {
+    "E_ref_full": {
+      "2": -2.84322,
+      "3": -7.21352,
+      "4": -13.58246,
+      "5": -21.95007,
+      "6": -32.31636
+    },
+    "biais_grille_T0": {
+      "2": 0.00443,
+      "3": 0.00914,
+      "4": 0.01519,
+      "5": 0.02258,
+      "6": 0.0313
+    },
+    "table": {
+      "F1×R1": {
+        "2": {
+          "statut": "perd",
+          "passe": false,
+          "E": -2.83283,
+          "gain_vs_ref": -0.01039,
+          "marge_variationnelle": 0.07089,
+          "beta": 1.6875
+        },
+        "3": {
+          "statut": "perd",
+          "passe": false,
+          "E": -7.20327,
+          "gain_vs_ref": -0.01025,
+          "marge_variationnelle": 0.07664,
+          "beta": 2.6875
+        },
+        "4": {
+          "statut": "perd",
+          "passe": false,
+          "E": -13.57226,
+          "gain_vs_ref": -0.01021,
+          "marge_variationnelle": 0.08331,
+          "beta": 3.6875
+        },
+        "5": {
+          "statut": "perd",
+          "passe": false,
+          "E": -21.93987,
+          "gain_vs_ref": -0.01021,
+          "marge_variationnelle": 0.0911,
+          "beta": 4.6875
+        },
+        "6": {
+          "statut": "perd",
+          "passe": false,
+          "E": -32.30613,
+          "gain_vs_ref": -0.01022,
+          "marge_variationnelle": 0.10011,
+          "beta": 5.6875
+        }
+      },
+      "F1×R3": {
+        "2": {
+          "statut": "passe",
+          "passe": true,
+          "E": -2.86168,
+          "gain_vs_ref": 0.01845,
+          "marge_variationnelle": 0.04205,
+          "beta": 0.7087
+        },
+        "3": {
+          "statut": "passe",
+          "passe": true,
+          "E": -7.23258,
+          "gain_vs_ref": 0.01906,
+          "marge_variationnelle": 0.04733,
+          "beta": 1.1287
+        },
+        "4": {
+          "statut": "passe",
+          "passe": true,
+          "E": -13.60177,
+          "gain_vs_ref": 0.0193,
+          "marge_variationnelle": 0.0538,
+          "beta": 1.5487
+        },
+        "5": {
+          "statut": "passe",
+          "passe": true,
+          "E": -21.96948,
+          "gain_vs_ref": 0.01941,
+          "marge_variationnelle": 0.06149,
+          "beta": 1.9688
+        },
+        "6": {
+          "statut": "passe",
+          "passe": true,
+          "E": -32.33579,
+          "gain_vs_ref": 0.01944,
+          "marge_variationnelle": 0.07045,
+          "beta": 2.3887
+        }
+      },
+      "F3×R3": {
+        "2": {
+          "statut": "perd",
+          "passe": false,
+          "E": -2.83863,
+          "gain_vs_ref": -0.00459,
+          "marge_variationnelle": 0.06509,
+          "beta": 0.7087
+        },
+        "3": {
+          "statut": "perd",
+          "passe": false,
+          "E": -7.19627,
+          "gain_vs_ref": -0.01725,
+          "marge_variationnelle": 0.08365,
+          "beta": 1.1287
+        },
+        "4": {
+          "statut": "perd",
+          "passe": false,
+          "E": -13.55398,
+          "gain_vs_ref": -0.02848,
+          "marge_variationnelle": 0.10159,
+          "beta": 1.5487
+        },
+        "5": {
+          "statut": "perd",
+          "passe": false,
+          "E": -21.91292,
+          "gain_vs_ref": -0.03715,
+          "marge_variationnelle": 0.11805,
+          "beta": 1.9688
+        },
+        "6": {
+          "statut": "perd",
+          "passe": false,
+          "E": -32.27222,
+          "gain_vs_ref": -0.04414,
+          "marge_variationnelle": 0.13402,
+          "beta": 2.3887
+        }
+      },
+      "F4×R1": {
+        "2": {
+          "statut": "perd",
+          "passe": false,
+          "E": -2.80409,
+          "gain_vs_ref": -0.03913,
+          "marge_variationnelle": 0.09963,
+          "beta": 1.6875
+        },
+        "3": {
+          "statut": "perd",
+          "passe": false,
+          "E": -7.17481,
+          "gain_vs_ref": -0.03871,
+          "marge_variationnelle": 0.1051,
+          "beta": 2.6875
+        },
+        "4": {
+          "statut": "perd",
+          "passe": false,
+          "E": -13.54391,
+          "gain_vs_ref": -0.03856,
+          "marge_variationnelle": 0.11166,
+          "beta": 3.6875
+        },
+        "5": {
+          "statut": "perd",
+          "passe": false,
+          "E": -21.91158,
+          "gain_vs_ref": -0.0385,
+          "marge_variationnelle": 0.1194,
+          "beta": 4.6875
+        },
+        "6": {
+          "statut": "perd",
+          "passe": false,
+          "E": -32.27787,
+          "gain_vs_ref": -0.03848,
+          "marge_variationnelle": 0.12837,
+          "beta": 5.6875
+        }
+      },
+      "F4×R3": {
+        "2": {
+          "statut": "perd",
+          "passe": false,
+          "E": -2.82361,
+          "gain_vs_ref": -0.01961,
+          "marge_variationnelle": 0.08011,
+          "beta": 0.7087
+        },
+        "3": {
+          "statut": "perd",
+          "passe": false,
+          "E": -7.19426,
+          "gain_vs_ref": -0.01926,
+          "marge_variationnelle": 0.08565,
+          "beta": 1.1287
+        },
+        "4": {
+          "statut": "perd",
+          "passe": false,
+          "E": -13.56336,
+          "gain_vs_ref": -0.01911,
+          "marge_variationnelle": 0.09221,
+          "beta": 1.5487
+        },
+        "5": {
+          "statut": "perd",
+          "passe": false,
+          "E": -21.93103,
+          "gain_vs_ref": -0.01905,
+          "marge_variationnelle": 0.09995,
+          "beta": 1.9688
+        },
+        "6": {
+          "statut": "perd",
+          "passe": false,
+          "E": -32.29732,
+          "gain_vs_ref": -0.01904,
+          "marge_variationnelle": 0.10893,
+          "beta": 2.3887
+        }
+      },
+      "F1×R2": {
+        "2": {
+          "statut": "perd",
+          "passe": false,
+          "E": -2.82957,
+          "gain_vs_ref": -0.01365,
+          "marge_variationnelle": 0.07415,
+          "beta": 2.4804
+        },
+        "3": {
+          "statut": "passe",
+          "passe": true,
+          "E": -7.25585,
+          "gain_vs_ref": 0.04233,
+          "marge_variationnelle": 0.02406,
+          "beta": 0.2643
+        },
+        "4": {
+          "statut": "passe",
+          "passe": true,
+          "E": -13.62447,
+          "gain_vs_ref": 0.042,
+          "marge_variationnelle": 0.0311,
+          "beta": 0.2976
+        },
+        "5": {
+          "statut": "passe",
+          "passe": true,
+          "E": -21.99073,
+          "gain_vs_ref": 0.04066,
+          "marge_variationnelle": 0.04024,
+          "beta": 0.3219
+        },
+        "6": {
+          "statut": "passe",
+          "passe": true,
+          "E": -32.35531,
+          "gain_vs_ref": 0.03895,
+          "marge_variationnelle": 0.05094,
+          "beta": 0.3406
+        }
+      },
+      "F2×R1": {
+        "2": {
+          "statut": "passe",
+          "passe": true,
+          "E": -2.86627,
+          "gain_vs_ref": 0.02305,
+          "marge_variationnelle": 0.03745,
+          "beta": 1.6875
+        },
+        "3": {
+          "statut": "passe",
+          "passe": true,
+          "E": -7.2369,
+          "gain_vs_ref": 0.02338,
+          "marge_variationnelle": 0.04302,
+          "beta": 2.6875
+        },
+        "4": {
+          "statut": "passe",
+          "passe": true,
+          "E": -13.60607,
+          "gain_vs_ref": 0.02361,
+          "marge_variationnelle": 0.0495,
+          "beta": 3.6875
+        },
+        "5": {
+          "statut": "passe",
+          "passe": true,
+          "E": -21.97378,
+          "gain_vs_ref": 0.02371,
+          "marge_variationnelle": 0.05719,
+          "beta": 4.6875
+        },
+        "6": {
+          "statut": "passe",
+          "passe": true,
+          "E": -32.3401,
+          "gain_vs_ref": 0.02374,
+          "marge_variationnelle": 0.06615,
+          "beta": 5.6875
+        }
+      },
+      "F2×R2": {
+        "2": {
+          "statut": "passe",
+          "passe": true,
+          "E": -2.88641,
+          "gain_vs_ref": 0.04319,
+          "marge_variationnelle": 0.01732,
+          "beta": 0.3477
+        },
+        "3": {
+          "statut": "passe",
+          "passe": true,
+          "E": -7.25771,
+          "gain_vs_ref": 0.0442,
+          "marge_variationnelle": 0.0222,
+          "beta": 0.3805
+        },
+        "4": {
+          "statut": "passe",
+          "passe": true,
+          "E": -13.62612,
+          "gain_vs_ref": 0.04365,
+          "marge_variationnelle": 0.02945,
+          "beta": 0.4005
+        },
+        "5": {
+          "statut": "passe",
+          "passe": true,
+          "E": -21.99238,
+          "gain_vs_ref": 0.04231,
+          "marge_variationnelle": 0.03859,
+          "beta": 0.414
+        },
+        "6": {
+          "statut": "passe",
+          "passe": true,
+          "E": -32.35686,
+          "gain_vs_ref": 0.0405,
+          "marge_variationnelle": 0.04939,
+          "beta": 0.4238
+        }
+      },
+      "F2×R3": {
+        "2": {
+          "statut": "passe",
+          "passe": true,
+          "E": -2.88133,
+          "gain_vs_ref": 0.0381,
+          "marge_variationnelle": 0.0224,
+          "beta": 0.7087
+        },
+        "3": {
+          "statut": "passe",
+          "passe": true,
+          "E": -7.25278,
+          "gain_vs_ref": 0.03927,
+          "marge_variationnelle": 0.02713,
+          "beta": 1.1287
+        },
+        "4": {
+          "statut": "passe",
+          "passe": true,
+          "E": -13.62217,
+          "gain_vs_ref": 0.03971,
+          "marge_variationnelle": 0.03339,
+          "beta": 1.5487
+        },
+        "5": {
+          "statut": "passe",
+          "passe": true,
+          "E": -21.99001,
+          "gain_vs_ref": 0.03994,
+          "marge_variationnelle": 0.04096,
+          "beta": 1.9688
+        },
+        "6": {
+          "statut": "passe",
+          "passe": true,
+          "E": -32.35644,
+          "gain_vs_ref": 0.04008,
+          "marge_variationnelle": 0.04981,
+          "beta": 2.3887
+        }
+      },
+      "F4×R2": {
+        "2": {
+          "statut": "perd",
+          "passe": false,
+          "E": -2.79992,
+          "gain_vs_ref": -0.04331,
+          "marge_variationnelle": 0.10381,
+          "beta": 1.4304
+        },
+        "3": {
+          "statut": "passe",
+          "passe": true,
+          "E": -7.24547,
+          "gain_vs_ref": 0.03196,
+          "marge_variationnelle": 0.03444,
+          "beta": 0.3333
+        },
+        "4": {
+          "statut": "passe",
+          "passe": true,
+          "E": -13.61386,
+          "gain_vs_ref": 0.0314,
+          "marge_variationnelle": 0.04171,
+          "beta": 0.4104
+        },
+        "5": {
+          "statut": "passe",
+          "passe": true,
+          "E": -21.98024,
+          "gain_vs_ref": 0.03016,
+          "marge_variationnelle": 0.05074,
+          "beta": 0.4781
+        },
+        "6": {
+          "statut": "passe",
+          "passe": true,
+          "E": -32.34508,
+          "gain_vs_ref": 0.02873,
+          "marge_variationnelle": 0.06116,
+          "beta": 0.5389
+        }
+      }
+    }
+  },
+  "volet_B_H-_et_Ps-": {
+    "H⁻": {
+      "M": "∞",
+      "E_ref": -0.47151,
+      "E_ref_analytique": -0.47266,
+      "biais_grille": 0.00115,
+      "E_exact": -0.5277510165,
+      "résiduel_ref_Ha": 0.05624,
+      "résiduel_relatif": 0.1066,
+      "controle_MP_c0": null,
+      "cellules": {
+        "F1×R1": {
+          "statut": "perd",
+          "E": -0.46044,
+          "gain_vs_ref": -0.01107,
+          "beta": 0.6875
+        },
+        "F1×R3": {
+          "statut": "passe",
+          "E": -0.48874,
+          "gain_vs_ref": 0.01723,
+          "beta": 0.2888
+        },
+        "F2×R3": {
+          "statut": "passe",
+          "E": -0.50523,
+          "gain_vs_ref": 0.03372,
+          "beta": 0.2888
+        }
+      }
+    },
+    "Ps⁻": {
+      "M": 1,
+      "E_ref": -0.23946,
+      "E_ref_analytique": -0.23633,
+      "biais_grille": -0.00313,
+      "E_exact": -0.2620050702,
+      "résiduel_ref_Ha": 0.02254,
+      "résiduel_relatif": 0.086,
+      "controle_MP_c0": 0.0,
+      "cellules": {
+        "F1×R1": {
+          "statut": "perd",
+          "E": -0.21209,
+          "gain_vs_ref": -0.02737,
+          "beta": 0.3438
+        },
+        "F1×R3": {
+          "statut": "passe",
+          "E": -0.24311,
+          "gain_vs_ref": 0.00365,
+          "beta": 0.1444
+        },
+        "F2×R3": {
+          "statut": "HORS DOMAINE",
+          "E": -0.27148,
+          "gain_vs_ref": 0.03202,
+          "beta": 0.1444
+        }
+      }
+    }
+  },
+  "volet_C_série_Z7_10": {
+    "7": {
+      "E_ref": -44.68132,
+      "biais_grille": 0.04134,
+      "E_exact": -44.7814451,
+      "résiduel_relatif": 0.00224,
+      "F1×R3": {
+        "E": -44.70074,
+        "statut": "passe",
+        "gain_vs_ref": 0.01943,
+        "beta": 2.8087
+      }
+    },
+    "8": {
+      "E_ref": -59.04495,
+      "biais_grille": 0.05271,
+      "E_exact": -59.1565951,
+      "résiduel_relatif": 0.00189,
+      "F1×R3": {
+        "E": -59.06434,
+        "statut": "passe",
+        "gain_vs_ref": 0.01939,
+        "beta": 3.2287
+      }
+    },
+    "9": {
+      "E_ref": -75.40725,
+      "biais_grille": 0.0654,
+      "E_exact": -75.5317123,
+      "résiduel_relatif": 0.00165,
+      "F1×R3": {
+        "E": -75.4266,
+        "statut": "passe",
+        "gain_vs_ref": 0.01934,
+        "beta": 3.6487
+      }
+    },
+    "10": {
+      "E_ref": -93.76823,
+      "biais_grille": 0.07943,
+      "E_exact": -93.9068068,
+      "résiduel_relatif": 0.00148,
+      "F1×R3": {
+        "E": -93.78751,
+        "statut": "passe",
+        "gain_vs_ref": 0.01928,
+        "beta": 4.0687
+      }
+    }
+  },
+  "loi_Z_assemblée": {
+    "2": {
+      "E_ref": -2.84322,
+      "E_exact": -2.903724377,
+      "résiduel_relatif": 0.02084
+    },
+    "3": {
+      "E_ref": -7.21352,
+      "E_exact": -7.279913,
+      "résiduel_relatif": 0.00912
+    },
+    "4": {
+      "E_ref": -13.58246,
+      "E_exact": -13.655566,
+      "résiduel_relatif": 0.00535
+    },
+    "5": {
+      "E_ref": -21.95007,
+      "E_exact": -22.030972,
+      "résiduel_relatif": 0.00367
+    },
+    "6": {
+      "E_ref": -32.31636,
+      "E_exact": -32.406247,
+      "résiduel_relatif": 0.00277
+    },
+    "H⁻": {
+      "E_ref": -0.47151,
+      "E_exact": -0.5277510165,
+      "résiduel_relatif": 0.1066
+    },
+    "Ps⁻": {
+      "E_ref": -0.23946,
+      "E_exact": -0.2620050702,
+      "résiduel_relatif": 0.086
+    },
+    "7": {
+      "E_ref": -44.68132,
+      "E_exact": -44.7814451,
+      "résiduel_relatif": 0.00224
+    },
+    "8": {
+      "E_ref": -59.04495,
+      "E_exact": -59.1565951,
+      "résiduel_relatif": 0.00189
+    },
+    "9": {
+      "E_ref": -75.40725,
+      "E_exact": -75.5317123,
+      "résiduel_relatif": 0.00165
+    },
+    "10": {
+      "E_ref": -93.76823,
+      "E_exact": -93.9068068,
+      "résiduel_relatif": 0.00148
+    }
+  },
+  "n_Z_passés_volet_A": {
+    "F1×R1": 0,
+    "F1×R3": 5,
+    "F3×R3": 0,
+    "F4×R1": 0,
+    "F4×R3": 0,
+    "F1×R2": 4,
+    "F2×R1": 5,
+    "F2×R2": 5,
+    "F2×R3": 5,
+    "F4×R2": 4
+  },
+  "verdict_global": "FRONTIÈRE r₁₂ FERMÉE — un couple à zéro paramètre passe le tamis en tout Z dans le domaine variationnel",
+  "coût_de_fermeture_mesuré": {
+    "durée_volet_A_s": 1444.4,
+    "durée_volet_B_s": 85.4,
+    "durée_volet_C_s": 72.2,
+    "note": "intégrateur complet 300×192 ≈ 0.7 s/évaluation vs intégrateur delta — coût mesuré, à comparer au ×10 déclaré en F3"
+  },
+  "falsifieur": "identique au registre F3 : tout couple (famille, règle) à zéro paramètre passant le tamis en tout Z dans le domaine variationnel ferme la frontière",
+  "sha256_script": "c8478fd81cd513a67117bf9f796d53a3e413854e0db073cadc3d009ac4b8709a"
+}

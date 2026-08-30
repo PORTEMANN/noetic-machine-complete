@@ -1,0 +1,50 @@
+{
+  "chantier": "P35-NEURONE-BIOLOGIQUE",
+  "protocole": "HH-VER-1.0 (gelé)",
+  "D": "Hodgkin–Huxley 1952, paramètres standards (figés) ; T = 300 ms, dt = 0.02 ms, transitoire 50 ms écarté",
+  "S": "neurone formel a = σ(w·x + b) — application statique, 0 état",
+  "verdicts": {
+    "C1_tout_ou_rien": {
+      "bio": "PASS — au seuil : 0 spike @I=5.0, 30.6 mV @I=6.3, 32.2 mV @I=7.5 (0 ou complet)",
+      "S": "FAIL — réponse graduée au seuil : 0.21 → 0.50 → 0.77"
+    },
+    "C2_train_sous_courant_constant": {
+      "bio": "PASS (68 Hz @I=10 ; 0 Hz @I=4)",
+      "S": "FAIL (sortie constante — pas de spike, pas de réfractarité)"
+    },
+    "C3_courbe_fI": {
+      "bio": "PASS — saut de 60 Hz à la rhéobase (type II, Hopf/SNIC)",
+      "S": "FAIL (réponse lisse par construction)"
+    },
+    "C4_état_mémoire": {
+      "bio": "4 variables d'état (V, m, h, n)",
+      "S": "0 variable d'état — structure réfutée"
+    },
+    "C5_chaîne_signal_verdict": {
+      "ash_bio": {
+        "Rc": 0.3075,
+        "Rtop": 4,
+        "Rdyn": 0.3881
+      },
+      "ash_S": {
+        "Rc": 0.0,
+        "Rtop": 0,
+        "Rdyn": 0.0
+      },
+      "verdict": "PASS — la couche ASH-lite sépare les signatures sans ajustement (Rtop ≥ 3 vs 0)"
+    }
+  },
+  "verdict_global": "ÉCHEC (B3-FAIL) — le neurone formel σ est RÉFUTÉ comme modèle du neurone biologique",
+  "frontière_mesurée": "le manque constitutif n'est ni le seuil ni la non-linéarité : c'est la DYNAMIQUE (état/mémoire)",
+  "leviers_de_fermeture": {
+    "L1_4D_vers_2D": "PASS — Izhikevich (6 spikes) : 4D NON constitutive, 2D suffit",
+    "L2_2D_vers_1D_plan": "1D plan autonome : aucune oscillation possible — la réfractarité meurt (reset artificiel requis)",
+    "L3_1D_sur_S1": "PASS — theta-neuron (21 spikes) : l'excitabilité minimale est une PHASE SUR UN CERCLE"
+  },
+  "coût_de_fermeture": "de l'application statique (0D) au système dynamique : 2D en plan, ou 1D sur S¹ — le neurone biologique est une horloge, pas une fonction",
+  "b3_fail": [
+    "S = σ(w·x+b) comme modèle du neurone biologique — réfutée sur C1, C2, C3, C4"
+  ],
+  "falsifieur": "toute expérience à entrée constante dont la sortie biologique serait une fonction statique de l'entrée tue le verdict",
+  "sha256_script": "2441e91a93e30b283569ae3e5ce9166e7a22850c534dd149777b3791ead2d7b9"
+}
