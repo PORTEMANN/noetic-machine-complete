@@ -3,7 +3,7 @@
   "protocole": "CONJ-FR-1.0 (gelé) — registre A4 comme donnée figée, domaine déclaré avant agrégation, aucune réinterprétation",
   "donnée": {
     "registre": "A4-FRONTIÈRES-MESURÉES",
-    "sha256_registre": "45dc0619d66f285083f61bcabb6907a7bbb8b6d44562738ec3ac42acb375584b"
+    "sha256_registre": "bd592a8a3dc16b4aa466308100f24e3e28572930af1eb1fe6cf35b43a7556d57"
   },
   "points_mesurés": {
     "F1-XOR": "déficit",
@@ -18,12 +18,14 @@
     "F12-PROFONDEUR-CONSTITUTIVE": "déficit",
     "F13-ATTENTION-CONSTITUTIVE": "déficit",
     "F14-PONT-120-E8": "équilibre",
-    "F15-EXCITABILITE-REELLE": "déficit"
+    "F15-EXCITABILITE-REELLE": "déficit",
+    "F19-PARITE-FAMILLE": "déficit",
+    "F20-TRI-FAMILLE": "déficit"
   },
-  "n_points": 13,
+  "n_points": 15,
   "conjecture_v1": {
     "énoncé": "toute frontière mesurée est un déficit de dimension/degré de liberté",
-    "conformes": "10/13",
+    "conformes": "12/15",
     "contre_exemples": {
       "F5-BPS-ECHELLE": "mode non contraint",
       "F7-PARTIELS-PROTOCOLE": "équilibre",
@@ -33,10 +35,13 @@
   },
   "conjecture_v2": {
     "énoncé": "v2 (raffinée sur le contre-exemple publié) : toute frontière mesurée est un DÉFAUT DE COMPTAGE des degrés de liberté — déficit (structure manquante : hyperplan, état, champ, 2-corps, représentations) ou MODE NON CONTRAINT (direction sans coût : mode zéro d'échelle au point BPS)",
-    "couverture_domaine": "11/13",
+    "couverture_domaine": "13/15",
     "statut": "en vigueur — éprouvée prospectivement sur les points pré-enregistrés"
   },
-  "points_pré_enregistrés_en_attente": {},
+  "points_pré_enregistrés_en_attente": {
+    "F16-REN-REGIME": "sa fermeture devra être un défaut de comptage de ddll (sinon v2 tombe)",
+    "F17-EEG-MI-Essai-Unique": "sa fermeture devra être un défaut de comptage de ddll (sinon v2 tombe)"
+  },
   "b3_fail": [
     "v1 réfutée par F5-BPS-ECHELLE (mode non contraint)",
     "v1 réfutée par F7-PARTIELS-PROTOCOLE (équilibre)",

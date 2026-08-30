@@ -1,0 +1,114 @@
+{
+  "chantier": "M2E-COPIE-CERTIFIEE-TRI-L5",
+  "protocole": "MÉT-LIB-1.4 (gelé) — suite de M2 (52582c7d), M2b (6dfef08f), M2c (4e996ea8), M2d (8b6802ec)",
+  "partie_A": {
+    "A1_onehot_exhaustif": {
+      "2": true,
+      "3": true,
+      "4": true,
+      "5": true,
+      "6": true
+    },
+    "A2_chemin_quadratique": {
+      "3": {
+        "dominance_stricte": false,
+        "copie_exacte_V2": false
+      },
+      "4": {
+        "dominance_stricte": false,
+        "copie_exacte_V2": false
+      },
+      "5": {
+        "dominance_stricte": false,
+        "copie_exacte_V2": false
+      },
+      "6": {
+        "dominance_stricte": false,
+        "copie_exacte_V2": false
+      }
+    },
+    "A3_échantillon_rang_inférieur": {
+      "3": {
+        "testées_rang<n": 200,
+        "échecs": 200
+      },
+      "4": {
+        "testées_rang<n": 200,
+        "échecs": 200
+      },
+      "5": {
+        "testées_rang<n": 200,
+        "échecs": 200
+      },
+      "6": {
+        "testées_rang<n": 200,
+        "échecs": 200
+      }
+    },
+    "certificat": "validité de la copie (readout corpus) ⇔ dominance diagonale stricte ⇒ rang n (Lévy–Desplanques, cité) ⇒ r ≥ n ; one-hot atteint r = n → d_copie(n) = n MINIMAL CERTIFIÉ ; le chemin quadratique rang-3 est réfuté par exécution (doublons) — B3-FAIL publié",
+    "d_copie(n)": "n — mesuré (exhaustif V=8, n=2..6) et certifié minimal"
+  },
+  "partie_B": {
+    "détail": {
+      "2": {
+        "comparateurs_mesurés": 1,
+        "borne_log2(n!)": 1,
+        "ratio": 1.0,
+        "exact": true
+      },
+      "3": {
+        "comparateurs_mesurés": 3,
+        "borne_log2(n!)": 3,
+        "ratio": 1.0,
+        "exact": true
+      },
+      "4": {
+        "comparateurs_mesurés": 5,
+        "borne_log2(n!)": 5,
+        "ratio": 1.0,
+        "exact": true
+      },
+      "5": {
+        "comparateurs_mesurés": 9,
+        "borne_log2(n!)": 7,
+        "ratio": 1.286,
+        "exact": true
+      },
+      "6": {
+        "comparateurs_mesurés": 12,
+        "borne_log2(n!)": 10,
+        "ratio": 1.2,
+        "exact": true
+      },
+      "7": {
+        "comparateurs_mesurés": 16,
+        "borne_log2(n!)": 13,
+        "ratio": 1.231,
+        "exact": true
+      },
+      "8": {
+        "comparateurs_mesurés": 19,
+        "borne_log2(n!)": 16,
+        "ratio": 1.188,
+        "exact": true
+      }
+    },
+    "d_tri(n)": "comparateurs de Batcher dérivés, exactitude exhaustive (V=4 n≤5, permutations n≤8, binaire n≤8)",
+    "borne": "⌈log2(n!)⌉ (comptage d'information, déclaré)"
+  },
+  "partie_C": {
+    "F20": "TRI-FAMILLE",
+    "classe": "déficit (famille mesurée, coût croissant fini)",
+    "L5": "tient (2e confrontation)"
+  },
+  "critères": {
+    "A_copie_minimale_certifiée": true,
+    "B_famille_tri_mesurée": true,
+    "C_L5_seconde_confrontation": true
+  },
+  "score": "3/3",
+  "statut": "SUCCÈS",
+  "falsifieur": "copie exacte à rang < n, tri inexact, dépassement de borne, ou F20 en équilibre — publié tel quel",
+  "durée_s": 4.6,
+  "sha256_script": "aa518fbf2bd884ff6098084908a248709eb917e3280d056a242a62e88433fbd9"
+}

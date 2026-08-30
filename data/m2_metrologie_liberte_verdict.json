@@ -1,0 +1,204 @@
+{
+  "chantier": "M2-METROLOGIE-LIBERTE",
+  "protocole": "MÉT-LIB-1.0 (gelé)",
+  "D_registre_sha256": "28a486b0e510d329ff0b2bb2a36350b20f30e1afe96185621311e4aee902f3fe",
+  "structure_candidate": {
+    "monoïde_coûts": "(ℕ̄ = ℕ ∪ {∞}, +, 0), ∞ absorbant ; ∅ (hors-domaine) : mesure non définie, ≠ 0",
+    "classes": "équilibre (d=0) · déficit (0<d<∞) · mode non contraint (d=∞) · familles paramétrées",
+    "composition": "⊕ conjonction de chantiers indépendants",
+    "ordre": "⊏ dépendance de fermeture"
+  },
+  "table_ddll_figée": {
+    "F1-XOR": {
+      "d": 1,
+      "registre": "déficit",
+      "coût": "1 hyperplan → 2 (couche cachée, poids entiers dérivés)"
+    },
+    "F2-SIGMA-DYNAMIQUE": {
+      "d": 1,
+      "registre": "déficit",
+      "coût": "0D → 1D sur S¹ (fermeture minimale)"
+    },
+    "F3-R12-PORTEE": {
+      "d": 1,
+      "registre": "déficit (confirmé et fermé)",
+      "coût": "1 corps → 2 corps (r₁₂)"
+    },
+    "F4-KO6-ENUMERATION": {
+      "d": "non mesuré",
+      "registre": "déficit",
+      "coût": "ouverte — axiomes KO-6 aux représentations"
+    },
+    "F5-BPS-ECHELLE": {
+      "d": "inf",
+      "registre": "mode non contraint",
+      "coût": "surplus indéterminé (invariance d'échelle)"
+    },
+    "F6-COEUR-DIFFUS": {
+      "d": 1,
+      "registre": "déficit",
+      "coût": "+1 champ diffusif a (fermeture partielle mesurée)"
+    },
+    "F7-PARTIELS-PROTOCOLE": {
+      "d": 0,
+      "registre": "équilibre",
+      "coût": "axes de protocole déclarés et mesurés — rien ajouté"
+    },
+    "F8-ZMAX-E8": {
+      "d": 1,
+      "registre": "déficit",
+      "coût": "α_K = 2⁻¹⁰ payé une fois (input d'échelle)"
+    },
+    "F9-HYGIENE-P32-P33": {
+      "d": null,
+      "registre": "hors-domaine",
+      "coût": "hygiène"
+    },
+    "F10-CODE-FRACTIONNAIRE": {
+      "d": null,
+      "registre": "hors-domaine",
+      "coût": "hygiène"
+    },
+    "F11-MEMOIRE-FRACTIONNAIRE": {
+      "d": "non mesuré",
+      "registre": "déficit",
+      "coût": "ouverte — excitabilité non payée"
+    },
+    "F12-PROFONDEUR-CONSTITUTIVE": {
+      "d": "famille",
+      "registre": "déficit",
+      "coût": "d(m) = 2m (m oscillations — couches)",
+      "famille": {
+        "forme": "2m",
+        "monotone": true
+      }
+    },
+    "F13-ATTENTION-CONSTITUTIVE": {
+      "d": "famille",
+      "registre": "déficit",
+      "coût": "d(n) = n (coordonnées de position)",
+      "famille": {
+        "forme": "n",
+        "monotone": true
+      }
+    },
+    "F14-PONT-120-E8": {
+      "d": 0,
+      "registre": "équilibre",
+      "coût": "théorème d'arithmétique exacte — rien payé"
+    },
+    "F15-EXCITABILITE-REELLE": {
+      "d": 1,
+      "registre": "déficit",
+      "coût": "seuil 20 Hz payé une fois (hérité gelé P35)"
+    },
+    "F16-REN-REGIME": {
+      "d": null,
+      "registre": "hors-domaine",
+      "coût": "méthode"
+    },
+    "F17-EEG-MI-Essai-Unique": {
+      "d": null,
+      "registre": "hors-domaine",
+      "coût": "méthode"
+    },
+    "F18-ARCHIVE-BENCH-ASH": {
+      "d": null,
+      "registre": "hors-domaine",
+      "coût": "hygiène"
+    }
+  },
+  "lois": {
+    "L1": {
+      "tenue": true,
+      "divergences": []
+    },
+    "L2a": {
+      "tenue": true,
+      "image_ponctuelle": [
+        0,
+        1
+      ]
+    },
+    "L2b": {
+      "tenue": true,
+      "familles": {
+        "F12-PROFONDEUR-CONSTITUTIVE": "2m",
+        "F13-ATTENTION-CONSTITUTIVE": "n"
+      }
+    },
+    "L3": {
+      "tenue": true,
+      "compositions": [
+        {
+          "composition": "P13 = versant-α ⊕ versant-confinement",
+          "d_mesuré": 0,
+          "d_attendu": 0,
+          "tenue": true,
+          "preuve": "P13 : 4/4 à Σ=1 (A1b) — aucun ddll ajouté sur les deux versants"
+        },
+        {
+          "composition": "F7 = clôture-P13 ⊕ clôture-P22 (batterie A1b)",
+          "d_mesuré": 0,
+          "d_attendu": 0,
+          "tenue": true,
+          "preuve": "A1b : couples (V, Σ) publiés sans degré de liberté ajouté"
+        },
+        {
+          "composition": "F14 = pont |2I| ↔ racines⁺(E₈) ⊕ quiver McKay ⊕ Molien",
+          "d_mesuré": 0,
+          "d_attendu": 0,
+          "tenue": true,
+          "preuve": "P42 : théorème exécuté, tout dérivé, rien payé"
+        }
+      ]
+    },
+    "L4": {
+      "tenue": true,
+      "acyclique": true,
+      "dépendances": [
+        [
+          "F9-HYGIENE-P32-P33",
+          "F3-R12-PORTEE"
+        ],
+        [
+          "F2-SIGMA-DYNAMIQUE",
+          "F15-EXCITABILITE-REELLE"
+        ],
+        [
+          "F16-REN-REGIME",
+          "F18-ARCHIVE-BENCH-ASH"
+        ],
+        [
+          "F1-XOR",
+          "F12-PROFONDEUR-CONSTITUTIVE"
+        ]
+      ],
+      "chaîne_maximale": 1
+    },
+    "L5_prospective": {
+      "statut": "en vigueur (prospective — rien à calculer aujourd'hui)",
+      "répartition_mesurée": {
+        "déficit": 6,
+        "déficit (déclaré, non mesuré)": 2,
+        "mode non contraint": 1,
+        "équilibre": 2,
+        "hors-domaine": 5,
+        "déficit (famille paramétrée)": 2
+      },
+      "falsifieur": "la prochaine frontière physique mesurée en équilibre hors structure pure / protocole tue L5"
+    }
+  },
+  "critères": {
+    "L1_cohérence_mesure": true,
+    "L2a_image_ponctuelle_≤1": true,
+    "L2b_familles_non_bornées": true,
+    "L3_additivité": true,
+    "L4_ordre_acyclique": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "falsifieur": "L1 ou L2a rompue invalide la proto-algèbre — publié tel quel ; L5 prospective a son falsifieur exécutable déclaré",
+  "durée_s": 0.2,
+  "sha256_script": "52582c7d972303f25d1e3efa8359447610caf596d23a3d87e09a03526a768bc0"
+}

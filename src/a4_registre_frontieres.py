@@ -309,7 +309,12 @@ FRONTIÈRES = [
         "fermée sur les tâches gelées déclarées (copie, binaire, parité, "
         "tri, double-relation) à vérification exhaustive — la "
         "généralisation aux tâches à contexte long est un chantier "
-        "séparé",
+        "séparé + ADDENDUM M2e (2026-08-31) : le coût copie d(n) = n est "
+        "désormais MESURÉ (exhaustif V=8, n=2..6) et CERTIFIÉ MINIMAL — "
+        "validité ⇔ dominance diagonale stricte (nécessité mesurée) ⇒ "
+        "rang n (Lévy–Desplanques, cité) ⇒ r ≥ n ; le chemin quadratique "
+        "rang-3 candidat est RÉFUTÉ par exécution sur doublons "
+        "(B3-FAIL interne publié, M2e-A2)",
         {"verdict": "déficit",
          "justification": "chaque constitutif est un degré de liberté "
                           "ajouté : coordonnée de position (n dims), tête "
@@ -452,6 +457,58 @@ FRONTIÈRES = [
         "une table re-figée reproduite bit-à-bit par le pipeline déclaré "
         "tue l'entrée — tuée (2026-08-31) ; toute exécution du pipeline "
         "v1.1.0 donnant une empreinte différente rouvre l'entrée"),
+    entree(
+        "F19-PARITE-FAMILLE", "physique",
+        "La parité n bits exige une unité dérivée par bit : famille "
+        "paramétrée d(n) = n mesurée (M2c — constructions profondeur 2 à "
+        "poids entiers exactes sur les 2^n points, n = 2..8 ; LP "
+        "profondeur-1 infaisable, n = 2..6). Première frontière mesurée "
+        "APRÈS l'armement de la loi prospective L5 (M2) — confrontation : "
+        "déficit, L5 tient",
+        "M2c-ENRICHISSEMENT-CONFRONTATION (2026-08-31, P36)",
+        "MÉT-LIB-1.2", "fermée",
+        "fermée sur la famille déclarée (comme F13) : d(n) = n mesuré ; "
+        "minimalité certifiée contre la profondeur 1 uniquement — la "
+        "minimalité en profondeur 2 reste ouverte (d(n) = n est le coût "
+        "de la fermeture dérivée, non prouvé minimal)",
+        {"verdict": "déficit",
+         "justification": "chaque bit ajouté coûte une unité dérivée : la "
+                          "liberté croît linéairement avec la tâche "
+                          "(famille mesurée, M2c partie A)"},
+        {"script": "m2c_enrichissement.py",
+         "verdict": "m2c_enrichissement_verdict.json",
+         "fondations": "p36_profondeur.py (constructions dérivées)"},
+        "toute séparation LP profondeur-1 de la parité (n ≤ 6) tue "
+        "l'entrée ; toute construction profondeur-2 exacte à moins de n "
+        "unités tue le coût mesuré"),
+    entree(
+        "F20-TRI-FAMILLE", "physique",
+        "Le tri exact de n éléments exige un réseau de comparaisons : "
+        "famille mesurée M2e — réseau de Batcher dérivé (odd-even "
+        "mergesort, sentinelles retirées par règle déclarée), exactitude "
+        "exhaustive (V=4 pour n≤5, permutations et binaire pour n≤8) ; "
+        "coûts mesurés 1, 3, 5, 9, 12, 16, 19 comparateurs (n=2..8), "
+        "EXACTEMENT à la borne informationnelle ⌈log₂ n!⌉ pour n ≤ 4, "
+        "ratio ≤ 1,19 ensuite. Seconde confrontation de L5 : déficit — "
+        "L5 tient",
+        "M2e (2026-08-31) — le tri était le constitutif manquant identifié "
+        "de F13 (comparaison non bilinéaire)",
+        "MÉT-LIB-1.4", "fermée",
+        "fermée sur la famille déclarée : réseau dérivé exact et compté ; "
+        "l'écart mesuré à la borne ⌈log₂ n!⌉ (comparateurs optimaux "
+        "connus : 9 à n=5 est optimal — l'écart zéro jusqu'à n=4 est "
+        "mesuré) ; la minimalité au-delà de la borne reste la question "
+        "ouverte classique des réseaux de tri",
+        {"verdict": "déficit",
+         "justification": "chaque comparateur est un degré de liberté de "
+                          "comparaison payé ; le coût croît en ~n·log²n — "
+                          "fini, croissant, jamais nul"},
+        {"script": "m2e_copie_tri.py",
+         "verdict": "m2e_copie_tri_verdict.json"},
+        "tout réseau publié à moins de ⌈log₂ n!⌉ comparateurs est "
+        "impossible (comptage) ; tout réseau dérivé plus petit que le "
+        "coût mesuré et exact sur l'exhaustif déclaré révise le coût "
+        "(la borne n'est pas atteignable en général — Knuth)"),
 ]
 
 

@@ -1,0 +1,179 @@
+{
+  "chantier": "M2C-ENRICHISSEMENT-CONFRONTATION",
+  "protocole": "MÉT-LIB-1.2 (gelé) — suite de M2 (52582c7d) et M2b (6dfef08f)",
+  "partie_A_famille_parité": {
+    "d(n)": "n (construction dérivée profondeur 2, exacte sur 2^n)",
+    "détail": {
+      "2": {
+        "d_par(n)": 2,
+        "construction_exacte": true
+      },
+      "3": {
+        "d_par(n)": 3,
+        "construction_exacte": true
+      },
+      "4": {
+        "d_par(n)": 4,
+        "construction_exacte": true
+      },
+      "5": {
+        "d_par(n)": 5,
+        "construction_exacte": true
+      },
+      "6": {
+        "d_par(n)": 6,
+        "construction_exacte": true
+      },
+      "7": {
+        "d_par(n)": 7,
+        "construction_exacte": true
+      },
+      "8": {
+        "d_par(n)": 8,
+        "construction_exacte": true
+      }
+    },
+    "LP_profondeur1_faisable": {
+      "2": false,
+      "3": false,
+      "4": false,
+      "5": false,
+      "6": false
+    },
+    "note": "minimalité certifiée seulement contre profondeur 1 (LP, n ≤ 6) — d(n) = n est le coût de la fermeture dérivée, non prouvé minimal en profondeur 2"
+  },
+  "partie_B_composition": {
+    "parité_2⊗oscill_1": {
+      "d_mesuré": 4,
+      "d_par(n)+d_osc(m)": 4,
+      "additif_et_exact": true
+    },
+    "parité_2⊗oscill_2": {
+      "d_mesuré": 6,
+      "d_par(n)+d_osc(m)": 6,
+      "additif_et_exact": true
+    },
+    "parité_2⊗oscill_3": {
+      "d_mesuré": 8,
+      "d_par(n)+d_osc(m)": 8,
+      "additif_et_exact": true
+    },
+    "parité_3⊗oscill_1": {
+      "d_mesuré": 5,
+      "d_par(n)+d_osc(m)": 5,
+      "additif_et_exact": true
+    },
+    "parité_3⊗oscill_2": {
+      "d_mesuré": 7,
+      "d_par(n)+d_osc(m)": 7,
+      "additif_et_exact": true
+    },
+    "parité_3⊗oscill_3": {
+      "d_mesuré": 9,
+      "d_par(n)+d_osc(m)": 9,
+      "additif_et_exact": true
+    },
+    "parité_4⊗oscill_1": {
+      "d_mesuré": 6,
+      "d_par(n)+d_osc(m)": 6,
+      "additif_et_exact": true
+    },
+    "parité_4⊗oscill_2": {
+      "d_mesuré": 8,
+      "d_par(n)+d_osc(m)": 8,
+      "additif_et_exact": true
+    },
+    "parité_4⊗oscill_3": {
+      "d_mesuré": 10,
+      "d_par(n)+d_osc(m)": 10,
+      "additif_et_exact": true
+    }
+  },
+  "partie_C_ordre": {
+    "acyclique": true,
+    "cycle": [],
+    "n_arêtes": 7,
+    "n_nœuds_touchés": 12,
+    "profondeur_max": 1,
+    "degrés_sortants": {
+      "F13-ATTENTION-CONSTITUTIVE": 0,
+      "F16-REN-REGIME": 2,
+      "F17-EEG-MI-Essai-Unique": 0,
+      "F1-XOR": 2,
+      "F9-HYGIENE-P32-P33": 1,
+      "F18-ARCHIVE-BENCH-ASH": 0,
+      "F14-PONT-120-E8": 1,
+      "F12-PROFONDEUR-CONSTITUTIVE": 0,
+      "F3-R12-PORTEE": 0,
+      "F15-EXCITABILITE-REELLE": 0,
+      "F8-ZMAX-E8": 0,
+      "F2-SIGMA-DYNAMIQUE": 1
+    },
+    "degrés_entrants": {
+      "F13-ATTENTION-CONSTITUTIVE": 1,
+      "F16-REN-REGIME": 0,
+      "F17-EEG-MI-Essai-Unique": 1,
+      "F1-XOR": 0,
+      "F9-HYGIENE-P32-P33": 0,
+      "F18-ARCHIVE-BENCH-ASH": 1,
+      "F14-PONT-120-E8": 0,
+      "F12-PROFONDEUR-CONSTITUTIVE": 1,
+      "F3-R12-PORTEE": 1,
+      "F15-EXCITABILITE-REELLE": 1,
+      "F8-ZMAX-E8": 1,
+      "F2-SIGMA-DYNAMIQUE": 0
+    },
+    "arêtes_héritées": [
+      [
+        "F9-HYGIENE-P32-P33",
+        "F3-R12-PORTEE"
+      ],
+      [
+        "F2-SIGMA-DYNAMIQUE",
+        "F15-EXCITABILITE-REELLE"
+      ],
+      [
+        "F16-REN-REGIME",
+        "F18-ARCHIVE-BENCH-ASH"
+      ],
+      [
+        "F1-XOR",
+        "F12-PROFONDEUR-CONSTITUTIVE"
+      ]
+    ],
+    "arêtes_nouvelles_justifiées": [
+      [
+        "F1-XOR",
+        "F13-ATTENTION-CONSTITUTIVE",
+        "P38 réutilise le harnais de vérification exhaustive LP de P34 (F1)"
+      ],
+      [
+        "F16-REN-REGIME",
+        "F17-EEG-MI-Essai-Unique",
+        "P44 a proscrit ReN de son protocole parce que F16 l'avait mesuré non portable"
+      ],
+      [
+        "F14-PONT-120-E8",
+        "F8-ZMAX-E8",
+        "le pont 120↔E₈ exécuté (F14) est la racine arithmétique commune de l'échelle α = 2⁻¹⁰ (F8)"
+      ]
+    ]
+  },
+  "partie_D_confrontation_L5": {
+    "nouvelle_frontière": "F19-PARITÉ-FAMILLE (physique)",
+    "classe_mesurée": "déficit (famille paramétrée mesurée d(n)=n)",
+    "L5": "tient",
+    "rappel_falsifieur_L5": "une frontière physique mesurée en équilibre hors structure pure ou protocole tue L5"
+  },
+  "critères": {
+    "A_famille_parité_mesurée": true,
+    "B_L3_mesurée_sur_familles": true,
+    "C_ordre_enrichi_acyclique": true,
+    "D_L5_tient": true
+  },
+  "score": "4/4",
+  "statut": "SUCCÈS",
+  "falsifieur": "inexactitude de construction, LP faisable (n ≤ 6), cycle dans ⊏, ou F19 en équilibre — publié tel quel",
+  "durée_s": 0.0,
+  "sha256_script": "4e996ea86e8d5a3eff107c99054f6d188c1fe02f8fdad304515e61c3039f6a29"
+}

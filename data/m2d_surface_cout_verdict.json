@@ -1,0 +1,498 @@
+{
+  "chantier": "M2D-SURFACE-COUT-LIBERTE",
+  "protocole": "MÉT-LIB-1.3 (gelé) — suite de M2 (52582c7d), M2b (6dfef08f), M2c (4e996ea8)",
+  "construction": "couche t^j = 2^j ReLU entiers dérivés ; réseau k couches = composition, split équilibré déclaré",
+  "surface_d(m,k)": {
+    "1,1": {
+      "split": [
+        1
+      ],
+      "coût_mesuré": 2,
+      "coût_déclaré": 2,
+      "exact": true,
+      "cohérent": true
+    },
+    "2,1": {
+      "split": [
+        2
+      ],
+      "coût_mesuré": 4,
+      "coût_déclaré": 4,
+      "exact": true,
+      "cohérent": true
+    },
+    "2,2": {
+      "split": [
+        1,
+        1
+      ],
+      "coût_mesuré": 4,
+      "coût_déclaré": 4,
+      "exact": true,
+      "cohérent": true
+    },
+    "3,1": {
+      "split": [
+        3
+      ],
+      "coût_mesuré": 8,
+      "coût_déclaré": 8,
+      "exact": true,
+      "cohérent": true
+    },
+    "3,2": {
+      "split": [
+        2,
+        1
+      ],
+      "coût_mesuré": 6,
+      "coût_déclaré": 6,
+      "exact": true,
+      "cohérent": true
+    },
+    "3,3": {
+      "split": [
+        1,
+        1,
+        1
+      ],
+      "coût_mesuré": 6,
+      "coût_déclaré": 6,
+      "exact": true,
+      "cohérent": true
+    },
+    "4,1": {
+      "split": [
+        4
+      ],
+      "coût_mesuré": 16,
+      "coût_déclaré": 16,
+      "exact": true,
+      "cohérent": true
+    },
+    "4,2": {
+      "split": [
+        2,
+        2
+      ],
+      "coût_mesuré": 8,
+      "coût_déclaré": 8,
+      "exact": true,
+      "cohérent": true
+    },
+    "4,3": {
+      "split": [
+        2,
+        1,
+        1
+      ],
+      "coût_mesuré": 8,
+      "coût_déclaré": 8,
+      "exact": true,
+      "cohérent": true
+    },
+    "4,4": {
+      "split": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "coût_mesuré": 8,
+      "coût_déclaré": 8,
+      "exact": true,
+      "cohérent": true
+    },
+    "5,1": {
+      "split": [
+        5
+      ],
+      "coût_mesuré": 32,
+      "coût_déclaré": 32,
+      "exact": true,
+      "cohérent": true
+    },
+    "5,2": {
+      "split": [
+        3,
+        2
+      ],
+      "coût_mesuré": 12,
+      "coût_déclaré": 12,
+      "exact": true,
+      "cohérent": true
+    },
+    "5,3": {
+      "split": [
+        2,
+        2,
+        1
+      ],
+      "coût_mesuré": 10,
+      "coût_déclaré": 10,
+      "exact": true,
+      "cohérent": true
+    },
+    "5,4": {
+      "split": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "coût_mesuré": 10,
+      "coût_déclaré": 10,
+      "exact": true,
+      "cohérent": true
+    },
+    "5,5": {
+      "split": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coût_mesuré": 10,
+      "coût_déclaré": 10,
+      "exact": true,
+      "cohérent": true
+    },
+    "6,1": {
+      "split": [
+        6
+      ],
+      "coût_mesuré": 64,
+      "coût_déclaré": 64,
+      "exact": true,
+      "cohérent": true
+    },
+    "6,2": {
+      "split": [
+        3,
+        3
+      ],
+      "coût_mesuré": 16,
+      "coût_déclaré": 16,
+      "exact": true,
+      "cohérent": true
+    },
+    "6,3": {
+      "split": [
+        2,
+        2,
+        2
+      ],
+      "coût_mesuré": 12,
+      "coût_déclaré": 12,
+      "exact": true,
+      "cohérent": true
+    },
+    "6,4": {
+      "split": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "coût_mesuré": 12,
+      "coût_déclaré": 12,
+      "exact": true,
+      "cohérent": true
+    },
+    "6,5": {
+      "split": [
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coût_mesuré": 12,
+      "coût_déclaré": 12,
+      "exact": true,
+      "cohérent": true
+    },
+    "6,6": {
+      "split": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coût_mesuré": 12,
+      "coût_déclaré": 12,
+      "exact": true,
+      "cohérent": true
+    },
+    "7,1": {
+      "split": [
+        7
+      ],
+      "coût_mesuré": 128,
+      "coût_déclaré": 128,
+      "exact": true,
+      "cohérent": true
+    },
+    "7,2": {
+      "split": [
+        4,
+        3
+      ],
+      "coût_mesuré": 24,
+      "coût_déclaré": 24,
+      "exact": true,
+      "cohérent": true
+    },
+    "7,3": {
+      "split": [
+        3,
+        2,
+        2
+      ],
+      "coût_mesuré": 16,
+      "coût_déclaré": 16,
+      "exact": true,
+      "cohérent": true
+    },
+    "7,4": {
+      "split": [
+        2,
+        2,
+        2,
+        1
+      ],
+      "coût_mesuré": 14,
+      "coût_déclaré": 14,
+      "exact": true,
+      "cohérent": true
+    },
+    "7,5": {
+      "split": [
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "coût_mesuré": 14,
+      "coût_déclaré": 14,
+      "exact": true,
+      "cohérent": true
+    },
+    "7,6": {
+      "split": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coût_mesuré": 14,
+      "coût_déclaré": 14,
+      "exact": true,
+      "cohérent": true
+    },
+    "7,7": {
+      "split": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coût_mesuré": 14,
+      "coût_déclaré": 14,
+      "exact": true,
+      "cohérent": true
+    },
+    "8,1": {
+      "split": [
+        8
+      ],
+      "coût_mesuré": 256,
+      "coût_déclaré": 256,
+      "exact": true,
+      "cohérent": true
+    },
+    "8,2": {
+      "split": [
+        4,
+        4
+      ],
+      "coût_mesuré": 32,
+      "coût_déclaré": 32,
+      "exact": true,
+      "cohérent": true
+    },
+    "8,3": {
+      "split": [
+        3,
+        3,
+        2
+      ],
+      "coût_mesuré": 20,
+      "coût_déclaré": 20,
+      "exact": true,
+      "cohérent": true
+    },
+    "8,4": {
+      "split": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "coût_mesuré": 16,
+      "coût_déclaré": 16,
+      "exact": true,
+      "cohérent": true
+    },
+    "8,5": {
+      "split": [
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "coût_mesuré": 16,
+      "coût_déclaré": 16,
+      "exact": true,
+      "cohérent": true
+    },
+    "8,6": {
+      "split": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coût_mesuré": 16,
+      "coût_déclaré": 16,
+      "exact": true,
+      "cohérent": true
+    },
+    "8,7": {
+      "split": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coût_mesuré": 16,
+      "coût_déclaré": 16,
+      "exact": true,
+      "cohérent": true
+    },
+    "8,8": {
+      "split": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coût_mesuré": 16,
+      "coût_déclaré": 16,
+      "exact": true,
+      "cohérent": true
+    }
+  },
+  "d_étoile": {
+    "1": {
+      "d*": 2,
+      "plateau_k": [
+        1
+      ]
+    },
+    "2": {
+      "d*": 4,
+      "plateau_k": [
+        1,
+        2
+      ]
+    },
+    "3": {
+      "d*": 6,
+      "plateau_k": [
+        2,
+        3
+      ]
+    },
+    "4": {
+      "d*": 8,
+      "plateau_k": [
+        2,
+        3,
+        4
+      ]
+    },
+    "5": {
+      "d*": 10,
+      "plateau_k": [
+        3,
+        4,
+        5
+      ]
+    },
+    "6": {
+      "d*": 12,
+      "plateau_k": [
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "7": {
+      "d*": 14,
+      "plateau_k": [
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "8": {
+      "d*": 16,
+      "plateau_k": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    }
+  },
+  "lois_mesurées": {
+    "surface": "d(m, k) = Σ_i 2^{j_i} sur split équilibré (m = Σ j_i) — exacte sur 36/36 cellules",
+    "bornes": "d(m, 1) = 2^m (M2b largeur) ; d(m, m) = 2m (M2b profondeur) — récupérées",
+    "optimum": "d*(m) = min_k d(m, k) — table mesurée m = 1..8 ; plateau d'optimalité publié",
+    "interprétation": "le coût de la liberté dépend du CHEMIN de fermeture, avec un optimum mesuré — la métrologie de la liberté a une géométrie"
+  },
+  "critères": {
+    "C1_surface_exacte": true,
+    "C2_bornes_M2b": true,
+    "C3_optimum_mesuré": true,
+    "C4_cohérence_homomorphisme": true
+  },
+  "score": "4/4",
+  "statut": "SUCCÈS",
+  "falsifieur": "toute inexactitude de construction ou écart à la surface déclarée tue la loi — publié tel quel",
+  "durée_s": 0.5,
+  "sha256_script": "8b6802ecb677a24bd9e20c4a621d7ec1ef57c2834488c35e19d6963fcca09c54"
+}

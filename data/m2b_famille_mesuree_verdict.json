@@ -1,0 +1,340 @@
+{
+  "chantier": "M2B-FAMILLE-MESUREE",
+  "protocole": "MÉT-LIB-1.1 (gelé) — suite de M2, F12 promue de « famille déclarée » à « famille mesurée »",
+  "grille": "100 001 points (figée P36), étiquettes par itération exacte",
+  "C1_détail": {
+    "1": {
+      "unités": 2,
+      "exact": true
+    },
+    "2": {
+      "unités": 4,
+      "exact": true
+    },
+    "3": {
+      "unités": 6,
+      "exact": true
+    },
+    "4": {
+      "unités": 8,
+      "exact": true
+    },
+    "5": {
+      "unités": 10,
+      "exact": true
+    },
+    "6": {
+      "unités": 12,
+      "exact": true
+    },
+    "7": {
+      "unités": 14,
+      "exact": true
+    },
+    "8": {
+      "unités": 16,
+      "exact": true
+    }
+  },
+  "C2_détail": {
+    "1": {
+      "seuils_mesurés": 2,
+      "attendu_2^m": 2,
+      "comptage_conforme": true,
+      "w_min": 2,
+      "construction_exacte_à_w_min": true
+    },
+    "2": {
+      "seuils_mesurés": 4,
+      "attendu_2^m": 4,
+      "comptage_conforme": true,
+      "w_min": 4,
+      "construction_exacte_à_w_min": true
+    },
+    "3": {
+      "seuils_mesurés": 8,
+      "attendu_2^m": 8,
+      "comptage_conforme": true,
+      "w_min": 8,
+      "construction_exacte_à_w_min": true
+    },
+    "4": {
+      "seuils_mesurés": 16,
+      "attendu_2^m": 16,
+      "comptage_conforme": true,
+      "w_min": 16,
+      "construction_exacte_à_w_min": true
+    },
+    "5": {
+      "seuils_mesurés": 32,
+      "attendu_2^m": 32,
+      "comptage_conforme": true,
+      "w_min": 32,
+      "construction_exacte_à_w_min": true
+    },
+    "6": {
+      "seuils_mesurés": 64,
+      "attendu_2^m": 64,
+      "comptage_conforme": true,
+      "w_min": 64,
+      "construction_exacte_à_w_min": true
+    },
+    "7": {
+      "seuils_mesurés": 128,
+      "attendu_2^m": 128,
+      "comptage_conforme": true,
+      "w_min": 128,
+      "construction_exacte_à_w_min": true
+    },
+    "8": {
+      "seuils_mesurés": 256,
+      "attendu_2^m": 256,
+      "comptage_conforme": true,
+      "w_min": 256,
+      "construction_exacte_à_w_min": true
+    }
+  },
+  "C3_détail": {
+    "1,1": {
+      "d(m)": 2,
+      "d(k)": 2,
+      "d(m+k)": 4,
+      "additif": true,
+      "construction_composée_exacte": true
+    },
+    "1,2": {
+      "d(m)": 2,
+      "d(k)": 4,
+      "d(m+k)": 6,
+      "additif": true,
+      "construction_composée_exacte": true
+    },
+    "1,3": {
+      "d(m)": 2,
+      "d(k)": 6,
+      "d(m+k)": 8,
+      "additif": true,
+      "construction_composée_exacte": true
+    },
+    "1,4": {
+      "d(m)": 2,
+      "d(k)": 8,
+      "d(m+k)": 10,
+      "additif": true,
+      "construction_composée_exacte": true
+    },
+    "1,5": {
+      "d(m)": 2,
+      "d(k)": 10,
+      "d(m+k)": 12,
+      "additif": true,
+      "construction_composée_exacte": true
+    },
+    "1,6": {
+      "d(m)": 2,
+      "d(k)": 12,
+      "d(m+k)": 14,
+      "additif": true,
+      "construction_composée_exacte": true
+    },
+    "2,1": {
+      "d(m)": 4,
+      "d(k)": 2,
+      "d(m+k)": 6,
+      "additif": true,
+      "construction_composée_exacte": true
+    },
+    "2,2": {
+      "d(m)": 4,
+      "d(k)": 4,
+      "d(m+k)": 8,
+      "additif": true,
+      "construction_composée_exacte": true
+    },
+    "2,3": {
+      "d(m)": 4,
+      "d(k)": 6,
+      "d(m+k)": 10,
+      "additif": true,
+      "construction_composée_exacte": true
+    },
+    "2,4": {
+      "d(m)": 4,
+      "d(k)": 8,
+      "d(m+k)": 12,
+      "additif": true,
+      "construction_composée_exacte": true
+    },
+    "2,5": {
+      "d(m)": 4,
+      "d(k)": 10,
+      "d(m+k)": 14,
+      "additif": true,
+      "construction_composée_exacte": true
+    },
+    "2,6": {
+      "d(m)": 4,
+      "d(k)": 12,
+      "d(m+k)": 16,
+      "additif": true,
+      "construction_composée_exacte": true
+    },
+    "3,1": {
+      "d(m)": 6,
+      "d(k)": 2,
+      "d(m+k)": 8,
+      "additif": true,
+      "construction_composée_exacte": true
+    },
+    "3,2": {
+      "d(m)": 6,
+      "d(k)": 4,
+      "d(m+k)": 10,
+      "additif": true,
+      "construction_composée_exacte": true
+    },
+    "3,3": {
+      "d(m)": 6,
+      "d(k)": 6,
+      "d(m+k)": 12,
+      "additif": true,
+      "construction_composée_exacte": true
+    },
+    "3,4": {
+      "d(m)": 6,
+      "d(k)": 8,
+      "d(m+k)": 14,
+      "additif": true,
+      "construction_composée_exacte": true
+    },
+    "3,5": {
+      "d(m)": 6,
+      "d(k)": 10,
+      "d(m+k)": 16,
+      "additif": true,
+      "construction_composée_exacte": true
+    },
+    "4,1": {
+      "d(m)": 8,
+      "d(k)": 2,
+      "d(m+k)": 10,
+      "additif": true,
+      "construction_composée_exacte": true
+    },
+    "4,2": {
+      "d(m)": 8,
+      "d(k)": 4,
+      "d(m+k)": 12,
+      "additif": true,
+      "construction_composée_exacte": true
+    },
+    "4,3": {
+      "d(m)": 8,
+      "d(k)": 6,
+      "d(m+k)": 14,
+      "additif": true,
+      "construction_composée_exacte": true
+    },
+    "4,4": {
+      "d(m)": 8,
+      "d(k)": 8,
+      "d(m+k)": 16,
+      "additif": true,
+      "construction_composée_exacte": true
+    },
+    "5,1": {
+      "d(m)": 10,
+      "d(k)": 2,
+      "d(m+k)": 12,
+      "additif": true,
+      "construction_composée_exacte": true
+    },
+    "5,2": {
+      "d(m)": 10,
+      "d(k)": 4,
+      "d(m+k)": 14,
+      "additif": true,
+      "construction_composée_exacte": true
+    },
+    "5,3": {
+      "d(m)": 10,
+      "d(k)": 6,
+      "d(m+k)": 16,
+      "additif": true,
+      "construction_composée_exacte": true
+    },
+    "6,1": {
+      "d(m)": 12,
+      "d(k)": 2,
+      "d(m+k)": 14,
+      "additif": true,
+      "construction_composée_exacte": true
+    },
+    "6,2": {
+      "d(m)": 12,
+      "d(k)": 4,
+      "d(m+k)": 16,
+      "additif": true,
+      "construction_composée_exacte": true
+    }
+  },
+  "C4_détail": {
+    "1": {
+      "d_prof": 2,
+      "d_2couches": 2,
+      "conversion_exacte": true
+    },
+    "2": {
+      "d_prof": 4,
+      "d_2couches": 4,
+      "conversion_exacte": true
+    },
+    "3": {
+      "d_prof": 6,
+      "d_2couches": 8,
+      "conversion_exacte": true
+    },
+    "4": {
+      "d_prof": 8,
+      "d_2couches": 16,
+      "conversion_exacte": true
+    },
+    "5": {
+      "d_prof": 10,
+      "d_2couches": 32,
+      "conversion_exacte": true
+    },
+    "6": {
+      "d_prof": 12,
+      "d_2couches": 64,
+      "conversion_exacte": true
+    },
+    "7": {
+      "d_prof": 14,
+      "d_2couches": 128,
+      "conversion_exacte": true
+    },
+    "8": {
+      "d_prof": 16,
+      "d_2couches": 256,
+      "conversion_exacte": true
+    }
+  },
+  "lois_mesurées": {
+    "d_profondeur(m)": "2m — exact, m = 1..8",
+    "d_profondeur2(m)": "2^m — minimal certifié par comptage (w Heaviside ≤ w sauts ; 2^m seuils mesurés)",
+    "homomorphisme": "d(t^m ∘ t^k) = d(m) + d(k) — la composition des tâches s'envoie sur l'addition des coûts",
+    "conversion": "d_2couches(m) = 2^(d_prof(m)/2) — la liberté coûte linéairement en profondeur, exponentiellement en largeur"
+  },
+  "critères": {
+    "C1_d_prof_2m_exact": true,
+    "C2_minimalité_2puissm_certifiée": true,
+    "C3_homomorphisme_additif": true,
+    "C4_changement_de_réalisation": true
+  },
+  "score": "4/4",
+  "statut": "SUCCÈS",
+  "falsifieur": "toute inexactitude de construction, comptage ≠ 2^m ou violation de C3/C4 tue la loi — publié tel quel",
+  "durée_s": 0.3,
+  "sha256_script": "6dfef08f54aaa18892f291ffead70c9a52c73840782b16e0105c09569d38469f"
+}
