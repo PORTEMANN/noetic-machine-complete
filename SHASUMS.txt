@@ -1,13 +1,13 @@
 # Empreintes SHA-256 des artefacts — Machine Noetique (noetic-machine-complete)
-# Corpus P0-P43 + serie A (A1, A1b, A2-A5) + meta-chantiers M1/M1b
-# regenere le 30 aout 2026 sur l'arbre GitHub complet (GitHub = source de verite)
-# F7 fermee (A1b) ; F9 fermee (p31 corrige, verdict 3/5 -> 5/5) ;
-# P43 : ASH sous la machine (7/7, ReN refute -> F16).
-# Registre A4 : 16 entrees, 6 fermees / 4 ouvertes / 6 partielles.
+# Corpus P0-P44 + serie A (A1, A1b, A2-A5) + meta-chantiers M1/M1b
+# regenere le 31 aout 2026 sur l'arbre GitHub complet (GitHub = source de verite)
+# P43 : ASH sous la machine (7/7, F16) ; P44 : EEG-MI reel, regles refutees
+# (B3-FAIL publie), F17 ouverte. BCICIV-2a zip SHA 65fe93cb766e4b00ece6...
+# Registre A4 : 17 entrees, 6 fermees / 5 ouvertes / 6 partielles.
 
 523d00b20cda771ba9a8cabbf48d9a57d1b1c78a0c51d7cf85ea41ebcc710045  .gitignore
 c35776cd7e97bdddbba5bf18da0349f56059319ea1c21a8183bb4b34be1cc6fb  LICENSE
-fcb9a74109d1c9ce61ed3f7662bdb7d3303f17a2809126d9a5179382e8d6698b  README.md
+09a8c7856fa34e5be6612e66b5c43237e5fce0bc79aabc5d291874900fc957f3  README.md
 dae9e4d73fd55c8496700df4876f7a96cb6c83352e3993a28adbcd8e08a2ee3c  bifurcations/Loi_des_Bifurcations.md
 6002a817e1c160e3dc18d9112b035752b908f8f4a26c07d4c142618bf07c5fcc  bifurcations/README.md
 6b918941f1e8a721dd701dc335bebaca05b9878c98a08564eddc590a06366361  bifurcations/pcrcu_protocole_fige.json
@@ -30,7 +30,7 @@ cb0a5aaadb5f4b70759401a527eecf442ccf59831ae77b7999418fb540c767b6  data/a3_tamis_
 f9e1b6c1b907fb4b4fc67a08f345ec476909a0abeabb2b39e4a3c21466878eac  data/a3_tamis_jastrow_N96_Z2-3-4.json
 6b7df5e414e7eb6f9f0d68d97e82187a0c06e521e6662a60ffb72a576a225a8e  data/a3_tamis_jastrow_N96_Z5-6.json
 9e92b4b2caea9fb8cf8c13689e21132328a8f63c36472982f3d69fb5c1747956  data/a3_tamis_jastrow_verdict.json
-3da637f93e6649020773fe43394a2aa8258ddc50d30f53f6316a82c7bad3dac9  data/a4_registre_frontieres.json
+6a5237e4d5243f22e82f95f6170c6ab5a00ef5c8fda8f8a8846d6cd5090fe0d2  data/a4_registre_frontieres.json
 01c2e0d5148e3debda5fcc3f774a592447ab3e21c5f35a20c03c55301883874a  data/a5_conjecture_frontieres_verdict.json
 b939f37b67ee0ae8d1d8bbbeb2c2a1e9180bceeedf93f46c6ba7a869d24433ec  data/m1_corpus/README.md
 d473bc3276e21acff8d1659af2190698fd09cbf60d8a08bedfbbbbee3a7c87b0  data/m1_corpus/SHASUMS.txt
@@ -177,6 +177,7 @@ e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307  data/p40_data_
 79ee42976b0aa997ccd1a3545d8cc1e5243bb27f87e6337624c9fef75292d5f1  data/p42_pont_120_e8_verdict.json
 338dbda7b499fdc8ea00beb0ddc696270f47eda38253902edc77cba28eedeb0e  data/p43_ash_core_v100.py
 da282b7bd663b0ce58a703690c9df131cfdd0e75214cc5bc244152f6b6475981  data/p43_ash_sous_machine_verdict.json
+a35dfac8bd062381112dc9756afd2d80e07fb43f146a980529bd939aab563dfc  data/p44_eeg_mi_reel_verdict.json
 91d2751acc380384354bc2847d4bc832930e45a17ee6d296bc1586d8c6abe2e1  data/p4_phases.json
 11f76560fd22aca82186c0e88484d167e16be58fa0d957001fc3dcf0581c406f  data/p4discri_mratio008.json
 5cac6d704f017dc218e895e898db41ef6e0ec53422394b3d48c89c35c600650c  data/p4discri_mratio010.json
@@ -264,6 +265,8 @@ a43a00b340860bd25dc9330ff17fe1cb985283d98849cd5454901813cb36e7d8  docs/p41-note-
 3f9a508e0b4e546dff2cf32b2eddba6a71317a7c2f92244079e696b3ccfdd986  docs/p42-note-pont-120-e8.md
 2e57af1e483c45a865ca70989a47336170f521164bd2b56b9c2a0337df86421c  docs/p43-note-ash-sous-machine.docx
 d5bff478675f558be429c4c6c15ae99e57fe61fc2ff61252caad3bdb7b4967f4  docs/p43-note-ash-sous-machine.md
+907d9b5e590d5bacfcb5a7fd8718a61b4914b1b4bc81710b78e946585935e8f1  docs/p44-note-eeg-mi-reel.docx
+6a4a7c1dbe624fd58f485de09a4a58c4b8025e3aa4cdd8cdf3eae4066c90442d  docs/p44-note-eeg-mi-reel.md
 4dbce5a95675b058393a1a01901214d119d92400893423f421f0e7d4f34d1829  docs/prospection-machine-noetique.docx
 9b197d08076689f404eae77d2f816668d71c2b49be86f4e25ec6053fcfc129e3  docs/prospection-machine-noetique.md
 7ecc4b9db816ceec6f1ba41ade85e2d89331a49102cf516756ea6bd3948d558e  figures/p0_verdict.png
@@ -306,7 +309,7 @@ c34d6065daf558436fc63cf1ec6be156d092db02619fcc8b4f310e002faebe09  src/a1_batteri
 8d9625964912c4ffd4dc4f76ca7829601eacdfe888160446d1ca643b5d06a15a  src/a2_moteur_leviers.py
 d766e4aa90190f3d2aba57d37bb388b63717f94b81ef54247367fadf300fbe9e  src/a3_ko6_reenumeration.py
 8b795df54d3f921e6bf6d58fe2a288561f2a06a385803c465b4538d7422ff1af  src/a3_tamis_jastrow.py
-24d6a7bdf31ff9260a2780ba4fa61ff880236e0d08d583038715095eadd41e3a  src/a4_registre_frontieres.py
+77ece7965f1160c24089b0365a766d07caaec038db91a74af8a17f46d2e1eae3  src/a4_registre_frontieres.py
 cbc6df7fb52beef362b0811c302274a2ea375e672037db9e1cf99e4c35fc495f  src/a5_conjecture_frontieres.py
 785a176935e86acdd0fc72caa25a4b6e55ce30fa4ed0cc0fb9e8126dd6703cdc  src/m1_economie_information.py
 71ee5733d8b21d43ae3e1c1c4c7b2aca3b2296828d50ff6cb6f9b72efe94892d  src/m1b_economie_robustesse.py
@@ -351,6 +354,7 @@ c6760b9778655f93328cfa96edd5b22ccc27d462c82847282a876016e7fa574b  src/p40_zmax.p
 eb1b903ffb615e02e294057ef04665f8b8060a278e685ebb943a3f65c843c728  src/p41_neurones_reels.py
 114e28102247efe0f1d3136ea7cc4b38e61987e2a31511a1ce0923beb188f5a0  src/p42_pont_120_e8.py
 a834ff0c6ca3082501fc34abe6417ed835ae04cfaf6ea0b56c3652e684ad176d  src/p43_ash_sous_machine.py
+c305614e6d98ec07edba4757d7d948df3b3a600b5368141ce5fc8a4af84e62ee  src/p44_eeg_mi_reel.py
 8b70f0aef78a35df79e750383a49c9d8b78dae5d71ec516a306c69590eb5771a  src/p4_phases.py
 da7b46d314b9ea7de1311400776dad04e0d3c178df6740befa5060e575ad3dd7  src/p6_cartes.py
 adbf4938f5f4a7ae1d2db259ff34fcee670cb95bb6e5567d4aeec4952bf3be28  src/p7_isotopes.py

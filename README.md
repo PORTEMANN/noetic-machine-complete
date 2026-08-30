@@ -102,6 +102,7 @@ Série distincte du noyau P0–P33 : la machine éprouve les **bifurcations de c
 | P41 | excitabilité de neurones corticaux réels (Allen Cell Types, NWB bruts) | population corticale type I (1/32 type II) ; **HH (type II) non représentatif**, Izhikevich RS si ; recoupement brut ±2 Hz sur les deux cellules de contrôle |
 | P42 | pont 120 ↔ E₈ (icosaèdre binaire / McKay) | pont **arithmétique** établi : \|2I\| = racines⁺(E₈) = 120, quiver de McKay calculé (A·d = 2d exact) — entrée F14 partielle |
 | P43 | l'ASH sous la machine (l'instrument audité, noyau v1.0.0 figé) | succès 7/7 — O(1)/fenêtre confirmé, zéro paramètre ajusté confirmé, **ReN réfuté comme invariant physique** (pente d'amplitude −0,996, 2 franchissements de régime → F16), résolution effective affinée (max(5,9 %, (fs/nperseg)/f)), signatures Allen conformes (porteuse = 1/ISI médian) |
+| P44 | EEG imagerie motrice réelle (BCICIV-2a, 9 sujets) — la chaîne lit-elle la pensée ? | partiel 2/3 — **les deux règles zéro paramètre RÉFUTÉES** (0,540 et 0,520 vs seuil 0,60 ; B3-FAIL publié) ; leviers tenus (l'effet vit dans μ, canaux moteurs) ; 1 sujet lisible (A03, 0,771 — illettrisme BCI mesuré) ; **F17 ouverte** : agrégation d'essais / baseline figée / filtrage spatial dérivé |
 
 ### Série A : la méthode s'éprouve elle-même
 
@@ -110,7 +111,7 @@ Série distincte du noyau P0–P33 : la machine éprouve les **bifurcations de c
 | A1 | batterie de perturbation (π perturbé, D et S intacts) | PASS — fragilités publiées par chantier, prédictions de fragilité éprouvées |
 | A2 | moteur de leviers | PASS — le moteur ne voit que ce qui existe |
 | A3 | tamis de Jastrow (N=64/96/128) + réénumération KO-6 | le plafond « 63 160 » est **réfuté comme publié** (B3-FAIL du corpus) ; l'énumération KO-6 propre reste ouverte, coût de fermeture déclaré |
-| A4 | registre des frontières REG-FR-1.0 | **16 entrées** F1–F16 (6 fermées, 4 ouvertes, **6 partielles**), ddll par entrée, falsifieurs pré-enregistrés, SHA global `ba2a0432ee63e671…` |
+| A4 | registre des frontières REG-FR-1.0 | **17 entrées** F1–F17 (6 fermées, **5 ouvertes**, 6 partielles), ddll par entrée, falsifieurs pré-enregistrés, SHA global `cbf7651304fb9dc9…` |
 | A5 | conjecture des frontières | v1 **réfutée** par F5 + F7 + F14 (10/13) ; v2 en vigueur (11/13 points) |
 | A1b | batterie rétroactive P13/P22 (ferme F7) | couples (V, Σ) publiés : P13 Σ=1 (4/4) ; P22 Σ_min=0.94 (5/6 inchangé), une fragilité de seuil publiée ; prédictions pré-enregistrées confirmées |
 
