@@ -1,13 +1,13 @@
 # Empreintes SHA-256 des artefacts — Machine Noetique (noetic-machine-complete)
-# Corpus P0-P45 + serie A (A1, A1b, A2-A5) + meta-chantiers M1/M1b
+# Corpus P0-P45 + serie A + meta-chantiers M1/M1b + serie M2 (metrologie de la liberte)
 # regenere le 31 aout 2026 sur l'arbre GitHub complet (GitHub = source de verite)
-# F18 fermee : consequences P45 appliquees a noetic-ash v1.1.0 (ReN hors
-# classification officielle, table re-figee, grille EEG 5 octaves, erratum).
-# Registre A4 : 18 entrees, 7 fermees / 5 ouvertes / 6 partielles.
+# M2 : le registre devient algebre (homomorphisme mesure, surface de cout,
+# minimalite certifiee Levy-Desplanques, L5 confrontee 2x). F19, F20 au registre.
+# Registre A4 : 20 entrees, 9 fermees / 5 ouvertes / 6 partielles.
 
 523d00b20cda771ba9a8cabbf48d9a57d1b1c78a0c51d7cf85ea41ebcc710045  .gitignore
 c35776cd7e97bdddbba5bf18da0349f56059319ea1c21a8183bb4b34be1cc6fb  LICENSE
-68aa918fa4276d9c6ab69818258761ff48c2f44671defbd221b006a9ace6d4de  README.md
+0490c35491686b6d2cba45e9fb380c953e0d4e4a75edc897e4537e9d88d3c1cb  README.md
 dae9e4d73fd55c8496700df4876f7a96cb6c83352e3993a28adbcd8e08a2ee3c  bifurcations/Loi_des_Bifurcations.md
 6002a817e1c160e3dc18d9112b035752b908f8f4a26c07d4c142618bf07c5fcc  bifurcations/README.md
 6b918941f1e8a721dd701dc335bebaca05b9878c98a08564eddc590a06366361  bifurcations/pcrcu_protocole_fige.json
@@ -30,8 +30,8 @@ cb0a5aaadb5f4b70759401a527eecf442ccf59831ae77b7999418fb540c767b6  data/a3_tamis_
 f9e1b6c1b907fb4b4fc67a08f345ec476909a0abeabb2b39e4a3c21466878eac  data/a3_tamis_jastrow_N96_Z2-3-4.json
 6b7df5e414e7eb6f9f0d68d97e82187a0c06e521e6662a60ffb72a576a225a8e  data/a3_tamis_jastrow_N96_Z5-6.json
 9e92b4b2caea9fb8cf8c13689e21132328a8f63c36472982f3d69fb5c1747956  data/a3_tamis_jastrow_verdict.json
-28a486b0e510d329ff0b2bb2a36350b20f30e1afe96185621311e4aee902f3fe  data/a4_registre_frontieres.json
-01c2e0d5148e3debda5fcc3f774a592447ab3e21c5f35a20c03c55301883874a  data/a5_conjecture_frontieres_verdict.json
+024d3f7733eac49099381a910e575dd5c5215dcc1f05775376032b3843d9f654  data/a4_registre_frontieres.json
+393d8fa39eaf79bb636ce0a57c8515dac011c0d39a2f70c1749bb36de27bff1b  data/a5_conjecture_frontieres_verdict.json
 b939f37b67ee0ae8d1d8bbbeb2c2a1e9180bceeedf93f46c6ba7a869d24433ec  data/m1_corpus/README.md
 d473bc3276e21acff8d1659af2190698fd09cbf60d8a08bedfbbbbee3a7c87b0  data/m1_corpus/SHASUMS.txt
 0f113af3c462396229e502d2539aac8c2e01893c435886c52b7775227c39ebad  data/m1_corpus/data/p0_p0_r0.json
@@ -121,6 +121,11 @@ ec16ccd7910af6e3028ff040284a794aea28a41a9ddaf0dac5e5f28d14daa6b7  data/m1_corpus
 76ad2e84ff79dbb7c10ddf6494407546c6b3f69f2aa966ec75fd1790a66581c7  data/m1_corpus/src/p9_prex.py
 a1945c995d1eaf9999e021bd87e41608dce45ec4139696cec894111469171e3e  data/m1_economie_information_verdict.json
 ffbcb7f09145bea11037e0c3b16e5d7a49825a0d375c926b30b2fc08ce6c40ec  data/m1b_economie_robustesse_verdict.json
+0cf09daf6c48645f67a36c1cbb7985c8a62679f1d83d06d121117b1dc92f737f  data/m2_metrologie_liberte_verdict.json
+36da616bb06f67f42154090eb1c617cdf90e5f5739086ca8fb5127a320e9b261  data/m2b_famille_mesuree_verdict.json
+0b0898f79b5b41f5aa5424fd677ab0d8e681b2f5653111c0b553f052b1bf114e  data/m2c_enrichissement_verdict.json
+9894b62e9302e042eea88579bdce6914e066523af82742163d08e6723517a9af  data/m2d_surface_cout_verdict.json
+c3addc1ac273f1fe5f54f7adfd700784cf97338d1899de0041c617cd6d4298b1  data/m2e_copie_tri_verdict.json
 0f113af3c462396229e502d2539aac8c2e01893c435886c52b7775227c39ebad  data/p0_p0_r0.json
 7d522eb5171a92bba78a7ca0f0d75c65dd72a83544e1d699ac2adc9c0064d047  data/p0_p0_r05.json
 23680a35ef8fa0cb9acce04757897b9a5b725dec3fc03988f0f69f26eef1418c  data/p0_p0_r1.json
@@ -249,6 +254,8 @@ d7474855664bff2f4a3c623815d6dde26d0a7a8d785f2c0c886a370bae2c263a  docs/m1-note-e
 55b23598d3df723bb3bf3fdd76c14c0bfe0a49ea308afc97aedd21eb0fc72eac  docs/m1-note-economie-information.md
 0c2bff882b7d7b4daf4021bce61713619b0dd18031b1a6c6e953d3ef7c5551e7  docs/m1b-note-robustesse.docx
 e53c881fc666d1956205e4f80874a9aba9c9bf50d71ab80a30c59462e07cde1f  docs/m1b-note-robustesse.md
+911c8f13300fcbd5041577cd1aa69d92590367899c12471c5b6310543a56c329  docs/m2-note-metrologie-liberte.docx
+d70296954c059ea6d57fbf1abc3ee0389f2b8f36939ff889fa98e39063808e4d  docs/m2-note-metrologie-liberte.md
 bb3a2bf6e09e60e8ca49f8f63624019dc2a59242deaad5a2c06d556a2864bf96  docs/note-synthese-neurone-machine-noetique.md
 7191e683dcbac99388496ac5e3de1fbe8c4831c0f594c9644fd5cbb54919396c  docs/p36-note-profondeur.docx
 61ef33399dd178d93cfda1cbaf378efa7e8108962033e16d8325af49540d7b0d  docs/p36-note-profondeur.md
@@ -312,10 +319,15 @@ c34d6065daf558436fc63cf1ec6be156d092db02619fcc8b4f310e002faebe09  src/a1_batteri
 8d9625964912c4ffd4dc4f76ca7829601eacdfe888160446d1ca643b5d06a15a  src/a2_moteur_leviers.py
 d766e4aa90190f3d2aba57d37bb388b63717f94b81ef54247367fadf300fbe9e  src/a3_ko6_reenumeration.py
 8b795df54d3f921e6bf6d58fe2a288561f2a06a385803c465b4538d7422ff1af  src/a3_tamis_jastrow.py
-11ec9f3c94549b967ae9ed37323146646bbd5f4d02f32cade2935b87644e5e71  src/a4_registre_frontieres.py
+0634ef1f6b9a95bc06eac6bc1144d58a4c3d9ac9349ca2404defb53c61c8d4d2  src/a4_registre_frontieres.py
 cbc6df7fb52beef362b0811c302274a2ea375e672037db9e1cf99e4c35fc495f  src/a5_conjecture_frontieres.py
 785a176935e86acdd0fc72caa25a4b6e55ce30fa4ed0cc0fb9e8126dd6703cdc  src/m1_economie_information.py
 71ee5733d8b21d43ae3e1c1c4c7b2aca3b2296828d50ff6cb6f9b72efe94892d  src/m1b_economie_robustesse.py
+52582c7d972303f25d1e3efa8359447610caf596d23a3d87e09a03526a768bc0  src/m2_metrologie_liberte.py
+6dfef08f54aaa18892f291ffead70c9a52c73840782b16e0105c09569d38469f  src/m2b_famille_mesuree.py
+4e996ea86e8d5a3eff107c99054f6d188c1fe02f8fdad304515e61c3039f6a29  src/m2c_enrichissement.py
+8b6802ecb677a24bd9e20c4a621d7ec1ef57c2834488c35e19d6963fcca09c54  src/m2d_surface_cout.py
+aa518fbf2bd884ff6098084908a248709eb917e3280d056a242a62e88433fbd9  src/m2e_copie_tri.py
 52929bda060344213298890bf14e4856c46d6119d240379d8a6161ac37cb6f73  src/p0_monopole_su2.py
 afd98c1e0e9cf8caff98f3524a5fc4a77a50ef4d45668c226f0551288f0884b7  src/p10_pont.py
 8ab44d0aefec325871ee65129a5a8ef5492440b95704d378a97d9f1277284824  src/p11_vallee.py

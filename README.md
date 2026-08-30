@@ -112,13 +112,15 @@ Série distincte du noyau P0–P33 : la machine éprouve les **bifurcations de c
 | A1 | batterie de perturbation (π perturbé, D et S intacts) | PASS — fragilités publiées par chantier, prédictions de fragilité éprouvées |
 | A2 | moteur de leviers | PASS — le moteur ne voit que ce qui existe |
 | A3 | tamis de Jastrow (N=64/96/128) + réénumération KO-6 | le plafond « 63 160 » est **réfuté comme publié** (B3-FAIL du corpus) ; l'énumération KO-6 propre reste ouverte, coût de fermeture déclaré |
-| A4 | registre des frontières REG-FR-1.0 | **18 entrées** F1–F18 (**7 fermées**, 5 ouvertes, 6 partielles), ddll par entrée, falsifieurs pré-enregistrés, SHA global `087031225358d06e…` |
+| A4 | registre des frontières REG-FR-1.0 | **20 entrées** F1–F20 (**9 fermées**, 5 ouvertes, 6 partielles), ddll par entrée, falsifieurs pré-enregistrés, SHA global `bd592a8a3dc16b4a…` |
 | A5 | conjecture des frontières | v1 **réfutée** par F5 + F7 + F14 (10/13) ; v2 en vigueur (11/13 points) |
 | A1b | batterie rétroactive P13/P22 (ferme F7) | couples (V, Σ) publiés : P13 Σ=1 (4/4) ; P22 Σ_min=0.94 (5/6 inchangé), une fragilité de seuil publiée ; prédictions pré-enregistrées confirmées |
 
 ### Méta-chantiers M1 / M1b : l'économie de l'information mesurée
 
 M1 (ECO-1.0) éprouve le postulat central du corpus sur 23 chantiers, métriques uniformes gelées (S = SLOC, V₁ = feuilles numériques des JSON, V₂ = dénominateurs de scores). **Prédiction pré-enregistrée réfutée — avec inversion** : le ratio informationnel est *plus élevé* au voisinage de la frontière r₁₂ (ρ₁ médiane 0.898 vs 0.275). L'affinage mesuré : ce qui s'effondre à r₁₂, c'est le **taux de succès des confrontations externes** (τ : 0.60 vs 1.00), pas le ratio brut. M1b (ECO-1.1) réplique au proxy de Kolmogorov (taille gzip ; Spearman(SLOC, gzip) = 0.980) : **l'inversion survit — la réfutation est structurelle**. M1 a aussi confirmé indépendamment l'entrée F9 (corruption p32/p33), réparée (commits `27b0db7`, `301e326a`) : p32/p33 restitués (30 valeurs figées reproduites à 5 décimales) et **p31 re-publié avec l'intégrande |∇Ψ|² de P39** — le verdict historique de P31 bascule de 3/5 à 5/5 : la « frontière constitutive » était un artefact de l'intégrande (écart mesuré jusqu'à 0.14 Ha, anomalie variationnelle publiée). **F9 fermée.**
+
+**Série M2 — métrologie de la liberté (le registre devient algèbre)** : le comptage ddll devient une mesure formelle d ∈ ℕ̄ avec monoïde des coûts, composition et ordre de fermeture (M2, cohérence 18/18, image ponctuelle {0,1}) ; homomorphisme mesuré d(t^m∘t^k) = d(m)+d(k) et conversion profondeur↔largeur (M2b, 26/26) ; ordre enrichi et loi prospective L5 confrontée à deux familles neuves (M2c : parité d(n)=n — F19 ; M2e : tri de Batcher à la borne informationnelle — F20) ; surface de coût d(m,k) exacte et optimum mesuré d*(m)=2m (M2d) ; copie d(n)=n **certifiée minimale** (Lévy–Desplanques). Série : 5/5 + 4/4 + 4/4 + 4/4 + 3/3.
 
 ### Données figées hors dépôt
 
