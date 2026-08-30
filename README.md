@@ -55,7 +55,7 @@ Le chantier complet court de **P0** (monopole SU(2) banc calibré) à **P33** (d
 | P28 | unification (réponse 2-corps) | 7/7 | succès |
 | P29 | isovecteur / peaux | 5/6 | partiel |
 | P30 | cusp de Kato | 3/5 | partiel |
-| P31 | portée dérivée | 3/5 | **frontière r₁₂ constitutive** |
+| P31 | portée dérivée | 3/5 → **5/5** (F9) | frontière déclarée constitutive — **artefact de l'intégrande** : verdict 5/5 avec la forme corrigée (voir F9) |
 | P32 | cartographie frontière (Z=2–6) | 4/5 | **frontière Z-dépendante (loi)** |
 | P33 | décroissance asymptotique | 3/5 | partiel — **P31 renforcée** |
 
@@ -109,12 +109,13 @@ Série distincte du noyau P0–P33 : la machine éprouve les **bifurcations de c
 | A1 | batterie de perturbation (π perturbé, D et S intacts) | PASS — fragilités publiées par chantier, prédictions de fragilité éprouvées |
 | A2 | moteur de leviers | PASS — le moteur ne voit que ce qui existe |
 | A3 | tamis de Jastrow (N=64/96/128) + réénumération KO-6 | le plafond « 63 160 » est **réfuté comme publié** (B3-FAIL du corpus) ; l'énumération KO-6 propre reste ouverte, coût de fermeture déclaré |
-| A4 | registre des frontières REG-FR-1.0 | **15 entrées** F1–F15 (4 fermées, 6 ouvertes, 5 partielles), ddll par entrée, falsifieurs pré-enregistrés, SHA global `4b82ca3fdbb5ae88…` |
-| A5 | conjecture des frontières | v1 **réfutée** par F5 + F14 ; v2 en vigueur (11/12 points pré-enregistrés) |
+| A4 | registre des frontières REG-FR-1.0 | **15 entrées** F1–F15 (**6 fermées, 4 ouvertes, 5 partielles**), ddll par entrée, falsifieurs pré-enregistrés, SHA global `fbee3aa684ae8e15…` |
+| A5 | conjecture des frontières | v1 **réfutée** par F5 + F7 + F14 (10/13) ; v2 en vigueur (11/13 points) |
+| A1b | batterie rétroactive P13/P22 (ferme F7) | couples (V, Σ) publiés : P13 Σ=1 (4/4) ; P22 Σ_min=0.94 (5/6 inchangé), une fragilité de seuil publiée ; prédictions pré-enregistrées confirmées |
 
 ### Méta-chantiers M1 / M1b : l'économie de l'information mesurée
 
-M1 (ECO-1.0) éprouve le postulat central du corpus sur 23 chantiers, métriques uniformes gelées (S = SLOC, V₁ = feuilles numériques des JSON, V₂ = dénominateurs de scores). **Prédiction pré-enregistrée réfutée — avec inversion** : le ratio informationnel est *plus élevé* au voisinage de la frontière r₁₂ (ρ₁ médiane 0.898 vs 0.275). L'affinage mesuré : ce qui s'effondre à r₁₂, c'est le **taux de succès des confrontations externes** (τ : 0.60 vs 1.00), pas le ratio brut. M1b (ECO-1.1) réplique au proxy de Kolmogorov (taille gzip ; Spearman(SLOC, gzip) = 0.980) : **l'inversion survit — la réfutation est structurelle**. M1 a aussi confirmé indépendamment l'entrée F9 (corruption p32/p33), réparée au commit `27b0db7` : sources restituées, les 30 valeurs figées reproduites à 5 décimales.
+M1 (ECO-1.0) éprouve le postulat central du corpus sur 23 chantiers, métriques uniformes gelées (S = SLOC, V₁ = feuilles numériques des JSON, V₂ = dénominateurs de scores). **Prédiction pré-enregistrée réfutée — avec inversion** : le ratio informationnel est *plus élevé* au voisinage de la frontière r₁₂ (ρ₁ médiane 0.898 vs 0.275). L'affinage mesuré : ce qui s'effondre à r₁₂, c'est le **taux de succès des confrontations externes** (τ : 0.60 vs 1.00), pas le ratio brut. M1b (ECO-1.1) réplique au proxy de Kolmogorov (taille gzip ; Spearman(SLOC, gzip) = 0.980) : **l'inversion survit — la réfutation est structurelle**. M1 a aussi confirmé indépendamment l'entrée F9 (corruption p32/p33), réparée (commits `27b0db7`, `301e326a`) : p32/p33 restitués (30 valeurs figées reproduites à 5 décimales) et **p31 re-publié avec l'intégrande |∇Ψ|² de P39** — le verdict historique de P31 bascule de 3/5 à 5/5 : la « frontière constitutive » était un artefact de l'intégrande (écart mesuré jusqu'à 0.14 Ha, anomalie variationnelle publiée). **F9 fermée.**
 
 ### Données figées hors dépôt
 
