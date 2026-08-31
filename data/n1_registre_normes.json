@@ -1,0 +1,183 @@
+{
+  "registre": "N1-DIRECTIONS-NORMALISATION",
+  "protocole": "NORM-REG-1.0 (gelé) — schéma hérité de REG-FR-1.0 (registre A4 du corpus)",
+  "dépôt": "noetic-normes (privé — prospection avant dépôts externes)",
+  "n_entrées": 6,
+  "par_statut": {
+    "réfutée": 0,
+    "en-cours": 5,
+    "ouverte": 0,
+    "partielle": 0,
+    "fermée": 1
+  },
+  "par_type": {
+    "spécification": 2,
+    "norme": 2,
+    "pont": 2
+  },
+  "entrées": [
+    {
+      "id": "D1-DCC-VERDICT",
+      "type": "pont",
+      "énoncé": "Étendre le Digital Calibration Certificate (PTB/DAkkS) d'un champ « verdict algorithmique » : protocole gelé, domaine mesuré, falsifieur exécutable, stabilité Σ, empreinte SHA-256 — la chaîne ASH → M̂ publiée comme un DCC étendu auto-émis et rejouable",
+      "protocole": "NORM-MACH-1.0",
+      "statut": "en-cours",
+      "coût_de_fermeture_exact": "produire le cas complet (DCC étendu de la chaîne ASH → M̂, rejouable) + contact avec la communauté métrologie légale (PTB/DAkkS ou délégation française)",
+      "artefacts": {
+        "fondation": "docs/note-directions-normes.md §D1",
+        "gabarit": "doc technique chaîne ASH → M̂ (V1–V6, corpus)"
+      },
+      "falsifieur": "si le cas DCC étendu publié n'est rejoué par aucun tiers en six mois → la voie est réfutée telle quelle (publié) ; si le format DCC ne peut pas porter un champ verdict → publié, direction refermée vers D2/D4",
+      "addenda": [
+        {
+          "date": "2026-08-31",
+          "action": "production livrée — cas DCC étendu auto-émis rédigé (champ « verdict algorithmique » dans <dcc:statements>, schéma DCC v3.3.0) ; contact métrologie légale à engager",
+          "artefacts": [
+            "specs/dcc-etendu-ash-mach-0.1.xml"
+          ],
+          "note": "fenêtre de rejeu tiers ouverte jusqu'au 2027-02-28"
+        },
+        {
+          "date": "2026-08-31",
+          "action": "version formelle prête à envoyer — courrier à la métrologie légale (PTB/DAkkS/LNE) rédigé",
+          "artefacts": [
+            "correspondance/courrier-d1-d4-metrologie-legale.md"
+          ]
+        }
+      ],
+      "sha256_entrée": "b4da26a705df8f59434593887cbfe5e680212ac4d1ac339f9509705444371449"
+    },
+    {
+      "id": "D2-CWA-PREUVE-EXECUTABLE",
+      "type": "norme",
+      "énoncé": "CEN Workshop Agreement : « Exécutable evidence for high-risk AI performance claims » — figer le format de preuve (art. 15 AI Act : robustesse) avant les normes harmonisées, avec le corpus comme cas de référence vivant (20 frontières, falsifieurs exécutables)",
+      "protocole": "NORM-MACH-1.0",
+      "statut": "en-cours",
+      "coût_de_fermeture_exact": "rédiger la proposition d'atelier (scope, livrables, calendrier) et la déposer — ouverte à tout acteur, y compris petits",
+      "artefacts": {
+        "fondation": "docs/note-directions-normes.md §D2",
+        "cas_de_référence": "github.com/PORTEMANN/noetic-machine-complete"
+      },
+      "falsifieur": "si l'atelier n'aboutit pas ou si la proposition est refusée → publié tel quel (B3-FAIL du plan) ; deux refus consécutifs ferment la voie",
+      "addenda": [
+        {
+          "date": "2026-08-31",
+          "action": "production livrée — proposition d'atelier CWA rédigée (scope, 3 livrables, calendrier 2027, parties sollicitées, IPR) ; dépôt prévu 2027-T1",
+          "artefacts": [
+            "docs/proposition-cwa-preuve-executable.md"
+          ]
+        },
+        {
+          "date": "2026-08-31",
+          "action": "version formelle prête à déposer — formulaire CWA complet v1.0 rédigé",
+          "artefacts": [
+            "correspondance/proposition-formelle-cwa-d2.md"
+          ]
+        }
+      ],
+      "sha256_entrée": "40e30bb7626d25673f393ebb067a1af94ddf9fe6bf1eda19aa19eee184d68839"
+    },
+    {
+      "id": "D3-CLAUSES-PREN",
+      "type": "norme",
+      "énoncé": "Entrer dans les projets prEN CEN-CENELEC JTC 21 (délégation AFNOR) avec deux clauses déjà exécutées dans le corpus : (i) la stabilité par perturbation du protocole d'évaluation comme exigence de robustesse ; (ii) le registre de limites mesurées comme structure de la documentation annexe IV",
+      "protocole": "NORM-MACH-1.0",
+      "statut": "en-cours",
+      "coût_de_fermeture_exact": "formuler les deux clauses en langage normatif + dossier de preuve (A1/A1b exécutés) + prise de contact délégation nationale",
+      "artefacts": {
+        "fondation": "docs/note-directions-normes.md §D3",
+        "preuve": "a1_batterie_perturbation.py, a1b_batterie_retroactive.py (corpus, verdicts figés)"
+      },
+      "falsifieur": "si les deux clauses sont rejetées deux fois → la voie est documentée comme fermée, pas persévérée en silence",
+      "addenda": [
+        {
+          "date": "2026-08-31",
+          "action": "production livrée — deux clauses en langage normatif (stabilité par perturbation ; registre des limites) + dossier de preuve (5 chantiers, 66 protocoles) ; contact AFNOR à engager",
+          "artefacts": [
+            "docs/clauses-pren-robustesse-limites.md"
+          ]
+        },
+        {
+          "date": "2026-08-31",
+          "action": "version formelle prête à envoyer — soumission AFNOR rédigée (les deux clauses + demande + annexes)",
+          "artefacts": [
+            "correspondance/soumission-clauses-d3-afnor.md"
+          ]
+        }
+      ],
+      "sha256_entrée": "f78b8280d326e160969966d7494085bd5598ef351a704f4af50a943d969fa904"
+    },
+    {
+      "id": "D4-OIML-INSTRUMENT-VERDICT",
+      "type": "pont",
+      "énoncé": "Proposer à OIML/WELMEC la catégorie « instrument à verdict algorithmique » : fiche de domaine mesuré obligatoire (résolution effective, train minimal d'événements, stabilité) sur le gabarit V1–V6 du document technique ASH → M̂",
+      "protocole": "NORM-MACH-1.0",
+      "statut": "en-cours",
+      "coût_de_fermeture_exact": "adapter le gabarit V1–V6 en fiche d'instrument + l'adosser au cas D1 (DCC étendu) avant de contacter OIML/WELMEC",
+      "artefacts": {
+        "fondation": "docs/note-directions-normes.md §D4",
+        "gabarit": "doc technique chaîne ASH → M̂ (LaTeX, corpus)"
+      },
+      "falsifieur": "si le canal exige une représentation formelle inaccessible → documenté, replis vers D1 seul ; toute objection technique est publiée",
+      "addenda": [
+        {
+          "date": "2026-08-31",
+          "action": "production livrée — fiche d'instrument à verdict algorithmique rédigée (gabarit OIML/WELMEC, V1–V6 + limites publiées + falsifieurs), adossée au cas D1",
+          "artefacts": [
+            "specs/fiche-instrument-verdict-0.1.md"
+          ]
+        }
+      ],
+      "sha256_entrée": "607d9d7a9d1f425dcf7b6c22bbd648bf252d0f7481b2e34bb68af4f604938ffb"
+    },
+    {
+      "id": "D5-SPEC-ASH-MACH",
+      "type": "spécification",
+      "énoncé": "Publier la spécification ouverte ASH-MACH : les protocoles gelés du corpus présentés comme une mini-norme (définitions, conditions de validité, essais, falsifieurs, format de registre) + safety case pilote avec certificat de minimalité calculé (forme M2e)",
+      "protocole": "NORM-MACH-1.0",
+      "statut": "en-cours",
+      "coût_de_fermeture_exact": "rédiger la spécification (format norme : exigences SHALL, essais rejouables) + exécuter le safety case pilote de bout en bout",
+      "artefacts": {
+        "fondation": "docs/note-directions-normes.md §D5",
+        "certificat_modèle": "m2e_copie_tri_verdict.json (corpus)"
+      },
+      "falsifieur": "si la spécification publiée n'est rejouée par personne en six mois → la voie D5 est réfutée telle quelle (publié)",
+      "addenda": [
+        {
+          "date": "2026-08-31",
+          "action": "production livrée — spécification rédigée au format norme + safety case pilote exécuté (certificat de minimalité de la copie)",
+          "artefacts": [
+            "specs/ash-mach-0.1.md"
+          ],
+          "note": "fenêtre de rejeu par des tiers ouverte jusqu'au 2027-02-28 — le falsifieur reste armé : aucune rejouabilité tierce sous six mois réfute la voie"
+        }
+      ],
+      "sha256_entrée": "65df651ce188a5537fd1189fe30d2a2911eef17d87689d36a97f35078261268a"
+    },
+    {
+      "id": "D6-TABLE-CONFORMITE-AIACT",
+      "type": "spécification",
+      "énoncé": "Publier la table de conformité AI Act du corpus : artefacts mappés sur les art. 9–15 (registre des frontières = gestion des risques ; D figées = gouvernance des données ; notes SHA = documentation ; PERT-BATT = robustesse ; le verdict qui refuse quand Σ chute = supervision humaine effective)",
+      "protocole": "NORM-MACH-1.0",
+      "statut": "fermée",
+      "coût_de_fermeture_exact": "produire la table article par article, avec pour chacun l'artefact du corpus qui le couvre et les écarts publiés",
+      "artefacts": {
+        "fondation": "docs/note-directions-normes.md §D6",
+        "cadre": "règlement (UE) 2024/1689 modifié par (UE) 2026/1744"
+      },
+      "falsifieur": "tout écart découvert entre la table et les exigences finales des normes harmonisées est publié en addendum — jamais corrigé en silence",
+      "addenda": [
+        {
+          "date": "2026-08-31",
+          "action": "production livrée — table v1.0 art. 9–15 avec écarts publiés (QMS, plan de surveillance, procédure de supervision humaine)",
+          "artefacts": [
+            "docs/table-conformite-ai-act.md"
+          ]
+        }
+      ],
+      "sha256_entrée": "1e51c9671f24abc819939c5031e15feadc03f1860e3d08a86089730eede0ae74"
+    }
+  ],
+  "sha256_registre": "a7cb2edf1c8babaa9ec8b59e70be54d1279df66074c66771779dfb93ac7ca24c",
+  "sha256_script": "c554a8a451f625523fcf7a63621c83fd3ac2f69aaecd37c677c1d118ca5ccb1b"
+}
