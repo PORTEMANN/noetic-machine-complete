@@ -21,8 +21,8 @@
   "n_entrées": 20,
   "par_statut": {
     "fermée": 10,
-    "ouverte": 5,
-    "partielle": 5
+    "ouverte": 4,
+    "partielle": 6
   },
   "par_type": {
     "hygiène": 3,
@@ -93,8 +93,8 @@
       "type": "méthode",
       "énoncé": "« 63 160 réalisations certifiées KO-6 » : non reproductible par son propre moteur (0 solution, plafond inatteignable, certification vide)",
       "chantier_source": "A3-KO6-REENUMERATION",
-      "protocole": "TAMIS-KO6-1.0",
-      "statut": "ouverte",
+      "protocole": "TAMIS-KO6-1.0 + KO6-ENUM-1.0",
+      "statut": "partielle",
       "coût_de_fermeture_exact": "implémenter les VRAIS axiomes KO-6 au niveau des représentations (J_F²=+1, J_FD_F=D_FJ_F, (J_Fγ_F)²=−1, ordre un sur les blocs de D_F), ré-énumérer sous bornes déclarées, publier le compte — PARTIELLEMENT PAYÉ par A3b (KO6-REAL-1.0, 2026-08-31) : le vérificateur matriciel des axiomes est exécutable et certifié (triplet compatible trouvé par énumération déclarée 36 J₀ × 80 D, les 3 axiomes + ordre un tués un à un détectés — dont 2 leviers initiaux erronés publiés en B3-FAIL) ; coquille mesurée dans l'énoncé figé (« (J_F γ_F)² = −1 » incompatible avec J²=+1, Jγ=+γJ — la table de Connes prime) ; l'espace sous bornes est mesuré (4 723 712 matrices) ; L'ÉNUMÉRATION COMPLÈTE reste à exécuter — coût restant publié",
       "comptage_ddll": {
         "verdict": "déficit",
@@ -103,10 +103,11 @@
       "artefacts": {
         "script": "a3_ko6_reenumeration.py",
         "verdict": "a3_ko6_reenumeration_verdict.json",
-        "vérificateur_réel": "a3b_ko6_verificateur.py + verdict (A3b : 4/4 — axiomes exécutables)"
+        "vérificateur_réel": "a3b_ko6_verificateur.py + verdict (A3b : 4/4 — axiomes exécutables)",
+        "énumération": "f4_enumeration_ko6.py + verdict (k=2 exécuté : 60/256 matrices admettent un triplet compatible, reproductible, filiation vérifiée)"
       },
-      "falsifieur": "toute exécution du moteur commité (plafond retiré) produisant ≥ 1 solution tue l'entrée ; l'énumération complète sous les vrais axiomes la ferme",
-      "sha256_entrée": "0f1e11cf4eee60e6df9f7c9001f8f5504279e5cf6bfbe7c4ad93d1e48f592131"
+      "falsifieur": "toute exécution du moteur commité (plafond retiré) produisant ≥ 1 solution tue l'entrée ; l'énumération k=2 est exécutée (60/256, compte publié sans cible) ; l'énumération k=3 (4 723 712 matrices, coût mesuré) reste à faire pour fermer complètement",
+      "sha256_entrée": "2ceab9347714648c0cae95e9e1834852d84fb46e22f017a6ddf8e0b0fbb9655f"
     },
     {
       "id": "F5-BPS-ECHELLE",
@@ -422,6 +423,6 @@
       "sha256_entrée": "d76976181678ce3ae46c830b582eb17d126c4a088994d7fb6d0ecfd7a99ee097"
     }
   ],
-  "sha256_registre": "c56654f1f8d5ce04ea819c340af15db8c29ae1616bcd1a228e0c9e29f06cb82e",
-  "sha256_script": "9b8d3ced25a8ee48addbfd6eb9e8f1ea5911c1a99310f47e3e082bca433932d8"
+  "sha256_registre": "9b87f2a10027b5fe07736b7679d170f6a6a78938840589ba9ee027bba80a71a8",
+  "sha256_script": "5589bf667f402ff574720bd9f0e9e1a633bda34e49fed75f90b6130c1f8d48ce"
 }

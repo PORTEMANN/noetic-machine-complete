@@ -104,7 +104,7 @@ FRONTIÈRES = [
         "F4-KO6-ENUMERATION", "méthode",
         "« 63 160 réalisations certifiées KO-6 » : non reproductible par son "
         "propre moteur (0 solution, plafond inatteignable, certification vide)",
-        "A3-KO6-REENUMERATION", "TAMIS-KO6-1.0", "ouverte",
+        "A3-KO6-REENUMERATION", "TAMIS-KO6-1.0 + KO6-ENUM-1.0", "partielle",
         "implémenter les VRAIS axiomes KO-6 au niveau des représentations "
         "(J_F²=+1, J_FD_F=D_FJ_F, (J_Fγ_F)²=−1, ordre un sur les blocs de "
         "D_F), ré-énumérer sous bornes déclarées, publier le compte — "
@@ -126,10 +126,14 @@ FRONTIÈRES = [
         {"script": "a3_ko6_reenumeration.py",
          "verdict": "a3_ko6_reenumeration_verdict.json",
          "vérificateur_réel": "a3b_ko6_verificateur.py + verdict "
-                             "(A3b : 4/4 — axiomes exécutables)"},
+                             "(A3b : 4/4 — axiomes exécutables)",
+         "énumération": "f4_enumeration_ko6.py + verdict (k=2 exécuté : "
+                        "60/256 matrices admettent un triplet compatible, "
+                        "reproductible, filiation vérifiée)"},
         "toute exécution du moteur commité (plafond retiré) produisant ≥ 1 "
-        "solution tue l'entrée ; l'énumération complète sous les vrais "
-        "axiomes la ferme"),
+        "solution tue l'entrée ; l'énumération k=2 est exécutée (60/256, "
+        "compte publié sans cible) ; l'énumération k=3 (4 723 712 matrices, "
+        "coût mesuré) reste à faire pour fermer complètement"),
     entree(
         "F5-BPS-ECHELLE", "physique",
         "C(ρ=0) = 1 (BPS) n'est pas atteint par relaxation sur boîte finie : "
