@@ -112,7 +112,7 @@ Série distincte du noyau P0–P33 : la machine éprouve les **bifurcations de c
 | A1 | batterie de perturbation (π perturbé, D et S intacts) | PASS — fragilités publiées par chantier, prédictions de fragilité éprouvées |
 | A2 | moteur de leviers | PASS — le moteur ne voit que ce qui existe |
 | A3 | tamis de Jastrow (N=64/96/128) + réénumération KO-6 | le plafond « 63 160 » est **réfuté comme publié** (B3-FAIL du corpus) ; l'énumération KO-6 propre reste ouverte, coût de fermeture déclaré |
-| A4 | registre des frontières REG-FR-1.0 | **20 entrées** F1–F20 (**10 fermées**, 5 ouvertes, 5 partielles), ddll par entrée, falsifieurs pré-enregistrés, SHA global `c56654f1f8d5ce04…` |
+| A4 | registre des frontières REG-FR-1.0 | **20 entrées** F1–F20 (10 fermées, **4 ouvertes**, **6 partielles**), ddll par entrée, falsifieurs pré-enregistrés, SHA global `9b87f2a10027b5fe…` |
 | A5 | conjecture des frontières | v1 **réfutée** par F5 + F7 + F14 (10/13) ; v2 en vigueur (11/13 points) |
 | A1b | batterie rétroactive P13/P22 (ferme F7) | couples (V, Σ) publiés : P13 Σ=1 (4/4) ; P22 Σ_min=0.94 (5/6 inchangé), une fragilité de seuil publiée ; prédictions pré-enregistrées confirmées |
 
