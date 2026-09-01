@@ -1,0 +1,141 @@
+{
+  "chantier": "P48-EEG-BASELINE-FIGEE",
+  "protocole": "EEG-BASE-1.0 (gelé)",
+  "voie_F17": "(ii) baseline de repos du sujet figée comme D (C12.1)",
+  "règle": "Δc = o_c(MI) − D_sujet[c] ; DROITE si ΔC3 < ΔC4",
+  "par_sujet": {
+    "A01T": {
+      "précision": 0.5208,
+      "bon": 75,
+      "total": 144,
+      "levier_θ": 0.5139,
+      "levier_P1P2": 0.5972,
+      "D_figée": {
+        "C3": 0.111226,
+        "C4": 0.115814,
+        "P1": 0.123955,
+        "P2": 0.12784
+      }
+    },
+    "A02T": {
+      "précision": 0.5,
+      "bon": 72,
+      "total": 144,
+      "levier_θ": 0.4722,
+      "levier_P1P2": 0.4792,
+      "D_figée": {
+        "C3": 0.139601,
+        "C4": 0.149111,
+        "P1": 0.147307,
+        "P2": 0.149895
+      }
+    },
+    "A03T": {
+      "précision": 0.7014,
+      "bon": 101,
+      "total": 144,
+      "levier_θ": 0.4375,
+      "levier_P1P2": 0.625,
+      "D_figée": {
+        "C3": 0.164368,
+        "C4": 0.140194,
+        "P1": 0.185182,
+        "P2": 0.186454
+      }
+    },
+    "A04T": {
+      "précision": 0.5556,
+      "bon": 80,
+      "total": 144,
+      "levier_θ": 0.4861,
+      "levier_P1P2": 0.5903,
+      "D_figée": {
+        "C3": 0.116756,
+        "C4": 0.122625,
+        "P1": 0.13587,
+        "P2": 0.139447
+      }
+    },
+    "A05T": {
+      "précision": 0.4792,
+      "bon": 69,
+      "total": 144,
+      "levier_θ": 0.5139,
+      "levier_P1P2": 0.4653,
+      "D_figée": {
+        "C3": 0.093396,
+        "C4": 0.092762,
+        "P1": 0.09876,
+        "P2": 0.098052
+      }
+    },
+    "A06T": {
+      "précision": 0.5139,
+      "bon": 74,
+      "total": 144,
+      "levier_θ": 0.4931,
+      "levier_P1P2": 0.4792,
+      "D_figée": {
+        "C3": 0.146098,
+        "C4": 0.170245,
+        "P1": 0.139117,
+        "P2": 0.155084
+      }
+    },
+    "A07T": {
+      "précision": 0.5139,
+      "bon": 74,
+      "total": 144,
+      "levier_θ": 0.4931,
+      "levier_P1P2": 0.4444,
+      "D_figée": {
+        "C3": 0.132616,
+        "C4": 0.137192,
+        "P1": 0.145474,
+        "P2": 0.143989
+      }
+    },
+    "A08T": {
+      "précision": 0.5208,
+      "bon": 75,
+      "total": 144,
+      "levier_θ": 0.4931,
+      "levier_P1P2": 0.5556,
+      "D_figée": {
+        "C3": 0.183195,
+        "C4": 0.20861,
+        "P1": 0.209546,
+        "P2": 0.215915
+      }
+    },
+    "A09T": {
+      "précision": 0.4653,
+      "bon": 67,
+      "total": 144,
+      "levier_θ": 0.5278,
+      "levier_P1P2": 0.4861,
+      "D_figée": {
+        "C3": 0.217304,
+        "C4": 0.210454,
+        "P1": 0.23696,
+        "P2": 0.235654
+      }
+    }
+  },
+  "précision_moyenne": 0.5301,
+  "sujets_significatifs": 1,
+  "leviers_moyens": {
+    "θ": 0.4923,
+    "P1P2": 0.5247
+  },
+  "critères": {
+    "B1_précision_moyenne": false,
+    "B2_sujets_significatifs": false,
+    "B3_leviers_effondrés": true
+  },
+  "score": "1/3",
+  "statut": "ÉCHEC (B3-FAIL publié)",
+  "falsifieur": "B1 ou B2 non tenus → voie (ii) mesurée insuffisante, publiée ; levier non effondré retire le verdict",
+  "durée_s": 31.2,
+  "sha256_script": "532942aea04c9f20f9b92aaf53dd0431363887973c3ede7a805e4f4fd9384c9d"
+}

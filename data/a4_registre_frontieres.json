@@ -350,7 +350,7 @@
       "chantier_source": "P44-EEG-MI-REEL (2026-08-31)",
       "protocole": "EEG-MI-1.0",
       "statut": "ouverte",
-      "coût_de_fermeture_exact": "trois voies déclarées : (i) agrégation de N essais (vote, précision en √N si le signal existe — pilotage lent) ; (ii) baseline de repos du sujet figée comme D (donnée C12.1, pas paramètre fitté) ; (iii) filtrage spatial structurel dérivé (CSP ajusté interdit) — chaque voie exige un protocole gelé et une ré-exécution sur A01T–A09T. VOIE (i) MESURÉE INSUFFISANTE par P47 (EEG-AGG-1.0, 2026-08-31) : vote majoritaire sur blocs de N ∈ {1..12} essais — moyenne max 0,5926 < 0,60 (seuil figé) ; le sujet fort A03 atteint 1,0 à N=12, les sujets faibles restent au hasard ; écarts à la montée binomiale publiés (essais non indépendants). Restent (ii) et (iii) — publié, pas effacé",
+      "coût_de_fermeture_exact": "trois voies déclarées : (i) agrégation de N essais (vote, précision en √N si le signal existe — pilotage lent) ; (ii) baseline de repos du sujet figée comme D (donnée C12.1, pas paramètre fitté) ; (iii) filtrage spatial structurel dérivé (CSP ajusté interdit) — chaque voie exige un protocole gelé et une ré-exécution sur A01T–A09T. VOIES (i) ET (ii) MESURÉES INSUFFISANTES (publiées, pas effacées) : (i) P47 (EEG-AGG-1.0) — vote par blocs de N ∈ {1..12} essais, moyenne max 0,5926 < 0,60 figé ; (ii) P48 (EEG-BASE-1.0) — baseline de repos figée comme D, moyenne 0,5301 < 0,60 figé, 1/9 sujets significatifs ; leviers effondrés dans les deux (l'effet vit dans μ, canaux moteurs). Reste (iii) — le filtrage spatial structurel dérivé",
       "comptage_ddll": {
         "verdict": "hors-domaine",
         "justification": "frontière de méthode (capacité de la chaîne) — pas un comptage de ddll"
@@ -358,11 +358,11 @@
       "artefacts": {
         "script": "p44_eeg_mi_reel.py",
         "verdict": "p44_eeg_mi_reel_verdict.json",
-        "voie_i_mesurée": "p47_eeg_aggregation.py + verdict (P47 : ÉCHEC publié — voie (i) insuffisante)",
+        "voies_mesurées": "P47 (i : vote, 0,5926 < 0,60) + P48 (ii : baseline figée, 0,5301 < 0,60) — deux B3-FAIL publiés ; reste (iii)",
         "données": "BCICIV-2a zip SHA 65fe93cb… (externe, non commité)"
       },
       "falsifieur": "toute règle zéro paramètre atteignant ≥ 0.60 de moyenne ET ≥ 5/9 sujets significatifs sur A01T–A09T tue l'entrée",
-      "sha256_entrée": "13c1554125ae0ddb23ec08cddab6310140f530bfb0db6dfd6bb18c970703af5c"
+      "sha256_entrée": "88bfca1cd51fa73d06698e1de20e5219f128a0e85dc788e8437be26a7619ec7b"
     },
     {
       "id": "F18-ARCHIVE-BENCH-ASH",
@@ -424,6 +424,6 @@
       "sha256_entrée": "d76976181678ce3ae46c830b582eb17d126c4a088994d7fb6d0ecfd7a99ee097"
     }
   ],
-  "sha256_registre": "17f1d5a9cd0fc78f570e2abf0d7161758c1f514c9bb6adcdd8f27cccf7836dcf",
-  "sha256_script": "18e132871f80daec932a5bc9880a76759afa17949ad2b254de982a046f3263fc"
+  "sha256_registre": "268b19c6242c951f8aae659fbb0d5d28f7c944e8391f5d2c384a3de901ef82bf",
+  "sha256_script": "b8bff0f730d5703104e40211f3c2f06d63775659945115667d6f6cb66f5d485e"
 }

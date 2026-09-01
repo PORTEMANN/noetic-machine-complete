@@ -452,19 +452,21 @@ FRONTIÈRES = [
         "(ii) baseline de repos du sujet figée comme D (donnée C12.1, "
         "pas paramètre fitté) ; (iii) filtrage spatial structurel dérivé "
         "(CSP ajusté interdit) — chaque voie exige un protocole gelé et "
-        "une ré-exécution sur A01T–A09T. VOIE (i) MESURÉE INSUFFISANTE "
-        "par P47 (EEG-AGG-1.0, 2026-08-31) : vote majoritaire sur blocs "
-        "de N ∈ {1..12} essais — moyenne max 0,5926 < 0,60 (seuil figé) ; "
-        "le sujet fort A03 atteint 1,0 à N=12, les sujets faibles restent "
-        "au hasard ; écarts à la montée binomiale publiés (essais non "
-        "indépendants). Restent (ii) et (iii) — publié, pas effacé",
+        "une ré-exécution sur A01T–A09T. VOIES (i) ET (ii) MESURÉES "
+        "INSUFFISANTES (publiées, pas effacées) : (i) P47 (EEG-AGG-1.0) — "
+        "vote par blocs de N ∈ {1..12} essais, moyenne max 0,5926 < 0,60 "
+        "figé ; (ii) P48 (EEG-BASE-1.0) — baseline de repos figée comme D, "
+        "moyenne 0,5301 < 0,60 figé, 1/9 sujets significatifs ; leviers "
+        "effondrés dans les deux (l'effet vit dans μ, canaux moteurs). "
+        "Reste (iii) — le filtrage spatial structurel dérivé",
         {"verdict": "hors-domaine",
          "justification": "frontière de méthode (capacité de la chaîne) — "
                           "pas un comptage de ddll"},
         {"script": "p44_eeg_mi_reel.py",
          "verdict": "p44_eeg_mi_reel_verdict.json",
-         "voie_i_mesurée": "p47_eeg_aggregation.py + verdict "
-                          "(P47 : ÉCHEC publié — voie (i) insuffisante)",
+         "voies_mesurées": "P47 (i : vote, 0,5926 < 0,60) + P48 (ii : "
+                           "baseline figée, 0,5301 < 0,60) — deux B3-FAIL "
+                           "publiés ; reste (iii)",
          "données": "BCICIV-2a zip SHA 65fe93cb… (externe, non commité)"},
         "toute règle zéro paramètre atteignant ≥ 0.60 de moyenne ET "
         "≥ 5/9 sujets significatifs sur A01T–A09T tue l'entrée"),
