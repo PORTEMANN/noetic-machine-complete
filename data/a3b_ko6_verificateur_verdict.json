@@ -1,0 +1,66 @@
+{
+  "chantier": "A3B-KO6-VERIFICATEUR-REEL",
+  "protocole": "KO6-REAL-1.0 (gelé)",
+  "note_coquille_F4": "l'énoncé figé du registre (« (J_F γ_F)² = −1 ») est incompatible avec J²=+1 et Jγ=+γJ — coquille mesurée et publiée ; la table de Connes est la référence (J²=+1, Jγ=+γJ, JD=−DJ)",
+  "triplet_minimal": {
+    "A_F": "ℂ⊕ℂ",
+    "H_F": "ℂ⁴",
+    "γ": "diag(1,1,−1,−1)",
+    "J0": "réelle, J0²=+1",
+    "D": "réel symétrique, anti-commute γ"
+  },
+  "C0_détail": {
+    "J2_+1": true,
+    "Jgamma_+": true,
+    "JD_-DJ": true,
+    "ordre_un": true,
+    "TOUS": true,
+    "espace_énuméré": "36 J0 × 80 D"
+  },
+  "C1_leviers": {
+    "J² → −1": {
+      "J2_+1": true,
+      "Jgamma_+": false,
+      "JD_-DJ": false,
+      "ordre_un": true,
+      "TOUS": false
+    },
+    "Jγ → −γJ (J₀ échange les chiralités)": {
+      "J2_+1": true,
+      "Jgamma_+": false,
+      "JD_-DJ": false,
+      "ordre_un": true,
+      "TOUS": false
+    },
+    "JD → +DJ (D_alt = γ)": {
+      "J2_+1": true,
+      "Jgamma_+": true,
+      "JD_-DJ": false,
+      "ordre_un": true,
+      "TOUS": false
+    }
+  },
+  "C2_détail": {
+    "J2_+1": true,
+    "Jgamma_+": true,
+    "JD_-DJ": false,
+    "ordre_un": false,
+    "TOUS": false
+  },
+  "C3_mesure": {
+    "espace_bornes_audit": 4723712,
+    "sous_ensemble_déclaré": "k=2, dim=5 : 60/256"
+  },
+  "critères": {
+    "C0_triplet_minimal_accepté": true,
+    "C1_leviers_détectés": true,
+    "C2_ordre_un_violation_détectée": true,
+    "C3_taille_mesurée_publiée": true
+  },
+  "score": "4/4",
+  "statut": "SUCCÈS",
+  "falsifieur": "un levier non détecté tue le vérificateur — publié",
+  "coût_restant_F4": "l'énumération complète sous bornes avec ces axiomes reste à exécuter — le vérificateur est prêt, l'espace est mesuré",
+  "durée_s": 0.0,
+  "sha256_script": "c586cf265ab27ed371b1cf79e01b7018360597bb667c99786ccb944cff5c39c8"
+}

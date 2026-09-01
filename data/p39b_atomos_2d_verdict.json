@@ -1,0 +1,45 @@
+{
+  "chantier": "P39B-ATOMES-2D",
+  "protocole": "R12-2D-1.0 (gelé)",
+  "grille": "NR=300, NTH=256, RMAX=6.0, boucle θ (mémoire O(NR²))",
+  "T0_T1_hydrogène": {
+    "norme_mesurée": 0.9994632656740803,
+    "E_mesuré": -2.003220995097062,
+    "E_exact": -2.0,
+    "cusp_mesuré": -2.0,
+    "cusp_attendu": -2.0
+  },
+  "T2_split_zeta": {
+    "E_min": 2534.5443,
+    "(a,b)": [
+      1.8,
+      1.8
+    ],
+    "référence_grille_x2": 1259.97259,
+    "écart_convergence": 1274.5717143962845
+  },
+  "T3_gains_par_beta": {
+    "0.25": 1296.50128,
+    "0.5": 1537.18106,
+    "0.75": 1719.71334,
+    "1.0": 1862.48466,
+    "1.5": 2066.93284,
+    "2.0": 2200.49001
+  },
+  "E_best": 1296.50128,
+  "critères": {
+    "T0_hydrogène_2D_sur_grille": true,
+    "T1_cusp_2D_mesuré": true,
+    "T2_split_ζ_et_convergence": false,
+    "T3_fermeture_2D": true
+  },
+  "score": "3/4",
+  "statut": "PARTIEL — 3/4 (T2/T3 : coût de fermeture de l'intégrateur 2D mesuré = elliptique K ; publié)",
+  "falsifieur": "T0 hors tolérance → géométrie 2D mal posée ; T3 négatif → la fermeture r₁₂ est dimensionnelle",
+  "durée_s": 45.3,
+  "sha256_script": "43b8a799d62ece10b80be4eb567a16b8d42315d2f6d2f3aca9d4e3ea45af1d37",
+  "diagnostic_mesuré": {
+    "T0_T1": "corrigés — la 1s 2D est exp(−2Zr) (pas exp(−Zr) : convention 3D, B3-FAIL publié) ; cusp 2D = −2Z mesuré exact",
+    "T2_T3": "l'intégrale 1/r12 en 2D a une divergence LOG en θ à r1=r2 (u ≈ Rθ) — le trapèze uniforme la surestime systématiquement (E_sp 2534 → 1260 quand NR double : erreur ∝ densité de grille, mesurée) ; la fermeture exige la fonction elliptique complète K(m) pour la singularité — coût de fermeture mesuré, publié"
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "chantier": "P46-REN-NORMALISE",
+  "protocole": "REN-NORM-1.0 (gelé) — ferme F16 si C1–C4 tiennent",
+  "candidats": {
+    "ReN_a": "(Rdyn+ε)(Rtop·D)/(H+ε)·100 — pression entropique pure",
+    "ReN_b": "(Rdyn+ε)(Rtop·D)/((Rc/n_act)(H+ε))·100 — pression par note active",
+    "ReN_c": "(Rdyn+ε)(Rtop·D)(Rc/(H+ε))·100 — orientation physique, rejeté par principe (non structural), mesuré pour publication"
+  },
+  "balayage_amplitude": {
+    "sinusoïde": {
+      "ReN_a": {
+        "valeurs_par_A": {
+          "0.01": 10000805091.502815,
+          "0.1": 10000804639.887466,
+          "1.0": 10000804370.08771,
+          "10.0": 10000805498.822447,
+          "100.0": 10000804359.793251
+        },
+        "écart_max_relatif": 1.1286439526527214e-07
+      },
+      "ReN_b": {
+        "valeurs_par_A": {
+          "0.01": 9966873150.728302,
+          "0.1": 9678237749.90084,
+          "1.0": 7504867551.310484,
+          "10.0": 2312302248.98072,
+          "100.0": 291996769.345578
+        },
+        "écart_max_relatif": 0.961092348752432
+      },
+      "ReN_c": {
+        "valeurs_par_A": {
+          "0.01": 199513838.385908,
+          "0.1": 1995138293.762822,
+          "1.0": 19951382399.383698,
+          "10.0": 199513846511.84406,
+          "100.0": 1995138237884.6484
+        },
+        "écart_max_relatif": 98.9999998970637
+      }
+    },
+    "moteur_sain": {
+      "ReN_a": {
+        "valeurs_par_A": {
+          "0.01": 0.000167,
+          "0.1": 0.000167,
+          "1.0": 0.000167,
+          "10.0": 0.000167,
+          "100.0": 0.000167
+        },
+        "écart_max_relatif": 4.883612065490852e-16
+      },
+      "ReN_b": {
+        "valeurs_par_A": {
+          "0.01": 0.120641,
+          "0.1": 0.012064,
+          "1.0": 0.001206,
+          "10.0": 0.000121,
+          "100.0": 1.2e-05
+        },
+        "écart_max_relatif": 98.99912772136591
+      },
+      "ReN_c": {
+        "valeurs_par_A": {
+          "0.01": 2e-06,
+          "0.1": 1.8e-05,
+          "1.0": 0.000184,
+          "10.0": 0.001838,
+          "100.0": 0.018384
+        },
+        "écart_max_relatif": 99.00000000000003
+      }
+    },
+    "moteur_défaillant": {
+      "ReN_a": {
+        "valeurs_par_A": {
+          "0.01": 55.766907,
+          "0.1": 55.766907,
+          "1.0": 55.766907,
+          "10.0": 55.766907,
+          "100.0": 55.766907
+        },
+        "écart_max_relatif": 3.8223891768985217e-16
+      },
+      "ReN_b": {
+        "valeurs_par_A": {
+          "0.01": 69026.428103,
+          "0.1": 6902.7285,
+          "1.0": 690.273707,
+          "10.0": 69.027379,
+          "100.0": 6.902738
+        },
+        "écart_max_relatif": 98.99863446890345
+      },
+      "ReN_c": {
+        "valeurs_par_A": {
+          "0.01": 0.405484,
+          "0.1": 4.054845,
+          "1.0": 40.548447,
+          "10.0": 405.484474,
+          "100.0": 4054.844743
+        },
+        "écart_max_relatif": 99.00000000000001
+      }
+    },
+    "ecg_normal": {
+      "ReN_a": {
+        "valeurs_par_A": {
+          "0.01": 1.1e-05,
+          "0.1": 1.1e-05,
+          "1.0": 1.1e-05,
+          "10.0": 1.1e-05,
+          "100.0": 1.1e-05
+        },
+        "écart_max_relatif": 1.3658360493040944e-15
+      },
+      "ReN_b": {
+        "valeurs_par_A": {
+          "0.01": 0.044805,
+          "0.1": 0.004481,
+          "1.0": 0.000448,
+          "10.0": 4.5e-05,
+          "100.0": 4e-06
+        },
+        "écart_max_relatif": 98.99702418204116
+      },
+      "ReN_c": {
+        "valeurs_par_A": {
+          "0.01": 0.0,
+          "0.1": 1e-06,
+          "1.0": 1.3e-05,
+          "10.0": 0.000133,
+          "100.0": 0.001335
+        },
+        "écart_max_relatif": 99.00000000000001
+      }
+    },
+    "eeg_intention": {
+      "ReN_a": {
+        "valeurs_par_A": {
+          "0.01": 66.379251,
+          "0.1": 66.379251,
+          "1.0": 66.379251,
+          "10.0": 66.379251,
+          "100.0": 66.379251
+        },
+        "écart_max_relatif": 2.1408579476262664e-16
+      },
+      "ReN_b": {
+        "valeurs_par_A": {
+          "0.01": 178378.271186,
+          "0.1": 17838.226209,
+          "1.0": 1783.826612,
+          "10.0": 178.382701,
+          "100.0": 17.838271
+        },
+        "écart_max_relatif": 98.99753899328732
+      },
+      "ReN_c": {
+        "valeurs_par_A": {
+          "0.01": 1.185641,
+          "0.1": 11.856409,
+          "1.0": 118.564094,
+          "10.0": 1185.640939,
+          "100.0": 11856.409391
+        },
+        "écart_max_relatif": 98.99999999999997
+      }
+    }
+  },
+  "moyennes_par_signal": {
+    "sinusoïde": {
+      "ReN_a": 10000563700.185535,
+      "ReN_b": 3339049430.469102
+    },
+    "moteur_sain": {
+      "ReN_a": 0.0001673081926217896,
+      "ReN_b": 0.00015225154536561053
+    },
+    "moteur_défaillant": {
+      "ReN_a": 62.276133472579374,
+      "ReN_b": 81.88411117322414
+    },
+    "ecg_normal": {
+      "ReN_a": 0.756286785788492,
+      "ReN_b": 0.5895126268838718
+    },
+    "eeg_intention": {
+      "ReN_a": 69.04757494068473,
+      "ReN_b": 41.52134171904663
+    }
+  },
+  "saturation": {
+    "sinusoïde": {
+      "ReN_a_max": 10000805498.822447,
+      "ReN_b_max": 9966873150.728302,
+      "sature": true
+    },
+    "moteur_sain": {
+      "ReN_a_max": 0.000167,
+      "ReN_b_max": 0.120641,
+      "sature": false
+    },
+    "moteur_défaillant": {
+      "ReN_a_max": 55.766907,
+      "ReN_b_max": 69026.428103,
+      "sature": false
+    },
+    "ecg_normal": {
+      "ReN_a_max": 1.1e-05,
+      "ReN_b_max": 0.044805,
+      "sature": false
+    },
+    "eeg_intention": {
+      "ReN_a_max": 66.379251,
+      "ReN_b_max": 178378.271186,
+      "sature": false
+    }
+  },
+  "ordres": {
+    "ReN_a": [
+      "moteur_sain",
+      "ecg_normal",
+      "moteur_défaillant",
+      "eeg_intention",
+      "sinusoïde"
+    ],
+    "ReN_b": [
+      "moteur_sain",
+      "ecg_normal",
+      "eeg_intention",
+      "moteur_défaillant",
+      "sinusoïde"
+    ]
+  },
+  "critères": {
+    "C1_invariance_échelle_a_et_b": false,
+    "C2_séparation_préservée": true,
+    "C3_saturation_confinée": true,
+    "C4_cohérence_ordre": false
+  },
+  "score": "2/4",
+  "statut": "PARTIEL",
+  "falsifieur": "toute fuite d'amplitude résiduelle (C1), écrasement de la séparation (C2) ou incohérence d'ordre (C4) tue la normalisation — F16 resterait ouverte, mesurée",
+  "durée_s": 0.3,
+  "sha256_script": "91fde398499db6398237c9d4b1d1bd466377832ff1341a60a348902146b4ecc0"
+}

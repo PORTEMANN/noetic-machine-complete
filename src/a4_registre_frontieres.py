@@ -107,7 +107,16 @@ FRONTIÈRES = [
         "A3-KO6-REENUMERATION", "TAMIS-KO6-1.0", "ouverte",
         "implémenter les VRAIS axiomes KO-6 au niveau des représentations "
         "(J_F²=+1, J_FD_F=D_FJ_F, (J_Fγ_F)²=−1, ordre un sur les blocs de "
-        "D_F), ré-énumérer sous bornes déclarées, publier le compte",
+        "D_F), ré-énumérer sous bornes déclarées, publier le compte — "
+        "PARTIELLEMENT PAYÉ par A3b (KO6-REAL-1.0, 2026-08-31) : le "
+        "vérificateur matriciel des axiomes est exécutable et certifié "
+        "(triplet compatible trouvé par énumération déclarée 36 J₀ × 80 D, "
+        "les 3 axiomes + ordre un tués un à un détectés — dont 2 leviers "
+        "initiaux erronés publiés en B3-FAIL) ; coquille mesurée dans "
+        "l'énoncé figé (« (J_F γ_F)² = −1 » incompatible avec J²=+1, "
+        "Jγ=+γJ — la table de Connes prime) ; l'espace sous bornes est "
+        "mesuré (4 723 712 matrices) ; L'ÉNUMÉRATION COMPLÈTE reste à "
+        "exécuter — coût restant publié",
         {"verdict": "déficit",
          "justification": "les proxys (matrices de multiplicité) sont en "
                           "déficit de structure : la fermeture exige les "
@@ -115,9 +124,12 @@ FRONTIÈRES = [
                           "γ_F, D_F sur H_F), pas seulement leurs traces "
                           "matricielles"},
         {"script": "a3_ko6_reenumeration.py",
-         "verdict": "a3_ko6_reenumeration_verdict.json"},
+         "verdict": "a3_ko6_reenumeration_verdict.json",
+         "vérificateur_réel": "a3b_ko6_verificateur.py + verdict "
+                             "(A3b : 4/4 — axiomes exécutables)"},
         "toute exécution du moteur commité (plafond retiré) produisant ≥ 1 "
-        "solution tue l'entrée"),
+        "solution tue l'entrée ; l'énumération complète sous les vrais "
+        "axiomes la ferme"),
     entree(
         "F5-BPS-ECHELLE", "physique",
         "C(ρ=0) = 1 (BPS) n'est pas atteint par relaxation sur boîte finie : "
@@ -257,7 +269,12 @@ FRONTIÈRES = [
         "deux fermetures orthogonales mesurées : excitabilité = phase sur "
         "S¹ (+1 ddll, P35) ; mémoire biologique = approximation de rang "
         "fini du noyau ∞D (le vivant empile des canaux lents — coût "
-        "mesuré : rang 2 insuffisant, 0.152 d'erreur max)",
+        "mesuré : rang 2 insuffisant, 0.152 d'erreur max). Contrôle sur "
+        "données réelles NON exécuté (2026-08-31) : les données Allen "
+        "figées sont des trains de spikes, pas des traces de facilitation/"
+        "dépression synaptique — la voie exige un dataset d'adaptation "
+        "(déclaré, non disponible localement) ; F11 reste ouverte, "
+        "le manque est publié",
         {"verdict": "déficit",
          "justification": "le candidat fractionnaire possède la mémoire "
                           "(∞D de noyau distribué) mais pas l'excitabilité "
@@ -390,18 +407,26 @@ FRONTIÈRES = [
         "pas le régime (P43-C3, prédiction de réfutation pré-enregistrée "
         "et confirmée ; le B3-FAIL était déjà documenté dans le code "
         "noetic-ash du 26/08/2026, P43 l'a mesuré)",
-        "P43-ASH-SOUS-MACHINE (2026-08-30)", "ASH-MACH-1.0", "partielle",
+        "P43-ASH-SOUS-MACHINE (2026-08-30)", "ASH-MACH-1.0 + REN-NORM-1.0", "fermée",
         "reformuler ReN avec une normalisation d'amplitude déclarée et "
         "vérifier sur la batterie P43 que la séparation des régimes "
-        "survit à l'invariance d'échelle",
+        "survit à l'invariance d'échelle — PAYÉ par P46 (REN-NORM-1.0) : "
+        "ReN_a = (Rdyn+ε)(Rtop·D)/(H+ε)·100 (pression entropique pure, "
+        "Rc supprimé) — fuite d'amplitude réduite de ×100 à ≤ 1,13e-7 "
+        "(4/5 signaux à 1e-15 ; réserve mesurée et publiée : le cas "
+        "d'entropie dégénérée H≈0) ; séparation des 5 signaux préservée ; "
+        "ReN_b (pression par note) éliminé (n_act ne compense pas), "
+        "ReN_c (orientation physique) rejeté par principe — mesuré",
         {"verdict": "hors-domaine",
          "justification": "frontière de méthode (instrument de mesure) — "
                           "pas un comptage de ddll"},
         {"script": "p43_ash_sous_machine.py",
          "verdict": "p43_ash_sous_machine_verdict.json",
+         "fermeture": "p46_ren_normalise.py + p46_ren_normalise_verdict.json",
          "S_figée": "p43_ash_core_v100.py (ash_core v1.0.0, blob c9dd73c2…)"},
-        "un ReN normalisé, invariant d'échelle, conservant la séparation "
-        "des régimes sur la batterie P43 tue l'entrée"),
+        "un ReN normalisé invariant d'échelle tuant l'entrée — tuée par "
+        "P46 (ReN_a adopté) ; toute mesure de fuite d'amplitude > 1e-6 "
+        "hors cas d'entropie dégénérée publié rouvre l'entrée"),
     entree(
         "F17-EEG-MI-Essai-Unique", "méthode",
         "La chaîne ASH → M̂ à zéro paramètre ne lit PAS la direction "
@@ -417,12 +442,19 @@ FRONTIÈRES = [
         "(ii) baseline de repos du sujet figée comme D (donnée C12.1, "
         "pas paramètre fitté) ; (iii) filtrage spatial structurel dérivé "
         "(CSP ajusté interdit) — chaque voie exige un protocole gelé et "
-        "une ré-exécution sur A01T–A09T",
+        "une ré-exécution sur A01T–A09T. VOIE (i) MESURÉE INSUFFISANTE "
+        "par P47 (EEG-AGG-1.0, 2026-08-31) : vote majoritaire sur blocs "
+        "de N ∈ {1..12} essais — moyenne max 0,5926 < 0,60 (seuil figé) ; "
+        "le sujet fort A03 atteint 1,0 à N=12, les sujets faibles restent "
+        "au hasard ; écarts à la montée binomiale publiés (essais non "
+        "indépendants). Restent (ii) et (iii) — publié, pas effacé",
         {"verdict": "hors-domaine",
          "justification": "frontière de méthode (capacité de la chaîne) — "
                           "pas un comptage de ddll"},
         {"script": "p44_eeg_mi_reel.py",
          "verdict": "p44_eeg_mi_reel_verdict.json",
+         "voie_i_mesurée": "p47_eeg_aggregation.py + verdict "
+                          "(P47 : ÉCHEC publié — voie (i) insuffisante)",
          "données": "BCICIV-2a zip SHA 65fe93cb… (externe, non commité)"},
         "toute règle zéro paramètre atteignant ≥ 0.60 de moyenne ET "
         "≥ 5/9 sujets significatifs sur A01T–A09T tue l'entrée"),
