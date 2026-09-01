@@ -112,7 +112,7 @@ Série distincte du noyau P0–P33 : la machine éprouve les **bifurcations de c
 | A1 | batterie de perturbation (π perturbé, D et S intacts) | PASS — fragilités publiées par chantier, prédictions de fragilité éprouvées |
 | A2 | moteur de leviers | PASS — le moteur ne voit que ce qui existe |
 | A3 | tamis de Jastrow (N=64/96/128) + réénumération KO-6 | le plafond « 63 160 » est **réfuté comme publié** (B3-FAIL du corpus) ; l'énumération KO-6 propre reste ouverte, coût de fermeture déclaré |
-| A4 | registre des frontières REG-FR-1.0 | **20 entrées** F1–F20 (10 fermées, **4 ouvertes**, **6 partielles**), ddll par entrée, falsifieurs pré-enregistrés, SHA global `9b87f2a10027b5fe…` |
+| A4 | registre des frontières REG-FR-1.0 | **20 entrées** F1–F20 (10 fermées, 4 ouvertes, 6 partielles), ddll par entrée, falsifieurs pré-enregistrés, SHA global `17f1d5a9cd0fc78f…` |
 | A5 | conjecture des frontières | v1 **réfutée** par F5 + F7 + F14 (10/13) ; v2 en vigueur (11/13 points) |
 | A1b | batterie rétroactive P13/P22 (ferme F7) | couples (V, Σ) publiés : P13 Σ=1 (4/4) ; P22 Σ_min=0.94 (5/6 inchangé), une fragilité de seuil publiée ; prédictions pré-enregistrées confirmées |
 
@@ -122,7 +122,7 @@ M1 (ECO-1.0) éprouve le postulat central du corpus sur 23 chantiers, métriques
 
 **Série M2 — métrologie de la liberté (le registre devient algèbre)** : le comptage ddll devient une mesure formelle d ∈ ℕ̄ avec monoïde des coûts, composition et ordre de fermeture (M2, cohérence 18/18, image ponctuelle {0,1}) ; homomorphisme mesuré d(t^m∘t^k) = d(m)+d(k) et conversion profondeur↔largeur (M2b, 26/26) ; ordre enrichi et loi prospective L5 confrontée à deux familles neuves (M2c : parité d(n)=n — F19 ; M2e : tri de Batcher à la borne informationnelle — F20) ; surface de coût d(m,k) exacte et optimum mesuré d*(m)=2m (M2d) ; copie d(n)=n **certifiée minimale** (Lévy–Desplanques). Série : 5/5 + 4/4 + 4/4 + 4/4 + 3/3.
 
-**Optimisation enchaînée (31/08) :** P46 ferme **F16** (ReN normalisé : pression entropique pure, fuite d'amplitude ×100 → ≤ 1,13e-7, séparation préservée) · P47 mesure la voie (i) de **F17** insuffisante (vote EEG, 0,5926 < seuil figé — B3-FAIL publié) · **P39b** (atomes 2D : convention 3D réfutée et publiée, cusp 2D = −2Z exact, intégrateur 2D exige l'elliptique K — coût mesuré) · **A3b** certifie le vérificateur des vrais axiomes KO-6 (4/4, coquille F4 publiée). Registre : 10 fermées / 5 ouvertes / 5 partielles.
+**Optimisation enchaînée (31/08) :** P46 ferme **F16** (ReN normalisé : pression entropique pure, fuite d'amplitude ×100 → ≤ 1,13e-7, séparation préservée) · P47 mesure la voie (i) de **F17** insuffisante (vote EEG, 0,5926 < seuil figé — B3-FAIL publié) · **P39b** (atomes 2D : convention 3D réfutée et publiée, cusp 2D = −2Z exact, intégrateur 2D exige l'elliptique K — coût mesuré) · **A3b** certifie le vérificateur des vrais axiomes KO-6 (4/4, coquille F4 publiée). Registre : 10 fermées / 4 ouvertes / 6 partielles (P39b : la fermeture r₁₂ tient en dimension 2 — SUCCÈS 4/4, Richardson mesuré p=0,892).
 
 ### Données figées hors dépôt
 
