@@ -1,0 +1,44 @@
+{
+  "chantier": "P39B-V3-ATOMES-2D-RICHARDSON",
+  "protocole": "R12-2D-1.2 (addendum à R12-2D-1.0/1.1, écrit avant exécution)",
+  "réparation": "extrapolation de Richardson déclarée — ordre p mesuré, pas de forme analytique exigée",
+  "v1_v2_conservées": "p39b_atomos_2d_verdict.json (43b8a799…) + p39b_v2_atomos_2d_elliptique_verdict.json (0a07f59a…)",
+  "T0_T1": {
+    "E_mesuré": -2.003220995097062,
+    "cusp_mesuré": -2.0
+  },
+  "T2": {
+    "E_150": -9.990181053742354,
+    "E_300": -10.46940149370567,
+    "E_600": -10.727663688017872,
+    "ordre_p_mesuré": 0.891852973900275,
+    "E_star_300": -11.02952778371797,
+    "E_star_600": -11.02952778371797,
+    "écart_extrapolé": 0.0
+  },
+  "T3": {
+    "gains_par_beta": {
+      "0.25": -10.20139,
+      "0.5": -10.31405,
+      "0.75": -10.37932,
+      "1.0": -10.41976,
+      "1.5": -10.46273,
+      "2.0": -10.48115
+    },
+    "E_best": -10.48115
+  },
+  "T4": {
+    "borne_tenue": true
+  },
+  "critères": {
+    "T0_T1_hérités": true,
+    "T2_convergence_Richardson": true,
+    "T3_fermeture_2D": true,
+    "T4_borne_variationnelle": true
+  },
+  "score": "4/4",
+  "statut": "SUCCÈS",
+  "falsifieur": "p ≤ 0 ou écart extrapolé ≥ 0,01 Ha → soustraction analytique du log exigée (publié) ; T3 négatif → fermeture dimensionnelle ; T4 violé → fuite",
+  "durée_s": 17.7,
+  "sha256_script": "77a594ab50c68b4f3bd28f5b93bae3de9c7f17a691563b57b81e359fbe0c349d"
+}

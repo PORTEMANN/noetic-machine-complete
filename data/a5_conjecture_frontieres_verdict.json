@@ -3,7 +3,7 @@
   "protocole": "CONJ-FR-1.0 (gelé) — registre A4 comme donnée figée, domaine déclaré avant agrégation, aucune réinterprétation",
   "donnée": {
     "registre": "A4-FRONTIÈRES-MESURÉES",
-    "sha256_registre": "9b87f2a10027b5fe07736b7679d170f6a6a78938840589ba9ee027bba80a71a8"
+    "sha256_registre": "17f1d5a9cd0fc78f570e2abf0d7161758c1f514c9bb6adcdd8f27cccf7836dcf"
   },
   "points_mesurés": {
     "F1-XOR": "déficit",

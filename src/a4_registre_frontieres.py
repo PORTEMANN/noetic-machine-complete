@@ -97,7 +97,13 @@ FRONTIÈRES = [
         {"script": "p39_fermeture_r12.py",
          "verdict": "p39_fermeture_r12_verdict.json",
          "b3_fail_corpus": "intégrande P31 (mélange de formes IBP) — "
-                           "republication requise (voir F9)"},
+                           "republication requise (voir F9)",
+         "extension_2D": "P39b (v1→v2→v3, R12-2D-1.0/1.1/1.2) — fermeture "
+                         "r₁₂ mesurée en dimension 2 (Richardson p=0,892, "
+                         "E* = −11,02953 Ha, T3 tenue, borne T4 tenue ; "
+                         "intégrateur 2D = elliptique K + extrapolation "
+                         "déclarée ; ma convention 3D réfutée et publiée "
+                         "en v1)"},
         "toute exécution de R12-FERM-1.0 donnant F1×R3 perdante en un Z du "
         "domaine variationnel rouvre la frontière"),
     entree(

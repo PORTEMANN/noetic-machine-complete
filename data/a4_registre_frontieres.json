@@ -83,10 +83,11 @@
       "artefacts": {
         "script": "p39_fermeture_r12.py",
         "verdict": "p39_fermeture_r12_verdict.json",
-        "b3_fail_corpus": "intégrande P31 (mélange de formes IBP) — republication requise (voir F9)"
+        "b3_fail_corpus": "intégrande P31 (mélange de formes IBP) — republication requise (voir F9)",
+        "extension_2D": "P39b (v1→v2→v3, R12-2D-1.0/1.1/1.2) — fermeture r₁₂ mesurée en dimension 2 (Richardson p=0,892, E* = −11,02953 Ha, T3 tenue, borne T4 tenue ; intégrateur 2D = elliptique K + extrapolation déclarée ; ma convention 3D réfutée et publiée en v1)"
       },
       "falsifieur": "toute exécution de R12-FERM-1.0 donnant F1×R3 perdante en un Z du domaine variationnel rouvre la frontière",
-      "sha256_entrée": "c2fc75280ed83abb16782d4455dfc8fb0dae02821a0ea405ef3ccf38748ea83f"
+      "sha256_entrée": "131041ddb768378c3abbc5e2dd889a51864062b85925c0a67b40c9035c140b14"
     },
     {
       "id": "F4-KO6-ENUMERATION",
@@ -423,6 +424,6 @@
       "sha256_entrée": "d76976181678ce3ae46c830b582eb17d126c4a088994d7fb6d0ecfd7a99ee097"
     }
   ],
-  "sha256_registre": "9b87f2a10027b5fe07736b7679d170f6a6a78938840589ba9ee027bba80a71a8",
-  "sha256_script": "5589bf667f402ff574720bd9f0e9e1a633bda34e49fed75f90b6130c1f8d48ce"
+  "sha256_registre": "17f1d5a9cd0fc78f570e2abf0d7161758c1f514c9bb6adcdd8f27cccf7836dcf",
+  "sha256_script": "18e132871f80daec932a5bc9880a76759afa17949ad2b254de982a046f3263fc"
 }

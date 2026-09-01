@@ -1,0 +1,45 @@
+{
+  "chantier": "P39B-V2-ATOMES-2D-ELLIPTIQUE",
+  "protocole": "R12-2D-1.1 (addendum à R12-2D-1.0, écrit avant exécution)",
+  "réparation": "θ-intégrale de 1/r12 exacte via elliptique K ; le reste en trapèze ; w/u par sous-intervalles à singularité exacte (déclaré)",
+  "v1_conservée": "p39b_atomos_2d_verdict.json (PARTIEL 3/4, sha 43b8a799…)",
+  "T0_T1": {
+    "E_mesuré": -2.003220995097062,
+    "cusp_mesuré": -2.0
+  },
+  "T2": {
+    "E_split": -10.4694,
+    "(a,b)": [
+      2.6,
+      2.6
+    ],
+    "référence_grille_x2": -10.72766,
+    "écart": 0.2582621943121719
+  },
+  "T3": {
+    "gains_par_beta": {
+      "0.25": -10.20139,
+      "0.5": -10.31405,
+      "0.75": -10.37932,
+      "1.0": -10.41976,
+      "1.5": -10.46273,
+      "2.0": -10.48115
+    },
+    "E_best": -10.48115
+  },
+  "T4": {
+    "borne_tenue": true
+  },
+  "critères": {
+    "T0_T1_hérités": true,
+    "T2_convergence_K": false,
+    "T3_fermeture_2D": true,
+    "T4_borne_variationnelle": true
+  },
+  "score": "3/4",
+  "statut": "PARTIEL — 3/4 (diagnostic radial mesuré et publié)",
+  "falsifieur": "T2 non convergent → quadrature insuffisante ; T3 négatif → fermeture dimensionnelle ; T4 violé → fuite numérique — tout publié",
+  "durée_s": 46.2,
+  "sha256_script": "0a07f59ac21f5fc959e99255551e14644e5e1052f70077784c0bb704bf6c08e5",
+  "diagnostic_mesuré_v2": "L'elliptique K a corrigé l'échelle (2534 → −10,5 Ha, domaine physique) et la fermeture T3 tient avec la borne T4 — mais K(m) diverge logarithmiquement en r1→r2, et le trapèze radial sur une divergence log converge trop lentement pour le critère 0,01 Ha (écart mesuré 0,258). Coût de fermeture restant mesuré et publié : soustraction analytique de la singularité log en (r1−r2) (K(m) ≈ ln(4/√(1−m)) pour m→1) ou quadrature singulière déclarée. Publié tel quel — la chaîne ne ré-ajuste pas le critère après la mesure."
+}
