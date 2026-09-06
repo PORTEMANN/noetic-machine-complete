@@ -14,6 +14,18 @@
 
 ---
 
+## Gouvernance du corpus (sept. 2026)
+
+Ce dépôt est régulé par trois fichiers de gouvernance, gelés en addenda seulement :
+
+- **[CONVENTIONS.md](CONVENTIONS.md)** — registre des **conventions datées** (tables de signes KO-6, définition de R, bornes d'énumération, proxys de comptage). Règle permanente : **un mot = un objet**.
+- **[AXIOMES.md](AXIOMES.md)** — **page minimale d'axiomes**, sans cible numérique ; lemme de parité conditionnel ; champion étalon 4×4 (C4) ; test unique d'un candidat.
+- **[CAMPAIGNS.md](CAMPAIGNS.md)** — **registre des campagnes** : objet / protocole / falsifieur écrits *avant* chaque run, prédiction pré-enregistrée, verdict publié au même niveau succès ou B3-FAIL, et **boucle de régulation post-campagne** en 7 points.
+
+Toute nouvelle campagne cite ses conventions par ID, publie son verdict au même niveau de titre, et déclenche la boucle de régulation (frontières, SHASUMS, alignement des dépôts satellites). Voir aussi l'erratum daté sur [spectral-triple-minimality](https://github.com/PORTEMANN/spectral-triple-minimality) (T3 « 63 160 » : réfuté comme publié — audit A3 de ce dépôt).
+
+---
+
 ## Qu'est-ce que la Machine Noétique ?
 
 La Machine Noétique n'est ni un modèle au sens usuel, ni un solveur, ni un système d'apprentissage. C'est un **opérateur de verdict** sur des structures physiques candidates :
@@ -149,6 +161,9 @@ Les gros artefacts de P41 (NWB bruts Allen Cell Types + catalogues, ≈ 80 Mo) s
 ```
 ├── LICENSE                          # MIT
 ├── README.md
+├── CONVENTIONS.md                   # registre des conventions datées (gouvernance)
+├── AXIOMES.md                       # page minimale d'axiomes gelés (gouvernance)
+├── CAMPAIGNS.md                     # registre des campagnes + régulation post-campagne
 ├── docs/                            # notes PDF (verdicts + synthèses)
 │   └── Note_*.pdf
 ├── src/                             # scripts Python par chantier
@@ -183,6 +198,6 @@ python3 src/p33_queue.py       # → double contrainte cusp + queue asymptotique
 
 ## Règles permanentes du chantier
 
-B3-FAIL (échecs publiés) · C12.1 (protocoles gelés pour le programme principal, canal libre ici) · *fermer, ne pas ajouter* · *conserver les versions* (addenda seulement) · *motivation, pas postulat*.
+B3-FAIL (échecs publiés) · C12.1 (protocoles gelés pour le programme principal, canal libre ici) · *fermer, ne pas ajouter* · *conserver les versions* (addenda seulement) · *motivation, pas postulat* · **un mot = un objet** (conventions datées dans `CONVENTIONS.md`).
 
 Le Programme 2027 reste fermé ; ce dépôt est le **canal exploratoire hors-programme**.
