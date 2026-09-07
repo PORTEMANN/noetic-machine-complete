@@ -14,6 +14,11 @@ indécidable). Ce registre est le journal officiel des campagnes du corpus.
 Ce registre ne signe que le **banc**. Le site et les essais peuvent tout dire ; GitHub ne
 signe que le test.
 
+Références vivantes de l'écosystème :
+- Registre canonique : https://index.portemann.eu/index.php?page=registre
+- Table des tables : https://index.portemann.eu/index.php?page=tables
+- Divergences : https://index.portemann.eu/index.php?page=divergences
+
 ---
 
 ## Modèle de fiche (à remplir AVANT chaque run)
@@ -51,8 +56,32 @@ Après **chaque** campagne, dans l'ordre :
    sont marqués comme tels. Le hash atteste l'octet, pas l'axiome.
 6. **Pas de critère déplacé** — si un critère change après un échec : clôture datée de
    l'ancienne question ET ouverture datée de la nouvelle. Jamais de déplacement silencieux.
-7. **Alignement externe** — les surfaces publiques (README des dépôts satellites, profil
-   PORTEMANN, index portemann.eu) sont alignées sur le verdict, y compris pour un B3-FAIL.
+7. **Alignement externe — « verdict → tables »** — les surfaces publiques sont alignées
+   sur le verdict, y compris pour un B3-FAIL. Une valeur = une source unique : le
+   **registre canonique** (index.portemann.eu) fait foi, tout le reste cite.
+
+### Point 7 détaillé — checklist « verdict → tables »
+
+À cocher après chaque verdict modifiant une valeur canonique :
+
+- [ ] Valeur entrée au registre canonique (`data/registre.csv` de l'index), ou mention
+      « inchangée » dans la note de campagne — avec statut ◆ établi / ◇ modèle /
+      ◈ conjecture / ✗ réfuté, date de valeur, source, alias historiques conservés
+- [ ] Statut épistémique cohérent avec la charte ◆/◇/◈/✗ du site
+- [ ] Articles WordPress citant l'ancienne valeur : **addendum daté** en tête
+      (corps conservé tel qu'écrit), lien vers le registre
+- [ ] Page Divergences de l'index : écart marqué `resolue` (daté, pointant vers le
+      registre) — jamais effacé
+- [ ] Atlas machine-noetique : titre/compteurs alignés (ou relevé figé explicité)
+- [ ] Chronologie : prédiction concernée mise à jour (valeur + date)
+- [ ] Techniques : page concernée citant le registre (ex. Z_max dans `anu.php`)
+- [ ] SPA (portemann.eu, noeticindustries.com) : compteurs et cartes alignés,
+      cache-buster incrémenté
+- [ ] `data/tables.csv` de l'index : ligne ajoutée ou contenu rafraîchi (nature de lien :
+      calculé / mesuré / documentaire / analogique)
+- [ ] Manifests des vhosts touchés incrémentés (version datée à chaque déploiement) ;
+      relevé daté dans les pieds de page si la valeur canonique affichée change
+- [ ] Vérification live de chaque propriété touchée (HTTP 200 + chaîne attendue)
 
 ---
 
@@ -80,4 +109,6 @@ tiroir thèse.
 ---
 
 *Registre ouvert le 2026-09-06, en réponse à la note de lecture « Incohérences internes du
-corpus Portemann » (sept. 2026). Addenda seulement.*
+corpus Portemann » (sept. 2026). Addenda seulement. Point 7 détaillé ajouté le 07/09/2026
+lors du câblage de l'écosystème — il formalise la propagation appliquée pour Z_max = 180,
+« 63 160 » réfuté, 11 dépôts publics et le corpus P0–P48.*
