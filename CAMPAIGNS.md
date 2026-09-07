@@ -98,6 +98,26 @@ Après **chaque** campagne, dans l'ordre :
 
 ---
 
+## Corridor de falsification (fiches pré-enregistrées, non lancées — daté 07/09/2026)
+
+Sept tests pré-enregistrés, chacun avec son falsifieur ; aucun n'est lancé à la date de
+dépôt. Chaque lancement futur devient une campagne au sens du présent registre.
+
+| Fiche | Test | Prédiction pré-enregistrée | Falsifieur |
+|---|---|---|---|
+| COR-BELL | Bell noétique, d = 1 m | S = 3,23 ± 0,05 (au-delà de 2√2) | S < 2,83 |
+| COR-RMN | résonance ANU k = 3 | ΔB = 0,5 mT | pas de pic à B_res |
+| COR-PATCH | patch-clamp sous champ focalisé | ΔV_m = −5 mV | \|ΔV_m\| < 1 mV |
+| COR-FEXP | loi harmonique δ^n hors calibrage | F_exp ∈ [0,97 ; 1,03] sur particules non calibrées | hors corridor |
+| COR-FISSION | pics secondaires de fission | A = 63, 110, 126, 173 | spectre lisse |
+| COR-RNU | neutrinos, cible cristalline vs amorphe | R_ν ∝ e^(−β₄ΔS₄) | pas de contraste |
+| COR-HZ | H(z) filtré par F₄ sans ajuster Ω_Λ | variation > 3–5 % sur H(z) | ajustement nécessaire |
+
+Ces fiches sont pré-enregistrées lors du câblage du 07/09/2026 (entrée noetic-mdu) ;
+leur lancement relève d'une décision d'auteur datée.
+
+---
+
 ## Prochaine campagne candidate (tiroir banc)
 
 **Q-KO6-2026-09** — *Sous la table C-KO6-A3b (datée), existe-t-il (D, J, γ) de taille n
