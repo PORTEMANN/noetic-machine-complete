@@ -57,5 +57,21 @@ le nombre ; un invariant ne dépend pas d'un identifiant de variable.
 
 ---
 
+## C-MACHINES — Les deux classes de machines (daté 07/09/2026)
+
+La classe d'architecture et l'opérateur de verdict, articulés :
+
+- **MDU (Machine Dynamique Unifiée)** — la classe d'architecture (définie le 12/01/2026,
+  art. « Systèmes complexes II ») : elle **produit et classe** les structures candidates
+  (7 plans, adaptateurs par échelle, invariants bornés). Dépôt : `noetic-mdu`.
+- **La machine à éprouver** (« sixième classe », l'opérateur de verdict) : elle **statue**
+  sur les structures que la MDU achemine — protocole figé, levier discriminant, artefacts
+  hashés. Dépôt : `noetic-machine-complete` (principal).
+
+Règle : la MDU alimente, la machine à éprouver statue ; aucune fiche ne sort de la MDU
+sans falsifieur, aucun verdict sans levier. (Articulation proposée lors de la création de
+noetic-mdu ; enregistrée ici le 07/09/2026.)
+
+
 *Registre ouvert le 2026-09-06, en réponse à la note de lecture « Incohérences internes du
 corpus Portemann » (sept. 2026). Addenda seulement.*
