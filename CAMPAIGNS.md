@@ -118,6 +118,28 @@ leur lancement relève d'une décision d'auteur datée.
 
 ---
 
+### Verdicts locaux et réparations du corridor (07/09/2026)
+
+Calculs locaux (arithmétique interne des fiches) — aucune campagne physique lancée :
+
+- **COR-RMN** — *réparée* : la forme publiée (c_éth = 10⁹c) donne ΔB ≈ 4×10³² T (hors cible
+  ~10³⁵). Réparation par la fréquence phare du corpus (ω_res = 7,83 Hz) : **B_res = m_e c·ω/ge
+  ≈ 42 mT** — mesurable au laboratoire ordinaire. Variante déclarée : la cible 0,5 mT
+  correspond à ω = 0,093 Hz. La forme choisie sera datée.
+- **COR-BELL** — *clôture proposée* : le « +0,4 » n'a pas de source dans les paramètres
+  publiés (calculé : ΔS ≈ 4×10⁻³⁹). Réparer exigerait à la fois le signe de l'exposant et
+  l'échelle (ξ_eff ≈ 1,1 cm vs 10⁸ m) — critère déplacé : point 6 de la boucle → clôture
+  datée + nouvelle fiche si une forme réparée est posée. Jamais de déplacement silencieux.
+- **COR-FEXP** — *migrée* : δ^n à référence unique : 0/10 au corridor (bases implicites par
+  ligne : 1,0 à 77 954 MeV — circularité mesurée). La forme est close, datée. La fiche vit
+  migrée vers les ratios à constantes déclarées (m_Z = 137,036·m_p/√2 : 0,3 % ; m_μ :
+  0,6 % ; m_t : 0,8 % ; m_u : 1,2 % — recalculés le 07/09) : **COR-FEXP v2** : ces ratios sur
+  quantités hors construction ; falsifieur : écart > 3 % systématique hors calibrage.
+- **COR-FISSION** — *close* : réfutée sur JEFF-3.1.1 (verdict existant, koilon-scale-e8) ;
+  renvoi daté.
+
+---
+
 ## Prochaine campagne candidate (tiroir banc)
 
 **Q-KO6-2026-09** — *Sous la table C-KO6-A3b (datée), existe-t-il (D, J, γ) de taille n
