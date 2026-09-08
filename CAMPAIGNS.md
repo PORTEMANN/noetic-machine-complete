@@ -194,9 +194,9 @@ n'a pas été déplacé pour sauver le résultat.
   75,0 %). F1 violé 4 fois, F2 violé 55 fois. Levier discriminant : pas d'effondrement
   (55 stables prédits avec coupure k ≤ 9 ; 89 sans coupure ; ratio 1,62 < 2)
 - **Artefacts** : `src/p49_sqf_islands.py` (49fcdc63…ee3906),
-  `data/p49_data_nubase2020_z104.csv` (1b4c6f5d…04c959),
-  `data/p49_verdict.json` (56389d43…943ce4) — empreintes complètes dans
-  `data/p49_p51_shasums.txt`
+  `data/p49_data_nubase2020_z104.csv` (e9e8e870…ab6d1e),
+  `data/p49_verdict.json` (34d55606…22ae27) — empreintes complètes dans
+  `data/p49_p51_shasums.txt` (calculées sur les octets du dépôt)
 - **Suites régulées** : la règle sqf ne doit plus être citée comme prédiction des îlots
   super-lourds sans réparation datée ; la spécificité correcte (75 %) mais la sensibilité
   faible (34,5 %) localisent la réparation éventuelle du côté de la condition
@@ -243,7 +243,7 @@ n'a pas été déplacé pour sauver le résultat.
   0,148. Les invariants ASH tels que gelés ne séparent pas les stades de sommeil.
 - **Artefacts** : `src/p51_sleep_ash.py` (61bb58ea…0cd8b78),
   `src/p51_prepare_sleep_edf.py` (dcc44ea3…323a22),
-  `data/p51_verdict.json` (9ae7a189…1c64) — empreintes complètes dans
+  `data/p51_verdict.json` (217a61be…296d374) — empreintes complètes dans
   `data/p49_p51_shasums.txt`. Le NPZ (62 Mo) n'est pas déposé ;
   régénération : `python3 src/p51_prepare_sleep_edf.py <dossier_edf> data/sleep_edf_segments.npz`
   sur les fichiers Sleep-EDFx 1.0.0 (PhysioNet, accès public).
@@ -262,5 +262,6 @@ n'a pas été déplacé pour sauver le résultat.
 ### Hash — boucle point 5 (08/09/2026)
 
 Les empreintes des artefacts P49–P51 sont déposées dans `data/p49_p51_shasums.txt`
-(fichier non auto-empreinté). La régénération du `SHASUMS.txt` racine reste à faire avec
-l'outillage local du dépôt (le présent dépôt a été poussé via API, sans clone local).
+(fichier non auto-empreinté, calculées sur les octets du dépôt — GitHub = source de
+vérité). La régénération du `SHASUMS.txt` racine reste à faire avec l'outillage local
+du dépôt (le présent dépôt a été poussé via API, sans clone local).
