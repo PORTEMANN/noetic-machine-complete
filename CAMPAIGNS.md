@@ -142,11 +142,11 @@ Calculs locaux (arithmétique interne des fiches) — aucune campagne physique l
 
 ## Prochaine campagne candidate (tiroir banc)
 
-**Q-KO6-2026-09** — *Sous la table C-KO6-A3b (datée), existe-t-il (D, J, γ) de taille n
-impaire vérifiant l'ordre 1 avec un scalaire complexe unique ?*
-Falsifieur : lemme ou énumération exhaustive montrant l'inexistence. Si oui : publication
-des trois matrices, pas du récit. Si non : toute prétention de dimension impaire sort du
-tiroir thèse.
+**Q-KO6-2026-09** — *exécutée* : campagne T1 (09/09/2026, réponse OUI dès n=3 — voir la
+série T1–T2–T4 en fin de registre).
+Prochaine candidate : **E45 — capture de l'enlacement nucléé** (reformulation de frontière
+d'E44 : la nucléation est observée, la conservation est le maillon manquant ; mécanismes
+candidats E37/E43). Protocole à geler avant tout run.
 
 ---
 
@@ -287,7 +287,7 @@ du dépôt (le présent dépôt a été poussé via API, sans clone local).
   ré-exécuté identique (107/188, B3-FAIL) ; P40 ré-exécuté identique (verdict complet
   conforme, données embarquées conformes) ; P51 ré-exécuté identique (0,319, B3-FAIL)
 - **Artefacts** : `src/ci_verdicts.py` (451d3bad…a36a7c),
-  `data/i3_ci_verdicts.json` (685a4e1c…d9cf20ddab16f92) — empreintes complètes dans
+  `data/i3_ci_verdicts.json` (685a4e1c…16f92) — empreintes complètes dans
   `data/p49_p51_shasums.txt`
 - **Suites régulées** : la CI devient le contrôle d'entrée de toute future publication ;
   elle aurait détecté les ruptures de traçabilité du package initial P49–P51.
@@ -296,7 +296,8 @@ du dépôt (le présent dépôt a été poussé via API, sans clone local).
 
 Deux campagnes exécutées en local le 08/09/2026 restent **hors dépôt** par décision de
 triage (elles sont citées ici pour la régulation des frontières, artefacts conservés en
-local) :
+local). T1, T2 et T4, exécutées en local le 09/09/2026, sont **publiées** — voir la
+série en fin de registre. Les deux campagnes non publiées :
 
 - **T3 — modèle nul de P49** (10 000 permutations des labels, graine 0) : la règle sqf ne
   bat pas le hasard à taux de prédictions positives égal — p = 0,099 ; spécificité 0,75
@@ -318,3 +319,128 @@ la campagne théorie prioritaire.
 | Campagne | Date | Question unique | Verdict | Suites régulées |
 |---|---|---|---|---|
 | **I3** | 2026-09-08 | Le corpus publié se ré-exécute-t-il à l'identique ? | **REPRODUCTIBLE 5/5** | CI = contrôle d'entrée de toute publication future ; T3/I1 en staging local (non publiées) ; frontière sqf **fermée** (datée) |
+
+---
+
+## Série T1–T2–T4 — KO-6 : taille impaire et classification à deux scalaires (publiée le 09/09/2026, après pause de tri)
+
+Note de gouvernance. Les trois campagnes ont été exécutées en local le
+09/09/2026 (staging) et sont publiées par décision d'auteur du 09/09/2026,
+après la pause de tri et lecture du chantier E44 (même discipline : protocole
+haché avant calcul, aveugle préservé). Les champs « gouvernance » des verdicts
+JSON conservent l'état d'avant publication (artefacts figés, non réécrits).
+T3 (modèle nul de P49) et I1 (baseline Welch) restent en staging local.
+
+### Campagne T1 — 09/09/2026
+- **Tiroir** : banc
+- **Objet** : « triplet spectral fini de taille impaire sous C-KO6-A3b » (A = ℂ)
+- **Question unique** (Q-KO6-2026-09) : sous la table C-KO6-A3b (datée),
+  existe-t-il (D, J, γ) de taille n impaire vérifiant l'ordre 1 avec un
+  scalaire complexe unique ?
+- **Conventions citées** : C-KO6-A3b ; AXIOMES.md (gelé 2026-09-06) ;
+  tolérance figée 1e-9
+- **Protocole** : `src/t1_ko6_taille_impaire.py` (T1-KO6-IMP-1.0 gelé) —
+  n ∈ {1,3,5,7} ; J₀ permutations signées par blocs, J₀²=+1 ; D réel sym.
+  hors-chiral {0,±1} ; comptage exact par orbites, recoupement brut n=3 et n=5
+- **Falsifieur** : lemme ou énumération exhaustive montrant l'inexistence
+- **Prédiction pré-enregistrée** : EXISTENCE dès n=3 ; n=1 exclu
+- **Verdict** : **OUI — existence dès n=3** — 64 couples (J₀,D) à n=3 ;
+  13 696 à n=5 ; 8 384 512 à n=7 ; n=1 exclu ({D,γ}=0 avec γ=±I force D=0).
+  Recoupement brut 6/6 blocs conformes ; exemplaires d'orbites vérifiés
+  20/20, 536/536, 12 308/12 308 ; batterie de leviers 4/4 détectée. Lecture
+  honnête déclarée : avec A=ℂ l'ordre 1 est vacuous (mesuré sur scalaires
+  aléatoires) — la substance de la question était la taille impaire. Exemple
+  minimal publié : γ=diag(1,1,−1), J₀=diag(−1,1,1), D₁₃=D₃₁=1.
+- **Artefacts** : `src/t1_ko6_taille_impaire.py`,
+  `data/t1_ko6_taille_impaire_verdict.json`,
+  `docs/t1-note-ko6-taille-impaire.md` — empreintes complètes dans
+  `data/t1_t2_t4_shasums.txt` (octets du dépôt)
+- **Incident documenté** (dans le verdict) : sous-comptage d'orbites au
+  premier run, détecté par le recoupement brut gelé, corrigé avant verdict,
+  protocole inchangé.
+
+### Campagne T2 — 09/09/2026
+- **Tiroir** : banc
+- **Objet** : « triplet de taille impaire à deux scalaires, ordre 1 non
+  vacuous » (A = ℂ⊕ℂ)
+- **Question unique** : sous C-KO6-A3b, existe-t-il (D, J, γ) de taille n
+  impaire avec A = ℂ⊕ℂ et ordre 1 non vacuous — et dans quelle classe
+  d'action de J sur les secteurs (préservation / échange / mélange) ?
+- **Conventions citées** : C-KO6-A3b ; AXIOMES.md ; vérificateur d'A3b
+  (filiation KO6-REAL-1.0) ; méthode des orbites de T1 (filiation déclarée)
+- **Protocole** : `src/t2_ko6_ordre1_impair.py` (T2-KO6-O1IMP-1.0 gelé) —
+  n ∈ {3,5,7} ; toutes (a,b) ; tous P ; tous J₀ signés involutifs par blocs ;
+  D réel hors-chiral {0,±1}, D≠0 ; filtre ordre 1 dérivé et déclaré
+  (Q′ = J₀QJ₀ reste diagonale ; condition par orbite (P_x=P_y) ∨
+  (P_{σx}=P_{σy}))
+- **Falsifieur** : un combo échangeant à n impair (tue le lemme A) ;
+  inexistence là où le lemme B prédit l'existence ; mismatch du brut n=3
+- **Prédiction pré-enregistrée** : lemme A confirmé (0 échange) ; lemme B
+  confirmé (existence dès n=3) ; mélange mesuré sans cible (discipline E1)
+- **Verdict** : **OUI en préservation et mélange ; NON en échange** —
+  lemme A confirmé (échange ⟹ rangs égaux par chiralité ⟹ n pair : 0 combo
+  échangeant sur ~1,6 M à n=3,5,7) ; lemme B confirmé ; morsure de l'ordre 1
+  mesurée (n=7 : 6 749 568 orbites libres → 4 416 896 avec ordre 1) ;
+  recoupement brut 3/3 classes ; exemplaires 112/112 vérifiés. Cas
+  « 2+2+3=7 » (rangs 2/5, n=7) : triplets vérifiés en préservation et en
+  mélange, dans les 12 découpages de chiralité.
+- **Artefacts** : `src/t2_ko6_ordre1_impair.py`,
+  `data/t2_ko6_ordre1_impair_verdict.json`,
+  `docs/t2-note-ko6-ordre1-impair.md` — empreintes complètes dans
+  `data/t1_t2_t4_shasums.txt`
+- **Suites régulées** : le statut de « 2+2+3=7 » devient une décision de
+  structure réelle à déclarer — toute structure réelle échangeant les
+  scalaires est exclue en taille impaire ; toute fiche invoquant le « 7 »
+  doit désormais déclarer sa classe de J.
+
+### Campagne T4 — 09/09/2026
+- **Tiroir** : banc (preuve analytique + vérification machine)
+- **Objet** : « lemme de mélange et classification d'existence des triplets
+  à deux scalaires »
+- **Question unique** : la régularité mesurée en T2 (100 % des combos
+  mélange avec D≠0 à n=5,7) est-elle un théorème — et quelle est la
+  classification complète de l'existence, à n pair comme impair ?
+- **Conventions citées** : C-KO6-A3b ; AXIOMES.md ; filiations T1/T2
+  (machines reprises avec leurs bornes)
+- **Protocole** : preuve analytique (`docs/t4-note-ko6-lemme-melange.md`,
+  faits élémentaires F1–F4) + vérification machine
+  `src/t4_ko6_lemme_melange.py` (T4-KO6-MEL-1.0 gelé) — V1 : mélange
+  exhaustif n ∈ {2,…,9} (signes collapsés, déclaré : la preuve n'utilise que
+  des orbites de longueur 2) ; V2 : classification formule == orbites,
+  n ∈ {2,…,7} avec signes ; V3 : échange ⟺ a,b pairs ; V4 : recoupement
+  brut n=3 et n=4 au vérificateur complet
+- **Falsifieur** : un combo mélange sans D ; un écart formule/orbites ; un
+  échange à a ou b impair ; un mismatch brut
+- **Prédiction pré-enregistrée** : 0 contre-exemple ; coïncidence parfaite ;
+  échange seulement à a,b pairs ; brut conforme
+- **Verdict** : **THÉORÈME prouvé et confirmé machine (contrôle global
+  4/4)** — T-MÉLANGE (mélange ⟹ existence, pour tout n) : 1 774 080 combos
+  à n=2…9, 0 sans D ; T-CLASSIFICATION (existence ⟺ mélange ∨ [secteur
+  bi-chiral ∧ paire même-secteur inter-chiralités en orbite de longueur 2
+  ou à signes opposés]) : 1 729 136 combos à n=2…7, 0 écart ; échange :
+  4/48/624 combos à n=4/6/8, 0 à autre parité ; brut conforme (n=3 :
+  64/0/64 ; n=4 : 1760/32/2624 — l'échange porte des D à n pair, comme
+  prédit).
+- **Artefacts** : `src/t4_ko6_lemme_melange.py`,
+  `data/t4_ko6_lemme_melange_verdict.json`,
+  `docs/t4-note-ko6-lemme-melange.md` — empreintes complètes dans
+  `data/t1_t2_t4_shasums.txt`
+- **Suites régulées** : la classification matricielle à deux scalaires est
+  close ; voir la mise à jour de la frontière F4 ci-dessous.
+
+### Frontière F4-KO6-ENUMERATION — mise à jour datée (09/09/2026)
+
+La sous-frontière « classification matricielle à deux scalaires » est
+**fermée** (théorème T4 : preuve analytique + vérification exhaustive
+n ≤ 9, falsifieurs non déclenchés). L'énumération générale sous bornes
+d'audit (k ≤ 3, dim ≤ 24, espace de 4 723 712 matrices mesuré en A3b-C3)
+reste **ouverte** — coût de fermeture déclaré inchangé. Statut de F4 :
+partielle, avec une sous-frontière close datée.
+
+### Historique — lignes ajoutées le 09/09/2026 (pause de tri)
+
+| Campagne | Date | Question unique | Verdict | Suites régulées |
+|---|---|---|---|---|
+| **T1** | 2026-09-09 | Existe-t-il (D,J,γ) de taille impaire sous C-KO6-A3b avec un scalaire unique ? | **OUI — existence dès n=3** (ordre 1 vacuous pour A=ℂ, déclaré) | Question forte (ordre 1 non vacuous) traitée en T2 — fiche séparée, pas de critère déplacé |
+| **T2** | 2026-09-09 | Taille impaire à deux scalaires avec ordre 1 non vacuous ? | **OUI en préservation/mélange ; NON en échange** (lemme A : n pair requis) | « 2+2+3=7 » : statut = décision de structure réelle à déclarer |
+| **T4** | 2026-09-09 | La régularité de mélange de T2 est-elle un théorème ? | **THÉORÈME prouvé + machine 4/4** (T-MÉLANGE, T-CLASSIFICATION, n pair et impair) | Sous-frontière F4 « classification à deux scalaires » fermée (datée) ; énumération générale toujours ouverte |

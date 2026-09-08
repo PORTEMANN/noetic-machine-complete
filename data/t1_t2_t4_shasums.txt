@@ -1,0 +1,15 @@
+# Empreintes SHA-256 des artefacts de la serie T1-T2-T4 (09/09/2026)
+# KO-6 : taille impaire et classification a deux scalaires. T1 : existence dès n=3
+# (un scalaire) ; T2 : deux scalaires, OUI en preservation/melange, NON en echange
+# (lemme A) ; T4 : lemme de melange PROUVE + classification (controle global 4/4).
+# Empreintes calculees sur les octets du depot (GitHub = source de verite).
+# Ce fichier ne s'auto-empreinte pas.
+18e59564d4161b66481f4c0b61a0ec667c6e6cc770b13806210ba1e28101aabd  data/t1_ko6_taille_impaire_verdict.json
+95d1a4391e0882c97d1ba0725357a63119a732b0fa571e4314f47db0f1f2de10  data/t2_ko6_ordre1_impair_verdict.json
+aeac8456e9856999130a5f8a64ac5a987a87714a1d334f57f204c67ca74300fe  data/t4_ko6_lemme_melange_verdict.json
+fc4bb35bcf5623c2ecaaad6cc67542e39c1dd114d1a7702762bcd7fb062dcb3a  docs/t1-note-ko6-taille-impaire.md
+09bc5aa69cf6f98f24c417a8f305e785758a10e95d2cf7e791fd15ce0ea2314f  docs/t2-note-ko6-ordre1-impair.md
+8811b8606b7d9d2ecc8020dbdf7acb1c9222dd1a458d2d918a8e41343c2ff98e  docs/t4-note-ko6-lemme-melange.md
+d3de73875fe27e28e3c379810222334d6b7c246bbd8898e8f4fdba784918bd8c  src/t1_ko6_taille_impaire.py
+1e92d4473f2f2bd9d7679d05ffd2720d9ba701821da5648fe1466fa7eaf289fd  src/t2_ko6_ordre1_impair.py
+238100ec9d85ae9ce4010882bf7b53c4cad05e2c1dcc71e5b9b655426af3230a  src/t4_ko6_lemme_melange.py

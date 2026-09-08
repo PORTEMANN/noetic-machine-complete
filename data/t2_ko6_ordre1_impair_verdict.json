@@ -1,0 +1,151 @@
+{
+  "chantier": "T2-Q-KO6-T2-2026-09",
+  "protocole": "T2-KO6-O1IMP-1.0 (gelé, local)",
+  "table": "C-KO6-A3b (J²=+1, Jγ=+γJ, JD=−DJ) — datée",
+  "algebre": "A = ℂ ⊕ ℂ (deux scalaires) — ordre 1 non vacuous",
+  "question": "existe-t-il (D,J,γ) de taille impaire à deux scalaires avec ordre 1 non vacuous, et dans quelle classe d'action de J ?",
+  "bornes": "n ∈ {3,5,7} ; toutes (a,b) ; tous P ; tous J₀ signés involutifs par blocs ; D réel hors-chiral {0,±1}, D≠0",
+  "comptes_par_classe": {
+    "3": {
+      "preserve": {
+        "combos": 112,
+        "combos_avec_D": 32,
+        "D_total": 64,
+        "k_somme": 32,
+        "k_sans_somme": 112
+      },
+      "echange": {
+        "combos": 0,
+        "combos_avec_D": 0,
+        "D_total": 0,
+        "k_somme": 0,
+        "k_sans_somme": 0
+      },
+      "melange": {
+        "combos": 32,
+        "combos_avec_D": 32,
+        "D_total": 64,
+        "k_somme": 32,
+        "k_sans_somme": 32
+      }
+    },
+    "5": {
+      "preserve": {
+        "combos": 8896,
+        "combos_avec_D": 6496,
+        "D_total": 36608,
+        "k_somme": 9568,
+        "k_sans_somme": 21792
+      },
+      "echange": {
+        "combos": 0,
+        "combos_avec_D": 0,
+        "D_total": 0,
+        "k_somme": 0,
+        "k_sans_somme": 0
+      },
+      "melange": {
+        "combos": 7424,
+        "combos_avec_D": 7424,
+        "D_total": 87040,
+        "k_somme": 14784,
+        "k_sans_somme": 18048
+      }
+    },
+    "7": {
+      "preserve": {
+        "combos": 566720,
+        "combos_avec_D": 506400,
+        "D_total": 18143232,
+        "k_somme": 1192832,
+        "k_sans_somme": 2492800
+      },
+      "echange": {
+        "combos": 0,
+        "combos_avec_D": 0,
+        "D_total": 0,
+        "k_somme": 0,
+        "k_sans_somme": 0
+      },
+      "melange": {
+        "combos": 985600,
+        "combos_avec_D": 985600,
+        "D_total": 114993152,
+        "k_somme": 3224064,
+        "k_sans_somme": 4256768
+      }
+    }
+  },
+  "recoupement_brut_n3": {
+    "conforme": true,
+    "comptes": {
+      "preserve": 64,
+      "echange": 0,
+      "melange": 64
+    }
+  },
+  "exemplaires_verifies": "112/112",
+  "lemme_A_echange_implique_n_pair": {
+    "énoncé": "J₀ P J₀ = Q avec Jγ=+γJ ⇒ rangs égaux par chirality ⇒ a, b pairs ⇒ n pair",
+    "mesure": "0 combo échangeant à n=3,5,7",
+    "confirmé": true
+  },
+  "lemme_B_existence_preservation": {
+    "énoncé": "un secteur bi-chiral ⇒ orbite intra-secteur libre ⇒ existence dès n=3",
+    "confirmé": true
+  },
+  "mesure_C_melange": {
+    "3": {
+      "combos": 32,
+      "combos_avec_D": 32,
+      "D_total": 64,
+      "k_somme": 32,
+      "k_sans_somme": 32
+    },
+    "5": {
+      "combos": 7424,
+      "combos_avec_D": 7424,
+      "D_total": 87040,
+      "k_somme": 14784,
+      "k_sans_somme": 18048
+    },
+    "7": {
+      "combos": 985600,
+      "combos_avec_D": 985600,
+      "D_total": 114993152,
+      "k_somme": 3224064,
+      "k_sans_somme": 4256768
+    }
+  },
+  "cas_2+2+3=7": {
+    "rangs_2_5_n7_avec_D": [
+      "melange (a=1,b=6,rang=2)",
+      "melange (a=1,b=6,rang=5)",
+      "melange (a=2,b=5,rang=2)",
+      "melange (a=2,b=5,rang=5)",
+      "melange (a=3,b=4,rang=2)",
+      "melange (a=3,b=4,rang=5)",
+      "melange (a=4,b=3,rang=2)",
+      "melange (a=4,b=3,rang=5)",
+      "melange (a=5,b=2,rang=2)",
+      "melange (a=5,b=2,rang=5)",
+      "melange (a=6,b=1,rang=2)",
+      "melange (a=6,b=1,rang=5)",
+      "preserve (a=1,b=6,rang=2)",
+      "preserve (a=1,b=6,rang=5)",
+      "preserve (a=2,b=5,rang=2)",
+      "preserve (a=2,b=5,rang=5)",
+      "preserve (a=3,b=4,rang=2)",
+      "preserve (a=3,b=4,rang=5)",
+      "preserve (a=4,b=3,rang=2)",
+      "preserve (a=4,b=3,rang=5)",
+      "preserve (a=5,b=2,rang=2)",
+      "preserve (a=5,b=2,rang=5)",
+      "preserve (a=6,b=1,rang=2)",
+      "preserve (a=6,b=1,rang=5)"
+    ]
+  },
+  "reponse": "OUI en préservation de secteurs (dès n=3) ; NON en échange (lemme A : n pair requis) ; mélange mesuré",
+  "gouvernance": "campagne LOCALE — staging, pause de tri avant toute publication",
+  "durée_s": 7.64
+}

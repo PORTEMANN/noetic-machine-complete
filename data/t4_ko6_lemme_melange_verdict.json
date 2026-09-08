@@ -1,0 +1,145 @@
+{
+  "chantier": "T4-Q-KO6-T4-2026-09",
+  "protocole": "T4-KO6-MEL-1.0 (gelé, local)",
+  "table": "C-KO6-A3b — datée",
+  "theoreme_melange": {
+    "énoncé": "mélange ⟹ existence (D≠0), pour tout n",
+    "preuve": "T4_NOTE.md (cas élémentaires, faits F1–F3)",
+    "V1": {
+      "2": {
+        "combos_melange": 0,
+        "sans_D": 0
+      },
+      "3": {
+        "combos_melange": 8,
+        "sans_D": 0
+      },
+      "4": {
+        "combos_melange": 72,
+        "sans_D": 0
+      },
+      "5": {
+        "combos_melange": 608,
+        "sans_D": 0
+      },
+      "6": {
+        "combos_melange": 4304,
+        "sans_D": 0
+      },
+      "7": {
+        "combos_melange": 30688,
+        "sans_D": 0
+      },
+      "8": {
+        "combos_melange": 213920,
+        "sans_D": 0
+      },
+      "9": {
+        "combos_melange": 1524480,
+        "sans_D": 0
+      }
+    },
+    "confirmé_machine": true
+  },
+  "theoreme_classification": {
+    "énoncé": "existence ⟺ mélange ∨ [secteur bi-chiral ∧ (paire même-secteur inter-chiralités en orbite de longueur 2 ou à signes opposés)]",
+    "V2": {
+      "2": {
+        "combos": 8,
+        "ecarts": 0
+      },
+      "3": {
+        "combos": 144,
+        "ecarts": 0
+      },
+      "4": {
+        "combos": 1624,
+        "ecarts": 0
+      },
+      "5": {
+        "combos": 16320,
+        "ecarts": 0
+      },
+      "6": {
+        "combos": 158720,
+        "ecarts": 0
+      },
+      "7": {
+        "combos": 1552320,
+        "ecarts": 0
+      }
+    },
+    "confirmé_machine": true
+  },
+  "fait_F4_echange": {
+    "énoncé": "échange possible ⟺ a,b pairs",
+    "V3": {
+      "2": {
+        "echange_a_b_pairs": 0,
+        "echange_autre": 0
+      },
+      "3": {
+        "echange_a_b_pairs": 0,
+        "echange_autre": 0
+      },
+      "4": {
+        "echange_a_b_pairs": 4,
+        "echange_autre": 0
+      },
+      "5": {
+        "echange_a_b_pairs": 0,
+        "echange_autre": 0
+      },
+      "6": {
+        "echange_a_b_pairs": 48,
+        "echange_autre": 0
+      },
+      "7": {
+        "echange_a_b_pairs": 0,
+        "echange_autre": 0
+      },
+      "8": {
+        "echange_a_b_pairs": 624,
+        "echange_autre": 0
+      },
+      "9": {
+        "echange_a_b_pairs": 0,
+        "echange_autre": 0
+      }
+    },
+    "confirmé_machine": true
+  },
+  "recoupement_brut_V4": {
+    "3": {
+      "brut": {
+        "preserve": 64,
+        "echange": 0,
+        "melange": 64
+      },
+      "orbites": {
+        "preserve": 64,
+        "echange": 0,
+        "melange": 64
+      },
+      "conforme": true
+    },
+    "4": {
+      "brut": {
+        "preserve": 1760,
+        "echange": 32,
+        "melange": 2624
+      },
+      "orbites": {
+        "preserve": 1760,
+        "echange": 32,
+        "melange": 2624
+      },
+      "conforme": true
+    }
+  },
+  "controle_global": true,
+  "falsifieur_statut": "non déclenché",
+  "prédiction_pré_enregistrée": "0 contre-exemple ; coïncidence parfaite ; échange à a,b pairs ; brut conforme",
+  "gouvernance": "campagne LOCALE — staging, pause de tri avant toute publication",
+  "durée_s": 23.3
+}
