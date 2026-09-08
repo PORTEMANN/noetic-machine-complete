@@ -1,0 +1,32 @@
+{
+  "campagne": "I3",
+  "date_gel": "2026-09-08",
+  "checks": [
+    {
+      "check": "HASH artefacts P49-P51",
+      "ok": true,
+      "detail": "7/7 empreintes conformes"
+    },
+    {
+      "check": "RE-RUN P49",
+      "ok": true,
+      "detail": "score=107/188 verdict=B3-FAIL"
+    },
+    {
+      "check": "RE-RUN P40 (legacy)",
+      "ok": true,
+      "detail": "verdict_global=P-Z-MAX : Z_max = 180 recomputé exactement à α gelé (2^-10) (corpus : ≈179 — le « ≈ » tient, l'exact est 180) — cohérent avec masses+modèles (dernière coquille publiée ≤ 168). P-FISSION : RÉFUTÉE sur JEFF-3.1.1 (0/8 pics aux positions gelées). P-MASS-EFF, P-ALPHA-VAR, P-KOILON-SON : non confrontables aux masses mesurées aujourd'hui — discriminateurs déclarés, statut inchangé."
+    },
+    {
+      "check": "P40 empreintes données embarquées",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "RE-RUN P51",
+      "ok": true,
+      "detail": "accuracy=0.319 verdict=B3-FAIL"
+    }
+  ],
+  "verdict": "REPRODUCTIBLE"
+}
