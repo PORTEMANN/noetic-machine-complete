@@ -11,3 +11,7 @@ e9e8e87006d328a24360d0123dd538dbc5e63e7fe6420f259224af383fab6d1e  data/p49_data_
 db63ac52f9f5d7eda12bd95dcb413fbbd9af85cace7e91c2b076fb407858db6b  src/p50_hall_ash.py
 dcc44ea34894f703057085fc11b92e93fb6ce9b38677e004b20c7edf7b323a22  src/p51_prepare_sleep_edf.py
 61bb58ea1e66ce10024115b6408ebb54c580bd99819d0f9ee353c81fb0cd8b78  src/p51_sleep_ash.py
+
+# Campagne I3 (08/09/2026) — CI de reproductibilite : verdict REPRODUCTIBLE (5/5).
+685a4e1cfc475e8faa5b1f62013bf848f5693952ee6d23378d9cf20ddab16f92  data/i3_ci_verdicts.json
+451d3bad548d3fd8fb335ac0d6e54d4111d1d20543e95ca952ec58dfada36a7c  src/ci_verdicts.py
