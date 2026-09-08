@@ -1,0 +1,27 @@
+{
+  "campagne": "P51",
+  "date_gel": "2026-09-08",
+  "date_execution": "2026-09-08T15:56:59.903079",
+  "source_donnees": "Sleep-EDFx 1.0.0 (PhysioNet) — EEG Fpz-Cz, segments 30 s",
+  "n_segments": 2575,
+  "accuracy_globale": 0.319,
+  "pairs_separees_70plus": "0/10",
+  "pair_accuracies": {
+    "Wake/N1": 0.148,
+    "Wake/N2": 0.177,
+    "Wake/N3": 0.442,
+    "Wake/REM": 0.387,
+    "N1/N2": 0.087,
+    "N1/N3": 0.352,
+    "N1/REM": 0.297,
+    "N2/N3": 0.381,
+    "N2/REM": 0.326,
+    "N3/REM": 0.59
+  },
+  "verdict": "B3-FAIL",
+  "levier_discriminant": {
+    "accuracy_normalisee": 0.319,
+    "effondrement": true
+  },
+  "sha256": "763c005c426ddb3f037231dee4e2887731c8486e46bd64f9f61c2e8052ad3596"
+}

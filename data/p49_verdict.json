@@ -1,0 +1,24 @@
+{
+  "campagne": "P49",
+  "date_gel": "2026-09-08",
+  "date_execution": "2026-09-08T23:32:19.126742",
+  "source_donnees": "NUBASE2020 (Kondev et al. 2021) — états fondamentaux Z>=104",
+  "score": "107/188",
+  "score_fraction": 0.569,
+  "verdict": "B3-FAIL",
+  "confusion": {
+    "TP": 29,
+    "FP": 26,
+    "FN": 55,
+    "TN": 78
+  },
+  "levier_discriminant": {
+    "stables_avec_coupe_k9": 55,
+    "stables_sans_coupe": 89,
+    "effondrement": false
+  },
+  "falsifieur_F1": "Noyaux prédits stables avec T1/2 < 1 ms : 4",
+  "falsifieur_F2": "Noyaux hors zone prédite stable avec T1/2 > 1 s : 55",
+  "sha256": "125818fe96cbd3b0995181fe80fa64760710185cc292bdc0e753353f6d8621ce",
+  "details_note": "Details par noyau (188 entrees) regeneres par src/p49_sqf_islands.py sur data/p49_data_nubase2020_z104.csv ; le champ sha256 atteste results+score."
+}
