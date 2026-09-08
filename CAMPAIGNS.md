@@ -265,3 +265,56 @@ Les empreintes des artefacts P49–P51 sont déposées dans `data/p49_p51_shasum
 (fichier non auto-empreinté, calculées sur les octets du dépôt — GitHub = source de
 vérité). La régénération du `SHASUMS.txt` racine reste à faire avec l'outillage local
 du dépôt (le présent dépôt a été poussé via API, sans clone local).
+
+---
+
+## Campagne I3 — 08/09/2026 (publiée après pause de tri)
+
+### Campagne I3 — 08/09/2026
+- **Tiroir** : banc
+- **Objet** : « CI de reproductibilité » du corpus
+- **Question unique** : les verdicts publiés dotés de données se ré-exécutent-ils à
+  l'identique, et les artefacts du dépôt passent-ils le contrôle SHA-256 ?
+- **Conventions citées** : boucle point 5 (hash) ; « GitHub = source de vérité »
+- **Protocole** : `src/ci_verdicts.py` v1.0 (gelé avant run) — contrôle des 7 empreintes
+  P49–P51, re-run P49 (NUBASE2020), re-run P40 (legacy AME2020 + JEFF-3.1.1, empreintes
+  de données embarquées vérifiées), re-run P51 (NPZ régénéré à l'identique par
+  `src/p51_prepare_sleep_edf.py` : 2575 segments, 515/classe)
+- **Falsifieur** : un seul écart d'empreinte ou de verdict ré-exécuté
+- **Prédiction pré-enregistrée** : REPRODUCTIBLE (le corpus se revendique reproductible ;
+  la campagne le mesure)
+- **Verdict** : **REPRODUCTIBLE — 5/5 contrôles** : 7/7 empreintes conformes ; P49
+  ré-exécuté identique (107/188, B3-FAIL) ; P40 ré-exécuté identique (verdict complet
+  conforme, données embarquées conformes) ; P51 ré-exécuté identique (0,319, B3-FAIL)
+- **Artefacts** : `src/ci_verdicts.py` (451d3bad…a36a7c),
+  `data/i3_ci_verdicts.json` (685a4e1c…d9cf20ddab16f92) — empreintes complètes dans
+  `data/p49_p51_shasums.txt`
+- **Suites régulées** : la CI devient le contrôle d'entrée de toute future publication ;
+  elle aurait détecté les ruptures de traçabilité du package initial P49–P51.
+
+### Staging local — campagnes non publiées (décision d'auteur, pause de tri du 08/09/2026)
+
+Deux campagnes exécutées en local le 08/09/2026 restent **hors dépôt** par décision de
+triage (elles sont citées ici pour la régulation des frontières, artefacts conservés en
+local) :
+
+- **T3 — modèle nul de P49** (10 000 permutations des labels, graine 0) : la règle sqf ne
+  bat pas le hasard à taux de prédictions positives égal — p = 0,099 ; spécificité 0,75
+  dans la distribution nulle (p95 = 0,760). Verdict local : B3-FAIL.
+- **I1 — ASH vs baseline Welch-PSD** (même NPZ, même split, même classifieur que P51) :
+  baseline 0,627 (2/10 paires) contre ASH 0,319 (0/10). Verdict local : B3-FAIL pour ASH.
+  La colonne ASH d'I1 reproduit P51 au centième — contre-preuve de ré-exécutabilité.
+
+### Frontière « règle sqf des îlots super-lourds » — fermeture datée (08/09/2026)
+
+**Fermée.** Motif : P49 B3-FAIL au seuil gelé (0,569 < 0,80) et absence de signal résiduel
+au modèle nul local (p = 0,099). Coût de fermeture : toute réparation (ex-T2) doit être une
+nouvelle fiche gelée, avec justification indépendante du run P49 — la frontière ne doit
+plus être citée comme piste ouverte. Conséquence sur la file : T1 (Q-KO6-2026-09) devient
+la campagne théorie prioritaire.
+
+### Historique — ligne ajoutée le 08/09/2026 (pause de tri)
+
+| Campagne | Date | Question unique | Verdict | Suites régulées |
+|---|---|---|---|---|
+| **I3** | 2026-09-08 | Le corpus publié se ré-exécute-t-il à l'identique ? | **REPRODUCTIBLE 5/5** | CI = contrôle d'entrée de toute publication future ; T3/I1 en staging local (non publiées) ; frontière sqf **fermée** (datée) |
