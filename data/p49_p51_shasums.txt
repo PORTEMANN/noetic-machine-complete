@@ -1,0 +1,12 @@
+# Empreintes SHA-256 des artefacts des campagnes P49-P51 (08/09/2026)
+# Verdicts sur donnees reelles : P49 B3-FAIL (107/188 = 0,569) ; P51 B3-FAIL
+# (0/10 paires, accuracy 0,319) ; P50 reportee (script depose non execute).
+# Ce fichier ne s'auto-empreinte pas. Regeneration du SHASUMS.txt racine :
+# a faire avec l'outillage local du depot (cf. CAMPAIGNS.md, boucle point 5).
+1b4c6f5de154389c064ffc4da88f42ef2aea85b7f76743a0c52ebcd7a504c959  data/p49_data_nubase2020_z104.csv
+56389d438720c0b4cd2466f89d76a5b5f5fd8a60fc3c9b276e950de8ab943ce4  data/p49_verdict.json
+9ae7a1895c0b936db4cfd3a5315c60ef5933d989a52f220c144ac2d6e24f1c64  data/p51_verdict.json
+49fcdc63b81ef929450d302631263642b08d80223b4f3a38118a53dcd7ee3906  src/p49_sqf_islands.py
+db63ac52f9f5d7eda12bd95dcb413fbbd9af85cace7e91c2b076fb407858db6b  src/p50_hall_ash.py
+dcc44ea34894f703057085fc11b92e93fb6ce9b38677e004b20c7edf7b323a22  src/p51_prepare_sleep_edf.py
+61bb58ea1e66ce10024115b6408ebb54c580bd99819d0f9ee353c81fb0cd8b78  src/p51_sleep_ash.py
