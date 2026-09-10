@@ -1,0 +1,15 @@
+{
+ "campagne": "E67 — les paysages par n : barrière et vallée de E_cage(R) en fonction du nombre d'anneaux",
+ "protocole": "E67-PAYSAGES-1.0",
+ "fige_le": "2026-09-09",
+ "nature": "tiroir banc — calcul statique sur géométrie et formule gelées",
+ "contexte_et_filiation": {
+  "E64-A": "la fenêtre du couronnement est un parking avant la barrière énergétique à R ≈ 16 (cage n=18) ; la vallée statique à R ≈ 22 gouverne l'attracteur libre",
+  "formule": "énergie d'E65 (gelée, inchangée) ; géométrie d'E60 (inchangée) ; R_cage = 12 fixe (la configuration du corpus — déclaré : les paysages sont ceux de la fenêtre mesurée en E64/E64-A)",
+  "question": "barrière et vallée dépendent-elles de n ? (la fenêtre κ et le parking sont-ils universels pour la famille n ∈ {12..24} ?)"
+ },
+ "design": "pour chaque n ∈ {12, 14, 16, 18, 20, 22, 24} (figé) : E_cage(R) sur R ∈ [8, 30] pas 0,5 ; extraction de la barrière (maximum local) et de la vallée (minimum local après la barrière) — positions figées",
+ "prediction_pre_enregistree": "discipline E1 — les paysages sont publiés entiers, quel que soit le motif ; aucune prédiction directionnelle enregistrée",
+ "convention_sha256": "le champ sha256_protocole est calculé sur le présent fichier avec ce champ vide (\"\")",
+ "sha256_protocole": "185925014e911d74b00b79fe8b320a83b6897b13ab913cb9d8bf4b7496679a8d"
+}

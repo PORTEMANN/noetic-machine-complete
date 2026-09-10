@@ -98,3 +98,24 @@ souffle/pression (mesuré), son domaine de pression (E64), son spectre
 
 *Série exécutée en local le 09/09/2026, publiée groupée le 09/09/2026
 (décision d'auteur). Auteur : Patrice Portemann — ORCID 0009-0009-4016-8389.*
+
+
+---
+
+## V. La fenêtre du couronnement approfondie — E64-A → E68 (bloc ajouté le 09/09/2026)
+
+L'approfondissement de la fenêtre de confinement de la cavité, dans
+toutes ses dimensions mesurées :
+
+| Camp. | Question | Verdict |
+|---|---|---|
+| E64-A | bords de la fenêtre (grille fine κ) | fenêtre étroite mesurée : **κ ∈ ]0,075 ; 0,125[** (n=18) ; parking avant la barrière énergétique à R ≈ 16 (cage tenue à rms = 14,2 ; les cages qui échouent passent la crête et courent vers la vallée statique à R ≈ 22, en accélération après la crête — mesuré) |
+| E65 | énergie des cages par n | **signature du 18** : énergie par anneau minimale à n = 18 (5,27 — creux net, cage fixe du corpus) |
+| E66 | E/n de n=2 à n=4000 (géométrie à l'échelle) | **dents de scie** : minima locaux aux multiples de 3 (3 → 129, dont les ovoïdes historiques 3, 12, 63 reproduits) ; changement de régime n=13–29 (minima n ≡ 2 : 14, 17, 20, 23, 26) ; 5, 7, 110 élevés (comme pré-enregistré) ; asymptote E/n ≈ 8,46 ; le dip à 18 n'existe qu'à cage fixe — géométrie-dépendant |
+| E67 | paysages E_cage(R) par n | barrière et vallée varient avec n (n=18 : 16/22 exact — le plus grand bassin crête→vallée ; n=24 : structure la plus étroite 13,5/14) — incident d'extraction documenté et réparé |
+| E68 | la fenêtre κ par n | **la fenêtre n'est PAS universelle** : 14 tient sur toute la grille [0,05–0,15] ; 18 en un point (κ=0,1) ; 24 nulle part. **Prédiction pré-enregistrée RÉFUTÉE, publiée** : la largeur de la fenêtre ne suit PAS la largeur du bassin (ordre de tenue 14 >> 18 > 24 ; ordre de bassin 18 >> 14 > 24) |
+
+**La fenêtre du couronnement, cartographiée** : existence (E61), domaine
+(E64), bords (E64-A), structure physique (parking avant la barrière —
+calculs E64-A), non-universalité par n (E68), signature énergétique
+(E65), scie énergétique et ovoïdes (E66), paysages par n (E67).

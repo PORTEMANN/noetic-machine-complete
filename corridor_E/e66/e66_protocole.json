@@ -1,0 +1,17 @@
+{
+ "campagne": "E66 — l'énergie par anneau de n=2 à n=4000 : les autres minima",
+ "protocole": "E66-MINIMA-1.0",
+ "fige_le": "2026-09-09",
+ "nature": "tiroir banc — calcul statique sur géométrie et formule gelées",
+ "contexte_et_filiation": {
+  "E65": "énergie par anneau minimale à n=18 dans la fenêtre (R_cage=12 fixe) ; question de l'auteur : les « ovoïdes » historiques du corpus (3, 5, 7, 12, 63, 110…) sont-ils d'autres minima entre 2 et 4000 ?",
+  "formule": "énergie d'E65 (gelée, inchangée) ; règle de cage d'E60 (anneaux rayon 6, axes radiaux, 3 latitudes) inchangée",
+  "mise_a_l_echelle": "R_cage(n) = 12·n/18 — espacement angulaire constant (gelé ; coïncide avec la configuration du corpus à n=18 par construction) ; points par anneau : 32 (déclaré)"
+ },
+ "prediction_pre_enregistree": "la géométrie à 3 latitudes remplit les bandes uniformément quand n est multiple de 3 — minima locaux d'E/n aux multiples de 3 (dont 3, 12, 18, 63) ; élévation aux non-multiples (dont 5, 7, 110). Enveloppe : décroissante vers la limite de dilution à grand n (anneaux de rayon fixe dans une cage qui grandit)",
+ "balayage": "n dense 2–130 (tous les entiers) ; grossier {150, 200, 300, 500, 1000, 2000, 4000} pour l'asymptote",
+ "mesure": "E et E/n par n ; minima locaux (E/n(n) < E/n(n±1))",
+ "regle_de_verdict": "discipline E1 : la courbe est publiée entière, quel que soit le motif ; si les minima historiques n'apparaissent pas, la phénoménologie des ovoïdes est marquée non reproduite par cette géométrie — publié au même niveau",
+ "convention_sha256": "le champ sha256_protocole est calculé sur le présent fichier avec ce champ vide (\"\")",
+ "sha256_protocole": "8d421005536c1386cca52ee97c3748251a05d0bc6d9a0e32f1c9a7698f425de0"
+}

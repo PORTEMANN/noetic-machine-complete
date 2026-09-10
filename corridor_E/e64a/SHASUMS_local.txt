@@ -1,0 +1,7 @@
+# Campagne E64-A (locale, 09/09/2026) — fenêtre fine mesurée : κ ∈ ]0,075 ; 0,125[ ; parking avant la barrière énergétique R≈16 ; staging, non publiée
+a2943ebaef995670483d57a3e48e86231d1cfc63ad2d3f1c90ffb48598276f75  e64a_amendement.json
+751138ab13323af3d30aa1a052b3b629be6636baa1e577f24921414a6865668e  src/e64a_run.py
+3803db688d2f90eba6268ed002d25019c7935721a86d2fec1cae18a9e4d1ddbc  src/e60_run.py
+caf656d1a1435ec9368c8867d9a0338150a9dfb9fca7c3babe5e418cd71bf5cd  src/e61_run.py
+2eff2bdeeec86b0e0253ae4983e04859720de95eede99e6081a08f1f98bf946a  E64A_NOTE.md
+572fd176619ef097d38f434643b42dff8c49b82a214ce1568d7cc41eb856d76e  data/e64a_fenetre_kappa_verdict.json

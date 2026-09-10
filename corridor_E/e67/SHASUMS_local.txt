@@ -1,0 +1,6 @@
+# Campagne E67 (locale, 09/09/2026) — paysages E_cage(R) par n : barrière et vallée varient avec n (n=18 : 16/22 exact) ; incident d'extraction réparé et documenté ; staging, non publiée
+4a690221cba0ce7390bd9cb03fb16bfe0cbab53a8b83bfbc535b1d46485ea5ea  e67_protocole.json
+4bdf493e806b3e1b391de03d5f22d2115f18c8718c245f09b6a6f0ace5296975  src/e67_paysages.py
+3803db688d2f90eba6268ed002d25019c7935721a86d2fec1cae18a9e4d1ddbc  src/e60_run.py
+43647b6598194ea51def12a4dfd2c8314fbe76fd261632d28c45e20eb4ba010b  E67_NOTE.md
+a590710f1365f34bf6101a947d205d58d12c267846af1330db30caf83b954ee6  data/e67_paysages_verdict.json

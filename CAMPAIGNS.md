@@ -467,6 +467,14 @@ discrète dans le continu : de la nucléation du lien (E44) à la signature
   fenêtre κ ≈ 0,1 avec rms saturé), spectre des cages (E63 : optimum de
   marge n=14), signature énergétique à n = 18 (E65), mortalité mesurée
   (E62).
+- **La fenêtre du couronnement approfondie (E64-A→E68, bloc ajouté le
+  09/09/2026)** : bords mesurés (κ ∈ ]0,075 ; 0,125[ pour n=18 — parking
+  avant la barrière énergétique à R ≈ 16) ; signature du 18 par l'énergie
+  (E65) ; dents de scie E/n et ovoïdes historiques 3/12/63 reproduits
+  (E66) ; paysages par n (E67 : n=18 a le plus grand bassin 16→22) ; la
+  fenêtre n'est pas universelle (E68 : 14 tient sur toute la grille, 18
+  en un point, 24 nulle part — prédiction de largeur de bassin réfutée,
+  publiée).
 
 Discipline identique à la série T : protocoles gelés hachés avant calcul
 (champ d'auto-référence exclue déclaré), verdicts publiés au même niveau

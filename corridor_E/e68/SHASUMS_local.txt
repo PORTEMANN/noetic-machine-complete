@@ -1,0 +1,7 @@
+# Campagne E68 (locale, 09/09/2026) — fenêtre par n : 14 tient sur toute la grille, 18 en un point (κ=0,1), 24 nulle part ; prédiction (largeur de bassin) RÉFUTÉE, publiée ; staging, non publiée
+1b43b2af739e4f0cb66b051c9b929c457aa61415be913729381fbb051205d2ea  e68_protocole.json
+6e76d75f7be4c92cd7478d9b00f5b16c1354ae816d744db4c5e4b7c99c1a950b  src/e68_fenetre_n.py
+3803db688d2f90eba6268ed002d25019c7935721a86d2fec1cae18a9e4d1ddbc  src/e60_run.py
+caf656d1a1435ec9368c8867d9a0338150a9dfb9fca7c3babe5e418cd71bf5cd  src/e61_run.py
+a40043ce74c0f83939372d34b988085db65b4945e7d234a68d4999bdf914b6ce  E68_NOTE.md
+f5c475869ded84fbeb78fffecc15680c99d4fbe6bc80a0a544e494319efe1656  data/e68_fenetre_n_verdict.json

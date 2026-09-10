@@ -1,0 +1,23 @@
+{
+ "campagne": "E68 — la fenêtre κ par n : le parking avant la barrière est-il universel ?",
+ "protocole": "E68-FENETRE-N-1.0",
+ "fige_le": "2026-09-09",
+ "aveugle": "aucune donnée E68 n'existe à la date de gel ; validation d'instrument déclarée : --smoke (mécanique, hors campagne) ; tout amendement futur sera haché avant calcul",
+ "contexte_et_filiation": {
+  "E64-A": "fenêtre n=18 : κ ∈ ]0,075 ; 0,125[ — parking avant la barrière (cage à rms ≈ 14,2 sous la crête de 16)",
+  "E67": "paysages par n : barrière et vallée varient — n=18 : 16/22 (plus grand bassin) ; n=14 : 15/17 ; n=24 : 13,5/14 (le plus étroit)",
+  "harnais": "src/e68_fenetre_n.py — E64-A repris (T0 instrument, clauses, τ_fuite inchangés ; géométrie d'E60 : 3 latitudes, R_cage=12, anneaux rayon 6, inchangée)"
+ },
+ "question_unique": "la fenêtre du couronnement est-elle par n ? sa largeur suit-elle la largeur du bassin crête→vallée du paysage ?",
+ "design_gele": {
+  "cages": "n ∈ {14, 18, 24} (figé — optimum de tenue E63, cage du corpus, paysage le plus étroit E67)",
+  "grille": "κ = {0,05 ; 0,075 ; 0,1 ; 0,125 ; 0,15} par n (figé, grille d'E64-A)",
+  "clauses": "INCHANGÉES d'E60 (rms ∈ [0,5 ; 1,5]× initial ; échappement ≤ 2×R_cage à tous les snapshots)",
+  "snapshots": "t = 0, 45, 90, 135, 180 ; τ_fuite figé comme en E64",
+  "filiation": "n=18, κ=0,1 doit reproduire E64-A (tient à t=180) — sinon B3-FAIL technique"
+ },
+ "prediction_pre_enregistree": "la largeur de la fenêtre suit la largeur du bassin crête→vallée (E67) : n=18 (séparation 6,0) la plus large ; n=24 (séparation 0,5) la plus étroite, voire aucune ; n=14 (séparation 2,0) intermédiaire — directionnel pré-enregistré, publié quel qu'en soit le motif",
+ "cout_mesure_estime": "15 points × ~4 min — ~60 min CPU",
+ "convention_sha256": "le champ sha256_protocole est calculé sur le présent fichier avec ce champ vide (\"\")",
+ "sha256_protocole": "5ff39f74d45a554c61acfc15ad1496d9945041b078dfd131152f947ce00f70dc"
+}

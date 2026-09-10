@@ -1,0 +1,6 @@
+# Campagne E66 (locale, 09/09/2026) — E/n en dents de scie : minima mod-3 persistants (3, 12, 63 historiques reproduits), regime change n=13-29 (minima n≡2), asymptote E/n ≈ 8,46 ; 5/7/110 élevés ; staging, non publiée
+fc95515de45e06faf8c9c25479bc32f7b65941fdcc06e59dfc85bed58e9568f0  e66_protocole.json
+150941540621a44019cb3d2e683f158063cdf481eef9473fecce156c0faa92b3  src/e66_minima.py
+3803db688d2f90eba6268ed002d25019c7935721a86d2fec1cae18a9e4d1ddbc  src/e60_run.py
+34be69f45abd3589241248dd8029c0217ddbc3bfe7aedf73d9e7e4a7b5b006ff  E66_NOTE.md
+785c288f68a9ff6c65072ce7dfdd607d83e0dc6e573cab60168709b98d0f1fa3  data/e66_minima_verdict.json

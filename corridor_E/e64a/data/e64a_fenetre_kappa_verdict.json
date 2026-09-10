@@ -1,0 +1,34 @@
+{
+  "campagne": "E64-A",
+  "amendement": "43e6f78b…815b5eb9 (gelé)",
+  "agregation": {
+    "T0_valide": true,
+    "tient_par_kappa": {
+      "0.06": false,
+      "0.075": false,
+      "0.1": true,
+      "0.125": false,
+      "0.15": false
+    },
+    "tau_fuite_par_kappa": {
+      "0.06": 135.0,
+      "0.075": 135.0,
+      "0.1": 180.0,
+      "0.125": 180.0,
+      "0.15": 135.0
+    },
+    "rms180_par_kappa": {
+      "0.06": 17.196,
+      "0.075": 16.411,
+      "0.1": 14.177,
+      "0.125": 17.281,
+      "0.15": 18.923
+    },
+    "kappa_fenetre": [
+      0.1
+    ],
+    "controle_filiation_k01": true,
+    "fenetre_presente": true,
+    "reparation_agregation": "cle de controle corrigee (0.05 hors grille fine -> 0.1, controle declare de l'amendement) ; donnees par point conservees (ecriture incrementale) ; protocole inchange"
+  }
+}

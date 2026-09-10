@@ -1,0 +1,19 @@
+{
+ "amendement": "E64-A — grille fine de la fenêtre du couronnement (bords mesurés)",
+ "fige_le": "2026-09-09",
+ "protocole_v1_sha256": "906d4ee9e72f56d45b606931b81be0be4735ecb2395d033a69daa2ec1256ce4d",
+ "verdict_v1": "FENETRE mesurée : κ ≈ 0,1 tient à t=180 avec rms saturé ; κ ≤ 0,05 fuit (échappement) ; κ = 0,2 casse tôt (sur-pression, disruption)",
+ "motivation": "cartographier les bords de la fenêtre : bord bas (fuite) entre 0,05 et 0,1 ; bord haut (disruption par sur-pression) entre 0,1 et 0,2 — la question est la POSITION des bords, pas leur existence (établie en v1)",
+ "inchange": "tout le protocole v1 (cage, clauses, snapshots, τ_fuite, T0, discipline) — seule la grille change",
+ "grille_fine": {
+  "kappa": [0.06, 0.075, 0.1, 0.125, 0.15],
+  "controle": "κ=0,1 (filiation v1 — doit tenir à t=180)"
+ },
+ "predictions_pre_enregistrees": {
+  "P1": "bord bas (échappement) entre 0,05 et 0,075 inclus — la fenêtre commence au-dessus de la fuite mesurée d'E62",
+  "P2": "bord haut (disruption rapide, τ_fuite ≤ 90) entre 0,125 et 0,2",
+  "P3": "le rms d'équilibre à l'intérieur de la fenêtre croît quand κ décroît vers le bord bas (la cage se rapproche de la barrière énergétique à R≈16, calculée sur la géométrie gelée — voir E64_NOTE_THÉORIE)",
+  "note_theorique": "calculs déclarés du 09/09/2026 : E_cage(R) a une barrière à R≈16 et une vallée à R≈22 ; le gonflement libre court vers la vallée (accélération après la barrière, mesurée) ; l'équilibre confiné est un arrêt cinématique du gonflement par réorganisation, pas une descente de paysage"
+ },
+ "sha256_amendement": "43e6f78b5c95de1ef2064647f09c715d13419f98fc6926c90e6beb42815b5eb9"
+}
