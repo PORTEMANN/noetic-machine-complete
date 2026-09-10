@@ -1,0 +1,7 @@
+# Campagne E64 (locale, 09/09/2026) — FENETRE (l'équilibre a un domaine : κ ≈ 0,1, rms saturé à t=180) ; staging, non publiée
+2f7aa348476c25753ddb934f9537ae314a458a8480767e4414c5873788f71954  e64_protocole.json
+4acbafc2e8e8284dc2cfbe627680d9bcc0487894eb0af026b8a4914b85115b49  src/e64_run.py
+3803db688d2f90eba6268ed002d25019c7935721a86d2fec1cae18a9e4d1ddbc  src/e60_run.py
+caf656d1a1435ec9368c8867d9a0338150a9dfb9fca7c3babe5e418cd71bf5cd  src/e61_run.py
+c96cab3333c374f0d1a12b8adea54846da417a1f802b17c39a8f72b163b40e51  E64_NOTE.md
+b7d622c67f3af5a1f8702fe6e6b206f85780fa30cc37aa5c5f66d081b67e3f0e  data/e64_fenetre_kappa_verdict.json

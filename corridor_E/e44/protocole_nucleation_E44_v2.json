@@ -1,0 +1,29 @@
+{
+ "amendement": "E44 v2 — ère précoce de reconnexion (snapshots t=8, 12)",
+ "fige_le": "2026-07-31",
+ "protocole_v1_sha256": "42c65a0c7feba59f8e9a2f019160dc50ae2ed4d84e04a7fa93b92ecf3f75febd",
+ "motivation": "v1 montre l'effondrement de la population de boucles entre t=20 (43) et t=90 (7): l'ère des reconnexions est t<20, non couverte par les snapshots v1. Aucune donnée t=8/12 n'a encore été calculée: l'aveugle est préservé.",
+ "inchange": "tous les paramètres du modèle, de la détection, les graines, les seuils et les règles du protocole v1",
+ "ajouts": {
+  "snapshots_supplementaires": {
+   "pas": [
+    160,
+    240
+   ],
+   "t": [
+    8,
+    12
+   ]
+  },
+  "ensembles": {
+   "A": "graines 440101-440106 (t=8,12,20)",
+   "B": "graines 440201-440206 (t=8,12)"
+  },
+  "predictions": {
+   "P2a": ">= 1 paire liée (|Lk|>=0.5) à t=8 ou t=12 dans >= 1 run de l'ensemble A; H0: aucune -> B3-FAIL #10 confirmé sur l'ère précoce",
+   "P2b": "ensemble B à t=8,12: recensement observationnel (les boucles pré-drainage existent-elles?), sans prédiction directionnelle",
+   "P5": "le nombre de boucles à t=8 dépasse celui à t=20 dans chaque run A (vérification du mécanisme)"
+  }
+ },
+ "sha256_amendement_v2": "bc977f17a72a285c32606977d9568c1a90dc77cc2dec9750adad82f6c678abb7"
+}

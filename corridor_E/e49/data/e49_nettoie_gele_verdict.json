@@ -1,0 +1,1857 @@
+{
+  "campagne": "E49",
+  "protocole": "E49-NETTOIE-GELE-1.0 (gelé)",
+  "runs": {
+    "440101": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 35,
+          "longueur_totale": 4410,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 3,
+          "lisible": true
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 13,
+          "longueur_totale": 802,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 14,
+          "longueur_totale": 1100,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 5,
+          "longueur_totale": 548,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true
+        }
+      },
+      "nucle": false
+    },
+    "440102": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 52,
+          "longueur_totale": 2344,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 9,
+          "lisible": false
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 24,
+          "longueur_totale": 1486,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true
+        },
+        "16.0": {
+          "lie": true,
+          "nboucles": 14,
+          "longueur_totale": 3132,
+          "npaires": 1,
+          "paires": [
+            [
+              2,
+              3,
+              1.029
+            ]
+          ],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 8,
+          "longueur_totale": 1058,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true
+        }
+      },
+      "nucle": true,
+      "t_n": 16.0,
+      "lk_nucleation": 1.029,
+      "A": {
+        "45.0": {
+          "lie": false,
+          "nboucles": 4,
+          "longueur_totale": 346,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true,
+          "paire_conservee": false,
+          "lk_suivi": null,
+          "dist_suivi": [
+            15.04,
+            21.33
+          ]
+        },
+        "90.0": {
+          "lie": false,
+          "nboucles": 0,
+          "longueur_totale": 0,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true,
+          "paire_conservee": false,
+          "lk_suivi": null,
+          "dist_suivi": [
+            null,
+            null
+          ]
+        }
+      },
+      "B2": {
+        "21.0": {
+          "lie": false,
+          "nboucles": 7,
+          "longueur_totale": 948,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true,
+          "paire_conservee": false,
+          "lk_suivi": 0.007,
+          "dist_suivi": [
+            2.12,
+            2.64
+          ]
+        },
+        "45.0": {
+          "lie": true,
+          "nboucles": 400,
+          "longueur_totale": 12936,
+          "npaires": 3,
+          "paires": [
+            [
+              1,
+              7,
+              -0.661
+            ],
+            [
+              28,
+              136,
+              -0.973
+            ],
+            [
+              79,
+              157,
+              0.547
+            ]
+          ],
+          "anom": 72,
+          "amb": 7708,
+          "lisible": false,
+          "paire_conservee": false,
+          "lk_suivi": 0.005,
+          "dist_suivi": [
+            1.0,
+            2.45
+          ]
+        },
+        "90.0": {
+          "lie": true,
+          "nboucles": 400,
+          "longueur_totale": 11488,
+          "npaires": 5,
+          "paires": [
+            [
+              0,
+              13,
+              -1.876
+            ],
+            [
+              0,
+              177,
+              0.623
+            ],
+            [
+              16,
+              53,
+              0.884
+            ],
+            [
+              88,
+              205,
+              -0.52
+            ],
+            [
+              136,
+              139,
+              -0.722
+            ]
+          ],
+          "anom": 105,
+          "amb": 10125,
+          "lisible": false,
+          "paire_conservee": false,
+          "lk_suivi": null,
+          "dist_suivi": [
+            1.94,
+            6.08
+          ]
+        }
+      }
+    },
+    "440103": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 24,
+          "longueur_totale": 1216,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true
+        },
+        "12.0": {
+          "lie": true,
+          "nboucles": 21,
+          "longueur_totale": 4508,
+          "npaires": 1,
+          "paires": [
+            [
+              0,
+              1,
+              -1.041
+            ]
+          ],
+          "anom": 0,
+          "amb": 1,
+          "lisible": true
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 16,
+          "longueur_totale": 1450,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 9,
+          "longueur_totale": 2456,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true
+        }
+      },
+      "nucle": true,
+      "t_n": 12.0,
+      "lk_nucleation": -1.041,
+      "A": {
+        "45.0": {
+          "lie": false,
+          "nboucles": 3,
+          "longueur_totale": 520,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true,
+          "paire_conservee": false,
+          "lk_suivi": null,
+          "dist_suivi": [
+            4.06,
+            2.91
+          ]
+        },
+        "90.0": {
+          "lie": false,
+          "nboucles": 1,
+          "longueur_totale": 88,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true,
+          "paire_conservee": false,
+          "lk_suivi": null,
+          "dist_suivi": [
+            11.18,
+            24.95
+          ]
+        }
+      },
+      "B2": {
+        "17.0": {
+          "lie": false,
+          "nboucles": 12,
+          "longueur_totale": 1704,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true,
+          "paire_conservee": false,
+          "lk_suivi": 0.003,
+          "dist_suivi": [
+            2.35,
+            2.12
+          ]
+        },
+        "45.0": {
+          "lie": true,
+          "nboucles": 400,
+          "longueur_totale": 15468,
+          "npaires": 4,
+          "paires": [
+            [
+              4,
+              54,
+              0.784
+            ],
+            [
+              14,
+              170,
+              -0.679
+            ],
+            [
+              35,
+              162,
+              0.544
+            ],
+            [
+              41,
+              164,
+              0.989
+            ]
+          ],
+          "anom": 118,
+          "amb": 11098,
+          "lisible": false,
+          "paire_conservee": false,
+          "lk_suivi": -0.0,
+          "dist_suivi": [
+            1.22,
+            1.58
+          ]
+        },
+        "90.0": {
+          "lie": true,
+          "nboucles": 400,
+          "longueur_totale": 14984,
+          "npaires": 7,
+          "paires": [
+            [
+              0,
+              8,
+              -0.635
+            ],
+            [
+              0,
+              46,
+              0.608
+            ],
+            [
+              2,
+              241,
+              0.972
+            ],
+            [
+              3,
+              75,
+              -0.578
+            ],
+            [
+              4,
+              13,
+              -0.788
+            ],
+            [
+              86,
+              118,
+              0.954
+            ],
+            [
+              168,
+              323,
+              0.595
+            ]
+          ],
+          "anom": 108,
+          "amb": 13187,
+          "lisible": false,
+          "paire_conservee": false,
+          "lk_suivi": 0.0,
+          "dist_suivi": [
+            1.0,
+            1.22
+          ]
+        }
+      }
+    },
+    "440104": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 24,
+          "longueur_totale": 2734,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2,
+          "lisible": true
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 17,
+          "longueur_totale": 840,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1,
+          "lisible": true
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 19,
+          "longueur_totale": 2180,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2,
+          "lisible": true
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 9,
+          "longueur_totale": 624,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true
+        }
+      },
+      "nucle": false
+    },
+    "440105": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 29,
+          "longueur_totale": 2054,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2,
+          "lisible": true
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 15,
+          "longueur_totale": 522,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 8,
+          "longueur_totale": 580,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1,
+          "lisible": true
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 5,
+          "longueur_totale": 104,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true
+        }
+      },
+      "nucle": false
+    },
+    "440106": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 38,
+          "longueur_totale": 1640,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 3,
+          "lisible": true
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 15,
+          "longueur_totale": 788,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1,
+          "lisible": true
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 6,
+          "longueur_totale": 278,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 7,
+          "longueur_totale": 250,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2,
+          "lisible": true
+        }
+      },
+      "nucle": false
+    },
+    "440107": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 43,
+          "longueur_totale": 1666,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 18,
+          "longueur_totale": 2232,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1,
+          "lisible": true
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 11,
+          "longueur_totale": 640,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 9,
+          "longueur_totale": 890,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1,
+          "lisible": true
+        }
+      },
+      "nucle": false
+    },
+    "440108": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 47,
+          "longueur_totale": 2782,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2,
+          "lisible": true
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 27,
+          "longueur_totale": 1100,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2,
+          "lisible": true
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 20,
+          "longueur_totale": 3298,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2,
+          "lisible": true
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 6,
+          "longueur_totale": 242,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1,
+          "lisible": true
+        }
+      },
+      "nucle": false
+    },
+    "440109": {
+      "nucleation": {
+        "8.0": {
+          "lie": true,
+          "nboucles": 39,
+          "longueur_totale": 3638,
+          "npaires": 1,
+          "paires": [
+            [
+              0,
+              1,
+              1.069
+            ]
+          ],
+          "anom": 0,
+          "amb": 3,
+          "lisible": true
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 17,
+          "longueur_totale": 4560,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1,
+          "lisible": true
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 14,
+          "longueur_totale": 1140,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 7,
+          "longueur_totale": 634,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true
+        }
+      },
+      "nucle": true,
+      "t_n": 8.0,
+      "lk_nucleation": 1.069,
+      "A": {
+        "45.0": {
+          "lie": false,
+          "nboucles": 2,
+          "longueur_totale": 942,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true,
+          "paire_conservee": false,
+          "lk_suivi": null,
+          "dist_suivi": [
+            6.96,
+            15.95
+          ]
+        },
+        "90.0": {
+          "lie": false,
+          "nboucles": 0,
+          "longueur_totale": 0,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true,
+          "paire_conservee": false,
+          "lk_suivi": null,
+          "dist_suivi": [
+            null,
+            null
+          ]
+        }
+      },
+      "B2": {
+        "13.0": {
+          "lie": false,
+          "nboucles": 21,
+          "longueur_totale": 4310,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1,
+          "lisible": true,
+          "paire_conservee": false,
+          "lk_suivi": -0.0,
+          "dist_suivi": [
+            2.0,
+            2.78
+          ]
+        },
+        "45.0": {
+          "lie": true,
+          "nboucles": 400,
+          "longueur_totale": 17202,
+          "npaires": 14,
+          "paires": [
+            [
+              2,
+              97,
+              -0.814
+            ],
+            [
+              5,
+              130,
+              -0.591
+            ],
+            [
+              9,
+              299,
+              0.835
+            ],
+            [
+              17,
+              28,
+              1.216
+            ],
+            [
+              18,
+              44,
+              0.841
+            ],
+            [
+              18,
+              105,
+              0.686
+            ],
+            [
+              24,
+              105,
+              0.775
+            ],
+            [
+              35,
+              203,
+              -0.541
+            ],
+            [
+              41,
+              42,
+              0.612
+            ],
+            [
+              43,
+              44,
+              -0.924
+            ],
+            [
+              85,
+              137,
+              -0.886
+            ],
+            [
+              88,
+              169,
+              0.798
+            ],
+            [
+              97,
+              122,
+              0.582
+            ],
+            [
+              111,
+              153,
+              0.746
+            ]
+          ],
+          "anom": 173,
+          "amb": 16920,
+          "lisible": false,
+          "paire_conservee": false,
+          "lk_suivi": -0.0,
+          "dist_suivi": [
+            1.8,
+            1.22
+          ]
+        },
+        "90.0": {
+          "lie": true,
+          "nboucles": 400,
+          "longueur_totale": 18100,
+          "npaires": 3,
+          "paires": [
+            [
+              1,
+              226,
+              1.021
+            ],
+            [
+              3,
+              54,
+              0.727
+            ],
+            [
+              50,
+              126,
+              1.211
+            ]
+          ],
+          "anom": 151,
+          "amb": 18739,
+          "lisible": false,
+          "paire_conservee": false,
+          "lk_suivi": 0.0,
+          "dist_suivi": [
+            1.22,
+            1.32
+          ]
+        }
+      }
+    },
+    "440110": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 39,
+          "longueur_totale": 1440,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 9,
+          "lisible": false
+        },
+        "12.0": {
+          "lie": true,
+          "nboucles": 19,
+          "longueur_totale": 2958,
+          "npaires": 1,
+          "paires": [
+            [
+              0,
+              2,
+              -0.986
+            ]
+          ],
+          "anom": 0,
+          "amb": 2,
+          "lisible": true
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 9,
+          "longueur_totale": 392,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1,
+          "lisible": true
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 7,
+          "longueur_totale": 462,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true
+        }
+      },
+      "nucle": true,
+      "t_n": 12.0,
+      "lk_nucleation": -0.986,
+      "A": {
+        "45.0": {
+          "lie": false,
+          "nboucles": 1,
+          "longueur_totale": 898,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true,
+          "paire_conservee": false,
+          "lk_suivi": null,
+          "dist_suivi": [
+            5.34,
+            19.16
+          ]
+        },
+        "90.0": {
+          "lie": false,
+          "nboucles": 2,
+          "longueur_totale": 386,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true,
+          "paire_conservee": false,
+          "lk_suivi": null,
+          "dist_suivi": [
+            4.85,
+            17.43
+          ]
+        }
+      },
+      "B2": {
+        "17.0": {
+          "lie": false,
+          "nboucles": 11,
+          "longueur_totale": 2906,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true,
+          "paire_conservee": false,
+          "lk_suivi": null,
+          "dist_suivi": [
+            3.67,
+            18.44
+          ]
+        },
+        "45.0": {
+          "lie": true,
+          "nboucles": 400,
+          "longueur_totale": 14126,
+          "npaires": 3,
+          "paires": [
+            [
+              8,
+              81,
+              0.673
+            ],
+            [
+              42,
+              77,
+              -0.521
+            ],
+            [
+              276,
+              385,
+              -0.565
+            ]
+          ],
+          "anom": 92,
+          "amb": 11324,
+          "lisible": false,
+          "paire_conservee": false,
+          "lk_suivi": -0.0,
+          "dist_suivi": [
+            1.0,
+            2.64
+          ]
+        },
+        "90.0": {
+          "lie": true,
+          "nboucles": 400,
+          "longueur_totale": 14396,
+          "npaires": 8,
+          "paires": [
+            [
+              5,
+              312,
+              -0.523
+            ],
+            [
+              7,
+              89,
+              1.219
+            ],
+            [
+              8,
+              62,
+              0.762
+            ],
+            [
+              9,
+              32,
+              -0.861
+            ],
+            [
+              27,
+              32,
+              -0.71
+            ],
+            [
+              59,
+              70,
+              0.824
+            ],
+            [
+              62,
+              256,
+              -0.511
+            ],
+            [
+              72,
+              213,
+              0.812
+            ]
+          ],
+          "anom": 123,
+          "amb": 13119,
+          "lisible": false,
+          "paire_conservee": false,
+          "lk_suivi": 0.0,
+          "dist_suivi": [
+            1.22,
+            1.22
+          ]
+        }
+      }
+    },
+    "440111": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 46,
+          "longueur_totale": 3598,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2,
+          "lisible": true
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 19,
+          "longueur_totale": 1718,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2,
+          "lisible": true
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 13,
+          "longueur_totale": 1788,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 9,
+          "longueur_totale": 2372,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true
+        }
+      },
+      "nucle": false
+    },
+    "440112": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 27,
+          "longueur_totale": 1822,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1,
+          "lisible": true
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 21,
+          "longueur_totale": 840,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2,
+          "lisible": true
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 17,
+          "longueur_totale": 1142,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2,
+          "lisible": true
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 10,
+          "longueur_totale": 318,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true
+        }
+      },
+      "nucle": false
+    },
+    "440113": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 39,
+          "longueur_totale": 1924,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1,
+          "lisible": true
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 12,
+          "longueur_totale": 620,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2,
+          "lisible": true
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 12,
+          "longueur_totale": 3488,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1,
+          "lisible": true
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 12,
+          "longueur_totale": 632,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true
+        }
+      },
+      "nucle": false
+    },
+    "440114": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 32,
+          "longueur_totale": 2466,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 3,
+          "lisible": true
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 22,
+          "longueur_totale": 902,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 3,
+          "lisible": true
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 13,
+          "longueur_totale": 576,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 12,
+          "longueur_totale": 2596,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1,
+          "lisible": true
+        }
+      },
+      "nucle": false
+    },
+    "440115": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 30,
+          "longueur_totale": 1998,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2,
+          "lisible": true
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 23,
+          "longueur_totale": 1200,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 10,
+          "longueur_totale": 2898,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 4,
+          "longueur_totale": 514,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true
+        }
+      },
+      "nucle": false
+    },
+    "440116": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 31,
+          "longueur_totale": 1858,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1,
+          "lisible": true
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 20,
+          "longueur_totale": 4446,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 12,
+          "longueur_totale": 3282,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 4,
+          "longueur_totale": 300,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true
+        }
+      },
+      "nucle": false
+    },
+    "440117": {
+      "nucleation": {
+        "8.0": {
+          "lie": true,
+          "nboucles": 34,
+          "longueur_totale": 6320,
+          "npaires": 1,
+          "paires": [
+            [
+              1,
+              4,
+              1.017
+            ]
+          ],
+          "anom": 0,
+          "amb": 4,
+          "lisible": true
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 20,
+          "longueur_totale": 4434,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2,
+          "lisible": true
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 6,
+          "longueur_totale": 172,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2,
+          "lisible": true
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 7,
+          "longueur_totale": 1350,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true
+        }
+      },
+      "nucle": true,
+      "t_n": 8.0,
+      "lk_nucleation": 1.017,
+      "A": {
+        "45.0": {
+          "lie": false,
+          "nboucles": 4,
+          "longueur_totale": 768,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true,
+          "paire_conservee": false,
+          "lk_suivi": null,
+          "dist_suivi": [
+            11.45,
+            22.32
+          ]
+        },
+        "90.0": {
+          "lie": false,
+          "nboucles": 2,
+          "longueur_totale": 110,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true,
+          "paire_conservee": false,
+          "lk_suivi": null,
+          "dist_suivi": [
+            11.15,
+            11.82
+          ]
+        }
+      },
+      "B2": {
+        "13.0": {
+          "lie": false,
+          "nboucles": 12,
+          "longueur_totale": 4048,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1,
+          "lisible": true,
+          "paire_conservee": false,
+          "lk_suivi": null,
+          "dist_suivi": [
+            3.64,
+            9.07
+          ]
+        },
+        "45.0": {
+          "lie": true,
+          "nboucles": 400,
+          "longueur_totale": 18298,
+          "npaires": 3,
+          "paires": [
+            [
+              3,
+              129,
+              -0.553
+            ],
+            [
+              22,
+              326,
+              0.738
+            ],
+            [
+              213,
+              269,
+              0.762
+            ]
+          ],
+          "anom": 139,
+          "amb": 17253,
+          "lisible": false,
+          "paire_conservee": false,
+          "lk_suivi": -0.0,
+          "dist_suivi": [
+            1.22,
+            1.22
+          ]
+        },
+        "90.0": {
+          "lie": true,
+          "nboucles": 400,
+          "longueur_totale": 17620,
+          "npaires": 5,
+          "paires": [
+            [
+              1,
+              67,
+              1.11
+            ],
+            [
+              10,
+              123,
+              0.672
+            ],
+            [
+              29,
+              169,
+              0.702
+            ],
+            [
+              31,
+              69,
+              -1.054
+            ],
+            [
+              98,
+              225,
+              1.086
+            ]
+          ],
+          "anom": 155,
+          "amb": 18589,
+          "lisible": false,
+          "paire_conservee": false,
+          "lk_suivi": 0.0,
+          "dist_suivi": [
+            1.22,
+            1.41
+          ]
+        }
+      }
+    },
+    "440118": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 35,
+          "longueur_totale": 2216,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 3,
+          "lisible": true
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 19,
+          "longueur_totale": 1108,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1,
+          "lisible": true
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 14,
+          "longueur_totale": 1828,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 6,
+          "longueur_totale": 610,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true
+        }
+      },
+      "nucle": false
+    },
+    "440119": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 26,
+          "longueur_totale": 1396,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2,
+          "lisible": true
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 23,
+          "longueur_totale": 3810,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2,
+          "lisible": true
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 10,
+          "longueur_totale": 1012,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1,
+          "lisible": true
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 5,
+          "longueur_totale": 374,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true
+        }
+      },
+      "nucle": false
+    },
+    "440120": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 48,
+          "longueur_totale": 1760,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2,
+          "lisible": true
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 27,
+          "longueur_totale": 4154,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 3,
+          "lisible": true
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 13,
+          "longueur_totale": 3044,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1,
+          "lisible": true
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 5,
+          "longueur_totale": 144,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1,
+          "lisible": true
+        }
+      },
+      "nucle": false
+    },
+    "440121": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 26,
+          "longueur_totale": 1150,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 3,
+          "lisible": true
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 25,
+          "longueur_totale": 1698,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 6,
+          "lisible": false
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 17,
+          "longueur_totale": 2732,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1,
+          "lisible": true
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 6,
+          "longueur_totale": 1220,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1,
+          "lisible": true
+        }
+      },
+      "nucle": false
+    },
+    "440122": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 22,
+          "longueur_totale": 970,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1,
+          "lisible": true
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 19,
+          "longueur_totale": 1230,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 14,
+          "longueur_totale": 1614,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1,
+          "lisible": true
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 10,
+          "longueur_totale": 428,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true
+        }
+      },
+      "nucle": false
+    },
+    "440123": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 38,
+          "longueur_totale": 1262,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 4,
+          "lisible": true
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 16,
+          "longueur_totale": 820,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 3,
+          "lisible": true
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 11,
+          "longueur_totale": 3272,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 7,
+          "longueur_totale": 2212,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0,
+          "lisible": true
+        }
+      },
+      "nucle": false
+    },
+    "440124": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 41,
+          "longueur_totale": 2630,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1,
+          "lisible": true
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 11,
+          "longueur_totale": 372,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2,
+          "lisible": true
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 12,
+          "longueur_totale": 2880,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1,
+          "lisible": true
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 9,
+          "longueur_totale": 2260,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1,
+          "lisible": true
+        }
+      },
+      "nucle": false
+    }
+  },
+  "agregation": {
+    "P0_filiation_440103_t12": true,
+    "n_runs_nucles": 5,
+    "runs_nucles": [
+      "440102",
+      "440103",
+      "440109",
+      "440110",
+      "440117"
+    ],
+    "t_n_par_run": {
+      "440102": 16.0,
+      "440103": 12.0,
+      "440109": 8.0,
+      "440110": 12.0,
+      "440117": 8.0
+    },
+    "persistance_identifiee_A": 0,
+    "persistance_identifiee_B2": 0,
+    "lisibilite_B2": 0,
+    "lien_vivant_entree_gel": 0,
+    "P0b_temoin_A_zero": true,
+    "P1_B2>A": false,
+    "P2_B2_lisible": false,
+    "durée_s": 720.7
+  }
+}

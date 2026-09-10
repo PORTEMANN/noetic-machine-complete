@@ -1,0 +1,9 @@
+# Campagne E58 + E58-A (locale, 09/09/2026) — deux B3-FAIL-TECHNIQUE, causes identifiées (injection par la paroi ; drainage des périphériques sans paroi) ; question non testée, non réfutée ; chaîne de réparation suspendue (décision d'auteur) ; staging, non publiée
+19d0d6f0549fe56210bcab46eef7af73056040493f79f20143cc0d3ff5cbdee7  e58_protocole.json
+6bd394587ea5abf3e12bde37ee2a9a301362db01088f1afd70214b14af8f8a9d  e58a_amendement.json
+06cfecbb10def94e1182f5f3c13b27328f6d84cfaf7f529d87f2101325b74d1f  src/e58_run.py
+a842514a5fdf9b5953d2d56dd0cfb60ef011d00127d765d2a68a9b152f6327a3  src/e58a_run.py
+604c22322370eaa8707ddb6e7529b29539ec125c121b7e5368e2287b60ae1ac7  src/e44_core.py
+d85e9197f0d8156d2ff8d44a28772f4c207eccc426c603219f662ff6a8396ff0  E58_NOTE.md
+0129adbe77cf543c8f532cc4e2417e658e5ebae45926651cd9165785e053b504  data/e58_reseau_verdict.json
+f0c109d55d5dc5f27d4ec1b2494c0a8cb07742d58eec082106a63c65abbe5223  data/e58a_reseau_verdict.json

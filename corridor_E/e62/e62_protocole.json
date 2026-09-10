@@ -1,0 +1,28 @@
+{
+ "campagne": "E62 — fenêtre longue : la cage confinée tient-elle à t=180 ?",
+ "protocole": "E62-FENETRE-1.0",
+ "fige_le": "2026-09-09",
+ "aveugle": "aucune donnée E62 n'existe à la date de gel ; tout amendement futur sera haché avant calcul",
+ "contexte_et_filiation": {
+  "E61": "SUCCÈS (09/09/2026) — la pression du vide tient la cage ANU sur [0, 90] ; note de marge déclarée : bornes presque saturées à t=90 (rms à 82 %, échappement à 95 %)",
+  "harnais": "src/e62_run.py — E61 repris (filaments, Biot-Savart, confinement κ=0,05 inchangés ; clauses inchangées)"
+ },
+ "question_unique": "la cage confinée tient-elle les mêmes clauses gelées jusqu'à t=180 — ou les marges de t=90 étaient-elles le signe d'une fuite lente ?",
+ "design_gele": {
+  "identique_a_E61": "cage ANU, confinement κ=0,05, clauses d'E60 (rms ∈ [0,5 ; 1,5]× initial, échappement ≤ 2×R_cage) — inchangées",
+  "fenetre": "t = 0, 45, 90, 135, 180 (figé)",
+  "bras_B_seul": "le témoin libre a fait sa mesure (E60/E61) ; E62 ne mesure que la tenue confinée (déclaré)"
+ },
+ "predictions": {
+  "P1": "les clauses tiennent à t=135 ET t=180 (directionnel pré-enregistré — l'équilibre est durable, pas seulement une fenêtre)",
+  "P2": "observationnel : la dérive rms se sature-t-elle (signe d'un vrai équilibre) ou croît-elle monotone (fuite lente) ?"
+ },
+ "regle_de_verdict": {
+  "SUCCES": "P1 — l'équilibre souffle/pression est durable : la structure est stable, pas une fenêtre de passage",
+  "B3-FAIL": "une clause casse avant t=180 — l'équilibre fuit lentement ; la note de marge d'E61 était le signe d'une dérive, publiée au même niveau",
+  "PARTIEL": "tenue à 135, cassure à 180 (publié tel quel)"
+ },
+ "cout_mesure_estime": "~5 min CPU",
+ "convention_sha256": "le champ sha256_protocole est calculé sur le présent fichier avec ce champ vide (\"\")",
+ "sha256_protocole": "3d66da70d10a985bc8d794f0283a873bc50767ad83f560a72bfe0fe226651000"
+}

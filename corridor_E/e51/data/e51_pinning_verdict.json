@@ -1,0 +1,210 @@
+{
+  "campagne": "E51",
+  "protocole": "E51-PINNING-1.0 (gelé)",
+  "entree_relaxee": {
+    "lie": true,
+    "nboucles": 4,
+    "longueur_totale": 308,
+    "npaires": 1,
+    "paires": [
+      [
+        1,
+        3,
+        0.976
+      ]
+    ],
+    "anom": 0,
+    "amb": 0,
+    "lisible": true
+  },
+  "n_puits": [
+    16,
+    13
+  ],
+  "paire_suivie": {
+    "lk_entree": 0.976,
+    "P0_filiation_T0": true
+  },
+  "bras_A": {
+    "5.0": {
+      "lie": true,
+      "nboucles": 4,
+      "longueur_totale": 308,
+      "npaires": 1,
+      "paires": [
+        [
+          1,
+          3,
+          0.976
+        ]
+      ],
+      "anom": 0,
+      "amb": 0,
+      "lisible": true,
+      "paire_conservee": true,
+      "lk_suivi": 0.976,
+      "dist_suivi": [
+        0.0,
+        0.0
+      ]
+    },
+    "45.0": {
+      "lie": false,
+      "nboucles": 0,
+      "longueur_totale": 0,
+      "npaires": 0,
+      "paires": [],
+      "anom": 0,
+      "amb": 0,
+      "lisible": true,
+      "paire_conservee": false,
+      "lk_suivi": null,
+      "dist_suivi": [
+        null,
+        null
+      ]
+    },
+    "90.0": {
+      "lie": false,
+      "nboucles": 0,
+      "longueur_totale": 0,
+      "npaires": 0,
+      "paires": [],
+      "anom": 0,
+      "amb": 0,
+      "lisible": true,
+      "paire_conservee": false,
+      "lk_suivi": null,
+      "dist_suivi": [
+        null,
+        null
+      ]
+    }
+  },
+  "bras_B": {
+    "5.0": {
+      "lie": true,
+      "nboucles": 4,
+      "longueur_totale": 308,
+      "npaires": 1,
+      "paires": [
+        [
+          1,
+          3,
+          0.976
+        ]
+      ],
+      "anom": 0,
+      "amb": 0,
+      "lisible": true,
+      "paire_conservee": true,
+      "lk_suivi": 0.976,
+      "dist_suivi": [
+        0.0,
+        0.0
+      ]
+    },
+    "45.0": {
+      "lie": false,
+      "nboucles": 0,
+      "longueur_totale": 0,
+      "npaires": 0,
+      "paires": [],
+      "anom": 0,
+      "amb": 0,
+      "lisible": true,
+      "paire_conservee": false,
+      "lk_suivi": null,
+      "dist_suivi": [
+        null,
+        null
+      ]
+    },
+    "90.0": {
+      "lie": false,
+      "nboucles": 0,
+      "longueur_totale": 0,
+      "npaires": 0,
+      "paires": [],
+      "anom": 0,
+      "amb": 0,
+      "lisible": true,
+      "paire_conservee": false,
+      "lk_suivi": null,
+      "dist_suivi": [
+        null,
+        null
+      ]
+    }
+  },
+  "bras_C": {
+    "5.0": {
+      "lie": true,
+      "nboucles": 4,
+      "longueur_totale": 308,
+      "npaires": 1,
+      "paires": [
+        [
+          1,
+          3,
+          0.976
+        ]
+      ],
+      "anom": 0,
+      "amb": 0,
+      "lisible": true,
+      "paire_conservee": true,
+      "lk_suivi": 0.976,
+      "dist_suivi": [
+        0.0,
+        0.0
+      ]
+    },
+    "45.0": {
+      "lie": false,
+      "nboucles": 0,
+      "longueur_totale": 0,
+      "npaires": 0,
+      "paires": [],
+      "anom": 0,
+      "amb": 0,
+      "lisible": true,
+      "paire_conservee": false,
+      "lk_suivi": null,
+      "dist_suivi": [
+        null,
+        null
+      ]
+    },
+    "90.0": {
+      "lie": false,
+      "nboucles": 0,
+      "longueur_totale": 0,
+      "npaires": 0,
+      "paires": [],
+      "anom": 0,
+      "amb": 0,
+      "lisible": true,
+      "paire_conservee": false,
+      "lk_suivi": null,
+      "dist_suivi": [
+        null,
+        null
+      ]
+    }
+  },
+  "agregation": {
+    "P0_filiation_T0": true,
+    "lk_entree": 0.976,
+    "P0b_temoin_A_zero": true,
+    "persistance_A": false,
+    "persistance_B": false,
+    "persistance_C": false,
+    "P1_B_conserve": false,
+    "P2_C_ne_conserve_pas": true,
+    "lisibilite_A": true,
+    "lisibilite_B": true,
+    "lisibilite_C": true,
+    "durée_s": 266.2
+  }
+}

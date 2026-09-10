@@ -1,0 +1,42 @@
+{
+ "campagne": "E51 — pinning apparié : un réseau de puits adapté au lien imprimé le conserve-t-il sous trempe amortie ?",
+ "protocole": "E51-PINNING-1.0",
+ "fige_le": "2026-09-09",
+ "aveugle": "aucune donnée E51 n'existe à la date de gel ; harnais exécuté en --smoke uniquement (N=32, homothétie déclarée, hors campagne : lien lu Lk=0,963, puits 16+13 construits, appariés et décalés sains) ; tout amendement futur sera haché avant calcul",
+ "contexte_et_filiation": {
+  "corridor": "E44 (nucléation) → E45–E50 (conservation a posteriori close ; la famille mur-de-densité sous GP est entièrement mesurée, y compris lien né protégé — E50)",
+  "classe_testee": "ancrage SPATIAL (E37) — seule classe non testée ; précédent physique : flux pinning des supraconducteurs de type II",
+  "detecteur": "src/e44_core.py byte-identique (sha256 604c22322370eaa8707ddb6e7529b29539ec125c121b7e5368e2287b60ae1ac7)",
+  "construction": "lien imprimé d'E50 repris à l'identique ; suivi spatial d'E48→E50 inchangé"
+ },
+ "question_unique": "un réseau de puits apparié aux cœurs du lien conserve-t-il le lien sous trempe amortie — là où le même lien sans puits s'évapore ?",
+ "construction_gelee": {
+  "lien": "identique à E50 (anneau 1 : plan xy, centre (31.5,31.5,31.5), R=10 ; anneau 2 : plan xz, centre (41.5,31.5,31.5), r=8 ; δ=1.5 ; relaxation 100 pas à γ=0.3 SANS puits)",
+  "puits": "V_ext = −U0 Σ_w exp(−|x−w|²/2σ²), U0=2, σ=1.5 (figés) ; le long des cœurs des deux anneaux, espacés de ~4 mailles : n1 = round(2πR/4) = 16 sur l'anneau 1, n2 = round(2πr/4) = 13 sur l'anneau 2 (comptage figé) ; appariement DÉCLARÉ et assumé (test d'existence)",
+  "bras": {
+   "A": "γ=0.3, sans puits — témoin (reproduit E50-A : évaporation)",
+   "B": "γ=0.3, puits appariés — le cas supraconducteur",
+   "C": "γ=0.3, puits décalés d'un demi-pas angulaire sur chaque anneau (~2 mailles hors cœur, figé) — témoin de non-appariement"
+  },
+  "snapshots": "t=5 (entrée), t=45, t=90 ; suivi identique à E48→E50"
+ },
+ "nature": "campagne DÉTERMINISTE (condition initiale figée) — test d'existence, pas de statistique ; déclaré",
+ "predictions": {
+  "P0_filiation_T0": "|Lk| ∈ [0.9 ; 1.1] à t=5 (filiation E44-T0/E50) — sinon B3-FAIL technique",
+  "P0b_temoin": "bras A : 0 persistance identifiée (évaporation sans puits — mesuré en E50)",
+  "P1": "bras B : paire conservée identifiée à t=45 ou t=90, lisiblement (directionnel pré-enregistré) — l'ancrage spatial conserve",
+  "P2": "bras C : 0 persistance (directionnel pré-enregistré — l'appariement est nécessaire ; si C conserve aussi, l'ancrage est non spécifique et la prédiction est réfutée)",
+  "P3": "observationnel : distances de suivi, rayons effectifs, lisibilité par bras"
+ },
+ "regle_de_verdict": {
+  "SUCCES": "P0, P0b, P1, P2, tous bras lisibles — l'ancrage spatial adapté conserve le lien : première conservation mesurée du corridor",
+  "PARTIEL": "P0, P0b, P1, mais C conserve aussi (ancrage réel mais non spécifique — publié tel quel)",
+  "B3-FAIL": "P0, P0b, lisible, P1 faux — le pinning apparié ne conserve pas ; la classe E37 est réfutée dans cette implémentation",
+  "ANOMALIE": "un bras illisible (anom>0 ou amb>4) — réparation datée requise",
+  "B3-FAIL-TECHNIQUE": "P0 échoue — harnais réparé avant toute statistique"
+ },
+ "falsifieur_global": "aucune conservation lisible en B → mécanisme réfuté, publié au même niveau",
+ "cout_mesure_estime": "3 bras × ~1700 pas + détections — ~5 min CPU",
+ "convention_sha256": "le champ sha256_protocole est calculé sur le présent fichier avec ce champ vide (\"\")",
+ "sha256_protocole": "c35c31385513ed0a30fea32dcfe531ae85ecec9937a528c3842aaba3bede5143"
+}

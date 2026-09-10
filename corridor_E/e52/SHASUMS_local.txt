@@ -1,0 +1,6 @@
+# Campagne E52 (locale, 09/09/2026) — verdict enregistre dans E52_NOTE.md ; staging, non publiee
+5b59731dbbfcfa7330bb7452eda8a4dd274fa5ded4f8880f15b8ea3597a7ca27  e52_protocole.json
+d720f4fc8d9951f2a692e6cfa8e9f0c2d0ccb21363817b36ee0172278e592e63  src/e52_run.py
+604c22322370eaa8707ddb6e7529b29539ec125c121b7e5368e2287b60ae1ac7  src/e44_core.py
+d79640317152b0614509f12ba3b1c20d359bf180b82dd7a7edaad9134f0d4e06  E52_NOTE.md
+ef13d865663031fbd6453a81d168244849e0d85efd9e943401a02e0d6d261bf0  data/e52_paysage_verdict.json

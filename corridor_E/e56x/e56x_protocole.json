@@ -1,0 +1,28 @@
+{
+ "campagne": "E56-x — extension de robustesse du falsifieur E56 (loi T6)",
+ "protocole": "E56x-ROBUSTESSE-1.0",
+ "fige_le": "2026-09-09",
+ "aveugle": "aucune donnée E56-x n'existe à la date de gel ; harnais exécuté en --smoke uniquement (N=32, graine 999991 hors campagne, validation technique déclarée, non comptée) ; tout amendement futur sera haché avant calcul",
+ "motivation": "note de marge d'E56 (09/09/2026) : SUCCÈS formel reposant sur 1 run (440204), enroulements assis exactement au seuil (|w|=0,5), disparition à t=90. L'extension mesure la robustesse — elle ne re-seuille rien (seuil |w|≥0,5 INCHANGÉ).",
+ "filiation": "harnais d'E56 repris (détecteur E44 byte-level, sha256 604c2232…60ae1ac7 ; ancrage des chapeaux inchangé) ; témoin sans ancrage = bras A apparié (= E54-C à la nouvelle taille)",
+ "design": {
+  "graines": "550101–550124 — 24 NOUVELLES graines déclarées (440204 reste historique, aucun recalibrage sur elle)",
+  "bras": {"A": "sans ancrage (témoin apparié)", "B": "ancrage des chapeaux (identique à E56)"},
+  "snapshots": "t=8,12,20,45,90",
+  "ajouts_gelés": "marge d'enroulement (|w|−0,5) enregistrée par paire ; persistance mesurée SÉPARÉMENT à t=45 et t=90 (E56 comptait « 45 ou 90 » — raffinement déclaré)"
+ },
+ "predictions": {
+  "P0": "structure axiale du bras B dans la fenêtre publiée [9,19] à t=45/90 — sinon B3-FAIL technique",
+  "P1": "taux de nucléation mesuré par bras (observationnel)",
+  "mesure_central": "taux de persistance à t=45 ET t=90 par bras + distribution des marges des paires persistantes",
+  "niveaux_de_verdict": {
+   "ROBUSTE": "≥ 3/24 graines avec persistance à t=45 en B ET marge médiane ≥ 0,1 (i.e. |w| ≥ 0,6 — niveau figé AVANT calcul) — la loi T6 est corroborée robustement",
+   "CONFIRME_FAIBLE": "≥ 1/24 mais en deçà des bornes de robustesse — la loi reste « corroborée faiblement » (statut E56 inchangé)",
+   "REFUTE": "0/24 de persistance à t=45 en B — le succès d'E56 était un épiphénomène ; la loi T6 est réfutée à 24 graines, publiée réfutée au même niveau"
+  }
+ },
+ "falsifieur_global": "0/24 de persistance en B → réfutation de la corroboration E56 et de la loi T6, au même niveau",
+ "cout_mesure_estime": "24 graines × 2 bras × 1800 pas — ~30 min CPU",
+ "convention_sha256": "le champ sha256_protocole est calculé sur le présent fichier avec ce champ vide (\"\")",
+ "sha256_protocole": "7fa7f2c7e8ceebb73c6818c50898183f071541c7b270a2f4ff990b7c2cd9f07e"
+}

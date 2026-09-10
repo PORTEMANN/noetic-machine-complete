@@ -1,0 +1,6 @@
+# Campagne E54-C (locale, 09/09/2026) — PARTIEL_NUCLEE_SEUL ; reproduction E54-A exacte (controle pre-enregistre) ; staging, non publiee
+19112d06d7465f81d35b3c1ca1e2d2f4414d72ac8b840efe80815a53f8fa66b9  e54c_protocole.json
+d5a8dc88dddb3562f493c394b74afadc1c760aad8e37e09a3cb66198845ce027  src/e54c_run.py
+604c22322370eaa8707ddb6e7529b29539ec125c121b7e5368e2287b60ae1ac7  src/e44_core.py
+e9c0ea511b1d09c528c0a39c1d39dcf962d7e32345c248e4a0f02cd4e7191f1e  E54C_NOTE.md
+79ca165b541fa8d8c352f3e63364c2ee9a6c1aaf086f5e3031577894b00aa75d  data/e54c_tressage_verdict.json

@@ -1,0 +1,32 @@
+{
+ "campagne": "E56 — tressage sous rotation AVEC ancrage des pieds de lignes (falsifieur désigné de la loi T6)",
+ "protocole": "E56-ANCRAGE-1.0",
+ "fige_le": "2026-09-09",
+ "aveugle": "aucune donnée E56 n'existe à la date de gel ; tout amendement futur sera haché avant calcul",
+ "statut": "FALSIFIEUR DÉSIGNÉ de la loi T6 (mesurée le 09/09) : « niveau relation : persiste ⟺ non contractile ∧ ancrage externe ». Si E56 ne conserve pas le tressage, la loi est réfutée — publié au même niveau.",
+ "contexte_et_filiation": {
+  "E54-C": "structure axiale persistante (P0 dans la fenêtre publiée) ; tressage nucléé mais non persistant (PARTIEL_NUCLÉE_SEUL) — lignes sans ancrage",
+  "T6": "loi mesurée sur table gelée ; la relation ne persiste que pour lignes ancrées (R4b, réseau d'Abrikosov, documentaire)",
+  "detecteur": "celui d'E54-C (trace_filaments d'e44_core.py, byte-identique ; filtre axial ; enroulement mutuel) — repris inchangé"
+ },
+ "question_unique": "l'ancrage des pieds de lignes (chapeaux pinnés) fait-il persister le tressage nucléé sous rotation ?",
+ "construction_gelee": {
+  "tout_d_E54-C": "géométrie, graines 440201–440206, paramètres, snapshots t=8,12,20,45,90, détecteur, seuils — inchangés",
+  "ancrage": "puits gaussiens (U0=2, σ=1.5 — filiation E51) sur grille de pas 8 (origine décalée de 4) AUX DEUX CHAPEAUX (z ≤ 4 et z ≥ 59, figé), présents dès t=0 ; le reste du volume sans puits"
+ },
+ "predictions": {
+  "P0": "structure axiale reproduite (compte dans [9,19] à t=45/90) — sinon B3-FAIL technique",
+  "P1": "tressage nucléé à t ≤ 20 (comme E54-A/C)",
+  "P2_loi_T6": "une paire tressée à t ≤ 20 RESTE tressée à t=45 ou t=90 — la prédiction directionnelle de la loi (ancrage → persistance de la relation)",
+  "P3": "observationnel : dérive des pieds, enroulements"
+ },
+ "regle_de_verdict": {
+  "SUCCES": "P0, P1, P2 — la loi T6 tient son falsifieur : première conservation de RELATION mesurée dans le corpus",
+  "B3-FAIL": "P0, P1, P2 faux — la loi T6 est réfutée par son falsifieur désigné, publiée réfutée au même niveau",
+  "PARTIEL": "P0, mais aucun tressage ne nuclée (puissance — le taux de E54-C fait foi)",
+  "B3-FAIL-TECHNIQUE": "P0 échoue — harnais réparé avant toute statistique"
+ },
+ "cout_mesure_estime": "~8 min CPU",
+ "convention_sha256": "le champ sha256_protocole est calculé sur le présent fichier avec ce champ vide (\"\")",
+ "sha256_protocole": "5760eae70ba3fb79db4493129f6968ed3102b37d7c73d64d25a30fce5e03cf1f"
+}

@@ -1,0 +1,5 @@
+# Campagne E65 (locale, 09/09/2026) — énergie des cages : minimum E/anneau à n=18 (appui mesuré pour le 18 du proton) ; staging, non publiée
+da2dde72ba6e5ff50373c6732969da3f3eb4032ccb858f05b1f5bc872e57d36a  src/e65_energie.py
+3803db688d2f90eba6268ed002d25019c7935721a86d2fec1cae18a9e4d1ddbc  src/e60_run.py
+7b71818ef802f90dda5e29b5341c277c83c6cc5c0ce6c0cfef9e1a1b39dba35a  E65_NOTE.md
+28f5d8a1d74f4f79f8691ac1c8ef7f19a32a08e084ba0158ed2ef74d18b09892  data/e65_energie_verdict.json

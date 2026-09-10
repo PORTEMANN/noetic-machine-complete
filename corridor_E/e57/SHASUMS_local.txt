@@ -1,0 +1,6 @@
+# Campagne E57 (locale, 09/09/2026) — verdict B3-FAIL (pas de cristallisation à aucune circulation ; surnucléation mesurée) ; staging, non publiée
+9dc1b50c15041f2c124f7883945b00b4936b7cea4309984ae5e8e05fa7b9de42  e57_protocole.json
+549884b5c8765a154111a1a0c162430791cb420531dff50828d560e2c97ca4e2  src/e57_run.py
+604c22322370eaa8707ddb6e7529b29539ec125c121b7e5368e2287b60ae1ac7  src/e44_core.py
+6d1b6719a58d6fa8f617b87e86a4ec10128c550a46cbcf3699a1a4649198be16  E57_NOTE.md
+2910127f8c7f6bbb089ebc861747dcc60bfad6e7b1f0f071b4845ea86d30ca8e  data/e57_cristal_verdict.json

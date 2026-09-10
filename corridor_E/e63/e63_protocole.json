@@ -1,0 +1,29 @@
+{
+ "campagne": "E63 — le « pourquoi 18 » : stabilité de la cage en fonction du nombre d'anneaux n",
+ "protocole": "E63-NOMBRE-1.0",
+ "fige_le": "2026-09-09",
+ "aveugle": "aucune donnée E63 n'existe à la date de gel ; validation d'instrument déclarée : --smoke (mécanique, hors campagne) ; tout amendement futur sera haché avant calcul",
+ "contexte_et_filiation": {
+  "E61": "SUCCÈS — la cage ANU à n=18 tient sous pression du vide (κ=0,05) ; sa géométrie est figée mais non optimisée — la question « pourquoi 18 » devient mesurable",
+  "harnais": "src/e63_run.py — E61 repris (filaments, Biot-Savart, confinement inchangés ; fonctions d'E60/E61 importées, filiation déclarée)"
+ },
+ "question_unique": "la tenue et la stabilité (marge aux bornes) de la cage varient-elles avec le nombre d'anneaux n — et y a-t-il un optimum ?",
+ "design_gele": {
+  "balayage": "n ∈ {12, 14, 16, 18, 20, 22, 24} (figé) ; géométrie d'E60 inchangée (anneaux rayon 6, axes radiaux, 3 latitudes, sphère R_cage=12)",
+  "confinement": "κ=0,05 (inchangé) ; snapshots t = 0, 45, 90",
+  "mesures": "tenue des clauses d'E60 (inchangées) + marge aux bornes à t=90 : marge_rms = 1,5·R_cage − rms ; marge_éch = 2·R_cage − éch_max (figé)",
+  "controle_filiation": "n=18 doit reproduire E61-B (tient) — sinon B3-FAIL technique"
+ },
+ "predictions": {
+  "P1": "la tenue dépend de n (mesurée quel qu'en soit le motif ; la question de l'optimum est mesurée, pas supposée)",
+  "P2": "observationnel : s'il existe un optimum de marge, est-il à n=18 ? (question posée, aucune prédiction directionnelle enregistrée — discipline E1)"
+ },
+ "regle_de_verdict": {
+  "SUCCES": "filiation n=18 + tenue mesurée sur tout le balayage + marge publiée — le « pourquoi 18 » devient une courbe mesurée",
+  "B3-FAIL": "filiation n=18 échoue — harnais réparé avant toute statistique",
+  "PARTIEL": "filiation OK mais aucune tenue nulle part (la cage n'est stable pour aucun n à κ=0,05)"
+ },
+ "cout_mesure_estime": "7 points × ~2 min — ~15 min CPU",
+ "convention_sha256": "le champ sha256_protocole est calculé sur le présent fichier avec ce champ vide (\"\")",
+ "sha256_protocole": "34d76c21a085595a3e2739d38930ff0605bc26486fea5366bd54c74edffb2cf7"
+}

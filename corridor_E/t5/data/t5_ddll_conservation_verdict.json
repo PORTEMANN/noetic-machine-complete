@@ -1,0 +1,226 @@
+{
+  "chantier": "T5-DDLL-CONSERVATION",
+  "protocole": "T5-DDLL-1.0 (gelé)",
+  "table": [
+    {
+      "mécanisme": "E45 coupure amortissement",
+      "n_scal": 1,
+      "n_struct": 1,
+      "n_choix": 0,
+      "ddll": {
+        "v1": 2.0,
+        "v2": 3.0
+      },
+      "contractile": true,
+      "conserve": false,
+      "origine": "corridor"
+    },
+    {
+      "mécanisme": "E46 mur mélangé",
+      "n_scal": 2,
+      "n_struct": 1,
+      "n_choix": 0,
+      "ddll": {
+        "v1": 3.0,
+        "v2": 4.0
+      },
+      "contractile": true,
+      "conserve": false,
+      "origine": "corridor"
+    },
+    {
+      "mécanisme": "E47-B gel de Kelvin",
+      "n_scal": 2,
+      "n_struct": 1,
+      "n_choix": 0,
+      "ddll": {
+        "v1": 3.0,
+        "v2": 4.0
+      },
+      "contractile": true,
+      "conserve": false,
+      "origine": "corridor"
+    },
+    {
+      "mécanisme": "E47-C plancher dissipatif",
+      "n_scal": 2,
+      "n_struct": 1,
+      "n_choix": 0,
+      "ddll": {
+        "v1": 3.0,
+        "v2": 4.0
+      },
+      "contractile": true,
+      "conserve": false,
+      "origine": "corridor"
+    },
+    {
+      "mécanisme": "E48 gel à la nucléation + suivi",
+      "n_scal": 2,
+      "n_struct": 1,
+      "n_choix": 0,
+      "ddll": {
+        "v1": 3.0,
+        "v2": 4.0
+      },
+      "contractile": true,
+      "conserve": false,
+      "origine": "corridor"
+    },
+    {
+      "mécanisme": "E49 nettoyage puis gel",
+      "n_scal": 3,
+      "n_struct": 2,
+      "n_choix": 0,
+      "ddll": {
+        "v1": 5.0,
+        "v2": 7.0
+      },
+      "contractile": true,
+      "conserve": false,
+      "origine": "corridor"
+    },
+    {
+      "mécanisme": "E50 lien imprimé + gel",
+      "n_scal": 5,
+      "n_struct": 2,
+      "n_choix": 2,
+      "ddll": {
+        "v1": 8.585,
+        "v2": 10.585
+      },
+      "contractile": true,
+      "conserve": false,
+      "origine": "corridor"
+    },
+    {
+      "mécanisme": "E51 pinning ponctuel apparié",
+      "n_scal": 3,
+      "n_struct": 1,
+      "n_choix": 29,
+      "ddll": {
+        "v1": 8.907,
+        "v2": 9.907
+      },
+      "contractile": true,
+      "conserve": false,
+      "origine": "corridor"
+    },
+    {
+      "mécanisme": "E52 paysage de puits",
+      "n_scal": 4,
+      "n_struct": 1,
+      "n_choix": 512,
+      "ddll": {
+        "v1": 14.003,
+        "v2": 15.003
+      },
+      "contractile": true,
+      "conserve": false,
+      "origine": "corridor"
+    },
+    {
+      "mécanisme": "E53 canaux toriques",
+      "n_scal": 5,
+      "n_struct": 2,
+      "n_choix": 2,
+      "ddll": {
+        "v1": 8.585,
+        "v2": 10.585
+      },
+      "contractile": true,
+      "conserve": false,
+      "origine": "corridor"
+    },
+    {
+      "mécanisme": "R1 E40 triplet stable une fois formé",
+      "n_scal": 0,
+      "n_struct": 0,
+      "n_choix": 0,
+      "ddll": {
+        "v1": 0.0,
+        "v2": 0.0
+      },
+      "contractile": false,
+      "conserve": true,
+      "origine": "corpus (intrinsèque)"
+    },
+    {
+      "mécanisme": "R2 P24 gap de Hall (protection par gap)",
+      "n_scal": 0,
+      "n_struct": 0,
+      "n_choix": 0,
+      "ddll": {
+        "v1": 0.0,
+        "v2": 0.0
+      },
+      "contractile": false,
+      "conserve": true,
+      "origine": "corpus (intrinsèque)"
+    },
+    {
+      "mécanisme": "R3 P33 charge de bord / asymptotique",
+      "n_scal": 0,
+      "n_struct": 0,
+      "n_choix": 0,
+      "ddll": {
+        "v1": 0.0,
+        "v2": 0.0
+      },
+      "contractile": false,
+      "conserve": true,
+      "origine": "corpus (intrinsèque)"
+    },
+    {
+      "mécanisme": "R4 flux pinning de LIGNES (type II, documentaire)",
+      "n_scal": 2,
+      "n_struct": 1,
+      "n_choix": 512,
+      "ddll": {
+        "v1": 12.003,
+        "v2": 13.003
+      },
+      "contractile": false,
+      "conserve": true,
+      "origine": "documentaire externe — déclaré"
+    }
+  ],
+  "Q1_separation_scalaire": {
+    "v1": {
+      "séparé": false,
+      "sens": null,
+      "seuil": null
+    },
+    "v2": {
+      "séparé": false,
+      "sens": null,
+      "seuil": null
+    }
+  },
+  "Q2_robuste": false,
+  "Q3_carte": {
+    "quadrants": {
+      "(True, False)": [
+        "E45 coupure amortissement",
+        "E46 mur mélangé",
+        "E47-B gel de Kelvin",
+        "E47-C plancher dissipatif",
+        "E48 gel à la nucléation + suivi",
+        "E49 nettoyage puis gel",
+        "E50 lien imprimé + gel",
+        "E51 pinning ponctuel apparié",
+        "E52 paysage de puits",
+        "E53 canaux toriques"
+      ],
+      "(False, True)": [
+        "R1 E40 triplet stable une fois formé",
+        "R2 P24 gap de Hall (protection par gap)",
+        "R3 P33 charge de bord / asymptotique",
+        "R4 flux pinning de LIGNES (type II, documentaire)"
+      ]
+    },
+    "contractiles_tous_échouent": true,
+    "non_contractiles_tous_conservent": true
+  },
+  "durée_s": 0.0
+}

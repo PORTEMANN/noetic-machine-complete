@@ -1,0 +1,16 @@
+{
+ "amendement": "E54-A — recalibrage du traceur sur l'observable publiée d'E44-B",
+ "fige_le": "2026-09-09",
+ "protocole_v1_sha256": "022c225435c1cde3c9078f2ab562c7a97fbc6bc7fd091edd56f1de32b84ec22b",
+ "verdict_v1": "B3-FAIL-TECHNIQUE (09/09/2026) : P0 a échoué — le traceur de lignes maison (portée ≥ 40 tranches, saut ≤ 2) n'a pas reproduit la structure axiale mesurée par E44-B (filaments ouverts de longueur > 40 segments, médiane d'enroulement axial 14, étendue 9–19). La question physique (nucléation et persistance du tressage) est NON TESTÉE — non réfutée.",
+ "motivation": "la règle gelée de v1 l'exige : P0 échoue → harnais réparé avant toute statistique. La réparation est le recalibrage du traceur sur l'observable publiée d'E44-B, en reprenant le détecteur E44 lui-même (trace_filaments de e44_core.py — filiation byte-level) au lieu du traceur maison.",
+ "aveugle": "aucune donnée au-delà du verdict v1 (compteurs agrégés) n'a servi à concevoir cet amendement ; aucun nouveau calcul n'a été fait avant ce gel. L'amendement est haché avant tout calcul.",
+ "inchange": "géométrie du récipient (E44-B), graines 440201–440206, paramètres GP (N=64, A=2, γ=0.3, dt=0.05), snapshots t=8,12,20,45,90, prédictions P1/P2/P3 de v1, seuil de tressage |w| ≥ 0.5, discipline d'aveugle",
+ "ajouts": {
+  "traceur": "trace_filaments de e44_core.py (filiation byte-level, inchangé) — filaments OUVERTS (non fermés contractiles) ; filament axial ⟺ longueur ≥ 40 segments ET étendue en z ≥ 30 mailles (figé)",
+  "masquage": "masquage géométrique hors récipient (filiation E44-B)",
+  "enroulement_mutuel": "pour deux filaments axiaux : positions moyennes par tranche z entière ; w = Σ wrap(Δθ(z))/2π sur l'étendue commune ≥ 30 mailles (figé)",
+  "P0_recalibre": "à t=45 et t=90, le détecteur trouve ≥ 1 filament axial dans ≥ 4/6 graines ET la médiane de l'enroulement axial du plus long filament par (graine, snapshot) est dans [9, 19] — la fenêtre publiée d'E44-B. Sinon : B3-FAIL-TECHNIQUE (deuxième série), réparation plus profonde requise avant toute statistique."
+ },
+ "sha256_amendement": "b495267e2b24827060b691a02fbdbd6810c3162f390e7079474475e4964c1189"
+}

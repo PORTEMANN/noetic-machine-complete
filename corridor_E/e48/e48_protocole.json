@@ -1,0 +1,48 @@
+{
+ "campagne": "E48 — réparation du branchement + suivi de paire : le gel de Kelvin conserve-t-il LA paire nucléée ?",
+ "protocole": "E48-TRACKING-1.0",
+ "fige_le": "2026-09-09",
+ "aveugle": "aucune donnée E48 n'existe à la date de gel ; harnais exécuté en --smoke uniquement (N=16, graine 999996 hors campagne, validation technique déclarée, non comptée) ; tout amendement futur sera haché avant calcul",
+ "erratum_de_conception": {
+  "constat": "E45/E46/E47 branchaient depuis t=20 ; or les 5 runs nucléés n'ont plus de lien détecté à t=20 (évaporation avant le branchement — cohérent avec E44)",
+  "reclassement": "leurs verdicts de non-conservation sont déclassés en « non testé — branchement post-évaporation » ; leurs mesures restent exactes (l'enlacement ne ré-apparaît pas spontanément entre t=20 et t=90, sous aucun des mécanismes testés)",
+  "reparation": "E48 branche AU snapshot de nucléation (le plus précoce avec >= 1 paire) et suit spatialement la paire d'origine"
+ },
+ "contexte_et_filiation": {
+  "E44": "nucléation observée (A/440103, t=12, Lk≃−1) ; v1 42c65a0c…, v2 bc977f17…",
+  "E47": "bras B (γ=0, mur +C) : enchevêtrement figé conservé mais illisible au détecteur ; bras C : B3-FAIL propre",
+  "detecteur": "src/e44_core.py byte-identique (sha256 604c22322370eaa8707ddb6e7529b29539ec125c121b7e5368e2287b60ae1ac7)",
+  "harnais": "src/e48_run.py — structure E45/E46/E47 reprise (écriture incrémentale incluse)"
+ },
+ "design": {
+  "phase_1": "identique à E45/E46/E47 (24 graines 440101–440124, γ=0.3, snapshots t=8,12,16,20) MAIS états ψ conservés à chaque snapshot et branchement au premier snapshot nucléant",
+  "paire_suivie": "celle de max |Lk| au snapshot de nucléation (égalité : première par ordre d'énumération — déclaré)",
+  "bras": {
+   "A": {"gamma": 0.3, "mur": 0, "role": "témoin — évaporation attendue"},
+   "B": {"gamma": 0.0, "mur": "+100", "role": "gel de Kelvin (pression conservative, sans dissipation)"}
+  },
+  "snapshots_bras": {"pas": [900, 1800], "t": [45, 90]}
+ },
+ "suivi_gele": {
+  "retrouvee": "médiane des distances (image minimale) des points d'une candidate (longueur >= 20, figé) à la boucle suivie < 3 mailles (figé)",
+  "conservee_identifiee": "les deux boucles retrouvées ET |Lk| >= 0.5 entre elles",
+  "lisibilite": "anom == 0 ET amb <= 4 (borne d'E47) — rapportée par snapshot ; la persistance identifiée est mesurée quel que soit l'état global, et l'ANOMALIE est prononcée si elle ne repose que sur des snapshots illisibles"
+ },
+ "predictions": {
+  "P0_filiation": "440103 nuclée à t=12 (comme E44/E45/E46/E47) — sinon B3-FAIL technique",
+  "P0b_temoin": "bras A : 0 persistance identifiée (l'évaporation est mesurée depuis E44) — sinon harnais suspect",
+  "P1": "persistance identifiée en B strictement supérieure à A (directionnel pré-enregistré) — le gel de Kelvin conserve LA paire",
+  "P2": "observationnel : distances de suivi, Lk suivis, lisibilité par bras (aucune prédiction directionnelle)"
+ },
+ "regle_de_verdict": {
+  "SUCCES": "P0, P0b, P1, avec au moins un snapshot de persistance lisible en B",
+  "SUCCES_A_CONFIRMER": "P0, P0b, P1, mais toute la persistance B repose sur des snapshots illisibles (ANOMALIE partielle — confirmation par un détecteur renforcé requise, campagne suivante gelée séparément)",
+  "PARTIEL": "P0, P0b, moins de 3 runs branchés",
+  "B3-FAIL": "P0, P0b, P1 faux — le gel de Kelvin ne conserve pas la paire nucléée ; la frontière passe au pinning spatial (E37) ou au nettoyage avant gel (candidat déclaré)",
+  "B3-FAIL-TECHNIQUE": "P0 ou P0b échoue — harnais réparé avant toute statistique"
+ },
+ "falsifieur_global": "aucune persistance identifiée en B au-delà du témoin → mécanisme réfuté, publié au même niveau",
+ "cout_mesure_estime": "phase 1 (~9 min mesurées) + 2 bras × runs nucléés (≤ 5) × ~1650 pas + suivi — ordre de grandeur : 30 min CPU",
+ "convention_sha256": "le champ sha256_protocole est calculé sur le présent fichier avec ce champ vide (\"\")",
+ "sha256_protocole": "de28ed21408933c4f7171621faa201bceab96aa1bcfb0f75957b8fc006573b10"
+}

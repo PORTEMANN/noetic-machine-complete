@@ -1,0 +1,6 @@
+# Campagne E45 (locale, 09/09/2026) — verdict B3-FAIL (capture par coupure d'amortissement refutee) ; staging, non publiee (pause de tri)
+885a9d65aa3192efd8275e7e73821a30ccca3c09564772c28b426e95648996ed  e45_protocole.json
+7f3194ef1e97355e516f08f91b3d36eb8461d7b07f3c50579d83edffb7dfed98  src/e45_run.py
+604c22322370eaa8707ddb6e7529b29539ec125c121b7e5368e2287b60ae1ac7  src/e44_core.py
+415d063e5ec165e6d5dbb4ab93962c3e025c943c0d157836362451bcdabd7541  E45_NOTE.md
+6929c3a541d89ef51c03df97995c6145f6924817808803037978c2a297651559  data/e45_capture_verdict.json

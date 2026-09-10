@@ -1,0 +1,6 @@
+# Campagne E46 (locale, 09/09/2026) — verdict ANOMALIE (succes formel annule par les compteurs du detecteur) ; staging, non publiee (pause de tri)
+6adbdc9e15e6c3e9b5d5bcf4852c3f24ee40b8f64ec215c64b36598542db0ed1  e46_protocole.json
+b28aa4bc9087e2a437ad4624a938df507ac4e059e590ee67dec6a9cba40c73ba  src/e46_run.py
+604c22322370eaa8707ddb6e7529b29539ec125c121b7e5368e2287b60ae1ac7  src/e44_core.py
+c261d8303ab0ed9c2bd3359a105b70d2b6935361bc08b161680b0ebbb6aa5d40  E46_NOTE.md
+b96aa1e29ad1b82dd1fea996a5cdd42b7e69283997567c31e24badcad2179712  data/e46_verrou_verdict.json

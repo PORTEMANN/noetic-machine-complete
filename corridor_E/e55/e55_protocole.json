@@ -1,0 +1,35 @@
+{
+ "campagne": "E55 — naissance protégée : trempe confinée dans deux canaux toriques enlacés",
+ "protocole": "E55-NAISSANCE-1.0",
+ "fige_le": "2026-09-09",
+ "aveugle": "aucune donnée E55 n'existe à la date de gel ; harnais exécuté en --smoke uniquement (N=32, graine 999992 hors campagne, validation technique déclarée, non comptée) ; tout amendement futur sera haché avant calcul",
+ "contexte_et_filiation": {
+  "changement_d_ere": "désigné par le corridor : la conservation a posteriori est close (E45–E53) ; la nucléation connue exige l'ère des reconnexions (E44) — tension mesurée ; E55 fait naître DANS la structure protectrice",
+  "detecteur": "src/e44_core.py byte-identique (sha256 604c22322370eaa8707ddb6e7529b29539ec125c121b7e5368e2287b60ae1ac7)",
+  "geometrie": "canaux toriques d'E53 (identique, filiation) : anneau 1 (plan xy, centre (31.5,31.5,31.5), R=10), anneau 2 (plan xz, centre (41.5,31.5,31.5), r=8), U_g=2, σ=1.5"
+ },
+ "question_unique": "la trempe confinée dans deux canaux enlacés produit-elle un lien de tubes — et persiste-t-il ?",
+ "construction_gelee": {
+  "graines": "555001–555006 (déclarées, hors séries E44)",
+  "condition_initiale": "ψ = exp(iφ aléatoire) à l'intérieur des tubes (d<3 mailles, figé), 0 à l'extérieur",
+  "bras": {"A": "boîte libre sans canaux (témoin)", "B": "canaux présents dès t=0"},
+  "evolution": "γ=0.3 jusqu'à t=90 ; snapshots t=8,12,20,45,90",
+  "attribution": "boucle attribuée à un tube si médiane des distances de ses points au cercle du tube < 3 mailles (figé) ; lien de tubes = paire liée dont les deux boucles sont attribuées à des tubes différents"
+ },
+ "predictions": {
+  "P0_temoin": "le bras A ne produit aucun lien de tubes (cohérence — il n'y a pas de tubes)",
+  "P1_naissance": "≥ 1 lien de tubes nuclée en B à t ≤ 20 dans ≥ 1 graine (mesuré, taux publié)",
+  "P2_persistance": "un lien de tubes né à t ≤ 20 persiste à t=45 ou t=90 (directionnel pré-enregistré — la naissance protégée conserve)",
+  "P3": "observationnel : taux de formation de boucles par tube, attributions, lisibilité"
+ },
+ "regle_de_verdict": {
+  "SUCCES": "P0, P1, P2, lisible — la naissance protégée produit un lien persistant : le corridor se referme par une construction",
+  "PARTIEL_NUCLÉE_SEUL": "P0, P1, P2 faux — le lien naît protégé mais ne persiste pas",
+  "B3-FAIL": "P0, mais aucun lien de tubes ne nuclée — la confinement n'écrit pas le lien ; la voie « changer l'ère » est réfutée dans cette implémentation",
+  "B3-FAIL-TECHNIQUE": "P0 échoue — harnais réparé avant toute statistique"
+ },
+ "falsifieur_global": "aucun lien de tubes ne nuclée ou ne persiste → publié au même niveau",
+ "cout_mesure_estime": "6 graines × 2 bras × 1800 pas — ~30 min CPU",
+ "convention_sha256": "le champ sha256_protocole est calculé sur le présent fichier avec ce champ vide (\"\")",
+ "sha256_protocole": "fe5c48469175ce04e0ab72f8972d059f0c41e604ecc964ba1e7796616fb26dd8"
+}

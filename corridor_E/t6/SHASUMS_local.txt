@@ -1,0 +1,5 @@
+# Campagne T6 (locale, 09/09/2026) — LOI MESURÉE sur table gelée, falsifieur E56 pré-enregistré ; staging, non publiée
+487504075cd657f014a0881f12e9eb6debc1a23370cefc51099a688789241943  t6_protocole.json
+4f2ec47924569b8e1c0c0686c1e1ac57f17c683d25e9bf968ead4a022723c59c  src/t6_loi_deux_etages.py
+3939db0d8afdddf85c8bc67869460832ba91edc2261faf1336fb8fafbf9b1edc  T6_NOTE.md
+afa8d03db6eb45c2b3f041aac3897c46fdd393a4aa9e3835c41e9e18d3bcf243  data/t6_loi_deux_etages_verdict.json

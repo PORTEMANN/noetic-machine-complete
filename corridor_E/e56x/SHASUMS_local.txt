@@ -1,0 +1,6 @@
+# Campagne E56-x (locale, 09/09/2026) — CONFIRME_FAIBLE (persistance au plancher 1/24, B=A ; clause d'ancrage de T6 non soutenue) ; staging, non publiée
+88f03a023d1bd62bea4f7d572d16ee3c2ba436daf69bd3f5dba64542c17ae0cd  e56x_protocole.json
+a0eb120f94e554cd49af999a8f8976a594123f3f33d58d6c2f5a10ee8f309258  src/e56x_run.py
+604c22322370eaa8707ddb6e7529b29539ec125c121b7e5368e2287b60ae1ac7  src/e44_core.py
+585eb9a1cec9da6cbf71b1c237809e6a34bcf4a732885dea32d8bdf6da000862  E56x_NOTE.md
+b1d4fdfdd7683539f6ea20554ed21d2a48301af2755ae33738a83791e08b670f  data/e56x_robustesse_verdict.json

@@ -1,0 +1,24 @@
+{
+ "campagne": "T6 — la loi à deux étages : objet et relation",
+ "protocole": "T6-LOI-1.0",
+ "fige_le": "2026-09-09",
+ "nature": "tiroir banc — table gelée AVANT calcul (dans le script lui-même) ; le calcul est la campagne (exécutée le 09/09/2026) ; discipline E1 : le compte est publié quel qu'il soit",
+ "table_gelee": "extension datée de la table de T5 : E54 (verdict corrigé E54-B) y entre comme premier cas de conservation INTERNE au corridor (structure axiale persistante — objet non contractile) ; niveaux objet/relation séparés",
+ "loi_candidate_gelee": {
+  "niveau_objet": "persiste ⟺ non contractile",
+  "niveau_relation": "persiste ⟺ non contractile ∧ ancrage externe"
+ },
+ "falsifieur_pre_enregistre": "E56 — tressage sous rotation avec ancrage des pieds de lignes : doit conserver le tressage ; si échec, loi réfutée, publiée réfutée au même niveau",
+ "questions": {
+  "Q1": "niveau objet : la contractilité sépare-t-elle la table étendue ?",
+  "Q2": "niveau relation : (non contractile ∧ ancré) sépare-t-elle ?",
+  "Q3": "robustesse : mesures internes seules vs table complète (références documentaires déclarées)"
+ },
+ "verdict_mesure": {
+  "Q1": "séparé — table complète ET interne seule",
+  "Q2": "séparé — table complète ET interne seule",
+  "statut": "LOI MESURÉE sur la table gelée — falsifieur E56 pré-enregistré"
+ },
+ "convention_sha256": "le champ sha256_protocole est calculé sur le présent fichier avec ce champ vide (\"\")",
+ "sha256_protocole": "3701961fd4fdedb4c04aaecd2eb04909f26620c5932090f6289017024d38e8ff"
+}

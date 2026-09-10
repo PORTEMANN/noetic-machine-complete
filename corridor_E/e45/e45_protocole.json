@@ -1,0 +1,53 @@
+{
+ "campagne": "E45 — capture de l'enlacement nucléé",
+ "protocole": "E45-CAPTURE-1.0",
+ "fige_le": "2026-09-09",
+ "aveugle": "aucune donnée E45 n'existe à la date de gel ; le harnais n'a été exécuté qu'en mode --smoke (N=16, graine 999999 hors campagne, validation technique déclarée, non comptée) ; tout amendement futur sera haché avant calcul (discipline de l'amendement v2 d'E44)",
+ "filiation": {
+  "detecteur": "src/e44_core.py byte-identique à E44 (sha256 604c22322370eaa8707ddb6e7529b29539ec125c121b7e5368e2287b60ae1ac7)",
+  "protocole_E44_v1": "42c65a0c7feba59f8e9a2f019160dc50ae2ed4d84e04a7fa93b92ecf3f75febd",
+  "amendement_E44_v2": "bc977f17a72a285c32606977d9568c1a90dc77cc2dec9750adad82f6c678abb7 (copie reçue : 4d899e2b81abd06ae24dff2ff6c943a6825d5b28836aaa72f0480780b3178bf0)",
+  "harnais": "src/e45_run.py (paramètres du modèle et seuils identiques à E44, sauf mention gelée)"
+ },
+ "modele": {
+  "equation": "ψ̇ = −(i+γ)(−A∇²+|ψ|²−1)ψ — GP amorti, spectral FFT",
+  "N": 64, "A": 2.0, "dt": 0.05,
+  "gamma_phase_1": 0.3,
+  "condition_initiale": "phase aléatoire i.i.d. (trempe dure), np.random.default_rng(graine)",
+  "ensemble": "boîte périodique libre (type A d'E44 — pas de paroi ; déclaré)"
+ },
+ "detecteur": {
+  "vorticite": "entière par plaquette, amp_gate=0.0 (comme les runs officiels E44)",
+  "filaments": "chaînage cellulaire d'E44 (appariement le plus droit ; anomalies et ambiguïtés comptées)",
+  "boucles": "fermées contractiles, longueur >= 6, max 400",
+  "enlacement": "nombre de Gauss en image minimale, seuil |Lk| >= 0.5"
+ },
+ "phase_1_nucleation": {
+  "graines": "440101–440106 (filiation E44) + 440107–440124 (extension déclarée) — 24 runs",
+  "snapshots": {"pas": [160, 240, 320, 400], "t": [8, 12, 16, 20]}
+ },
+ "branchement": {
+  "regle": "tout run avec >= 1 paire liée (|Lk| >= 0.5) à un snapshot t <= 20 est continué en DEUX copies depuis l'état ψ à t=20",
+  "OFF": "γ = 0.3 (amortissement maintenu — témoin)",
+  "ON": "γ = 0.0 (coupure de l'amortissement à t=20 — mécanisme testé)",
+  "justification_du_mecanisme": "l'évaporation de l'ère tardive (E44 v1) est attribuée à « tension et amortissement » ; la coupure isole le rôle de l'amortissement. Les mécanismes E37 (cœur incompressible) et E43 (figeage par rotation) sont des bras ultérieurs déclarés, non lancés par ce protocole.",
+  "snapshots_branches": {"pas": [900, 1800], "t": [45, 90]}
+ },
+ "persistance": ">= 1 paire liée (|Lk| >= 0.5) à t=45 ou t=90 — niveau population ; déclaré : l'identité de paire n'est pas suivie à travers les reconnexions",
+ "predictions": {
+  "P0_filiation": "le run 440103 reproduit >= 1 paire liée à t=12 (l'événement E44) — sinon le harnais est réfuté (B3-FAIL technique, la campagne ne statue pas)",
+  "P1": "la fraction de runs branchés avec persistance à t=45 ou t=90 est strictement supérieure en ON qu'en OFF (directionnel pré-enregistré)",
+  "P2": "cohérence : les snapshots t<=20 sont identiques ON/OFF par construction (histoire commune jusqu'au branchement)",
+  "P3": "observationnel : distribution des Lk persistants (aucune prédiction directionnelle)"
+ },
+ "regle_de_verdict": {
+  "SUCCES": "P0 et P1 (effet mesuré sur les runs branchés)",
+  "PARTIEL": "P0 et moins de 3 runs branchés (puissance insuffisante, mesurée et publiée)",
+  "B3-FAIL": "P0 et absence de différence ON/OFF — la capture par coupure d'amortissement est réfutée, critère non déplacé",
+  "B3-FAIL-TECHNIQUE": "P0 échoue — le harnais est réparé avant toute statistique"
+ },
+ "falsifieur_global": "aucune différence de persistance ON/OFF → mécanisme réfuté, publié au même niveau",
+ "cout_mesure_estime": "24 runs × 400 pas + branches (≤ 24 × 2 × 1400 pas) sur 64³ — ordre de grandeur : quelques heures CPU ; chaque run est indépendant",
+ "convention_sha256": "le champ sha256_protocole est calculé sur le présent fichier avec ce champ vide (\"\") — même convention que les protocoles E44 (auto-référence exclue)",
+ "sha256_protocole": "c05f8724f97f2cd11b229508d80b9018c0aecdf876541b8b76a45a20933250d3"
+}

@@ -1,0 +1,36 @@
+{
+ "campagne": "E54 — lignes tressées sous rotation : nucléation et persistance du tressage axial",
+ "protocole": "E54-TRESSAGE-1.0",
+ "fige_le": "2026-09-09",
+ "aveugle": "aucune donnée E54 n'existe à la date de gel ; harnais exécuté en --smoke uniquement (N=32, graine 999993 hors campagne, validation technique déclarée, non comptée) ; tout amendement futur sera haché avant calcul",
+ "contexte_et_filiation": {
+  "changement_d_objet": "désigné par le corridor : les boucles meurent par contraction (E51) ; une ligne axiale en rotation ne peut pas rétrécir — elle ne meurt que par reconnexion ou drainage ; le tressage (enroulement mutuel) est discret (groupe de tresses)",
+  "corridor": "E44→E53 (conservation des boucles close) ; T5 (mesuré le 09/09 : l'axe décisif est la contractilité de l'objet, pas le ddll)",
+  "detecteur": "src/e44_core.py byte-identique (sha256 604c22322370eaa8707ddb6e7529b29539ec125c121b7e5368e2287b60ae1ac7) pour la vorticité de plaquette ; AJOUT DE DÉTECTEUR déclaré et gelé : traceur de lignes axiales + enroulement mutuel (non rétro-appliqué aux campagnes antérieures)",
+  "geometrie": "récipient en rotation EXACTEMENT celui d'E44-B (cylindre r<26, z∈[2,61], paroi fixée à e^{4iφ}, chapeaux nuls)"
+ },
+ "question_unique": "le tressage de lignes axiales (objet non contractile) nuclée-t-il sous rotation, et persiste-t-il ?",
+ "construction_gelee": {
+  "graines": "440201–440206 (ensemble B d'E44 — filiation)",
+  "evolution": "trempe GP amortie, paramètres identiques à E44 (N=64, A=2, γ=0.3, dt=0.05)",
+  "snapshots": {"pas": [160, 240, 400, 900, 1800], "t": [8, 12, 20, 45, 90]},
+  "lignes": "points de vortex par tranche z (vorticité xy, amp_gate=0, masquage géométrique) ; pistes au plus proche entre tranches consécutives (saut max 2 mailles, figé) ; ligne longue : portée ≥ 40 tranches (figé)",
+  "tressage": "w = Σ_z wrap(Δθ(z))/2π sur la portée commune ; paire tressée ⟺ |w| ≥ 0.5 sur ≥ 40 tranches communes (figé)"
+ },
+ "predictions": {
+  "P0_structure_axiale": "≥ 1 ligne longue à chaque snapshot précoce dans chaque graine (reproduit la structure axiale mesurée par E44-B — médiane 14 quanta) — sinon B3-FAIL technique",
+  "P1_nucleation": "≥ 1 paire tressée dans ≥ 1 graine à t ≤ 20 (mesuré, taux publié)",
+  "P2_persistance": "une paire tressée à t ≤ 20 reste tressée à t=45 ou t=90 (directionnel pré-enregistré — les lignes ne rétrécissent pas, seule la reconnexion peut défaire le tressage)",
+  "P3": "observationnel : nombre de lignes, taux de tressage, décroissance éventuelle — aucune prédiction directionnelle"
+ },
+ "regle_de_verdict": {
+  "SUCCES": "P0, P1, P2 — le tressage nuclée et persiste : première persistance mesurée du corridor, pour un objet non contractile",
+  "PARTIEL_NUCLÉE_SEUL": "P0, P1, mais P2 faux — le tressage nuclée mais ne persiste pas : même frontière que les boucles, un cran plus loin",
+  "B3-FAIL": "P0, mais aucun tressage ne nuclée — la rotation n'organise pas le tressage à cette échelle (rejoint P3 d'E44, réfutée)",
+  "B3-FAIL-TECHNIQUE": "P0 échoue — harnais réparé avant toute statistique"
+ },
+ "falsifieur_global": "aucun tressage ne nuclée, ou tout tressage se défait → publié au même niveau",
+ "cout_mesure_estime": "6 graines × 1800 pas + détections — ~15 min CPU",
+ "convention_sha256": "le champ sha256_protocole est calculé sur le présent fichier avec ce champ vide (\"\")",
+ "sha256_protocole": "022c225435c1cde3c9078f2ab562c7a97fbc6bc7fd091edd56f1de32b84ec22b"
+}

@@ -1,0 +1,56 @@
+{
+ "campagne": "E46 — verrouillage du cœur : conservation de l'enlacement par plancher de densité",
+ "protocole": "E46-VERROU-1.0",
+ "fige_le": "2026-09-09",
+ "aveugle": "aucune donnée E46 n'existe à la date de gel ; le harnais n'a été exécuté qu'en mode --smoke (N=16, graine 999998 hors campagne, validation technique déclarée, non comptée) ; tout amendement futur sera haché avant calcul (discipline de l'amendement v2 d'E44)",
+ "contexte_et_filiation": {
+  "E44": "nucléation spontanée de l'enlacement observée (paire de Hopf, run A/440103, t=12, Lk≃−1) ; évaporation avant t=20 ; protocoles v1 42c65a0c…, amendement v2 bc977f17…",
+  "E45": "B3-FAIL (09/09/2026) — la coupure de l'amortissement ne conserve pas l'enlacement (5 runs branchés : 0/5 OFF, 0/5 ON) ; la tension seule détruit le lien ; le destructeur est la reconnexion, pas la dissipation",
+  "detecteur": "src/e44_core.py byte-identique à E44 (sha256 604c22322370eaa8707ddb6e7529b29539ec125c121b7e5368e2287b60ae1ac7)",
+  "harnais": "src/e46_run.py — structure d'E45 reprise (écriture incrémentale incluse) ; phase 1 identique à E45"
+ },
+ "hypothese_mecaniste_gelee": "la reconnexion exige la déplétion du cœur (densité nulle au contact) ; un mur raide sous un plancher de densité rend la déplétion coûteuse et doit supprimer la reconnexion après la nucléation — version GP du théorème de Kelvin (topologie gelée dans le flux idéal). Calendrier gelé : le verrou n'existe qu'à partir de t=20 (la nucléation exige l'ère des reconnexions — E44)",
+ "modele": {
+  "equation": "ψ̇ = −(i+γ)(−A∇² + V(|ψ|²))ψ, spectral FFT ; V(ρ²) = ρ²−1 en phase 1 et en OFF ; V(ρ²) = ρ²−1 + C·max(0, ρ_min−ρ)² en ON",
+  "N": 64, "A": 2.0, "dt": 0.05, "gamma": 0.3,
+  "rho_min": 0.5, "C_wall": 100.0,
+  "condition_initiale": "phase aléatoire i.i.d., np.random.default_rng(graine)",
+  "ensemble": "boîte périodique libre (type A — pas de paroi ; déclaré)"
+ },
+ "facteur_unique": "le mur de densité (ON) — γ = 0,3 dans les deux branches ; ne pas mélanger avec la coupure d'amortissement (testée et réfutée en E45)",
+ "detecteur": {
+  "vorticite": "entière par plaquette, amp_gate=0.0",
+  "filaments": "chaînage cellulaire d'E44 (anomalies et ambiguïtés comptées)",
+  "boucles": "fermées contractiles, longueur >= 6, max 400",
+  "enlacement": "nombre de Gauss en image minimale, seuil |Lk| >= 0.5",
+  "observable_secondaire": "longueur totale des boucles par snapshot (déclarée)"
+ },
+ "phase_1_nucleation": {
+  "graines": "440101–440106 (filiation E44) + 440107–440124 (extension déclarée) — 24 runs",
+  "snapshots": {"pas": [160, 240, 320, 400], "t": [8, 12, 16, 20]},
+  "note": "identique à E45 par construction — les comptes doivent reproduire E45 à l'identique (contrôle P2 renforcé, déclaré)"
+ },
+ "branchement": {
+  "regle": "tout run avec >= 1 paire liée (|Lk| >= 0.5) à un snapshot t <= 20 est continué en DEUX copies depuis l'état ψ à t=20",
+  "OFF": "γ = 0.3, sans mur (témoin)",
+  "ON": "γ = 0.3, mur actif (ρ_min=0.5, C=100)",
+  "snapshots_branches": {"pas": [900, 1800], "t": [45, 90]}
+ },
+ "persistance": ">= 1 paire liée (|Lk| >= 0.5) à t=45 ou t=90 — niveau population ; identité de paire non suivie (déclaré)",
+ "predictions": {
+  "P0_filiation": "le run 440103 reproduit >= 1 paire liée à t=12 — sinon B3-FAIL technique (harnais réparé avant toute statistique)",
+  "P1": "la fraction de runs branchés avec persistance à t=45 ou t=90 est strictement supérieure en ON qu'en OFF (directionnel pré-enregistré)",
+  "P2": "les snapshots t<=20 sont identiques à E45 (même histoire, même harnais de phase 1) — contrôle de cohérence fort",
+  "P3": "observationnel : longueur totale des boucles et distribution des Lk persistants ON vs OFF (aucune prédiction directionnelle)"
+ },
+ "regle_de_verdict": {
+  "SUCCES": "P0 et P1 (effet mesuré sur les runs branchés)",
+  "PARTIEL": "P0 et moins de 3 runs branchés (puissance insuffisante, mesurée et publiée)",
+  "B3-FAIL": "P0 et absence de différence ON/OFF — le verrouillage du cœur est réfuté comme mécanisme de conservation ; critère non déplacé ; la frontière passe au pinning spatial (E37 strict) ou à la rotation (E43)",
+  "B3-FAIL-TECHNIQUE": "P0 échoue — harnais réparé avant toute statistique"
+ },
+ "falsifieur_global": "aucune différence de persistance ON/OFF → mécanisme réfuté, publié au même niveau",
+ "cout_mesure_estime": "identique à E45 (~8 min mesurées pour la campagne complète)",
+ "convention_sha256": "le champ sha256_protocole est calculé sur le présent fichier avec ce champ vide (\"\") — convention des protocoles E44/E45",
+ "sha256_protocole": "d019ee3af97463ba04299e19212fade2ade757865032b1910d902ec8c6629d13"
+}

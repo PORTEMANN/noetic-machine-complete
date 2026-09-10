@@ -1,0 +1,89 @@
+{
+  "chantier": "T6-LOI-DEUX-ETAGES",
+  "protocole": "T6-LOI-1.0 (gelé)",
+  "table": [
+    [
+      "E45–E53 boucles (10 mécanismes)",
+      "objet",
+      true,
+      null,
+      false,
+      "corridor (mesuré)"
+    ],
+    [
+      "E54 structure axiale sous rotation",
+      "objet",
+      false,
+      false,
+      true,
+      "corridor (mesuré 09/09)"
+    ],
+    [
+      "R1 E40 triplet stable une fois formé",
+      "objet",
+      false,
+      false,
+      true,
+      "corpus (intrinsèque)"
+    ],
+    [
+      "R2 P24 gap de Hall",
+      "objet",
+      false,
+      false,
+      true,
+      "corpus (intrinsèque)"
+    ],
+    [
+      "R3 P33 charge de bord",
+      "objet",
+      false,
+      false,
+      true,
+      "corpus (intrinsèque)"
+    ],
+    [
+      "R4 flux pinning de LIGNES (type II)",
+      "objet",
+      false,
+      true,
+      true,
+      "documentaire externe — déclaré"
+    ],
+    [
+      "E45–E53 lien entre boucles",
+      "relation",
+      true,
+      null,
+      false,
+      "corridor (mesuré)"
+    ],
+    [
+      "E54 tressage (lignes, sans ancrage)",
+      "relation",
+      false,
+      false,
+      false,
+      "corridor (mesuré 09/09)"
+    ],
+    [
+      "R4b réseau d'Abrikosov (relation entre lignes ancrées)",
+      "relation",
+      false,
+      true,
+      true,
+      "documentaire externe — déclaré"
+    ]
+  ],
+  "Q1_objet_séparé": true,
+  "Q1_interne": true,
+  "Q2_relation_séparé": true,
+  "Q2_interne": true,
+  "loi_raffinée": {
+    "niveau_objet": "persiste ⟺ non contractile",
+    "niveau_relation": "persiste ⟺ non contractile ∧ ancrage externe",
+    "falsifieur_désigné": "E56 — tressage sous rotation avec ancrage des pieds de lignes : doit conserver le tressage ; si échec, loi réfutée"
+  },
+  "statut": "LOI MESURÉE sur la table gelée — falsifieur E56 pré-enregistré",
+  "durée_s": 0.0
+}

@@ -1,0 +1,33 @@
+{
+ "campagne": "E61 — la pression du vide : la cage ANU sous confinement",
+ "protocole": "E61-PRESSION-1.0",
+ "fige_le": "2026-09-09",
+ "aveugle": "aucune donnée E61 n'existe à la date de gel ; validation d'instrument déclarée : --smoke (mécanique, hors campagne) ; tout amendement futur sera haché avant calcul",
+ "contexte_et_filiation": {
+  "E60": "B3-FAIL (09/09/2026) — les composites Biot-Savart libres sont cohérents de forme (rayons stables à 0,1 %, Lk constant) mais non liés en position : la cage gonfle (+26 %) et un filament s'échappe ; lecture mesurée : l'espace libre n'a pas de pression du vide",
+  "phenomenologie": "la cavité ANU existe par équilibre : le souffle (mouvement tourbillonnaire) repousse la pression du vide — E61 ajoute le terme manquant",
+  "harnais": "src/e61_run.py — E60 repris (filaments, Biot-Savart, RK4, remaillage, T0 instrument inchangés)"
+ },
+ "ajout_gele": "v_conf(x) = −κ·x/|x| — dérive radiale confinante à taux constant κ = 0,05 (pression constante sur la cavité — figé ; dimensionné sur la mesure d'E60 : gonflement ≈ 0,035/unité de temps)",
+ "design": {
+  "configuration": "la cage ANU (géométrie d'E60-B inchangée : 18 anneaux, rayon 6, centres sur sphère R=12, 3 latitudes)",
+  "bras": {"A_libre": "Biot-Savart libre (témoin — doit reproduire le gonflement d'E60, déclaré)", "B_confine": "Biot-Savart + confinement κ=0,05"},
+  "snapshots": "t = 0, 5, 12, 20, 45, 90"
+ },
+ "clauses": "INCHANGÉES d'E60 (figées) : rms de la cage dans [0,5 ; 1,5]× l'initial ; échappement maximal ≤ 2 × R_cage à tous les snapshots",
+ "predictions": {
+  "T0": "instrument re-validé (niveau ±30 %, forme ±15 % — seuils d'E60 inchangés) — sinon B3-FAIL technique",
+  "P1": "la cage CONFINÉE tient (clauses d'E60) ET la cage libre gonfle (reproduction d'E60) — l'équilibre souffle/pression tient la cavité",
+  "P2": "observationnel : taux de gonflement comparés, dérive"
+ },
+ "regle_de_verdict": {
+  "SUCCES": "T0, P1 — la pression du vide tient la cage : l'équilibre de la phénoménologie fondatrice a sa première mesure computationnelle",
+  "B3-FAIL": "T0, mais la cage confinée disperse quand même — l'équilibre ne tient pas à κ=0,05 ; toute variation de κ relève d'un amendement haché ou d'une nouvelle fiche, jamais d'un ajustement post-échec",
+  "PARTIEL": "T0, B tient mais A ne reproduit pas E60 (incohérence de filiation — publié tel quel)",
+  "B3-FAIL-TECHNIQUE": "T0 échoue"
+ },
+ "falsifieur_global": "dispersion de la cage confinée → publié au même niveau",
+ "cout_mesure_estime": "~2 min CPU",
+ "convention_sha256": "le champ sha256_protocole est calculé sur le présent fichier avec ce champ vide (\"\")",
+ "sha256_protocole": "1f556728c51bdf329102dd368093f471cfebf394c10ba4b3c81384e6359e978e"
+}

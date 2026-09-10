@@ -1,0 +1,6 @@
+# Campagne E56 (locale, 09/09/2026) — SUCCÈS formel + note de marge (loi T6 corroborée faiblement) ; staging, non publiée
+d1a0ec6537053114775f2669f4ffd97a7f1dec2051b7e75a352a792ba68970f9  e56_protocole.json
+7ca13d6b13e455c1aab49839e7de82743a41432106b38f2847fc6aaa90cabc06  src/e56_run.py
+604c22322370eaa8707ddb6e7529b29539ec125c121b7e5368e2287b60ae1ac7  src/e44_core.py
+535c787373de8b9f3ce4cb0a9bae10ad5fc49cb15136d38e50553751dfc47ab3  E56_NOTE.md
+9fc3e86a7cf5a4765bd5b422ef838c01650feb0449b3d706e4c06523448fb8d1  data/e56_ancrage_verdict.json

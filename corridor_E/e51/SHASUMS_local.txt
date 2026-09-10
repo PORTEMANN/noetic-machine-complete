@@ -1,0 +1,6 @@
+# Campagne E51 (locale, 09/09/2026) — verdict enregistre dans E51_NOTE.md ; staging, non publiee
+75cf8a252b7686ee01ab2067589f8dee82a319d10adcf861e37f371eb91bc515  e51_protocole.json
+266177a8d4311f2f8f9b22e5d75e3c23e3b14d7702b82c7c53587d1576c6c4a8  src/e51_run.py
+604c22322370eaa8707ddb6e7529b29539ec125c121b7e5368e2287b60ae1ac7  src/e44_core.py
+683a3f87dc0564bf6c36b9449f281822504a643b5b9da5c7c5c998d7aaf52c58  E51_NOTE.md
+bc032f32f3bb45c626587238330f49f8f96bcbcc5346656113df60a8aef83411  data/e51_pinning_verdict.json

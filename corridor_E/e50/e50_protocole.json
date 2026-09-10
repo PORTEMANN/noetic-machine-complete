@@ -1,0 +1,45 @@
+{
+ "campagne": "E50 — conservation pure : le gel de Kelvin conserve-t-il un lien de Hopf imprimé ?",
+ "protocole": "E50-IMPRIME-1.0",
+ "fige_le": "2026-09-09",
+ "aveugle": "aucune donnée E50 n'existe à la date de gel ; harnais exécuté en --smoke uniquement (N=32, homothétie déclarée, hors campagne : construction validée — paire lue Lk=0,963, anom=0, amb=0) ; tout amendement futur sera haché avant calcul",
+ "contexte_et_filiation": {
+  "corridor": "E44 (nucléation spontanée observée) → E45–E49 (conservation a posteriori close : le lien meurt en < 5 unités, par reconnexion, avant toute intervention ; quatre mécanismes réfutés proprement)",
+  "E40_rappel": "le triplet est stable une fois formé — le maillon manquant est la naissance protégée, pas la stabilité intrinsèque",
+  "T0_E44": "la relaxation d'un lien de Hopf imprimé est validée par E44 (Lk=+0,994, témoin +0,007) — le présent P0 reprend ce contrôle",
+  "detecteur": "src/e44_core.py byte-identique (sha256 604c22322370eaa8707ddb6e7529b29539ec125c121b7e5368e2287b60ae1ac7)",
+  "suivi": "identique à E48/E49 (figé)",
+  "harnais": "src/e50_run.py"
+ },
+ "question_unique": "un lien de Hopf né protégé (imprimé, relaxé, gelé immédiatement) survit-il au gel de Kelvin jusqu'à t=90 — lisiblement ?",
+ "construction_gelee": {
+  "anneau_1": "plan xy, centre (31.5,31.5,31.5), rayon R=10",
+  "anneau_2": "plan xz, centre (41.5,31.5,31.5), rayon r=8 — centre sur l'anneau 1, r<R → enlacement exactement 1 ; distance inter-cœurs constante = 8 mailles > cœur",
+  "champ": "ψ = tanh(d1/δ)·tanh(d2/δ)·exp(i(φ1+φ2)), δ=1.5 maille (cœur ≈ 2 mailles, filiation E44)",
+  "relaxation": "100 pas (5 unités), γ=0.3, sans mur — puis branchement immédiat"
+ },
+ "design": {
+  "nature": "campagne DÉTERMINISTE (condition initiale figée, pas de graine) — test d'existence, pas de statistique ; déclaré",
+  "bras_A": "γ=0.3, sans mur, jusqu'à t=90 (témoin — évaporation sous tension attendue, mesurée)",
+  "bras_B": "γ=0, mur +C=100, plancher ρ_min=0.5, dès t=5 (gel de Kelvin immédiat)",
+  "snapshots": "t=5 (entrée du gel), t=45, t=90",
+  "suivi": "paire = max |Lk| à t=5 ; retrouvée ⟺ médiane des distances (image minimale) < 3 mailles (candidates >= 20) ; conservée ⟺ deux retrouvées et |Lk| >= 0.5 ; lisible ⟺ anom=0 et amb<=4"
+ },
+ "predictions": {
+  "P0_filiation_T0": "|Lk| ∈ [0.9 ; 1.1] à t=5 (filiation E44-T0 : +0,994) — sinon B3-FAIL technique",
+  "P0b_temoin": "bras A : 0 persistance identifiée à t=45/90 (évaporation du lien imprimé sous trempe amortie — attendu, mesuré)",
+  "P1": "bras B : paire conservée identifiée à t=45 ET t=90 (directionnel pré-enregistré) — le gel conserve un lien né protégé",
+  "P2": "bras B lisible à t=5, 45, 90 (anom=0, amb<=4) — le gel d'un état propre reste propre (directionnel ; contrairement à E47-B/E48-B, il n'y a pas d'enchevêtrement initial)",
+  "P3": "observationnel : distances de suivi, rayons effectifs des anneaux (rétrécissement sous tension), longueurs — aucune prédiction directionnelle"
+ },
+ "regle_de_verdict": {
+  "SUCCES": "P0, P0b, P1, P2 — la conservation pure par gel de Kelvin est établie ; la frontière se réduit à la naissance protégée",
+  "B3-FAIL": "P0, P0b, P2, P1 faux — le gel ne conserve même pas un lien né protégé ; la conservation par gel est close, la frontière passe à E37 (pinning spatial) ou à un mécanisme actif",
+  "ANOMALIE": "P0, P0b, mais B illisible — réparation datée requise",
+  "B3-FAIL-TECHNIQUE": "P0 échoue — harnais réparé avant toute statistique"
+ },
+ "falsifieur_global": "paire non conservée en B malgré lisibilité → mécanisme réfuté, publié au même niveau",
+ "cout_mesure_estime": "2 bras × ~1700 pas + détections — quelques minutes CPU",
+ "convention_sha256": "le champ sha256_protocole est calculé sur le présent fichier avec ce champ vide (\"\")",
+ "sha256_protocole": "bc716376a8767a8acbff9c4d68f4282ca159518ad75b9f46c3305e95166579ab"
+}

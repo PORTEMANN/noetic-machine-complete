@@ -1,0 +1,28 @@
+{
+ "campagne": "E54-C — lignes tressées sous rotation, protocole corrigé d'emblée (relancement propre)",
+ "protocole": "E54C-TRESSAGE-1.0",
+ "fige_le": "2026-09-09",
+ "aveugle": "aucune donnée E54-C n'existe à la date de gel ; harnais validé en --smoke (N=32, graine 999993, hors campagne) ; l'amendement est haché avant tout calcul",
+ "historique_de_la_reparation": {
+  "v1": "B3-FAIL-TECHNIQUE (traceur maison)",
+  "E54-A": "B3-FAIL-TECHNIQUE (P0 visait l'enroulement des filaments — observable mal lu)",
+  "E54-B": "amendement de lecture (55a1843e…e4b92fd) : la fenêtre publiée d'E44-B est le COMPTE de filaments axiaux (n_axial40, ligne 86 d'e44_run.py) ; sur les compteurs gelés d'E54-A : médiane 13,0 ∈ [9,19] — P0 correctement lu passe",
+  "E54-C": "protocole corrigé D'EMBLÈE (pas de chaîne d'amendements au registre) ; harnais = celui d'E54-A byte-identique sauf en-tête et agrégation"
+ },
+ "inchange": "géométrie E44-B, graines 440201–440206, paramètres GP, snapshots, détecteur recalibré d'E54-A, questions et seuils P1/P2/P3 de v1",
+ "corrige": {
+  "P0": "médiane du compte de filaments axiaux (longueur ≥ 40 segments, étendue z ≥ 30) à t=45/90 dans [9,19] — fenêtre publiée d'E44-B",
+  "controle_reproductibilite": "pré-enregistré : les compteurs doivent être IDENTIQUES à ceux d'E54-A (harnais déterministe — démontré par la re-exécution d'E45) ; tout écart = incident d'intégrité, publié"
+ },
+ "predictions": {
+  "P0": "compte dans la fenêtre [9,19] — sinon B3-FAIL-TECHNIQUE",
+  "P1": "≥ 1 paire tressée dans ≥ 1 graine à t ≤ 20 (mesuré)",
+  "P2": "une paire tressée à t ≤ 20 reste tressée à t=45 ou t=90 (directionnel pré-enregistré)",
+  "P3": "observationnel"
+ },
+ "regle_de_verdict": "celle de v1 : SUCCÈS si P0+P1+P2 ; PARTIEL_NUCLÉE_SEUL si P0+P1, P2 faux ; B3-FAIL si P0 sans tressage ; B3-FAIL-TECHNIQUE si P0 échoue",
+ "attente_pre_enregistree": "reproduction exacte des compteurs d'E54-A → verdict attendu : PARTIEL_NUCLÉE_SEUL (conforme à E54-B)",
+ "cout_mesure_estime": "~7 min CPU",
+ "convention_sha256": "le champ sha256_protocole est calculé sur le présent fichier avec ce champ vide (\"\")",
+ "sha256_protocole": "45376513fa51724a9fad70913ed022536a98759b26d4fc23bd860bcfcba23f6e"
+}

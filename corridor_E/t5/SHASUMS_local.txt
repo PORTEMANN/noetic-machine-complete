@@ -1,0 +1,5 @@
+# Campagne T5 (locale, 09/09/2026) — staging local
+5c652fc5b7f3e34f338ef36d9fad9a1a70b6e2cc9639c60873d856036ac5fd7c  t5_protocole.json
+abd7b8c486869b15ff9e5d1e4e0cde90a85497bc216cdf9b9a7fef4507bcddd2  src/t5_ddll_conservation.py
+520788f8dd440b1417d919a948af9655c67dc672612e45b05704f434efcefe88  T5_NOTE.md
+ea19144ba116a8445c406c5ae3bf03991ab1681103c061e968e29b9d3bb57912  data/t5_ddll_conservation_verdict.json

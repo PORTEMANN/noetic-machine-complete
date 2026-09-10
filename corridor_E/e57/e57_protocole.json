@@ -1,0 +1,35 @@
+{
+ "campagne": "E57 — cristallisation sous rotation forte : le réseau d'Abrikosov comme relation conservée",
+ "protocole": "E57-CRISTAL-1.0",
+ "fige_le": "2026-09-09",
+ "aveugle": "aucune donnée E57 n'existe à la date de gel ; harnais exécuté en --smoke uniquement (N=32, graine 999990 hors campagne ; contrôle de l'hexatique : ψ6=1,0 sur réseau triangulaire synthétique) ; tout amendement futur sera haché avant calcul",
+ "contexte_et_filiation": {
+  "corridor": "E56-x (09/09) : la persistance de la relation est au plancher (~4 %), sans facteur mécanique ; le seul précédent de relation conservée est le réseau ordonné (R4b — documentaire) ; E44-P3 : la cristallisation n'a PAS eu lieu à la circulation 4 (médiane 14 lignes vs 4±2 attendus — réfutée)",
+  "detecteur": "src/e44_core.py byte-identique (sha256 604c22322370eaa8707ddb6e7529b29539ec125c121b7e5368e2287b60ae1ac7) ; filtres de lignes axiales d'E54-C (inchangés)",
+  "hypothese": "à circulation plus forte, les lignes axiales cristallisent en réseau ordonné — une relation globalement ordonnée, persistante (le précédent Abrikosov)"
+ },
+ "question_unique": "à circulation forte, les lignes axiales cristallisent-elles en un réseau ordonné qui persiste ?",
+ "construction_gelee": {
+  "circulations": [4, 8, 16, 24],
+  "controle": "n=4 = filiation E44-B (doit reproduire : compte dans [9,19], NON cristallisé)",
+  "graines": "660101–660103 décalées de 10 par circulation (660101–660332, déclarées, hors séries antérieures)",
+  "evolution": "identique à E54-C (N=64, A=2, γ=0.3, dt=0.05, récipient E44-B) ; snapshots t=8,12,20,45,90",
+  "ordre_hexatique": "positions moyennes des lignes longues ; ψ6 = |⟨moyenne sur voisins de e^{6iθ}⟩| ; voisins ≤ 1,3 × distance médiane au plus proche voisin ; calculé si ≥ 6 lignes ; cristallisé ⟺ ψ6 ≥ 0,7 (figé)"
+ },
+ "predictions": {
+  "P0_filiation": "n=4 : compte médian dans [9,19] ET non cristallisé (reproduit E44-B/P3) — sinon B3-FAIL technique",
+  "P1_cristallisation": "à n=24 : ψ6 ≥ 0,7 à t=45 ET t=90 dans ≥ 2/3 graines (directionnel pré-enregistré)",
+  "P2_commensurabilite": "à n=24 : compte médian / 24 ∈ [0,7 ; 1,3] (figé) — le réseau porte la circulation imposée",
+  "P3": "observationnel : ψ6 et comptes par circulation (n=8, 16 intermédiaires)"
+ },
+ "regle_de_verdict": {
+  "SUCCES": "P0, P1, P2 — la cristallisation sous rotation forte produit une relation ordonnée persistante : la clause R4b devient interne et mesurée",
+  "PARTIEL": "P0, cristallisation à t=45 sans persistance à t=90, ou cristallisation non commensurable (P2 faux)",
+  "B3-FAIL": "P0, aucune cristallisation à aucune circulation — la voie du réseau ordonné est réfutée à ces échelles ; publié au même niveau",
+  "B3-FAIL-TECHNIQUE": "P0 échoue — harnais réparé avant toute statistique"
+ },
+ "falsifieur_global": "ψ6 < 0,7 partout à n=24 → pas de réseau ; réfuté, publié au même niveau",
+ "cout_mesure_estime": "12 runs × 1800 pas — ~15 min CPU",
+ "convention_sha256": "le champ sha256_protocole est calculé sur le présent fichier avec ce champ vide (\"\")",
+ "sha256_protocole": "5730a731235b5b10b3995876ea71e5aaacb20a130d54968055bb1e1bd84205af"
+}

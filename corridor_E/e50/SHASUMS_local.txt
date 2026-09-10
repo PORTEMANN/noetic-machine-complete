@@ -1,0 +1,6 @@
+# Campagne E50 (locale, 09/09/2026) — verdict ANOMALIE + mesure systematique (le gel regenere l'enchevetrement meme depuis un etat propre) ; staging, non publiee
+2a31dfbd94b80596207ef89368c5b900e19240289c2212d21ac5e8a4ff373250  e50_protocole.json
+af242328fdae70ae2b6ada7e26ca202a201239e55a65ffa495715c8f82dbd8d2  src/e50_run.py
+604c22322370eaa8707ddb6e7529b29539ec125c121b7e5368e2287b60ae1ac7  src/e44_core.py
+7f26a6d617779df1aa7807a1877cb18a461bb97532d0e09b729807f4d797361a  E50_NOTE.md
+d8033fec0355bdf9d515c3e169bc9c7a14a024d60ebe4975068db9929dcd96d2  data/e50_imprime_verdict.json

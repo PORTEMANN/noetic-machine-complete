@@ -1,0 +1,6 @@
+# Campagne E62 (locale, 09/09/2026) — B3-FAIL (fuite lente : noyau stable à t=180, échappement franchi entre t=90 et t=135) ; staging, non publiée
+d3cca6d984de4ae86b26f106627c1b22169e200d51ef1f19316820b6efe74beb  e62_protocole.json
+418582fe9528b32634ca4200b5cf49d8fab351d09d199994055f910e03d15593  src/e62_run.py
+3803db688d2f90eba6268ed002d25019c7935721a86d2fec1cae18a9e4d1ddbc  src/e60_run.py
+99d8e893dda80f46e3d4ded85b66a7ad1cba39f7f1c49e5fb44efd4457e6d8a6  E62_NOTE.md
+61d61516affb5ed9c1e9ad999e7bd09d4ba0db03f1d03ac1636d24e5558cb1d2  data/e62_fenetre_verdict.json

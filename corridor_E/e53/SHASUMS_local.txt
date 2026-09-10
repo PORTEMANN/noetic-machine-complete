@@ -1,0 +1,6 @@
+# Campagne E53 (locale, 09/09/2026) — verdict B3-FAIL (canaux toriques n'ont pas retenu l'anneau) ; classe ancrage spatial close ; staging, non publiee
+43af2b0906e71a480ca45ade4accbd23c961361382af89dcb9b5b554c799bec8  e53_protocole.json
+824d1d5dab93de9a9ac443b59227992c145db9f494227953e8c9a4e91b0e1ff6  src/e53_run.py
+604c22322370eaa8707ddb6e7529b29539ec125c121b7e5368e2287b60ae1ac7  src/e44_core.py
+4271c9a4746bd0f2114947fbac6ec26d85e8c11c6cf5cf98bbe90d6a39ae683b  E53_NOTE.md
+81afb172706180fd2517bfcbce9b5b7bc4090bc1bd6d187ca8fb171a7b25433c  data/e53_guides_verdict.json

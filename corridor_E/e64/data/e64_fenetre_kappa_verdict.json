@@ -1,0 +1,150 @@
+{
+  "campagne": "E64",
+  "protocole": "E64-FENETRE-KAPPA-1.0 (gelé)",
+  "points": {
+    "0.025": {
+      "snaps": {
+        "0.0": {
+          "rms": 12.0,
+          "ech": 11.818
+        },
+        "45.0": {
+          "rms": 13.098,
+          "ech": 17.078
+        },
+        "90.0": {
+          "rms": 14.652,
+          "ech": 23.032
+        },
+        "135.0": {
+          "rms": 16.604,
+          "ech": 28.056
+        },
+        "180.0": {
+          "rms": 17.512,
+          "ech": 28.706
+        }
+      },
+      "tient_t180": false,
+      "tau_fuite": 135.0,
+      "rms_t180": 17.512,
+      "ecrase": false
+    },
+    "0.05": {
+      "snaps": {
+        "0.0": {
+          "rms": 12.0,
+          "ech": 11.818
+        },
+        "45.0": {
+          "rms": 12.82,
+          "ech": 17.419
+        },
+        "90.0": {
+          "rms": 14.662,
+          "ech": 22.825
+        },
+        "135.0": {
+          "rms": 16.133,
+          "ech": 27.51
+        },
+        "180.0": {
+          "rms": 17.085,
+          "ech": 30.748
+        }
+      },
+      "tient_t180": false,
+      "tau_fuite": 135.0,
+      "rms_t180": 17.085,
+      "ecrase": false
+    },
+    "0.1": {
+      "snaps": {
+        "0.0": {
+          "rms": 12.0,
+          "ech": 11.818
+        },
+        "45.0": {
+          "rms": 12.479,
+          "ech": 17.472
+        },
+        "90.0": {
+          "rms": 13.573,
+          "ech": 21.398
+        },
+        "135.0": {
+          "rms": 14.244,
+          "ech": 20.143
+        },
+        "180.0": {
+          "rms": 14.177,
+          "ech": 22.408
+        }
+      },
+      "tient_t180": true,
+      "tau_fuite": 180.0,
+      "rms_t180": 14.177,
+      "ecrase": false
+    },
+    "0.2": {
+      "snaps": {
+        "0.0": {
+          "rms": 12.0,
+          "ech": 11.818
+        },
+        "45.0": {
+          "rms": 13.126,
+          "ech": 19.513
+        },
+        "90.0": {
+          "rms": 15.158,
+          "ech": 25.269
+        },
+        "135.0": {
+          "rms": 19.432,
+          "ech": 30.915
+        },
+        "180.0": {
+          "rms": 24.502,
+          "ech": 34.123
+        }
+      },
+      "tient_t180": false,
+      "tau_fuite": 90.0,
+      "rms_t180": 24.502,
+      "ecrase": false
+    }
+  },
+  "T0": {
+    "ecart_niveau": 0.2696,
+    "ecart_forme": 0.0407,
+    "valide": true
+  },
+  "agregation": {
+    "T0_valide": true,
+    "tient_par_kappa": {
+      "0.025": false,
+      "0.05": false,
+      "0.1": true,
+      "0.2": false
+    },
+    "tau_fuite_par_kappa": {
+      "0.025": 135.0,
+      "0.05": 135.0,
+      "0.1": 180.0,
+      "0.2": 90.0
+    },
+    "ecrase_par_kappa": {
+      "0.025": false,
+      "0.05": false,
+      "0.1": false,
+      "0.2": false
+    },
+    "kappa_fenetre": [
+      0.1
+    ],
+    "controle_filiation_k005": false,
+    "fenetre_presente": true,
+    "durée_s": 517.6
+  }
+}

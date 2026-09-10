@@ -1,0 +1,33 @@
+{
+ "campagne": "E64 — la fenêtre du couronnement : τ_fuite(κ)",
+ "protocole": "E64-FENETRE-KAPPA-1.0",
+ "fige_le": "2026-09-09",
+ "aveugle": "aucune donnée E64 n'existe à la date de gel ; validation d'instrument déclarée : --smoke (mécanique, hors campagne) ; tout amendement futur sera haché avant calcul",
+ "contexte_et_filiation": {
+  "E61": "SUCCÈS — la cage tient à κ=0,05 sur [0,90]",
+  "E62": "B3-FAIL — elle fuit entre t=90 et t=135 à ce même κ (noyau stable, peau qui fuit)",
+  "E59": "la forme : la frontière comme fonction — E64 en est la seconde, sœur déclarée",
+  "harnais": "src/e64_run.py — E61/E62 repris (T0 instrument inchangé ; κ devient paramètre de la grille — extension de harnais déclarée, hachée avant calcul ; les fonctions d'E60/E61 importées, filiation)"
+ },
+ "question_unique": "l'équilibre souffle/pression a-t-il un DOMAINE en κ ? (trop peu de pression : fuite par échappement ; trop : écrasement rms < 0,5× ; entre les deux : la fenêtre où la cage tient toutes les clauses jusqu'à t=180)",
+ "design_gele": {
+  "grille": "κ ∈ {0,025 ; 0,05 ; 0,1 ; 0,2} (figé) ; κ=0,05 = contrôle de filiation E61/E62 (doit reproduire : tient à t=90, fuit ensuite)",
+  "clauses": "INCHANGÉES d'E60 (rms ∈ [0,5 ; 1,5]× initial ; échappement ≤ 2×R_cage à tous les snapshots)",
+  "snapshots": "t = 0, 45, 90, 135, 180 (figé)",
+  "tau_fuite": "premier snapshot avec échappement > 2×R_cage ; si jamais : τ_fuite ≥ 180 (figé)"
+ },
+ "predictions": {
+  "T0": "instrument re-validé (seuils d'E60 inchangés) — sinon B3-FAIL technique",
+  "P1_directionnel": "la fenêtre existe : la cage tient à κ intermédiaire et échoue aux deux bouts (fuite à faible κ, écrasement ou fuite à fort κ) — l'équilibre est une balance, la phénoménologie l'exige",
+  "P2": "observationnel : forme de τ_fuite(κ) et comportement de rms"
+ },
+ "regle_de_verdict": {
+  "FENETRE": "T0 + ∃ κ avec tenue complète à t=180 et au moins un bout qui échoue — l'équilibre a un domaine : le couronnement a une fenêtre mesurée",
+  "PAS_DE_FENETRE": "T0 + fuite partout (τ_fuite < 180 à tout κ mesuré) — l'équilibre est métastable à tout κ du domaine : le couronnement est une résonance à taux, publié au même niveau",
+  "PARTIEL": "T0 + tenue à tout κ mesuré (la fenêtre s'étend au-delà de la grille — à mesurer par amendement si l'auteur le décide)",
+  "B3-FAIL-TECHNIQUE": "T0 échoue"
+ },
+ "cout_mesure_estime": "4 points × ~4 min — ~18 min CPU",
+ "convention_sha256": "le champ sha256_protocole est calculé sur le présent fichier avec ce champ vide (\"\")",
+ "sha256_protocole": "906d4ee9e72f56d45b606931b81be0be4735ecb2395d033a69daa2ec1256ce4d"
+}

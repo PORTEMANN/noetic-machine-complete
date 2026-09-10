@@ -1,0 +1,37 @@
+{
+ "campagne": "E58 — réseau imprimé : un réseau ordonné de lignes, écrit directement, persiste-t-il ?",
+ "protocole": "E58-RESEAU-1.0",
+ "fige_le": "2026-09-09",
+ "aveugle": "aucune donnée E58 n'existe à la date de gel ; validations d'instrument déclarées : --smoke (N=32, mécanique) et --smoke64 (construction + lecture de l'état d'entrée à l'échelle campagne, SANS évolution — filiation du T0 d'E44 : validation du détecteur, pas de la campagne) ; tout amendement futur sera haché avant calcul",
+ "contexte_et_filiation": {
+  "corridor": "E56-x : persistance de la relation au plancher sans facteur mécanique ; E57 : la cristallisation spontanée sous rotation forte est réfutée (ψ6 ≤ ~0,43 partout ; surnucléation mesurée) ; E44-P3 : non-cristallisation à n=4 ; R4b : le réseau ordonné (documentaire) est le seul précédent de relation conservée",
+  "detecteur": "src/e44_core.py byte-identique (sha256 604c22322370eaa8707ddb6e7529b29539ec125c121b7e5368e2287b60ae1ac7) ; masquage au niveau des coins de plaquette (filiation exacte d'E44-B, mask_plaq_B) ; filtres de lignes d'E54-C (inchangés) ; hexatique d'E57 (inchangée)",
+  "hypothese": "la relation ordonnée écrite directement persiste sous rotation — le réseau est la structure qui conserve la relation (R4b rendu interne)"
+ },
+ "question_unique": "un réseau triangulaire de lignes axiales, écrit directement, reste-t-il ordonné (ψ6 ≥ 0,7) et complet sous rotation jusqu'à t=90 ?",
+ "construction_gelee": {
+  "reseau": "triangulaire, pas a0=8 mailles, sites avec Rg<22 (27 sites à N=64), winding +1 par ligne ; ψ = Π_i tanh(d_i/δ)·exp(iθ_i), δ=1,5 (filiation E50)",
+  "paroi": "circulation = nombre de lignes imprimées (commensurable, figé)",
+  "relaxation": "100 pas (γ=0,3) avec paroi — puis snapshots t=5 (entrée), t=45, t=90",
+  "bras": {"A": "réseau ordonné + rotation (l'ordre persiste-t-il ?)", "B": "mêmes lignes, positions brassées (graine figée 770001, même compte) + rotation (l'ordre se forme-t-il ? — témoin)"}
+ },
+ "nature": "campagne déterministe (A) + une graine figée (B) — test de possibilité/conservation, déclaré",
+ "validation_d_instrument": "--smoke64 (déclaré, sans évolution) : 27/27 lignes lues, ψ6=1,0 à l'entrée ; anom=27 = signature structurelle des bouts ouverts au bord (1 par ligne — mesuré ; caractère identique aux 4 cellules anormales constantes d'E44-B près de la paroi)",
+ "critere_de_lisibilite_gele": "lisible ⟺ anom_excès == 0 (anom au-delà de la signature structurelle mesurée à l'entrée) ET amb <= 4 — déclaré AVANT la campagne, sur la base de la validation d'instrument",
+ "predictions": {
+  "P0_entree": "à t=5 : 27 lignes lues ET ψ6 ≥ 0,7 (validation d'instrument mesurée : 27/27, ψ6=1,0) — sinon B3-FAIL technique",
+  "P1_persistance": "bras A : ψ6 ≥ 0,7 à t=45 ET t=90 ET compte = 27 ± 3 (figé) — l'ordre écrit persiste sous rotation",
+  "P2_formation": "bras B : ψ6 à t=90 (observationnel — l'ordre se forme-t-il depuis le désordre ? aucune prédiction directionnelle)",
+  "P3": "observationnel : dérive des positions, braises, lisibilité"
+ },
+ "regle_de_verdict": {
+  "SUCCES": "P0, P1 — la relation ordonnée écrite persiste : la clause R4b devient interne et mesurée ; la loi T6 gagne son cas relation conservée interne",
+  "PARTIEL": "P0, ordre partiellement perdu (ψ6 ∈ [0,4 ; 0,7] à t=45 ou 90, ou compte 24–26) — déclaré",
+  "B3-FAIL": "P0, mais ψ6 < 0,4 ou compte < 24 à t=45/90 — l'ordre écrit ne persiste pas non plus ; la conservation de relation dans cette dynamique est close entièrement",
+  "B3-FAIL-TECHNIQUE": "P0 échoue — harnais réparé avant toute statistique"
+ },
+ "falsifieur_global": "l'ordre écrit se dissout → publié au même niveau",
+ "cout_mesure_estime": "2 bras × ~1900 pas — ~8 min CPU",
+ "convention_sha256": "le champ sha256_protocole est calculé sur le présent fichier avec ce champ vide (\"\")",
+ "sha256_protocole": "186ea90d7c7ac21ae6ebde61b2dedbe362828d2250e0070a8777faebd99f87dc"
+}

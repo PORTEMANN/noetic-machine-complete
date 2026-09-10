@@ -1,0 +1,43 @@
+{
+ "campagne": "E49 — nettoyage puis gel : conservation lisible de la paire nucléée",
+ "protocole": "E49-NETTOIE-GELE-1.0",
+ "fige_le": "2026-09-09",
+ "aveugle": "aucune donnée E49 n'existe à la date de gel ; harnais exécuté en --smoke uniquement (N=16, graine 999995 hors campagne, validation technique déclarée, non comptée) ; tout amendement futur sera haché avant calcul",
+ "contexte_et_filiation": {
+  "E44": "nucléation observée (A/440103, t=12, Lk≃−1) ; v1 42c65a0c…, v2 bc977f17…",
+  "E45": "B3-FAIL (branchement post-évaporation, erratum déclaré en E48) — l'enlacement ne ré-apparaît pas spontanément",
+  "E46": "ANOMALIE — mur mélangé illisible au détecteur",
+  "E47": "bras C B3-FAIL propre (plancher dissipatif) ; bras B (Kelvin) : enchevêtrement figé conservé mais illisible",
+  "E48": "B3-FAIL propre — branché à la nucléation, le gel fige la configuration spatiale (boucles suivies en place à 1,0–3,1 mailles, stables t=45→90) mais Lk_suivi = 0 sous saturation ; deux causes déclarées : (i) le lien meurt entre nucléation et immobilisation effective ; (ii) lecture corrompue par la densité de l'enchevêtrement figé",
+  "detecteur": "src/e44_core.py byte-identique (sha256 604c22322370eaa8707ddb6e7529b29539ec125c121b7e5368e2287b60ae1ac7)",
+  "harnais": "src/e49_run.py — structure E48 reprise (branchement à la nucléation, suivi spatial, écriture incrémentale)"
+ },
+ "design": {
+  "calendrier": "trois temps figés : nucléation libre → NETTOYAGE (γ=0.3, sans mur, 100 pas = 5 unités, drain court — mesuré en E44/E45) → GEL (γ=0, mur +C)",
+  "phase_1": "identique à E48 (24 graines 440101–440124, snapshots t=8,12,16,20, branchement au premier snapshot nucléant, paire suivie = max |Lk|)",
+  "bras": {
+   "A": "γ=0.3, sans mur, jusqu'à t=90 (témoin — reproduit E48-A)",
+   "B2": "nettoyage de t_n à t_n+5, snapshot de suivi À L'ENTRÉE DU GEL (t_n+5), puis gel γ=0 + mur +C jusqu'à t=90, snapshots t=45 et t=90"
+  },
+  "snapshot_entree_gel": "mesure si le lien est vivant à l'entrée du gel — distingue la cause (i) (lien mort avant le gel) de l'échec du gel proprement dit"
+ },
+ "suivi_et_lisibilite": "identiques à E48 (retrouvée : médiane des distances < 3 mailles, candidates >= 20 ; conservée : deux retrouvées et |Lk| >= 0.5 ; lisible : anom == 0 et amb <= 4)",
+ "predictions": {
+  "P0_filiation": "440103 nuclée à t=12 (Lk ≃ −1,04) — sinon B3-FAIL technique",
+  "P0b_temoin": "bras A : 0 persistance identifiée — sinon harnais suspect",
+  "P1": "persistance identifiée en B2 strictement supérieure à A (directionnel pré-enregistré)",
+  "P2": "B2 lisible (anom=0, amb<=4) à t=45 et t=90 dans tous les runs branchés (directionnel — le nettoyage rend l'état lisible)",
+  "P3": "observationnel : état du lien à l'entrée du gel (t_n+5), distances de suivi, Lk suivis — aucune prédiction directionnelle"
+ },
+ "regle_de_verdict": {
+  "SUCCES": "P0, P0b, P1, P2 — conservation lisible de la paire nucléée",
+  "B3-FAIL": "P0, P0b, P2, P1 faux — le nettoyage rend lisible mais le gel ne conserve pas ; la frontière passe au pinning spatial (E37) ou à la nucléation sous gel (changer l'ère)",
+  "B3-FAIL_FENETRE": "P0, P0b, et le lien est mort à l'entrée du gel (t_n+5) dans tous les runs branchés — la fenêtre de vie du lien est plus courte que tout mécanisme testé ; mesuré, publié",
+  "ANOMALIE": "B2 illisible — la lisibilité du gel reste le blocage",
+  "B3-FAIL-TECHNIQUE": "P0 ou P0b échoue — harnais réparé avant toute statistique"
+ },
+ "falsifieur_global": "aucune persistance identifiée lisible en B2 au-delà du témoin → mécanisme réfuté, publié au même niveau",
+ "cout_mesure_estime": "identique à E48 (~30 min CPU)",
+ "convention_sha256": "le champ sha256_protocole est calculé sur le présent fichier avec ce champ vide (\"\")",
+ "sha256_protocole": "e89ce7b6901311ee632e6432cb6291507f1f62af6c5d26c4fa8c5bdf887ed753"
+}

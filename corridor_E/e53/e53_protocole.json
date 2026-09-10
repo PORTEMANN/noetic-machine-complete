@@ -1,0 +1,43 @@
+{
+ "campagne": "E53 — guides toriques : un canal continu de rayon fixe conserve-t-il le lien imprimé contre la tension de ligne ?",
+ "protocole": "E53-GUIDES-1.0",
+ "fige_le": "2026-09-09",
+ "aveugle": "aucune donnée E53 n'existe à la date de gel ; harnais exécuté en --smoke uniquement (N=32, homothétie déclarée, hors campagne : lien lu Lk=0,963, canaux construits) ; tout amendement futur sera haché avant calcul",
+ "contexte_et_filiation": {
+  "corridor": "E44→E50 (conservation a posteriori close ; mur de densité entièrement mesuré) ; E51 (B3-FAIL lisible : les puits ponctuels n'empêchent pas la contraction radiale — tension de ligne) ; E52 (PARTIEL : les puits ponctuels écartent la nucléation au lieu d'ancrer)",
+  "reparation_designee": "structure ÉTENDUE continue — le canal torique (précédent physique : courants persistants en canal torique) oppose une force de rappel continue à la contraction",
+  "detecteur": "src/e44_core.py byte-identique (sha256 604c22322370eaa8707ddb6e7529b29539ec125c121b7e5368e2287b60ae1ac7)",
+  "construction": "lien imprimé d'E50 identique ; suivi d'E48→E51 inchangé"
+ },
+ "question_unique": "un canal torique continu apparié aux cœurs conserve-t-il le lien sous trempe amortie — là où les puits ponctuels (E51) et l'absence de structure (E50) échouent ?",
+ "construction_gelee": {
+  "lien": "identique à E50/E51 (relaxation 100 pas à γ=0.3 SANS guide — entrée identique)",
+  "guide": "V_ext(x) = −U_g·exp(−d1²/2σ²) − U_g·exp(−d2²/2σ²), d1/d2 distances AU CERCLE de chaque anneau (canal torique continu) ; U_g=2, σ=1.5 (figés, filiation E51)",
+  "bras": {
+   "A": "γ=0.3, sans guide — témoin (reproduit E50-A/E51-A)",
+   "B": "γ=0.3, canaux appariés",
+   "C": "γ=0.3, canaux décalés de +3 mailles en rayon sur chaque anneau (figé) — témoin de spécificité"
+  },
+  "snapshots": "t=5 (entrée), t=45, t=90 ; suivi identique à E48→E51"
+ },
+ "nature": "campagne DÉTERMINISTE (condition initiale figée) — test d'existence ; déclaré",
+ "predictions": {
+  "P0_filiation_T0": "|Lk| ∈ [0.9 ; 1.1] à t=5 — sinon B3-FAIL technique",
+  "P0b_temoin": "bras A : 0 persistance (évaporation mesurée en E50/E51)",
+  "P1": "bras B : paire conservée identifiée à t=45 ou t=90, lisiblement (directionnel pré-enregistré) — le canal continu retient l'anneau contre sa tension de ligne",
+  "P2": "bras C : 0 persistance (directionnel — la spécificité du canal est nécessaire)",
+  "P3": "observationnel : distances de suivi (contraction mesurée), lisibilité par bras"
+ },
+ "regle_de_verdict": {
+  "SUCCES": "P0, P0b, P1, P2, tous bras lisibles — l'ancrage étendu conserve : première conservation mesurée",
+  "PARTIEL": "P0, P0b, P1, mais C conserve aussi (ancrage non spécifique — publié tel quel)",
+  "B3-FAIL": "P0, P0b, lisible, P1 faux — la classe « ancrage spatial » est close ENTIÈREMENT (puits ponctuels E51/E52, canaux continus E53) ; la frontière passe à « changer l'ère » (naissance sous protection) ou hors-GP (clamps actifs, dynamique modifiée à déclarer)",
+  "ANOMALIE": "un bras illisible (anom>0 ou amb>4) — réparation datée requise",
+  "B3-FAIL-TECHNIQUE": "P0 échoue — harnais réparé avant toute statistique"
+ },
+ "falsifieur_global": "aucune conservation lisible en B → mécanisme réfuté, publié au même niveau",
+ "note_honnete_profondeur": "U_g=2 est filiative (E51) ; si le canal est trop peu profond contre la tension de ligne, le verdict le mesurera — toute variation de profondeur relève d'un amendement haché ou d'une nouvelle fiche, jamais d'un ajustement post-échec",
+ "cout_mesure_estime": "3 bras × ~1700 pas + détections — ~5 min CPU",
+ "convention_sha256": "le champ sha256_protocole est calculé sur le présent fichier avec ce champ vide (\"\")",
+ "sha256_protocole": "4e0ab2056a2c3f7a6ce4de0908808a86aa2a970cb62804f676e9b4c7f6660653"
+}

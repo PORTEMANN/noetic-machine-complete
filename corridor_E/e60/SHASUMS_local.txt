@@ -1,0 +1,5 @@
+# Campagne E60 (locale, 09/09/2026) — B3-FAIL (composites cohérents de forme mais non liés en position : dérive et gonflement ; la pression du vide est absente du Biot-Savart libre) ; staging, non publiée
+ff509a053dfc10a8b980f010218cef0b4c722876f2d2686b7b587501a8af0f22  e60_protocole.json
+3803db688d2f90eba6268ed002d25019c7935721a86d2fec1cae18a9e4d1ddbc  src/e60_run.py
+25373989c0d007a9e14548256add79d28a96b297ed59b26d9f51a69a9d989d79  E60_NOTE.md
+8b838d1b770b732a52972fc4cb4750cc866c806f53ae4b3888686a55408647b3  data/e60_cavite_verdict.json

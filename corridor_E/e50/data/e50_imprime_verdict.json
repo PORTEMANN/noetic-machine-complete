@@ -1,0 +1,199 @@
+{
+  "campagne": "E50",
+  "protocole": "E50-IMPRIME-1.0 (gelé)",
+  "entree_relaxee": {
+    "lie": true,
+    "nboucles": 4,
+    "longueur_totale": 306,
+    "npaires": 1,
+    "paires": [
+      [
+        1,
+        3,
+        0.975
+      ]
+    ],
+    "anom": 0,
+    "amb": 0,
+    "lisible": true
+  },
+  "paire_suivie": {
+    "lk_entree": 0.975,
+    "P0_filiation_T0": true
+  },
+  "bras_A": {
+    "5.0": {
+      "lie": true,
+      "nboucles": 4,
+      "longueur_totale": 306,
+      "npaires": 1,
+      "paires": [
+        [
+          1,
+          3,
+          0.975
+        ]
+      ],
+      "anom": 0,
+      "amb": 0,
+      "lisible": true,
+      "paire_conservee": true,
+      "lk_suivi": 0.975,
+      "dist_suivi": [
+        0.0,
+        0.0
+      ]
+    },
+    "45.0": {
+      "lie": false,
+      "nboucles": 0,
+      "longueur_totale": 0,
+      "npaires": 0,
+      "paires": [],
+      "anom": 0,
+      "amb": 0,
+      "lisible": true,
+      "paire_conservee": false,
+      "lk_suivi": null,
+      "dist_suivi": [
+        null,
+        null
+      ]
+    },
+    "90.0": {
+      "lie": false,
+      "nboucles": 0,
+      "longueur_totale": 0,
+      "npaires": 0,
+      "paires": [],
+      "anom": 0,
+      "amb": 0,
+      "lisible": true,
+      "paire_conservee": false,
+      "lk_suivi": null,
+      "dist_suivi": [
+        null,
+        null
+      ]
+    }
+  },
+  "bras_B": {
+    "5.0": {
+      "lie": true,
+      "nboucles": 4,
+      "longueur_totale": 306,
+      "npaires": 1,
+      "paires": [
+        [
+          1,
+          3,
+          0.975
+        ]
+      ],
+      "anom": 0,
+      "amb": 0,
+      "lisible": true,
+      "paire_conservee": true,
+      "lk_suivi": 0.975,
+      "dist_suivi": [
+        0.0,
+        0.0
+      ]
+    },
+    "45.0": {
+      "lie": true,
+      "nboucles": 400,
+      "longueur_totale": 9480,
+      "npaires": 4,
+      "paires": [
+        [
+          0,
+          1,
+          -0.634
+        ],
+        [
+          5,
+          208,
+          -0.57
+        ],
+        [
+          15,
+          20,
+          0.832
+        ],
+        [
+          16,
+          300,
+          0.849
+        ]
+      ],
+      "anom": 52,
+      "amb": 5768,
+      "lisible": false,
+      "paire_conservee": false,
+      "lk_suivi": -0.0,
+      "dist_suivi": [
+        1.8,
+        1.32
+      ]
+    },
+    "90.0": {
+      "lie": true,
+      "nboucles": 400,
+      "longueur_totale": 9564,
+      "npaires": 6,
+      "paires": [
+        [
+          10,
+          23,
+          0.812
+        ],
+        [
+          12,
+          42,
+          -1.035
+        ],
+        [
+          29,
+          188,
+          -0.509
+        ],
+        [
+          31,
+          136,
+          -0.522
+        ],
+        [
+          110,
+          271,
+          -0.649
+        ],
+        [
+          185,
+          355,
+          0.701
+        ]
+      ],
+      "anom": 95,
+      "amb": 8000,
+      "lisible": false,
+      "paire_conservee": false,
+      "lk_suivi": 0.0,
+      "dist_suivi": [
+        1.8,
+        1.41
+      ]
+    }
+  },
+  "agregation": {
+    "P0_filiation_T0": true,
+    "lk_entree": 0.975,
+    "P0b_temoin_A_zero": true,
+    "persistance_identifiee_A": false,
+    "persistance_identifiee_B": false,
+    "P1_B_conserve": false,
+    "P2_B_lisible": false,
+    "lisibilite_A": true,
+    "durée_s": 136.2
+  }
+}

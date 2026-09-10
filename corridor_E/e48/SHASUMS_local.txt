@@ -1,0 +1,6 @@
+# Campagne E48 (locale, 09/09/2026) — verdict B3-FAIL propre (gel de Kelvin ne conserve pas la paire identifiee) + lecture fine (gel spatial conserve, lien lu nul sous saturation) ; staging, non publiee
+131924a8b1c2e4a103ffc33f192adaf68bbdf4692ff61358c7b232d0dc1d8665  e48_protocole.json
+96c27b6b113e1bb300151a2face54b7e392853bb014679c063466e45251a8ebb  src/e48_run.py
+604c22322370eaa8707ddb6e7529b29539ec125c121b7e5368e2287b60ae1ac7  src/e44_core.py
+2e84f601258262bf6ff4bde1f1b1cdec1aecdec9cb086408948038b8687ff04f  E48_NOTE.md
+31754d43ba69c6d1785bb35587788bc44eaedb4c99f19273035ec2834cdd5c7e  data/e48_tracking_verdict.json

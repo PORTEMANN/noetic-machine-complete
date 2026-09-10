@@ -1,0 +1,1119 @@
+{
+  "campagne": "E45",
+  "protocole": "E45-CAPTURE-1.0 (gelé)",
+  "runs": {
+    "440101": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 35,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 3
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 13,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 14,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 5,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        }
+      },
+      "nucle": false
+    },
+    "440102": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 52,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 9
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 24,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        },
+        "16.0": {
+          "lie": true,
+          "nboucles": 14,
+          "npaires": 1,
+          "paires": [
+            [
+              2,
+              3,
+              1.029
+            ]
+          ],
+          "anom": 0,
+          "amb": 0
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 8,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        }
+      },
+      "nucle": true,
+      "OFF": {
+        "45.0": {
+          "lie": false,
+          "nboucles": 4,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        },
+        "90.0": {
+          "lie": false,
+          "nboucles": 0,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        }
+      },
+      "ON": {
+        "45.0": {
+          "lie": false,
+          "nboucles": 17,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1
+        },
+        "90.0": {
+          "lie": false,
+          "nboucles": 4,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1
+        }
+      }
+    },
+    "440103": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 24,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        },
+        "12.0": {
+          "lie": true,
+          "nboucles": 21,
+          "npaires": 1,
+          "paires": [
+            [
+              0,
+              1,
+              -1.041
+            ]
+          ],
+          "anom": 0,
+          "amb": 1
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 16,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 9,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        }
+      },
+      "nucle": true,
+      "OFF": {
+        "45.0": {
+          "lie": false,
+          "nboucles": 3,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        },
+        "90.0": {
+          "lie": false,
+          "nboucles": 1,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        }
+      },
+      "ON": {
+        "45.0": {
+          "lie": false,
+          "nboucles": 12,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        },
+        "90.0": {
+          "lie": false,
+          "nboucles": 6,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        }
+      }
+    },
+    "440104": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 24,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 17,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 19,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 9,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        }
+      },
+      "nucle": false
+    },
+    "440105": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 29,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 15,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 8,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 5,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        }
+      },
+      "nucle": false
+    },
+    "440106": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 38,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 3
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 15,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 6,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 7,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2
+        }
+      },
+      "nucle": false
+    },
+    "440107": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 43,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 18,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 11,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 9,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1
+        }
+      },
+      "nucle": false
+    },
+    "440108": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 47,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 27,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 20,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 6,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1
+        }
+      },
+      "nucle": false
+    },
+    "440109": {
+      "nucleation": {
+        "8.0": {
+          "lie": true,
+          "nboucles": 39,
+          "npaires": 1,
+          "paires": [
+            [
+              0,
+              1,
+              1.069
+            ]
+          ],
+          "anom": 0,
+          "amb": 3
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 17,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 14,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 7,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        }
+      },
+      "nucle": true,
+      "OFF": {
+        "45.0": {
+          "lie": false,
+          "nboucles": 2,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        },
+        "90.0": {
+          "lie": false,
+          "nboucles": 0,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        }
+      },
+      "ON": {
+        "45.0": {
+          "lie": false,
+          "nboucles": 8,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        },
+        "90.0": {
+          "lie": false,
+          "nboucles": 0,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        }
+      }
+    },
+    "440110": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 39,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 9
+        },
+        "12.0": {
+          "lie": true,
+          "nboucles": 19,
+          "npaires": 1,
+          "paires": [
+            [
+              0,
+              2,
+              -0.986
+            ]
+          ],
+          "anom": 0,
+          "amb": 2
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 9,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 7,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        }
+      },
+      "nucle": true,
+      "OFF": {
+        "45.0": {
+          "lie": false,
+          "nboucles": 1,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        },
+        "90.0": {
+          "lie": false,
+          "nboucles": 2,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        }
+      },
+      "ON": {
+        "45.0": {
+          "lie": false,
+          "nboucles": 3,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        },
+        "90.0": {
+          "lie": false,
+          "nboucles": 6,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        }
+      }
+    },
+    "440111": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 46,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 19,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 13,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 9,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        }
+      },
+      "nucle": false
+    },
+    "440112": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 27,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 21,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 17,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 10,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        }
+      },
+      "nucle": false
+    },
+    "440113": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 39,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 12,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 12,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 12,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        }
+      },
+      "nucle": false
+    },
+    "440114": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 32,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 3
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 22,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 3
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 13,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 12,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1
+        }
+      },
+      "nucle": false
+    },
+    "440115": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 30,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 23,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 10,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 4,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        }
+      },
+      "nucle": false
+    },
+    "440116": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 31,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 20,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 12,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 4,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        }
+      },
+      "nucle": false
+    },
+    "440117": {
+      "nucleation": {
+        "8.0": {
+          "lie": true,
+          "nboucles": 34,
+          "npaires": 1,
+          "paires": [
+            [
+              1,
+              4,
+              1.017
+            ]
+          ],
+          "anom": 0,
+          "amb": 4
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 20,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 6,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 7,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        }
+      },
+      "nucle": true,
+      "OFF": {
+        "45.0": {
+          "lie": false,
+          "nboucles": 4,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        },
+        "90.0": {
+          "lie": false,
+          "nboucles": 2,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        }
+      },
+      "ON": {
+        "45.0": {
+          "lie": false,
+          "nboucles": 6,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        },
+        "90.0": {
+          "lie": false,
+          "nboucles": 12,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        }
+      }
+    },
+    "440118": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 35,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 3
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 19,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 14,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 6,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        }
+      },
+      "nucle": false
+    },
+    "440119": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 26,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 23,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 10,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 5,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        }
+      },
+      "nucle": false
+    },
+    "440120": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 48,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 27,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 3
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 13,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 5,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1
+        }
+      },
+      "nucle": false
+    },
+    "440121": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 26,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 3
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 25,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 6
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 17,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 6,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1
+        }
+      },
+      "nucle": false
+    },
+    "440122": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 22,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 19,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 14,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 10,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        }
+      },
+      "nucle": false
+    },
+    "440123": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 38,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 4
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 16,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 3
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 11,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 7,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 0
+        }
+      },
+      "nucle": false
+    },
+    "440124": {
+      "nucleation": {
+        "8.0": {
+          "lie": false,
+          "nboucles": 41,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1
+        },
+        "12.0": {
+          "lie": false,
+          "nboucles": 11,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 2
+        },
+        "16.0": {
+          "lie": false,
+          "nboucles": 12,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1
+        },
+        "20.0": {
+          "lie": false,
+          "nboucles": 9,
+          "npaires": 0,
+          "paires": [],
+          "anom": 0,
+          "amb": 1
+        }
+      },
+      "nucle": false
+    }
+  },
+  "agregation": {
+    "P0_filiation_440103_t12": true,
+    "n_runs_nucles": 5,
+    "runs_nucles": [
+      "440102",
+      "440103",
+      "440109",
+      "440110",
+      "440117"
+    ],
+    "persistance_ON": 0,
+    "persistance_OFF": 0,
+    "P1_ON>OFF": false,
+    "durée_s": 427.8
+  }
+}

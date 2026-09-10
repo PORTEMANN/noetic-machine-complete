@@ -1,0 +1,35 @@
+{
+ "campagne": "E59 — la fonction de frontière τ(A, γ) : durée de vie du lien en fonction de la non-idéalité de la dynamique",
+ "protocole": "E59-FRONTIERE-1.0",
+ "fige_le": "2026-09-09",
+ "aveugle": "aucune donnée E59 n'existe à la date de gel ; harnais exécuté en --smoke uniquement (N=32, mécanique, hors campagne) ; tout amendement futur sera haché avant calcul",
+ "conversion_declaree": "du catalogue des mécanismes à la fonction de frontière : le corridor (17 campagnes) a mesuré un seul point — τ < 5 unités à (A=2, γ=0,3). Point d'appui : le théorème de Kelvin (écoulement idéal : topologie conservée exactement). La non-idéalité de GP est la déplétion du cœur, paramétrée par ξ ∝ √A et γ. Précédent de style dans le corpus : P32 (la frontière r₁₂ convertie en loi de position).",
+ "contexte_et_filiation": {
+  "construction": "lien imprimé d'E50, inchangé (anneaux R=10, r=8, δ=1.5) ; relaxation 100 pas à γ=0.3, A=2, sans paroi — entrée UNIQUE mesurée une fois",
+  "detecteur": "src/e44_core.py byte-identique (sha256 604c22322370eaa8707ddb6e7529b29539ec125c121b7e5368e2287b60ae1ac7)",
+  "suivi": "identique à E48→E51 ; seuil |Lk| ≥ 0,5 INCHANGÉ — pas de re-seuilage"
+ },
+ "question_unique": "τ(A, γ) — la durée de vie du lien — est-elle une loi de la dynamique (position mesurable de la frontière) ou une constante robuste de la famille ?",
+ "design_gele": {
+  "grille": {"A": [0.5, 1.0, 2.0, 4.0, 8.0], "gamma": [0.0, 0.3]},
+  "bord_de_resolution": "A=0.5 : ξ ≈ 0,7 maille < maille — inclus et marqué (déclaré), contrôlé par anom/amb",
+  "entree_unique": "chaque point part de COPIES du même état d'entrée (t=5) et évolue avec SON (A, γ)",
+  "snapshots": {"t": [5, 10, 15, 20, 25, 30, 45, 60, 90]},
+  "tau": "dernier snapshot avec paire suivie liée (|Lk_suivi| ≥ 0,5) — figé"
+ },
+ "predictions": {
+  "P0": "entrée : |Lk| ∈ [0,9 ; 1,1] (filiation E50-T0) — sinon B3-FAIL technique",
+  "P1_directionnel": "τ non croissant en A (à γ fixé) et τ(γ=0) ≥ τ(γ=0,3) point par point — la non-idéalité tarife la vie du lien",
+  "P2": "τ(A=0,5, γ=0) atteint-il 90 (divergence au bord du domaine résoluble) ? — mesuré, publié quel qu'il soit"
+ },
+ "regle_de_verdict": {
+  "SUCCES_LOI": "P0 + monotonies P1 + τ atteignant 90 au bord — la frontière a une loi et une position : la carte devient une courbe",
+  "CONSTANTE_ROBUSTE": "P0 + τ ≤ 45 partout sur la grille — théorème négatif net : dans toute la famille GP résoluble, la relation est réécrivable en temps constant ; la frontière est la famille elle-même (il faut une autre dynamique)",
+  "PARTIEL": "intermédiaire (monotone sans divergence, ou non monotone) — publié tel quel (discipline E1)",
+  "B3-FAIL-TECHNIQUE": "P0 échoue — harnais réparé avant toute statistique"
+ },
+ "falsifieur_global": "la grille est publiée entière, quel que soit le motif",
+ "cout_mesure_estime": "10 points × 1700 pas + détections denses — ~25 min CPU",
+ "convention_sha256": "le champ sha256_protocole est calculé sur le présent fichier avec ce champ vide (\"\")",
+ "sha256_protocole": "b2c2a84a12390f24f64a50482e3a0ca7112d0bd9e3e43db6e6b718c6f550c2a2"
+}

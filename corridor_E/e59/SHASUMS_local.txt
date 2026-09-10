@@ -1,0 +1,6 @@
+# Campagne E59 (locale, 09/09/2026) — verdict PARTIEL : fonction de frontiere tau(A,gamma) mesuree, monotone, plafonnee (tau_max=15 au bord de resolution) ; staging, non publiee
+06e26ff96fb6ceeea1ce4e0a9e35d5f53f92ba1c7d6759d63007b9c06ebe4118  e59_protocole.json
+a5ce4db8a784206d5d916794d5c8b01cadf8058375cf58e6526a7968229b8573  src/e59_run.py
+604c22322370eaa8707ddb6e7529b29539ec125c121b7e5368e2287b60ae1ac7  src/e44_core.py
+3dd94e1b85fb736ba56b254dc6c7628178fc9d56b1e6a3231e72b1d706d359de  E59_NOTE.md
+1d03fb8594cb5e0fb8d3d9d86c12393d64420115563621e572a00a2d7cbfddc7  data/e59_frontiere_verdict.json

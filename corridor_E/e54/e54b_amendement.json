@@ -1,0 +1,20 @@
+{
+ "amendement": "E54-B — réparation de LECTURE : P0 sur le bon observable, sans nouveau calcul",
+ "fige_le": "2026-09-09",
+ "protocole_v1_sha256": "022c225435c1cde3c9078f2ab562c7a97fbc6bc7fd091edd56f1de32b84ec22b",
+ "amendement_A_sha256": "b495267e2b24827060b691a02fbdbd6810c3162f390e7079474475e4964c1189",
+ "verdicts_precedents": "v1 : B3-FAIL-TECHNIQUE (traceur maison) ; E54-A : B3-FAIL-TECHNIQUE (P0 recalibré visait l'enroulement des filaments — observable mal lu)",
+ "cause_identifiee": "double mésinterprétation de la cible publiée d'E44-B, localisée au niveau des lignes de e44_run.py : (i) la « médiane 14 (étendue 9–19) » est la médiane du COMPTE de filaments axiaux (longueur > 40) par snapshot — n_axial40, ligne 86 — pas un enroulement (« très au-delà des 4±2 attendus de la circulation imposée » : un comptage) ; (ii) axial_winding (ligne 87) porte sur les boucles fermées (embrace), absentes de l'ensemble B. Le P0 d'E54-A visait donc un observable que la publication n'a jamais contenu.",
+ "nature": "AMENDEMENT DE LECTURE — aucun nouveau calcul de campagne. Les compteurs gelés d'E54-A contiennent l'observable correcte (n_axiaux par snapshot). P0 est ré-évalué sur ces compteurs ; P1/P2 de v1 (gelées avant toute donnée) sont ré-évaluées sur les mêmes compteurs. Aucun critère n'est déplacé : les questions et seuils sont ceux de v1 ; seule la LECTURE de la cible de calibrage est corrigée.",
+ "P0_corrige": "médiane du compte de filaments axiaux (longueur ≥ 40 segments, étendue z ≥ 30 mailles) à t=45/90 dans [9, 19] — la fenêtre publiée d'E44-B (médiane 14)",
+ "evaluation_sur_compteurs_geles": {
+  "comptes_par_graine_snapshot": "11, 10, 17, 9, 12, 12, 18, 14, 14, 13, 17, 13",
+  "mediane": 13.0,
+  "etendue": "9–18",
+  "P0": "PASS — la fenêtre publiée est reproduite sur les compteurs gelés",
+  "P1": "VRAI — le tressage nuclée (paires tressées à t=8–20 : 440202, 440205)",
+  "P2": "FAUX — aucune paire tressée à t=45/90"
+ },
+ "verdict_E54_corrige": "PARTIEL_NUCLÉE_SEUL (règle v1 : P0 ✓, P1 ✓, P2 ✗) — le tressage de lignes (objet non contractile) nuclée sous rotation mais ne persiste pas ; la structure axiale persiste, la relation discrète entre lignes ne persiste pas",
+ "sha256_amendement": "55a1843e64cf55db1f7e38738b9351648ce014356fcd75dad13dd0f04e4b92fd"
+}

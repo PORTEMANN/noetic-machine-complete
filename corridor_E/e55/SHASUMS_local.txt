@@ -1,0 +1,6 @@
+# Campagne E55 (locale, 09/09/2026) — verdict enregistre dans E55_NOTE.md ; staging, non publiee
+959f15bcbd4e5d73310fc084b21396d598c593a594086ecfce0d4325ae20d8ff  e55_protocole.json
+f469676884cc77612e6ba4e7edf19ab8dc6d9942059ed910bc8658588ffc03f1  src/e55_run.py
+604c22322370eaa8707ddb6e7529b29539ec125c121b7e5368e2287b60ae1ac7  src/e44_core.py
+2cd346885a3e7d91f18c129bc5832afd37c9b9110224ab64e251b9ed24a26cdf  E55_NOTE.md
+4f65a5bf09cee5f78f7eeadb95a1e2a6d64a904bfe0448797cf59a76cc6d07e4  data/e55_naissance_verdict.json

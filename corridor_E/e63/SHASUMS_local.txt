@@ -1,0 +1,7 @@
+# Campagne E63 (locale, 09/09/2026) — SUCCÈS (toutes les cages n=12..24 tiennent à t=90 ; spectre de stabilité mesuré ; optimum n=14 ; n=18 marge la plus faible) ; staging, non publiée
+33b6a349a54719ef9b8c46eac51a5072ddaefed822a4cca029fcca61446b3864  e63_protocole.json
+533fd8dfaf26797459c31c830600c3e94a3d1ceacd8367c60aacbfbbb07e0d33  src/e63_run.py
+3803db688d2f90eba6268ed002d25019c7935721a86d2fec1cae18a9e4d1ddbc  src/e60_run.py
+b0facf1868c86c3e55c210b257a009137409812026c24ea2830628d6292606b1  src/e61_run.py
+1dbb177aeb0dfc379b97c22865613eaca8291ebd61434d0d256bddadaaa48c01  E63_NOTE.md
+173731e2e3fca5b3511a40b1d047aee17efa607dfae6a984c5074abce4810ddf  data/e63_nombre_verdict.json

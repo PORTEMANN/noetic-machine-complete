@@ -1,0 +1,36 @@
+{
+ "campagne": "E60 — hors GP : la cavité tenue par les filaments (vide hyperfluide, Biot-Savart)",
+ "protocole": "E60-CAVITE-1.0",
+ "fige_le": "2026-09-09",
+ "aveugle": "aucune donnée E60 n'existe à la date de gel ; validations d'instrument déclarées : --smoke (mécanique, hors campagne) ; tout amendement futur sera haché avant calcul",
+ "conversion_declaree": "le corridor (E44–E59) a mesuré que dans la famille GP la relation topologique est toujours réécrivable (plafond τ ≤ 15 ; obstruction : le cœur déplétable). La phénoménologie fondatrice (vide hyperfluide, souffle, cavité) est du côté incompressible. E60 y passe : dynamique de filaments de Biot-Savart, espace libre, pas de grille.",
+ "declaration_axiomatique": "dans cette famille, la conservation topologique est AXIOMATIQUE (Kelvin — pas de reconnexion dans l'équation) ; le verdict ne la revendique pas comme mesure. La question mesurée est la STABILITÉ du composite (cohérence de forme), pas la conservation du lien. Le lien de Gauss est mesuré pour valider le harnais, pas la topologie.",
+ "modele": {
+  "filaments": "chaînes polygonales fermées, vitesse auto-induite Biot-Savart désingularisée (Rosenhead-Moore, cutoff a=0.5, figé), Γ=1 (figé)",
+  "integration": "RK4, dt=0.25 (figé), remaillage à longueur d'arc uniforme (bornes 0.3–1.2, figées)",
+  "espace": "libre — pas de grille (le bord de résolution d'E59 disparaît avec GP)"
+ },
+ "T0_instrument": {
+  "contenu": "anneau isolé : niveau v(R=10) vs analytique Γ/4πR·(ln(8R/a)−1/4) à ±30 % (figé — couvre la constante de modèle de cœur de la littérature, déclaré) ET forme : rapports v(5)/v(10), v(20)/v(10) à ±15 % des rapports analytiques (figé)",
+  "echec": "B3-FAIL-TECHNIQUE — instrument réparé avant toute statistique"
+ },
+ "configurations": {
+  "A_hopf": "paire de Hopf de filaments (R=10 plan xy centré origine ; r=8 plan xz centré (10,0,0) — géométrie d'E50 transposée)",
+  "B_cavite_anu": "la cavité ANU : 18 anneaux identiques (rayon 6), axes radiaux, centres sur une sphère de rayon R_cage=12, 3 latitudes (géométrie figée — la configuration historique du proton)"
+ },
+ "mesures": "snapshots t = 0, 5, 12, 20, 45, 90 : rayon de chaque anneau, dérive des centroïdes, rms de la cage, échappement maximal ; Lk de Gauss (espace libre) mesuré pour valider le harnais",
+ "predictions": {
+  "P1": "la paire de Hopf reste cohérente : rayons dans [0,5 ; 1,5]× les initiaux ET dérive des centroïdes ≤ 2 (figé) à tous les snapshots",
+  "P2": "la cavité ANU tient : rms de la cage dans [0,5 ; 1,5]× l'initial ET aucun échappement au-delà de 2 × R_cage (figé) à tous les snapshots"
+ },
+ "regle_de_verdict": {
+  "SUCCES": "T0, P1, P2 — le composite cavité-vortex est stable : la phénoménologie fondatrice a son premier support computationnel mesuré",
+  "PARTIEL": "T0, P1 seul (Hopf cohérent, cavité non tenue)",
+  "B3-FAIL": "T0, ni P1 ni P2 — les composites Biot-Savart sont instables à ces géométries ; publié au même niveau",
+  "B3-FAIL-TECHNIQUE": "T0 échoue"
+ },
+ "falsifieur_global": "dispersion ou étirement non borné des composites → publié au même niveau",
+ "cout_mesure_estime": "~quelques minutes CPU (T0 + 2 configurations)",
+ "convention_sha256": "le champ sha256_protocole est calculé sur le présent fichier avec ce champ vide (\"\")",
+ "sha256_protocole": "5c73f4505807035c38868632e491d88987268645f62feea5285984c8044fbdb0"
+}

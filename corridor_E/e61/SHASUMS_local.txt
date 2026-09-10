@@ -1,0 +1,6 @@
+# Campagne E61 (locale, 09/09/2026) — SUCCÈS (la pression du vide tient la cage ANU ; note de marge : bornes presque saturées à t=90) ; staging, non publiée
+ebf6a8544bedf5c68273286616a5f37ca4fc4554eda9dd5cf2a68fe8329be6cf  e61_protocole.json
+b0facf1868c86c3e55c210b257a009137409812026c24ea2830628d6292606b1  src/e61_run.py
+3803db688d2f90eba6268ed002d25019c7935721a86d2fec1cae18a9e4d1ddbc  src/e60_run.py
+002e84d3df1b24e2ad0cac28c34ef6c9d779b9de4fb020de9086edf1151cf807  E61_NOTE.md
+7a71f955a355a15ae7615ded8021e244b54665e7658be333836b91a125ef7bc3  data/e61_pression_verdict.json

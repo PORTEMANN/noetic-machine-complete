@@ -1,0 +1,52 @@
+{
+ "campagne": "E47 — séparation des composantes du mur : gel de Kelvin vs plancher dissipatif",
+ "protocole": "E47-SEPARATION-1.0",
+ "fige_le": "2026-09-09",
+ "aveugle": "aucune donnée E47 n'existe à la date de gel ; le harnais n'a été exécuté qu'en mode --smoke (N=16, graine 999997 hors campagne, validation technique déclarée, non comptée) ; tout amendement futur sera haché avant calcul",
+ "contexte_et_filiation": {
+  "E44": "nucléation spontanée observée (paire de Hopf, A/440103, t=12) ; protocoles v1 42c65a0c…, v2 bc977f17…",
+  "E45": "B3-FAIL — la coupure de l'amortissement ne conserve pas (0/5 OFF, 0/5 ON)",
+  "E46": "ANOMALIE — succès formel (5/5 vs 0/5) annulé par les compteurs gelés du détecteur (saturation ON à t=45 : anom ≤ 2880, amb ≤ 48125 ; effondrement à t=90) ; analyse : le mur +C à γ=0,3 mêle plancher de pression (conservatif) et anti-restauration (dissipative)",
+  "detecteur": "src/e44_core.py byte-identique (sha256 604c22322370eaa8707ddb6e7529b29539ec125c121b7e5368e2287b60ae1ac7)",
+  "harnais": "src/e47_run.py — structure E45/E46 reprise (écriture incrémentale incluse)"
+ },
+ "design_2x2": {
+  "A": {"gamma": 0.3, "mur": 0, "role": "témoin — doit reproduire E46-OFF à l'identique (0 persistance)"},
+  "B": {"gamma": 0.0, "mur": "+100", "role": "gel de Kelvin pur : plancher de pression conservatif sans dissipation"},
+  "C": {"gamma": 0.3, "mur": "-100", "role": "plancher dissipatif : V<0 sous ρ_min → restauration active de la densité sous damping"},
+  "D": {"gamma": 0.0, "mur": 0, "role": "témoin — doit reproduire E45-ON à l'identique (0/5)"}
+ },
+ "modele": {
+  "equation": "ψ̇ = −(i+γ)(−A∇² + V(|ψ|²))ψ, spectral FFT ; V(ρ²) = ρ²−1 sans mur ; V(ρ²) = ρ²−1 ± C·max(0, ρ_min−ρ)² selon le bras",
+  "N": 64, "A": 2.0, "dt": 0.05, "rho_min": 0.5, "C": 100.0,
+  "condition_initiale": "phase aléatoire i.i.d., np.random.default_rng(graine)",
+  "ensemble": "boîte périodique libre (type A — déclaré)"
+ },
+ "detecteur": "identique à E44/E45/E46 (seuils inchangés) + observable secondaire longueur totale des boucles",
+ "critere_de_lisibilite_gele": "un snapshot ne statue que si anom == 0 ET amb <= 4 (issu de l'anomalie E46 : l'événement valide E44 avait amb=1 ; les snapshots saturés E46-ON avaient amb ≥ 5699). Toute persistance mesurée sur snapshot illisible ne compte pas",
+ "phase_1_nucleation": {
+  "graines": "440101–440106 (filiation E44) + 440107–440124 — 24 runs",
+  "snapshots": {"pas": [160, 240, 320, 400], "t": [8, 12, 16, 20]},
+  "note": "identique à E45/E46 — doit les reproduire à l'identique"
+ },
+ "branchement": "tout run avec >= 1 paire liée (|Lk| >= 0.5) à t <= 20 est continué en QUATRE copies (A, B, C, D) depuis l'état ψ à t=20 ; snapshots t=45, 90",
+ "persistance": ">= 1 paire liée à t=45 ou t=90 sur snapshot LISIBLE — niveau population ; identité de paire non suivie (déclaré)",
+ "predictions": {
+  "P0_filiation": "440103 reproduit >= 1 paire liée à t=12 — sinon B3-FAIL technique",
+  "P0b_temoins": "bras A reproduit E46-OFF (0 persistance) et bras D reproduit E45-ON (0 persistance) — sinon harnais suspect",
+  "P1_Kelvin": "persistance en B strictement supérieure à A et à D (directionnel pré-enregistré) — le gel de Kelvin conserve",
+  "P2_plancher": "persistance en C strictement supérieure à A (directionnel pré-enregistré) — le plancher dissipatif conserve",
+  "P3": "observationnel : longueurs totales et Lk persistants par bras (aucune prédiction directionnelle)"
+ },
+ "regle_de_verdict": {
+  "SUCCES": "P0, P0b, tous les bras lisibles, et (P1 ou P2) avec effet mesuré",
+  "PARTIEL": "P0, P0b, et moins de 3 runs branchés (puissance insuffisante mesurée)",
+  "B3-FAIL": "P0, P0b, bras lisibles, et ni P1 ni P2 — les deux mécanismes réfutés ; la frontière passe au pinning spatial (E37 strict)",
+  "ANOMALIE": "un bras illisible (anom > 0 ou amb > 4) — mécanisme non tranché, réparation datée requise",
+  "B3-FAIL-TECHNIQUE": "P0 ou P0b échoue — harnais réparé avant toute statistique"
+ },
+ "falsifieur_global": "aucune persistance lisible en B ni en C au-delà des témoins → mécanismes réfutés, publiés au même niveau",
+ "cout_mesure_estime": "~2× E45 (phase 1 identique + 4 bras par run nucléé) — ordre de grandeur : 20 min CPU",
+ "convention_sha256": "le champ sha256_protocole est calculé sur le présent fichier avec ce champ vide (\"\")",
+ "sha256_protocole": "96195d9f8db33eeda620fedda24681e8c8558e7339cfadfc3fb2e713689a11cc"
+}

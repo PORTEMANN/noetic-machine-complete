@@ -1,0 +1,25 @@
+{
+ "campagne": "T5 — le ddll de la conservation : la persistance du discret dans le continu a-t-elle un prix mesurable ?",
+ "protocole": "T5-DDLL-1.0",
+ "fige_le": "2026-09-09",
+ "nature": "tiroir banc — table gelée AVANT calcul (dans le script lui-même, tuple FROZEN) ; le calcul est la campagne (exécutée le 09/09/2026) ; discipline E1 : le compte est publié quel qu'il soit",
+ "table_gelee": "10 mécanismes du corridor E45–E53 (tous : non-conservation) + 4 protections qui conservent (3 intrinsèques du corpus : E40, P24, P33 ; 1 documentaire externe déclarée : flux pinning des LIGNES en type II) — descripteurs n_scal / n_struct / n_choix déclarés par entrée",
+ "rubrique_gelee": {
+  "v1": "ddll = n_scal + n_struct + log2(1 + n_choix)",
+  "v2": "ddll = n_scal + 2·n_struct + log2(1 + n_choix)  (poids structurel doublé — variante figée)",
+  "axe_secondaire": "objet contractile (boucles) vs non contractile (lignes, étendu, intrinsèque)"
+ },
+ "questions": {
+  "Q1": "un ddll scalaire sépare-t-il les protections qui conservent des mécanismes qui échouent ? (dans quel sens ?)",
+  "Q2": "la séparation est-elle robuste au changement de rubrique ?",
+  "Q3": "la carte (ddll × contractilité) est-elle séparée ?"
+ },
+ "falsifieur": "aucune structure de séparation sous aucune rubrique → la métrologie du coût de conservation est réfutée comme scalaire — publié (précédent P-F3 : pas d'indice scalaire)",
+ "verdict_mesure": {
+  "Q1": "AUCUNE séparation scalaire (v1 et v2) — R4 (ddll élevé, conserve) interdit tout seuil",
+  "Q2": "non applicable (pas de séparation)",
+  "Q3": "SÉPARATION PARFAITE par l'axe objet : les 10 mécanismes sur objets contractiles échouent tous ; les 4 protections sur objets non contractiles conservent toutes"
+ },
+ "convention_sha256": "le champ sha256_protocole est calculé sur le présent fichier avec ce champ vide (\"\")",
+ "sha256_protocole": "7aee1ef298b25ae8b9ca1ae612ce3041e8ae99e08529c2617ca4fe9ee7130404"
+}

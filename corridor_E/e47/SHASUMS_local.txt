@@ -1,0 +1,6 @@
+# Campagne E47 (locale, 09/09/2026) — verdict : bras C B3-FAIL propre, bras B ANOMALIE (illisible), temoins conformes ; staging, non publiee
+5189a34535c77fe98bf6b558b2a5e90424ed5f721ec991b636ee736c9d4d11c5  e47_protocole.json
+0e22d0ae527324c843c4b04d6e31b907a3b39c6e93e0f312ee055c1ec5e1ac42  src/e47_run.py
+604c22322370eaa8707ddb6e7529b29539ec125c121b7e5368e2287b60ae1ac7  src/e44_core.py
+ee5d068627146c84f3f09cdf8b9ed74d6cfb0bc4335c876834f77c3d769851c7  E47_NOTE.md
+27f277db966d0617ed063c7e2f3c8ad01b950607a5714fe3ccc5721dea16d008  data/e47_separation_verdict.json

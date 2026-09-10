@@ -1,0 +1,13 @@
+{
+  "campagne": "E54-B (amendement de lecture — compteurs gelés d'E54-A)",
+  "amendement": "55a1843e…e4b92fd (gelé)",
+  "mediane_compte_axial": 13.0,
+  "etendue": [
+    9,
+    18
+  ],
+  "P0_corrige": true,
+  "P1_tressage_nucle": true,
+  "P2_tressage_persiste": false,
+  "verdict": "PARTIEL_NUCLÉE_SEUL"
+}

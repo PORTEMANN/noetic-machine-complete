@@ -1,0 +1,6 @@
+# Campagne E49 (locale, 09/09/2026) — verdict B3-FAIL_FENETRE (lien mort a l'entree du gel, snapshots lisibles) ; staging, non publiee
+2894ca8b7e5352ea57883d24ddedd3345bb44350aa8d39b6fc3e8bba5f4bb62e  e49_protocole.json
+265c21e46516e5fcf7cf6f13c4fa5a85af210f52ddcc64ed4523b33bf115e231  src/e49_run.py
+604c22322370eaa8707ddb6e7529b29539ec125c121b7e5368e2287b60ae1ac7  src/e44_core.py
+7de9f10f8fb84db5d0ca0d66328771dea40190e673d38d3419a65bdd0b752729  E49_NOTE.md
+e457acd7dfbf5c0ea12bf33d871a7020ced98b1f321949e8c444190ede2432cf  data/e49_nettoie_gele_verdict.json

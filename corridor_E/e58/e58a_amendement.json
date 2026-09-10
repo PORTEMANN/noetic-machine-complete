@@ -1,0 +1,13 @@
+{
+ "amendement": "E58-A — réparation de la relaxation : sans paroi, puis paroi enclenchée à l'entrée",
+ "fige_le": "2026-09-09",
+ "protocole_v1_sha256": "186ea90d7c7ac21ae6ebde61b2dedbe362828d2250e0070a8777faebd99f87dc",
+ "verdict_v1": "B3-FAIL-TECHNIQUE (09/09/2026) : la relaxation gelée (paroi commensurable au quantum 27 pendant la relaxation) a injecté des vortex (44 lignes à l'entrée contre 27 écrites) et dégradé l'ordre (ψ6 : 1,0 → 0,26) avant le départ — cause mesurée. Question physique non testée, non réfutée.",
+ "motivation": "la règle gelée l'exige : P0 échoue → harnais réparé avant toute statistique. La réparation n'est PAS un critère déplacé : la question (P1 : l'ordre écrit persiste-t-il sous rotation ?), les seuils (ψ6 ≥ 0,7 ; compte 27 ± 3) et la construction sont inchangés ; seule la préparation de l'état d'entrée est réparée.",
+ "inchange": "construction du réseau (27 sites, pas 8, δ=1,5), paroi commensurable (quantum = nombre de lignes), seuils, snapshots t=5/45/90, bras A/B, P1/P2/P3, discipline d'aveugle",
+ "ajouts": {
+  "relaxation_reparee": "100 pas (γ=0,3) SANS paroi (fix=None) — la paroi commensurable est enclenchée à l'entrée (t=5) pour la phase de persistance ; attendu (déclaré) : l'entrée garde 27 lignes et ψ6 ≥ 0,7 (mesuré à l'écriture : 27/27, ψ6=1,0)",
+  "P0_repare": "à t=5 : compte = 27 ± 3 ET ψ6 ≥ 0,7 — sinon deuxième B3-FAIL-TECHNIQUE"
+ },
+ "sha256_amendement": "fc0deb0311b4020d987bd37032b9bb800f20b22af74407217d30224592349a12"
+}

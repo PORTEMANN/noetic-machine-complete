@@ -1,0 +1,37 @@
+{
+ "campagne": "E52 — pinning non apparié sous trempe : un paysage de puits fixe crée-t-il des régions où l'enlacement naît ET persiste ?",
+ "protocole": "E52-PAYSAGE-1.0",
+ "fige_le": "2026-09-09",
+ "aveugle": "aucune donnée E52 n'existe à la date de gel ; harnais exécuté en --smoke uniquement (N=16, graine 999994 hors campagne, validation technique déclarée, non comptée) ; tout amendement futur sera haché avant calcul",
+ "contexte_et_filiation": {
+  "corridor": "E44→E50 (conservation a posteriori close) ; E51 (pinning apparié — test d'existence, gelé le même jour)",
+  "classe_testee": "ancrage spatial (E37), version NON appariée : réseau fixe, régulier, indépendant des configurations à naître",
+  "detecteur": "src/e44_core.py byte-identique (sha256 604c22322370eaa8707ddb6e7529b29539ec125c121b7e5368e2287b60ae1ac7)",
+  "trempe": "identique à E44/E45 (24 graines 440101–440124, mêmes paramètres) ; branchement à la nucléation et suivi d'E48/E49 repris",
+  "temoin_de_taux": "la campagne E45 (5/24 runs nucléés sans puits) — filiation déclarée, pas de recalcul"
+ },
+ "question_unique": "un paysage de pinning fixe crée-t-il des régions où l'enlacement naît et persiste ?",
+ "construction_gelee": {
+  "puits": "V_ext = −U0 Σ_w exp(−|x−w|²/2σ²), U0=2, σ=1.5 (figés, identiques à E51) ; grille cubique de pas ℓ=8, origine décalée de 4 mailles (w=(8i+4, 8j+4, 8k+4), figé) ; présents DÈS t=0 — la naissance se fait dans le paysage (filiation aux runs E44 volontairement rompue, déclarée)",
+  "phase_1": "24 graines, trempe libre avec puits, snapshots t=8,12,16,20 ; branchement au premier snapshot nucléant (réparation E48)",
+  "suite": "continuation avec les MÊMES puits (γ=0.3) jusqu'à t=90 ; snapshots t=45, t=90",
+  "split_observationnel": "paire « proche-puits » ⟺ médiane des distances (image minimale) de chacune de ses boucles au puits le plus proche < 4 mailles (figé), mesurée à t_n ; sinon « loin-puits »"
+ },
+ "nature": "campagne statistique (24 graines) avec split observationnel pré-enregistré ; aucune prédiction directionnelle sur le taux de nucléation (observationnel)",
+ "predictions": {
+  "P0_filiation": "le détecteur est celui qui a validé E44-T0 (inchangé) ; cohérence interne : la phase 1 produit des snapshots lisibles (anom=0, amb<=4) dans >= 90 % des cas — sinon B3-FAIL technique",
+  "P1": "la persistance des paires proche-puits est strictement supérieure à celle des paires loin-puits (directionnel pré-enregistré) — le paysage protège là où il ancre",
+  "P2": "observationnel : taux de nucléation avec puits vs 5/24 sans puits (E45) — le paysage modifie-t-il la naissance ?",
+  "P3": "observationnel : distances paire-puits, Lk suivis, longueurs"
+ },
+ "regle_de_verdict": {
+  "SUCCES": "P0, lisibilité, P1 — le paysage fixe crée des régions de naissance protégée",
+  "B3-FAIL": "P0, lisibilité, P1 faux — le pinning non apparié ne protège pas ; la classe E37 n'est confirmée qu'en apparié (cf. E51) ou pas du tout",
+  "PARTIEL": "moins de 3 paires dans l'une des deux classes du split (puissance insuffisante mesurée, publiée)",
+  "B3-FAIL-TECHNIQUE": "P0 échoue — harnais réparé avant toute statistique"
+ },
+ "falsifieur_global": "aucune différence de persistance proche/loin → le paysage ne crée pas de régions protégées ; réfuté, publié au même niveau",
+ "cout_mesure_estime": "identique à E45 (~10 min CPU)",
+ "convention_sha256": "le champ sha256_protocole est calculé sur le présent fichier avec ce champ vide (\"\")",
+ "sha256_protocole": "991cab4bfaa5203aaaf18cfb3930141c8c92edd5ee65a10bae47bc98b7af9c40"
+}

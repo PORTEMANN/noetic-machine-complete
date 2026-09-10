@@ -444,3 +444,38 @@ partielle, avec une sous-frontière close datée.
 | **T1** | 2026-09-09 | Existe-t-il (D,J,γ) de taille impaire sous C-KO6-A3b avec un scalaire unique ? | **OUI — existence dès n=3** (ordre 1 vacuous pour A=ℂ, déclaré) | Question forte (ordre 1 non vacuous) traitée en T2 — fiche séparée, pas de critère déplacé |
 | **T2** | 2026-09-09 | Taille impaire à deux scalaires avec ordre 1 non vacuous ? | **OUI en préservation/mélange ; NON en échange** (lemme A : n pair requis) | « 2+2+3=7 » : statut = décision de structure réelle à déclarer |
 | **T4** | 2026-09-09 | La régularité de mélange de T2 est-elle un théorème ? | **THÉORÈME prouvé + machine 4/4** (T-MÉLANGE, T-CLASSIFICATION, n pair et impair) | Sous-frontière F4 « classification à deux scalaires » fermée (datée) ; énumération générale toujours ouverte |
+
+---
+
+## Série E — publication groupée du 09/09/2026 (après pause de tri)
+
+Vingt-quatre campagnes et amendements exécutés en local le 09/09/2026 et
+publiés groupés dans `corridor_E/` (registre : `corridor_E/README.md`,
+empreintes : `corridor_E/SHASUMS.txt`). La série cartographie la relation
+discrète dans le continu : de la nucléation du lien (E44) à la signature
+énergétique du 18 (E65).
+
+- **Corridor GP (E44–E59)** : la relation topologique est toujours
+  réécrivable — plafond mesuré τ ≤ 15 unités (E59) ; obstruction nommée :
+  le cœur déplétable. Neuf mécanismes réfutés proprement, un SUCCÈS
+  formel avec note de marge (E56), la fonction de frontière τ(A, γ)
+  mesurée (E59).
+- **Lois (T5/T6)** : coût scalaire réfuté ; loi à deux étages mesurée —
+  objet ⟺ non contractile, relation ⟺ non contractile ∧ ancrage externe.
+- **Vide hyperfluide (E60–E65)** : la cavité tenue par les filaments —
+  équilibre souffle/pression mesuré (E61), domaine de pression (E64 :
+  fenêtre κ ≈ 0,1 avec rms saturé), spectre des cages (E63 : optimum de
+  marge n=14), signature énergétique à n = 18 (E65), mortalité mesurée
+  (E62).
+
+Discipline identique à la série T : protocoles gelés hachés avant calcul
+(champ d'auto-référence exclue déclaré), verdicts publiés au même niveau
+succès ou échec, 3 B3-FAIL-TECHNIQUE documentés avec réparations hachées
+avant calcul.
+
+### Historique — ligne ajoutée le 09/09/2026 (pause de tri)
+
+| Campagne | Date | Question unique | Verdict | Suites régulées |
+|---|---|---|---|---|
+| **Série E** (E44–E65 + T5/T6) | 2026-09-09 | La relation discrète peut-elle exister dans le continu, et sous quelles lois ? | **Cartographie complète** : fermeture GP (τ ≤ 15), loi à deux étages, équilibre souffle/pression, fenêtre κ ≈ 0,1, signature n = 18 | Publication groupée `corridor_E/` ; alignement du registre canonique (boucle point 7) à la prochaine pause |
+

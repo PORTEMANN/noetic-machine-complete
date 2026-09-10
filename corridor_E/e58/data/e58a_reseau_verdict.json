@@ -1,0 +1,73 @@
+{
+  "campagne": "E58-A",
+  "protocole": "E58-RESEAU-1.0 (gelé)",
+  "n_lignes_imprimees": 27,
+  "bras": {
+    "A": {
+      "5.0": {
+        "n_lignes": 11,
+        "psi6": 0.9315410008531436,
+        "cristallise": true,
+        "anom": 11,
+        "amb": 0
+      },
+      "45.0": {
+        "n_lignes": 18,
+        "psi6": 0.3137961227407951,
+        "cristallise": false,
+        "anom": 36,
+        "amb": 0
+      },
+      "90.0": {
+        "n_lignes": 20,
+        "psi6": 0.04513921057608356,
+        "cristallise": false,
+        "anom": 35,
+        "amb": 0
+      }
+    },
+    "B": {
+      "5.0": {
+        "n_lignes": 131,
+        "psi6": 0.916030534351145,
+        "cristallise": true,
+        "anom": 17,
+        "amb": 0
+      },
+      "45.0": {
+        "n_lignes": 18,
+        "psi6": 0.3036942465193007,
+        "cristallise": false,
+        "anom": 41,
+        "amb": 0
+      },
+      "90.0": {
+        "n_lignes": 20,
+        "psi6": 0.4255736840153527,
+        "cristallise": false,
+        "anom": 34,
+        "amb": 0
+      }
+    }
+  },
+  "agregation": {
+    "n_lignes_imprimees": 27,
+    "P0_entree_cristallisee": true,
+    "psi6_entree": 0.9315410008531436,
+    "P1_ordre_persiste": false,
+    "psi6_A_t45": 0.3137961227407951,
+    "psi6_A_t90": 0.04513921057608356,
+    "compte_A": [
+      11,
+      18,
+      20
+    ],
+    "B_ordre_forme": false,
+    "psi6_B": {
+      "5.0": 0.916030534351145,
+      "45.0": 0.3036942465193007,
+      "90.0": 0.4255736840153527
+    },
+    "durée_s": 114.8
+  }
+}

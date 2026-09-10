@@ -1,0 +1,174 @@
+{
+  "campagne": "E54",
+  "protocole": "E54-TRESSAGE-1.0 (gelé)",
+  "runs": {
+    "440201": {
+      "8.0": {
+        "n_lignes_longues": 1,
+        "paires_tressees": [],
+        "tresse": false
+      },
+      "12.0": {
+        "n_lignes_longues": 1,
+        "paires_tressees": [],
+        "tresse": false
+      },
+      "20.0": {
+        "n_lignes_longues": 0,
+        "paires_tressees": [],
+        "tresse": false
+      },
+      "45.0": {
+        "n_lignes_longues": 0,
+        "paires_tressees": [],
+        "tresse": false
+      },
+      "90.0": {
+        "n_lignes_longues": 0,
+        "paires_tressees": [],
+        "tresse": false
+      }
+    },
+    "440202": {
+      "8.0": {
+        "n_lignes_longues": 0,
+        "paires_tressees": [],
+        "tresse": false
+      },
+      "12.0": {
+        "n_lignes_longues": 0,
+        "paires_tressees": [],
+        "tresse": false
+      },
+      "20.0": {
+        "n_lignes_longues": 0,
+        "paires_tressees": [],
+        "tresse": false
+      },
+      "45.0": {
+        "n_lignes_longues": 0,
+        "paires_tressees": [],
+        "tresse": false
+      },
+      "90.0": {
+        "n_lignes_longues": 0,
+        "paires_tressees": [],
+        "tresse": false
+      }
+    },
+    "440203": {
+      "8.0": {
+        "n_lignes_longues": 0,
+        "paires_tressees": [],
+        "tresse": false
+      },
+      "12.0": {
+        "n_lignes_longues": 0,
+        "paires_tressees": [],
+        "tresse": false
+      },
+      "20.0": {
+        "n_lignes_longues": 0,
+        "paires_tressees": [],
+        "tresse": false
+      },
+      "45.0": {
+        "n_lignes_longues": 0,
+        "paires_tressees": [],
+        "tresse": false
+      },
+      "90.0": {
+        "n_lignes_longues": 0,
+        "paires_tressees": [],
+        "tresse": false
+      }
+    },
+    "440204": {
+      "8.0": {
+        "n_lignes_longues": 0,
+        "paires_tressees": [],
+        "tresse": false
+      },
+      "12.0": {
+        "n_lignes_longues": 0,
+        "paires_tressees": [],
+        "tresse": false
+      },
+      "20.0": {
+        "n_lignes_longues": 1,
+        "paires_tressees": [],
+        "tresse": false
+      },
+      "45.0": {
+        "n_lignes_longues": 0,
+        "paires_tressees": [],
+        "tresse": false
+      },
+      "90.0": {
+        "n_lignes_longues": 0,
+        "paires_tressees": [],
+        "tresse": false
+      }
+    },
+    "440205": {
+      "8.0": {
+        "n_lignes_longues": 0,
+        "paires_tressees": [],
+        "tresse": false
+      },
+      "12.0": {
+        "n_lignes_longues": 1,
+        "paires_tressees": [],
+        "tresse": false
+      },
+      "20.0": {
+        "n_lignes_longues": 0,
+        "paires_tressees": [],
+        "tresse": false
+      },
+      "45.0": {
+        "n_lignes_longues": 0,
+        "paires_tressees": [],
+        "tresse": false
+      },
+      "90.0": {
+        "n_lignes_longues": 0,
+        "paires_tressees": [],
+        "tresse": false
+      }
+    },
+    "440206": {
+      "8.0": {
+        "n_lignes_longues": 3,
+        "paires_tressees": [],
+        "tresse": false
+      },
+      "12.0": {
+        "n_lignes_longues": 0,
+        "paires_tressees": [],
+        "tresse": false
+      },
+      "20.0": {
+        "n_lignes_longues": 0,
+        "paires_tressees": [],
+        "tresse": false
+      },
+      "45.0": {
+        "n_lignes_longues": 0,
+        "paires_tressees": [],
+        "tresse": false
+      },
+      "90.0": {
+        "n_lignes_longues": 0,
+        "paires_tressees": [],
+        "tresse": false
+      }
+    }
+  },
+  "agregation": {
+    "P0_structure_axiale": false,
+    "P1_tressage_nucle": false,
+    "P2_tressage_persiste": false,
+    "durée_s": 365.8
+  }
+}
