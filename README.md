@@ -26,6 +26,18 @@ Toute nouvelle campagne cite ses conventions par ID, publie son verdict au même
 
 ---
 
+## Publications du 08–09/09/2026 — série T (KO-6) et corridor E
+
+**Deux piliers publiés après pause de tri (gouvernance : exécution locale, publication décidée) :**
+
+- **Série T1–T4** — classification des triplets spectraux finis de KO-dimension 6 (table C-KO6-A3b) : existence dès n=3 à un scalaire (T1) ; classification complète à deux scalaires (T2 : préservation/mélange/échange — lemme A : échange ⟹ n pair) ; **théorème de mélange prouvé analytiquement + vérifié par machine** (T4 : 1 774 080 combos à n=2…9, 0 sans D). Sous-frontière F4 « classification à deux scalaires » fermée datée. Artefacts : `src/t1_ko6_taille_impaire.py`, `src/t2_ko6_ordre1_impair.py`, `src/t4_ko6_lemme_melange.py`, verdicts et notes dans `data/` et `docs/`, empreintes `data/t1_t2_t4_shasums.txt`.
+- **Corridor E** (`corridor_E/`) — **cartographie de la relation discrète dans le continu** : 29 campagnes et amendements (E44→E68 + T5/T6). De la nucléation spontanée du lien de Hopf (E44, Lk ≃ −1) à la signature énergétique du 18 (E65) : fermeture mesurée de la famille GP (τ ≤ 15 — E59) ; loi à deux étages de la conservation (T6 : objet ⟺ non contractile, relation ⟺ non contractile ∧ ancrage) ; **équilibre souffle/pression de la cavité ANU mesuré** (E61) ; fenêtre du couronnement κ ∈ ]0,075 ; 0,125[ (E64-A — parking avant la barrière énergétique) ; la fenêtre n'est pas universelle par n (E68). Registre : [`corridor_E/README.md`](corridor_E/README.md) ; empreintes : [`corridor_E/SHASUMS.txt`](corridor_E/SHASUMS.txt).
+- **Campagnes P49–P51 sur données réelles** (08/09/2026) : P49 (règle sqf des îlots super-lourds) **B3-FAIL** au seuil gelé (107/188 = 0,569 — frontière fermée datée) ; P50 (Hall entier par ASH) reportée (données réelles indisponibles) ; P51 (sommeil par ASH) **B3-FAIL** (0/10 paires, accuracy 0,319 — baseline Welch 0,627). Et **I3 — CI de reproductibilité : REPRODUCTIBLE 5/5** (7/7 empreintes, re-runs P49/P40/P51 identiques) — la CI est désormais le contrôle d'entrée de toute publication.
+
+Fiches complètes : [CAMPAIGNS.md](CAMPAIGNS.md) (registre des campagnes, boucle de régulation). Registre canonique aligné : [index.portemann.eu](https://index.portemann.eu/index.php?page=registre).
+
+---
+
 ## Qu'est-ce que la Machine Noétique ?
 
 La Machine Noétique n'est ni un modèle au sens usuel, ni un solveur, ni un système d'apprentissage. C'est un **opérateur de verdict** sur des structures physiques candidates :
