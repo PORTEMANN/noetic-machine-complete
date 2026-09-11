@@ -1,0 +1,70 @@
+name: Matomo traffic (github/PORTEMANN → stats.noeticindustries.com, site id 14)
+
+on:
+  schedule:
+    - cron: '17 */12 * * *'   # deux fois par jour
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mesure du trafic GitHub → Matomo
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          MATOMO_URL: https://stats.noeticindustries.com/matomo.php
+          MATOMO_SITE_ID: "14"
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.parse, urllib.request
+
+          GH_TOKEN = os.environ['GH_TOKEN']
+          REPO = os.environ['REPO']
+          MATOMO_URL = os.environ['MATOMO_URL']
+          SITE_ID = os.environ['MATOMO_SITE_ID']
+
+          def gh(path):
+              req = urllib.request.Request(
+                  f"https://api.github.com/repos/{REPO}{path}",
+                  headers={'Authorization': f'Bearer {GH_TOKEN}',
+                           'Accept': 'application/vnd.github+json',
+                           'User-Agent': 'matomo-traffic'})
+              return json.load(urllib.request.urlopen(req, timeout=30))
+
+          def matomo_hit(action_name, url, extra=None):
+              params = {
+                  'idsite': SITE_ID, 'rec': '1', 'apiv': '1',
+                  'action_name': action_name, 'url': url,
+                  'e_c': 'GitHub', 'e_a': action_name,
+                  'ua': 'matomo-traffic/1.0',
+              }
+              if extra: params.update(extra)
+              q = urllib.parse.urlencode(params)
+              req = urllib.request.Request(f"{MATOMO_URL}?{q}",
+                                           headers={'User-Agent': 'matomo-traffic'})
+              return urllib.request.urlopen(req, timeout=30).status
+
+          try:
+              views = gh('/traffic/views')
+              clones = gh('/traffic/clones')
+          except Exception as e:
+              print('traffic API indisponible (droits repo limites ?) :', e)
+              raise SystemExit(0)
+
+          v, c = views.get('count', 0), clones.get('count', 0)
+          uv, uc = views.get('uniques', 0), clones.get('uniques', 0)
+          st1 = matomo_hit('repo/views', f'https://github.com/{REPO}',
+                           {'e_n': str(v)})
+          st2 = matomo_hit('repo/clones', f'https://github.com/{REPO}',
+                           {'e_n': str(c)})
+          print(f"REPO={REPO} views={v} (uniques {uv}) clones={c} (uniques {uc}) -> matomo {st1},{st2}")
+          for day in views.get('views', []):
+              print(f"  {day['timestamp'][:10]} views={day['count']} uniques={day['uniques']}")
+          for day in clones.get('clones', []):
+              print(f"  {day['timestamp'][:10]} clones={day['count']} uniques={day['uniques']}")
+          print('OK')
+          PY
