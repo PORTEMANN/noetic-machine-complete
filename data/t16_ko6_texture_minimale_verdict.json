@@ -1,0 +1,66 @@
+{
+  "chantier": "T16-Q-KO6-TEXTURE-2026-10",
+  "protocole": "T16-KO6-TEXT-1.0 (gelé)",
+  "objet": "la texture minimale : la chaîne à trois saveurs et le premier nombre anticipé (Σm_ν au plancher NO)",
+  "V1_régression_T14": true,
+  "V2_échelle": {
+    "rang 1": {
+      "texture": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "modes_légers_massifs": 2,
+      "zéros_exact_états_physiques": 2,
+      "rang_mesuré_=_rang_texture": true
+    },
+    "rang 2": {
+      "texture": [
+        1.0,
+        0.25,
+        0.0
+      ],
+      "modes_légers_massifs": 4,
+      "zéros_exact_états_physiques": 1,
+      "rang_mesuré_=_rang_texture": true
+    },
+    "rang 3": {
+      "texture": [
+        1.0,
+        0.25,
+        0.0625
+      ],
+      "modes_légers_massifs": 6,
+      "zéros_exact_états_physiques": 0,
+      "rang_mesuré_=_rang_texture": true
+    }
+  },
+  "V2_fait_mesuré": "deux splittings non nuls (NuFIT épinglé — JALON-MCS26) → rang minimal 2 → exactement un état léger sans masse",
+  "V3_forme_close": "λ²±(y) = ((M_R²+2y²) ± M_R√(M_R²+4y²))/2 — vérifiée à TOL sur l'échelle",
+  "V4_anticipation": {
+    "Σm_ν_plancher_NO_meV": 58.993330403980394,
+    "borne_DESI_2025_meV": 64.0,
+    "distance_plancher_borne_%": 8.48684005756996,
+    "condition_de_mort": "Σm_ν mesuré nettement au-dessus du plancher tue la texture minimale (et le porteur comme secteur neutrino — T14) ; une borne qui serre sans distinguer ne tranche pas",
+    "provenance": "constantes re-déclarées de l'acquisition épinglée au JALON-MCS26 (NuFIT v6.0 IC19, sha256 6e0091c3… cité)"
+  },
+  "V5_leviers": {
+    "l'échelle mesurée (rang 1 → 1 paire légère massive ; rang 3 → 3)": true,
+    "Y → 0 : le zéro apparaît (régression T14)": true,
+    "la forme close tue si hors TOL (contrôle)": true
+  },
+  "lecture": "la première phrase faite de mots certifiés : la chaîne du seesaw (certifiée, T14/T15) + le fait mesuré (deux splittings) → le rang minimal de la texture est 2 → l'état le plus léger est exactement sans masse → Σm_ν anticipé au plancher NO ≈ 59,0 meV — mesuré, publié avec sa condition de mort. La tension publiée de T14 se résout : les deux structures du banc (la texture minimale du MS et le zéro algébrique du porteur) atteignent le plancher.",
+  "criteres": {
+    "V1_construction_régression": true,
+    "V2_échelle_rang_mesuré": true,
+    "V3_forme_close_généralisée": true,
+    "V4_nombre_anticipé": true,
+    "V5_leviers": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "falsifieur": "forme close hors tolérance ; rang mesuré ≠ rang de la texture ; levier non détecté",
+  "gouvernance": "décision d'auteur du 12/10/2026 (« allons-y »)",
+  "durée_s": 0.0,
+  "sha256_script": "12c17bbe71fe333d943577727cb9a9686d2638fa8c68d825177c3745b51b6eaf"
+}
