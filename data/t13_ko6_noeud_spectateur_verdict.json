@@ -1,0 +1,70 @@
+{
+  "chantier": "T13-Q-KO6-SPECTATEUR-2026-10",
+  "protocole": "T13-KO6-SPECT-1.0 (gelé)",
+  "objet": "le nœud ℂ du porteur : décoratif ou nécessaire ? (campagne F)",
+  "V1_amputé_certificat": {
+    "gamma_Hermitien": true,
+    "gamma2_I": true,
+    "D_autoadjoint": true,
+    "parite_{D,g}=0": true,
+    "J2_+1": true,
+    "Jgamma_+": true,
+    "JD_-DJ": true,
+    "ordre_zero": true,
+    "ordre_un": true,
+    "TOUS": true
+  },
+  "V2_citoyenneté": {
+    "porteur_dans_liste_(3,2)": true,
+    "orbites_porteur": true,
+    "amputé_dans_liste_(2,2)": true,
+    "orbites_amputé": true,
+    "spectre_citoyen_=_porteur": true,
+    "régression_comptes_880_13696": true
+  },
+  "V3_zéro": {
+    "porteur_un_zéro_aux_points_génériques": true,
+    "comptes_grille_générique": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "dégénérescence_au_repos_publiée": {
+      "porteur": 3,
+      "amputé": 2,
+      "lecture": "1 protégé + 2 accidentels (±(ρ−1) à ρ = 1) sur le porteur ; 2 accidentels sur l'amputé"
+    },
+    "amputé_sans_zéro_protégé": true
+  },
+  "V4_dynamique": {
+    "écart_T2_max": 0.0,
+    "écart_T4_max": 0.0,
+    "relation_d_ancre": "inchangée (fonction de T2′/T4′ — mesuré)",
+    "compte_T0": [
+      5,
+      4
+    ]
+  },
+  "V5_ordre_un": {
+    "porteur_base_réelle": true,
+    "porteur_base_complète_i·e₀": true,
+    "amputé_base_complète": true
+  },
+  "lecture": "le nœud ℂ est dynamiquement décoratif (moments, relation d'ancre identiques — mesuré) et structurellement le siège du seul mode zéro protégé par l'algèbre (le spectateur ne fluctue pas) ; il porte aussi le compte N_F = 5 vs 4 — le g5 de MCS-24 : le tarif et l'ancre mesurée sont les SEULS endroits où il compte. Les deux objets sont citoyens du nul réel de la fenêtre.",
+  "criteres": {
+    "V1_certificat_amputé": true,
+    "V2_citoyenneté_nul_réel": true,
+    "V3_zéro_protégé": true,
+    "V4_identité_dynamique": true,
+    "V5_ordre_un_base_complète": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "falsifieur": "une prédiction pré-enregistrée tuée (certificat, citoyenneté, zéro protégé, dynamique, ordre un)",
+  "gouvernance": "décision d'auteur du 12/10/2026 (« ollons-y » — campagne F)",
+  "durée_s": 0.01,
+  "sha256_script": "d2b6ad9dfd47e8b3b00ef7b42b43b2786fd4f99dfebbc664e862d5edb60ebe52"
+}
