@@ -1,0 +1,130 @@
+{
+  "chantier": "T6-Q-KO6-PORTEUR-2026-10",
+  "protocole": "T6-KO6-PORT-1.0 (gelé)",
+  "porteur_nommé": {
+    "id": "PORTEUR-KO6-A3b-DIM5",
+    "algebre": "ℂ ⊕ M₂(ℂ)",
+    "H": "ℂ ⊕ M₂(ℂ) (vec colonne)",
+    "D": "0 ⊕ (L_{σ1} − R_{σ1})",
+    "gamma": "1 ⊕ L_{σ3}R_{σ3}",
+    "J": "K ⊕ adjoint",
+    "table": "C-KO6-A3b (J²=+1, JD=−DJ, Jγ=+γJ)",
+    "empreinte_matrices_sha256": "de8fc8a941592a312687026e752c2cc2d0afb8b7a4a709038ecce7486c67b4ee"
+  },
+  "C0_certificat": {
+    "gamma_Hermitien": true,
+    "gamma2_I": true,
+    "D_autoadjoint": true,
+    "parite_{D,g}=0": true,
+    "J2_+1": true,
+    "Jgamma_+": true,
+    "JD_-DJ": true,
+    "ordre_zero": true,
+    "ordre_un": true,
+    "TOUS": true
+  },
+  "C1_scalaires": {
+    "rang_mesuré": 2,
+    "déclaré": 2,
+    "commutateurs_non_nuls": 2,
+    "forme": "φ(α,β) = 0 ⊕ I⊗(ασ₂+βσ₃) — un scalaire complexe = 2 réels (forme du papier)",
+    "enveloppe_F1_conforme": true
+  },
+  "C2_V2": {
+    "formule_déclarée": "4(1+α²+β²)+4",
+    "écart_max": 1.7763568394002505e-15,
+    "minimum": "φ = 0 (mesuré sur grille)"
+  },
+  "C3_V4": {
+    "formule_déclarée": "4ρ⁴+24ρ²+4, ρ²=1+α²+β²",
+    "écart_max": 2.842170943040401e-14,
+    "minimum": "φ = 0 (mesuré sur grille)"
+  },
+  "C4_flot": {
+    "formule_déclarée": "bandes {±(ρ−1), ±(ρ+1)}",
+    "écart_max": 8.881784197001252e-16,
+    "mesures": [
+      {
+        "phi": [
+          0,
+          0
+        ],
+        "rho": 1.0,
+        "bandes": 3,
+        "zero_noeud_scalaire": true
+      },
+      {
+        "phi": [
+          0.3,
+          0
+        ],
+        "rho": 1.044031,
+        "bandes": 5,
+        "zero_noeud_scalaire": false
+      },
+      {
+        "phi": [
+          0,
+          0.6
+        ],
+        "rho": 1.16619,
+        "bandes": 5,
+        "zero_noeud_scalaire": false
+      },
+      {
+        "phi": [
+          0.5,
+          0.5
+        ],
+        "rho": 1.224745,
+        "bandes": 5,
+        "zero_noeud_scalaire": false
+      },
+      {
+        "phi": [
+          1.0,
+          0
+        ],
+        "rho": 1.414214,
+        "bandes": 5,
+        "zero_noeud_scalaire": false
+      },
+      {
+        "phi": [
+          0.9,
+          0.9
+        ],
+        "rho": 1.618641,
+        "bandes": 5,
+        "zero_noeud_scalaire": false
+      }
+    ],
+    "fait": "le mode zéro n'existe qu'en φ = 0 — le scalaire décale le zéro (mesuré)"
+  },
+  "C5_gaussienne": {
+    "rho_extremum": 1.0,
+    "S_seconde_en_1": -1.547344663954675,
+    "interprétation": "S = compte spectral (pas une énergie) : maximal au point de zéro-mode"
+  },
+  "leviers": {
+    "φ→2φ (ratio V2 déclaré)": true,
+    "D→0 : V2 = Tr φ² ≥ 0": true,
+    "J₀ permuté détecté (tuant)": true
+  },
+  "obstruction_chapeau_mexicain": "le potentiel du porteur fini est stable (minima en 0) : la masse² < 0 exige la géométrie produit (couplage a₂ à la courbure) — obstruction située, hors bornes",
+  "criteres": {
+    "C0_certificat": true,
+    "C1_espace_scalaires": true,
+    "C2_V2": true,
+    "C3_V4": true,
+    "C4_flot_bandes": true,
+    "C5_action_gaussienne": true,
+    "leviers": true
+  },
+  "score": "7/7",
+  "statut": "SUCCÈS",
+  "falsifieur": "rang scalaire ≠ 2 ; écart formule/machine > 1e-9 ; mode zéro à φ ≠ 0 ; levier non détecté",
+  "gouvernance": "décision d'auteur du 12/10/2026 (« formalisons ce porteur spectral à scalaire réel et testons-le »)",
+  "durée_s": 0.01,
+  "sha256_script": "9662c8ca5f588caf407f4b7f9862a2dbfcdbfb145dc4821df981f8b789d24039"
+}
