@@ -1,0 +1,138 @@
+{
+  "chantier": "T14-Q-KO6-ANTICIPATION-2026-10",
+  "protocole": "T14-KO6-ANTI-1.0 (gelé)",
+  "objet": "l'anticipation : le seesaw face au zéro protégé — les positions structurelles du banc sur les faits de labo prochains",
+  "V1_chaîne": {
+    "grille": {
+      "0.25": {
+        "chaîne": [
+          0.882782219,
+          0.882782219,
+          1.132782219,
+          1.132782219
+        ],
+        "forme_close": [
+          0.882782219,
+          1.132782219
+        ],
+        "mode_minimal": 0.8827822185373186,
+        "rapport_léger_lourd": 0.7793044453656705
+      },
+      "0.5": {
+        "chaîne": [
+          0.780776406,
+          0.780776406,
+          1.280776406,
+          1.280776406
+        ],
+        "forme_close": [
+          0.780776406,
+          1.280776406
+        ],
+        "mode_minimal": 0.7807764064044151,
+        "rapport_léger_lourd": 0.6096117967977924
+      },
+      "1.0": {
+        "chaîne": [
+          0.618033989,
+          0.618033989,
+          1.618033989,
+          1.618033989
+        ],
+        "forme_close": [
+          0.618033989,
+          1.618033989
+        ],
+        "mode_minimal": 0.6180339887498949,
+        "rapport_léger_lourd": 0.3819660112501051
+      },
+      "2.0": {
+        "chaîne": [
+          0.414213562,
+          0.414213562,
+          2.414213562,
+          2.414213562
+        ],
+        "forme_close": [
+          0.414213562,
+          2.414213562
+        ],
+        "mode_minimal": 0.41421356237309503,
+        "rapport_léger_lourd": 0.17157287525380982
+      },
+      "4.0": {
+        "chaîne": [
+          0.236067977,
+          0.236067977,
+          4.236067977,
+          4.236067977
+        ],
+        "forme_close": [
+          0.236067977,
+          4.236067977
+        ],
+        "mode_minimal": 0.23606797749978928,
+        "rapport_léger_lourd": 0.055728090000840995
+      }
+    },
+    "régression_T10_TrD2_34": true,
+    "fait_λ_lourd_=_φ_à_M_R_1": true
+  },
+  "V2_zéro": {
+    "modes_minimaux_grille": {
+      "0.25": 0.8827822185373186,
+      "0.5": 0.7807764064044151,
+      "1.0": 0.6180339887498949,
+      "2.0": 0.41421356237309503,
+      "4.0": 0.23606797749978928
+    },
+    "jamais_nul_à_M_R_positif": true,
+    "levier_texture_Yνν_0": 0.0,
+    "lecture": "le MS ne porte un zéro que par texture (Y_νν = 0) ; la protection du porteur est algébrique (T13)"
+  },
+  "V3_certificat": {
+    "gamma_Hermitien": true,
+    "gamma2_I": true,
+    "D_autoadjoint": true,
+    "parite_{D,g}=0": true,
+    "J2_+1": true,
+    "Jgamma_table": true,
+    "JD_table": true,
+    "ordre_zero": true,
+    "ordre_un": true,
+    "TOUS": true
+  },
+  "V4_registre_anticipation": {
+    "ordre_des_masses": {
+      "position_mesurée": "le porteur porte un zéro protégé algébrique (T13) → hiérarchie normale minimale",
+      "falsifier_daté": "une mesure de l'ordre inverse (JUNO et les relevés globaux — registre déclaré du 12/10/2026)"
+    },
+    "échelle_absolue": {
+      "position_mesurée": "TENSION PUBLIÉE : le seesaw du MS ne protège pas (V2 : jamais de zéro à M_R > 0) → seesaw-MS : m₁ > 0, Σm_ν au-dessus du plancher ; le zéro algébrique du porteur → Σm_ν AU plancher NO — le banc a deux structures, le labo tranche",
+      "falsifier_daté": "Σm_ν mesuré nettement au-dessus du plancher NO (≈ 0,06 eV) tue le porteur comme secteur neutrino ; une borne serrant le plancher sans le distinguer ne tranche pas (bornes déclarées)"
+    },
+    "nature_de_Majorana": {
+      "position_mesurée": "l'ordre un a exclu la convention sans Majorana (T9, défaut D1 mesuré — régression citée) → 0νββ attendu",
+      "falsifier_daté": "exclusion du 0νββ à la sensibilité des prochains relevés (registre déclaré du 12/10/2026)"
+    }
+  },
+  "V5_leviers": {
+    "les deux bouts de la grille mesurés": true,
+    "sans Majorana : la chaîne se brise en paires de Dirac": true,
+    "la forme close tue si hors TOL (contrôle)": true
+  },
+  "lecture": "l'architecture du banc force des positions structurelles anticipées, publiées avec falsifiers datés : ordre normal minimal (le zéro protégé), tension mesurée sur l'échelle absolue (le seesaw fend, l'algèbre protège — le labo tranche), 0νββ attendu (l'ordre un a exclu la convention sans Majorana). La machine ne prédit pas de nombre — elle publie des positions avec leurs conditions de mort.",
+  "criteres": {
+    "V1_chaîne_mesurée": true,
+    "V2_zéro_sous_seesaw": true,
+    "V3_certificat": true,
+    "V4_registre_anticipation": true,
+    "V5_leviers": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "falsifieur": "forme close hors tolérance ; zéro à M_R > 0 sans texture ; certificat échoué ; levier non détecté",
+  "gouvernance": "décision d'auteur du 12/10/2026 (« oui lance T14 »)",
+  "durée_s": 0.05,
+  "sha256_script": "fed9761e2423ee43c99bcb8f4fbc4c5170e4be07520e626c083eeb2511ced829"
+}
