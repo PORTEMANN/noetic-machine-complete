@@ -1,0 +1,65 @@
+{
+  "chantier": "T9-Q-KO6-JUNK-2026-10",
+  "protocole": "T9-KO6-JUNK-1.0 (gelé)",
+  "question": "l'espace des fluctuations du triplet du MS se décompose-t-il en doublet de Higgs ⊕ junk U(1), et quel filtre tue le junk ?",
+  "défauts_du_banc_corrigés_et_publiés": {
+    "D1_base_algèbre": "T8 échantillonnait ℂ au réel ; base réelle complète (24 éléments) : l'ordre 1 mord — convention A (λ sur antiparticules) incompatible avec Majorana ; convention B (λ̄) retenue (cohérente CCM)",
+    "D2_pi_sm_additif": "action additive au lieu de tensorielle sur les secteurs multi-facteurs — invisible pour la base pure de T8 (régression publiée), non-unitaire sur mixte (contrôle tuant ajouté) — corrigée en v2",
+    "D3_rang_T8": "T8 mesurait les commutateurs nus (13) ; la fluctuation est Σ a·[D,b] — rang corrigé mesuré : 6"
+  },
+  "V1": {
+    "MS_sans_Majorana": true,
+    "MS_avec_Majorana": true,
+    "porteur_A3b": true
+  },
+  "V2_rang_brut": {
+    "mesuré": 6,
+    "prédiction": 6
+  },
+  "V3_décomposition": {
+    "SU2_ℍ": {
+      "singlet": 2,
+      "non_singlet": 4
+    },
+    "U1_ℂ": {
+      "singlet": 0,
+      "chargé": 6
+    },
+    "lecture": "6 = 4 ⊕ 2 : le doublet SU(2) (le Higgs) plus la paire U(1) (le junk) — décomposition mesurée"
+  },
+  "V4_filtres": {
+    "ordre1_complet_avec_J": {
+      "survivants": 6,
+      "coupe": false
+    },
+    "unimodularité_TrΦ=0": {
+      "traces_max": 0.0,
+      "note": "automatique (toutes traces nulles) — ne coupe rien au niveau fini (mesuré)"
+    },
+    "retrait_Majorana": {
+      "note": "mesuré : l'espace sans Majorana est publié ci-dessous",
+      "rang_sans_Majorana": 6,
+      "coupe": false
+    }
+  },
+  "verdict_quotient": "le junk U(1) (2 directions) survit à tous les filtres du niveau fini (ordre 1 complet avec J, unimodularité automatique, Majorana) — sa mort appartient à la géométrie produit (unimodularité totale avec le partenaire d'espace-temps, CCM) — borne déclarée",
+  "V5_leviers": {
+    "convention A + Majorana : ordre 1 échoue (détecté)": true,
+    "base réduite : le conflit devient invisible (détecté)": true,
+    "pi_sm v1 non-unitaire sur mixte (détecté)": true,
+    "pi_sm v2 unitaire sur mixte (contrôle)": true
+  },
+  "criteres": {
+    "V1_régressions": true,
+    "V2_rang_6": true,
+    "V3_décomposition_4⊕2": true,
+    "V4_filtres_mesurés": true,
+    "V5_leviers": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "falsifieur": "compression de groupe non contractante ; décomposition ≠ mesure ; levier non détecté",
+  "gouvernance": "décision d'auteur du 12/10/2026 (« attaque le quotient par les formes junk »)",
+  "durée_s": 11.77,
+  "sha256_script": "0910ec72a386a2db1a0cee879e9ebe9e3a32847fde279ad03633fd672ee1e7d8"
+}
