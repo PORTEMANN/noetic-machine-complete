@@ -119,7 +119,7 @@
     "K3 avec χ → −24 : a₄ change (sensibilité mesurée)": true,
     "contenu → 0 : EH survit, masse² meurt (mesuré)": true
   },
-  "lecture": "la chaîne spectrale mesure la famille sans ajuster l'instrument : le tachyon est partout (porté par le volume), le slot EH meurt sans courbure scalaire, K3 garde Riem² dans le quartique — le diagramme Λ_c est la carte d'embarquement de la future carte du tarif",
+  "lecture": "la chaîne spectrale mesure la famille sans ajuster l'instrument : le tachyon est universel (porté par le volume), le slot EH meurt sans courbure scalaire, K3 garde Riem² dans le quartique — le diagramme Λ_c est la carte d'embarquement de la future carte du tarif",
   "note_plancher": "Λ_c(MS) = 1,0 est le plancher de la grille déclarée : le chapeau du MS est présent dès la plus petite coupure mesurée — publié comme tel",
   "criteres": {
     "V1_coefficients_régression": true,
@@ -132,6 +132,6 @@
   "statut": "SUCCÈS",
   "falsifieur": "régression S⁴(1) hors calibration ; universalité hors tolérance ; levier non détecté",
   "gouvernance": "décision d'auteur du 12/10/2026 (« attaque la campagne B »)",
-  "durée_s": 4.1,
+  "durée_s": 3.0,
   "sha256_script": "472f7c115b00136350a0fcccdbd8caa4398611f8ab2eb5a4723585f33e776567"
 }
