@@ -141,11 +141,7 @@ def triplet_sm():
     J0 = S                                # J = S∘K
     c = np.diag([1.0] * 8 + [-1.0] * 8)
     gamma = np.diag(list(np.diag(c)) + list(-np.diag(c)))
-    return D32, J32_ouverts(S), gamma
-
-
-def J32_ouverts(S):
-    return S
+    return D32, J0, gamma
 
 
 def J_agit(M, J0_):
