@@ -1,0 +1,137 @@
+{
+  "chantier": "T11-Q-KO6-FAMILLE-2026-10",
+  "protocole": "T11-KO6-FAM-1.0 (gelé)",
+  "objet": "famille {T⁴, S⁴(r), K3} × {MS corrigé (T9/T10), porteur (T5/T6)} — campagne B",
+  "V1_coefficients": {
+    "S⁴(1)": {
+      "a0": 105.27578027828649,
+      "a2": -105.27578027828649,
+      "a4": 19.300559717685832
+    },
+    "S⁴(2)": {
+      "a0": 1684.4124844525838,
+      "a2": -421.10312111314596,
+      "a4": 19.300559717685832
+    },
+    "T⁴": {
+      "a0": 4.0,
+      "a2": -0.0,
+      "a4": 0.0
+    },
+    "K3": {
+      "a0": 4.0,
+      "a2": -0.0,
+      "a4": -147.38609238960106
+    }
+  },
+  "V1_régression_T7": true,
+  "V2_moments_contenus": {
+    "MS_doublet": {
+      "T2": [
+        33.999999999999986,
+        -0.7128522135037646,
+        1.00000000000004,
+        1.1368683772161603e-13
+      ],
+      "T4": [
+        42.0,
+        -1.4257044270074544,
+        3.7553003435286882,
+        -1.1211977025756545,
+        0.34062459562032066
+      ]
+    },
+    "porteur_T2_T4_à_ρ1": [
+      8.0,
+      32.0
+    ]
+  },
+  "V2_slots_par_variété": {
+    "S⁴(1)": {
+      "MS_1g": [
+        -43.99999999999999,
+        40.57777777777776
+      ],
+      "porteur": [
+        -8.666666666666668,
+        16.61111111111111
+      ]
+    },
+    "S⁴(2)": {
+      "MS_1g": [
+        -447.9999999999999,
+        318.5777777777777
+      ],
+      "porteur": [
+        -98.66666666666667,
+        192.61111111111111
+      ]
+    },
+    "T⁴": {
+      "MS_1g": [
+        -0.8612300609598708,
+        0.5319362141222733
+      ],
+      "porteur": [
+        -0.20264236728467555,
+        0.4052847345693511
+      ]
+    },
+    "K3": {
+      "MS_1g": [
+        -0.8612300609598708,
+        -29.334730452544388
+      ],
+      "porteur": [
+        -0.20264236728467555,
+        -4.261381932097315
+      ]
+    }
+  },
+  "V3_diagramme_Λc": {
+    "S⁴(1)": {
+      "MS_1g": 1.0,
+      "porteur": 2.25
+    },
+    "S⁴(2)": {
+      "MS_1g": 1.0,
+      "porteur": 2.1000000000000005
+    },
+    "T⁴": {
+      "MS_1g": 1.3000000000000003,
+      "porteur": 2.0500000000000007
+    },
+    "K3": {
+      "MS_1g": 1.3000000000000003,
+      "porteur": 2.0500000000000007
+    }
+  },
+  "V4": {
+    "universalité_A2_sur_∫R": {
+      "S⁴(1)": 1.0,
+      "S⁴(2)": 1.0
+    },
+    "contrôle_T⁴": true,
+    "contraste_K3": true
+  },
+  "V5_leviers": {
+    "a₄ de S⁴ invariant d'échelle (r=1 vs r=2, mesuré)": true,
+    "K3 avec χ → −24 : a₄ change (sensibilité mesurée)": true,
+    "contenu → 0 : EH survit, masse² meurt (mesuré)": true
+  },
+  "lecture": "la chaîne spectrale mesure la famille sans ajuster l'instrument : le tachyon est partout (porté par le volume), le slot EH meurt sans courbure scalaire, K3 garde Riem² dans le quartique — le diagramme Λ_c est la carte d'embarquement de la future carte du tarif",
+  "note_plancher": "Λ_c(MS) = 1,0 est le plancher de la grille déclarée : le chapeau du MS est présent dès la plus petite coupure mesurée — publié comme tel",
+  "criteres": {
+    "V1_coefficients_régression": true,
+    "V2_slots": true,
+    "V3_diagramme": true,
+    "V4_universalité_contrastes": true,
+    "V5_leviers": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "falsifieur": "régression S⁴(1) hors calibration ; universalité hors tolérance ; levier non détecté",
+  "gouvernance": "décision d'auteur du 12/10/2026 (« attaque la campagne B »)",
+  "durée_s": 4.1,
+  "sha256_script": "472f7c115b00136350a0fcccdbd8caa4398611f8ab2eb5a4723585f33e776567"
+}
