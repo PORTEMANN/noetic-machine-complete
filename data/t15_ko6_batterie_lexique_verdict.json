@@ -1,0 +1,99 @@
+{
+  "chantier": "T15-Q-KO6-LEXIQUE-2026-10",
+  "protocole": "T15-KO6-LEXI-1.0 (gelé)",
+  "objet": "la batterie du lexique : le dictionnaire mesuré du banc — quels mots ont un référent mesuré certifié",
+  "V1_certificats": {
+    "porteur": true,
+    "amputé": true,
+    "MS_sous_L1": true
+  },
+  "V2_correspondances_remesurées": {
+    "rang_fluctuations_MS": 6,
+    "Tr_junk_ℂ:i": "-16j",
+    "Tr_doublet_ℍ:iσ_k": [
+      "0j",
+      "0j",
+      "0j"
+    ],
+    "seesaw_±φ_±1/φ_à_M_R_1": true,
+    "Λ_c_porteur_S4_1": 2.25
+  },
+  "V3_distances_orphelins": {
+    "porteur × canal leptonique (MCS-25, CS−)": {
+      "distance": "0,81 dex",
+      "verdict_source": "CS−, Σ = −0,26",
+      "statut": "scellée"
+    },
+    "porteur × canal neutrino (MCS-26, non scellée)": {
+      "distance": "plafond mesuré",
+      "verdict_source": "impuissante : σ = 2,92 < 3,0 à deux démos",
+      "statut": "non scellée"
+    },
+    "porteur × forme leptonique jointe (MCS-27, CS−)": {
+      "distance": "6,27 blanchi",
+      "verdict_source": "CS−, Σ = +1,00",
+      "statut": "scellée"
+    },
+    "tarif η × gravité induite (MCS-24, CSi)": {
+      "distance": "inversion",
+      "verdict_source": "CSi, Σ = −10,71 — meurt de sa convention de cadran",
+      "statut": "scellée"
+    }
+  },
+  "V4_dictionnaire": {
+    "MS corrigé (T9/T10)": {
+      "référent": "contenu de jauge du Modèle Standard (doublet de Higgs + junk U(1) mourant par unimodularité — CCM, déclaré)",
+      "mesure": "rang 6 = 6 ; Tr(junk) = −16i ≠ 0, Tr(doublet) = 0 — la mort du junk par sa trace",
+      "verdict": "CERTIFIÉ (structurel, exact)"
+    },
+    "chaîne du seesaw (T14)": {
+      "référent": "le mécanisme seesaw (m_léger ~ m_D²/M_R)",
+      "mesure": "forme close λ²± = ((M_R²+2) ± M_R√(M_R²+4))/2 vérifiée à TOL sur la grille ; ±φ, ±1/φ à M_R = 1",
+      "verdict": "CERTIFIÉ (forme close, mesuré)"
+    },
+    "chapeau (famille des variétés, T11)": {
+      "référent": "la brisure spontanée existe (le slot a₂ porte la masse² négative — CCM déclaré)",
+      "mesure": "Λ_c(porteur, S⁴(1)) = 2.25 — le chapeau vit au-delà de Λ_c (diagramme mesuré T11)",
+      "verdict": "CERTIFIÉ (structurel)"
+    },
+    "porteur (T5/T6/T13)": {
+      "référent": "aucun fait mesuré correspondant (canaux leptonique et neutrino pesés — ordinaires)",
+      "mesure": "0,81 dex (MCS-25) ; 6,27 blanchi (MCS-27) ; plafond 2,92 σ (MCS-26)",
+      "verdict": "ORPHELIN"
+    },
+    "amputé (T13)": {
+      "référent": "aucun fait mesuré correspondant",
+      "mesure": "partage le zéro non protégé du porteur (T13) ; jamais pesé contre une mesure",
+      "verdict": "ORPHELIN"
+    },
+    "relation d'ancre Λ_sel (T12)": {
+      "référent": "aucun fait connu correspondant déclaré",
+      "mesure": "Λ²_sel = ρ² + 3 − a₂/a₀ (forme close mesurée, T12) — une bijection cadran ↔ vide : un outil, pas un mot du monde",
+      "verdict": "ORPHELIN (sans candidat déclaré)"
+    },
+    "tarif η = 1/(4ℏG) (MCS-24)": {
+      "référent": "la gravité induite (1/G_ind ∝ f₂Λ²N_eff)",
+      "mesure": "CSi, Σ = −10,71 : la proximité mesure la convention de coupure, pas le contenu",
+      "verdict": "CONTREDIT (anti-stable, mesuré)"
+    }
+  },
+  "V5_leviers": {
+    "porteur à J₀ permuté détecté (tuant)": true,
+    "la règle des orphelins tient (aucun au seuil — mesuré)": true
+  },
+  "la_règle_installée": "aucune carte MCS n'est écrite sur un mot orphelin — une coïncidence pesée sur un objet sans référent mesuré est condamnée à dormir (mesuré : MCS-25/26/27)",
+  "lecture": "le banc sait parler de trois choses mesurées (le contenu de jauge du SM, le seesaw, la brisure) ; trois mots sont orphelins (porteur, amputé, relation d'ancre) ; un mot est contredit mesuré (le tarif). Les trous du lexique sont publiés : c'est la carte d'embarquement de toute future anticipation.",
+  "criteres": {
+    "V1_certificats": true,
+    "V2_correspondances": true,
+    "V3_distances_consignées": true,
+    "V4_dictionnaire": true,
+    "V5_leviers": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "falsifieur": "une régression échappe ; un levier non détecté ; un orphelin au seuil invisible pour la règle",
+  "gouvernance": "décision d'auteur du 12/10/2026 (« oui ouvre la batterie »)",
+  "durée_s": 0.46,
+  "sha256_script": "8f316f3729a5248c3f879e84ac050110a1e608230f4819fcf7064438acab3ab1"
+}
