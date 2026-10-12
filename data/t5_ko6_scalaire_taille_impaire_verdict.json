@@ -1,0 +1,395 @@
+{
+  "chantier": "T5-Q-KO6-SCALAIRE-2026-10",
+  "protocole": "T5-KO6-SCAL-1.0 (gelé)",
+  "tables": {
+    "L1": "J²=+1, JD=+DJ, Jγ=−γJ (usuelle)",
+    "A3b": "J²=+1, JD=−DJ, Jγ=+γJ (banc)"
+  },
+  "question": "le plus petit triplet fini portant un scalaire (fluctuation ≠ 0), et la taille impaire avec scalaire",
+  "V1_parite_L1": {
+    "resultats": [
+      {
+        "n": 3,
+        "solutions": 0,
+        "argument": "tr γ = 0 exigé par Jγ = −γJ"
+      },
+      {
+        "n": 5,
+        "solutions": 0,
+        "argument": "tr γ = 0 exigé par Jγ = −γJ"
+      },
+      {
+        "n": 7,
+        "solutions": 0,
+        "argument": "tr γ = 0 exigé par Jγ = −γJ"
+      },
+      {
+        "n": 9,
+        "solutions": 0,
+        "argument": "tr γ = 0 exigé par Jγ = −γJ"
+      }
+    ],
+    "conclusion": "0 solution impaire sous L1 — lemme de parité confirmé (tr γ = 0)"
+  },
+  "V2_fluctuation_commutative_A3b": {
+    "comptes": {
+      "3": {
+        "preserve": {
+          "combos": 112,
+          "combos_avec_D": 32,
+          "D_total": 64,
+          "combos_actifs": 0,
+          "D_actifs": 0
+        },
+        "echange": {
+          "combos": 0,
+          "combos_avec_D": 0,
+          "D_total": 0,
+          "combos_actifs": 0,
+          "D_actifs": 0
+        },
+        "melange": {
+          "combos": 32,
+          "combos_avec_D": 32,
+          "D_total": 64,
+          "combos_actifs": 32,
+          "D_actifs": 64
+        }
+      },
+      "5": {
+        "preserve": {
+          "combos": 8896,
+          "combos_avec_D": 6496,
+          "D_total": 36608,
+          "combos_actifs": 0,
+          "D_actifs": 0
+        },
+        "echange": {
+          "combos": 0,
+          "combos_avec_D": 0,
+          "D_total": 0,
+          "combos_actifs": 0,
+          "D_actifs": 0
+        },
+        "melange": {
+          "combos": 7424,
+          "combos_avec_D": 7424,
+          "D_total": 87040,
+          "combos_actifs": 7424,
+          "D_actifs": 50176
+        }
+      },
+      "7": {
+        "preserve": {
+          "combos": 566720,
+          "combos_avec_D": 506400,
+          "D_total": 18143232,
+          "combos_actifs": 0,
+          "D_actifs": 0
+        },
+        "echange": {
+          "combos": 0,
+          "combos_avec_D": 0,
+          "D_total": 0,
+          "combos_actifs": 0,
+          "D_actifs": 0
+        },
+        "melange": {
+          "combos": 985600,
+          "combos_avec_D": 985600,
+          "D_total": 114993152,
+          "combos_actifs": 985600,
+          "D_actifs": 33173504
+        }
+      }
+    },
+    "recoupement_brut_n3": {
+      "brut": {
+        "total_ok": 128,
+        "fluct_actifs": 64
+      },
+      "orbites_total": 128,
+      "orbites_actifs": 64,
+      "conforme": true
+    },
+    "exemplaires_verifies": [
+      {
+        "n": 3,
+        "a": 1,
+        "b": 2,
+        "classe": "melange",
+        "P": [
+          1
+        ],
+        "verifie_TOUS": true,
+        "fluctuation_norme": 1.4142135623730951
+      },
+      {
+        "n": 3,
+        "a": 1,
+        "b": 2,
+        "classe": "melange",
+        "P": [
+          1
+        ],
+        "verifie_TOUS": true,
+        "fluctuation_norme": 1.4142135623730951
+      },
+      {
+        "n": 3,
+        "a": 1,
+        "b": 2,
+        "classe": "melange",
+        "P": [
+          1
+        ],
+        "verifie_TOUS": true,
+        "fluctuation_norme": 1.4142135623730951
+      },
+      {
+        "n": 3,
+        "a": 1,
+        "b": 2,
+        "classe": "melange",
+        "P": [
+          1
+        ],
+        "verifie_TOUS": true,
+        "fluctuation_norme": 1.4142135623730951
+      },
+      {
+        "n": 3,
+        "a": 1,
+        "b": 2,
+        "classe": "melange",
+        "P": [
+          2
+        ],
+        "verifie_TOUS": true,
+        "fluctuation_norme": 1.4142135623730951
+      },
+      {
+        "n": 3,
+        "a": 1,
+        "b": 2,
+        "classe": "melange",
+        "P": [
+          2
+        ],
+        "verifie_TOUS": true,
+        "fluctuation_norme": 1.4142135623730951
+      },
+      {
+        "n": 5,
+        "a": 1,
+        "b": 4,
+        "classe": "melange",
+        "P": [
+          1
+        ],
+        "verifie_TOUS": true,
+        "fluctuation_norme": 1.4142135623730951
+      },
+      {
+        "n": 5,
+        "a": 1,
+        "b": 4,
+        "classe": "melange",
+        "P": [
+          1
+        ],
+        "verifie_TOUS": true,
+        "fluctuation_norme": 1.4142135623730951
+      },
+      {
+        "n": 5,
+        "a": 1,
+        "b": 4,
+        "classe": "melange",
+        "P": [
+          1
+        ],
+        "verifie_TOUS": true,
+        "fluctuation_norme": 1.4142135623730951
+      },
+      {
+        "n": 5,
+        "a": 1,
+        "b": 4,
+        "classe": "melange",
+        "P": [
+          1
+        ],
+        "verifie_TOUS": true,
+        "fluctuation_norme": 1.4142135623730951
+      },
+      {
+        "n": 5,
+        "a": 1,
+        "b": 4,
+        "classe": "melange",
+        "P": [
+          1
+        ],
+        "verifie_TOUS": true,
+        "fluctuation_norme": 1.4142135623730951
+      },
+      {
+        "n": 5,
+        "a": 1,
+        "b": 4,
+        "classe": "melange",
+        "P": [
+          1
+        ],
+        "verifie_TOUS": true,
+        "fluctuation_norme": 1.4142135623730951
+      },
+      {
+        "n": 7,
+        "a": 1,
+        "b": 6,
+        "classe": "melange",
+        "P": [
+          1
+        ],
+        "verifie_TOUS": true,
+        "fluctuation_norme": 1.4142135623730951
+      },
+      {
+        "n": 7,
+        "a": 1,
+        "b": 6,
+        "classe": "melange",
+        "P": [
+          1
+        ],
+        "verifie_TOUS": true,
+        "fluctuation_norme": 1.4142135623730951
+      },
+      {
+        "n": 7,
+        "a": 1,
+        "b": 6,
+        "classe": "melange",
+        "P": [
+          1
+        ],
+        "verifie_TOUS": true,
+        "fluctuation_norme": 1.4142135623730951
+      },
+      {
+        "n": 7,
+        "a": 1,
+        "b": 6,
+        "classe": "melange",
+        "P": [
+          1
+        ],
+        "verifie_TOUS": true,
+        "fluctuation_norme": 1.4142135623730951
+      },
+      {
+        "n": 7,
+        "a": 1,
+        "b": 6,
+        "classe": "melange",
+        "P": [
+          1
+        ],
+        "verifie_TOUS": true,
+        "fluctuation_norme": 1.4142135623730951
+      },
+      {
+        "n": 7,
+        "a": 1,
+        "b": 6,
+        "classe": "melange",
+        "P": [
+          1
+        ],
+        "verifie_TOUS": true,
+        "fluctuation_norme": 1.4142135623730951
+      }
+    ],
+    "fait_F2": "le scalaire commutatif vit du mélange : orbites de longueur 2 à secteurs croisés — mesuré"
+  },
+  "V3_porteurs_nommes": {
+    "dim5_A3b": {
+      "algebre": "ℂ ⊕ M₂(ℂ)",
+      "H": "ℂ ⊕ M₂(ℂ)",
+      "verification": {
+        "gamma_Hermitien": true,
+        "gamma2_I": true,
+        "D_autoadjoint": true,
+        "parite_{D,g}=0": true,
+        "J2_+1": true,
+        "Jgamma_table": true,
+        "JD_table": true,
+        "ordre_zero": true,
+        "ordre_un": true,
+        "fluctuation_non_nulle": 4.0,
+        "TOUS": true
+      }
+    },
+    "dim7_A3b": {
+      "algebre": "ℂ ⊕ M₂(ℂ) (nœud ℂ de dimension 3)",
+      "H": "ℂ³ ⊕ M₂(ℂ)",
+      "verification": {
+        "gamma_Hermitien": true,
+        "gamma2_I": true,
+        "D_autoadjoint": true,
+        "parite_{D,g}=0": true,
+        "J2_+1": true,
+        "Jgamma_table": true,
+        "JD_table": true,
+        "ordre_zero": true,
+        "ordre_un": true,
+        "fluctuation_non_nulle": 4.0,
+        "TOUS": true
+      }
+    },
+    "leviers_detectes": true
+  },
+  "V4_bandes": {
+    "dim5": {
+      "nb": 3,
+      "zero": true,
+      "spectre": [
+        -2.0,
+        -2.905111491433635e-17,
+        2.0
+      ]
+    },
+    "dim7": {
+      "nb": 5,
+      "zero": true,
+      "spectre": [
+        -2.0,
+        -1.118033988749895,
+        -1.3877787807814457e-16,
+        1.1180339887498953,
+        2.0
+      ]
+    },
+    "note": "5 bandes au scalaire en dim 7 — les 7 bandes avec scalaire ne sont pas atteintes par les porteurs construits (mesuré, non plafond prouvé : hors bornes)"
+  },
+  "V5_regression_C4": {
+    "trouve": true,
+    "fluctuation": 0.0
+  },
+  "reponse": "L1 : aucune taille impaire (parité) ; A3b : taille impaire avec scalaire — OUI dès dim 5 (porteur non commutatif minimal ℂ ⊕ M₂(ℂ)) ; le scalaire commutatif vit du mélange des secteurs par J (mesuré) ; L1 sans porteur scalaire à dim ≤ 4 (split 3/1 de l'adjoint — obstruction mesurée, au-delà hors bornes déclarées)",
+  "criteres": {
+    "V1": true,
+    "V2": true,
+    "V3": true,
+    "V4": true,
+    "V5": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "falsifieur": "une orbite de longueur 1 fluctuation-active ; un combo impair sous L1 ; un porteur nommé rejeté ; un mismatch brut n=3",
+  "gouvernance": "décision d'auteur du 12/10/2026 (« vas-y répare ») — publication autorisée ; la pause de tri du 08/09/2026 est levée pour ce chantier",
+  "durée_s": 8.04,
+  "sha256_script": "658c189ebc809ce07c8ac2abf1f87d3a5e0f3afa75e35c0529a60ce04eaba0f8"
+}
