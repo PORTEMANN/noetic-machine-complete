@@ -329,7 +329,7 @@ def main():
                "contraste_K3": contraste_K3},
         "V5_leviers": lv,
         "lecture": "la chaîne spectrale mesure la famille sans ajuster "
-                   "l'instrument : le tachyon est partout (porté par le "
+                   "l'instrument : le tachyon est universel (porté par le "
                    "volume), le slot EH meurt sans courbure scalaire, K3 "
                    "garde Riem² dans le quartique — le diagramme Λ_c est "
                    "la carte d'embarquement de la future carte du tarif",
