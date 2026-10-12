@@ -1,0 +1,97 @@
+{
+  "chantier": "T8-Q-KO6-SM-2026-10",
+  "protocole": "T8-KO6-SM-1.0 (gelé)",
+  "objet": "triplet fini du Modèle Standard (construction canonique déclarée, CCM) × PORTEUR-KO6-A3b-DIM5 — même banc",
+  "convention_gelée": "H_F = 32/génération ; π(λ,q,m) et J, γ, D_F déclarés dans la fiche ; Yukawa unitaire (mesure structurelle) ; Majorana = 0",
+  "journal_construction": [
+    {
+      "iteration": 1,
+      "verifie": {
+        "gamma_Hermitien": true,
+        "gamma2_I": true,
+        "D_autoadjoint": true,
+        "parite_{D,g}=0": true,
+        "J2_+1": true,
+        "Jgamma_table": true,
+        "JD_table": true,
+        "ordre_zero": true,
+        "ordre_un": true,
+        "TOUS": true
+      }
+    }
+  ],
+  "V1_MS_sous_L1": {
+    "gamma_Hermitien": true,
+    "gamma2_I": true,
+    "D_autoadjoint": true,
+    "parite_{D,g}=0": true,
+    "J2_+1": true,
+    "Jgamma_table": true,
+    "JD_table": true,
+    "ordre_zero": true,
+    "ordre_un": true,
+    "TOUS": true
+  },
+  "V2_porteur_sous_A3b": {
+    "gamma_Hermitien": true,
+    "gamma2_I": true,
+    "D_autoadjoint": true,
+    "parite_{D,g}=0": true,
+    "J2_+1": true,
+    "Jgamma_table": true,
+    "JD_table": true,
+    "ordre_zero": true,
+    "ordre_un": true,
+    "TOUS": true
+  },
+  "V3_invariants_côte_à_côte": {
+    "MS": {
+      "dim_H_F": 32,
+      "algebre": "ℂ ⊕ ℍ ⊕ M₃(ℂ)",
+      "table": "L1",
+      "rang_scalaire": 13,
+      "Tr_D2_canonique": 32.0
+    },
+    "porteur": {
+      "dim_H_F": 5,
+      "algebre": "ℂ ⊕ M₂(ℂ)",
+      "table": "A3b",
+      "rang_scalaire": 2,
+      "Tr_D2": 8.0
+    }
+  },
+  "V3_rang_brut_MS": {
+    "mesuré": 13,
+    "prédiction_4": "TUÉE — le rang brut des fluctuations est 13",
+    "robustesse_hors_protocole_publiée": "13 sous Yukawa générique diagonal déclaré ; 13 sous Majorana 0,7 déclaré — structurel, pas un artefact de dégénérescence",
+    "borne_déclarée": "le doublet de Higgs physique (4) exige le quotient par l'idéal des formes junk — non implémenté dans ce chantier ; le porteur n'a pas besoin de quotient (rang brut = scalaire = 2)"
+  },
+  "V4_slots_produit_S4": {
+    "contenu": {
+      "MS_1gen": -42.66666666666667,
+      "MS_3gen": -128.0,
+      "porteur": -8.666666666666668
+    },
+    "chaîne": "T7 gelée (a₂^tot = (a₂·N_F − a₀·Tr D_F²)/(16π²))",
+    "lecture": "le slot EH par contenu, à chaîne identique"
+  },
+  "V5_leviers": {
+    "bloc ℍ tué → rang du scalaire mesuré chute": true,
+    "MS sous A3b : Jγ détecté": true,
+    "Y→0 : rang du scalaire mesuré à 0": true
+  },
+  "cartographie": "le porteur du corpus est un porteur minimal à un scalaire complexe sous la table A3b, sans quotient (brut = scalaire = 2) ; le MS sous la table usuelle porte 13 directions de fluctuation brutes dont le doublet de Higgs émerge par quotient (borne déclarée) — deux objets, deux tables, un seul banc ; la confrontation est mesurée, pas plaidée",
+  "criteres": {
+    "V1_MS_certifié_L1": true,
+    "V2_régression_porteur": true,
+    "V3_invariants_prédictions": false,
+    "V4_slots_mesurés": true,
+    "V5_leviers": true
+  },
+  "score": "4/5",
+  "statut": "PARTIEL",
+  "falsifieur": "MS canonique rejeté après convergence publiée ; rang du scalaire ≠ mesure ; levier non détecté",
+  "gouvernance": "décision d'auteur du 12/10/2026 (« commençons par la campagne C »)",
+  "durée_s": 0.06,
+  "sha256_script": "1a5be83b241f3b2dab45d5b5e7d92576b2b66760d18515ae7154166927fd3c1a"
+}
