@@ -1,0 +1,122 @@
+{
+  "chantier": "T12-Q-KO6-UNIMOD-2026-10",
+  "protocole": "T12-KO6-UNIMOD-1.0 (gelé)",
+  "objet": "Λ sans cadran — la projection unimodulaire (CCM) sélectionne-t-elle une coupure ? (campagne D, frontière déclarée de MCS-24)",
+  "V1_projection": {
+    "résidus_relatifs_slot_f₄": {
+      "S⁴(1)": 0.0,
+      "S⁴(2)": 0.0,
+      "T⁴": 1.773106747928009e-16,
+      "K3": 1.773106747928009e-16
+    },
+    "lecture": "le slot f₄Λ⁴a₀ est constant en ρ — la constante cosmologique est libre (CCM reproduit par la machine)"
+  },
+  "V2_identité_close": {
+    "formule": "Λ²_sel(ρ) = ρ² + 3 − a₂/a₀ (porteur)",
+    "écart_max": 3.993249674039134e-06
+  },
+  "V3_régression_T11": {
+    "S⁴(1)": {
+      "clos": 2.23606797749979,
+      "maille_prédite": 2.25,
+      "mesuré_T11": 2.25,
+      "diagramme_T11": 2.25
+    },
+    "S⁴(2)": {
+      "clos": 2.0615528128088303,
+      "maille_prédite": 2.1000000000000005,
+      "mesuré_T11": 2.1000000000000005,
+      "diagramme_T11": 2.1000000000000005
+    },
+    "T⁴": {
+      "clos": 2.0,
+      "maille_prédite": 2.0500000000000007,
+      "mesuré_T11": 2.0500000000000007,
+      "diagramme_T11": 2.0500000000000007
+    },
+    "K3": {
+      "clos": 2.0,
+      "maille_prédite": 2.0500000000000007,
+      "mesuré_T11": 2.0500000000000007,
+      "diagramme_T11": 2.0500000000000007
+    }
+  },
+  "V3_plancher_MS": {
+    "T2′(0)": -0.7128522135037646,
+    "dṼ/dρ|₀": -0.9504696180049947,
+    "expliqué": true
+  },
+  "V4_sélection": {
+    "porteur_monotone": true,
+    "MS_détail": {
+      "S⁴(1)": {
+        "plus_long_plateau_intérieur_mailles": 22,
+        "extremum_intérieur": true,
+        "Λ_sel(0) mesuré": 1.4142135623730765,
+        "Λ_ré-entrée_phase_symétrique": 1.4200000000000004,
+        "Λ_transition_1er_ordre": 1.6400000000000006,
+        "zéro_de_Λ_sel′_sur_les_branches": false,
+        "vide_à_Λ1": 0.20700000000000002,
+        "épinglage_bord_fenêtre_Λ": 2.080000000000001
+      },
+      "S⁴(2)": {
+        "plus_long_plateau_intérieur_mailles": 27,
+        "extremum_intérieur": true,
+        "Λ_sel(0) mesuré": 1.1180339887498714,
+        "Λ_ré-entrée_phase_symétrique": 1.12,
+        "Λ_transition_1er_ordre": 1.3900000000000003,
+        "zéro_de_Λ_sel′_sur_les_branches": false,
+        "vide_à_Λ1": 0.084,
+        "épinglage_bord_fenêtre_Λ": 1.8900000000000008
+      },
+      "T⁴": {
+        "plus_long_plateau_intérieur_mailles": 30,
+        "extremum_intérieur": false,
+        "Λ_sel(0) mesuré": 0.9999999999999737,
+        "Λ_ré-entrée_phase_symétrique": 1.0,
+        "Λ_transition_1er_ordre": 1.3000000000000003,
+        "zéro_de_Λ_sel′_sur_les_branches": false,
+        "vide_à_Λ1": 0.0,
+        "épinglage_bord_fenêtre_Λ": 1.8200000000000007
+      },
+      "K3": {
+        "plus_long_plateau_intérieur_mailles": 30,
+        "extremum_intérieur": false,
+        "Λ_sel(0) mesuré": 0.9999999999999737,
+        "Λ_ré-entrée_phase_symétrique": 1.0,
+        "Λ_transition_1er_ordre": 1.3000000000000003,
+        "zéro_de_Λ_sel′_sur_les_branches": false,
+        "vide_à_Λ1": 0.0,
+        "épinglage_bord_fenêtre_Λ": 1.8200000000000007
+      }
+    },
+    "prédiction_monotonie_MS": "TUÉE (extremum réel : phase symétrique ré-entrante ouverte à Λ = Λ_sel(0), transition du 1er ordre) — publiée",
+    "diagnostic_raffiné_hors_critère": "aucun plateau intérieur ni zéro de Λ_sel′ sur les branches de vide → pas de sélection d'échelle"
+  },
+  "V4_sensibilité_ancre": {
+    "dΛ/dρ_au_vide_T7": 0.7453559924999299
+  },
+  "V5_leviers": {
+    "contenu → 0 : la relation d'ancre meurt (T2′ = 0)": true,
+    "T⁴ (a₂ = 0) : offset = 3 exactement": true,
+    "Λ_c invariant sous le slot f₄ (1 vs 1000 — projection)": true
+  },
+  "défauts_du_banc_publiés": {
+    "D1": "V1 v1.0 : différence finie brute sur le slot constant → annulation catastrophique (bruit d'instrument) ; v1.1 : résidu relatif, tolérance 1e-12",
+    "D2": "V4 v1.0 : plateaux comptés sur toute la fenêtre — épinglage au bord ρ = 4 (le vide du MS quitte la fenêtre dès Λ ≈ 2,1) ; v1.1 : branche intérieure seule (ρ < 3,5)"
+  },
+  "lecture": "la machine répond à la frontière de MCS-24 : l'unimodularité libère la constante cosmologique (slot f₄Λ⁴a₀ hors équations — mesuré) mais NE sélectionne PAS la coupure : pour le porteur, la relation d'ancre Λ²_sel = ρ² + 3 − a₂/a₀ est une bijection monotone cadran ↔ vide, et le diagramme Λ_c de T11 en est la lecture maille par maille. Pour le MS, la prédiction de monotonie est tuée : le diagramme de phase est plus riche que prédit (phase symétrique ré-entrante à Λ = Λ_sel(0), transition du premier ordre) — mais aucune de ces structures ne distingue une échelle par la stationnarité seule. La loi sans cadran n'existe pas dans cette architecture ; il faut une seconde ancre mesurée, et la machine donne sa sensibilité : dΛ/dρ = ρ/Λ_sel.",
+  "criteres": {
+    "V1_projection_exacte_CCM": true,
+    "V2_identité_close_porteur": true,
+    "V3_régression_T11": true,
+    "V4_pas_de_sélection": false,
+    "V5_leviers": true
+  },
+  "score": "4/5",
+  "statut": "PARTIEL",
+  "falsifieur": "extremum ou plateau de ρ_min(Λ) sur une branche de vide (sélection trouvée) ; identité close hors tolérance ; régression T11 hors pas de grille",
+  "gouvernance": "décision d'auteur du 12/10/2026 (« quelle continuité maintenant ? Quelle campagne ? Stratégie... » — campagne D)",
+  "durée_s": 61.66,
+  "sha256_script": "75615abf9b1a1f19d3cd10e60b082329a7acf24d54f24f9ace381664d12e9829"
+}
