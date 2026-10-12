@@ -1,0 +1,65 @@
+{
+  "chantier": "T7-Q-KO6-PRODUIT-2026-10",
+  "protocole": "T7-KO6-PROD-1.0 (gelé)",
+  "objet": "PORTEUR-KO6-A3b-DIM5 × S⁴ ronde (Bär, convention gelée)",
+  "chaine": "Lichnerowicz + Gilkey + factorisation (C1–C5 déclarés)",
+  "V1_calibration": {
+    "a0_extrait": 105.27578843892347,
+    "a0_gilkey": 105.27578027828649,
+    "a2_extrait": -105.27752933963124,
+    "a2_gilkey": -105.27578027828649,
+    "stabilite_L_2L": true
+  },
+  "V2_a4_sphere": {
+    "gilkey_codé_v1.1": 19.300559717685857,
+    "extraction_spectrale_reste": 19.313531771873386,
+    "accord": true,
+    "defauts_v1.0_publiés": "extraction par ajustement sans terme a₆ (instable) ; formule Gilkey à la main avec 60Ω² et TrΩ² = −R·dim/2 (deux coquilles, tuées par la calibration) — corrigés en v1.1 avant publication"
+  },
+  "V3_direct_vs_factorise": {
+    "ecart_max_fonctionnel": 4.621877295107879e-06,
+    "defaut_v1.0_publié": "comparaison de coefficients extraits par méthodes instables (têtes divergentes) — v1.1 : comparaison de fonctions"
+  },
+  "V4_mesures": {
+    "slot_EH_a2tot_phi0": -8.666666666666668,
+    "contenu": "a₂^tot(φ=0) = (a₂^S4·5 − a₀^S4·8)/(16π²) — le 5 (dim H_F) et le 8 (Tr D_F²) du porteur, publiés",
+    "masse2_scalaire": {
+      "signe": "négatif (tachyon — mécanisme C-C présent)",
+      "delta_a2_par_rho2": -2.666666666666666,
+      "mecanisme": "le slot a₂ porte −a₀^S4·Tr(D_F+φ)² — la masse² négative de Connes-Chamseddine"
+    },
+    "xi_R_phi2": {
+      "mesuré": -0.05555555555555555,
+      "valeur_conforme_annotée": 0.16666666666666666,
+      "note": "ξ = −1/18 sous la chaîne gelée — ≠ 1/6 : écart mesuré et publié ; la question des conventions reste ouverte"
+    },
+    "minimum_potentiel": {
+      "pente_au_bord_à_Λ2": 2.773333333333383,
+      "prédiction_v1.0_√3_à_Λ2": "TUÉE par la machine (publiée)",
+      "ρ_min_à_Λ3_mesuré": 2.23625,
+      "prédiction_v1.1_√5": 2.23606797749979,
+      "moments_déclarés": "f₂=f₀=1",
+      "lecture": "pas de chapeau à Λ=2 (pente positive au bord : minimum en φ=0) ; ρ²_min = Λ²−4 franchit zéro à Λ=2 (point critique) ; chapeau mesuré à Λ=3 : ρ=√5"
+    }
+  },
+  "leviers": {
+    "Lichnerowicz inversé tue la calibration": true,
+    "D_F→0 : Δa₂(φ) sans D_F = 0": true,
+    "D_F→0 : masse² = −(A0/16π²)·TrΦ² (signe conservé)": true,
+    "Λ doublé (2→4) : minimum déplacé comme déclaré (√12)": true
+  },
+  "lecture": "le produit porteur × variété courbe produit le chapeau mexicain (masse² < 0 du slot a₂, quartique positive du slot a₄) — l'instabilité qui manquait au porteur fini (T6) vit de la courbure, comme déclaré",
+  "criteres": {
+    "V1_calibration": true,
+    "V2_a4_sphere": true,
+    "V3_convolution": true,
+    "V4_minimum_mexicain": true,
+    "leviers": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "falsifieur": "calibration hors tolérance ; convolution ≠ somme directe ; masse² ≥ 0 ; levier non détecté",
+  "gouvernance": "décision d'auteur du 12/10/2026 (« continuons à marcher vers la géométrie produit »)",
+  "durée_s": 0.07,
+  "sha256_script": "76626b6284ce61af1678d5b80e581cc344232a659b2a7ad4afcf24681c1309fe"
+}
