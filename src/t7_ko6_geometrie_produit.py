@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-T7 — Q-KO6-T7-2026-10 : LA GÉOMÉTRIE PRODUIT — porteur × S⁴ ronde
+T7 — Q-KO6-T7-2026-10 : LA GÉOMETRIE PRODUIT — porteur × S⁴ ronde
 =====================================================================
 Opérateur de verdict : M̂(D, S, L, π) → V   [protocole T7-KO6-PROD-1.0 gelé]
 
