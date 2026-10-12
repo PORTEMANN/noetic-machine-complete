@@ -1,0 +1,72 @@
+{
+  "chantier": "T10-Q-KO6-PRODSM-2026-10",
+  "protocole": "T10-KO6-PRODSM-1.0 (gelé)",
+  "objet": "triplet du MS corrigé (T9 : v2, convention B, Majorana) × S⁴ ronde (chaîne T7 calibrée)",
+  "V1": {
+    "MS_sans_Majorana": true,
+    "MS_avec_Majorana": true,
+    "porteur_A3b": true
+  },
+  "V2_contenu": {
+    "N_F_1g": 32,
+    "N_F_3g": 96,
+    "Tr_DF2_avec_Majorana": 34.0,
+    "note": "Majorana M_R = 1 déclaré : 32 + 2 mesuré",
+    "slots_a2tot": {
+      "MS_1g": -44.00000000000001,
+      "MS_3g": -132.0,
+      "porteur": -8.666666666666668
+    },
+    "slots_a4_1g": 40.57777777777778
+  },
+  "V3_mort_du_junk": {
+    "traces_générateurs_non_nulles": {
+      "ℂ:1": "(18+0j)",
+      "ℂ:i": "-16j",
+      "ℍ:I": "(2+0j)"
+    },
+    "générateur_junk": "ℂ:i — Tr = −16i ≠ 0",
+    "générateurs_doublet": "ℍ:iσ_k — Tr = 0",
+    "lecture": "à unimodularité totale (CCM, déclaré), le mode constant du junk est interdit (trace finie non nulle) ; le doublet survit ; le banc mesure la trace finie — le régime dynamique complet du junk reste hors bornes (déclaré)",
+    "décomposition_T9_remesurée": {
+      "rang": 6,
+      "non_singlet_SU2": 4,
+      "singlet_SU2": 2
+    }
+  },
+  "V4_chapeau": {
+    "grille": [
+      0.0,
+      4.0,
+      901
+    ],
+    "doublet": {
+      "minimum_ρ": 3.28,
+      "pente_initiale": "positif"
+    },
+    "junk_contraste": {
+      "minimum_ρ": 1.1644444444444444
+    },
+    "moments": "f₂=f₀=1, Λ=2 (continuité T7)",
+    "note": "les moments de D_F+Φ sont mesurés sur la matrice 32×32 (exacte) ; la chaîne T7 est gelée et calibrée"
+  },
+  "V5_leviers": {
+    "sans Majorana : Tr D_F² = 32 (mesuré)": true,
+    "compression contractante (contrôle tuant)": true,
+    "convention A + Majorana : ordre 1 échoue (régression T9)": true
+  },
+  "lecture": "le MS corrigé entre dans le produit : le junk y meurt par sa trace, le doublet y porte son potentiel — la chaîne de T7 mesure les deux mondes sans distinction d'instrument",
+  "criteres": {
+    "V1_régressions": true,
+    "V2_contenu_corrigé": true,
+    "V3_mort_du_junk": true,
+    "V4_chapeau_doublet": true,
+    "V5_leviers": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "falsifieur": "compression non contractante ; trace de générateur ≠ mesure ; levier non détecté",
+  "gouvernance": "décision d'auteur du 12/10/2026 (« vas-y pour la nouvelle marche »)",
+  "durée_s": 5.45,
+  "sha256_script": "2806376e47e236babdaad1a342f0fdee8873d6f1653e136e250959566adee1b7"
+}
