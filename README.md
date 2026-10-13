@@ -68,6 +68,13 @@ Note datée complète : [docs/NOTE-REOUVERTURE-BANC-T5-T16.md](docs/NOTE-REOUVER
 (MCS-24 tarif CSi · MCS-25 canal leptonique CS− · MCS-26 canal neutrino
 non scellée · MCS-27 mesure jointe CS−).
 
+Note du verrou 59 meV (13/10/2026) : [docs/NOTE-VERROU-59-MEV.md](docs/NOTE-VERROU-59-MEV.md)
+— la structure qui rend Σm_ν nécessaire : trois verrous démontrés dans
+le banc (zéro protégé T13, compte 2 + 1 des modes légers T16, chaîne
+du seesaw φ T14), deux paris déclarés (le porteur, l'ordre normal),
+deux entrées mesurées — un seul nombre possible à la sortie, publié
+avec ses conditions de mort.
+
 ---
 
 ## Publications du 08–09/09/2026 — série T (KO-6) et corridor E
