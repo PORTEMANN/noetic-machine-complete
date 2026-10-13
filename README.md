@@ -26,6 +26,50 @@ Toute nouvelle campagne cite ses conventions par ID, publie son verdict au même
 
 ---
 
+## Réouverture de l'archive — le banc spectral, série T5–T16 (12/10/2026)
+
+**L'archive est redevenue un atelier.** Le banc des triplets spectraux
+finis (KO-dimension 6, tables datées — CONVENTIONS.md) a rouvert pour la
+série T5–T16, sous la discipline complète de la maison : fiche gelée
+avant exécution, falsifiers tuables, régressions tuantes aux mesures
+publiées des ancêtres (un compte faux tue l'exécution), défauts du banc
+publiés avec corrections datées, verdicts auto-empreintés (sha256 du
+script dans chaque verdict), publication vérifiée octet par octet. La
+filiation est déclarée fichier par fichier — jamais de réimport.
+
+Contenu mesuré : **le porteur** certifié (PORTEUR-KO6-A3b-DIM5 : A =
+ℂ ⊕ M₂(ℂ), spectre {0, ±(ρ−1), ±(ρ+1)} — T5/T6) ; **le Modèle Standard
+dans le banc** : les fluctuations se décomposent en 6 = 4 ⊕ 2 et le junk
+U(1) meurt par sa trace (Tr = −16i mesuré — T8/T9/T10) ; **la famille
+des variétés** et son diagramme de phase Λ_c (T11) ; **la relation
+d'ancre** Λ²_sel = ρ² + 3 − a₂/a₀ en forme close : pas de sélection
+d'échelle — le cadran survit à l'unimodularité (T12) ; **le nœud
+spectateur** : dynamiquement décoratif, structurellement le siège du
+seul zéro protégé par l'algèbre (T13) ; **la chaîne du seesaw** — à
+M_R = 1, ses valeurs propres sont ±φ et ±1/φ (T14) ; **la batterie du
+lexique** : le dictionnaire mesuré du banc — 3 mots certifiés, 3
+orphelins, 1 contredit ; la règle installée : aucune carte MCS sur un
+mot orphelin (T15) ; **la texture minimale** : deux splittings mesurés
+exigent le rang 2 — l'état le plus léger est exactement sans masse
+(T16).
+
+**La veille** : [REGISTRE-VEILLE-ANTICIPATION.md](REGISTRE-VEILLE-ANTICIPATION.md)
+— le banc a publié ses positions avant les faits, avec leurs conditions
+de mort datées : l'ordre normal minimal (JUNO) · **Σm_ν = 59,0 meV au
+plancher NO** — le seul nombre pré-publié (DESI serre à 8,5 % sans
+encore distinguer) · 0νββ attendu (LEGEND) · trois saveurs (seule une
+détection stérile — TRISTAN — ouvre un quatrième mot). À chaque fait
+publié : source épinglée et hachée, puis une carte MCS pré-enregistrée —
+jamais de lecture à chaud.
+
+Note datée complète : [docs/NOTE-REOUVERTURE-BANC-T5-T16.md](docs/NOTE-REOUVERTURE-BANC-T5-T16.md)
+— registre des campagnes T5–T16 avec scores et statuts. Cartes liées
+(jalon 8) : dépôt [`coincidences-stables`](https://github.com/PORTEMANN/coincidences-stables)
+(MCS-24 tarif CSi · MCS-25 canal leptonique CS− · MCS-26 canal neutrino
+non scellée · MCS-27 mesure jointe CS−).
+
+---
+
 ## Publications du 08–09/09/2026 — série T (KO-6) et corridor E
 
 **Deux piliers publiés après pause de tri (gouvernance : exécution locale, publication décidée) :**
@@ -176,6 +220,7 @@ Les gros artefacts de P41 (NWB bruts Allen Cell Types + catalogues, ≈ 80 Mo) s
 ├── CONVENTIONS.md                   # registre des conventions datées (gouvernance)
 ├── AXIOMES.md                       # page minimale d'axiomes gelés (gouvernance)
 ├── CAMPAIGNS.md                     # registre des campagnes + régulation post-campagne
+├── REGISTRE-VEILLE-ANTICIPATION.md  # la veille : le registre d'anticipation (12/10/2026)
 ├── docs/                            # notes PDF (verdicts + synthèses)
 │   └── Note_*.pdf
 ├── src/                             # scripts Python par chantier
