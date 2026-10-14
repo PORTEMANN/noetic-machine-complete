@@ -1,0 +1,138 @@
+{
+  "chantier": "T21-Q-KO6-MODULE-OR-2026-10",
+  "protocole": "T21-KO6-BRAGG-1.0 (gelé)",
+  "mode": "RUN LOCAL — publication en attente du feu vert de l'auteur",
+  "objet": "le module d'or : la diffraction de Bragg de la chaîne de Fibonacci (peigne de Dirac doré, cohérent, invariant sous l'échelle φ)",
+  "statut_du_mot": "PONT DIFFUSIF (fonction de structure) — théorème mesuré à zéro paramètre ; AUCUNE prédiction d'expérience ; le physique (59 meV) n'est pas touché",
+  "mesures": {
+    "D_barre": 1.3819660172894768,
+    "N_niveau_18": 6765,
+    "pics_indexage": [
+      {
+        "m": 2,
+        "n": 3,
+        "k_unit": 6.854095,
+        "residu": 6.5e-06
+      },
+      {
+        "m": 4,
+        "n": 6,
+        "k_unit": 13.708191,
+        "residu": 1.3e-05
+      },
+      {
+        "m": 6,
+        "n": 9,
+        "k_unit": 20.562286,
+        "residu": 1.95e-05
+      },
+      {
+        "m": 5,
+        "n": 8,
+        "k_unit": 17.944336,
+        "residu": 6.4e-05
+      },
+      {
+        "m": 3,
+        "n": 5,
+        "k_unit": 11.09024,
+        "residu": 7.05e-05
+      },
+      {
+        "m": 1,
+        "n": 2,
+        "k_unit": 4.236145,
+        "residu": 7.7e-05
+      },
+      {
+        "m": 1,
+        "n": 1,
+        "k_unit": 2.61795,
+        "residu": 8.35e-05
+      },
+      {
+        "m": 4,
+        "n": 8,
+        "k_unit": 16.94426,
+        "residu": 1.23e-05
+      }
+    ],
+    "I_fort_normalisee_niveau_18": 0.935740219882021,
+    "max_hors_module": [
+      7.914206167911237e-06,
+      1.9575509498116748e-06
+    ]
+  },
+  "V1": true,
+  "V2": true,
+  "V3": {
+    "module": true,
+    "hors_module": true
+  },
+  "V4": {
+    "invariance": true,
+    "details": [
+      [
+        [
+          2,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        0.046933
+      ],
+      [
+        [
+          4,
+          6
+        ],
+        [
+          10,
+          6
+        ],
+        0.003903
+      ],
+      [
+        [
+          6,
+          9
+        ],
+        [
+          15,
+          9
+        ],
+        0.002323
+      ],
+      [
+        [
+          5,
+          8
+        ],
+        [
+          13,
+          8
+        ],
+        0.007023
+      ]
+    ]
+  },
+  "V5": {
+    "L1 pente non convergente 7/18 : l'image par x*phi du pic fort (j=11) tombe hors reseau (I_image/I_pic = 2.87e-04 < 1e-3)": true,
+    "L2 Thue-Morse : pas de Bragg (max |S|^2/N^2 hors DC decroissant, final 0.0013 < 0.02)": true,
+    "L3 temoin unitaire : positions dorees internes (phi, 1/phi) NON picees (8.45e-18, 8.45e-18 < 1e-4) ; reseau entier pic (k=2pi : 1.000 > 0,5)": true
+  },
+  "falsifieur": "F1…F4 hors TOL_REG / seuils déclarés ; levier non détecté",
+  "criteres": {
+    "V1_construction_Dbarre": true,
+    "V2_support_dore": true,
+    "V3_caractere_de_Dirac": true,
+    "V4_invariance_echelle_phi": true,
+    "V5_leviers": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 12.45,
+  "sha256_script": "16ede3560d274adce653691a81a2f76095b55076e20f5aa258664595c04884f8"
+}

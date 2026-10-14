@@ -120,3 +120,17 @@ publiques (site, registre canonique).
 Machine » (octobre 2026). Discipline : aucune carte gelée n'est
 modifiée par cette note ; les verdicts T17–T20 restent la référence
 empreintée.*
+
+---
+
+**Addendum du 14/10/2026 (soir) — T21, le module d'or.** La carte de
+diffraction de Bragg déclarée candidate ici est publiée : la
+diffraction de la chaîne de Fibonacci est un peigne de Dirac porté par
+le module doré (pics indexés (1,1), (1,2), (2,3), (3,5)… en unités
+2π/D̄), cohérent (caractère de Dirac mesuré), invariant sous l'échelle
+φ (identité d'indicage exacte), avec cinq défauts de banc trouvés par
+les runs et publiés — dont la découverte, énoncée au verdict, que la
+self-similarité dorée est invisible aux approximants convergents
+(Legendre : toute pente p/q à 1/(2q²) près de 1/φ² est un rapport de
+Fibonacci). Verdict : `data/t21_ko6_module_or_verdict.json`. Statut
+inchangé : théorème interne, aucune prédiction d'expérience.

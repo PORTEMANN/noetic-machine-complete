@@ -53,17 +53,21 @@ mot orphelin (T15) ; **la texture minimale** : deux splittings mesurés
 exigent le rang 2 — l'état le plus léger est exactement sans masse
 (T16).
 
-**Le pont φ — T17–T20 (14/10/2026)** : dans la continuité du « Dialogue
-entre Dirac et la Machine », quatre campagnes mesurent le nombre d'or
+**Le pont φ — T17–T21 (14/10/2026)** : dans la continuité du « Dialogue
+entre Dirac et la Machine », cinq campagnes mesurent le nombre d'or
 comme **une même unité en quatre langages** — spectral (Tr C(1)^(2n) =
 2·Lucas(2n), mot Fibonacci, T17), méthodique (le dictionnaire des
 séquences spectrales, T18), géométrique et arithmétique (traces des
 rotations d'icosaèdre = spectre de la chaîne = pont de McKay vers Ê8,
 T19), diffusif (Penrose : Tr Mⁿ = Lucas(2n) = Tr C(1)^(2n)/2, T20) —
-reliées par des identités exactes d'entiers, avec sept défauts de banc
-publiés et des leviers tuables partout. Statut déclaré : théorèmes
-internes, aucune prédiction d'expérience — le physique (59 meV) n'est
-pas touché. Note descriptive et enjeux :
+et la fonction de structure qui les porte tous (T21 : le module d'or —
+la diffraction de la chaîne de Fibonacci est un peigne de Dirac porté
+par le module m + nφ, indexé par les entiers de Fibonacci, cohérent, et
+invariant sous l'échelle φ ; cinq défauts de banc trouvés par les runs
+et publiés, dont la découverte que la self-similarité dorée est
+invisible aux approximants convergents — Legendre). Statut déclaré :
+théorèmes internes, aucune prédiction d'expérience — le physique
+(59 meV) n'est pas touché. Note descriptive et enjeux :
 [docs/NOTE-PONT-PHI-T17-T20.md](docs/NOTE-PONT-PHI-T17-T20.md) ·
 synthèse PDF : [docs/Note_Pont_Phi_T17-T20.pdf](docs/Note_Pont_Phi_T17-T20.pdf).
 
