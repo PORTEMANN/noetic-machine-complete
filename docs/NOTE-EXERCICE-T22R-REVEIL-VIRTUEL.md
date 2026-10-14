@@ -72,8 +72,7 @@ les artefacts de gouvernance).
 
 ## 4. Suites déclarées
 
-1. **T23 (fiche à geler)** : le mapping Σm_ν → ρ — sans lui, le
-   réveil réel buterait à l'étape 2.
+1. **T23 — PUBLIÉE (nuit du 14 au 15 octobre, SUCCÈS 5/5, `data/t23_ko6_cadran_verdict.json`)** : le mapping Σm_ν → ρ n'existe pas (plancher de l'ancre mesuré à 2 M_P — préimages négatives pour tout cadran sous-Planck) ; la convention datée **CONV-KO6-CADRAN-1.0** (ρ_dial = ρ_vac·(Σm_ν/59,0 meV), deux constantes scellées, zéro paramètre ajusté) le remplace et referme ce trou n° 1.
 2. Re-lancement du moteur MCS-24 complet au réveil réel (trou n° 2).
 3. Le protocole mis à jour dort jusqu'au fait ; le dormir reste
    publié.

@@ -53,26 +53,7 @@ mot orphelin (T15) ; **la texture minimale** : deux splittings mesurés
 exigent le rang 2 — l'état le plus léger est exactement sans masse
 (T16).
 
-**Le pont φ — T17–T22 (14/10/2026)** : dans la continuité du « Dialogue
-entre Dirac et la Machine », six campagnes mesurent le nombre d'or
-comme **une même unité en plusieurs langages** — spectral (Tr C(1)^(2n) =
-2·Lucas(2n), mot Fibonacci, T17), méthodique (le dictionnaire des
-séquences spectrales, T18), géométrique et arithmétique (traces des
-rotations d'icosaèdre = spectre de la chaîne = pont de McKay vers Ê8,
-T19), diffusif (Penrose : Tr Mⁿ = Lucas(2n) = Tr C(1)^(2n)/2, T20) —
-la fonction de structure qui les porte tous (T21 : le module d'or, peigne
-de Dirac indexé par les Fibonacci, invariant sous l'échelle φ) — et
-l'impossibilité qui les protège tous (T22 : la carte d'attente du tarif —
-le pont ne certifie aucune échelle sans cadran mesuré, certificat de
-densité du module à 0,007 près, ratios de gaps en {1/φ, 1/φ²} par le
-théorème des trois écarts ; la self-similarité dorée est invisible aux
-approximants convergents, Legendre). Douze défauts de banc trouvés par
-les runs et publiés. Statut déclaré : théorèmes internes, aucune
-prédiction d'expérience — le physique (59 meV) n'est pas touché ; le
-protocole de re-mesure du tarif dort scellé jusqu'au fait. Note
-descriptive et enjeux :
-[docs/NOTE-PONT-PHI-T17-T20.md](docs/NOTE-PONT-PHI-T17-T20.md) ·
-synthèse PDF : [docs/Note_Pont_Phi_T17-T20.pdf](docs/Note_Pont_Phi_T17-T20.pdf).
+**Le pont φ — T17–T23 (14–15 octobre 2026)** : dans la continuité du « Dialogue entre Dirac et la Machine », sept campagnes mesurent le nombre d'or comme **une même unité en plusieurs langages** — spectral (Tr C(1)^(2n) = 2·Lucas(2n), mot Fibonacci, T17), méthodique (le dictionnaire des séquences spectrales, T18), géométrique et arithmétique (traces des rotations d'icosaèdre = spectre de la chaîne = pont de McKay vers Ê8, T19), diffusif (Penrose : Tr Mⁿ = Lucas(2n) = Tr C(1)^(2n)/2, T20) — la fonction de structure qui les porte tous (T21 : le module d'or, peigne de Dirac indexé par les Fibonacci, invariant sous l'échelle φ) — l'impossibilité qui les protège tous (T22 : la carte d'attente du tarif — le pont ne certifie aucune échelle sans cadran mesuré ; clause d'orbite approuvée après exercice de réveil) — et le cadran qui rend le réveil possible (T23 : le mapping Σm_ν → ρ n'existe pas — plancher de l'ancre mesuré à 2 M_P, préimages négatives pour tout cadran sous-Planck ; la convention datée CONV-KO6-CADRAN-1.0 le remplace, deux constantes scellées, zéro paramètre ajusté). Seize défauts de banc trouvés par les runs et publiés. Statut déclaré : théorèmes internes et conventions datées, aucune prédiction d'expérience — le physique (59 meV) n'est pas touché ; le protocole de re-mesure du tarif dort scellé, armé de bout en bout. Note descriptive et enjeux : [docs/NOTE-PONT-PHI-T17-T20.md](docs/NOTE-PONT-PHI-T17-T20.md) · synthèse PDF : [docs/Note_Pont_Phi_T17-T20.pdf](docs/Note_Pont_Phi_T17-T20.pdf) · exercice de réveil et clause d'orbite : [docs/NOTE-EXERCICE-T22R-REVEIL-VIRTUEL.md](NOTE-EXERCICE-T22R-REVEIL-VIRTUEL.md).
 
 **La veille** : [REGISTRE-VEILLE-ANTICIPATION.md](REGISTRE-VEILLE-ANTICIPATION.md)
 — le banc a publié ses positions avant les faits, avec leurs conditions

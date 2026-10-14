@@ -1,0 +1,52 @@
+{
+  "chantier": "T23-Q-KO6-CADRAN-2026-10",
+  "protocole": "T23-KO6-CADRAN-1.0 (gelé)",
+  "mode": "RUN LOCAL — publication en attente du feu vert de l'auteur",
+  "objet": "le cadran : le mapping Σm_ν → ρ n'existe pas (plancher de l'ancre mesuré à 2 M_P) ; la convention datée CONV-KO6-CADRAN-1.0 le remplace",
+  "statut_du_mot": "CONVENTION — étalon daté, ni mesure ni prédiction",
+  "reponse_a_la_question_unique": "le mapping direct est IMPOSSIBLE (préimages négatives mesurées pour tout cadran sous-Planck) ; la convention ρ_dial = ρ_vac·(Σm_ν/59,0 meV), deux constantes scellées et zéro paramètre ajusté, le remplace et referme le trou n° 1 de l'exercice T22-R",
+  "mesures": {
+    "a2_sur_a0": -1.0,
+    "plancher_Lambda_sel_Mp": 2.0,
+    "preimages_rho2": {
+      "Σm_ν = 59 meV": -4.0,
+      "doublet v = 246 GeV": -4.0
+    },
+    "sensibilite_T12": 0.7453559924999299,
+    "rho_vac": 0.7453559924999299,
+    "rho_dial_pour_59meV": 0.7453559924999299
+  },
+  "convention": {
+    "id": "CONV-KO6-CADRAN-1.0",
+    "date": "2026-10-14",
+    "formule": "ρ_dial = ρ_vac · (Σm_ν / 59,0 meV)",
+    "constantes_scellees": {
+      "ρ_vac": "√5/3 (T7/T12)",
+      "Σm_ν_ref": "59,0 meV (T16/JALON-MCS26)"
+    },
+    "parametre_ajuste": 0,
+    "statut": "CONVENTION — ni mesure, ni prédiction ; étalon daté, relu par empreinte à tout réveil ; tuée-honnêtement (rescale) si le labo déplace Σm_ν",
+    "referme": "trou n° 1 de l'exercice T22-R"
+  },
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": {
+    "levier exposant : briser la proportionnalite (exp 1,5) deplace rho_dial": true,
+    "changement d'echelle declare (v/59 meV) : rapport mesure 4.1695e+09": true,
+    "controle : rho_dial(59,0) = rho_vac exactement": true
+  },
+  "V5": true,
+  "falsifieur": "F1/F2 hors tolérance ; ρ_dial(59,0) ≠ ρ_vac ; levier non détecté ; la convention meurt honnêtement si Σm_ν sort du plancher",
+  "criteres": {
+    "V1_mapping_inexistant": true,
+    "V2_regression_T12": true,
+    "V3_convention_controlee": true,
+    "V4_leviers": true,
+    "V5_gouvernance": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 0.0,
+  "sha256_script": "5461f3e9869381da4b4847ca656449625a1e57282f316adc0c6e0f5aefa870cc"
+}
