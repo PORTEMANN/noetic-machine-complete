@@ -75,7 +75,18 @@ mesurés tueurs (aplatissement φ → 8/5, y = 1/4) ; défaut de banc
 D1 trouvé au run et publié (l'ordre 5 se mesure par g⁵ = e, pas
 par la partie scalaire — sa correction renforce le pont) ;
 statut déclaré : pont inter-domaines mesuré, théorème interne —
-le physique (59 meV) n'est pas touché.
+le physique (59 meV) n'est pas touché ;
+**le pont diffusif** (T20, 14/10/2026 — la carte Penrose du
+dictionnaire) : le φ quasicristallin coïncide — mot caractéristique de
+pente 1/φ² (densités 1/φ, 1/φ²) ; diagonales des losanges de Penrose φ
+et 1/φ ; inflation M = [[2,1],[1,1]] de spectre φ², φ⁻² ; et le pont
+exact : Tr Mⁿ = Lucas(2n) = Tr C(1)^(2n)/2 — la diffraction des
+pavages porte la moitié des traces du seesaw (régression T17, 12
+termes) ; leviers mesurés tueurs (pente rationnelle 13/34, Thue-Morse,
+inflation dégonflée non unimodulaire) ; deux défauts de banc trouvés
+aux runs et publiés (mot caractéristique s_i = ⌊(i+2)θ⌋ − ⌊(i+1)θ⌋
+avec 1 → b ; seuil du levier dégonflé) ; statut déclaré : pont
+diffusif, théorème interne — le physique n'est pas touché.
 
 **La veille** : [REGISTRE-VEILLE-ANTICIPATION.md](REGISTRE-VEILLE-ANTICIPATION.md)
 — le banc a publié ses positions avant les faits, avec leurs conditions

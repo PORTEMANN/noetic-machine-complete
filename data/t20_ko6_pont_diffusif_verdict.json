@@ -1,0 +1,54 @@
+{
+  "chantier": "T20-Q-KO6-PONT-DIFFUSIF-2026-10",
+  "protocole": "T20-KO6-DIFF-1.0 (gelé)",
+  "mode": "RUN LOCAL — publication en attente du feu vert de l'auteur",
+  "objet": "le pont diffusif : le phi quasicristallin (Penrose, chaîne de Fibonacci) éprouvé contre le pont phi (T14/T17/T18/T19)",
+  "statut_du_mot": "PONT DIFFUSIF — théorème mesuré à zéro paramètre ; AUCUNE prédiction d'expérience ; le physique (59 meV) n'est pas touché",
+  "faces": {
+    "densités": "mot de Fibonacci : 1/phi (a), 1/phi² (b) ; mécanique de pente 1/phi²",
+    "géométrie": "losanges de Penrose : diagonales phi et 1/phi (côté 1)",
+    "substitution": "Q=[[1,1],[1,0]] : Tr Q^n = Lucas(n) ; M=[[2,1],[1,1]] : Tr M^n = Lucas(2n) = Tr C(1)^(2n)/2 — pont avec le spectre du seesaw (T17)"
+  },
+  "V1": true,
+  "V2": true,
+  "V3": {
+    "VP": [
+      2.618033988749895,
+      0.38196601125010515
+    ],
+    "ratio_populations_niveau_14": 1.6180339887482036
+  },
+  "V4": {
+    "Tr_Qn_=_Lucas": true,
+    "Tr_Mn_=_Lucas2n": true,
+    "Tr_Mn_=_Tr_C1_2n_sur_2": true
+  },
+  "V5": {
+    "pente rationnelle 13/34 tue F1 (mot ≠ mécanique doré)": true,
+    "Thue-Morse : densités 1/2 ≠ 1/φ² (témoin)": true,
+    "Thue-Morse : spectre {2, 0} — Tr ≠ Lucas(n) (n ≥ 3)": true,
+    "inflation dégonflée [[2,1],[1,2]] : det 3, PF 3 ≠ φ²": true
+  },
+  "entree_dictionnaire_T18": {
+    "mot": "pont-φ-diffusif",
+    "filiation": "T20 (T17, T14)",
+    "polynôme": "λ² − λ − 1 (Q) · λ² − 3λ + 1 (M)",
+    "séquence": "Lucas(n) et Lucas(2n) = Tr C(1)^(2n)/2",
+    "statut": "pont diffusif mesuré — entrée proposée au dictionnaire (modification de T18 soumise à décision de gouvernance)"
+  },
+  "candidats_déclarés_non_mesurés": [
+    "diffraction de Bragg de la chaîne de Fibonacci (fonction de structure — carte séparée, fenêtre et seuils à déclarer avant run)"
+  ],
+  "falsifieur": "F1…F4 hors TOL_REG ; levier non détecté",
+  "criteres": {
+    "V1_chaîne_Fibonacci": true,
+    "V2_losanges_Penrose": true,
+    "V3_inflation_2D": true,
+    "V4_pont_diffusif_spectral": true,
+    "V5_leviers": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 0.01,
+  "sha256_script": "8566d34870886644705e53b274217398ba2f010413d6381b978a994c4f62dee8"
+}
