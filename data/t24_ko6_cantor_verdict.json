@@ -1,0 +1,65 @@
+{
+  "chantier": "T24-Q-KO6-CANTOR-2026-10",
+  "protocole": "T24-KO6-CANTOR-1.0 (gelé)",
+  "mode": "RUN LOCAL — publication en attente du feu vert de l'auteur",
+  "objet": "le chaînon optique : le spectre de Cantor Fibonacci (Kohmoto) parle la langue du dictionnaire doré",
+  "statut_du_mot": "PONT SPECTRAL — théorème interne, aucune prédiction d'expérience",
+  "mesures": {
+    "det_A_B": 1.0,
+    "fricke_dérive_max": 2.220446049250313e-16,
+    "bandes_par_niveau": {
+      "9": 19,
+      "10": 30,
+      "11": 48,
+      "12": 78,
+      "13": 126,
+      "14": 202
+    },
+    "ratios_bandes": [
+      1.5789473684210527,
+      1.6,
+      1.625,
+      1.6153846153846154,
+      1.6031746031746033
+    ],
+    "bandes_periodique": 1,
+    "residu_absorption": 14.878500000000011
+  },
+  "identite_de_trace": "Tr(W_{n+1}) = Tr(W_n)Tr(W_{n-1}) − Tr(W_{n-2}) — prouvée par conjugaison (W_n W_{n-1}^{-1} ~ W_{n-2}), régressée",
+  "V1": true,
+  "V2": {
+    "ratios": [
+      1.625,
+      1.6153846153846154,
+      1.6031746031746033
+    ],
+    "ok": true,
+    "recursion_comptes": true
+  },
+  "V3": true,
+  "V4": {
+    "levier periodique : mot (AB) — bandes constantes (1), pas de Cantor": true,
+    "levier absorption (det = 2) : identité de trace brisée (résidu max 1.49e+01 > 1e-6)": true
+  },
+  "entree_dictionnaire": {
+    "mot": "cantor-photonique",
+    "filiation": "T24 (T14, T20, T17, T21)",
+    "polynôme": "x_{N+1} = 2x_N x_{N-1} − x_{N-2} (trace map)",
+    "séquence": "bandes c_N : c_{N+1}/c_N → φ ; c_N ≈ c_{N-1}+c_{N-2}",
+    "statut": "pont spectral — théorème interne, aucune prédiction d'expérience",
+    "candidat_externe_déclare": "filtres optiques de Fibonacci réels (données de littérature à épingler) — carte MCS externe, non mesurée ici"
+  },
+  "V5": true,
+  "falsifieur": "F1/F2 hors tolérance ; levier non détecté",
+  "criteres": {
+    "V1_trace_map": true,
+    "V2_spectre_de_cantor": true,
+    "V3_chainon_SL2": true,
+    "V4_leviers": true,
+    "V5_statut": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 0.15,
+  "sha256_script": "2e2c516901d4b62be3db8056177b38baa6412ea39162f886e43f1b9ef46e71e4"
+}
