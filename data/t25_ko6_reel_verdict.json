@@ -1,0 +1,46 @@
+{
+  "chantier": "T25-Q-KO6-REEL-2026-10",
+  "protocole": "T25-KO6-REEL-1.0 (gelé)",
+  "mode": "RUN LOCAL — publication en attente du feu vert de l'auteur",
+  "objet": "première confrontation externe du pont diffusif : le rapport des deux raies d'Al-Mn (Widom 1991, données Shechtman 1984) face au module d'or",
+  "premiere_confrontation_externe": true,
+  "statut_du_mot": "CONFRONTATION EXTERNE — « compatible (S+) » ou « réfuté », jamais « vrai » ; réserve : deux raies, précision 1984, confondant des convergents mesuré",
+  "source": {
+    "reference": "Widom M., Quasicrystal Structure and Properties, Annu. Rev. Phys. Chem. 42 (1991) 685",
+    "url": "https://euler.phys.cmu.edu/widom/pubs/PDF/AnnRevPChem42_1991_685.pdf",
+    "sha256": "78276f015d790490c94f6c85e9e6fc71affc085e5c013744c35d7c86875a780d",
+    "releve_pdf": "page 30 : « d-spacings of 8.85 ± 0.07 A and 5.42 ± 0.03 A » (Al-Mn, twofold)"
+  },
+  "mesures": {
+    "r": 1.632841328413284,
+    "sigma_r": 0.015763362689479758,
+    "ecart_tau_en_sigma": 0.9393515809460765,
+    "convergents_en_sigma": {
+      "F_7/F_6": 0.4974400810124924,
+      "F_8/F_7": 1.1074231667789418,
+      "F_9/F_8": 0.8750486579155325
+    }
+  },
+  "verdict_classe": "S+ (compatible, avec réserve)",
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": {
+    "contrôle périodique (Al fcc 111/200 = 1.1547) rejeté (29.4σ)": true,
+    "régression de la source : la revue publie 1,63 ± 0,02 — cohérent avec le rapport rederivé 1.6328": true
+  },
+  "falsifieur": "une mesure de précision supérieure excluant τ à 2.0σ tue la carte",
+  "suite_declaree": "Al-Pd-Mn (185 raies, indexage 6D — acquisition séparée à épingler) ; Zn-Mg-Ho (Rietveld modifié)",
+  "V5": true,
+  "criteres": {
+    "V1_epinglage": true,
+    "V2_compatibilite_module": true,
+    "V3_confondant_convergents": true,
+    "V4_leviers": true,
+    "V5_gouvernance": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 0.0,
+  "sha256_script": "2e7eaf1f3dda4b230e9113ea890b8996e35d05e4dd624d9b8157d78b08ebf3d9"
+}
