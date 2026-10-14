@@ -51,42 +51,21 @@ lexique** : le dictionnaire mesuré du banc — 3 mots certifiés, 3
 orphelins, 1 contredit ; la règle installée : aucune carte MCS sur un
 mot orphelin (T15) ; **la texture minimale** : deux splittings mesurés
 exigent le rang 2 — l'état le plus léger est exactement sans masse
-(T16) ; **le mot Fibonacci** (T17, 14/10/2026 — dans la continuité du
-« Dialogue entre Dirac et la Machine ») : le bloc S = B Bᵀ de la chaîne
-du seesaw à M_R = y = 1 est la matrice de Fibonacci, et
-Tr C(1)^(2n) = 2·Lucas(2n) pour la grille gelée n = 1…12 (6, 14, 36, 94,
-246, 644, 1 686, 4 414, 11 556, 30 254, 79 206, 207 364 — mesurés) —
-régression exacte du spectre ; le fait meurt sous les leviers
-(y = 1/4, M_R = 2 — mesurés) ; statut déclaré et publié : théorème
-interne au banc, PAS une prédiction d'expérience ;
-**le dictionnaire des séquences spectrales** (T18, 14/10/2026) : le
-gabarit T17 généralisé et éprouvé — entrée porteur-spectral
-(ρ = 2 : Tr D(2)^(2n) = 2 + 2·9ⁿ ; ρ = 1 : 2·4ⁿ — n = 1…8 mesurés) ;
-les traces seules reconstruisent les polynômes spectraux (Newton) ;
-l'entierité est discrète (leviers ρ = 2,5 et y = 1/4 mesurés
-tueurs) ; 2 entrées, règle d'admission publiée, candidat E8 déclaré
-non mesuré — méthode interne, aucune prédiction d'expérience ;
-**le pont φ** (T19, 14/10/2026 — la carte E8 du dictionnaire) : les
-trois faces du nombre d'or coïncident — spectre de la chaîne
-(±φ, ±1/φ, T14) = traces SO(3) des 24 rotations d'ordre 5 de
-l'icosaèdre (12 × φ + 12 × (−1/φ), exact en Q(φ)) = arithmétique
-du pont de McKay vers Ê8 (P42 : A·d = 2d, Σd² = 120) ; leviers
-mesurés tueurs (aplatissement φ → 8/5, y = 1/4) ; défaut de banc
-D1 trouvé au run et publié (l'ordre 5 se mesure par g⁵ = e, pas
-par la partie scalaire — sa correction renforce le pont) ;
-statut déclaré : pont inter-domaines mesuré, théorème interne —
-le physique (59 meV) n'est pas touché ;
-**le pont diffusif** (T20, 14/10/2026 — la carte Penrose du
-dictionnaire) : le φ quasicristallin coïncide — mot caractéristique de
-pente 1/φ² (densités 1/φ, 1/φ²) ; diagonales des losanges de Penrose φ
-et 1/φ ; inflation M = [[2,1],[1,1]] de spectre φ², φ⁻² ; et le pont
-exact : Tr Mⁿ = Lucas(2n) = Tr C(1)^(2n)/2 — la diffraction des
-pavages porte la moitié des traces du seesaw (régression T17, 12
-termes) ; leviers mesurés tueurs (pente rationnelle 13/34, Thue-Morse,
-inflation dégonflée non unimodulaire) ; deux défauts de banc trouvés
-aux runs et publiés (mot caractéristique s_i = ⌊(i+2)θ⌋ − ⌊(i+1)θ⌋
-avec 1 → b ; seuil du levier dégonflé) ; statut déclaré : pont
-diffusif, théorème interne — le physique n'est pas touché.
+(T16).
+
+**Le pont φ — T17–T20 (14/10/2026)** : dans la continuité du « Dialogue
+entre Dirac et la Machine », quatre campagnes mesurent le nombre d'or
+comme **une même unité en quatre langages** — spectral (Tr C(1)^(2n) =
+2·Lucas(2n), mot Fibonacci, T17), méthodique (le dictionnaire des
+séquences spectrales, T18), géométrique et arithmétique (traces des
+rotations d'icosaèdre = spectre de la chaîne = pont de McKay vers Ê8,
+T19), diffusif (Penrose : Tr Mⁿ = Lucas(2n) = Tr C(1)^(2n)/2, T20) —
+reliées par des identités exactes d'entiers, avec sept défauts de banc
+publiés et des leviers tuables partout. Statut déclaré : théorèmes
+internes, aucune prédiction d'expérience — le physique (59 meV) n'est
+pas touché. Note descriptive et enjeux :
+[docs/NOTE-PONT-PHI-T17-T20.md](docs/NOTE-PONT-PHI-T17-T20.md) ·
+synthèse PDF : [docs/Note_Pont_Phi_T17-T20.pdf](docs/Note_Pont_Phi_T17-T20.pdf).
 
 **La veille** : [REGISTRE-VEILLE-ANTICIPATION.md](REGISTRE-VEILLE-ANTICIPATION.md)
 — le banc a publié ses positions avant les faits, avec leurs conditions
