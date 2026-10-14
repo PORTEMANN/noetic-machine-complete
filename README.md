@@ -65,7 +65,17 @@ gabarit T17 généralisé et éprouvé — entrée porteur-spectral
 les traces seules reconstruisent les polynômes spectraux (Newton) ;
 l'entierité est discrète (leviers ρ = 2,5 et y = 1/4 mesurés
 tueurs) ; 2 entrées, règle d'admission publiée, candidat E8 déclaré
-non mesuré — méthode interne, aucune prédiction d'expérience.
+non mesuré — méthode interne, aucune prédiction d'expérience ;
+**le pont φ** (T19, 14/10/2026 — la carte E8 du dictionnaire) : les
+trois faces du nombre d'or coïncident — spectre de la chaîne
+(±φ, ±1/φ, T14) = traces SO(3) des 24 rotations d'ordre 5 de
+l'icosaèdre (12 × φ + 12 × (−1/φ), exact en Q(φ)) = arithmétique
+du pont de McKay vers Ê8 (P42 : A·d = 2d, Σd² = 120) ; leviers
+mesurés tueurs (aplatissement φ → 8/5, y = 1/4) ; défaut de banc
+D1 trouvé au run et publié (l'ordre 5 se mesure par g⁵ = e, pas
+par la partie scalaire — sa correction renforce le pont) ;
+statut déclaré : pont inter-domaines mesuré, théorème interne —
+le physique (59 meV) n'est pas touché.
 
 **La veille** : [REGISTRE-VEILLE-ANTICIPATION.md](REGISTRE-VEILLE-ANTICIPATION.md)
 — le banc a publié ses positions avant les faits, avec leurs conditions

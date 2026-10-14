@@ -1,0 +1,64 @@
+{
+  "chantier": "T19-Q-KO6-PONT-PHI-2026-10",
+  "protocole": "T19-KO6-PONT-1.0 (gelé)",
+  "mode": "RUN LOCAL — publication en attente du feu vert de l'auteur",
+  "objet": "le pont φ : trois faces d'un nombre (chaîne ↔ icosaèdre ↔ Ê8) — la carte E8 déclarée au dictionnaire T18",
+  "statut_du_mot": "PONT INTER-DOMAINES — théorème mesuré à zéro paramètre ; AUCUNE prédiction d'expérience nouvelle ; le physique (59 meV) n'est pas touché",
+  "convention_gelée": "stub sympy déclaré avant l'import P42 (sympy n'est requis que par C3/C5 de P42, hors périmètre)",
+  "faces": {
+    "spectrale": "spectre C(1) = ±φ, ±1/φ — chaîne du seesaw (T14)",
+    "geometrique": "traces SO(3) des 24 rotations d'ordre 5 de l'icosaèdre = 12 × φ + 12 × (−1/φ) (v1.1, D1 corrigé) — les valeurs propres de la chaîne sont les traces des rotations",
+    "arithmetique": "Q(φ) exact de 2I et pont de McKay vers Ê8 (P42) : A·d = 2d, Σd² = 120"
+  },
+  "V1": true,
+  "V2": {
+    "nb_elements": 24,
+    "traces_12phi_12un_sur_phi": true
+  },
+  "V3": true,
+  "V4": {
+    "mckay": true,
+    "dims": [
+      1,
+      2,
+      2,
+      3,
+      3,
+      4,
+      4,
+      5,
+      6
+    ]
+  },
+  "V5": {
+    "aplatissement φ→8/5 : fermeture tuée": true,
+    "aplatissement : trace = 1,56 ≠ φ": true,
+    "y = 1/4 tue la face spectrale (T17)": true,
+    "contrôle faux (2cos(π/7)) échoue": true
+  },
+  "defaut_du_banc_corrigé": {
+    "D1": "v1.0 : identification des éléments d'ordre 5 par la partie scalaire φ/2 — ce sont les éléments d'ordre 10 (cos 36° = φ/2 → g⁵ = −e). v1.1 : ordre mesuré par g⁵ = e exact ; les éléments d'ordre 5 ont scalaire cos 72° = 1/(2φ) (trace −1/φ) ou cos 144° = −φ/2 (trace φ) — la correction renforce le pont : les traces des rotations sont exactement le spectre de la chaîne"
+  },
+  "entree_dictionnaire_T18": {
+    "mot": "pont-φ-icosaédrique",
+    "filiation": "T19 (P42, T14)",
+    "polynôme": "λ⁴ − 3λ² + 1 (face A4 de la chaîne)",
+    "séquence": "φ commun aux trois constructions ; pont McKay A·d = 2d vers Ê8",
+    "statut": "pont inter-domaines mesuré — entrée proposée au dictionnaire (la modification de T18 attend sa propre décision de gouvernance)"
+  },
+  "candidats_déclarés_non_mesurés": [
+    "pavages de Penrose / quasicristaux (le φ y est diffusif, pas spectral : carte séparée requise)"
+  ],
+  "falsifieur": "F1…F4 hors TOL_REG ; levier non détecté ; régression P42 perdue",
+  "criteres": {
+    "V1_2I_E8_regression_P42": true,
+    "V2_face_geometrique_trace": true,
+    "V3_face_spectrale_chaine": true,
+    "V4_mckay_regression_P42": true,
+    "V5_leviers": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 0.16,
+  "sha256_script": "850e898df752699a61f5c13666737b283095c53d9a4c1b83433625a7fecd24df"
+}
