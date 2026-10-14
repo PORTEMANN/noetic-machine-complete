@@ -1,0 +1,115 @@
+{
+  "chantier": "T17-Q-KO6-FIBONACCI-2026-10",
+  "protocole": "T17-KO6-FIB-1.0 (gelé)",
+  "mode": "RUN LOCAL — publication en attente du feu vert de l'auteur",
+  "objet": "le mot Fibonacci : S = B Bᵀ est la matrice de Fibonacci ; Tr C(1)^(2n) = 2·Lucas(2n) — régressions exactes du spectre mesuré de la chaîne du seesaw",
+  "statut_du_mot": "THÉORÈME INTERNE au banc — régression, PAS prédiction d'expérience (déclaré, gelé)",
+  "filiation": [
+    "T14 (chaîne, spectre ±φ ±1/φ)",
+    "T9 (construction)",
+    "T15 (règle des mots)",
+    "koilon-scale-e8 (chantier géométrique — cité)"
+  ],
+  "V1": true,
+  "V2": {
+    "S_égale_matrice_Fibonacci": true,
+    "puissances_Sn": true
+  },
+  "V3": {
+    "série_Tr_C1_2n_vs_2Lucas2n": [
+      {
+        "n": 1,
+        "mesuré": 6,
+        "attendu": 6,
+        "ok": true
+      },
+      {
+        "n": 2,
+        "mesuré": 14,
+        "attendu": 14,
+        "ok": true
+      },
+      {
+        "n": 3,
+        "mesuré": 36,
+        "attendu": 36,
+        "ok": true
+      },
+      {
+        "n": 4,
+        "mesuré": 94,
+        "attendu": 94,
+        "ok": true
+      },
+      {
+        "n": 5,
+        "mesuré": 246,
+        "attendu": 246,
+        "ok": true
+      },
+      {
+        "n": 6,
+        "mesuré": 644,
+        "attendu": 644,
+        "ok": true
+      },
+      {
+        "n": 7,
+        "mesuré": 1686,
+        "attendu": 1686,
+        "ok": true
+      },
+      {
+        "n": 8,
+        "mesuré": 4414,
+        "attendu": 4414,
+        "ok": true
+      },
+      {
+        "n": 9,
+        "mesuré": 11556,
+        "attendu": 11556,
+        "ok": true
+      },
+      {
+        "n": 10,
+        "mesuré": 30254,
+        "attendu": 30254,
+        "ok": true
+      },
+      {
+        "n": 11,
+        "mesuré": 79206,
+        "attendu": 79206,
+        "ok": true
+      },
+      {
+        "n": 12,
+        "mesuré": 207364,
+        "attendu": 207364,
+        "ok": true
+      }
+    ],
+    "identités_φ": {
+      "φ−1/φ=1": true,
+      "φ²+1/φ²=3": true
+    }
+  },
+  "V4_leviers": {
+    "y = 1/4 tue F2 (mesuré — fait lié à y = 1)": true,
+    "M_R = 2 tue F2 (mesuré — fait lié à M_R = 1)": true,
+    "contrôle faux (Lucas décalé) : échoue comme attendu": true
+  },
+  "falsifieur": "F1/F2 hors TOL_REG ; levier non détecté ; régression T14 perdue",
+  "criteres": {
+    "V1_régression_T14": true,
+    "V2_F1_S=matrice_de_Fibonacci": true,
+    "V3_F2_Tr=2Lucas": true,
+    "V4_leviers": true,
+    "V5_statut_déclaré": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 0.0,
+  "sha256_script": "d908c56dfb7e469157c26d8dd2fa31b40ed48ce4f6b074f97fc0ae4e3f18c366"
+}

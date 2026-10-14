@@ -51,7 +51,14 @@ lexique** : le dictionnaire mesuré du banc — 3 mots certifiés, 3
 orphelins, 1 contredit ; la règle installée : aucune carte MCS sur un
 mot orphelin (T15) ; **la texture minimale** : deux splittings mesurés
 exigent le rang 2 — l'état le plus léger est exactement sans masse
-(T16).
+(T16) ; **le mot Fibonacci** (T17, 14/10/2026 — dans la continuité du
+« Dialogue entre Dirac et la Machine ») : le bloc S = B Bᵀ de la chaîne
+du seesaw à M_R = y = 1 est la matrice de Fibonacci, et
+Tr C(1)^(2n) = 2·Lucas(2n) pour la grille gelée n = 1…12 (6, 14, 36, 94,
+246, 644, 1 686, 4 414, 11 556, 30 254, 79 206, 207 364 — mesurés) —
+régression exacte du spectre ; le fait meurt sous les leviers
+(y = 1/4, M_R = 2 — mesurés) ; statut déclaré et publié : théorème
+interne au banc, PAS une prédiction d'expérience.
 
 **La veille** : [REGISTRE-VEILLE-ANTICIPATION.md](REGISTRE-VEILLE-ANTICIPATION.md)
 — le banc a publié ses positions avant les faits, avec leurs conditions
