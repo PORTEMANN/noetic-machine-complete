@@ -134,3 +134,20 @@ self-similarité dorée est invisible aux approximants convergents
 (Legendre : toute pente p/q à 1/(2q²) près de 1/φ² est un rapport de
 Fibonacci). Verdict : `data/t21_ko6_module_or_verdict.json`. Statut
 inchangé : théorème interne, aucune prédiction d'expérience.
+
+**Addendum du 14/10/2026 (nuit) — T22, la carte d'attente du tarif
+(C1 du carnet NOTE-CANDIDATS-PONT-PHI).** La question « le pont φ
+certifie-t-il une échelle sans cadran ? » reçoit une réponse mesurée :
+NON — la densité du module d'or (théorème des trois écarts de Sós :
+ratios de gaps mesurés dans {1/φ, 1/φ²}) place tout ratio de [0, 21)
+à moins de 0,0066 d'un point du module ; la coïncidence MCS-24 n'avait
+donc pas d'alternative structurelle, ce qui explique et certifie
+l'anti-stabilité CSi par l'orbite complète des 7 cadrans (z de −10,71
+à +22,59). Le protocole de re-mesure du tarif est scellé au verdict
+(déclencheur : Σm_ν au plancher ; seuils |z| ≥ 3 / 2–3 / sommeil
+permanent) — la carte dort, et le dormir est publié. Trois défauts de
+banc trouvés par les runs et publiés (monotonie vs trois écarts ;
+module quadrant vs module complet ; seuil absolu calibré sur la mauvaise
+version — leçon rappelée : un seuil qui ne peut pas passer est une
+faute de fiche, pas une falsification). Verdict :
+`data/t22_ko6_attente_tarif_verdict.json`.

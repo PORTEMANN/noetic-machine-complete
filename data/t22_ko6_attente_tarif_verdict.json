@@ -1,0 +1,83 @@
+{
+  "chantier": "T22-Q-KO6-ATTENTE-TARIF-2026-10",
+  "protocole": "T22-KO6-ATTENTE-1.0 (gelé)",
+  "mode": "RUN LOCAL — publication en attente du feu vert de l'auteur",
+  "objet": "la carte d'attente du tarif : le pont phi ne certifie aucune echelle sans cadran mesure — la densite du module d'or est le certificat ; la carte dort, le dormir est publie",
+  "statut_du_mot": "CARTE D'ATTENTE — impossibilite mesuree ; aucune prediction d'experience nouvelle",
+  "reponse_a_la_question_unique": "NON — le pont phi ne certifie aucune echelle sans cadran : a 0.006578 pres, toute echelle coincide avec le module dore (densite mesuree) ; la coincidence MCS-24 n'avait pas d'alternative structurelle",
+  "mesures": {
+    "orbite_mcs24": {
+      "g0_canonique_HORS_SIGMA": 10.895120224820266,
+      "g1_coupure_reduite": -10.711065799162943,
+      "g2_CODATA_2018": 10.895137798529262,
+      "g3_fenetre_8": 22.593064147312187,
+      "g4_contenu_C4": 7.449493252802233,
+      "g5_porteur_ampute_noeud_C": 7.449493252802233,
+      "g6_nul_uniforme_par_taille": 1.1711946709477994
+    },
+    "empreinte_fichier_mcs24": "4a0cc1048436de28e9706d9e9d61702dd7478d7f1dfb2ed1c28d10a3d4ec6f6e",
+    "empreinte_relue_localement": true,
+    "gaps_module": {
+      "21": 0.013155617496423133,
+      "42": 0.005024998740637443,
+      "84": 0.0031056200151198254,
+      "168": 0.001186241289587997,
+      "336": 0.0007331374358159337
+    },
+    "certificat_g_sur_2": 0.006577808748211567,
+    "legendre_erreurs_1_sur_pi": [
+      0.01803398874989487,
+      0.006966011250105153,
+      0.0026493733652794837,
+      0.0010136302977242218,
+      0.0003869299263654091,
+      0.00014782943192331865,
+      5.646066000719596e-05,
+      2.1566805660733213e-05,
+      8.237676933475768e-06,
+      3.146528619768496e-06
+    ]
+  },
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": {
+    "levier fenetre (three-gap) : ratios g(2W)/g(W) bornes (< 0,7), enveloppe W.g(W) bornee": true,
+    "levier Legendre : |1/phi^2 - F_k/F_{k+2}| decroît strictement": true,
+    "levier Legendre : taux quadratique (e.F^2 borne, facteur < 10)": true,
+    "controle entier : 120 = somme des d^2 (regression T19), a distance 0 du module (n = 0)": true
+  },
+  "protocole_attente": {
+    "etat": "SOMMEIL PUBLIE — carte d'attente (comme la loi harmonique a CSp)",
+    "declencheur": {
+      "fait": "mesure (pas borne) de Σm_ν compatible avec le plancher NO",
+      "condition_centrale": "valeur centrale compatible ~59 meV",
+      "condition_exclusion": "exclusion des valeurs >= ~64 meV (borne DESI 2025 consignee a T16)",
+      "source": "REGISTRE-VEILLE-ANTICIPATION.md (faits 2, seuils)"
+    },
+    "sequence": [
+      "1. epingleter la source (acquisition declaree, hachee)",
+      "2. mesurer le cadran : la relation d'ancre T12 (Λ²_sel = ρ² + 3 − a₂/a₀) recoit sa seconde ancre",
+      "3. re-mesurer le tarif aux 7 cadrans declares de MCS-24 (meme constantes gelees, memes controles)",
+      "4. appliquer les seuils gelés ci-dessous — jamais de lecture a chaud"
+    ],
+    "seuils": {
+      "|z| >= 3": "stable — la frontiere MCS-24 se rouvre",
+      "2 <= |z| < 3": "partiel — carte neuve a cadran mesure",
+      "|z| < 2 tous cadrans": "SOMMEIL PERMANENT publie"
+    },
+    "falsifieur_de_la_carte": "sommeil permanent si |z| < 2 sous tous les cadrans au cadran mesure"
+  },
+  "falsifieur": "F1/F2/F4 hors tolerance ; protocole incomplet ; sommeil permanent si |z| < 2 sous tous les cadrans au cadran mesure",
+  "criteres": {
+    "V1_regression_MCS24": true,
+    "V2_densite_module": true,
+    "V3_corollaire_tarif": true,
+    "V4_leviers": true,
+    "V5_protocole_scelle": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 0.05,
+  "sha256_script": "c583470c97ebbf706f330b1e2eaf25d00dff8e0b47cae951d7ae881e67c7301a"
+}
