@@ -1,0 +1,66 @@
+{
+  "chantier": "T18-Q-KO6-DICO-SEQUENCES-2026-10",
+  "protocole": "T18-KO6-DICO-1.0 (gelé)",
+  "objet": "le dictionnaire des séquences spectrales : le gabarit T17 généralisé, éprouvé sur C(1) (T14/T17) et le modèle spectral du porteur (T13 cité)",
+  "convention_gelée": "entrée porteur = modèle spectral D(ρ)=diag(0,±(ρ−1),±(ρ+1)) — les traces sont spectrales ; la géométrie T13 n'est pas réimportée",
+  "statut_du_mot": "MÉTHODE interne — instrument de régression ; aucune prédiction d'expérience",
+  "V1": true,
+  "V2": {
+    "rho_2": true,
+    "rho_1_repos": true
+  },
+  "V3": {
+    "C1_coeffs": [
+      -0.0,
+      -3.0,
+      -0.0,
+      1.0
+    ],
+    "porteur_rho1.7_coeffs": [
+      -0.0,
+      -7.780000000000001,
+      -0.0,
+      3.5721000000000025,
+      -0.0
+    ]
+  },
+  "V4": {
+    "rho_2.5_tue": true,
+    "y_1/4_tue": true,
+    "contrôle_faux": true
+  },
+  "dictionnaire": {
+    "règle_d'admission": "une entrée = un objet certifié du banc + son polynôme spectral + sa séquence de traces + sa condition d'entierité (paramètres gelés) + une régression tuante + un levier tuable. Statut : instrument interne, aucune prédiction d'expérience.",
+    "entrées": [
+      {
+        "mot": "chaîne-seesaw C(1)",
+        "filiation": "T14/T17",
+        "polynôme": "λ⁴ − 3λ² + 1",
+        "séquence": "Tr C(1)^(2n) = 2·Lucas(2n), n = 1…12 mesurés",
+        "entierité": "y = M_R = 1 (gelé — leviers mesurés)"
+      },
+      {
+        "mot": "porteur-spectral D(ρ)",
+        "filiation": "T13 (spectre déclaré, NOTE-VERROU)",
+        "polynôme": "λ(λ²−(ρ−1)²)(λ²−(ρ+1)²)",
+        "séquence": "Tr D(2)^(2n) = 2 + 2·9ⁿ ; Tr D(1)^(2n) = 2·4ⁿ (n = 1…8 mesurés)",
+        "entierité": "ρ ∈ {1 ; 2} sur la grille déclarée — entierité discrète confirmée"
+      }
+    ],
+    "candidats_déclarés_non_mesurés": [
+      "koilon-scale-e8 (géométrie E8/icosaédrique — le φ y est géométrique, pas spectral : la carte devra déclarer le pont avant toute mesure)"
+    ]
+  },
+  "falsifieur": "F1/F2/F3 hors TOL_REG ; levier non détecté ; dictionnaire incomplet",
+  "criteres": {
+    "V1_C1_régression_T17": true,
+    "V2_porteur-spectral_rho_1_2": true,
+    "V3_newton_reconstruction": true,
+    "V4_leviers_entierité": true,
+    "V5_dictionnaire_assemblé": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 0.0,
+  "sha256_script": "bb77d4620ede2341706bfd7968ba425a8f0e47f6d64064f0b58dcb521a2fd879"
+}

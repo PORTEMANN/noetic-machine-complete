@@ -58,7 +58,14 @@ Tr C(1)^(2n) = 2·Lucas(2n) pour la grille gelée n = 1…12 (6, 14, 36, 94,
 246, 644, 1 686, 4 414, 11 556, 30 254, 79 206, 207 364 — mesurés) —
 régression exacte du spectre ; le fait meurt sous les leviers
 (y = 1/4, M_R = 2 — mesurés) ; statut déclaré et publié : théorème
-interne au banc, PAS une prédiction d'expérience.
+interne au banc, PAS une prédiction d'expérience ;
+**le dictionnaire des séquences spectrales** (T18, 14/10/2026) : le
+gabarit T17 généralisé et éprouvé — entrée porteur-spectral
+(ρ = 2 : Tr D(2)^(2n) = 2 + 2·9ⁿ ; ρ = 1 : 2·4ⁿ — n = 1…8 mesurés) ;
+les traces seules reconstruisent les polynômes spectraux (Newton) ;
+l'entierité est discrète (leviers ρ = 2,5 et y = 1/4 mesurés
+tueurs) ; 2 entrées, règle d'admission publiée, candidat E8 déclaré
+non mesuré — méthode interne, aucune prédiction d'expérience.
 
 **La veille** : [REGISTRE-VEILLE-ANTICIPATION.md](REGISTRE-VEILLE-ANTICIPATION.md)
 — le banc a publié ses positions avant les faits, avec leurs conditions
