@@ -1,0 +1,31 @@
+{
+  "nature": "EXERCICE — réveil virtuel, source synthétique, aucun fait de labo",
+  "empreinte_source_synthetique": "1072967cf82cb058c211618daabeac544485d1661b15a99b291d8abbecbf2160",
+  "etapes": {
+    "1_declencheur": "exécuté (virtuel) — source hashée et étiquetée",
+    "2_cadran": "exécuté avec placeholder — Λ_sel = 59.0239 (unité placeholder) ; a₂/a₀ = -1.000000000",
+    "3_tarif_numerateur": "exécuté — m'(Λ_sim) par cadran calculé ; z' bloqué (nul par cadran requis)",
+    "4_seuils": "exécuté — machine à seuils dry-run sur l'orbite scellée"
+  },
+  "trous_identifies": [
+    "TROU N° 1 : le mapping Σm_ν → ρ (cadran) n'est scellé nulle part — à geler avant le vrai réveil (fiche T23 candidate)",
+    "TROU N° 2 : la re-mesure de z exige le moteur MCS-24 complet (nul par cadran) — relançable, non relancé à l'exercice",
+    "TROU N° 3 (faille du protocole) : les seuils scellés de T22 classent cadran par cadran — l'orbite MCS-24 y serait 'stable' partout alors qu'elle est CSi anti-stable par inversion de signe ; la clause d'orbite manque (addendum de gouvernance proposé, approuvé le 14/10/2026 : stable AU SENS ORBITE = même signe ET |z| ≥ 3 sous tous les cadrans ; sinon anti-stable)"
+  ],
+  "clause_orbite_mesuree": {
+    "signe_unique": false,
+    "classe_orbite": "ANTI-STABLE (orbite) — inversion de signe",
+    "applicable_au_cas_MCS24": "anti-stable — cohérent avec le verdict CSi scellé"
+  },
+  "m_prime_par_cadran": {
+    "g0": -52.65703333955063,
+    "g1": -54.0058154540643,
+    "g2": -52.657019023987836,
+    "g3": -52.65703333955063,
+    "g4": -52.70248560738628,
+    "g5": -52.70248560738628,
+    "g6": -52.65703333955063
+  },
+  "regle": "un exercice ne devient jamais une lecture à chaud",
+  "duree_s": 0.0
+}

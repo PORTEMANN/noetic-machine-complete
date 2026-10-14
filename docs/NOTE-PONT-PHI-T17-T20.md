@@ -151,3 +151,16 @@ module quadrant vs module complet ; seuil absolu calibré sur la mauvaise
 version — leçon rappelée : un seuil qui ne peut pas passer est une
 faute de fiche, pas une falsification). Verdict :
 `data/t22_ko6_attente_tarif_verdict.json`.
+
+**Addendum du 14/10/2026 (nuit tardive) — exercice de réveil virtuel
+et clause d'orbite.** Le protocole d'attente a été exercé localement
+sur source synthétique (Σm_ν = 58,99 meV, aucun fait de laboratoire) :
+trois lacunes trouvées, dont une faille du protocole lui-même — les
+seuils scellés classaient cadran par cadran et y auraient rendu
+l'orbite MCS-24 « stable » partout, alors qu'elle est anti-stable par
+inversion de signe. **Clause d'orbite approuvée** (décision d'auteur
+« j'approuve ») : stable au sens ORBITE = même signe et |z| ≥ 3 sous
+tous les cadrans, sinon anti-stable. Détails et suites (fiche T23 : le
+mapping Σm_ν → ρ à geler) :
+[docs/NOTE-EXERCICE-T22R-REVEIL-VIRTUEL.md](NOTE-EXERCICE-T22R-REVEIL-VIRTUEL.md)
+· rapport : `data/t22r_exercice_reveil_virtuel.json`.
