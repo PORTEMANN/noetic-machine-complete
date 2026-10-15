@@ -1,0 +1,48 @@
+{
+  "chantier": "T29-Q-KO6-GALOIS-2026-10",
+  "protocole": "T29-KO6-GALOIS-1.0 (gelé)",
+  "mode": "RUN LOCAL — publication en attente du feu vert de l'auteur",
+  "objet": "les deux faces du module : le conjugué de Galois dans l'espace perpendiculaire réel (annexe Dong 147 raies) — première passe du pont vers les intensités",
+  "confrontation_externe": true,
+  "statut_du_mot": "PONT ARITHMÉTIQUE — aucune intensité simulée, aucune surface atomique modélisée ; les intensités mesurées restent l'acquisition ouverte",
+  "sources": {
+    "dong": {
+      "url": "https://hal.univ-lorraine.fr/tel-01776194/document",
+      "sha256": "ac95fe442e8d775f4e4803a315a9563e411fa2f1eead476a66e26acd5b57c33d",
+      "pages": "Annexe 1, p. 188-193"
+    },
+    "quiquandon_gratias_2008": {
+      "url": "https://hal.science/hal-00513873/file/PEER_stage2_10.1080%2F14786430801971474.pdf",
+      "sha256": "2745ecd3bbbc2f2582d1c7c28457cb0775b2be6330efb6716a11b70af2680ca2",
+      "releve": "les intensités se répartissent en quatre branches selon les parités de (N, M) — signature de trois surfaces atomiques (valable i-AlCuFe et i-AlPdMn)"
+    }
+  },
+  "mesures": {
+    "qpar_residu_max": 0.0004996668516543679,
+    "qperp_residu_max": 0.0004960689203690194,
+    "classes_parite": {
+      "(0, 0)": 70,
+      "(0, 1)": 77
+    },
+    "qperp_13sur8_degradation": 616.5467042381549
+  },
+  "limite_declaree": "répartition en quatre branches non testable sur le sous-ensemble épinglé (2/4 classes, phases dégénérées) — acquisition odd-N ouverte ; intensités mesurées : Boudard 1992 (paywall)",
+  "verdict_classe": "S+ (pont posé, limite déclarée)",
+  "falsifieur": "> 3 raies hors des deux lois (réfutation publiée au même titre)",
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": true,
+  "V5": true,
+  "criteres": {
+    "V1_epinglage_deux_sources": true,
+    "V2_deux_faces_du_module": true,
+    "V3_arithmetique_des_phases": true,
+    "V4_leviers": true,
+    "V5_gouvernance": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 0.2,
+  "sha256_script": "f47672bcc0764fb90f977646aa684aea35302091411c37d827323b87b86c3454"
+}
