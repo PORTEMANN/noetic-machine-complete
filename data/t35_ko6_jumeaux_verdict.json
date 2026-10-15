@@ -1,0 +1,50 @@
+{
+  "chantier": "T35-Q-KO6-JUMEAUX-2026-10",
+  "protocole": "T35-KO6-JUMEAUX-1.0 (gelé)",
+  "mode": "RUN LOCAL — publication en attente du feu vert de l'auteur",
+  "objet": "pont 4 : la note GR (9/10/2026) déclarée jumeau continu du corpus ; le tarif dort sur ses deux faces",
+  "acte_de_gouvernance": true,
+  "statut_du_mot": "ACTE DE GOUVERNANCE — le corpus s'engage, pas le monde ; aucune prédiction nouvelle",
+  "source": {
+    "note_gr": "invariance_einstein_academique.pdf (9 octobre 2026)",
+    "sha256": "5f320316bcd0d1b50d79b5c9db4781c6d83462d49bcb1c236695f995bad0bbac"
+  },
+  "correspondance": [
+    {
+      "corpus": "carte scellée avant donnée (MCS)",
+      "jumeau": "élément « daté, motivé, assorti du régime où son absence le réfuterait » (Principe 1)"
+    },
+    {
+      "corpus": "empreinte SHA-256 (chaîne d'octets)",
+      "jumeau": "reproductibilité et conditions au bord déclarées (GHY, contraintes ADM)"
+    },
+    {
+      "corpus": "B3-FAIL (échec publié au même titre)",
+      "jumeau": "« doit déclarer un régime où son absence la réfuterait » (effectivité)"
+    }
+  ],
+  "clause_continue": {
+    "declencheur_discret": "Σm_ν mesuré au plancher (T22/T23, seuils gelés, clause d'orbite)",
+    "declencheur_continu": "déviation mesurée dans le régime de validité déclaré par la note (tests Système solaire / Cavendish — falsifieurs déjà écrits, §8 de la note)",
+    "etat": "SOMMEIL PUBLIE — les deux faces dorment ; le réveil de l'une n'attend pas l'autre mais les réveille ensemble (même cœur thermodynamique)"
+  },
+  "verdict_classe": "S+ (pont refermé : les jumeaux parlent le même protocole et dorment ensemble)",
+  "falsifieur": "épinglage rompu ; correspondance textuelle absente (réfutation publiée au même titre)",
+  "suites_declarees": "les quatre ponts sont scellés ; l'homologie persistante et la charge de Hopf 3D attendent au carnet",
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": true,
+  "V5": true,
+  "criteres": {
+    "V1_epinglage_GR": true,
+    "V2_correspondance": true,
+    "V3_coeur_jacobson": true,
+    "V4_leviers": true,
+    "V5_clause_continue": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 0.08,
+  "sha256_script": "a6c149cf3427e63103ed24e01aed8296831b8a5c3d5daa2d8b07e6817aca610c"
+}
