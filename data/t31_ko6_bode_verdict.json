@@ -1,0 +1,40 @@
+{
+  "chantier": "T31-Q-KO6-BODE-2026-10",
+  "protocole": "T31-KO6-BODE-1.0 (gelé)",
+  "mode": "RUN LOCAL — publication en attente du feu vert de l'auteur",
+  "objet": "Bode à nul honnête : l'espacement planétaire solaire n'est pas exceptionnel — ni pour Titius-Bode ni pour la version dorée",
+  "confrontation_externe": true,
+  "dormeur": true,
+  "statut_du_mot": "CONFRONTATION EXTERNE — verdict dormeur publié au même titre qu'un succès (règle de la maison) ; pinning plus faible déclaré",
+  "source": "NASA/JPL — planetary fact sheet / éphémérides publiques (constantes stables à 1e-4 ; pinning plus faible que T25–T29 déclaré — pas de source hachable)",
+  "mesures": {
+    "rms_tb": 1.3860586482943635,
+    "rms_dore": 0.8743552874513886,
+    "rms_geo": 1.1929532447281506,
+    "rapport_geometrique": 1.8623459201660064,
+    "p_tb": 0.34725,
+    "p_dore": 0.16961,
+    "p_seuil": 0.05,
+    "n_architectures_nulles": 100000,
+    "rms_tb_6_planetes": 0.3961474389843798,
+    "rms_sequence_9_slots": 1.1945850240044131
+  },
+  "verdict_classe": "S− (compatible avec le nul — dormeur publié)",
+  "falsifieur": "p <= 5 % sur le même nul (la carte se réveillerait)",
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": true,
+  "V5": true,
+  "criteres": {
+    "V1_acquisition": true,
+    "V2_fits": true,
+    "V3_test_nul": true,
+    "V4_leviers": true,
+    "V5_dormeur_publie": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 4.69,
+  "sha256_script": "d19bc649653246cdd0f9d493a57ee23a35739e29bc235599184911de47ea2823"
+}
