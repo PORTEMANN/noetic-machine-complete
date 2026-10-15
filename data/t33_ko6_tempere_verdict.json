@@ -1,0 +1,47 @@
+{
+  "chantier": "T33-Q-KO6-TEMPERE-2026-10",
+  "protocole": "T33-KO6-TEMPERE-1.0 (gelé)",
+  "mode": "RUN LOCAL — publication en attente du feu vert de l'auteur",
+  "objet": "pont 2 : la gamme tempérée (2^{1/12}, du CTFT) contre les noyaux réels (AME2020) — la loi globale meurt, une crossing ferrique bornée est cinématique",
+  "confrontation_externe": true,
+  "dormeur_partiel": true,
+  "statut_du_mot": "CONFRONTATION EXTERNE — S− pour la loi globale (publié) ; coïncidence bornée publiée avec explication",
+  "source": {
+    "ame2020": "p40_data_ame2020_mas20.txt (dépôt, Chinese Physics C45 2021)",
+    "sha256": "94299ea0fec7da4ed827372882dc6bc0c8f63b416d679b2969f4b60988d979b3",
+    "ctft": "source de T32 (sha256 54564e03…)"
+  },
+  "mesures": {
+    "k_croise_2sur12_a_Z": 25,
+    "k_moyenne_corrigee": 1.0126504012415811,
+    "r_moyen": 1.0549777909853615,
+    "crossing_ferrique_Z": [
+      15,
+      16,
+      23,
+      27
+    ],
+    "p_crossings": 0.19407,
+    "p_moyenne": 0.15542,
+    "demi_ton": 1.0594630943592953
+  },
+  "verdict_classe": "mixte : validation LOCALE de la formule corrigee (crossing Z=25 dans le cluster) ; echec GLOBAL (moyenne 4,4 % vs donnee 0,42 %) ; nul cinematique : coincidences non exceptionnelles",
+  "falsifieur": "r(Z) incompatible avec la cinématique A(Z)",
+  "suites_declarees": "ponts 3 (entiers du continuum) et 4 (jumeaux GR/tarif) au carnet",
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": true,
+  "V5": true,
+  "criteres": {
+    "V1_epinglage_AME": true,
+    "V2_formule_mesuree": true,
+    "V3_donnee_reelle": true,
+    "V4_nul_cinematique": true,
+    "V5_gouvernance": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 0.36,
+  "sha256_script": "db420c68f22fdc3ed7d27897f4ac1f4fcd03edd25535b26239e93ec21109b8e2"
+}
