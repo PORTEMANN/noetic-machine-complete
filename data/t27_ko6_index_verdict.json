@@ -1,0 +1,43 @@
+{
+  "chantier": "T27-Q-KO6-INDEX-2026-10",
+  "protocole": "T27-KO6-INDEX-1.0 (gelé)",
+  "mode": "RUN LOCAL — publication en attente du feu vert de l'auteur",
+  "objet": "premier test multi-réflexion externe : le module d'or dans l'indexage 6D réel (i-Al-Cu-Fe, Dong 1991)",
+  "confrontation_externe": true,
+  "statut_du_mot": "CONFRONTATION EXTERNE — « compatible (S+) » ou « réfuté », jamais « vrai » ; réserves : annexe calculée, table mesurée, une raie hors module (phase R)",
+  "source": {
+    "reference": "C. Dong, Structure et formation des quasicristaux et des phases cristallines approximantes, thèse Nancy 1991 (HAL tel-01776194)",
+    "url": "https://hal.univ-lorraine.fr/tel-01776194/document",
+    "sha256_relue": "ac95fe442e8d775f4e4803a315a9563e411fa2f1eead476a66e26acd5b57c33d",
+    "pages": "Annexe 1 p. 188 (14 raies calculées) · Tableau 4-1 p. 74 (9 Q∥ mesurées)"
+  },
+  "mesures": {
+    "annexe_residu_max": 0.0005001110494480265,
+    "residu_13sur8": 0.002323338316027268,
+    "residu_permute": 1.6133470542973478,
+    "a_6D_mesure_A": 6.430462546148683,
+    "raies_hors_module": [
+      "K"
+    ],
+    "D1_fait_tue": "M/N ≈ τ (faux, mesuré, publié)"
+  },
+  "verdict_classe": "S+ (compatible, avec réserve)",
+  "falsifieur": "re-mesure de haute résolution excluant la loi du module à 1 %",
+  "suite_declaree": "Al-Pd-Mn 6D (185 raies — indexage complet)",
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": true,
+  "V5": true,
+  "criteres": {
+    "V1_epinglage": true,
+    "V2_annexe_module": true,
+    "V3_specificite": true,
+    "V4_ancre_mesuree": true,
+    "V5_module_dans_les_entiers": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 0.02,
+  "sha256_script": "92eb34f38e6ca03c82f7df1f4562866235e951f5b5636b3e41b9cd839d79e502"
+}
