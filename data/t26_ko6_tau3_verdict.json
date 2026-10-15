@@ -1,0 +1,49 @@
+{
+  "chantier": "T26-Q-KO6-TAU3-2026-10",
+  "protocole": "T26-KO6-TAU3-1.0 (gelé)",
+  "mode": "RUN LOCAL — publication en attente du feu vert de l'auteur",
+  "objet": "deuxième regard externe : le rapport τ³ des échelles réciproques publiées pour i-Al-Mn-Si (Widom 1991, p. 8)",
+  "premiere_confrontation_externe": false,
+  "confrontation_externe": true,
+  "statut_du_mot": "CONFRONTATION EXTERNE — « compatible (S+) » ou « réfuté », jamais « vrai » ; réserve : pas d'erreurs publiées sur Q₁, Q₂ ; dossier à source unique ; confondant convergent mesuré",
+  "source": {
+    "reference": "Widom M., Quasicrystal Structure and Properties, Annu. Rev. Phys. Chem. 42 (1991) 685",
+    "url": "https://euler.phys.cmu.edu/widom/pubs/PDF/AnnRevPChem42_1991_685.pdf",
+    "sha256": "78276f015d790490c94f6c85e9e6fc71affc085e5c013744c35d7c86875a780d",
+    "releve_pdf": "page 8 : « Q = 2.894 A-1 … Another choice … Q = 0.68 A-1. This value differs from the previous value by a factor of τ³ » (Al-Mn-Si, Bancel)"
+  },
+  "mesures": {
+    "r": 4.2558823529411764,
+    "tau3": 4.23606797749979,
+    "ecart_relatif_tau3": 0.004677539535869648,
+    "convergents_ecarts": {
+      "17/4 (F-convergent)": 0.0013840830449826941,
+      "72/17": 0.004861111111111094,
+      "305/72": 0.004667309546769616
+    }
+  },
+  "verdict_classe": "S+ (compatible, avec réserve)",
+  "reconnaissance_documentaire": [
+    "Wollgarten (thèse Jülich, liste de réflexes) : URL morte (landing HTML, pas de PDF)",
+    "HAL in2p3-00185505 (Multiresolution) : fichier 54 ko non-PDF",
+    "Boudard 1992 (JPCM 4, 10149) et de Boissieu 1994 (JPCM 6, 10725) : table riche (185 raies) derrière paywall — acquisition en attente (accès documentaire)",
+    "issue : la table indexée 6D reste le prochain objectif d'épinglage ; critère : ≥ 10 raies avec indices 6D et Q"
+  ],
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": true,
+  "V5": true,
+  "falsifieur": "mesure de précision supérieure excluant τ³ à 2 % tue la carte",
+  "criteres": {
+    "V1_epinglage": true,
+    "V2_compatibilite_tau3": true,
+    "V3_confondant_convergents": true,
+    "V4_pont_meme_phi": true,
+    "V5_gouvernance": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 0.18,
+  "sha256_script": "0a73d9ff7faef6951b19d80a34a0282988c4945f5c808670454575c9c5486e33"
+}
