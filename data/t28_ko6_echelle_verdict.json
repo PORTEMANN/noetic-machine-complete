@@ -1,0 +1,46 @@
+{
+  "chantier": "T28-Q-KO6-ECHELLE-2026-10",
+  "protocole": "T28-KO6-ECHELLE-1.0 (gelé)",
+  "mode": "RUN LOCAL — publication en attente du feu vert de l'auteur",
+  "objet": "l'annexe complète : 147 réflexions icosaédriques sous le module d'or — la richesse lève le confondant convergent",
+  "confrontation_externe": true,
+  "statut_du_mot": "CONFRONTATION EXTERNE — « compatible (S+) » ; acquisition auto-certifiée (loi du module = checksum de transcription)",
+  "source": {
+    "reference": "C. Dong, thèse Nancy 1991 (HAL tel-01776194) — Annexe 1, p. 188-193",
+    "url": "https://hal.univ-lorraine.fr/tel-01776194/document",
+    "sha256": "ac95fe442e8d775f4e4803a315a9563e411fa2f1eead476a66e26acd5b57c33d",
+    "acquisition": "couche texte du PDF, 17 champs par raie, auto-validation par la loi du module ; échantillon double-rel"
+  },
+  "mesures": {
+    "n_reflexions": 147,
+    "residu_tau_moyen": 0.00023375582409396832,
+    "residu_13sur8_moyen": 0.004710769310304006,
+    "tau_gagne_ligne_a_ligne": 1.0,
+    "multiplicites": [
+      12,
+      20,
+      30,
+      60,
+      120
+    ]
+  },
+  "verdict_classe": "S+ (compatible) — confondant convergent levé à cette échelle",
+  "falsifieur": "> 3 raies hors loi parmi les 147 (réfutation publiée au même titre)",
+  "suite_declaree": "intensités (structure factors) ; Al-Pd-Mn 185 raies (accès documentaire)",
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": true,
+  "V5": true,
+  "criteres": {
+    "V1_epinglage_acquisition": true,
+    "V2_module_147": true,
+    "V3_confondant_mort": true,
+    "V4_coherences": true,
+    "V5_gouvernance": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 0.01,
+  "sha256_script": "690f4d191cd41515c61d6ae759b185659de55a77059e30f839ef731323dc61a8"
+}
