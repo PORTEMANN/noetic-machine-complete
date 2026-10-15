@@ -154,7 +154,7 @@ Legendre.
 | C1 — tarif, carte d'attente | macro | faible | carte à sceller | **1er** (dépendance déclarée) |
 | E2 — cristal photonique Fibonacci | méso | faible | succès probable | 2 |
 | E1 — quasicristal réel (Al-Mn-Pd) | méso | moyen | verdict honnête | 3 (premier externe) |
-| M1 — rapports de masses ν | micro | faible | succès (interne) | 4 |
+| ~~M1 — rapports de masses ν~~ → **T30** (5/5 : plancher prédit, rapports libres, non dorés) | micro | faible | **publié** | 4 ✓ |
 | E3 — phyllotaxie | méso | moyen | verdict honnête | 5 |
 | C3 — Bode à nul honnête | macro | faible | dormeur probable | 6 (démonstration méthode) |
 | C2 — genre du CMB | macro | élevé | succès possible | 7 |

@@ -1,0 +1,65 @@
+{
+  "chantier": "T30-Q-KO6-TEXTURE-2026-10",
+  "protocole": "T30-KO6-TEXTURE-1.0 (gelé)",
+  "mode": "RUN LOCAL — publication en attente du feu vert de l'auteur",
+  "objet": "la texture à deux saveurs : le plank 59 meV est prédit (rang 2), le rapport de masses ne l'est pas — et le rapport n'est pas doré",
+  "statut_du_mot": "CARTOGRAPHIE interne — résultat partiellement négatif publié au même titre",
+  "mesures": {
+    "m2_mev": 8.654478609367523,
+    "m3_mev": 50.33885179461287,
+    "somme_mev": 58.993330403980394,
+    "variete": [
+      {
+        "M_R": 1.0,
+        "y1": 50.83639298568116,
+        "y2": 9.140813892064948,
+        "rapport": 5.561473363965077
+      },
+      {
+        "M_R": 10.0,
+        "y1": 55.11250781761004,
+        "y2": 12.706092479345209,
+        "rapport": 4.337486753476721
+      },
+      {
+        "M_R": 100.0,
+        "y1": 86.99359274947372,
+        "y2": 30.665091895129738,
+        "rapport": 2.836893267660161
+      },
+      {
+        "M_R": 1000.0,
+        "y1": 229.94097458829054,
+        "y2": 93.43114368007876,
+        "rapport": 2.461074172180108
+      },
+      {
+        "M_R": 1000000.0,
+        "y1": 7095.166368353379,
+        "y2": 2941.8622519362666,
+        "rapport": 2.4117942176536316
+      }
+    ],
+    "asymptote_seesaw": 2.4117942176536316,
+    "rapport_m3_sur_m2": 2.411743952594987
+  },
+  "reponse_a_la_question_unique": "NON — la texture rang-2 ne prédit pas le rapport m₃/m₂ : les splittings fixent une famille à un paramètre (y₁/y₂ ∈ [2,41 ; 5,56]) dont l'asymptote 2,4117 n'est pas dorée. Le plank 59 meV tient sur m₁ = 0 exact (rang 2), pas sur l'arithmétique dorée — le point φ de la chaîne est une convention d'unité (leçon T23).",
+  "verdict_classe": "S+ (plancher prédit, dette quantifiée, fait négatif publié)",
+  "falsifieur": "m₁ ≠ 0 mesuré (tue le plank et la texture) ; rapport constant mesuré (tuerait F3)",
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": true,
+  "V5": true,
+  "criteres": {
+    "V1_regressions_T14_T16": true,
+    "V2_plancher_predi": true,
+    "V3_variete_un_parametre": true,
+    "V4_asymptote_pas_doree": true,
+    "V5_leviers_gouvernance": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 0.0,
+  "sha256_script": "57e8835bbef03b35acf28df8027648c868565b0feaa11ea7f4980668ae004836"
+}
