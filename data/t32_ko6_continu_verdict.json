@@ -1,0 +1,77 @@
+{
+  "chantier": "T32-Q-KO6-CONTINU-2026-10",
+  "protocole": "T32-KO6-CONTINU-1.0 (gelé)",
+  "mode": "RUN LOCAL — publication en attente du feu vert de l'auteur",
+  "objet": "le pont 1 scellé : le PDF CTFT (théorie continue) face à la machine — pierre de pont exacte, table classée honnêtement, nul exhaustif",
+  "pont_discret_continu": true,
+  "statut_du_mot": "PONT — verdict par item, jamais global « vrai »",
+  "source": {
+    "pdf_ctft": "Champs_Topologiques_Continus-CTFT.pdf (2025)",
+    "sha256": "54564e033ee550c51d7ca623436df3aca77a02443b814794f42a34c894e66ba7",
+    "valeurs_standard": "constantes publiques PDG/Planck/NASA (pinning plus faible déclaré)"
+  },
+  "mesures": {
+    "N_baryon": 18,
+    "gamma_geom_requis": 0.04263789951101599,
+    "taille_famille_nul": 222,
+    "hits_me": 2,
+    "hits_mu": 0
+  },
+  "table3_classification": [
+    {
+      "item": "m_e (Eq. 6)",
+      "pred": 0.519,
+      "std": 0.510999,
+      "statut": "1,6 % — DETTE : Γ_geom requis = 0.04264 non dérivé du texte (paramètre caché)"
+    },
+    {
+      "item": "m_u",
+      "pred": 2.226,
+      "std": 2.16,
+      "statut": "dans les erreurs PDG (±0,4)"
+    },
+    {
+      "item": "H0",
+      "pred": 68.2,
+      "std": 67.4,
+      "statut": "1,6σ (Planck ±0,5)"
+    },
+    {
+      "item": "S8",
+      "pred": 0.795,
+      "std": 0.834,
+      "statut": "≈ 2σ vs Planck — note : la tension S8 est réelle dans le champ (DESI 2025 ~ 0,79)"
+    },
+    {
+      "item": "angle magique",
+      "pred": 0.676,
+      "std": 1.1,
+      "statut": "≈ 40 % d'écart — publié tel quel"
+    },
+    {
+      "item": "7,83 Hz",
+      "pred": 7.83,
+      "std": 7.83,
+      "statut": "ordre de grandeur (résonance Schumann)"
+    }
+  ],
+  "verdict_classe": "S+ (pont posé : N=18 exact ; table mixte classée honnêtement ; dette Γ_geom publiée)",
+  "falsifieur": "N ≠ 18 pour l'icosaèdre (réfutation immédiate) ; Γ_geom jamais dérivé (dette ouverte)",
+  "suites_declarees": "pont 2 (2^1/12 vs AME2020) · pont 3 (entiers du continuum, corridor E) · pont 4 (jumeaux GR/tarif)",
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": true,
+  "V5": true,
+  "criteres": {
+    "V1_epinglage": true,
+    "V2_pierre_de_pont": true,
+    "V3_table_classee": true,
+    "V4_nul_exhaustif": true,
+    "V5_gouvernance": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 0.0,
+  "sha256_script": "e8dcd80800e4993b5594ad8709045721867772d6a649116b36ad64a1071ecab7"
+}
