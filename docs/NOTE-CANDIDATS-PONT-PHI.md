@@ -207,3 +207,20 @@ verdict au même niveau de titre, succès ou B3-FAIL.*
 
 **Prochaine session : T36 d'abord (la zone grise mérite sa carte),
 puis l'alignement du registre.**
+
+---
+
+## 7. Addendum du 16/10/2026 (après-midi) — la doctrine du continu
+
+La doctrine consolidée : [NOTE-DOCTRINE-CONTINU.md](NOTE-DOCTRINE-CONTINU.md)
+(cinq piliers : invariants d'abord ; persistance native ; espace dual ;
+flux de coupure ; check-list des confondants cinématiques — chaque modèle
+continu = modèle effectif déclaré). Programme inscrit :
+
+| Chantier | Statut |
+|---|---|
+| CP1 — homologie persistante des champs T34 (barcodes → entiers) | **T37 — attaqué** |
+| CP2 — atlas du flux de coupure (ko6) | carnet |
+| CP3 — taxonomie de Reynolds (grille CTFT) | carnet |
+| CP4 — check-list des confondants cinématiques (gouvernance) | carnet |
+| CP5 — charge de Hopf 3D | carnet |
