@@ -1,0 +1,39 @@
+{
+  "chantier": "T37-Q-KO6-PERSIST-2026-10",
+  "protocole": "T37-KO6-PERSIST-1.0 (gelé)",
+  "mode": "RUN LOCAL — publication en attente du feu vert de l'auteur",
+  "objet": "CP1 : les entiers robustes du continu — homologie persistante des champs 2D (barcodes)",
+  "doctrine": "NOTE-DOCTRINE-CONTINU.md, pilier 2",
+  "statut_du_mot": "INSTRUMENT — théorème interne, aucune prédiction d'expérience",
+  "mesures": {
+    "variabilite_temporelle_persist": 3,
+    "variabilite_seuil_T34": 6,
+    "n_persist_64": 19,
+    "n_persist_128": 19,
+    "comptes_seuil_64": 15,
+    "comptes_seuil_128": 11,
+    "barres_sig_reelles": 17,
+    "barres_sig_nul": 215,
+    "fraction_courtes_Euler": 0.8934513274336283,
+    "fraction_courtes_nu": 0.9368658399098083
+  },
+  "verdict_classe": "S+ (la promesse T34-D3 tenue : entiers stables en seuil et en résolution, code-barres séparant signal et cascade)",
+  "falsifieur": "N_persist instable en ε ; synthétique mal résolu",
+  "suites_declarees": "CP2 (flux de coupure) ; CP5 (Hopf 3D)",
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": true,
+  "V5": true,
+  "criteres": {
+    "V1_justesse_filiation": true,
+    "V2_stabilite_seuil": true,
+    "V3_stabilite_resolution": true,
+    "V4_leviers": true,
+    "V5_gouvernance": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 78.35,
+  "sha256_script": "a2327c395bfdc02b8f9fabc0ba3719f1a5ba14488711f1ea45cdcd138a664935"
+}
