@@ -219,7 +219,7 @@ continu = modèle effectif déclaré). Programme inscrit :
 
 | Chantier | Statut |
 |---|---|
-| CP1 — homologie persistante des champs T34 (barcodes → entiers) | **T37 — attaqué** |
+| ~~CP1 — homologie persistante~~ → **T37 PUBLIÉE (5/5 : stabilité temps + résolution (écart 0), séparation signal/cascade)** |
 | CP2 — atlas du flux de coupure (ko6) | carnet |
 | CP3 — taxonomie de Reynolds (grille CTFT) | carnet |
 | CP4 — check-list des confondants cinématiques (gouvernance) | carnet |
