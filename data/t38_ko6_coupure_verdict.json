@@ -1,0 +1,70 @@
+{
+  "chantier": "T38-Q-KO6-COUPURE-2026-10",
+  "protocole": "T38-KO6-COUPURE-1.0 (gelé)",
+  "mode": "RUN LOCAL — publication en attente du feu vert de l'auteur",
+  "objet": "CP2 : le flux de coupure — l'entier persistant est un point fixe (32 → 256), le compte de seuil coule",
+  "doctrine": "NOTE-DOCTRINE-CONTINU.md, pilier 4",
+  "statut_du_mot": "ATLAS — première entrée ; théorème interne",
+  "mesures": {
+    "flux_persistant": {
+      "32": 17,
+      "64": 19,
+      "128": 19
+    },
+    "flux_seuil": {
+      "32": 12,
+      "64": 15,
+      "128": 11
+    },
+    "courbes_eps": {
+      "32": [
+        45,
+        26,
+        17,
+        17,
+        12,
+        9,
+        7
+      ],
+      "64": [
+        29,
+        22,
+        19,
+        18,
+        14,
+        11,
+        8
+      ],
+      "128": [
+        25,
+        21,
+        19,
+        18,
+        13,
+        10,
+        7
+      ]
+    },
+    "n_persist_Euler_128": 24,
+    "n_persist_melange_128": 2909
+  },
+  "verdict_classe": "S+ (point fixe mesuré : l'entier persistant est invariant de coupure ; le seuil coule — l'atlas a sa première entrée)",
+  "falsifieur": "N_persist instable en L (promesse T37 brisée)",
+  "suites_declarees": "CP3 (taxonomie de Reynolds — le flux est régime-dépendant, mesuré au levier ν) ; CP4 (check-list)",
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": true,
+  "V5": true,
+  "criteres": {
+    "V1_instruments": true,
+    "V2_point_fixe": true,
+    "V3_contraste_seuil": true,
+    "V4_leviers": true,
+    "V5_gouvernance": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 74.68,
+  "sha256_script": "d2a4d0b4b3713dd0e022c86f7653df7c856b21c9ea68f2595c460ed4cc6f6dbb"
+}
