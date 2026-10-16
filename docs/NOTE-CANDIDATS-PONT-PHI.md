@@ -183,7 +183,7 @@ verdict au même niveau de titre, succès ou B3-FAIL.*
 
 **Pistes trouvées dans la relève du matin (site + index) :**
 
-1. **T36 candidate — « la suite ANU originale » (la plus mûre).** La
+1. ~~**T36 candidate — « la suite ANU originale »**~~ → **T36 PUBLIÉE (16/10, 5/5) : la zone grise est close côté source** — moyenne télescopique (0,233 %, informationnellement vide) ; modèle harmonique réel à R² = 0,81 (p < 10⁻⁴) vs 0,993 publié (instrument pré-correction). Dataset : `data/anu_ntech_92_elements.json`. La
    zone grise de T33 testait le mauvais observable : la prédiction
    originale (La Musique des Atomes I, 23/02/2025) porte sur la
    **suite ANU de Crookes** (nucléides stables : 18, 72, 127, 164,

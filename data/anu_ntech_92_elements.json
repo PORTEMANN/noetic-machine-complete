@@ -1,0 +1,466 @@
+{
+ "source": "https://techniques.histoire-des-sciences.eu/anu.php",
+ "sha256": "2c066f9f18c03fdb4e285ec679d68f4c7c3c8014961f61fa31941dbc56661d89",
+ "suite": [
+  {
+   "Z": 1,
+   "element": "Hydrogène (H)",
+   "N_ANU": 18
+  },
+  {
+   "Z": 2,
+   "element": "Hélium (He)",
+   "N_ANU": 72
+  },
+  {
+   "Z": 3,
+   "element": "Lithium (Li)",
+   "N_ANU": 127
+  },
+  {
+   "Z": 4,
+   "element": "Béryllium (Be)",
+   "N_ANU": 164
+  },
+  {
+   "Z": 5,
+   "element": "Bore (B)",
+   "N_ANU": 200
+  },
+  {
+   "Z": 6,
+   "element": "Carbone (C)",
+   "N_ANU": 216
+  },
+  {
+   "Z": 7,
+   "element": "Azote (N)",
+   "N_ANU": 261
+  },
+  {
+   "Z": 8,
+   "element": "Oxygène (O)",
+   "N_ANU": 290
+  },
+  {
+   "Z": 9,
+   "element": "Fluor (F)",
+   "N_ANU": 340
+  },
+  {
+   "Z": 10,
+   "element": "Néon (Ne)",
+   "N_ANU": 360
+  },
+  {
+   "Z": 11,
+   "element": "Sodium (Na)",
+   "N_ANU": 418
+  },
+  {
+   "Z": 12,
+   "element": "Magnésium (Mg)",
+   "N_ANU": 432
+  },
+  {
+   "Z": 13,
+   "element": "Aluminium (Al)",
+   "N_ANU": 486
+  },
+  {
+   "Z": 14,
+   "element": "Silicium (Si)",
+   "N_ANU": 520
+  },
+  {
+   "Z": 15,
+   "element": "Phosphore (P)",
+   "N_ANU": 558
+  },
+  {
+   "Z": 16,
+   "element": "Soufre (S)",
+   "N_ANU": 576
+  },
+  {
+   "Z": 17,
+   "element": "Chlore (Cl)",
+   "N_ANU": 639
+  },
+  {
+   "Z": 18,
+   "element": "Argon (Ar)",
+   "N_ANU": 714
+  },
+  {
+   "Z": 19,
+   "element": "Potassium (K)",
+   "N_ANU": 701
+  },
+  {
+   "Z": 20,
+   "element": "Calcium (Ca)",
+   "N_ANU": 720
+  },
+  {
+   "Z": 21,
+   "element": "Scandium (Sc)",
+   "N_ANU": 792
+  },
+  {
+   "Z": 22,
+   "element": "Titane (Ti)",
+   "N_ANU": 864
+  },
+  {
+   "Z": 23,
+   "element": "Vanadium (V)",
+   "N_ANU": 918
+  },
+  {
+   "Z": 24,
+   "element": "Chrome (Cr)",
+   "N_ANU": 936
+  },
+  {
+   "Z": 25,
+   "element": "Manganèse (Mn)",
+   "N_ANU": 992
+  },
+  {
+   "Z": 26,
+   "element": "Fer (Fe)",
+   "N_ANU": 1008
+  },
+  {
+   "Z": 27,
+   "element": "Cobalt (Co)",
+   "N_ANU": 1036
+  },
+  {
+   "Z": 28,
+   "element": "Nickel (Ni)",
+   "N_ANU": 1064
+  },
+  {
+   "Z": 29,
+   "element": "Cuivre (Cu)",
+   "N_ANU": 1139
+  },
+  {
+   "Z": 30,
+   "element": "Zinc (Zn)",
+   "N_ANU": 1170
+  },
+  {
+   "Z": 31,
+   "element": "Gallium (Ga)",
+   "N_ANU": 1260
+  },
+  {
+   "Z": 32,
+   "element": "Germanium (Ge)",
+   "N_ANU": 1300
+  },
+  {
+   "Z": 33,
+   "element": "Arsenic (As)",
+   "N_ANU": 1350
+  },
+  {
+   "Z": 34,
+   "element": "Sélénium (Se)",
+   "N_ANU": 1422
+  },
+  {
+   "Z": 35,
+   "element": "Brome (Br)",
+   "N_ANU": 1439
+  },
+  {
+   "Z": 36,
+   "element": "Krypton (Kr)",
+   "N_ANU": 1464
+  },
+  {
+   "Z": 37,
+   "element": "Rubidium (Rb)",
+   "N_ANU": 1530
+  },
+  {
+   "Z": 38,
+   "element": "Strontium (Sr)",
+   "N_ANU": 1568
+  },
+  {
+   "Z": 39,
+   "element": "Yttrium (Y)",
+   "N_ANU": 1606
+  },
+  {
+   "Z": 40,
+   "element": "Zirconium (Zr)",
+   "N_ANU": 1624
+  },
+  {
+   "Z": 41,
+   "element": "Niobium (Nb)",
+   "N_ANU": 1719
+  },
+  {
+   "Z": 42,
+   "element": "Molybdène (Mo)",
+   "N_ANU": 1746
+  },
+  {
+   "Z": 43,
+   "element": "Technétium (Tc)",
+   "N_ANU": 1802
+  },
+  {
+   "Z": 44,
+   "element": "Ruthénium (Ru)",
+   "N_ANU": 1848
+  },
+  {
+   "Z": 45,
+   "element": "Rhodium (Rh)",
+   "N_ANU": 1876
+  },
+  {
+   "Z": 46,
+   "element": "Palladium (Pd)",
+   "N_ANU": 1904
+  },
+  {
+   "Z": 47,
+   "element": "Argent (Ag)",
+   "N_ANU": 1945
+  },
+  {
+   "Z": 48,
+   "element": "Cadmium (Cd)",
+   "N_ANU": 2016
+  },
+  {
+   "Z": 49,
+   "element": "Indium (In)",
+   "N_ANU": 2052
+  },
+  {
+   "Z": 50,
+   "element": "Étain (Sn)",
+   "N_ANU": 2124
+  },
+  {
+   "Z": 51,
+   "element": "Antimoine (Sb)",
+   "N_ANU": 2169
+  },
+  {
+   "Z": 52,
+   "element": "Tellure (Te)",
+   "N_ANU": 2223
+  },
+  {
+   "Z": 53,
+   "element": "Iode (I)",
+   "N_ANU": 2287
+  },
+  {
+   "Z": 54,
+   "element": "Xénon (Xe)",
+   "N_ANU": 2298
+  },
+  {
+   "Z": 55,
+   "element": "Césium (Cs)",
+   "N_ANU": 2376
+  },
+  {
+   "Z": 56,
+   "element": "Baryum (Ba)",
+   "N_ANU": 2455
+  },
+  {
+   "Z": 57,
+   "element": "Lanthane (La)",
+   "N_ANU": 2482
+  },
+  {
+   "Z": 58,
+   "element": "Cérium (Ce)",
+   "N_ANU": 2511
+  },
+  {
+   "Z": 59,
+   "element": "Praséodyme (Pr)",
+   "N_ANU": 2527
+  },
+  {
+   "Z": 60,
+   "element": "Néodyme (Nd)",
+   "N_ANU": 2575
+  },
+  {
+   "Z": 61,
+   "element": "Prométhium (Pm)",
+   "N_ANU": 2640
+  },
+  {
+   "Z": 62,
+   "element": "Samarium (Sm)",
+   "N_ANU": 2794
+  },
+  {
+   "Z": 63,
+   "element": "Europium (Eu)",
+   "N_ANU": 2843
+  },
+  {
+   "Z": 64,
+   "element": "Gadolinium (Gd)",
+   "N_ANU": 2880
+  },
+  {
+   "Z": 65,
+   "element": "Terbium (Tb)",
+   "N_ANU": 2916
+  },
+  {
+   "Z": 66,
+   "element": "Dysprosium (Dy)",
+   "N_ANU": 2979
+  },
+  {
+   "Z": 67,
+   "element": "Holmium (Ho)",
+   "N_ANU": 3004
+  },
+  {
+   "Z": 68,
+   "element": "Erbium (Er)",
+   "N_ANU": 3029
+  },
+  {
+   "Z": 69,
+   "element": "Thulium (Tm)",
+   "N_ANU": 3096
+  },
+  {
+   "Z": 70,
+   "element": "Ytterbium (Yb)",
+   "N_ANU": 3131
+  },
+  {
+   "Z": 71,
+   "element": "Lutécium (Lu)",
+   "N_ANU": 3171
+  },
+  {
+   "Z": 72,
+   "element": "Hafnium (Hf)",
+   "N_ANU": 3211
+  },
+  {
+   "Z": 73,
+   "element": "Tantale (Ta)",
+   "N_ANU": 3279
+  },
+  {
+   "Z": 74,
+   "element": "Tungstène (W)",
+   "N_ANU": 3299
+  },
+  {
+   "Z": 75,
+   "element": "Rhénium (Re)",
+   "N_ANU": 3368
+  },
+  {
+   "Z": 76,
+   "element": "Osmium (Os)",
+   "N_ANU": 3430
+  },
+  {
+   "Z": 77,
+   "element": "Iridium (Ir)",
+   "N_ANU": 3458
+  },
+  {
+   "Z": 78,
+   "element": "Platine (Pt)",
+   "N_ANU": 3486
+  },
+  {
+   "Z": 79,
+   "element": "Or (Au)",
+   "N_ANU": 3546
+  },
+  {
+   "Z": 80,
+   "element": "Mercure (Hg)",
+   "N_ANU": 3576
+  },
+  {
+   "Z": 81,
+   "element": "Thallium (Tl)",
+   "N_ANU": 3678
+  },
+  {
+   "Z": 82,
+   "element": "Plomb (Pb)",
+   "N_ANU": 3727
+  },
+  {
+   "Z": 83,
+   "element": "Bismuth (Bi)",
+   "N_ANU": 3753
+  },
+  {
+   "Z": 84,
+   "element": "Polonium (Po)",
+   "N_ANU": 3789
+  },
+  {
+   "Z": 85,
+   "element": "Astate (At)",
+   "N_ANU": 3978
+  },
+  {
+   "Z": 86,
+   "element": "Radon (Rn)",
+   "N_ANU": 3990
+  },
+  {
+   "Z": 87,
+   "element": "Francium (Fr)",
+   "N_ANU": 4006
+  },
+  {
+   "Z": 88,
+   "element": "Radium (Ra)",
+   "N_ANU": 4087
+  },
+  {
+   "Z": 89,
+   "element": "Actinium (Ac)",
+   "N_ANU": 4140
+  },
+  {
+   "Z": 90,
+   "element": "Thorium (Th)",
+   "N_ANU": 4187
+  },
+  {
+   "Z": 91,
+   "element": "Protactinium (Pa)",
+   "N_ANU": 4227
+  },
+  {
+   "Z": 92,
+   "element": "Uranium (U)",
+   "N_ANU": 4267
+  }
+ ]
+}

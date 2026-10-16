@@ -1,0 +1,60 @@
+{
+  "chantier": "T36-Q-KO6-SOURCE-2026-10",
+  "protocole": "T36-KO6-SOURCE-1.0 (gelé)",
+  "mode": "RUN LOCAL — publication en attente du feu vert de l'auteur",
+  "objet": "la moyenne épinglée : la prédiction originale 2^{1/12} (0,3 %) de la suite ANU se vérifie — et ne porte aucune information (produit télescopique)",
+  "confrontation_externe": true,
+  "dormeur": true,
+  "statut_du_mot": "CONFRONTATION EXTERNE — verdict S− : claim arithmétiquement vrai, informationnellement vide ; le vrai contenu est ailleurs",
+  "sources": {
+    "articles": {
+      "musique_I": "https://histoire-des-sciences.eu/la-musique-des-atomes-i/",
+      "musique_II": "https://histoire-des-sciences.eu/la-musique-des-atomes-ii/"
+    },
+    "images_sha256": {
+      "pendule": "96bb2080d4b26c53d62cce37cddbf10d7e357b7b5bf4b34d376d1f81e2ad85c0",
+      "analyse": "67cc3023f6b9a5fe49999524d0099b62e0cf0f2388d7a84eb8f0022a2a5370c9",
+      "table": "e9f7fca25f2938a0b461047ccf8366f53fb421d431666fbf2bd6e4652661caf7"
+    },
+    "valeurs_citées": {
+      "a1": 18,
+      "aN": 4267,
+      "n_rapports": 100,
+      "G_publie": "2^{1/12} à 0,3 % (figure d'analyse : ~ 0,0033)",
+      "modele": "R² = 0,993 ; harmoniques k = 6, 12, 24, 48"
+    }
+  },
+  "mesures": {
+    "G_reel": 1.0619333359024574,
+    "demi_ton": 1.0594630943592953,
+    "ecart_relatif": 0.002331597538709903,
+    "moyenne_arithmetique": 1.0818852881690115,
+    "fenetre_nul": [
+      150,
+      263
+    ],
+    "R2_harmonique": 0.8127874499443878,
+    "R2_publie": 0.993,
+    "p_harmonique": 0.0
+  },
+  "verdict_classe": "S− (dormeur à la source) : la moyenne est l'ombre télescopique de (a_N/a_1)^{1/100} — le modèle harmonique est la vraie prédiction, sa carte attend la suite complète",
+  "falsifieur": "G hors tolérance ; télescopage absent",
+  "acquisition": "suite ANU réelle obtenue (N-TECH, 92 éléments, empreinte 2c066f9f…) — acquisition référencée au verdict",
+  "suites_declarees": "alignement du registre canonique ; homologie persistante (T34) ; k(Z,N) revise",
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": true,
+  "V5": true,
+  "criteres": {
+    "V1_epinglage": true,
+    "V2_moyenne_verifiee": true,
+    "V3_telescopage": true,
+    "V4_nul_cinematique": true,
+    "V5_gouvernance": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 0.26,
+  "sha256_script": "1f5157ecc02b4002521bb281e0bdf0974161a76b77ceba048321181d3289dbfa"
+}
