@@ -173,3 +173,37 @@ sceller avant de traduire.*
 calcule pas et ne prétend pas. Toute campagne issue de cet inventaire
 citera ses conventions, scellera sa fiche avant run, et publiera son
 verdict au même niveau de titre, succès ou B3-FAIL.*
+
+---
+
+## 6. Addendum du 16/10/2026 (matin) — après les ponts T32–T35
+
+**Ponts scellés (T32–T35)** : le bilan complet est dans
+[NOTE-BILAN-PONTS-CONTINU.md](NOTE-BILAN-PONTS-CONTINU.md).
+
+**Pistes trouvées dans la relève du matin (site + index) :**
+
+1. **T36 candidate — « la suite ANU originale » (la plus mûre).** La
+   zone grise de T33 testait le mauvais observable : la prédiction
+   originale (La Musique des Atomes I, 23/02/2025) porte sur la
+   **suite ANU de Crookes** (nucléides stables : 18, 72, 127, 164,
+   200, 216, 261, 290, 340, 360, …) dont la moyenne des rapports
+   vaudrait 2^{1/12} à 0,3 %. L'auteur a lui-même corrigé son
+   instrument dans la partie II (isotopes instables retirés — la
+   même leçon que T34-D1). Sources à épingler : les deux articles +
+   transcription déclarée de la suite ; nul : cinématique à
+   incréments (T33) + nullité du hasard. **C'est la carte qui peut
+   lever la zone grise.**
+2. **Alignement du registre canonique (boucle point 7).** Le relevé
+   d'index.portemann.eu date du 07/09/2026 : toute la série T5–T35
+   (pont φ + ponts discret/continu) y est absente. Tâche de
+   gouvernance : inscrire les entrées (une valeur = une source
+   unique).
+3. **P50** (quantification de Hall par invariants ASH) : reportée,
+   critère à geler avant tout run — carte candidate directe.
+4. **Entrée « Pont ANU ↔ nucléides »** du registre (écart-mètre
+   RMS 1,42 %, médiane 0,04 % — pas un morphisme) : à recouper
+   avec T32/T36.
+
+**Prochaine session : T36 d'abord (la zone grise mérite sa carte),
+puis l'alignement du registre.**
