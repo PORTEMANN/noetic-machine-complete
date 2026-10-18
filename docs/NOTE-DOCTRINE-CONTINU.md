@@ -1,10 +1,12 @@
 # Note de doctrine — la modélisation du monde continu
 
-**Date :** 2026-10-16 · **Tiroir : carnet** (doctrine proposée par la
+**Date :** 2026-10-16 (amendée le 2026-10-18 : pilier 6 proposé, voir
+docs/NOTE-PILIER6-ENTIERS-TOPOLOGIQUES.md — adoption en attente) · **Tiroir : carnet** (doctrine proposée par la
 synthèse des campagnes T31–T36 ; rien de scellé ; chaque pilier devient
 chantier au carnet). **Filiation :** T31/T33/T36 (l'ordre cinématique
 bon marché) · T34 (entiers de coupure) · T32 (le continu emprunte au
-discret) · T29 (l'espace dual) · T35 (le jumeau effectif).
+discret) · T29 (l'espace dual) · T35 (le jumeau effectif) · T41
+(l'entier topologique mesuré).
 
 ---
 
@@ -22,7 +24,7 @@ Le continu résiste parce qu'il fabrique de l'ordre pour rien :
    discret-importé (N = 18 de l'icosaèdre, T32 ; module m + nφ en espace
    réciproque, T27/T28).
 
-## 2. L'approche : cinq piliers
+## 2. L'approche : cinq piliers (six avec l'amendement proposé)
 
 1. **Invariants d'abord, lois ensuite** — lire le continu par ce qui
    survit à la déformation (circulation, hélicité, persistance) :
@@ -37,6 +39,15 @@ Le continu résiste parce qu'il fabrique de l'ordre pour rien :
 5. **Check-list des confondants cinématiques, obligatoire en fiche** —
    extrémités, incréments, coupure, convergents : déclarés avant run,
    comme le nul honnête.
+6. *(proposé le 18/10/2026 — non adopté à ce jour)* **Les entiers
+   topologiques comme signature première** — le continu signe par des
+   entiers (hélicité, degrés, enlacements), comme le discret signe par
+   φ ; un invariant topologique mesuré est un verdict, pas une
+   approximation ; le signe est fixé par l'orientation du monde, non de
+   la cible (T41-D2) ; la protection topologique a un levier :
+   déformation douce sans effet, destruction du noyau = chute (T41-F5)
+   — déclarer l'invariant candidat en fiche, comme la check-list (T40).
+   Texte et enjeux : docs/NOTE-PILIER6-ENTIERS-TOPOLOGIQUES.md.
 
 Garde-fou fondateur (T35) : tout modèle continu est un **modèle
 effectif** — régime de validité déclaré, coupure datée, falsifieur
@@ -44,17 +55,22 @@ attaché.
 
 ## 3. Le programme (carnet CP1–CP5)
 
-| Chantier | Contenu | Filiation |
-|---|---|---|
-| **CP1** | Homologie persistante des champs T34 : barcodes → régressions entières (l'upgrade instrument) | T34, T17 |
-| **CP2** | Atlas du flux de coupure : invariants vs résolution (NS, Helmholtz, KdV — ko6) | T34, ko6 |
-| **CP3** | Taxonomie de Reynolds (≫ 1 micro / ≪ 1 cosmo / ~ 1 bio — grille CTFT) | CTFT, corridor E |
-| **CP4** | Check-list des confondants cinématiques (gouvernance des fiches continues) | T31, T33, T36 |
-| **CP5** | Charge de Hopf 3D (entier topologique du corridor E en simulation) | E44, ko6 |
+| Chantier | Contenu | Filiation | Statut |
+|---|---|---|---|
+| **CP1** | Homologie persistante des champs T34 : barcodes → régressions entières (l'upgrade instrument) | T34, T17 | **T37 publiée (5/5)** |
+| **CP2** | Atlas du flux de coupure : invariants vs résolution (NS, Helmholtz, KdV — ko6) | T34, ko6 | **T38 publiée (5/5)** |
+| **CP3** | Taxonomie de Reynolds (≫ 1 micro / ≪ 1 cosmo / ~ 1 bio — grille CTFT) | CTFT, corridor E | **T39 publiée (5/5, sans errata)** |
+| **CP4** | Check-list des confondants cinématiques (gouvernance des fiches continues) | T31, T33, T36 | **T40 publiée (5/5)** |
+| **CP5** | Charge de Hopf 3D (entier topologique du corridor E en simulation) | E44, ko6 | **T41 publiée (5/5)** |
+
+Carnet bouclé le 18/10/2026. Suite proposée : T42 — la charge de Hopf
+*dynamique* sur le corridor E44 (Q(t), reconnexions = sauts d'entier),
+prolongeant la carte T41 de la condition initiale vers la dynamique.
 
 ## 4. La phrase de synthèse
 
 *On n'améliore pas la modélisation du continu en ajoutant des lois,
 mais en montant l'échelle de lecture — invariants, dualité, coupure,
-persistance — jusqu'à ce que le continu redevienne discret par
-endroits, et en ne croyant ces endroits qu'après le nul cinématique.*
+persistance, entiers topologiques — jusqu'à ce que le continu redevienne
+discret par endroits, et en ne croyant ces endroits qu'après le nul
+cinématique.*
