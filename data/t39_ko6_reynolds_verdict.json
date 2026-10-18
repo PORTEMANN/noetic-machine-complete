@@ -1,0 +1,69 @@
+{
+  "chantier": "T39-Q-KO6-REYNOLDS-2026-10",
+  "protocole": "T39-KO6-REYNOLDS-1.0 (gelé)",
+  "mode": "RUN LOCAL — publication en attente du feu vert de l'auteur",
+  "objet": "CP3 : la taxonomie de Reynolds — classes de régime mesurées sur l'axe de viscosité ; la grille CTFT se projette ; la correspondance physique reste déclarée",
+  "doctrine": "NOTE-DOCTRINE-CONTINU.md, CP3",
+  "statut_du_mot": "ATLAS — deuxième entrée ; la physique micro/cosmo/bio = convention datée, non mesurée",
+  "mesures": {
+    "signatures": {
+      "0.0": {
+        "n_persist": 20,
+        "courtes": 0.9200913242009132,
+        "barres_moy": 0.0737913086883563,
+        "energie_debut_fin": 0.9999999999999314
+      },
+      "0.0001": {
+        "n_persist": 20,
+        "courtes": 0.9064039408866995,
+        "barres_moy": 0.07785734549181118,
+        "energie_debut_fin": 0.9901226610536058
+      },
+      "0.0004": {
+        "n_persist": 18,
+        "courtes": 0.9178082191780822,
+        "barres_moy": 0.10756751352162527,
+        "energie_debut_fin": 0.9646260676309403
+      },
+      "0.002": {
+        "n_persist": 14,
+        "courtes": 0.8774509803921569,
+        "barres_moy": 0.15865739203222678,
+        "energie_debut_fin": 0.8702972350989596
+      },
+      "0.01": {
+        "n_persist": 8,
+        "courtes": 0.6078431372549019,
+        "barres_moy": 0.3634724613188424,
+        "energie_debut_fin": 0.6452942711715872
+      }
+    },
+    "re_eff": {
+      "0.0": "inf",
+      "0.0001": 588373.0965923473,
+      "0.0004": 147093.2741480868,
+      "0.002": 29418.654829617368,
+      "0.01": 5883.730965923473
+    },
+    "empreinte_cache": "bd1736688dc700fbe9ab52cce5f3937e8dd1b81d2decb1a661f140569aaa6bd1"
+  },
+  "verdict_classe": "S+ (les classes existent et diffèrent ; un crossover est mesuré ; la grille CTFT se projette sur l'axe mesuré)",
+  "falsifieur": "signatures identiques entre régimes",
+  "suites_declarees": "CP4 (check-list) ; CP5 (Hopf 3D) ; l'extension 256 du flux (T38-D1)",
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": true,
+  "V5": true,
+  "criteres": {
+    "V1_cache_filiation": true,
+    "V2_classes": true,
+    "V3_transition": true,
+    "V4_leviers": true,
+    "V5_gouvernance": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 1.14,
+  "sha256_script": "565ce7e49bc36ce62becc4c7a7b8c911fca4dc3001d6aa3eef57b8a389be04cc"
+}
