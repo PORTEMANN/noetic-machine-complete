@@ -1,0 +1,56 @@
+{
+  "chantier": "T41-Q-KO6-HOPF-2026-10",
+  "protocole": "T41-KO6-HOPF-1.0 (gelé)",
+  "mode": "RUN LOCAL — publication en attente du feu vert de l'auteur",
+  "objet": "CP5 : la charge de Hopf 3D — l'entier topologique du monde continu, mesuré par hélicité spectrale sur l'hopfion standard (stéréographique + application de Hopf)",
+  "doctrine": "docs/NOTE-CANDIDATS-PONT-PHI.md (CP5) ; NOTE-DOCTRINE-CONTINU.md",
+  "statut_du_mot": "MESURE — « topologique » invoqué après le verdict",
+  "configuration": {
+    "N": 128,
+    "L": 16.0,
+    "dx": 0.125,
+    "hélicité": "Q = ∫ A·B d³x, B = ∇×A, jauge de Coulomb spectrale"
+  },
+  "mesures": {
+    "dev_unitarite_max": 6.661338147750939e-16,
+    "Q_hopfion": 0.999808,
+    "Q_miroir": -0.999808,
+    "Q_conjugue": 0.999808,
+    "Q_trivial": 0.0,
+    "vent_fibre": -1.0,
+    "vent_fibre_miroir": 1.0,
+    "divB_bulk_max": 0.008550051676414372,
+    "divB_ratio_bulk_sur_Bmax": 0.006719056405615888,
+    "divB_global_max": 0.051086669320533,
+    "B_max": 1.27250779875402,
+    "levier_courbe_Q_kc": {
+      "1.5": 0.007907,
+      "2.0": 0.059314,
+      "3.0": 0.363389,
+      "4.0": 0.999995,
+      "6.0": 1.0,
+      "9.0": 1.0,
+      "14.0": 0.999997
+    },
+    "Q_resolution_96": 0.999807
+  },
+  "verdict_classe": "S+ (entier topologique du continu mesuré : |Q| = 1, signe renversé par miroir du domaine, conservé par conjugaison de la cible, nul au trivial, levier spectral détecté — le continu signe par des entiers, comme le discret signe par φ)",
+  "falsifieur": "|Q| non entier à tolérance ; miroir sans renversement ; conjugaison de la cible modifiant Q ; trivial non nul ; filtrage fort sans chute de |Q|",
+  "suites_declarees": "carnet CP1–CP5 bouclé ; proposition : pilier 6 de la doctrine continue (les entiers topologiques comme signature du continu) ; consolidation du carnet",
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": true,
+  "V5": true,
+  "criteres": {
+    "V1_unitarite": true,
+    "V2_sans_monopole_bulk": true,
+    "V3_entier_topologique": true,
+    "V4_symetries": true,
+    "V5_levier_spectral": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 40.17,
+  "sha256_script": "6ed8471416ecc17bce02c34dd60d97a60570f00b5674882bf654293e6c4aebac"
+}
