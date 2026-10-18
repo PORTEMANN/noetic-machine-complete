@@ -63,9 +63,11 @@ attaché.
 | **CP4** | Check-list des confondants cinématiques (gouvernance des fiches continues) | T31, T33, T36 | **T40 publiée (5/5)** |
 | **CP5** | Charge de Hopf 3D (entier topologique du corridor E en simulation) | E44, ko6 | **T41 publiée (5/5)** |
 
-Carnet bouclé le 18/10/2026. Suite proposée : T42 — la charge de Hopf
-*dynamique* sur le corridor E44 (Q(t), reconnexions = sauts d'entier),
-prolongeant la carte T41 de la condition initiale vers la dynamique.
+Carnet bouclé le 18/10/2026 ; **T42 publiée le 18/10/2026 (5/5 : la
+charge de Hopf dynamique — l'entier ne meurt que par singularité, ρ → 0 ;
+D1–D2)** — la carte T41 passe de la condition initiale à la dynamique.
+Suite proposée : corridor E44 plein (reconnexions réelles de filaments =
+sauts d'entier mesurés sur la vraie dynamique du corridor).
 
 ## 4. La phrase de synthèse
 

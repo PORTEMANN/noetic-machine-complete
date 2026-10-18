@@ -1,0 +1,267 @@
+{
+  "chantier": "T42-Q-KO6-HOPFDYN-2026-10",
+  "protocole": "T42-KO6-HOPFDYN-1.2 (gelé)",
+  "mode": "RUN LOCAL — publication en attente du feu vert de l'auteur",
+  "objet": "T42 : la charge de Hopf dynamique — Q(t) d'un hopfion plongé dans un condensat de Gross-Pitaevskii à deux composantes (pseudo-spin), flot du corridor E (propagateur E44), machinerie d'hélicité T41 — la mort de l'entier exige une singularité (zéro de ρ)",
+  "doctrine": "NOTE-DOCTRINE-CONTINU.md (T42 proposé) ; NOTE-PILIER6-ENTIERS-TOPOLOGIQUES.md",
+  "statut_du_mot": "MESURE — « conservation topologique » invoquée après le verdict",
+  "configuration": {
+    "N": 96,
+    "L": 12.0,
+    "dx": 0.125,
+    "A1": 1.0,
+    "dt": 0.025,
+    "runs": {
+      "hamiltonien": {
+        "A2": 1.0,
+        "gamma": 0.0,
+        "Omega": 0.0
+      },
+      "dissipation": {
+        "A2": 1.0,
+        "gamma": 0.6,
+        "Omega": 0.0
+      },
+      "rabi": {
+        "A2": 1.0,
+        "gamma": 0.0,
+        "Omega": 1.0
+      },
+      "masses_A2_6": {
+        "A2": 6.0,
+        "gamma": 0.3,
+        "Omega": 0.0
+      }
+    }
+  },
+  "mesures": {
+    "dev_rho_initial": 6.661338147750939e-16,
+    "dev_unitarite_spin": 5.551115123125783e-16,
+    "Q_initial": 0.998742,
+    "derive_max_hamiltonien": 0.00114,
+    "derive_max_dissipation_seule": 0.00126,
+    "derive_max_rabi_seul": 0.00114,
+    "Q_masses_A2_6": [
+      0.99874,
+      0.99993,
+      0.99999,
+      1.0,
+      1.0,
+      0.99999,
+      0.99992,
+      0.99963,
+      0.99851,
+      0.99463,
+      0.98275,
+      0.95115,
+      0.88107,
+      0.75933,
+      0.60521,
+      0.45891,
+      0.3397,
+      0.23886,
+      0.15783,
+      0.09942,
+      0.06136,
+      0.03769,
+      0.02317,
+      0.01427,
+      0.0088
+    ],
+    "rho_min_masses_A2_6": [
+      1.0,
+      0.7693,
+      0.6581,
+      0.5448,
+      0.4528,
+      0.3796,
+      0.3194,
+      0.2592,
+      0.2081,
+      0.1668,
+      0.1202,
+      0.0823,
+      0.0571,
+      0.0269,
+      0.0093,
+      0.009,
+      0.0032,
+      0.0157,
+      0.0445,
+      0.0695,
+      0.1087,
+      0.157,
+      0.2057,
+      0.2539,
+      0.303
+    ],
+    "rho_min_hors_singularite": 0.7787,
+    "trajectoires": {
+      "hamiltonien": {
+        "A2": 1.0,
+        "gamma": 0.0,
+        "Omega": 0.0,
+        "t": [
+          0.0,
+          1.0,
+          2.0
+        ],
+        "Q": [
+          0.99874,
+          0.99988,
+          0.99979
+        ],
+        "rho_min": [
+          1.0,
+          0.7787,
+          0.7993
+        ]
+      },
+      "dissipation": {
+        "A2": 1.0,
+        "gamma": 0.6,
+        "Omega": 0.0,
+        "t": [
+          0.0,
+          1.0,
+          2.0
+        ],
+        "Q": [
+          0.99874,
+          1.0,
+          1.0
+        ],
+        "rho_min": [
+          1.0,
+          0.8653,
+          0.8226
+        ]
+      },
+      "rabi": {
+        "A2": 1.0,
+        "gamma": 0.0,
+        "Omega": 1.0,
+        "t": [
+          0.0,
+          1.0,
+          2.0
+        ],
+        "Q": [
+          0.99874,
+          0.99988,
+          0.99979
+        ],
+        "rho_min": [
+          1.0,
+          0.7787,
+          0.7993
+        ]
+      },
+      "masses_A2_6": {
+        "A2": 6.0,
+        "gamma": 0.3,
+        "Omega": 0.0,
+        "t": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0,
+          1.25,
+          1.5,
+          1.75,
+          2.0,
+          2.25,
+          2.5,
+          2.75,
+          3.0,
+          3.25,
+          3.5,
+          3.75,
+          4.0,
+          4.25,
+          4.5,
+          4.75,
+          5.0,
+          5.25,
+          5.5,
+          5.75,
+          6.0
+        ],
+        "Q": [
+          0.99874,
+          0.99993,
+          0.99999,
+          1.0,
+          1.0,
+          0.99999,
+          0.99992,
+          0.99963,
+          0.99851,
+          0.99463,
+          0.98275,
+          0.95115,
+          0.88107,
+          0.75933,
+          0.60521,
+          0.45891,
+          0.3397,
+          0.23886,
+          0.15783,
+          0.09942,
+          0.06136,
+          0.03769,
+          0.02317,
+          0.01427,
+          0.0088
+        ],
+        "rho_min": [
+          1.0,
+          0.7693,
+          0.6581,
+          0.5448,
+          0.4528,
+          0.3796,
+          0.3194,
+          0.2592,
+          0.2081,
+          0.1668,
+          0.1202,
+          0.0823,
+          0.0571,
+          0.0269,
+          0.0093,
+          0.009,
+          0.0032,
+          0.0157,
+          0.0445,
+          0.0695,
+          0.1087,
+          0.157,
+          0.2057,
+          0.2539,
+          0.303
+        ]
+      }
+    }
+  },
+  "verdict_classe": "S+ (première trajectoire d'entier topologique : Q(t) conservée sous flux hamiltonien, déformation Rabi et dissipation seule — mort uniquement par singularité, ρ → 0, transit non entier mesuré : la topologie se conserve lisse et se brise en un point)",
+  "falsifieur": "Q(0) non entier ; dérive sous γ = 0 ; mort de Q sans ρ_min → 0 ; chute sous la seule déformation Rabi",
+  "suites_declarees": "corridor E44 plein (reconnexions réelles = sauts d'entier) ; pilier 6 (adoption en attente) ; confrontation au réel en réserve (règle T25)",
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": true,
+  "V5": true,
+  "criteres": {
+    "V1_plongement_exact": true,
+    "V2_entier_initial": true,
+    "V3_conservation_hamiltonienne": true,
+    "V4_mort_par_singularite": true,
+    "V5_selectivite_des_leviers": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 133.62,
+  "sha256_script": "87f211efca91c8488620cf6297f2b051656dd572a84b754a0a0f31974339e3bc"
+}
