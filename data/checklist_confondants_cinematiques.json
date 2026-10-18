@@ -1,0 +1,67 @@
+{
+  "id": "CHECKLIST-CONFOUNDANTS-CINEMATIQUES-1.0",
+  "date": "2026-10-18",
+  "statut": "adoption proposée (section obligatoire des fiches continues)",
+  "items": [
+    {
+      "id": "telescopage",
+      "confondant": "moyenne de rapports déterminée par les extrémités (produit télescopique) — ordre apparent sans contenu",
+      "episode": "T36 (G = (a_N/a_1)^{1/N}, information intermédiaire nulle ; nul : fenêtre de 114 extrémités)",
+      "declaration_exigee": "toute moyenne de rapports : vérifier le télescopage + fenêtre du nul cinématique"
+    },
+    {
+      "id": "increment_entiere",
+      "confondant": "« harmonie » fabriquée par l'arithmétique des petits incréments sur une échelle moyenne",
+      "episode": "T33 (le demi-ton des noyaux = 2-3 nucléons sur A ≈ 40-50 ; nul à incréments entiers)",
+      "declaration_exigee": "toute loi d'espacement : nul à incréments entiers déclarés"
+    },
+    {
+      "id": "coupure",
+      "confondant": "entiers/comptes dépendant de la résolution (objets de coupure, pas d'unité)",
+      "episode": "T34 (comptes de seuil : 64 vs 128 divergent) puis T38 (le point fixe du flux de coupure)",
+      "declaration_exigee": "tout entier du continu : flux de coupure mesuré (ou persistance)"
+    },
+    {
+      "id": "convergent",
+      "confondant": "irrationnel indistinguible de ses convergents à précision finie (Legendre)",
+      "episode": "T28 (13/8 battu 147/147 à la richesse) ; mesuré sur le réel à ratio unique : T25/T26",
+      "declaration_exigee": "toute coïncidence dorée : précision requise vs convergents, déclarée avant run"
+    },
+    {
+      "id": "seuil",
+      "confondant": "comptes de seuil = filaments/artefacts, pas d'objets cohérents",
+      "episode": "T34-D1 (le critère |ω| > 2σ comptait des filaments) → T37 (extrema + persistance)",
+      "declaration_exigee": "tout comptage par seuil : validation par persistance ou extrema déclarée"
+    },
+    {
+      "id": "sens_levier",
+      "confondant": "direction d'un levier devinée au lieu d'être mesurée",
+      "episode": "T37-D2 (sens inversés sur les deux leviers) ; T30 (rapport non doré)",
+      "declaration_exigee": "tout levier : direction MESURÉE au run, jamais supposée"
+    },
+    {
+      "id": "nul_biaise",
+      "confondant": "nul qui détruit la structure statistique (lissité) — faux positif garanti",
+      "episode": "T33-D2 (le mélange donnait p ≈ 0 : l'erreur Bode à l'envers)",
+      "declaration_exigee": "tout nul : classe de structure préservée (cinématique, pas permutation)"
+    }
+  ],
+  "validateur": "src/t40_ko6_checklist.py :: valider()",
+  "couverture_du_corpus": {
+    "telescopage": 1,
+    "increment_entiere": 1,
+    "coupure": 3,
+    "convergent": 4,
+    "seuil": 6,
+    "sens_levier": 9,
+    "nul_biaise": 6
+  },
+  "errata_attrapables_pre_run": [
+    "T34-D1 (seuil)",
+    "T33-D2 (nul biaisé)",
+    "T36-D1 (télescopage/tolérance)",
+    "T37-D2 (sens des leviers)",
+    "T33-D1 (fenêtre calibrée)",
+    "T38-D1 (coupure/budget)"
+  ]
+}

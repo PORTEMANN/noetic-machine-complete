@@ -1,0 +1,49 @@
+{
+  "chantier": "T40-Q-KO6-CHECKLIST-2026-10",
+  "protocole": "T40-KO6-CHECKLIST-1.0 (gelé)",
+  "mode": "RUN LOCAL — publication en attente du feu vert de l'auteur",
+  "objet": "CP4 : les sept confondants cinématiques codifiés, adossés à leurs épisodes mesurés, avec validateur — gouvernance des fiches continues",
+  "doctrine": "NOTE-DOCTRINE-CONTINU.md, pilier 5",
+  "statut_du_mot": "GOUVERNANCE — contrôle d'entrée des cartes continues (comme la CI, I3)",
+  "mesures": {
+    "items": [
+      "telescopage",
+      "increment_entiere",
+      "coupure",
+      "convergent",
+      "seuil",
+      "sens_levier",
+      "nul_biaise"
+    ],
+    "couverture_corpus": {
+      "telescopage": 1,
+      "increment_entiere": 1,
+      "coupure": 3,
+      "convergent": 4,
+      "seuil": 6,
+      "sens_levier": 9,
+      "nul_biaise": 6
+    },
+    "cartes_validees": 15,
+    "errata_attrapables": 6
+  },
+  "verdict_classe": "S+ (check-list codifiée, épisodes mesurés, validateur actif — l'ordre apparent devra désormais se déclarer)",
+  "falsifieur": "item sans épisode ; validateur silencieux",
+  "suites_declarees": "CP5 (Hopf 3D) ; adoption en CONVENTIONS (décision d'auteur)",
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": true,
+  "V5": true,
+  "criteres": {
+    "V1_codification": true,
+    "V2_episodes_mesures": true,
+    "V3_validateur_corpus": true,
+    "V4_leviers": true,
+    "V5_adoption": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 0.05,
+  "sha256_script": "bf4f4db819bba1a658b3bc19289e38f502a831a159a6612ab7d2ad2f7d70b7bf"
+}

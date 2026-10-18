@@ -222,5 +222,5 @@ continu = modèle effectif déclaré). Programme inscrit :
 | ~~CP1 — homologie persistante~~ → **T37 PUBLIÉE (5/5 : stabilité temps + résolution (écart 0), séparation signal/cascade)** |
 | ~~CP2 — atlas du flux de coupure~~ → **T38 PUBLIÉE (5/5 : point fixe 32→128, flux RG-like, régime-dépendant)** |
 | ~~CP3 — taxonomie de Reynolds~~ → **T39 PUBLIÉE (5/5, sans errata : 5 classes, crossover, grille CTFT projetée — classe ~1 déclarée non atteinte)** |
-| CP4 — check-list des confondants cinématiques (gouvernance) | carnet |
+| ~~CP4 — check-list des confondants~~ → **T40 PUBLIÉE (5/5 : 7 confondants codifiés, validateur sur 15 cartes, 6 errata attrapables PRE-RUN)** |
 | CP5 — charge de Hopf 3D | carnet |
