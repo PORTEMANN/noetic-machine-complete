@@ -68,9 +68,15 @@ charge de Hopf dynamique — l'entier ne meurt que par singularité, ρ → 0 ;
 D1–D2)** ; **T43 publiée le 18/10/2026 (5/5, sans errata : le saut
 d'entier — la reconnexion des filaments du corridor E44 saute Lk de
 1.05 à ~0 à t = 7.5, coïncident avec le changement de topologie
-filamentaire 4 → 3 ; l'instrument propre est le nombre de Gauss)**.
-Suite proposée : cascade de reconnections (statistiques des sauts) ;
-confrontation au réel en réserve (règle T25).
+filamentaire 4 → 3 ; l'instrument propre est le nombre de Gauss)** ;
+**T44 publiée le 19/10/2026 (5/5, sans errata : la cascade — deux
+entiers meurent en deux sauts unitaires datés (t = 3.50, 3.55),
+séparés d'un pas de temps, chacun sur une reconnexion 4 → 3 → 2,
+cascade par l'état intermédiaire Lk ≈ 1 ; statistique miroir-stable ;
+leçon : la chaîne parallèle a un enlacement nul, l'orientation des
+maillons est le contenu)**.
+Suite proposée : tangle dense (protocoles A/B du corridor, statistique
+en loi) ; confrontation au réel en réserve (règle T25).
 
 ## 4. La phrase de synthèse
 
