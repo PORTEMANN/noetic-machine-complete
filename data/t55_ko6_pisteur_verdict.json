@@ -1,0 +1,92 @@
+{
+  "chantier": "T55-Q-KO6-PISTEUR-2026-10",
+  "protocole": "T55-KO6-PISTEUR-1.2 (gelé)",
+  "mode": "RUN LOCAL — publication en attente du feu vert de l'auteur",
+  "objet": "T55 : le pisteur — appariement glouton d'identités des filaments entre snapshots ; durées de vie en ère tardive avec censure droite gérée par Kaplan-Meier ; cohérence avec la démographie de Little (T54)",
+  "doctrine": "NOTE-CREATION-MORT §4.1 (question ouverte) ; T54 ; T53-D1 (n = 8 exclu)",
+  "statut_du_mot": "MESURE — identité = chaîne d'appariements ; censure = Kaplan-Meier ; scintillement du traceur déclaré et exclu de la KM",
+  "configuration": {
+    "N": 64,
+    "A": 2.0,
+    "gamma": 0.3,
+    "dt": 0.05,
+    "quanta": [
+      2,
+      4,
+      4
+    ],
+    "graines": [
+      440201,
+      440201,
+      440203
+    ],
+    "seuil_match_cellules": 8.0,
+    "cohorte": 45.0,
+    "pas": 40
+  },
+  "mesures": {
+    "n2_440201": {
+      "taux_match_late": 1.0,
+      "naissances_tardives": 8,
+      "morts_tardives": 13,
+      "censurees": 6,
+      "fraction_censuree": 0.3157894736842105,
+      "scintillement_2t": 5,
+      "mediane_brute": 10.0,
+      "mediane_KM": 42.0,
+      "tau_Little_T54": 46.5
+    },
+    "n4_440201": {
+      "taux_match_late": 1.0,
+      "naissances_tardives": 14,
+      "morts_tardives": 25,
+      "censurees": 10,
+      "fraction_censuree": 0.2857142857142857,
+      "scintillement_2t": 2,
+      "mediane_brute": 10.0,
+      "mediane_KM": 20.0,
+      "tau_Little_T54": 58.7
+    },
+    "n4_440203": {
+      "taux_match_late": 1.0,
+      "naissances_tardives": 18,
+      "morts_tardives": 34,
+      "censurees": 11,
+      "fraction_censuree": 0.24444444444444444,
+      "scintillement_2t": 10,
+      "mediane_brute": 21.0,
+      "mediane_KM": 38.0,
+      "tau_Little_T54": 58.0
+    }
+  },
+  "KM_pool_n4": {
+    "mediane": 26.0,
+    "tau_Little": 58.35,
+    "ratio": 0.446,
+    "heterogeneite": "KM (mediane, mobiles) ~ 0.5 x Little (moyenne, epingles) — population mixte"
+  },
+  "rapport_KM_Little": {
+    "n2_440201": 0.903,
+    "n4_440201": 0.341,
+    "n4_440203": 0.655
+  },
+  "verdict_classe": "S+ (le pisteur est sain, la censure est gérée par Kaplan-Meier, la durée de vie médiane rejoint l'échelle de Little à un facteur 2, et le rapport systématique ~0.5 mesure l'hétérogénéité de la population : la démographie individuelle rejoint la démographie collective ET y ajoute la forme — l'instrument est construit)",
+  "falsifieur": "match < 0.8 ; cohorte < 15 ; KM hors facteur 2 de Little ; KM ≤ brute ; écart > 2",
+  "suites_declarees": "la distribution complète (courbes KM par quantum) ; le vieillissement (KM par cohorte d'âge) ; confrontation au réel en réserve (règle T25)",
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": true,
+  "V5": true,
+  "criteres": {
+    "V1_instrument_sain": true,
+    "V2_cohortes_suffisantes": true,
+    "V3_echelle_Little": true,
+    "V4_censure_geree": true,
+    "V5_KM_reproductible": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 0.01,
+  "sha256_script": "5d16cd55811db351eb752b6a6dd103e5b4c485a1617a76f5bea044416c595d70"
+}

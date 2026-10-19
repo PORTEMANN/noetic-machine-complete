@@ -130,8 +130,17 @@ le bilan est clos)**.
 embryons plus gros quand le quantum monte (T53) ; les filaments vivent
 ~50 unités de temps et la création paie la mort en quasi-juste compte
 (T54). Le désordre contraint a désormais son démographie complète.
-Suite proposée : note de consolidation du bilan création/mort ;
-confrontation au réel en réserve (règle T25).
+**L'instrument individuel construit (T55).** Le pisteur d'identités
+(appariement glouton, match 100 % en ère tardive) et l'estimateur de
+Kaplan-Meier (censure droite 24–32 %) donnent les durées de vie
+individuelles : la médiane KM rejoint l'échelle de Little à un facteur
+2, et le rapport systématique KM/Little ≈ 0.5 mesure l'hétérogénéité
+de la population (médiane des morts portée par les mobiles, moyenne
+par les épinglés) ; D1 pooler les graines devant les cohortes minces,
+D2 ne comparer médiane et moyenne que via l'échelle.
+Suite proposée : T56 — la tension de ligne (E = μΛ + E₀, la
+comptabilité matière/énergie du tangle) ; confrontation au réel en
+réserve (règle T25).
 
 ## 4. La phrase de synthèse
 

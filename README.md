@@ -53,7 +53,7 @@ mot orphelin (T15) ; **la texture minimale** : deux splittings mesurés
 exigent le rang 2 — l'état le plus léger est exactement sans masse
 (T16).
 
-**Le pont φ — T17–T54 (14–19 octobre 2026)** : dans la continuité du « Dialogue entre Dirac et la Machine », trente-huit campagnes mesurent le nombre d'or comme **une même unité en plusieurs langages** (T17–T24), le confrontent pour la première fois à des données réelles (T25–T30), scellent quatre ponts discret/continu et construisent la doctrine du continu (T31–T41), puis mesurent ce que le monde continu signe en face de φ : des **entiers topologiques** — mesurés au repos (T41), inusables par frottement (T42), tués par événements datés (T43–T44), statistiquement muets dans le désordre mais porteurs de loi (T45–T54).
+**Le pont φ — T17–T55 (14–19 octobre 2026)** : dans la continuité du « Dialogue entre Dirac et la Machine », trente-neuf campagnes mesurent le nombre d'or comme **une même unité en plusieurs langages** (T17–T24), le confrontent pour la première fois à des données réelles (T25–T30), scellent quatre ponts discret/continu et construisent la doctrine du continu (T31–T41), puis mesurent ce que le monde continu signe en face de φ : des **entiers topologiques** — mesurés au repos (T41), inusables par frottement (T42), tués par événements datés (T43–T44), statistiquement muets dans le désordre mais porteurs de loi (T45–T55).
 
 | Acte | Campagne | Objet |
 |---|---|---|
@@ -95,8 +95,9 @@ exigent le rang 2 — l'état le plus léger est exactement sans masse
 | | T52 | la nucléation — production décomposée (nucléations 69–100 %, croissances = remplissage) |
 | | T53 | la création — taux constant à basse densité, embryons plus gros au quantum (57–66 cellules) |
 | | T54 | la mortalité — τ ≈ 47–59 t (loi de Little), bilan création/mort en quasi-juste compte |
+| | T55 | le pisteur — identités filaments (match 100 %), durées de vie KM, hétérogénéité (KM/Little ≈ 0.5) |
 
-Quarante défauts de banc trouvés par les runs et publiés (le détail par campagne vit dans l'en-tête de chaque script et son verdict). Statut déclaré : théorèmes internes et conventions datées, aucune prédiction d'expérience — le physique (59 meV) n'est pas touché ; le protocole de re-mesure du tarif dort scellé, armé de bout en bout.
+Quarante-deux défauts de banc trouvés par les runs et publiés (le détail par campagne vit dans l'en-tête de chaque script et son verdict). Statut déclaré : théorèmes internes et conventions datées, aucune prédiction d'expérience — le physique (59 meV) n'est pas touché ; le protocole de re-mesure du tarif dort scellé, armé de bout en bout.
 
 **Commencer ici (pont φ) :** la carte en une page : [docs/CARTE-PONT-PHI.md](docs/CARTE-PONT-PHI.md) · le récit complet : [docs/NOTE-PONT-PHI-T17-T47.md](docs/NOTE-PONT-PHI-T17-T47.md) · le détail des quatre premières campagnes : [docs/NOTE-PONT-PHI-T17-T20.md](docs/NOTE-PONT-PHI-T17-T20.md) · la doctrine continue : [docs/NOTE-DOCTRINE-CONTINU.md](docs/NOTE-DOCTRINE-CONTINU.md).
 
