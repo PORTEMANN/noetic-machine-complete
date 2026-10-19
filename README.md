@@ -53,7 +53,7 @@ mot orphelin (T15) ; **la texture minimale** : deux splittings mesurés
 exigent le rang 2 — l'état le plus léger est exactement sans masse
 (T16).
 
-**Le pont φ — T17–T60 (14–19 octobre 2026)** : dans la continuité du « Dialogue entre Dirac et la Machine », quarante-quatre campagnes mesurent le nombre d'or comme **une même unité en plusieurs langages** (T17–T24), le confrontent pour la première fois à des données réelles (T25–T30), scellent quatre ponts discret/continu et construisent la doctrine du continu (T31–T41), puis mesurent ce que le monde continu signe en face de φ : des **entiers topologiques** — mesurés au repos (T41), inusables par frottement (T42), tués par événements datés (T43–T44), statistiquement muets dans le désordre mais porteurs de loi (T45–T60).
+**Le pont φ — T17–T61 (14–19 octobre 2026)** : dans la continuité du « Dialogue entre Dirac et la Machine », quarante-cinq campagnes mesurent le nombre d'or comme **une même unité en plusieurs langages** (T17–T24), le confrontent pour la première fois à des données réelles (T25–T30), scellent quatre ponts discret/continu et construisent la doctrine du continu (T31–T41), puis mesurent ce que le monde continu signe en face de φ : des **entiers topologiques** — mesurés au repos (T41), inusables par frottement (T42), tués par événements datés (T43–T44), statistiquement muets dans le désordre mais porteurs de loi (T45–T61).
 
 | Acte | Campagne | Objet |
 |---|---|---|
@@ -101,6 +101,7 @@ exigent le rang 2 — l'état le plus léger est exactement sans masse
 | | T58 | la tension silencieuse — μ(n=4)/μ_ref = **0.955** (le tangle porte la tension du vortex unique) |
 | | T59 | le bilan — réserve E − μΛ constante (CV 0.024), bilan intégré encadrant 1 : **la boucle est bouclée** |
 | | T60 | l'ANU instrumenté — masse 83.8 (CV 0.02), survie au frottement, mort datée t = 4.25 (miroir identique) |
+| | T61 | l'assemblage — comptabilité #+ − #− vérifiée (Q = 1.911 / −0.000) ; semblables interactifs, opposés séparés |
 
 Quarante-sept défauts de banc trouvés par les runs et publiés (le détail par campagne vit dans l'en-tête de chaque script et son verdict). Statut déclaré : théorèmes internes et conventions datées, aucune prédiction d'expérience — le physique (59 meV) n'est pas touché ; le protocole de re-mesure du tarif dort scellé, armé de bout en bout.
 

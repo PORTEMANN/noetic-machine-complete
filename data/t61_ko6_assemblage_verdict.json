@@ -1,0 +1,170 @@
+{
+  "chantier": "T61-Q-KO6-ASSEMB-2026-10",
+  "protocole": "T61-KO6-ASSEMB-1.0 (gelé)",
+  "mode": "RUN LOCAL — publication en attente du feu vert de l'auteur",
+  "objet": "T61 : l'assemblage — deux ANU (ansatz produit) : la comptabilité occulte #+ − #− vérifiée sur les charges de texture (Q(++) = 1.912, Q(+-) = −0.000) ; les semblables interagissent sans se lier étroitement, les opposés se séparent",
+  "doctrine": "T60 (l'ANU) ; T41-D2 (miroir du domaine) ; la Chimie Occulte (règle #+ − #−, planches 48/69/70)",
+  "statut_du_mot": "MESURE — assemblage = ansatz produit à deux centres ; liaison = comparaison d'énergies relaxées sans ajustement",
+  "configuration": {
+    "N": 96,
+    "L": 12.0,
+    "dt": 0.025,
+    "gamma": 0.3,
+    "steps": 400,
+    "centres": [
+      [
+        -2.5,
+        0,
+        0
+      ],
+      [
+        2.5,
+        0,
+        0
+      ]
+    ],
+    "masse_ANU_T60": 83.8
+  },
+  "mesures": {
+    "Q0_pp": 1.9115,
+    "Q0_pm": -0.0002,
+    "Qmax_abs_pm": 0.1211,
+    "S0_pp": 6.082762530298219,
+    "Smin_pp": 3.7790541144577436,
+    "Sfin_pp": 5.618051263561058,
+    "Sfin_pm": 4.019483797703382,
+    "Efin_pp": 812.3376875632962,
+    "Efin_pm": 605.8920489589767,
+    "Qfin_pp": 1.318085151699356,
+    "variation_S_pp": 0.493
+  },
+  "trajectoires": {
+    "pp": {
+      "t": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0
+      ],
+      "S": [
+        6.082762530298219,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        3.7790541144577436,
+        6.7765680842149,
+        6.116064911362534,
+        5.618051263561058
+      ],
+      "E": [
+        5679.032428308351,
+        1428.9184242350236,
+        1107.0264417433425,
+        1038.8204722991204,
+        1008.3563938575705,
+        976.6737331970087,
+        940.7646875572123,
+        904.2181070235243,
+        869.9257921085525,
+        839.2144050785641,
+        812.3376875632962
+      ],
+      "Q": [
+        1.911531825768378,
+        1.9287535796013784,
+        1.8723761959640508,
+        1.8128429372245227,
+        1.7526997328024883,
+        1.6899333273350583,
+        1.6185432837453693,
+        1.5341394428368749,
+        1.4379437977629816,
+        1.358050098895447,
+        1.318085151699356
+      ]
+    },
+    "pm": {
+      "t": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0
+      ],
+      "S": [
+        0.125,
+        2.1830311495716224,
+        1.80710403685012,
+        4.875,
+        3.724916106437835,
+        3.395769426801531,
+        2.401171589037318,
+        6.180867657538058,
+        3.0129926982984876,
+        2.3082731640774234,
+        4.019483797703382
+      ],
+      "E": [
+        5263.877392689135,
+        1357.106805359866,
+        972.5838125500051,
+        847.8090384170439,
+        784.158164091125,
+        741.540128390636,
+        708.3095857882357,
+        679.6758649544421,
+        653.4222172220816,
+        628.842699198628,
+        605.8920489589767
+      ],
+      "Q": [
+        -0.00023909923611000307,
+        0.00028452563034694076,
+        0.0029525857184242747,
+        0.010544695896356416,
+        0.022267516035599594,
+        0.03617129294850355,
+        0.05127876038082371,
+        0.0695657865300535,
+        0.09073041313458931,
+        0.10893399350916998,
+        0.12110435763874683
+      ]
+    }
+  },
+  "verdict_classe": "S+ (la comptabilité #+ − #− tient : Q = 2 et 0 mesurés ; les semblables interagissent sans se lier étroitement, les opposés se séparent — l'assemblage occult est d'abord une comptabilité de charge, et la liaison étroite demandera des configurations plus élaborées)",
+  "falsifieur": "charges non additives ; neutre attaché ou annihilé ; paire ++ passive ; énergie croissante",
+  "suites_declarees": "la chaîne multi-ANU (3+, orientée comme T44) ; la carte de liaison E(d) ; T62 — l'aimantation",
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": true,
+  "V5": true,
+  "criteres": {
+    "V1_comptabilite": true,
+    "V2_charge_neutre": true,
+    "V3_semblables_interactifs": true,
+    "V4_opposes_se_separent": true,
+    "V5_relaxation": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 236.9,
+  "sha256_script": "32630d83e1a8855ef6062aa9e0edc325cf47bf7361d1cef3df5bd0e7f954652d"
+}

@@ -173,11 +173,15 @@ enroulements, paire positive/négative) est instrumenté comme particule
 assise, D1), survie au frottement (Q verrouillé, leçon T42 vérifiée à
 l'échelle particule), mort datée t = 4.25 par reconfiguration
 filamentaire à la fenêtre près (une charge globale date à la fenêtre
-près, D1), miroir q = −1 identique.
-Suite proposée : T61 — l'assemblage (N ANU liés, charge nette #+ − #−,
-énergie de liaison) ; T62 — l'aimantation (courbe d'orientation vs
-circulation de paroi) ; la pente pointuelle sur fenêtres longues ;
-confrontation au réel en réserve (règle T25).
+près, D1), miroir q = −1 identique. **T61 publiée le 19/10/2026 (5/5,
+sans errata : l'assemblage — la comptabilité occulte #+ − #− vérifiée
+sur les charges de texture : Q(++) = 1.911, Q(+-) = −0.000 ; les
+semblables interagissent sans se lier étroitement (séparation
+oscillante −38 %), les opposés se séparent (4.02 > 3.0) ; l'assemblage
+occult est d'abord une comptabilité de charge)**.
+Suite proposée : la chaîne multi-ANU (3+, orientée comme T44) et la
+carte de liaison E(d) ; T62 — l'aimantation (courbe d'orientation vs
+circulation de paroi) ; confrontation au réel en réserve (règle T25).
 
 ## 4. La phrase de synthèse
 
