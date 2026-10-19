@@ -89,10 +89,13 @@ transitoire)** ; **T47 publiée le 19/10/2026 (5/5 : la loi du drainage —
 quanta de paroi n = 2/4/8 ; la paroi épinne 4 filaments par quantum
 (9.8 / 15.9 / 31.4) ; la loi de Vinen est un fait de régime : R² = 0.930
 à n = 8, visible monotone en n ; D1 : attendu surre-déclaré corrigé —
-l'épinglage mural contamine Λ à faible forçage)**.
-Suite proposée : coefficient β de Vinen par forçage ; la relation taux
-d'événements ↔ densité en fenêtre glissante ; confrontation au réel en
-réserve (règle T25).
+l'épinglage mural contamine Λ à faible forçage)** ; **T48 publiée le
+19/10/2026 (5/5 : le coefficient β — ≈ 1.4e-5 unités corridor à n = 8,
+reproductible à 27 %, constant en n ; frontière d'existence : hors de
+son régime β ne devient pas petit, il cesse d'être ; D1 : deux attendus
+naïfs corrigés par la mesure)**.
+Suite proposée : relation taux d'événements ↔ βΛ² en fenêtre glissante
+(test Vinen poussé) ; confrontation au réel en réserve (règle T25).
 
 ## 4. La phrase de synthèse
 

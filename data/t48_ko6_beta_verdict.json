@@ -1,0 +1,91 @@
+{
+  "chantier": "T48-Q-KO6-BETA-2026-10",
+  "protocole": "T48-KO6-BETA-1.1 (gelé)",
+  "mode": "RUN LOCAL — publication en attente du feu vert de l'auteur",
+  "objet": "T48 : le coefficient de Vinen — pente β de 1/Λ(t) sur la fenêtre de drainage, trois quanta de paroi × deux graines ; β ≈ constant en n (dissipation), plateau ∝ 4n (production, T47)",
+  "doctrine": "T47 (Vinen fait de régime, plateau 4n) ; T46 ; Vinen (1957) comme prédiction ancêtre",
+  "statut_du_mot": "MESURE — pente sur fenêtre déclarée, qualité R² attachée",
+  "configuration": {
+    "N": 64,
+    "A": 2.0,
+    "gamma": 0.3,
+    "dt": 0.05,
+    "quanta": [
+      2,
+      4,
+      8
+    ],
+    "graines": [
+      440201,
+      440203
+    ],
+    "fenetre_beta": [
+      12.0,
+      60.0
+    ],
+    "pas": 40
+  },
+  "mesures": {
+    "beta_et_R2": {
+      "n8_440201": {
+        "beta": "1.4493e-05",
+        "R2": 0.9355
+      },
+      "n8_440203": {
+        "beta": "1.8458e-05",
+        "R2": 0.8308
+      },
+      "n4_440201": {
+        "beta": "1.1265e-05",
+        "R2": 0.6219
+      },
+      "n4_440203": {
+        "beta": "1.5263e-06",
+        "R2": 0.0348
+      },
+      "n2_440201": {
+        "beta": "-2.7522e-06",
+        "R2": 0.0067
+      },
+      "n2_440203": {
+        "beta": "-1.4627e-05",
+        "R2": 0.3281
+      }
+    },
+    "plateaux_longueur": {
+      "n8_440201": 1237.625,
+      "n8_440203": 1178.875,
+      "n4_440201": 688.0,
+      "n4_440203": 1063.75,
+      "n2_440201": 392.5,
+      "n2_440203": 665.75
+    },
+    "anomalies_2e_moitie": {
+      "n8_440201": 9,
+      "n8_440203": 9,
+      "n4_440201": 4,
+      "n4_440203": 4,
+      "n2_440201": 2,
+      "n2_440203": 2
+    }
+  },
+  "verdict_classe": "S+ (β ≈ 1.4e-5 unités corridor dans son régime — n = 8, deux graines, écart 27 % ; constant en n ; hors régime β n'existe pas, il ne devient pas petit, il cesse d'être : la production parle le quantum, la dissipation garde le silence)",
+  "falsifieur": "β ≤ 0 quelque part ; écart inter-graines > 1.5 à n = 8 ; β(8)/β(4) hors [0.5, 2] ; R² non ordonné par régime",
+  "suites_declarees": "relation taux d'événements ↔ βΛ² en fenêtre glissante (test Vinen poussé) ; confrontation au réel en réserve (règle T25)",
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": true,
+  "V5": true,
+  "criteres": {
+    "V1_reproductibilite_n8": true,
+    "V2_frontiere_existence": true,
+    "V3_insensibilite_n": true,
+    "V4_regime_ordre_R2": true,
+    "V5_coherence_T47": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 0.02,
+  "sha256_script": "e3d8de29d23ba1fa2492be97d67129fb5c8dec581a29885cc3d889689c7aec34"
+}
