@@ -53,7 +53,7 @@ mot orphelin (T15) ; **la texture minimale** : deux splittings mesurés
 exigent le rang 2 — l'état le plus léger est exactement sans masse
 (T16).
 
-**Le pont φ — T17–T63 (14–19 octobre 2026)** : dans la continuité du « Dialogue entre Dirac et la Machine », quarante-sept campagnes mesurent le nombre d'or comme **une même unité en plusieurs langages** (T17–T24), le confrontent pour la première fois à des données réelles (T25–T30), scellent quatre ponts discret/continu et construisent la doctrine du continu (T31–T41), puis mesurent ce que le monde continu signe en face de φ : des **entiers topologiques** — mesurés au repos (T41), inusables par frottement (T42), tués par événements datés (T43–T44), statistiquement muets dans le désordre mais porteurs de loi (T45–T63).
+**Le pont φ — T17–T64 (14–19 octobre 2026)** : dans la continuité du « Dialogue entre Dirac et la Machine », quarante-huit campagnes mesurent le nombre d'or comme **une même unité en plusieurs langages** (T17–T24), le confrontent pour la première fois à des données réelles (T25–T30), scellent quatre ponts discret/continu et construisent la doctrine du continu (T31–T41), puis mesurent ce que le monde continu signe en face de φ : des **entiers topologiques** — mesurés au repos (T41), inusables par frottement (T42), tués par événements datés (T43–T44), statistiquement muets dans le désordre mais porteurs de loi (T45–T64).
 
 | Acte | Campagne | Objet |
 |---|---|---|
@@ -104,8 +104,9 @@ exigent le rang 2 — l'état le plus léger est exactement sans masse
 | | T61 | l'assemblage — comptabilité #+ − #− vérifiée (Q = 1.911 / −0.000) ; semblables interactifs, opposés séparés |
 | | T62 | l'aimantation — alignement saturé (F ≥ 0.94), un quantum par filament, flux ≈ 3n (réponse extensive) |
 | | T63 | la liaison — **la paire ++ est profondément liée** (B = +90 à +102, 40–60 % de 2m) ; chaîne 3 : Q = 2.98 |
+| | T64 | l'hystérésis — mémoire par **retard** (remanence négative, sous-passement à bas champ, boucle aire 21) |
 
-Quarante-neuf défauts de banc trouvés par les runs et publiés (le détail par campagne vit dans l'en-tête de chaque script et son verdict). Statut déclaré : théorèmes internes et conventions datées, aucune prédiction d'expérience — le physique (59 meV) n'est pas touché ; le protocole de re-mesure du tarif dort scellé, armé de bout en bout.
+Cinquante-deux défauts de banc trouvés par les runs et publiés (le détail par campagne vit dans l'en-tête de chaque script et son verdict). Statut déclaré : théorèmes internes et conventions datées, aucune prédiction d'expérience — le physique (59 meV) n'est pas touché ; le protocole de re-mesure du tarif dort scellé, armé de bout en bout.
 
 **Commencer ici (pont φ) :** la carte en une page : [docs/CARTE-PONT-PHI.md](docs/CARTE-PONT-PHI.md) · le récit complet : [docs/NOTE-PONT-PHI-T17-T47.md](docs/NOTE-PONT-PHI-T17-T47.md) · le détail des quatre premières campagnes : [docs/NOTE-PONT-PHI-T17-T20.md](docs/NOTE-PONT-PHI-T17-T20.md) · la doctrine continue : [docs/NOTE-DOCTRINE-CONTINU.md](docs/NOTE-DOCTRINE-CONTINU.md).
 

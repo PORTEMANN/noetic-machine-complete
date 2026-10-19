@@ -194,9 +194,15 @@ dessin de 1908 est devenu une fiche instrumentée. **T63 publiée le
 prédiction héritée de l'ansatz fautif — D1 double : la boucle croisée
 NaN, puis la physique inversée ; B est un minorant, la relaxation non
 convergée).** L'ANU a son état lié : l'assemblage n'est plus seulement
-comptable, il est énergétique.
-Suite proposée : T64 — l'hystérésis (le champ balayé) ; T65 — la table
-Heath (A observé vs simulé, réserve T25).
+comptable, il est énergétique. **T64 publiée le 19/10/2026 (5/5 :
+l'hystérésis — le champ balayé 2 → 8 → 2 : le tangle a de la mémoire
+sous forme de RETARD, pas de reliquat — remanence négative à bas
+champ, sous-passement après le passage haut champ, boucle d'aire 21,
+fermeture en ordre de grandeur ; D1 : des paliers d'équilibre pour une
+courbe d'équilibre ; D2 : une hystérésis n'a pas de signe imposé ;
+D3 : un critère ne doit jamais exiger un signe non promis)**.
+Suite proposée : T65 — la table Heath (A observé vs simulé, réserve
+T25).
 
 ## 4. La phrase de synthèse
 
