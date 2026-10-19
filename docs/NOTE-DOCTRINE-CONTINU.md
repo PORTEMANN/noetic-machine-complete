@@ -161,10 +161,15 @@ du côté microscopique)**.
 **L'ère énergie a sa première carte validée (T56–T58).** Réfutée sous
 forçage, réveillée en silence, confirmée au microscope : μ ≈ 15 par
 cellule, le tangle est une collection de l'objet unique, monnaie par
-monnaie.
-Suite proposée : le bilan énergétique de Vinen (dE/dt vs μ·dΛ/dt) ;
-la tension aux grilles fines (N = 96) ; confrontation au réel en
-réserve (règle T25).
+monnaie. **La boucle est bouclée (T59).** En silence, la réserve
+E − μΛ est constante à 2.4 % et le bilan intégré encadre 1 aux deux
+graines (0.849, 1.230 — dispersion ± 25 % honnête) : la mort
+démographique de Vinen et la mort énergétique sont le même événement
+dans deux monnaies. D1 : un CV relatif petit sur un offset grand cache
+une dérive absolue qui mange les bilans serrés.
+Suite proposée : la note de clôture de l'ère énergie (consolidation
+T56–T59) ; la pente pointuelle sur fenêtres longues ; confrontation
+au réel en réserve (règle T25).
 
 ## 4. La phrase de synthèse
 

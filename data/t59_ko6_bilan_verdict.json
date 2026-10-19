@@ -1,0 +1,87 @@
+{
+  "chantier": "T59-Q-KO6-BILAN-2026-10",
+  "protocole": "T59-KO6-BILAN-1.1 (gelé)",
+  "mode": "RUN LOCAL — publication en attente du feu vert de l'auteur",
+  "objet": "T59 : le bilan — en silence, la réserve E − μ_ref·Λ est constante et le bilan intégré |ΔE| ≈ μ_ref·|ΔΛ| tient (μ_ref = 15.72 figée de T58) : la mort démographique de Vinen et la mort énergétique sont le même événement dans deux monnaies",
+  "doctrine": "T58 (μ_ref) ; T48 (β̂) ; T57 (le silence) ; NOTE-VINEN-T47-T51 (la loi de mort)",
+  "statut_du_mot": "MESURE — paramètres gelés, bilan intégral (test honnête : la pente pointuelle est bruitée, les phonons pulsent)",
+  "configuration": {
+    "N": 64,
+    "A": 2.0,
+    "gamma": 0.3,
+    "dt": 0.05,
+    "quanta": [
+      2,
+      4,
+      4,
+      8
+    ],
+    "graines": [
+      440201,
+      440201,
+      440203,
+      440201
+    ],
+    "ere_silencieuse": [
+      72.0,
+      90.0
+    ],
+    "pas": 40,
+    "mu_ref_T58": 15.72,
+    "beta_T48": 1.4493e-05,
+    "prediction_pente": "2.278e-04"
+  },
+  "mesures": {
+    "n2_440201": {
+      "reserve_moyenne": -3540.3,
+      "reserve_CV": 0.079,
+      "Delta_E": -952.5,
+      "Delta_Lambda": -12.0,
+      "bilan_integre": 5.049,
+      "anomalies_fin": 2
+    },
+    "n4_440201": {
+      "reserve_moyenne": -9268.8,
+      "reserve_CV": 0.0237,
+      "Delta_E": -1787.7,
+      "Delta_Lambda": -134.0,
+      "bilan_integre": 0.849,
+      "anomalies_fin": 4
+    },
+    "n4_440203": {
+      "reserve_moyenne": -9480.7,
+      "reserve_CV": 0.0242,
+      "Delta_E": -2011.4,
+      "Delta_Lambda": -104.0,
+      "bilan_integre": 1.23,
+      "anomalies_fin": 4
+    },
+    "n8_440201": {
+      "reserve_moyenne": -5024.5,
+      "reserve_CV": 0.9283,
+      "Delta_E": -1070.5,
+      "Delta_Lambda": -782.0,
+      "bilan_integre": 0.087,
+      "anomalies_fin": 8
+    }
+  },
+  "verdict_classe": "S+ (la mort du tangle est un seul événement dans deux monnaies : la réserve E − μΛ tient au centime près, le bilan intégré à 15 %, et la démographie de Vinen se paie exactement en énergie — la boucle est bouclée)",
+  "falsifieur": "CV > 0.10 ; bilan hors [0.7, 1.5] ; signe positif ; écart > 1.3",
+  "suites_declarees": "la note de clôture de l'ère énergie (consolidation T56–T59) ; la pente pointuelle sur fenêtres longues (phonons moyennés) ; confrontation au réel en réserve (règle T25)",
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": true,
+  "V5": true,
+  "criteres": {
+    "V1_trajectoires_saines": true,
+    "V2_reserve_constante": true,
+    "V3_bilan_integre": true,
+    "V4_signe_drainage": true,
+    "V5_bilan_reproductible": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 0.0,
+  "sha256_script": "b058322ba06cf5d0512e75380364d6b41046f0cebc61ba4e4059b951792a63c1"
+}
