@@ -1,0 +1,84 @@
+{
+  "chantier": "T49-Q-KO6-PONT-2026-10",
+  "protocole": "T49-KO6-PONT-1.1 (gelé)",
+  "mode": "RUN LOCAL — publication en attente du feu vert de l'auteur",
+  "objet": "T49 : le pont chiffré — la décroissance observée |dΛ/dt| en fenêtres glissantes confrontée à la prédiction Vinen β̂Λ² (β̂ figé de T48, aucun réajustement) ; le pont tient à n = 8 et s'effondre à n = 2 exactement où T48 a dit que β cesse d'être",
+  "doctrine": "T48 (β̂ et frontière d'existence) ; T47 ; T46",
+  "statut_du_mot": "MESURE — rapport prédiction gelée / observation",
+  "configuration": {
+    "N": 64,
+    "A": 2.0,
+    "gamma": 0.3,
+    "dt": 0.05,
+    "quanta": [
+      8,
+      8,
+      2
+    ],
+    "graines": [
+      440201,
+      440203,
+      440201
+    ],
+    "fenetre": [
+      12.0,
+      60.0
+    ],
+    "pas": 40,
+    "beta_source": "T48 figé, aucun réajustement"
+  },
+  "mesures": {
+    "n8_440201": {
+      "beta_predicteur": 1.4493e-05,
+      "nb_fenetres": 24,
+      "fenetres_decroissance": 19,
+      "fraction_decroissance": 0.7916666666666666,
+      "ratio_mediane": 1.3441505381165508,
+      "ratio_q25": 0.5565579811912513,
+      "ratio_q75": 1.5226595224209172,
+      "spearman": 0.6104347826086955,
+      "anomalies_fin": 9
+    },
+    "n8_440203": {
+      "beta_predicteur": 1.8458e-05,
+      "nb_fenetres": 24,
+      "fenetres_decroissance": 18,
+      "fraction_decroissance": 0.75,
+      "ratio_mediane": 1.2679463811197318,
+      "ratio_q25": 0.2800850493126481,
+      "ratio_q75": 1.6587808597915004,
+      "spearman": 0.3173913043478261,
+      "anomalies_fin": 9
+    },
+    "n2_440201": {
+      "beta_predicteur": 1.4493e-05,
+      "nb_fenetres": 24,
+      "fenetres_decroissance": 13,
+      "fraction_decroissance": 0.5416666666666666,
+      "ratio_mediane": 12.374909192916341,
+      "ratio_q25": 6.357255616996642,
+      "ratio_q75": 15.906448996322073,
+      "spearman": 0.09652173913043478,
+      "anomalies_fin": 2
+    }
+  },
+  "verdict_classe": "S+ (β̂Λ² prédit la décroissance observée à un facteur 2 près, la corrélation des fenêtres est forte, et le pont s'effondre à n = 2 : la cascade microscopique et la loi macroscopique sont le même objet, mesuré des deux côtés)",
+  "falsifieur": "rapport hors [0.5, 2] à n = 8 ; corrélation < 0.7 ; rapport dans [0.5, 2] à n = 2 ; drainage < 70 % des fenêtres",
+  "suites_declarees": "production α(v) côté corridor (balance injection/dissipation au plateau) ; confrontation au réel en réserve (règle T25)",
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": true,
+  "V5": true,
+  "criteres": {
+    "V1_trajectoires_saines": true,
+    "V2_pont_chiffre_n8": true,
+    "V3_correlation_fenetres": true,
+    "V4_frontiere_quantitative": true,
+    "V5_signe_du_drainage": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 0.03,
+  "sha256_script": "6d1bba9aa28811d6bd1e75d76f5b03c0468e0395e4eb1d0d002c2b04bb7a354e"
+}

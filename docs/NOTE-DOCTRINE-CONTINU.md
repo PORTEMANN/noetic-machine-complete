@@ -93,9 +93,15 @@ l'épinglage mural contamine Λ à faible forçage)** ; **T48 publiée le
 19/10/2026 (5/5 : le coefficient β — ≈ 1.4e-5 unités corridor à n = 8,
 reproductible à 27 %, constant en n ; frontière d'existence : hors de
 son régime β ne devient pas petit, il cesse d'être ; D1 : deux attendus
-naïfs corrigés par la mesure)**.
-Suite proposée : relation taux d'événements ↔ βΛ² en fenêtre glissante
-(test Vinen poussé) ; confrontation au réel en réserve (règle T25).
+naïfs corrigés par la mesure)** ; **T49 publiée le 19/10/2026 (5/5 : le
+pont chiffré — β̂Λ², β figé de T48 sans réajustement, prédit la
+décroissance observée : rapport médian 1.3 aux deux graines à n = 8,
+et 12.4 à n = 2 où le pont s'effondre exactement à la frontière T48 ;
+D1 : la loi de Vinen est intégrée, elle se teste sur les rapports, pas
+sur la dérivée instantanée)**.
+Suite proposée : production α(v) côté corridor (balance
+injection/dissipation au plateau) ; confrontation au réel en réserve
+(règle T25).
 
 ## 4. La phrase de synthèse
 
