@@ -178,10 +178,19 @@ sans errata : l'assemblage — la comptabilité occulte #+ − #− vérifiée
 sur les charges de texture : Q(++) = 1.911, Q(+-) = −0.000 ; les
 semblables interagissent sans se lier étroitement (séparation
 oscillante −38 %), les opposés se séparent (4.02 > 3.0) ; l'assemblage
-occult est d'abord une comptabilité de charge)**.
-Suite proposée : la chaîne multi-ANU (3+, orientée comme T44) et la
-carte de liaison E(d) ; T62 — l'aimantation (courbe d'orientation vs
-circulation de paroi) ; confrontation au réel en réserve (règle T25).
+occult est d'abord une comptabilité de charge)** ; **T62 publiée le
+19/10/2026 (5/5 : l'aimantation — filaments axiaux sous circulation de
+paroi n : un quantum par porteur (90–100 %), alignement saturé (F =
+0.94–1.00 dès n = 2), flux ≈ 3n (6.0, 9.0, 14.7 — réponse extensive,
+aimant doux saturé) ; la circulation se mesure autour du cœur, pas le
+long de la ligne ; D1 : la courbe vit dans le flux, pas dans la
+fraction)**.
+**L'ANU a son triptyque (T60–T62).** Particule complète (masse 83.8),
+comptabilité de charge (#+ − #−), aimantation (flux ∝ champ) — le
+dessin de 1908 est devenu une fiche instrumentée.
+Suite proposée : les domaines et l'hystérésis (champ balayé) ; la
+chaîne multi-ANU et la carte de liaison E(d) ; confrontation au réel
+en réserve (règle T25).
 
 ## 4. La phrase de synthèse
 
