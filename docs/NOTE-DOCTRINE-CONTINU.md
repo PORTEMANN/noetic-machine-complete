@@ -200,9 +200,18 @@ sous forme de RETARD, pas de reliquat — remanence négative à bas
 champ, sous-passement après le passage haut champ, boucle d'aire 21,
 fermeture en ordre de grandeur ; D1 : des paliers d'équilibre pour une
 courbe d'équilibre ; D2 : une hystérésis n'a pas de signe imposé ;
-D3 : un critère ne doit jamais exiger un signe non promis)**.
-Suite proposée : T65 — la table Heath (A observé vs simulé, réserve
-T25).
+D3 : un critère ne doit jamais exiger un signe non promis)** ;
+**T65 publiée le 19/10/2026 (5/5, sans errata : la table Heath —
+masse occulte = A à 0,73 % près (max 3,57 %, azote), corrélation
+0,999757, pente 1.005, nul tué par 10 000 permutations (p = 0) :
+« 1 ANU ↔ 1 nucléon en masse » compatible à la transcription près —
+classe S+ (compatible, avec réserve), jamais « vrai » (règle T25)**.
+**Les trois chantiers ANU ouverts sont clos (T63–T65).** La liaison
+(le déuton du corridor), la mémoire (le retard, pas le reliquat), la
+table (la compatibilité Heath à 0.73 %) — l'arc ANU est complet.
+Suite proposée : la note de consolidation de l'arc ANU étendu
+(T60–T65) ; la transcription complète de la table (p. 369–380) ;
+confrontation au réel en réserve (règle T25).
 
 ## 4. La phrase de synthèse
 

@@ -53,7 +53,7 @@ mot orphelin (T15) ; **la texture minimale** : deux splittings mesurés
 exigent le rang 2 — l'état le plus léger est exactement sans masse
 (T16).
 
-**Le pont φ — T17–T64 (14–19 octobre 2026)** : dans la continuité du « Dialogue entre Dirac et la Machine », quarante-huit campagnes mesurent le nombre d'or comme **une même unité en plusieurs langages** (T17–T24), le confrontent pour la première fois à des données réelles (T25–T30), scellent quatre ponts discret/continu et construisent la doctrine du continu (T31–T41), puis mesurent ce que le monde continu signe en face de φ : des **entiers topologiques** — mesurés au repos (T41), inusables par frottement (T42), tués par événements datés (T43–T44), statistiquement muets dans le désordre mais porteurs de loi (T45–T64).
+**Le pont φ — T17–T65 (14–19 octobre 2026)** : dans la continuité du « Dialogue entre Dirac et la Machine », quarante-neuf campagnes mesurent le nombre d'or comme **une même unité en plusieurs langages** (T17–T24), le confrontent pour la première fois à des données réelles (T25–T30), scellent quatre ponts discret/continu et construisent la doctrine du continu (T31–T41), puis mesurent ce que le monde continu signe en face de φ : des **entiers topologiques** — mesurés au repos (T41), inusables par frottement (T42), tués par événements datés (T43–T44), statistiquement muets dans le désordre mais porteurs de loi (T45–T65).
 
 | Acte | Campagne | Objet |
 |---|---|---|
@@ -105,6 +105,7 @@ exigent le rang 2 — l'état le plus léger est exactement sans masse
 | | T62 | l'aimantation — alignement saturé (F ≥ 0.94), un quantum par filament, flux ≈ 3n (réponse extensive) |
 | | T63 | la liaison — **la paire ++ est profondément liée** (B = +90 à +102, 40–60 % de 2m) ; chaîne 3 : Q = 2.98 |
 | | T64 | l'hystérésis — mémoire par **retard** (remanence négative, sous-passement à bas champ, boucle aire 21) |
+| | T65 | la table Heath — masse occulte = A à **0,73 %** (p = 0 en permutation) : S+ compatible, avec réserve T25 |
 
 Cinquante-deux défauts de banc trouvés par les runs et publiés (le détail par campagne vit dans l'en-tête de chaque script et son verdict). Statut déclaré : théorèmes internes et conventions datées, aucune prédiction d'expérience — le physique (59 meV) n'est pas touché ; le protocole de re-mesure du tarif dort scellé, armé de bout en bout.
 
