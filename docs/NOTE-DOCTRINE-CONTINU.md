@@ -120,10 +120,18 @@ croissance n'est que le remplissage à fort quantum. *La paroi crée.* ;
 constant à basse densité ~1.2e-5/cellule ; l'échelle du quantum vit
 dans la taille des embryons : 57–66 cellules à n = 8 contre 41–45 à
 n = 2/4 ; n = 2 crée comme tout le monde — la création n'a pas la
-frontière de la mort, et son compteur a le sien ; D1)**.
-Suite proposée : la mortalité des filaments (durée de vie) pour
-compléter le bilan création/mort ; confrontation au réel en réserve
-(règle T25).
+frontière de la mort, et son compteur a le sien ; D1)** ; **T54
+publiée le 19/10/2026 (5/5, sans errata : la mortalité — τ = N̄/R
+(loi de Little) ≈ 47–59 unités de temps, renouvellement < 2.5 %/t ;
+le bilan création/mort est en quasi-juste compte (écarts 4–11 %) :
+le bilan est clos)**.
+**Bilan création/mort clos (T52–T54).** La paroi crée (nucléations
+69–100 % de la production), à taux constant à basse densité, avec des
+embryons plus gros quand le quantum monte (T53) ; les filaments vivent
+~50 unités de temps et la création paie la mort en quasi-juste compte
+(T54). Le désordre contraint a désormais son démographie complète.
+Suite proposée : note de consolidation du bilan création/mort ;
+confrontation au réel en réserve (règle T25).
 
 ## 4. La phrase de synthèse
 

@@ -1,0 +1,83 @@
+{
+  "chantier": "T54-Q-KO6-MORT-2026-10",
+  "protocole": "T54-KO6-MORT-1.0 (gelé)",
+  "mode": "RUN LOCAL — publication en attente du feu vert de l'auteur",
+  "objet": "T54 : la mortalité — durée de vie moyenne des filaments par la loi de Little (τ = N̄/R) sur le comptage des naissances (dN > 0) et des morts (dN < 0) ; bilan création/mort en quasi-stationnarité à basse densité",
+  "doctrine": "T53 (la création) ; T52 ; T46 (stationnarité murale) ; T53-D1 (n = 8 exclu de la loi)",
+  "statut_du_mot": "MESURE — τ = N̄/R (loi de Little), statistique mince déclarée (Poisson ~30 %)",
+  "configuration": {
+    "N": 64,
+    "A": 2.0,
+    "gamma": 0.3,
+    "dt": 0.05,
+    "quanta": [
+      2,
+      4,
+      4
+    ],
+    "graines": [
+      440201,
+      440201,
+      440203
+    ],
+    "fenetre_comptage": [
+      45.0,
+      90.0
+    ],
+    "pas": 40
+  },
+  "mesures": {
+    "n2_440201": {
+      "naissances": 10,
+      "morts": 8,
+      "taux_naissances": 0.2273,
+      "taux_morts": 0.1818,
+      "population_moyenne": 10.57,
+      "ecart_relatif": 0.111,
+      "tau_Little": 46.5,
+      "renouvellement": 0.0215,
+      "anomalies_fin": 2
+    },
+    "n4_440201": {
+      "naissances": 12,
+      "morts": 13,
+      "taux_naissances": 0.2727,
+      "taux_morts": 0.2955,
+      "population_moyenne": 16.0,
+      "ecart_relatif": 0.04,
+      "tau_Little": 58.7,
+      "renouvellement": 0.017,
+      "anomalies_fin": 4
+    },
+    "n4_440203": {
+      "naissances": 16,
+      "morts": 20,
+      "taux_naissances": 0.3636,
+      "taux_morts": 0.4545,
+      "population_moyenne": 21.09,
+      "ecart_relatif": 0.111,
+      "tau_Little": 58.0,
+      "renouvellement": 0.0172,
+      "anomalies_fin": 4
+    }
+  },
+  "verdict_classe": "S+ (les filaments vivent longtemps (~47 t à n = 2), le plateau garde ~98 % de sa population par unité de temps, et la création paie la mort en quasi-juste compte : le bilan création/mort est clos)",
+  "falsifieur": "morts nulles ou bilan > 0.4 ; τ hors [10, 120] ; renouvellement ≥ 0.1/t ; écart inter-graines > 2",
+  "suites_declarees": "bilan création/mort consolidé (note) ; la distribution des durées de vie (au-delà de la moyenne) si un jour le pistage d'identités existe ; confrontation au réel en réserve (règle T25)",
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": true,
+  "V5": true,
+  "criteres": {
+    "V1_trajectoires_saines": true,
+    "V2_bilan_comptable": true,
+    "V3_little_bornee": true,
+    "V4_mortalite_lente": true,
+    "V5_tau_reproductible": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 109.57,
+  "sha256_script": "97f73d6c9213b8794172bd913bc8832fba9463076329f51ced9a02d9f4e6798a"
+}
