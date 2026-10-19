@@ -74,9 +74,15 @@ entiers meurent en deux sauts unitaires datés (t = 3.50, 3.55),
 séparés d'un pas de temps, chacun sur une reconnexion 4 → 3 → 2,
 cascade par l'état intermédiaire Lk ≈ 1 ; statistique miroir-stable ;
 leçon : la chaîne parallèle a un enlacement nul, l'orientation des
-maillons est le contenu)**.
-Suite proposée : tangle dense (protocoles A/B du corridor, statistique
-en loi) ; confrontation au réel en réserve (règle T25).
+maillons est le contenu)** ; **T45 publiée le 19/10/2026 (5/5, sans
+errata : le tangle dense — les entiers appartiennent à l'ordre, la
+cascade au désordre ; 0 paire liée (max|Lk| ≤ 0.119) aux snapshots
+officiels des graines 440101/440102, P2a non confirmée (réserve
+honnête) ; cascade en population mesurée : effondrement 35 → 5 et
+52 → 8 (P5 vérifié), événements datés, reproductibilité inter-graines)**.
+Suite proposée : ensemble B (parois tournantes, drainage contrôlé) ;
+statistique des intervalles entre événements en loi ; confrontation
+au réel en réserve (règle T25).
 
 ## 4. La phrase de synthèse
 
