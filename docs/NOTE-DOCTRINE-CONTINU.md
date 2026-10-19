@@ -79,10 +79,16 @@ errata : le tangle dense — les entiers appartiennent à l'ordre, la
 cascade au désordre ; 0 paire liée (max|Lk| ≤ 0.119) aux snapshots
 officiels des graines 440101/440102, P2a non confirmée (réserve
 honnête) ; cascade en population mesurée : effondrement 35 → 5 et
-52 → 8 (P5 vérifié), événements datés, reproductibilité inter-graines)**.
-Suite proposée : ensemble B (parois tournantes, drainage contrôlé) ;
-statistique des intervalles entre événements en loi ; confrontation
-au réel en réserve (règle T25).
+52 → 8 (P5 vérifié), événements datés, reproductibilité inter-graines)**
+; **T46 publiée le 19/10/2026 (5/5 : le drainage contrôlé — ensemble B,
+circulation 4 imposée ; trois ères datées : nucléation 944 filaments à
+t = 1, drainage ÷43 à t = 12 (0 boucle), stationnarité murale 16.2 ±
+CV 0.068 jusqu'à t = 90 ; loi décroissante des intervalles entre
+événements, deux graines ; D1 : borne d'anomalies recalibrée au
+transitoire)**.
+Suite proposée : densité de ligne vs taux d'événements (relation de
+Vinen côté corridor) ; énigme ouverte : les ~16 filaments épinglés et
+les 4 anomalies de paroi ; confrontation au réel en réserve (règle T25).
 
 ## 4. La phrase de synthèse
 
