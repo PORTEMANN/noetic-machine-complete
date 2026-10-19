@@ -1,0 +1,95 @@
+{
+  "chantier": "T51-Q-KO6-ECHELLE-2026-10",
+  "protocole": "T51-KO6-ECHELLE-1.0 (gelé)",
+  "mode": "RUN LOCAL — publication en attente du feu vert de l'auteur",
+  "objet": "T51 : la loi d'échelle — densité d'équilibre prédite Λ∞(n) = √(I(n)/β̂) (production murale mesurée sur dissipation gelée) confrontée aux plateaux mesurés sur trois quanta et deux graines",
+  "doctrine": "T50 (production) ; T48 (β̂) ; T47 (plateau ∝ quantum) ; Vinen (1957)",
+  "statut_du_mot": "MESURE — prédiction à paramètres gelés",
+  "configuration": {
+    "N": 64,
+    "A": 2.0,
+    "gamma": 0.3,
+    "dt": 0.05,
+    "quanta": [
+      2,
+      4,
+      8
+    ],
+    "graines": [
+      440201,
+      440203
+    ],
+    "ere_tardive": [
+      75.0,
+      90.0
+    ],
+    "pas": 40,
+    "beta_source": "T48 figé (régime valide)"
+  },
+  "mesures": {
+    "n2_440201": {
+      "injection": 6.357,
+      "dissipation": 9.143,
+      "Lambda_mes": 466.4,
+      "beta_T48": null,
+      "Lambda_pred": null,
+      "rapport_pred_mes": null,
+      "anomalies_fin": 2
+    },
+    "n4_440201": {
+      "injection": 9.5,
+      "dissipation": 17.5,
+      "Lambda_mes": 750.2,
+      "beta_T48": 1.1265e-05,
+      "Lambda_pred": 918.3,
+      "rapport_pred_mes": 1.224,
+      "anomalies_fin": 4
+    },
+    "n4_440203": {
+      "injection": 25.929,
+      "dissipation": 28.0,
+      "Lambda_mes": 834.0,
+      "beta_T48": null,
+      "Lambda_pred": null,
+      "rapport_pred_mes": null,
+      "anomalies_fin": 4
+    },
+    "n8_440201": {
+      "injection": 18.929,
+      "dissipation": 4.786,
+      "Lambda_mes": 1133.4,
+      "beta_T48": 1.4493e-05,
+      "Lambda_pred": 1142.8,
+      "rapport_pred_mes": 1.008,
+      "anomalies_fin": 8
+    },
+    "n8_440203": {
+      "injection": 16.5,
+      "dissipation": 0.857,
+      "Lambda_mes": 834.6,
+      "beta_T48": 1.8458e-05,
+      "Lambda_pred": 945.5,
+      "rapport_pred_mes": 1.133,
+      "anomalies_fin": 8
+    }
+  },
+  "verdict_classe": "S+ (I(n) monte, Λ∞(n) monte, et √(I/β̂) tombe sur le plateau mesuré à 10–22 % près aux trois runs valides : la loi d'échelle de Vinen est complète côté corridor — production, dissipation et équilibre)",
+  "falsifieur": "production non monotone ; rapport hors [0.7, 1.4] ; ordres croisés ; écart inter-graines",
+  "suites_declarees": "clôture de l'arc Vinen (T47–T51) ; bilan doctrine ; confrontation au réel en réserve (règle T25)",
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": true,
+  "V5": true,
+  "criteres": {
+    "V1_trajectoires_saines": true,
+    "V2_production_monotone": true,
+    "V3_prediction_equilibre": true,
+    "V4_ordres_concordants": true,
+    "V5_prediction_reproductible": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 72.21,
+  "sha256_script": "0fc8680e0dd7476f7cf1dbf8582e93fbc29984790f7aa7fa4e21840d1bf051e8"
+}

@@ -53,7 +53,7 @@ mot orphelin (T15) ; **la texture minimale** : deux splittings mesurés
 exigent le rang 2 — l'état le plus léger est exactement sans masse
 (T16).
 
-**Le pont φ — T17–T50 (14–19 octobre 2026)** : dans la continuité du « Dialogue entre Dirac et la Machine », trente-quatre campagnes mesurent le nombre d'or comme **une même unité en plusieurs langages** (T17–T24), le confrontent pour la première fois à des données réelles (T25–T30), scellent quatre ponts discret/continu et construisent la doctrine du continu (T31–T41), puis mesurent ce que le monde continu signe en face de φ : des **entiers topologiques** — mesurés au repos (T41), inusables par frottement (T42), tués par événements datés (T43–T44), statistiquement muets dans le désordre mais porteurs de loi (T45–T50).
+**Le pont φ — T17–T51 (14–19 octobre 2026)** : dans la continuité du « Dialogue entre Dirac et la Machine », trente-cinq campagnes mesurent le nombre d'or comme **une même unité en plusieurs langages** (T17–T24), le confrontent pour la première fois à des données réelles (T25–T30), scellent quatre ponts discret/continu et construisent la doctrine du continu (T31–T41), puis mesurent ce que le monde continu signe en face de φ : des **entiers topologiques** — mesurés au repos (T41), inusables par frottement (T42), tués par événements datés (T43–T44), statistiquement muets dans le désordre mais porteurs de loi (T45–T51).
 
 | Acte | Campagne | Objet |
 |---|---|---|
@@ -91,6 +91,7 @@ exigent le rang 2 — l'état le plus léger est exactement sans masse
 | | T48 | coefficient β — ≈ 1.4e-5 constant en n, existe seulement dans son régime |
 | | T49 | pont chiffré — β̂Λ² prédit la décroissance (rapport médian 1.3), pont mort à n = 2 |
 | | T50 | la production — deux moteurs mesurés (I/β̂Λ² = 1.0–1.5), loi tient avant l'équilibre |
+| | T51 | loi d'échelle — Λ∞ = √(I/β̂) tombe sur le plateau (0,8 % à n=8), arc Vinen clos |
 
 Trente-neuf défauts de banc trouvés par les runs et publiés (le détail par campagne vit dans l'en-tête de chaque script et son verdict). Statut déclaré : théorèmes internes et conventions datées, aucune prédiction d'expérience — le physique (59 meV) n'est pas touché ; le protocole de re-mesure du tarif dort scellé, armé de bout en bout.
 

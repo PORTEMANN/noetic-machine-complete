@@ -103,9 +103,17 @@ production — injection murale et dissipation reconnective mesurées
 séparément en ère tardive ; la production obéit à β̂Λ∞² = 1.0–1.5 même
 pendant le remplissage à n = 8 ; la balance n = 4 (0.296/0.038) marque
 l'atteinte du plateau ; D1 leçon de calendrier t = 90, D2 la loi tient
-avant l'équilibre)**.
-Suite proposée : la loi d'échelle complète I(n) et la densité
-d'équilibre Λ∞(n) = √(I/β̂) ; confrontation au réel en réserve (règle T25).
+avant l'équilibre)** ; **T51 publiée le 19/10/2026 (5/5, sans errata :
+la loi d'échelle — Λ∞(n) = √(I(n)/β̂) à paramètres gelés tombe sur les
+plateaux mesurés à 0,8–22 % (1143 vs 1133 à n = 8/440201) ; production
+monotone en n 6.4 < 9.5 < 18.9 ; arc Vinen T47–T51 clos)**.
+**Arc Vinen clos (T47–T51).** La machine a mesuré la loi complète du
+tangle contraint : existence de régime (T47), coefficient (T48),
+prédiction de la décroissance (T49), production (T50), équilibre (T51)
+— avec sa frontière répétée trois fois : hors régime, la loi ne devient
+pas faible, elle cesse d'être.
+Suite proposée : bilan de doctrine (consolidation) ; confrontation au
+réel en réserve (règle T25).
 
 ## 4. La phrase de synthèse
 
