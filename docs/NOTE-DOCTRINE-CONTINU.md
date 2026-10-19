@@ -166,10 +166,18 @@ E − μΛ est constante à 2.4 % et le bilan intégré encadre 1 aux deux
 graines (0.849, 1.230 — dispersion ± 25 % honnête) : la mort
 démographique de Vinen et la mort énergétique sont le même événement
 dans deux monnaies. D1 : un CV relatif petit sur un offset grand cache
-une dérive absolue qui mange les bilans serrés.
-Suite proposée : la note de clôture de l'ère énergie (consolidation
-T56–T59) ; la pente pointuelle sur fenêtres longues ; confrontation
-au réel en réserve (règle T25).
+une dérive absolue qui mange les bilans serrés. **L'ANU est entré dans
+le banc (T60).** L'hopfion ±1 de la Chimie Occulte (double spirale,
+enroulements, paire positive/négative) est instrumenté comme particule
+: charge 0.9987, masse 83.8 (plateau, CV 0.02 — une particule se pèse
+assise, D1), survie au frottement (Q verrouillé, leçon T42 vérifiée à
+l'échelle particule), mort datée t = 4.25 par reconfiguration
+filamentaire à la fenêtre près (une charge globale date à la fenêtre
+près, D1), miroir q = −1 identique.
+Suite proposée : T61 — l'assemblage (N ANU liés, charge nette #+ − #−,
+énergie de liaison) ; T62 — l'aimantation (courbe d'orientation vs
+circulation de paroi) ; la pente pointuelle sur fenêtres longues ;
+confrontation au réel en réserve (règle T25).
 
 ## 4. La phrase de synthèse
 
