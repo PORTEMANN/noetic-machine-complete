@@ -115,10 +115,15 @@ frontière répétée trois fois : hors régime, la loi ne devient pas
 faible, elle cesse d'être. T52 a fermé la première question ouverte de
 la consolidation : la production est d'abord nucléation (100 % à n = 4,
 69–99 % à n = 8 ; l'identité I_nuc + I_gro = I tient au centime) — la
-croissance n'est que le remplissage à fort quantum. *La paroi crée.*
-Suite proposée : le taux de nucléation par unité de paroi en fonction
-du quantum ; la longueur de naissance des filaments ; confrontation au
-réel en réserve (règle T25).
+croissance n'est que le remplissage à fort quantum. *La paroi crée.* ;
+**T53 publiée le 19/10/2026 (5/5 : la création — taux de nucléation
+constant à basse densité ~1.2e-5/cellule ; l'échelle du quantum vit
+dans la taille des embryons : 57–66 cellules à n = 8 contre 41–45 à
+n = 2/4 ; n = 2 crée comme tout le monde — la création n'a pas la
+frontière de la mort, et son compteur a le sien ; D1)**.
+Suite proposée : la mortalité des filaments (durée de vie) pour
+compléter le bilan création/mort ; confrontation au réel en réserve
+(règle T25).
 
 ## 4. La phrase de synthèse
 

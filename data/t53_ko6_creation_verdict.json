@@ -1,0 +1,97 @@
+{
+  "chantier": "T53-Q-KO6-CREAT-2026-10",
+  "protocole": "T53-KO6-CREAT-1.1 (gelé)",
+  "mode": "RUN LOCAL — publication en attente du feu vert de l'auteur",
+  "objet": "T53 : la création — taux de nucléation par cellule de paroi en fonction du quantum de circulation, longueur de naissance des filaments ; la création n'a pas la frontière de la mort (n = 2 participe)",
+  "doctrine": "T52 (la nucléation domine) ; NOTE-VINEN-T47-T51 ; T47 (4 filaments par quantum)",
+  "statut_du_mot": "MESURE — événement = dN > 0 ; naissance = dΛ/dN (attribution intégrale déclarée)",
+  "configuration": {
+    "N": 64,
+    "A": 2.0,
+    "gamma": 0.3,
+    "dt": 0.05,
+    "quanta": [
+      2,
+      4,
+      8,
+      8
+    ],
+    "graines": [
+      440201,
+      440201,
+      440201,
+      440203
+    ],
+    "fenetre_comptage": [
+      45.0,
+      90.0
+    ],
+    "pas": 40,
+    "paroi_cellules": 20640
+  },
+  "mesures": {
+    "n2_440201": {
+      "evenements": 10,
+      "duree_comptage": 44.0,
+      "taux": 0.2273,
+      "taux_par_cellule_paroi": "1.101e-05",
+      "taux_paroi_float": 1.1011275546159268e-05,
+      "longueur_naissance": 44.5,
+      "nb_naissances_mesurees": 7,
+      "paroi_cellules": 20640,
+      "anomalies_fin": 2
+    },
+    "n4_440201": {
+      "evenements": 12,
+      "duree_comptage": 44.0,
+      "taux": 0.2727,
+      "taux_par_cellule_paroi": "1.321e-05",
+      "taux_paroi_float": 1.321353065539112e-05,
+      "longueur_naissance": 40.9,
+      "nb_naissances_mesurees": 10,
+      "paroi_cellules": 20640,
+      "anomalies_fin": 4
+    },
+    "n8_440201": {
+      "evenements": 6,
+      "duree_comptage": 44.0,
+      "taux": 0.1364,
+      "taux_par_cellule_paroi": "6.607e-06",
+      "taux_paroi_float": 6.60676532769556e-06,
+      "longueur_naissance": 66.3,
+      "nb_naissances_mesurees": 3,
+      "paroi_cellules": 20640,
+      "anomalies_fin": 8
+    },
+    "n8_440203": {
+      "evenements": 4,
+      "duree_comptage": 44.0,
+      "taux": 0.0909,
+      "taux_par_cellule_paroi": "4.405e-06",
+      "taux_paroi_float": 4.404510218463707e-06,
+      "longueur_naissance": 57.0,
+      "nb_naissances_mesurees": 3,
+      "paroi_cellules": 20640,
+      "anomalies_fin": 8
+    }
+  },
+  "verdict_classe": "S+ (le mur crée partout ; le taux est constant à basse densité et l'échelle du quantum vit dans la taille des embryons — 57–66 cellules à n = 8 contre 41–45 à n = 2/4 ; la création n'a pas la frontière de la mort, et son compteur a le sien)",
+  "falsifieur": "création nulle ou < 5 événements ; naissance hors [5, 120] ; taux non monotone ; écart > 2",
+  "suites_declarees": "la mortalité des filaments (durée de vie) pour compléter le bilan création/mort ; confrontation au réel en réserve (règle T25)",
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": true,
+  "V5": true,
+  "criteres": {
+    "V1_trajectoires_saines": true,
+    "V2_creation_basse_densite": true,
+    "V3_naissance_segments": true,
+    "V4_taille_embryons": true,
+    "V5_creation_reproductible": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 0.01,
+  "sha256_script": "8cbd2abb7fd9a82498cf4a0524544688ec020ebf4e928fe71bf80457be045141"
+}
