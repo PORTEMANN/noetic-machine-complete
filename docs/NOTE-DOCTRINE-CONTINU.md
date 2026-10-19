@@ -98,10 +98,14 @@ pont chiffré — β̂Λ², β figé de T48 sans réajustement, prédit la
 décroissance observée : rapport médian 1.3 aux deux graines à n = 8,
 et 12.4 à n = 2 où le pont s'effondre exactement à la frontière T48 ;
 D1 : la loi de Vinen est intégrée, elle se teste sur les rapports, pas
-sur la dérivée instantanée)**.
-Suite proposée : production α(v) côté corridor (balance
-injection/dissipation au plateau) ; confrontation au réel en réserve
-(règle T25).
+sur la dérivée instantanée)** ; **T50 publiée le 19/10/2026 (5/5 : la
+production — injection murale et dissipation reconnective mesurées
+séparément en ère tardive ; la production obéit à β̂Λ∞² = 1.0–1.5 même
+pendant le remplissage à n = 8 ; la balance n = 4 (0.296/0.038) marque
+l'atteinte du plateau ; D1 leçon de calendrier t = 90, D2 la loi tient
+avant l'équilibre)**.
+Suite proposée : la loi d'échelle complète I(n) et la densité
+d'équilibre Λ∞(n) = √(I/β̂) ; confrontation au réel en réserve (règle T25).
 
 ## 4. La phrase de synthèse
 
