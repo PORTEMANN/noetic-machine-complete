@@ -66,5 +66,7 @@ référence (`data/tNN_*.json`) et le récit complet vit dans
 - La doctrine continue : [NOTE-DOCTRINE-CONTINU](NOTE-DOCTRINE-CONTINU.md) (pilier 6 proposé)
 - L'arc Vinen (T47–T51) : [NOTE-VINEN-T47-T51](NOTE-VINEN-T47-T51.md) — la loi complète
   du tangle contraint, consolidée
+- Le bilan création/mort (T52–T54) : [NOTE-CREATION-MORT-T52-T54](NOTE-CREATION-MORT-T52-T54.md) —
+  la démographie complète : naissance, vie, mort
 - La méthode (check-list des confondants) : validateur T40, section obligatoire des fiches continues
 - Les tables de l'archive P0–P48 : README, sections 1–3
