@@ -70,7 +70,8 @@ référence (`data/tNN_*.json`) et le récit complet vit dans
   la démographie complète : naissance, vie, mort
 - L'ère énergie (T56–T59) : [NOTE-ENERGIE-T56-T59](NOTE-ENERGIE-T56-T59.md) —
   la comptabilité matière/énergie : réfutée, silencieuse, microscopique, bouclée
-- L'arc ANU (T60–T62) : [NOTE-ANU-T60-T62](NOTE-ANU-T60-T62.md) —
-  la particule du corridor : masse, comptabilité de charge, aimantation
+- L'arc ANU (T60–T65) : [NOTE-ANU-T60-T65](NOTE-ANU-T60-T65.md) —
+  la particule du corridor : masse, comptabilité, aimantation, liaison, mémoire, table
+  (premier triptyque : [NOTE-ANU-T60-T62](NOTE-ANU-T60-T62.md))
 - La méthode (check-list des confondants) : validateur T40, section obligatoire des fiches continues
 - Les tables de l'archive P0–P48 : README, sections 1–3
