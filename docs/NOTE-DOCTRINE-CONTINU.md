@@ -65,9 +65,12 @@ attaché.
 
 Carnet bouclé le 18/10/2026 ; **T42 publiée le 18/10/2026 (5/5 : la
 charge de Hopf dynamique — l'entier ne meurt que par singularité, ρ → 0 ;
-D1–D2)** — la carte T41 passe de la condition initiale à la dynamique.
-Suite proposée : corridor E44 plein (reconnexions réelles de filaments =
-sauts d'entier mesurés sur la vraie dynamique du corridor).
+D1–D2)** ; **T43 publiée le 18/10/2026 (5/5, sans errata : le saut
+d'entier — la reconnexion des filaments du corridor E44 saute Lk de
+1.05 à ~0 à t = 7.5, coïncident avec le changement de topologie
+filamentaire 4 → 3 ; l'instrument propre est le nombre de Gauss)**.
+Suite proposée : cascade de reconnections (statistiques des sauts) ;
+confrontation au réel en réserve (règle T25).
 
 ## 4. La phrase de synthèse
 
