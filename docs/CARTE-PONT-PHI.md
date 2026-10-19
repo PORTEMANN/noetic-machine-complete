@@ -68,5 +68,7 @@ référence (`data/tNN_*.json`) et le récit complet vit dans
   du tangle contraint, consolidée
 - Le bilan création/mort (T52–T54) : [NOTE-CREATION-MORT-T52-T54](NOTE-CREATION-MORT-T52-T54.md) —
   la démographie complète : naissance, vie, mort
+- L'ère énergie (T56–T59) : [NOTE-ENERGIE-T56-T59](NOTE-ENERGIE-T56-T59.md) —
+  la comptabilité matière/énergie : réfutée, silencieuse, microscopique, bouclée
 - La méthode (check-list des confondants) : validateur T40, section obligatoire des fiches continues
 - Les tables de l'archive P0–P48 : README, sections 1–3
