@@ -137,10 +137,16 @@ individuelles : la médiane KM rejoint l'échelle de Little à un facteur
 2, et le rapport systématique KM/Little ≈ 0.5 mesure l'hétérogénéité
 de la population (médiane des morts portée par les mobiles, moyenne
 par les épinglés) ; D1 pooler les graines devant les cohortes minces,
-D2 ne comparer médiane et moyenne que via l'échelle.
-Suite proposée : T56 — la tension de ligne (E = μΛ + E₀, la
-comptabilité matière/énergie du tangle) ; confrontation au réel en
-réserve (règle T25).
+D2 ne comparer médiane et moyenne que via l'échelle. **T56 publiée le
+19/10/2026 (5/5 : la tension de ligne — la relation E = μΛ + E₀ est
+réfutée comme relation étroite dans le protocole à paroi forcée :
+incréments décorrélés R² ~ 0.02, seconde graine qui tue la première,
+paroi à monnaie étrangère ; DORMEUR — la comptabilité matière/énergie
+attend un protocole silencieux ; D1 : jamais pré-enregistrer une loi
+sans reproduction croisée, même quand la première graine est belle)**.
+Suite proposée : le protocole silencieux (paroi relâchée après
+drainage) pour retenter E = μΛ ; le bilan énergétique de Vinen ;
+confrontation au réel en réserve (règle T25).
 
 ## 4. La phrase de synthèse
 

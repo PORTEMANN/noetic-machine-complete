@@ -1,0 +1,77 @@
+{
+  "chantier": "T56-Q-KO6-TENSION-2026-10",
+  "protocole": "T56-KO6-TENSION-1.1 (gelé)",
+  "mode": "RUN LOCAL — publication en attente du feu vert de l'auteur",
+  "objet": "T56 : la tension de ligne — l'énergie du champ GP et la longueur des filaments comme même monnaie : testée et réfutée dans le protocole à paroi forcée (incréments décorrélés, non-réplication, paroi à monnaie étrangère)",
+  "doctrine": "T55 (les instruments ont leur régime) ; T53-D1 ; NOTE-CREATION-MORT (le cycle de vie, monnaie énergie)",
+  "statut_du_mot": "MESURE — et REFUTATION déclarée : la relation E = μΛ + E₀ ne tient pas dans ce protocole ; dormeur publié",
+  "configuration": {
+    "N": 64,
+    "A": 2.0,
+    "gamma": 0.3,
+    "dt": 0.05,
+    "quanta": [
+      2,
+      4,
+      4
+    ],
+    "graines": [
+      440201,
+      440201,
+      440203
+    ],
+    "masque": "interieur du cylindre (Rg < 26)",
+    "pas": 40
+  },
+  "mesures": {
+    "n2_440201": {
+      "E0_integrale": -1182.3,
+      "mu_differentielle": 0.575,
+      "R2_differentielle": 0.032,
+      "mu_integrale_drainage": 18.096,
+      "R2_integrale": 0.372,
+      "mu_plateau": -1.439,
+      "R2_plateau": 0.481,
+      "anomalies_fin": 2
+    },
+    "n4_440201": {
+      "E0_integrale": -1627.3,
+      "mu_differentielle": 0.259,
+      "R2_differentielle": 0.023,
+      "mu_integrale_drainage": 9.091,
+      "R2_integrale": 0.674,
+      "mu_plateau": -2.628,
+      "R2_plateau": 0.212,
+      "anomalies_fin": 4
+    },
+    "n4_440203": {
+      "E0_integrale": 6174.2,
+      "mu_differentielle": -0.044,
+      "R2_differentielle": 0.001,
+      "mu_integrale_drainage": -0.218,
+      "R2_integrale": 0.0,
+      "mu_plateau": 2.253,
+      "R2_plateau": 0.748,
+      "anomalies_fin": 4
+    }
+  },
+  "verdict_classe": "DORMEUR (la relation E = μΛ + E₀ est réfutée comme relation étroite dans le protocole à paroi forcée : incréments décorrélés R² ~ 0.02, seconde graine qui tue la première, paroi à monnaie étrangère — la comptabilité matière/énergie demande un protocole silencieux)",
+  "falsifieur": "R²_diff ≥ 0.5 ; réplication R²_int ≥ 0.5 aux deux graines ; μ_plateau de signe stable ; E₀ stable",
+  "suites_declarees": "un protocole silencieux (paroi non forcée, après drainage) pour retenter la comptabilité E = μΛ ; le cut de couche limite (Rg < 24) ; confrontation au réel en réserve (règle T25)",
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": true,
+  "V5": true,
+  "criteres": {
+    "V1_trajectoires_saines": true,
+    "V2_increments_decorelles": true,
+    "V3_non_replication": true,
+    "V4_plateau_signes_mixtes": true,
+    "V5_E0_instabile": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 0.03,
+  "sha256_script": "d0cd5e540e7d549add90428dd29ed70030e9487180dbcbeb9e0ba01f98cb7701"
+}
