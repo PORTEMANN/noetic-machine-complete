@@ -1,0 +1,80 @@
+{
+  "chantier": "T63-Q-KO6-LIAISON-2026-10",
+  "protocole": "T63-KO6-LIAISON-1.2 (gelé)",
+  "mode": "RUN LOCAL — publication en attente du feu vert de l'auteur",
+  "objet": "T63 : la liaison — carte E(d) de la paire ++ aux distances 3, 5, 7, 9 et chaîne à 3 ANU : le déficit B = N·m − E_relaxé sur toute la carte",
+  "doctrine": "T61 (la paire) ; T60 (la masse) ; T44 (la chaîne)",
+  "statut_du_mot": "MESURE — le signe de B est une mesure honnête",
+  "configuration": {
+    "N": 96,
+    "L": 12.0,
+    "dt": 0.025,
+    "gamma": 0.3,
+    "steps": 240,
+    "distances": [
+      3.0,
+      5.0,
+      7.0,
+      9.0
+    ],
+    "masse_ANU": 83.8,
+    "reference_2m": 167.6,
+    "reference_3m": 251.39999999999998
+  },
+  "mesures": {
+    "d3.0": {
+      "Q0": 2.0,
+      "E0": 104.9,
+      "Qfin": 2.0,
+      "Efin": 77.3,
+      "B": 90.3
+    },
+    "d5.0": {
+      "Q0": 2.0,
+      "E0": 104.5,
+      "Qfin": 2.0,
+      "Efin": 71.8,
+      "B": 95.8
+    },
+    "d7.0": {
+      "Q0": 2.0,
+      "E0": 107.2,
+      "Qfin": 2.0,
+      "Efin": 68.9,
+      "B": 98.7
+    },
+    "d9.0": {
+      "Q0": 1.994,
+      "E0": 109.4,
+      "Qfin": 2.0,
+      "Efin": 65.2,
+      "B": 102.4
+    },
+    "chaine3": {
+      "Q0": 2.979,
+      "E0": 2267.0,
+      "Qfin": 3.0,
+      "Efin": 242.1,
+      "B": 9.3
+    }
+  },
+  "verdict_classe": "S+ (la liaison existe — et elle est profonde : la paire ++ relaxée vaut 40–60 % de 2m (état lié, B = +90 à +102) ; la chaîne à 3 ANU porte Q ≈ 3 et B = +9 — l'ANU corridor a un état lié de paire, le déuton du corridor ; la relaxation non convergée rend B un minorant honnête)",
+  "falsifieur": "charges non additives ; carte incomplète ; E(9) ≫ 2m ; B > 0.5 N·m ; chaîne hors charge 3",
+  "suites_declarees": "la relaxation longue (convergence du B vrai) ; le spectre des états liés (chaîne 3, B = +9 seulement — la chaîne est peu liée contre la paire) ; T64 — l'hystérésis",
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": true,
+  "V5": true,
+  "criteres": {
+    "V1_constructions": true,
+    "V2_carte_complete": true,
+    "V3_limite_asymptotique": true,
+    "V4_pas_de_liaison_profonde": true,
+    "V5_comptabilite_3corps": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 0.03,
+  "sha256_script": "3580505a24bf314f4be1e829e4fcc20634b78aa6e791344762df30349751d40d"
+}

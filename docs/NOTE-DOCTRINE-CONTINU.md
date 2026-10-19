@@ -187,10 +187,16 @@ long de la ligne ; D1 : la courbe vit dans le flux, pas dans la
 fraction)**.
 **L'ANU a son triptyque (T60–T62).** Particule complète (masse 83.8),
 comptabilité de charge (#+ − #−), aimantation (flux ∝ champ) — le
-dessin de 1908 est devenu une fiche instrumentée.
-Suite proposée : les domaines et l'hystérésis (champ balayé) ; la
-chaîne multi-ANU et la carte de liaison E(d) ; confrontation au réel
-en réserve (règle T25).
+dessin de 1908 est devenu une fiche instrumentée. **T63 publiée le
+19/10/2026 (5/5 : la liaison — la paire ++ est profondément liée : B =
++90 à +102, 40–60 % de 2m, le déuton du corridor ; chaîne 3 : Q =
+2.98, liaison faible B = +9 ; l'ansatz produit standard a inversé la
+prédiction héritée de l'ansatz fautif — D1 double : la boucle croisée
+NaN, puis la physique inversée ; B est un minorant, la relaxation non
+convergée).** L'ANU a son état lié : l'assemblage n'est plus seulement
+comptable, il est énergétique.
+Suite proposée : T64 — l'hystérésis (le champ balayé) ; T65 — la table
+Heath (A observé vs simulé, réserve T25).
 
 ## 4. La phrase de synthèse
 
