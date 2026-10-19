@@ -85,10 +85,14 @@ circulation 4 imposée ; trois ères datées : nucléation 944 filaments à
 t = 1, drainage ÷43 à t = 12 (0 boucle), stationnarité murale 16.2 ±
 CV 0.068 jusqu'à t = 90 ; loi décroissante des intervalles entre
 événements, deux graines ; D1 : borne d'anomalies recalibrée au
-transitoire)**.
-Suite proposée : densité de ligne vs taux d'événements (relation de
-Vinen côté corridor) ; énigme ouverte : les ~16 filaments épinglés et
-les 4 anomalies de paroi ; confrontation au réel en réserve (règle T25).
+transitoire)** ; **T47 publiée le 19/10/2026 (5/5 : la loi du drainage —
+quanta de paroi n = 2/4/8 ; la paroi épinne 4 filaments par quantum
+(9.8 / 15.9 / 31.4) ; la loi de Vinen est un fait de régime : R² = 0.930
+à n = 8, visible monotone en n ; D1 : attendu surre-déclaré corrigé —
+l'épinglage mural contamine Λ à faible forçage)**.
+Suite proposée : coefficient β de Vinen par forçage ; la relation taux
+d'événements ↔ densité en fenêtre glissante ; confrontation au réel en
+réserve (règle T25).
 
 ## 4. La phrase de synthèse
 
