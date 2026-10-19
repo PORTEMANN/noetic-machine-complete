@@ -107,12 +107,17 @@ avant l'équilibre)** ; **T51 publiée le 19/10/2026 (5/5, sans errata :
 la loi d'échelle — Λ∞(n) = √(I(n)/β̂) à paramètres gelés tombe sur les
 plateaux mesurés à 0,8–22 % (1143 vs 1133 à n = 8/440201) ; production
 monotone en n 6.4 < 9.5 < 18.9 ; arc Vinen T47–T51 clos)**.
-**Arc Vinen clos (T47–T51).** La machine a mesuré la loi complète du
-tangle contraint : existence de régime (T47), coefficient (T48),
-prédiction de la décroissance (T49), production (T50), équilibre (T51)
-— avec sa frontière répétée trois fois : hors régime, la loi ne devient
-pas faible, elle cesse d'être.
-Suite proposée : bilan de doctrine (consolidation) ; confrontation au
+**Arc Vinen clos (T47–T51), origine microscopique ouverte puis close
+(T52).** La machine a mesuré la loi complète du tangle contraint :
+existence de régime (T47), coefficient (T48), prédiction de la
+décroissance (T49), production (T50), équilibre (T51) — avec sa
+frontière répétée trois fois : hors régime, la loi ne devient pas
+faible, elle cesse d'être. T52 a fermé la première question ouverte de
+la consolidation : la production est d'abord nucléation (100 % à n = 4,
+69–99 % à n = 8 ; l'identité I_nuc + I_gro = I tient au centime) — la
+croissance n'est que le remplissage à fort quantum. *La paroi crée.*
+Suite proposée : le taux de nucléation par unité de paroi en fonction
+du quantum ; la longueur de naissance des filaments ; confrontation au
 réel en réserve (règle T25).
 
 ## 4. La phrase de synthèse

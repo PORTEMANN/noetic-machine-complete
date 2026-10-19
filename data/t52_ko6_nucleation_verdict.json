@@ -1,0 +1,93 @@
+{
+  "chantier": "T52-Q-KO6-NUCLEA-2026-10",
+  "protocole": "T52-KO6-NUCLEA-1.0 (gelé)",
+  "mode": "RUN LOCAL — publication en attente du feu vert de l'auteur",
+  "objet": "T52 : la nucléation — la production murale (I, T50) décomposée en nucléations (dΛ>0 avec dN>0) et croissances (dΛ>0 à nombre stable) ; la nucléation domine, la croissance n'apparaît qu'à fort quantum",
+  "doctrine": "NOTE-VINEN-T47-T51 §4.1 (question ouverte) ; T50 ; T47 (4 filaments par quantum)",
+  "statut_du_mot": "MESURE — décomposition comptable sur trajectoires déterministes",
+  "configuration": {
+    "N": 64,
+    "A": 2.0,
+    "gamma": 0.3,
+    "dt": 0.05,
+    "quanta": [
+      4,
+      4,
+      8,
+      8
+    ],
+    "graines": [
+      440201,
+      440203,
+      440201,
+      440203
+    ],
+    "ere_tardive": [
+      75.0,
+      90.0
+    ],
+    "pas": 40,
+    "critere_nucleation": "dΛ > 0 avec dN > 0"
+  },
+  "mesures": {
+    "n4_440201": {
+      "I_nucleation": 9.5,
+      "I_croissance": 0.0,
+      "I_total": 9.5,
+      "I_reference_T50": 9.5,
+      "ecart_relatif": 0.0,
+      "fraction_nucleation": 1.0,
+      "fraction_croissance": 0.0,
+      "anomalies_fin": 4
+    },
+    "n4_440203": {
+      "I_nucleation": 25.929,
+      "I_croissance": 0.0,
+      "I_total": 25.929,
+      "I_reference_T50": 25.93,
+      "ecart_relatif": 0.0001,
+      "fraction_nucleation": 1.0,
+      "fraction_croissance": 0.0,
+      "anomalies_fin": 4
+    },
+    "n8_440201": {
+      "I_nucleation": 13.143,
+      "I_croissance": 5.786,
+      "I_total": 18.929,
+      "I_reference_T50": 18.93,
+      "ecart_relatif": 0.0001,
+      "fraction_nucleation": 0.694,
+      "fraction_croissance": 0.306,
+      "anomalies_fin": 8
+    },
+    "n8_440203": {
+      "I_nucleation": 16.286,
+      "I_croissance": 0.214,
+      "I_total": 16.5,
+      "I_reference_T50": 16.5,
+      "ecart_relatif": 0.0,
+      "fraction_nucleation": 0.987,
+      "fraction_croissance": 0.013,
+      "anomalies_fin": 8
+    }
+  },
+  "verdict_classe": "S+ (la paroi crée : la production est d'abord nucléation — 100 % à n = 4, 69 % à n = 8 ; la croissance n'est que le remplissage à fort quantum ; l'identité I_nuc + I_gro = I tient au centime)",
+  "falsifieur": "décomposition qui ne somme pas ; nucléation ≤ 50 % ; croissance n = 4 ≥ n = 8 ; écart inter-graines > 1.5",
+  "suites_declarees": "le taux de nucléation en fonction du quantum (I_nuc par unité de paroi) ; la longueur de naissance des filaments ; confrontation au réel en réserve (règle T25)",
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": true,
+  "V5": true,
+  "criteres": {
+    "V1_trajectoires_saines": true,
+    "V2_decomposition_exhaustive": true,
+    "V3_nucleation_domine": true,
+    "V4_croissance_fort_quantum": true,
+    "V5_fraction_reproductible": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 289.31,
+  "sha256_script": "092260e3f79e3bad975b868ce107cdd5d9f48b3ba4616fc0160c5908941e66e8"
+}
