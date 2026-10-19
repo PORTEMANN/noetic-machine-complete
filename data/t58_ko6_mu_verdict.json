@@ -1,0 +1,99 @@
+{
+  "chantier": "T58-Q-KO6-MU-2026-10",
+  "protocole": "T58-KO6-MU-1.1 (gelé)",
+  "mode": "RUN LOCAL — publication en attente du feu vert de l'auteur",
+  "objet": "T58 : la tension silencieuse — μ(n) aux trois quanta (protocole T57) confrontée à μ_ref mesurée sur un anneau de vortex isolé ; témoin analytique μ_th = 2πA·ln(R/ξ)/4 (convention déclarée)",
+  "doctrine": "T57 (le silence) ; T56 (le dormeur réveillé) ; corridor E (les constructions d'anneaux)",
+  "statut_du_mot": "MESURE — rapport de pentes, jamais ajustement croisé",
+  "configuration": {
+    "N": 64,
+    "A": 2.0,
+    "gamma": 0.3,
+    "dt": 0.05,
+    "quanta": [
+      2,
+      4,
+      4,
+      8
+    ],
+    "graines": [
+      440201,
+      440201,
+      440203,
+      440201
+    ],
+    "ere_silencieuse": [
+      72.0,
+      90.0
+    ],
+    "portee_min": 0.1,
+    "pas": 40,
+    "mu_theorique": 11.84
+  },
+  "mesures": {
+    "mu_reference_anneau": {
+      "mu": 15.719,
+      "methode": "difference a l'etat zero (l'anneau qui rapetisse rayonne — D1)",
+      "R2_regression_rayonnement": 0.933,
+      "Lambda_moyenne": 130.7,
+      "E_anneau": 3015.8,
+      "E_zero": 961.8
+    },
+    "mu_theorique": 11.84,
+    "rapport_silence_ref_n4": 0.955,
+    "rapport_ref_theorique": 1.328,
+    "runs": {
+      "n2_440201": {
+        "mu_silence": 0.0,
+        "R2_silence": 0.0,
+        "portee_Lambda": 0.06,
+        "mesurable": false,
+        "anomalies_fin": 2
+      },
+      "n4_440201": {
+        "mu_silence": 15.019,
+        "R2_silence": 0.87,
+        "portee_Lambda": 0.2,
+        "mesurable": true,
+        "anomalies_fin": 4
+      },
+      "n4_440203": {
+        "mu_silence": 16.143,
+        "R2_silence": 0.889,
+        "portee_Lambda": 0.16,
+        "mesurable": true,
+        "anomalies_fin": 4
+      },
+      "n8_440201": {
+        "mu_silence": 1.144,
+        "R2_silence": 0.953,
+        "portee_Lambda": 2.253,
+        "mesurable": true,
+        "anomalies_fin": 8
+      }
+    },
+    "quanta_valides": [
+      "n4_440201",
+      "n4_440203"
+    ]
+  },
+  "verdict_classe": "S+ (la tension du tangle silencieux est la tension de l'anneau : μ ≈ 15 par cellule, constante en quantum, égale au vortex unique à ~5 % — la modélisation matière/énergie tient du côté microscopique, et le tangle est une collection de l'objet unique, monnaie par monnaie)",
+  "falsifieur": "anneau hors plage ou μ_ref ≤ 0 ; R² < 0.7 aux quanta valides ; tension variant en quantum ; rapport hors [0.7, 1.5]",
+  "suites_declarees": "le bilan énergétique de Vinen (dE/dt vs μ·dΛ/dt) ; la tension aux grilles plus fines (N = 96) ; confrontation au réel en réserve (règle T25)",
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": true,
+  "V5": true,
+  "criteres": {
+    "V1_trajectoires_saines": true,
+    "V2_reference_propre": true,
+    "V3_tension_silencieuse": true,
+    "V4_tension_universelle": true,
+    "V5_confrontation": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 20.05,
+  "sha256_script": "995a38054ebb6cac1317e32c5e796f7b1a3c94c1e97e8dab3dd16229768d8f90"
+}

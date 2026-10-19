@@ -150,10 +150,21 @@ comptabilité E = μΛ tient : R² = 0.87–0.89, μ = 15.0–16.1
 reproductible à 7 % à n = 4 ; la monnaie étrangère était le forçage,
 pas la physique — la comptabilité matière/énergie existe, à condition
 de se taire ; D1 : le silence est relatif (5–19×), une loi peut
-mourir faute de variation comme faute de régime)**.
-Suite proposée : la tension silencieuse μ(n) sur les trois quanta ;
-la comparaison μ_silence vs 2πA ln(R/ξ) (tension vortex théorique) ;
-confrontation au réel en réserve (règle T25).
+mourir faute de variation comme faute de régime)** ; **T58 publiée le
+19/10/2026 (5/5 : la tension silencieuse — μ_ref mesurée sur un anneau
+de vortex isolé (différence à l'état zéro, car un anneau qui
+rapetisse rayonne — D1) : μ_ref = 15.72 ; μ_silence(n = 4) = 15.02 /
+16.14 ; rapport 0.955 — le tangle porte la tension du vortex unique à
+5 % près ; la pente d'artefact de n = 8 (R² 0.95, μ = 1.14) rappelle
+que le R² ne valide pas l'objet ; la modélisation matière/énergie tient
+du côté microscopique)**.
+**L'ère énergie a sa première carte validée (T56–T58).** Réfutée sous
+forçage, réveillée en silence, confirmée au microscope : μ ≈ 15 par
+cellule, le tangle est une collection de l'objet unique, monnaie par
+monnaie.
+Suite proposée : le bilan énergétique de Vinen (dE/dt vs μ·dΛ/dt) ;
+la tension aux grilles fines (N = 96) ; confrontation au réel en
+réserve (règle T25).
 
 ## 4. La phrase de synthèse
 
