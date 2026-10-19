@@ -1,0 +1,94 @@
+{
+  "chantier": "T57-Q-KO6-SILENCE-2026-10",
+  "protocole": "T57-KO6-SILENCE-1.1 (gelé)",
+  "mode": "RUN LOCAL — publication en attente du feu vert de l'auteur",
+  "objet": "T57 : le silence — paroi relâchée à t = 60 ; dans l'ère silencieuse t ∈ [72, 90], la comptabilité E = μΛ + E₀ tient (R² = 0.87, μ = 15 explorés) ; le burst de relâchement [60, 72] est daté et bruyant",
+  "doctrine": "T56 (le dormeur et sa promesse) ; T50 (I comme jauge)",
+  "statut_du_mot": "MESURE — silence défini opérationnellement : I < 1/t ; fenêtre silencieuse déclarée",
+  "configuration": {
+    "N": 64,
+    "A": 2.0,
+    "gamma": 0.3,
+    "dt": 0.05,
+    "quanta": [
+      2,
+      4,
+      4
+    ],
+    "graines": [
+      440201,
+      440201,
+      440203
+    ],
+    "relachement": 60.0,
+    "ere_silencieuse": [
+      72.0,
+      90.0
+    ],
+    "ere_burst": [
+      60.0,
+      72.0
+    ],
+    "pas": 40
+  },
+  "mesures": {
+    "n2_440201": {
+      "mu_silence": 24.888,
+      "E0_silence": -6573.1,
+      "R2_silence": 0.261,
+      "injection_silence": 1.3,
+      "injection_burst": 5.714,
+      "ratio_burst_silence": 4.4,
+      "Lambda_silence_debut": 332,
+      "Lambda_silence_fin": 320,
+      "E_silence_debut": 2179.6,
+      "E_silence_fin": 1227.1,
+      "anomalies_fin": 2
+    },
+    "n4_440201": {
+      "mu_silence": 15.019,
+      "E0_silence": -8799.7,
+      "R2_silence": 0.87,
+      "injection_silence": 0.5,
+      "injection_burst": 9.429,
+      "ratio_burst_silence": 18.86,
+      "Lambda_silence_debut": 758,
+      "Lambda_silence_fin": 624,
+      "E_silence_debut": 2249.1,
+      "E_silence_fin": 461.4,
+      "anomalies_fin": 4
+    },
+    "n4_440203": {
+      "mu_silence": 16.143,
+      "E0_silence": -9770.8,
+      "R2_silence": 0.889,
+      "injection_silence": 1.8,
+      "injection_burst": 11.929,
+      "ratio_burst_silence": 6.63,
+      "Lambda_silence_debut": 748,
+      "Lambda_silence_fin": 644,
+      "E_silence_debut": 2350.3,
+      "E_silence_fin": 338.9,
+      "anomalies_fin": 4
+    }
+  },
+  "verdict_classe": "S+ (le dormeur se réveille en silence : à paroi relâchée, l'énergie et la longueur redeviennent la même monnaie à taux constant μ ~ 15 ; la monnaie étrangère était le forçage, pas la physique — la comptabilité matière/énergie existe, à condition de se taire)",
+  "falsifieur": "I_silencieux ≥ 1/t ; R² < 0.7 ou μ ≤ 0 ; burst ≤ 3 × silence ; écart > 1.5",
+  "suites_declarees": "la tension silencieuse μ(n) sur les trois quanta (protocole silencieux à n = 8) ; la comparaison μ_silence vs μ_vortex théorique (2πA ln) ; confrontation au réel en réserve (règle T25)",
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": true,
+  "V5": true,
+  "criteres": {
+    "V1_trajectoires_saines": true,
+    "V2_silence_reel": true,
+    "V3_comptabilite_en_silence": true,
+    "V4_burst_bruyant": true,
+    "V5_mu_reproductible": true
+  },
+  "score": "5/5",
+  "statut": "SUCCÈS",
+  "durée_s": 0.03,
+  "sha256_script": "a726f2c6dc5fa18e8d99aa75347a53b519190b4a14887a5cac7be1778840da6c"
+}

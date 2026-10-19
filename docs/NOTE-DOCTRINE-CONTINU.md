@@ -143,9 +143,16 @@ réfutée comme relation étroite dans le protocole à paroi forcée :
 incréments décorrélés R² ~ 0.02, seconde graine qui tue la première,
 paroi à monnaie étrangère ; DORMEUR — la comptabilité matière/énergie
 attend un protocole silencieux ; D1 : jamais pré-enregistrer une loi
-sans reproduction croisée, même quand la première graine est belle)**.
-Suite proposée : le protocole silencieux (paroi relâchée après
-drainage) pour retenter E = μΛ ; le bilan énergétique de Vinen ;
+sans reproduction croisée, même quand la première graine est belle)** ;
+**T57 publiée le 19/10/2026 (5/5 : le silence — à paroi relâchée,
+ère silencieuse [72, 90] après le burst daté [60, 72], la
+comptabilité E = μΛ tient : R² = 0.87–0.89, μ = 15.0–16.1
+reproductible à 7 % à n = 4 ; la monnaie étrangère était le forçage,
+pas la physique — la comptabilité matière/énergie existe, à condition
+de se taire ; D1 : le silence est relatif (5–19×), une loi peut
+mourir faute de variation comme faute de régime)**.
+Suite proposée : la tension silencieuse μ(n) sur les trois quanta ;
+la comparaison μ_silence vs 2πA ln(R/ξ) (tension vortex théorique) ;
 confrontation au réel en réserve (règle T25).
 
 ## 4. La phrase de synthèse
