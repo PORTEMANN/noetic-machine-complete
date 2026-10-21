@@ -1,8 +1,8 @@
-# Note d'applications — les machines hors de la physique (proposition de doctrine)
+# Note d'applications — les machines hors de la physique (doctrine adoptée)
 
-**Date :** 2026-10-20 · **Tiroir :** carnet — **proposition de doctrine,
-non adoptée** : adoption = décision d'auteur (un « oui » nomme la
-version, un amendement la modifie).
+**Date :** 2026-10-20 · **Tiroir :** doctrine — **ADOPTÉE le 2026-10-21**
+(décision d'auteur : « partons sur la feuille de route en 3 phases ») ·
+la feuille de route est lancée, phase par phase.
 **Origine :** document d'proposition joint (améliorations de la machine,
 application en ligne sur histoire-des-sciences.eu) — abstraction de la
 mécanique algorithmique (opérateur à tolérance gelée, testeur de
@@ -84,8 +84,9 @@ d'entreprise, tableaux de bord — jamais le calcul.**
 
 ## 5. Gouvernance
 
-Note proposée le 2026-10-20 ; rien n'est scellé. Adoption = décision
-d'auteur ; amendements bienvenus (les tensions peuvent être re-pondérées,
-la feuille de route réordonnée). Ce qui n'est pas négociable dans
-l'esprit de la proposition : la vérifiabilité rejouable, les dormeurs
+Note **adoptée le 2026-10-21** (décision d'auteur : « partons sur la
+feuille de route en 3 phases »). Amendements possibles à tout moment
+(les tensions peuvent être re-pondérées, la feuille de route
+réordonnée), par décision explicite. Ce qui n'est pas négociable dans
+l'esprit de la doctrine : la vérifiabilité rejouable, les dormeurs
 publiés, les registres séparés.
