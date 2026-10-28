@@ -1,0 +1,40 @@
+{
+  "version": "0.1",
+  "date_figeage": "2026-10-28",
+  "description": "Parametres figes du pipeline de pre-traitement ANTsPy (branche B-light). Toute modification exige une nouvelle version et une note de changement.",
+  "t1_to_mni": {
+    "transform": "SyNRA",
+    "mni_resolution_mm": 2
+  },
+  "epi_to_t1": {
+    "transform": "Rigid"
+  },
+  "motion_correction": {
+    "transform": "Rigid",
+    "type_of_transform": "ants_motion_correction"
+  },
+  "nuisance": {
+    "regressors": ["wm_mean", "csf_mean", "linear_drift"],
+    "motion_regression": "chantier v0.2 (ants.motion_correction n'expose pas les parametres en tableau)",
+    "wm_threshold": 0.9,
+    "csf_threshold": 0.9,
+    "erode_voxels": 1
+  },
+  "filter": {
+    "type": "butterworth_bandpass",
+    "order": 3,
+    "fmin_hz": 0.01,
+    "fmax_hz": 0.1
+  },
+  "atlas": {
+    "name": "AAL",
+    "version": "SPM12",
+    "n_rois": 116,
+    "extraction": "NiftiLabelsMasker",
+    "standardize": true
+  },
+  "output": {
+    "connectome": "fisher_z_116x116",
+    "sidecar": "json_avec_versions_et_parametres"
+  }
+}
