@@ -271,8 +271,64 @@ Trois leçons, deux de banc d'essai et une scientifique :
    réalisent pas la configuration, l'axe sera révisé. Mieux vaut cette
    fragilité connue avant ADNI qu'après.
 
+## 10. Addendum — premier run réel : ABIDE I (28/10/2026)
+
+**Données.** ABIDE I, dérivés pré-traités ABIDE-CPAC (variante
+`filt_noglobal`, séries AAL téléchargées depuis le bucket public S3
+`fcp-indi`), 636 sujets QC-OK retenus (rater 2 anatomie + fonctionnel
+« OK »), 14 exclus (séries constantes, site SDSU surtout) → **622
+analysés : 308 TSA / 314 contrôles, 19 sites**. Graine publique
+20261028 partout.
+
+**Passage 1** (Z pooled + nul de partition symétrique G/D, N = 2 000) :
+Z faibles partout (|Z| ≤ 0.30). Le nul de partition montre que C_26
+(p = 0.038) et M_34 (p = 0.020) portent une information spécifique de
+la partition anatomique figée — non significatif après correction
+multiple.
+
+**Passage 2** (nul par permutation des étiquettes, N = 10 000 ;
+déformation D2 ; retrait des moyennes de site) :
+
+| Invariant | Z | p | p (Bonferroni ×5) | Survit au retrait des sites |
+|---|---|---|---|---|
+| Γ | +0.06 | 0.46 | 1.0 | — |
+| S_ent | +0.07 | 0.39 | 1.0 | — |
+| d_eff | +0.06 | 0.49 | 1.0 | — |
+| C_26 | +0.27 | 0.0006 | 0.003 | oui (Z 0.23) |
+| M_34 | −0.30 | 0.0003 | 0.0015 | oui (Z −0.33) |
+
+Robustesse D2 totale (Z identiques au 10⁻³). Effets petits (d ≈ 0.3)
+mais réels, significatifs après Bonferroni, et non attribuables au site.
+
+**Lecture doctrine.**
+
+1. **L'instrument mesure quelque chose de réel** : deux invariants
+   (couplage Émotion–Social ↑, couplage Raisonnement–Intuition ↓ chez
+   TSA) sont robustes à la déformation, au site, et au hasard des
+   étiquettes. La machine n'est pas vide sur vrais cerveaux.
+2. **L'axe gelé TSA ne se reproduit pas** : la carte gèle Γ↑ et C_26↓ ;
+   l'observation donne Γ ≈ 0 et C_26 **au signe opposé**. Le Table 8 de
+   Cognition_2 échoue à son deuxième test de re-production. Verdict
+   provisoire : CS− sur l'axe tel quel, révision ou re-test après
+   HCP/ADNI. Rien de scellé, rien de cassé.
+3. **Le spectre réel est Perron-dominé** (d_eff ≈ 1.07) : la fragilité
+   Γ–S_ent du §9 se confirme plus forte encore sur données réelles.
+
+**Correction de données (importante).** La cohorte « COBRE/ds004169
+(N = 296, schizophrénie) » de la carte est **fausse** : ds004169 est
+le dataset QTIM (jumeaux sains du Queensland, tâche n-back + repos +
+DWI — utile comme second grand échantillon contrôle, pas clinique) et
+COBRE authentique compte 146 sujets (72 SZ + 74 contrôles, rs-fMRI,
+accès NITRC). Paysage SZ réel : COBRE 146 (NITRC), MCIC 331
+(ds000115 OpenNeuro, brut natif), SchizConnect (demande formelle).
+Aucun dérivé pré-traité ouvert pour SZ — l'axe SZ réel exige le
+pré-traitement (branche B) ou une demande formelle.
+
 ---
 
 *Note de consolidation — carte candidate, non scellée. Les statistiques
 de Cognition_2 citées ici restent des valeurs déclarées jusqu'au run.
-Addendum §9 : dry-run synthétique du 28/10/2026, instrument OK.*
+Addendum §9 : dry-run synthétique du 28/10/2026, instrument OK.
+Addendum §10 : premier run réel ABIDE I du 28/10/2026 — deux effets
+robustes (C_26, M_34), axe TSA gelé non reproduit, correction de la
+cohorte ds004169 (QTIM).*
