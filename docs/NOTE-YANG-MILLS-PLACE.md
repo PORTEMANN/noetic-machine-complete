@@ -80,3 +80,31 @@ poids dynamique de la force forte dans l'écosystème.
 > profondeurs non perturbatives (confinement, écart de masse) attendent
 > au registre, hors régime, scellées plutôt que jugées. Le pont φ a ses
 > deux rives ; la force forte a désormais son premier poids.*
+
+## 5. Addendum du 28/10/2026 — la frontière poreuse, manifestée en temps réel
+
+Le 25-26/10/2026, OpenAI annonce l'existence de Yang-Mills prouvée
+(preuve en langage naturel du 09/09/2026 ; **formalisation Lean
+achevée le 16/10/2026** ; approche Balaban, QCD et complétion unifiée
+du Modèle Standard ; groupe de gardiens mené par David Gross — Nobel
+2004 *pour la liberté asymptotique, le contact rejoué de cette note* —
+avec Jaffe, Douglas, Klebanov, Nekrasov). Points qui engagent la
+maison :
+
+1. **L'artifact Lean existe mais n'est pas public** — le groupe
+   retient l'artifact et rédige lui-même. La frontière déclarée le
+   26/10 (NOTE-PESEE-SIMON) s'applique mot pour mot : un artifact
+   décrit mais non exécutable par quiconque laisse l'objet **hors
+   régime, scellé, dormant**.
+2. **L'écart de masse n'est pas revendiqué** — le prix Clay reste
+   intouché ; cette moitié du problème demeure hors régime sans
+   condition de passage.
+3. **La symétrie observée** : les artifacts des résultats
+   mathématiques (ETH, Kakeya) sont publics ; celui de la physique
+   est gardé. La doctrine de la maison — vérifiabilité rejouable
+   contre autorité de garde — n'a jamais eu d'illustration plus nette.
+   Noté sans jugement.
+4. **Passage en régime déclaré d'avance** : le jour où le fichier Lean
+   de l'existence sera public, la maison **rejouera** — la compilation
+   Lean est une exécution byte-conforme, le métier exact du banc.
+   Le scellement de ce passage vit au registre : **REG-2026-005**.
