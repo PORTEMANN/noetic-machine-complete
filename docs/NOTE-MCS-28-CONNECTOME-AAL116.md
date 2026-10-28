@@ -221,13 +221,58 @@ def deformation_d2_majorana(M):
 
 ## 8. Suite
 
-1. Versionner le moteur en fichier `.py` et le tester sur connectomes
-   synthétiques à modules plantés (dry-run, zéro donnée clinique).
+1. ~~Versionner le moteur en fichier `.py` et le tester sur connectomes
+   synthétiques à modules plantés (dry-run, zéro donnée clinique).~~
+   Fait le 28/10/2026 : `src/mcs28_connectome_aal116.py`, dry-run OK
+   (§9).
 2. Obtenir les accès ADNI / HCP.
 3. Démonstration de puissance règle 1.2 sur HCP contrôles → seulement
    alors, verdict de scellement ou retour en chantier.
 
+## 9. Addendum — dry-run synthétique (28/10/2026)
+
+Banc d'essai : connectomes synthétiques 116×116 **clairsemés à queue
+lourde** (présence lognormale, communautés de plans, signes aléatoires),
+modules plantés selon les axes gelés, N = 50 sujets/groupe, graine
+publique 20261028. Z-scores contre le groupe contrôle.
+
+| Axe planté | Z | Sens gelé | Verdict |
+|---|---|---|---|
+| tsa Γ | +3.38 | ↑ | OK |
+| tsa C_26 | −3.69 | ↓ | OK |
+| sz Γ | −13.06 | ↓ | OK |
+| sz S_ent | −12.60 | ↑ | **couplage documenté (hors verdict)** |
+| ad d_eff | −2.99 | ↓ | OK |
+| ad M_34 | −5.40 | ↓ | OK |
+
+Déterminisme (rejeu à graine égale) et déformation D2 (finie,
+symétrique) : OK. **Verdict : instrument OK — 5/6 directions
+récupérées.**
+
+Trois leçons, deux de banc d'essai et une scientifique :
+
+1. **L'instrument travaille sur |W|.** Les plants doivent contrôler les
+   magnitudes et la présence des arêtes ; les plants agissant sur les
+   signes (soustraction, mode rang-1) sont détruits par la valeur
+   absolue. Le bruit additif signé à travers |·| est convexe : il
+   amplifie les boosts existants au lieu de les diluer.
+2. **Le générateur doit imiter les vrais connectomes.** Un fond
+   gaussien dense noie tout signal planté par sommation LLN après
+   projection ; seule la loi clairsemée à queue lourde donne un rapport
+   signal/fond réaliste.
+3. **Résultat scientifique principal : Γ et S_ent sont positivement
+   couplés dans le monde projeté.** M est 7×7 — le spectre de M² n'a
+   que sept valeurs propres, et S_ent mesure la domination du mode de
+   Perron. Tout aplatissement spectral renforce la spécialisation
+   diagonale. L'axe gelé SZ « S_ent↑ Γ↓ » n'est plantable par aucune
+   perturbation structurelle simple : c'est l'axe le plus fragile de
+   l'instrument. Le nul de permutation (symétrie G/D, N = 10 000)
+   devra quantifier ce couplage sous H₀ ; si les vrais connectomes ne
+   réalisent pas la configuration, l'axe sera révisé. Mieux vaut cette
+   fragilité connue avant ADNI qu'après.
+
 ---
 
 *Note de consolidation — carte candidate, non scellée. Les statistiques
-de Cognition_2 citées ici restent des valeurs déclarées jusqu'au run.*
+de Cognition_2 citées ici restent des valeurs déclarées jusqu'au run.
+Addendum §9 : dry-run synthétique du 28/10/2026, instrument OK.*
