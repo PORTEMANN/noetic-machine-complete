@@ -208,3 +208,46 @@ hypothèse Λ tuée, secteur léger libre de tout choix. La dette Kolmogorov
 est remboursée quatre fois ; le circuit comptabilité → mesure →
 correction a tourné deux fois complet en une soirée.
 
+## 9. D1e — pourquoi la constituante : physique effective (première
+passe, 2026-10-30)
+
+Instrument : `src/physique_effective_constituante.py`. Entrées PDG
+uniquement, zéro paramètre ajusté.
+
+**Un troisième ancrage indépendant.** Le moment magnétique du proton,
+dans le modèle non relativiste à quarks constituants (μ_p = e/2m_q),
+donne m_q^const = m_p/μ_p = **336,0 MeV** — sans aucun choix. Le test
+structural associé μ_n/μ_p = −2/3 prédit −0,6667 contre −0,6850 mesuré
+(2,7 %, corrections spin/orbite classiques du NR).
+
+**Synthèse : la constituante est surdéterminée.** Deux observables
+indépendantes y ancrent à 7,3 % près :
+
+| Ancrage | m_q^const | Observable |
+|---|---|---|
+| Baryons (D1d) | 313,0 MeV | masses N, Λ, Ξ |
+| Moments magnétiques (D1e) | 336,0 MeV | μ_p, μ_n |
+
+La dispersion est celle attendue du modèle NR (spin/orbite) : le
+concept n'est pas un ajustement, il est contraint par la spectroscopie
+de deux secteurs distincts.
+
+**Le pont infrarouge (justification de la variable).** Un seuil à
+Λ ~ 300–500 MeV est un phénomène infrarouge : sous ~ 2 GeV, la section
+e⁺e⁻ → hadrons est dominée par les résonances (ρ, ω, φ), non par le
+régime partonique (R ≠ 3ΣQ_f² = 2). La sonde franchissant le seuil voit
+donc des degrés de liberté **habillés** — et la masse habillée par le
+condensat quark est précisément la masse constituante. La variable du
+modèle à seuils est la variable exacte du régime. (Valeurs R
+quantitatives : à sourcer dans la revue PDG e⁺e⁻ avant tout scellement —
+marqué non vérifié ici.)
+
+**Lien avec le registre des dettes.** L'escalier est l'intégrale d'une
+fonction β dont le contenu léger est habillé ; dériver cette β
+(boucles, W/Z/H, polarisation hadronique) est exactement la dette D2.
+D1e ferme la justification de la variable ; D2 reste la dérivation de la
+dynamique. La physique effective de la masse constituante a désormais :
+une définition (m_N/3), deux mesures indépendantes (313 / 336 MeV),
+une justification de régime (IR habillé), et un pont explicite vers la
+dette suivante.
+
