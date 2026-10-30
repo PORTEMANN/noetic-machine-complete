@@ -121,3 +121,44 @@ mesures.
    publiée, le bilan est chiffré, la règle de seuil coût/précision est
    proposée au prochain passage. Révision uniquement par note datée.
 
+## 7. D1c — audit des seuils de l'escalier (2026-10-30)
+
+Instrument : `src/audit_seuil_s.py`. Scénarios déclarés, calcul direct,
+projecteur de Heaviside appliqué strictement (seuil ouvert seulement si
+m < Λ — le top est fermé à M_Z, ce qui reproduit la base du corpus à
+128,3969 exact).
+
+**Correction datée de la lecture 3 du §6.** L'audit mesure l'inverse de
+l'inquiétude que j'y avais consignée : le seuil s est *inerte* — sur
+toute la fourchette honnête [0,075 ; 0,950] GeV, la prédiction bouge de
+128,26 à 128,44 (écart 0,24–0,38 %, S+ partout). Le choix s = 0,500
+coûte ses bits descriptifs mais n'achète et ne perd rien. Le vrai point
+de charge est ailleurs.
+
+**Résultat central : la triade m_p/3 est l'unique pari structurel du
+muscle micro.** Sensibilités : c (pole vs MS) ≤ 0,06 %, b ≤ 0,01 %,
+t nul (fermé), s couverte ci-dessus. Mais u/d aux masses MS physiques :
+prédiction 126,69 (0,99 %, bord du S+) ; tout-MS̄ : 126,57 → **1,08 %,
+downgrade P**. Le muscle tient entier sur le seuil de confinement à
+m_p/3 — précisément le pari que le sceau voulait structurel. L'audit le
+confirme et le localise chirurgicalement.
+
+**Comparaison canonique, avec réserve déclarée.** La valeur fermionique
+canonique du Modèle Standard (3 boucles QED+QCD) vaut ≈ 128,95, écart
+0,78 % à l'expérience — plus mauvais que les 0,35 % du modèle à seuils
+discrets. Réserve honnête : le canon inclut la polarisation hadronique ;
+la formule à seuils ne la contient pas, et la triade à 313 MeV (même
+ordre que Λ_QCD ≈ 213 MeV) y fonctionne comme ancre infrarouge
+effective. Le muscle est un modèle effectif à seuils dont l'accord bat
+le calcul canonique nu — déclaré comme tel, pas vendu pour de la QFT.
+
+**Verdict de l'audit : muscle micro renforcé.** Insensibilité démontrée
+à 8 seuils sur 9 ; le neuvième identifié comme le pari unique ; comparaison
+canonique favorable. Suite naturelle : chantier sur la triade elle-même
+(m_p/3 vs Λ_QCD × coefficient ; lien avec la charge effective IR).
+
+**Leçon de méthode.** Une comptabilité (D1b) avait désigné un faux
+coupable (le seuil s) ; une mesure (D1c) a désigné le vrai (la triade).
+L'ordre comptabilité → mesure → correction datée est le circuit complet
+du remboursement de dette. Répéter.
+
