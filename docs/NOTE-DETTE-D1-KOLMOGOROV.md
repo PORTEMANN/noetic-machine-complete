@@ -162,3 +162,49 @@ coupable (le seuil s) ; une mesure (D1c) a désigné le vrai (la triade).
 L'ordre comptabilité → mesure → correction datée est le circuit complet
 du remboursement de dette. Répéter.
 
+## 8. D1d — chantier triade : la masse constituante comme ancre IR
+(2026-10-30)
+
+Instrument : `src/chantier_triade.py`. Entrées : masses PDG des baryons
+uniquement ; zéro paramètre ajusté.
+
+**Résultat.** Le seuil s = 0,500 GeV du corpus — désigné « arbitraire »
+par le comité puis « inerte mais coûteux » par D1b — est la **masse
+constituante du quark s**, mesurée indépendamment par deux hyperons :
+
+| Estimation | Valeur | Accord avec 0,500 GeV |
+|---|---|---|
+| m_s^const via Λ = m_Λ − m_N + m_N/3 | 489,7 MeV | 2,1 % |
+| m_s^const via Ξ = (m_Ξ − m_N/3)/2 | 502,6 MeV | 0,5 % |
+| moyenne | 496,2 MeV | **0,8 %** |
+
+Avec ce seuil mesuré (et non choisi), l'escalier donne 128,3966 — même
+accord 0,35 %, S+. Le secteur léger de l'escalier est désormais sans
+aucun choix libre : u/d ≡ m_N/3 (définition de la masse constituante),
+s ≡ spectroscopie hyperonique. Le schéma mixte du corpus — constituante
+pour les saveurs confinées, MS̄ pour les lourdes — n'est plus un choix
+à payer en bits : c'est l'usage correct de deux masses différentes pour
+deux régimes physiques différents (confiné vs quasi-libre).
+
+**Hypothèse Λ_QCD tuée quantitativement.** m_p/3 (313,0 MeV) vs
+Λ^(3) = 334 / Λ^(4) = 294 / Λ^(5) = 213 MeV : écarts de 6 %, 6 %, 47 %.
+L'ancre du modèle à seuils n'est pas l'échelle de divergence
+perturbative : c'est la masse habillée par le condensat. L'hypothèse
+avancée en D1c (« Λ_QCD × coefficient ») est close : pas de coefficient,
+autre objet.
+
+**Conséquences comptables.** Le coût descriptif du seuil s (4–6 bits de
+D1b) est remboursé : la valeur est dérivée de la spectroscopie (Classe
+A, dérivation). Reste le pari structurel unique et désormais parfaitement
+localisé : pourquoi la masse constituante — qui est la bonne variable
+dans un modèle à seuils discrets — et pourquoi le modèle à seuils
+lui-même. C'est une question de physique effective, ouverte, datée.
+
+**Bilan de la dette D1.** D1 (densité + convention) : soldée.
+D1b (comptabilité) : soldée, avec deux corrections datées (s, triade).
+D1c (audit des seuils) : soldé — triade identifiée comme charge unique.
+D1d (chantier triade) : soldé — ancre constituante établie à 0,8 %,
+hypothèse Λ tuée, secteur léger libre de tout choix. La dette Kolmogorov
+est remboursée quatre fois ; le circuit comptabilité → mesure →
+correction a tourné deux fois complet en une soirée.
+
