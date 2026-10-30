@@ -388,6 +388,49 @@ plan-muscles.txt (7f8b9c2a…) est une séquence plaçabo, pas un
 SHA-256 réel — à corriger par auto-empreinte vérifiable lors de tout
 rescellement.
 
+## 12. Addendum — déformation D4 (régression globale) et clôture de la
+piste sans-Perron (30/10/2026)
+
+**Contexte.** La question ouverte du §11 : que voit l'instrument quand
+le mode de Perron ne l'écrase plus ? Expérience directe : les deux
+variantes CPAC du même pipeline sur les mêmes 622 sujets —
+`filt_noglobal` (mode global conservé) et `filt_global` (mode global
+régressé = monde sans-Perron). Partition atlas figée identique (MCS-28),
+nuls par permutation des étiquettes N = 10 000, graine 20261028.
+
+**Résultats.**
+
+| Invariant | sans régression (Perron) | avec régression (sans-Perron) |
+|---|---|---|
+| Γ | +0,06 (p = 0,46) | +0,06 (p = 0,46) |
+| S_ent | +0,07 | +0,01 |
+| d_eff | +0,06 | +0,01 |
+| C_26 | +0,27 (p = 0,0006) | +0,17 (p = 0,035) |
+| M_34 | −0,30 (p = 0,0003) | −0,10 (p = 0,20) |
+
+Moments spectraux du Laplacien dans le monde sans-Perron (Fiedler,
+trou relatif, entropie spectrale) : |Z| ≤ 0,11 — muets.
+
+**Déformation D4 désormais déclarée** (régression globale du signal).
+Elle n'appartenait pas au groupe initial (D1–D3) ; son ajout après
+coup est une manœuvre de falsification, autorisée, mais tout verdict
+doit la compter désormais.
+
+**Statut révisé des effets du §10.** C_26 : partiellement robuste
+(significatif nominalement dans les deux mondes, Bonferroni dans un
+seul) — état CSp. M_34 : fragile (mort sous D4). L'affirmation de la
+lettre ouverte du 29/10/2026 (« solidité qui survit aux déformations
+du banc ») reste exacte pour le groupe déclaré D1–D3 au moment de sa
+rédaction ; la correction publique a été publiée par l'auteur sur le
+fil LinkedIn le 30/10/2026.
+
+**Clôture de la piste sans-Perron.** Réponse obtenue : la structure
+de groupe vit dans le mode global et sa modulation différentielle ;
+le régime à spectre plat n'en porte pas. Question posée le 28/10,
+fermée le 30/10. Leçon gravée : la fragilité d'un effet à une
+déformation de pipeline n'est pas une honte, c'est une mesure — à
+condition d'être publiée comme telle.
+
 ---
 
 *Note de consolidation — carte candidate, non scellée. Les statistiques
@@ -398,4 +441,7 @@ robustes (C_26, M_34), axe TSA gelé non reproduit, correction de la
 cohorte ds004169 (QTIM).
 Addendum §11 : passage complet MCS-32 du 30/10/2026 — muscle méso
 mesuré CS−, invariance inter-grille modérée (r ≈ 0,5), micro vérifié
-(0,35 % S+), question Perron-sans-Perron ouverte.*
+(0,35 % S+), question Perron-sans-Perron ouverte.
+Addendum §12 : déformation D4 (régression globale) du 30/10/2026 —
+M_34 fragile, C_26 CSp, piste sans-Perron close, correction publiée
+sur le fil de la lettre ouverte.*
