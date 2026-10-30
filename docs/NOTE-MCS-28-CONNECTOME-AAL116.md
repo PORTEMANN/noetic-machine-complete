@@ -324,6 +324,70 @@ accès NITRC). Paysage SZ réel : COBRE 146 (NITRC), MCIC 331
 Aucun dérivé pré-traité ouvert pour SZ — l'axe SZ réel exige le
 pré-traitement (branche B) ou une demande formelle.
 
+## 11. Addendum — passage complet MCS-32 : partition spectrale endogène
+(30/10/2026)
+
+**Contexte.** Un sceau « muscles de l'écosystème » (fichier
+plan-muscles.txt, octobre 2026) déclarait trois muscles validés :
+micro (escalier spectral de la constante de structure), méso
+(MCS-32 — partition spectrale endogène du connectome par Laplacien,
+« CS+ invariance inter-grilles »), macro (RAR × SPARC, T48-D1).
+Ce paragraphe consigne la mesure complète du muscle méso.
+
+**Micro (vérifié).** L'escalier spectral est reproduit à l'identique :
+α⁻¹(M_Z) = 128.3969 vs PDG 127.952, écart 0,35 %, verdict S+.
+Entrées = masses PDG (mesurées), zéro paramètre ajusté ; la claim
+structurelle (triade m_p/3) mérite un audit dédié.
+
+**Méso (mesuré — verdict provisoire CS−).** Partition spectrale
+endogène (L = D − |W|, modes propres découpés en 7 bandes,
+zéro paramètre) sur ABIDE I : 622 sujets en grille AAL-116 et
+629 en grille cc200, nuls par permutation des étiquettes
+N = 10 000, graine publique 20261028.
+
+| Grille | Γ (Z, p) | S_ent (Z, p) | d_eff (Z, p) |
+|---|---|---|---|
+| AAL-116 (622) | −0,04 / 0,58 | −0,05 / 0,53 | −0,02 / 0,82 |
+| cc200 (629) | −0,16 / 0,05 | +0,14 / 0,09 | +0,14 / 0,07 |
+
+Aucun effet de groupe TSA sous la partition spectrale, dans aucune
+grille ; le Γ↑ du pilote 24 sujets (Z = +0,53) était le bruit de
+petit échantillon — la règle 1.2 existe précisément pour piéger ce
+cas en amont. L'axe « spécialisation de l'autisme » déclaré en 2025
+échoue donc sous les deux partitions, figée et endogène.
+
+**Invariance inter-grille (mesurée — modérée, non CS+).**
+Corrélation intra-sujet des invariants spectraux entre les grilles
+AAL et cc200 (log) : Γ r = 0,574 ; S_ent r = 0,441 ; d_eff r = 0,463.
+Signature individuelle réelle mais modérée : la moitié de la variance
+est grille-dépendante. Le « CS+ invariance structurelle » du sceau
+n'est pas supporté.
+
+**Lectures.**
+
+1. **La structure anatomique figée est le porteur du signal, pas un
+   biais.** Les deux effets robustes du §10 (C_26, M_34 — p < 0,003
+   Bonferroni, insensibles au site et à D2) vivent sur la partition
+   atlas ; la partition spectrale ne peut même pas les formuler (ses
+   bandes endogènes n'ont pas d'étiquettes sémantiques). Chercher
+   l'affranchissement de l'atlas a détruit la seule chose qui
+   marchait — leçon gravée.
+2. **Troisième échec de re-production consécutif pour les axes
+   déclarés de Cognition_2** (Γ↑ TSA sous atlas, sous spectrale,
+   C_26↓ sous atlas). La doctrine « déclaré ≠ mesuré » tient trois
+   rounds à la suite.
+3. **Question ouverte (la vraie trouvaille)** : la partition
+   spectrale vit dans un régime de spectre plat (S_ent ≈ 1,0,
+   d_eff ≈ 1,94) — le mode de Perron n'y domine plus. C'est une
+   porte distincte vers la question posée au §9 : que voit
+   l'instrument quand le Perron ne l'écrase pas ? Piste de
+   chantier, pas un verdict.
+
+**Vigilance de doctrine.** Le hachage figurant dans le sceau
+plan-muscles.txt (7f8b9c2a…) est une séquence plaçabo, pas un
+SHA-256 réel — à corriger par auto-empreinte vérifiable lors de tout
+rescellement.
+
 ---
 
 *Note de consolidation — carte candidate, non scellée. Les statistiques
@@ -331,4 +395,7 @@ de Cognition_2 citées ici restent des valeurs déclarées jusqu'au run.
 Addendum §9 : dry-run synthétique du 28/10/2026, instrument OK.
 Addendum §10 : premier run réel ABIDE I du 28/10/2026 — deux effets
 robustes (C_26, M_34), axe TSA gelé non reproduit, correction de la
-cohorte ds004169 (QTIM).*
+cohorte ds004169 (QTIM).
+Addendum §11 : passage complet MCS-32 du 30/10/2026 — muscle méso
+mesuré CS−, invariance inter-grille modérée (r ≈ 0,5), micro vérifié
+(0,35 % S+), question Perron-sans-Perron ouverte.*
