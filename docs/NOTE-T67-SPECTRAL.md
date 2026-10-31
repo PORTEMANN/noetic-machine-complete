@@ -163,3 +163,31 @@ d'amplitudes), SUCCES informatif (résidus = physique), ECHEC partiel
 (phase vs module — avec ζ calculé en séance). La formule des traces
 de Selberg tient toujours ; ce qui reste ouvert est nommé au bit près.
 
+## Passe 5 (2026-10-31) — dérivée de phase : ECHEC 2/4, hypothèse tuée
+
+Script : `src/t67e_ko6_scattering_p5.py` · verdict :
+`data/t67_ko6_spectral_p5_verdict.json`.
+
+Correction gelée appliquée (fond = Im(d/dr log φ)/(4π)) : le fond a
+désormais une structure mesurée (extrema à 8,74 ; 13,83 ; 11,5). Mais
+**aucun extremum ne tombe à ±0,3 des positions ζ** : l'hypothèse gelée
+de structure *localisée* aux γ/2 est tuée par la machine. Cause
+identifiée et mesurable : les pôles du scattering sont à Re(s) = 3/4 —
+distance 1/4 de la droite critique — la structure y est **large**
+(largeur ~1/2 en r), non résoluble en pics. Attribution partielle
+seulement (8,59 à 0,15 d'un extremum ; 10,21 à 0,05 d'un candidat).
+
+**Conclusion de l'exploration du fond.** Résultat négatif honnête :
+le fond continu est une fonction lisse ; les décalages résiduels de la
+passe 3 restent classés **physique** (poids cuspidaux non uniformes) ;
+la soustraction complète exigerait la machinerie entière de la formule
+des traces (Weyl, elliptiques, cusp, intégrale d'Eisenstein) — standard
+mais lourde, et elle n'ajouterait rien au résultat scellé de la passe 2 :
+**les quatre premières formes de Maass sont détectées dans les 107
+longueurs géodésiques primitives**, verdict 3/3.
+
+**Le chantier T67 est clos ici** : cinq passes, cinq statuts, zéro
+rétro-ingénierie, ζ calculé en séance, une exploration du fond close
+par un résultat négatif publié. L'atelier-type de la méthode a son
+chantier-type.
+
