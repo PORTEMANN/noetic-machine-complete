@@ -1,0 +1,50 @@
+{
+ "chantier": "T67-Q-KO6-SPECTRAL-2026-10",
+ "protocole": "T67-SPECTRAL-2.0 (gele)",
+ "passe": 2,
+ "n_orbites": 107,
+ "correction_de_critere": "C1 corrige : >= 3 accords dans les 4 maxima vs {r1..r4}, tolerance 0.5, fenetre [8,15] ; aucune hypothese d'ordre d'amplitudes (erreur de conception de la passe 1 assumee, verdict 7cf75e1)",
+ "table_maxima": [
+  {
+   "maximum": 13.785,
+   "hauteur": 6.6231,
+   "raie_plus_proche": "r3",
+   "ecart": 0.0052,
+   "accord": true
+  },
+  {
+   "maximum": 9.7,
+   "hauteur": 4.4627,
+   "raie_plus_proche": "r1",
+   "ecart": 0.1663,
+   "accord": true
+  },
+  {
+   "maximum": 12.495,
+   "hauteur": 3.7902,
+   "raie_plus_proche": "r2",
+   "ecart": 0.322,
+   "accord": true
+  },
+  {
+   "maximum": 14.83,
+   "hauteur": 1.7163,
+   "raie_plus_proche": "r4",
+   "ecart": 0.4715,
+   "accord": true
+  }
+ ],
+ "ordre_observe": [
+  13.785,
+  9.7,
+  12.495,
+  14.83
+ ],
+ "C1_accord_corrige": true,
+ "C2_controle_anti_pic": true,
+ "C3_levier_troncature": true,
+ "score": "3/3",
+ "statut": "SUCCES — au moins 3 raies de Maass detectees depuis les orbites modulaires (critere corrige gele avant run) ; ordre d'amplitudes documente",
+ "duree_s": 0.02,
+ "sha256_script": "1c3bbb735d0cd85b3b916356af75920370abd10adde0f54122468e78f1f1a234"
+}
