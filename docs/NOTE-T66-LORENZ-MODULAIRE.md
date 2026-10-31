@@ -55,3 +55,31 @@ octobre, ici à la source même où le chaos devient arithmétique.
 
 *Révision uniquement par note datée. Script : `src/t66_ko6_lorenz_modulaire.py`
 (sha256 dans le verdict).*
+
+## Passe 2 (2026-10-31) — la voie géométrique : ECHEC productif
+
+Script : `src/t66b_ko6_lorenz_template.py` · verdict :
+`data/t66_ko6_lorenz_modulaire_p2_verdict.json` · **ECHEC gelé 2/2→ECHEC
+(3e voie), avec découverte**.
+
+La piste C (somme alternée des chiffres de la fraction continue du point
+fixe attractant — le comptage template Σεᵢ au sens de Rademacher–
+Grosswald eq. 70, convention sourcée avant run) n'accorde pas tel quel
+avec Ψ : **écart constant 3 sur 26 des 27 classes** — et 2 sur une
+seule, la classe au mot trivial (tr = 3, γ = (1,1,1,2), période CF [1]).
+
+Lecture, non scellée : l'offset 3 est compatible avec **pq/2 = 3 du
+nœud manquant T(2,3)** — dérivation possible depuis la convention
+sourcée ψ_{p,q} à poids 2pq (= 12 pour SL(2,ℤ), le 12 de notre propre
+définition de Ψ). Hypothèse structurelle, à dériver proprement en
+passe 3, critère gelé *avant* le run ; l'exception à période [1] reste
+déclarée, non ajustée. La règle doctrine est appliquée à la lettre : le
+critère figé donnait 27/27 sur une variante non corrigée, il donne
+ECHEC, il reste ECHEC dans le verdict — **aucune rétro-ingénierie**.
+
+Valeur de l'échec : la constante 3 est sortie des données entières
+elles-mêmes, uniforme sur 26 classes indépendantes — c'est exactement
+le genre de signal (offset structurel universal, exception de bord
+publiée) qu'un banc honnête doit laisser parler plutôt que le noyer
+sous un ajustement. La passe 3 est ouverte avec sa règle : offset pq/2
+dérivé, exception de bord déclarée, critères gelés avant exécution.
