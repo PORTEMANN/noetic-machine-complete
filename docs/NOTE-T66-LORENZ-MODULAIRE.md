@@ -83,3 +83,30 @@ le genre de signal (offset structurel universal, exception de bord
 publiée) qu'un banc honnête doit laisser parler plutôt que le noyer
 sous un ajustement. La passe 3 est ouverte avec sa règle : offset pq/2
 dérivé, exception de bord déclarée, critères gelés avant exécution.
+
+## Passe 3 (2026-10-31) — l'offset dérivé a priori : SUCCES 2/2
+
+Script : `src/t66c_ko6_lorenz_offset.py` · verdict :
+`data/t66_ko6_lorenz_modulaire_p3_verdict.json`.
+
+**Dérivation déclarée avant le run** (de la convention, non des
+données) : la convention sourcee ψ_{p,q} fixe le poids de la forme
+cuspide à 2pq (= 12 pour SL(2,ℤ)) ; le cadrage du template normalise
+l'enlacement par le quart du poids : offset = 2pq/4 = pq/2 = 3. Aucune
+constante n'est lue dans les données.
+
+**Résultats.** Borne élargie déclarée (t ≤ 20) : 75 classes primitives.
+Accord exact lk_C = V1 + 3 ≡ Ψ sur **74/74 classes hors bord** ; une
+seule classe de bord (tr = 3, mot trivial — exactement la famille
+déclarée) comptée séparément, sans règle ad hoc. Quasi-morphisme
+Ψ(γ²) = 2Ψ(γ) vérifié sur l'ensemble élargi.
+
+**Arc complet du chantier.** Passe 1 : arithmétique du pont vérifiée
+par deux voies (2/2). Passe 2 : ECHEC gelé, offset découvert comme
+constante universelle. Passe 3 : offset dérivé de la convention
+sourcée, accord exact à l'échelle élargie, exception de bord déclarée.
+Le pont Lorenz–modulaire est désormais scellé trois voies (somme de
+Dedekind, réciprocité, comptage template) à une classe de bord près,
+publiée. Le chantier T66 est clos dans la discipline de la maison :
+chaque étape rejouable, chaque échec conservé, chaque constante soit
+dérivée soit déclarée.

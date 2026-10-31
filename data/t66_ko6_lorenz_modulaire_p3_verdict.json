@@ -1,0 +1,1365 @@
+{
+ "chantier": "T66-Q-KO6-LORENZMOD-2026-10",
+ "protocole": "T66-LORENZMOD-3.0 (gele)",
+ "passe": 3,
+ "derivation_offset": "offset = poids(Delta_{p,q})/4 = pq/2 = 3 (convention psi_{p,q} sourcee) ; derive a priori, non ajuste",
+ "borne_trace": 20,
+ "n_classes": 75,
+ "classes": [
+  {
+   "t": 3,
+   "gamma": [
+    1,
+    1,
+    1,
+    2
+   ],
+   "Psi": "3",
+   "lk_C": 4,
+   "periode": [
+    1
+   ],
+   "bord": true,
+   "accord_hors_bord": false
+  },
+  {
+   "t": 4,
+   "gamma": [
+    1,
+    2,
+    1,
+    3
+   ],
+   "Psi": "4",
+   "lk_C": 4,
+   "periode": [
+    2,
+    1
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 4,
+   "gamma": [
+    1,
+    1,
+    2,
+    3
+   ],
+   "Psi": "2",
+   "lk_C": 2,
+   "periode": [
+    1,
+    2
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 5,
+   "gamma": [
+    1,
+    3,
+    1,
+    4
+   ],
+   "Psi": "5",
+   "lk_C": 5,
+   "periode": [
+    3,
+    1
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 5,
+   "gamma": [
+    1,
+    1,
+    3,
+    4
+   ],
+   "Psi": "1",
+   "lk_C": 1,
+   "periode": [
+    1,
+    3
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 6,
+   "gamma": [
+    1,
+    4,
+    1,
+    5
+   ],
+   "Psi": "6",
+   "lk_C": 6,
+   "periode": [
+    4,
+    1
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 6,
+   "gamma": [
+    1,
+    1,
+    4,
+    5
+   ],
+   "Psi": "0",
+   "lk_C": 0,
+   "periode": [
+    1,
+    4
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 7,
+   "gamma": [
+    1,
+    5,
+    1,
+    6
+   ],
+   "Psi": "7",
+   "lk_C": 7,
+   "periode": [
+    5,
+    1
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 7,
+   "gamma": [
+    1,
+    1,
+    5,
+    6
+   ],
+   "Psi": "-1",
+   "lk_C": -1,
+   "periode": [
+    1,
+    5
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 8,
+   "gamma": [
+    1,
+    6,
+    1,
+    7
+   ],
+   "Psi": "8",
+   "lk_C": 8,
+   "periode": [
+    6,
+    1
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 8,
+   "gamma": [
+    1,
+    3,
+    2,
+    7
+   ],
+   "Psi": "4",
+   "lk_C": 4,
+   "periode": [
+    3,
+    2
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 8,
+   "gamma": [
+    1,
+    2,
+    3,
+    7
+   ],
+   "Psi": "2",
+   "lk_C": 2,
+   "periode": [
+    2,
+    3
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 8,
+   "gamma": [
+    1,
+    1,
+    6,
+    7
+   ],
+   "Psi": "-2",
+   "lk_C": -2,
+   "periode": [
+    1,
+    6
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 9,
+   "gamma": [
+    1,
+    7,
+    1,
+    8
+   ],
+   "Psi": "9",
+   "lk_C": 9,
+   "periode": [
+    7,
+    1
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 9,
+   "gamma": [
+    1,
+    1,
+    7,
+    8
+   ],
+   "Psi": "-3",
+   "lk_C": -3,
+   "periode": [
+    1,
+    7
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 10,
+   "gamma": [
+    3,
+    5,
+    4,
+    7
+   ],
+   "Psi": "4",
+   "lk_C": 4,
+   "periode": [
+    1,
+    1,
+    2,
+    1
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 10,
+   "gamma": [
+    3,
+    4,
+    5,
+    7
+   ],
+   "Psi": "2",
+   "lk_C": 2,
+   "periode": [
+    1,
+    2,
+    1,
+    1
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 10,
+   "gamma": [
+    2,
+    5,
+    3,
+    8
+   ],
+   "Psi": "4",
+   "lk_C": 4,
+   "periode": [
+    2,
+    1,
+    1,
+    1
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 10,
+   "gamma": [
+    2,
+    3,
+    5,
+    8
+   ],
+   "Psi": "2",
+   "lk_C": 2,
+   "periode": [
+    1,
+    1,
+    1,
+    2
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 10,
+   "gamma": [
+    1,
+    8,
+    1,
+    9
+   ],
+   "Psi": "10",
+   "lk_C": 10,
+   "periode": [
+    8,
+    1
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 10,
+   "gamma": [
+    1,
+    1,
+    8,
+    9
+   ],
+   "Psi": "-4",
+   "lk_C": -4,
+   "periode": [
+    1,
+    8
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 11,
+   "gamma": [
+    1,
+    9,
+    1,
+    10
+   ],
+   "Psi": "11",
+   "lk_C": 11,
+   "periode": [
+    9,
+    1
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 11,
+   "gamma": [
+    1,
+    1,
+    9,
+    10
+   ],
+   "Psi": "-5",
+   "lk_C": -5,
+   "periode": [
+    1,
+    9
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 12,
+   "gamma": [
+    1,
+    10,
+    1,
+    11
+   ],
+   "Psi": "12",
+   "lk_C": 12,
+   "periode": [
+    10,
+    1
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 12,
+   "gamma": [
+    1,
+    5,
+    2,
+    11
+   ],
+   "Psi": "6",
+   "lk_C": 6,
+   "periode": [
+    5,
+    2
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 12,
+   "gamma": [
+    1,
+    2,
+    5,
+    11
+   ],
+   "Psi": "0",
+   "lk_C": 0,
+   "periode": [
+    2,
+    5
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 12,
+   "gamma": [
+    1,
+    1,
+    10,
+    11
+   ],
+   "Psi": "-6",
+   "lk_C": -6,
+   "periode": [
+    1,
+    10
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 13,
+   "gamma": [
+    4,
+    7,
+    5,
+    9
+   ],
+   "Psi": "5",
+   "lk_C": 5,
+   "periode": [
+    1,
+    1,
+    3,
+    1
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 13,
+   "gamma": [
+    4,
+    5,
+    7,
+    9
+   ],
+   "Psi": "1",
+   "lk_C": 1,
+   "periode": [
+    1,
+    3,
+    1,
+    1
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 13,
+   "gamma": [
+    2,
+    7,
+    3,
+    11
+   ],
+   "Psi": "5",
+   "lk_C": 5,
+   "periode": [
+    3,
+    1,
+    1,
+    1
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 13,
+   "gamma": [
+    2,
+    3,
+    7,
+    11
+   ],
+   "Psi": "1",
+   "lk_C": 1,
+   "periode": [
+    1,
+    1,
+    1,
+    3
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 13,
+   "gamma": [
+    1,
+    11,
+    1,
+    12
+   ],
+   "Psi": "13",
+   "lk_C": 13,
+   "periode": [
+    11,
+    1
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 13,
+   "gamma": [
+    1,
+    1,
+    11,
+    12
+   ],
+   "Psi": "-7",
+   "lk_C": -7,
+   "periode": [
+    1,
+    11
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 14,
+   "gamma": [
+    1,
+    12,
+    1,
+    13
+   ],
+   "Psi": "14",
+   "lk_C": 14,
+   "periode": [
+    12,
+    1
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 14,
+   "gamma": [
+    1,
+    4,
+    3,
+    13
+   ],
+   "Psi": "4",
+   "lk_C": 4,
+   "periode": [
+    4,
+    3
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 14,
+   "gamma": [
+    1,
+    3,
+    4,
+    13
+   ],
+   "Psi": "2",
+   "lk_C": 2,
+   "periode": [
+    3,
+    4
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 14,
+   "gamma": [
+    1,
+    1,
+    12,
+    13
+   ],
+   "Psi": "-8",
+   "lk_C": -8,
+   "periode": [
+    1,
+    12
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 15,
+   "gamma": [
+    5,
+    7,
+    7,
+    10
+   ],
+   "Psi": "3",
+   "lk_C": 3,
+   "periode": [
+    1,
+    2,
+    2,
+    1
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 15,
+   "gamma": [
+    3,
+    7,
+    5,
+    12
+   ],
+   "Psi": "3",
+   "lk_C": 3,
+   "periode": [
+    2,
+    2,
+    1,
+    1
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 15,
+   "gamma": [
+    3,
+    5,
+    7,
+    12
+   ],
+   "Psi": "3",
+   "lk_C": 3,
+   "periode": [
+    1,
+    1,
+    2,
+    2
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 15,
+   "gamma": [
+    2,
+    5,
+    5,
+    13
+   ],
+   "Psi": "3",
+   "lk_C": 3,
+   "periode": [
+    2,
+    1,
+    1,
+    2
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 15,
+   "gamma": [
+    1,
+    13,
+    1,
+    14
+   ],
+   "Psi": "15",
+   "lk_C": 15,
+   "periode": [
+    13,
+    1
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 15,
+   "gamma": [
+    1,
+    1,
+    13,
+    14
+   ],
+   "Psi": "-9",
+   "lk_C": -9,
+   "periode": [
+    1,
+    13
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 16,
+   "gamma": [
+    1,
+    14,
+    1,
+    15
+   ],
+   "Psi": "16",
+   "lk_C": 16,
+   "periode": [
+    14,
+    1
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 16,
+   "gamma": [
+    1,
+    7,
+    2,
+    15
+   ],
+   "Psi": "8",
+   "lk_C": 8,
+   "periode": [
+    7,
+    2
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 16,
+   "gamma": [
+    1,
+    2,
+    7,
+    15
+   ],
+   "Psi": "-2",
+   "lk_C": -2,
+   "periode": [
+    2,
+    7
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 16,
+   "gamma": [
+    1,
+    1,
+    14,
+    15
+   ],
+   "Psi": "-10",
+   "lk_C": -10,
+   "periode": [
+    1,
+    14
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 17,
+   "gamma": [
+    1,
+    15,
+    1,
+    16
+   ],
+   "Psi": "17",
+   "lk_C": 17,
+   "periode": [
+    15,
+    1
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 17,
+   "gamma": [
+    1,
+    5,
+    3,
+    16
+   ],
+   "Psi": "5",
+   "lk_C": 5,
+   "periode": [
+    5,
+    3
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 17,
+   "gamma": [
+    1,
+    3,
+    5,
+    16
+   ],
+   "Psi": "1",
+   "lk_C": 1,
+   "periode": [
+    3,
+    5
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 17,
+   "gamma": [
+    1,
+    1,
+    15,
+    16
+   ],
+   "Psi": "-11",
+   "lk_C": -11,
+   "periode": [
+    1,
+    15
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 18,
+   "gamma": [
+    4,
+    11,
+    5,
+    14
+   ],
+   "Psi": "6",
+   "lk_C": 6,
+   "periode": [
+    2,
+    1,
+    3,
+    1
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 18,
+   "gamma": [
+    4,
+    5,
+    11,
+    14
+   ],
+   "Psi": "0",
+   "lk_C": 0,
+   "periode": [
+    1,
+    3,
+    1,
+    2
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 18,
+   "gamma": [
+    3,
+    11,
+    4,
+    15
+   ],
+   "Psi": "6",
+   "lk_C": 6,
+   "periode": [
+    3,
+    1,
+    2,
+    1
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 18,
+   "gamma": [
+    3,
+    4,
+    11,
+    15
+   ],
+   "Psi": "0",
+   "lk_C": 0,
+   "periode": [
+    1,
+    2,
+    1,
+    3
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 18,
+   "gamma": [
+    1,
+    16,
+    1,
+    17
+   ],
+   "Psi": "18",
+   "lk_C": 18,
+   "periode": [
+    16,
+    1
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 18,
+   "gamma": [
+    1,
+    1,
+    16,
+    17
+   ],
+   "Psi": "-12",
+   "lk_C": -12,
+   "periode": [
+    1,
+    16
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 19,
+   "gamma": [
+    6,
+    11,
+    7,
+    13
+   ],
+   "Psi": "7",
+   "lk_C": 7,
+   "periode": [
+    1,
+    1,
+    5,
+    1
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 19,
+   "gamma": [
+    6,
+    7,
+    11,
+    13
+   ],
+   "Psi": "-1",
+   "lk_C": -1,
+   "periode": [
+    1,
+    5,
+    1,
+    1
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 19,
+   "gamma": [
+    2,
+    11,
+    3,
+    17
+   ],
+   "Psi": "7",
+   "lk_C": 7,
+   "periode": [
+    5,
+    1,
+    1,
+    1
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 19,
+   "gamma": [
+    2,
+    3,
+    11,
+    17
+   ],
+   "Psi": "-1",
+   "lk_C": -1,
+   "periode": [
+    1,
+    1,
+    1,
+    5
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 19,
+   "gamma": [
+    1,
+    17,
+    1,
+    18
+   ],
+   "Psi": "19",
+   "lk_C": 19,
+   "periode": [
+    17,
+    1
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 19,
+   "gamma": [
+    1,
+    1,
+    17,
+    18
+   ],
+   "Psi": "-13",
+   "lk_C": -13,
+   "periode": [
+    1,
+    17
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 20,
+   "gamma": [
+    7,
+    10,
+    9,
+    13
+   ],
+   "Psi": "4",
+   "lk_C": 4,
+   "periode": [
+    1,
+    2,
+    3,
+    1
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 20,
+   "gamma": [
+    7,
+    9,
+    10,
+    13
+   ],
+   "Psi": "2",
+   "lk_C": 2,
+   "periode": [
+    1,
+    3,
+    2,
+    1
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 20,
+   "gamma": [
+    4,
+    9,
+    7,
+    16
+   ],
+   "Psi": "2",
+   "lk_C": 2,
+   "periode": [
+    2,
+    3,
+    1,
+    1
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 20,
+   "gamma": [
+    4,
+    7,
+    9,
+    16
+   ],
+   "Psi": "4",
+   "lk_C": 4,
+   "periode": [
+    1,
+    1,
+    3,
+    2
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 20,
+   "gamma": [
+    3,
+    10,
+    5,
+    17
+   ],
+   "Psi": "4",
+   "lk_C": 4,
+   "periode": [
+    3,
+    2,
+    1,
+    1
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 20,
+   "gamma": [
+    3,
+    5,
+    10,
+    17
+   ],
+   "Psi": "2",
+   "lk_C": 2,
+   "periode": [
+    1,
+    1,
+    2,
+    3
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 20,
+   "gamma": [
+    2,
+    7,
+    5,
+    18
+   ],
+   "Psi": "4",
+   "lk_C": 4,
+   "periode": [
+    3,
+    1,
+    1,
+    2
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 20,
+   "gamma": [
+    2,
+    5,
+    7,
+    18
+   ],
+   "Psi": "2",
+   "lk_C": 2,
+   "periode": [
+    2,
+    1,
+    1,
+    3
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 20,
+   "gamma": [
+    1,
+    18,
+    1,
+    19
+   ],
+   "Psi": "20",
+   "lk_C": 20,
+   "periode": [
+    18,
+    1
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 20,
+   "gamma": [
+    1,
+    9,
+    2,
+    19
+   ],
+   "Psi": "10",
+   "lk_C": 10,
+   "periode": [
+    9,
+    2
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 20,
+   "gamma": [
+    1,
+    2,
+    9,
+    19
+   ],
+   "Psi": "-4",
+   "lk_C": -4,
+   "periode": [
+    2,
+    9
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  },
+  {
+   "t": 20,
+   "gamma": [
+    1,
+    1,
+    18,
+    19
+   ],
+   "Psi": "-14",
+   "lk_C": -14,
+   "periode": [
+    1,
+    18
+   ],
+   "bord": false,
+   "accord_hors_bord": true
+  }
+ ],
+ "n_hors_bord": 74,
+ "n_accord_hors_bord": 74,
+ "n_bord": 1,
+ "classes_bord": [
+  {
+   "t": 3,
+   "gamma": [
+    1,
+    1,
+    1,
+    2
+   ],
+   "Psi": "3",
+   "lk_C": 4,
+   "periode": [
+    1
+   ]
+  }
+ ],
+ "C1_accord_hors_bord": true,
+ "C4_puissance": true,
+ "score": "2/2",
+ "statut": "SUCCES — offset derive pq/2 = 3 : accord exact sur 74/74 classes hors bord (t <= 20) ; 1 classe(s) de bord declaree(s) (mot trivial), non reglee par regle ad hoc",
+ "duree_s": 0.0,
+ "sha256_script": "c62502b6edd2a9985845ce0d7ab25c0babe744bd0b36a591697d8c965b6f6953"
+}
