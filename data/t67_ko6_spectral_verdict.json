@@ -1,0 +1,29 @@
+{
+ "chantier": "T67-Q-KO6-SPECTRAL-2026-10",
+ "protocole": "T67-SPECTRAL-1.0 (gele)",
+ "n_orbites": 107,
+ "sources_spectrales": "Booker–Strombergsson–Venkatesh (verifiees 100 dec.) : r1=9.5337, r2=12.1730",
+ "caveats": "spectre continu non soustrait ; troncature tr<=25 (resolution ~0.97)",
+ "maxima": [
+  [
+   13.785,
+   6.6231
+  ],
+  [
+   9.7,
+   4.4627
+  ]
+ ],
+ "C1_maxima_a_r1_r2": false,
+ "C2_controle_anti_pic": true,
+ "C3_levier_troncature": true,
+ "score": "2/3",
+ "statut": "ECHEC",
+ "duree_s": 0.02,
+ "sha256_script": "11553997e03edd6422ef1f4704f59c0b88c67539a55bc412b2e05d89654a185d",
+ "analyse_echec": {
+  "constat": "3 des 4 premiers maxima coincident avec des valeurs propres sourcées : 13.785 vs r3=13.7798 (ecart 0.005, exact a la resolution de grille) ; 9.700 vs r1=9.5337 (0.166) ; 12.495 vs r2=12.1730 (0.322)",
+  "cause_du_desaccord_C1": "le critere gelé supposait l'ordre des pics egal a l'ordre des indices propres ; les amplitudes du cote geometrique ne sont pas ordonnées par indice (r3 domine) — hypothese non déclarée dans la fiche, erreur de conception assumee",
+  "regle_doctrine": "critere conserve tel quel (ECHEC) ; la passe 2, si ouverte, gelee avant run : le jeu des K=4 maxima les plus hauts doit contenir au moins 3 accords avec {r1..r4} sous tolerance 0.5 ; l'absence d'ordre d'amplitudes est declaree comme fait physique"
+ }
+}
