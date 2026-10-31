@@ -133,3 +133,33 @@ résiduelles. Trois passes, trois statuts différents (SUCCES / ECHEC
 productif / SUCCES informatif par échec de critère) : le chantier T67
 est devenu l'atelier-type de la méthode.
 
+## Passe 4 (2026-10-31) — le fond continu : ECHEC partiel 2/4,
+ζ entre dans la machine
+
+Script : `src/t67d_ko6_scattering.py` · verdict :
+`data/t67_ko6_spectral_p4_verdict.json`.
+
+**C1 — réussi proprement.** Les quatre premiers zéros de Riemann sont
+**calculés en séance** (mpmath `zetazero`, 30 chiffres) : γ₁ =
+14,134 725 141 734… — conformes aux valeurs classiques, rien lu de
+mémoire. ζ est entré dans le banc par la porte d'entrée, avec sa
+propre mesure.
+
+**C2 — échec de conception, tué par le critère gelé.** La fonction de
+fond a été implémentée avec la partie réelle de d/dr log φ(1/2+ir) —
+qui est **identiquement nulle** (|φ| = 1 sur la droite critique par
+l'équation fonctionnelle : la machine a mesuré un mur de zéros). La
+composante physique est la dérivée de **phase**, Im(d/dr log φ)/(4π).
+Erreur assumée, aucune rétro-correction ; la passe 5, si elle ouvre,
+gèlera la correction avant run.
+
+**C3 — sans objet avec la mauvaise composante** ; note partielle
+consignée : un pic parasite mesuré à 10,21 tombe à 0,05 du candidat
+γ₂/2 − 1/4 = 10,261 — l'attribution reste à re-tester en passe 5.
+
+**Statut du chantier.** Quatre passes, quatre statuts, zéro
+rétro-ingénierie : SUCCES (4/4 raies), ECHEC productif (ordre
+d'amplitudes), SUCCES informatif (résidus = physique), ECHEC partiel
+(phase vs module — avec ζ calculé en séance). La formule des traces
+de Selberg tient toujours ; ce qui reste ouvert est nommé au bit près.
+
