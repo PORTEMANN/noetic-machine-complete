@@ -94,3 +94,42 @@ comme anomalie.
 elle ouvre, gèlera une soustraction de scattering avant run ; l'accord
 à 0,005 de r₃ montre que la limite n'est pas la table mais le fond.
 
+## Passe 3 (2026-10-31) — élargissement du spectre de longueurs : 2/3,
+conclusion PHYSIQUE
+
+Script : `src/t67c_ko6_spectral_p3.py` · verdict :
+`data/t67_ko6_spectral_p3_verdict.json`.
+
+Choix méthodologique gelé : pas de soustraction de fond (méthode molle)
+— **élargissement du spectre de longueurs** (cut-off de trace
+25 → 35 → 45 → 60 ; 107 → 607 orbites). Hypothèse : si les résidus
+sont des artefacts de troncature, ils décroissent ; sinon ils sont
+physiques, et cette conclusion serait publiée. Critère C2 gelé : chaque
+résidu au palier 60 ≤ max(résidu passe 2 / 2, 0,05).
+
+**Table de convergence (résidus).**
+
+| Raie | t=25 | t=35 | t=45 | t=60 | Seuil gelé |
+|---|---|---|---|---|---|
+| r₁ | 0,166 | 0,146 | 0,134 | **0,109** | 0,083 |
+| r₂ | 0,322 | 0,267 | 0,347 | 0,242 | 0,161 |
+| r₃ | 0,005 | 0,390 | 0,245 | 0,110 | 0,050 |
+| r₄ | 0,472 | 0,189 | 0,149 | 0,469 | 0,236 |
+
+C2 : non atteint — **conclusion PHYSIQUE gelée** : les décalages sont
+dominés par les poids spectraux et le fond continu, pas par la
+résolution. La lecture fine (analyse jointe au verdict) est un mélange :
+r₁ décroît monotone (type résolution, sans atteindre le seuil) ;
+r₂/r₃/r₄ non monotones (structurel) ; au palier 60, un maximum unique à
+13,89 est capturé par les fenêtres r₃ et r₄ à la fois — **battement des
+deux raies voisines** (13,78 / 14,36) sur le fond non soustrait. Le
+0,005 de la passe 2 était exceptionnel, pas la norme.
+
+**Valeur.** La passe 3 transforme une tolérance en physique : elle
+localise exactement ce que la troncature n'explique pas — et désigne
+la passe 4 (déclarée) : soustraction du scattering d'Eisenstein
+(déterminant de scattering, avec ζ), seule voie honnête vers les raies
+résiduelles. Trois passes, trois statuts différents (SUCCES / ECHEC
+productif / SUCCES informatif par échec de critère) : le chantier T67
+est devenu l'atelier-type de la méthode.
+

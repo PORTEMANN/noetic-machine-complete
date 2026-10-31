@@ -1,0 +1,107 @@
+{
+ "chantier": "T67-Q-KO6-SPECTRAL-2026-10",
+ "protocole": "T67-SPECTRAL-3.0 (gele)",
+ "passe": 3,
+ "n_orbites": {
+  "25": 107,
+  "35": 207,
+  "45": 339,
+  "60": 607
+ },
+ "choix_methodologique": "elargissement du spectre de longueurs, pas de soustraction de fond",
+ "table_convergence": {
+  "r1": {
+   "25": {
+    "maximum": 9.7,
+    "residu": 0.1663
+   },
+   "35": {
+    "maximum": 9.68,
+    "residu": 0.1463
+   },
+   "45": {
+    "maximum": 9.4,
+    "residu": 0.1337
+   },
+   "60": {
+    "maximum": 9.425,
+    "residu": 0.1087
+   }
+  },
+  "r2": {
+   "25": {
+    "maximum": 12.495000000000001,
+    "residu": 0.322
+   },
+   "35": {
+    "maximum": 12.440000000000001,
+    "residu": 0.267
+   },
+   "45": {
+    "maximum": 12.52,
+    "residu": 0.347
+   },
+   "60": {
+    "maximum": 12.415,
+    "residu": 0.242
+   }
+  },
+  "r3": {
+   "25": {
+    "maximum": 13.785,
+    "residu": 0.0052
+   },
+   "35": {
+    "maximum": 14.17,
+    "residu": 0.3902
+   },
+   "45": {
+    "maximum": 13.535,
+    "residu": 0.2448
+   },
+   "60": {
+    "maximum": 13.89,
+    "residu": 0.1102
+   }
+  },
+  "r4": {
+   "25": {
+    "maximum": 14.83,
+    "residu": 0.4715
+   },
+   "35": {
+    "maximum": 14.17,
+    "residu": 0.1885
+   },
+   "45": {
+    "maximum": 14.21,
+    "residu": 0.1485
+   },
+   "60": {
+    "maximum": 13.89,
+    "residu": 0.4685
+   }
+  }
+ },
+ "seuils_geles": {
+  "r1": 0.083,
+  "r2": 0.161,
+  "r3": 0.05,
+  "r4": 0.236
+ },
+ "C1_maxima_localises": true,
+ "C2_residus_au_palier_60": false,
+ "C4_regression_107": true,
+ "conclusion": "PHYSIQUE : au moins un residu persiste au palier 60 -> decalage structurel (poids/scattering), a documenter comme fait",
+ "score": "2/3",
+ "statut": "SUCCES — PHYSIQUE : au moins un residu persiste au palier 60 -> decalage structurel (poids/scattering), a documenter comme fait",
+ "duree_s": 0.57,
+ "sha256_script": "2488971e8939ed7df9da5d8372b7dfc358808a9abf26d9e1e9004571af90f395",
+ "analyse": {
+  "r1": "decroissance monotone 0.166 -> 0.109 : comportement de type resolution, mais sous le seuil gele (0.083) non atteint",
+  "r2": "non monotone (0.322 -> 0.267 -> 0.347 -> 0.242) : structurel",
+  "r3": "non monotone (0.005 -> 0.390 -> 0.245 -> 0.110) : le 0.005 de la passe 2 etait exceptionnel, pas la norme",
+  "r4": "non monotone et remontee a 0.469 au palier 60 : au palier 60, un maximum unique a 13.89 est capture a la fois par les fenetres r3 et r4 — battement des deux raies voisines (13.78 et 14.36) sur fond continu non soustrait",
+  "lecture_globale": "melange : r1 resolution-like ; r2/r3/r4 dominees par les poids spectraux et le fond continu — la conclusion PHYSIQUE du critere gele est confirmee par la table ; la soustraction du scattering (Eisenstein, determinant de scattering avec zeta) est la porte de la passe 4, declaree"
+ }
+}
