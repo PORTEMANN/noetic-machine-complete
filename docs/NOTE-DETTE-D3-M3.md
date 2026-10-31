@@ -68,3 +68,42 @@ couleur complet, certifié, avec sa structure de fluctuations mesurée.
 *Révision uniquement par note datée. Les mesures du §2 sont rejouables
 via `src/t8_ko6_modele_standard_banc.py` (pi_sm, triplet_sm,
 rang_scalaire).*
+
+## 4. D3c (première passe, 2026-10-31) — l'ombre Yang-Mills du secteur
+couleur
+
+Instrument : `src/dette_d3c_ym_couleur.py`. Méthode : fléchir le Dirac
+du triplet T8 par une fluctuation de couleur D_t = D + t·(A + JAJ⁻¹),
+A = π(0,0,X), X Hermitien 3×3 ; extraire du moment M₄(t) = Tr(D_t⁴)
+le coefficient quartique — l'ombre, au niveau de la géométrie finie, du
+terme cinétique Yang-Mills de l'action spectrale (a₄ ⊃ f₀·Tr(F²)/2π²).
+
+**Prédictions pré-enregistrées et mesures :**
+
+| Test | Prédiction | Mesure | Verdict |
+|---|---|---|---|
+| c₄(λ₃) | 8·Tr(X⁴) = 16 | 16,000 | ✓ 0,0 % |
+| c₄(I₃) singlet | 8·Tr(X⁴) = 24 | 24,000 | ✓ 0,0 % |
+| c₄(λ₈) | 16 | 16,000 | ✓ 0,0 % |
+| Parité (termes impairs) | 0 | ~10⁻¹¹ | ✓ |
+| Ratio singlet/octet | 3/2 = 1,5 (structure Tr(X⁴)) | **1,500 0** | ✓ (l'alternative (Tr X²)² donnerait 9/4 = 2,25 — tuée) |
+
+**Correction de comptage publiée.** La prédiction initiale (24·Tr(X⁴))
+comptait la multiplicité couleur deux fois ; l'écart mesuré était un
+facteur exactement 1/3 sur tous les générateurs — la machine a tué la
+formule, pas la mesure. La formule corrigée (8·Tr(X⁴) = 4 copies
+chargées par génération × miroir) tombe à 0,0 % sur les trois
+générateurs. Comptable : les 4 copies sont u_R, d_R et les 2
+composantes de q_L — la multiplicité de Weyl du secteur couleur, celle
+qui pèse sur la fonction β de QCD.
+
+**Lecture et limite déclarée.** Le terme quartique de l'action
+spectrale sur la fluctuation de couleur porte exactement la structure
+Tr(F²) et la multiplicité fermionique du secteur gluonique : le
+cinétique Yang-Mills est présent dans le banc comme ombre mesurable,
+avec 1/g² ∝ f₀ × coefficient (le moment spectral f₀ n'est pas fixé par
+la géométrie finie — limite déclarée, non voilée). Ce qui reste à la
+dette : la version 4D continue (produit M₄ × F, coefficients
+de Seeley-DeWitt — le chantier gravitationnel, dette voisine), et la
+dynamique complète (propagation, confinement) qui dépasse le niveau
+« ombre spectrale » revendiqué ici.
