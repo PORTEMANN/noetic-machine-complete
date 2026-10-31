@@ -67,5 +67,42 @@ entier à 0,65 %. Les muscles encore manquants (matching, bosons, 2e
 boucle) sont maintenant nommés un par un — c'est tout ce qu'un premier
 remboursement doit faire.
 
-*Révision uniquement par note datée. Le script `src/dette_d2_beta.py`
-reproduit chaque chiffre de cette note.*
+## 2. D2e (première passe, 2026-10-31) — la validation ouverte, close
+
+**Instrument.** `src/dette_d2e_pont.py` parse les tables de
+`data/hadr5x26.f` (F. Jegerlehner, HU-Berlin, mise à jour juin 2026) :
+2 180 points R(s) temps-like (0,282–38,29 GeV) intégrés en
+Δα_had^(5)(e²) (ESA/DAS), continuation pQCD 13 GeV–20 TeV (EMA/DAM,
+raccord parfait à 13 GeV : 0,015 78 des deux côtés). La valeur
+data-driven à M_Z s'obtient par interpolation log de DAM à 91,1876 GeV.
+
+**Résultat.**
+
+| Source | Δα_had^(5)(M_Z²) |
+|---|---|
+| Données e⁺e⁻ (compilation 06/2026, interpolée à M_Z) | **0,027 64** |
+| PDG (référence croisée) | 0,027 57 ± 0,011 |
+| Modèle à seuils habillés (entrées = spectroscopie baryonique) | 0,027 75 |
+
+**Accord direct modèle/données : 0,39 %.** La validation ouverte de D2a
+est close : les deux seuils habillés du modèle, ancrés uniquement par
+les masses baryoniques PDG, reproduisent la polarisation du vide
+hadronique mesurée sur 2 180 points d'expérience e⁺e⁻ à 0,39 % près —
+avec zéro paramètre ajusté à chaque étage (D1d/D1e pour les seuils,
+D2a pour la forme, D2e pour la confrontation).
+
+**Ce que D2e n'est pas.** Ce n'est pas une dérivation du secteur
+hadronique depuis QCD — c'est l'établissement que deux nombres de
+spectroscopie suffisent à le résumer à 0,39 %. La dérivation dynamique
+(matching EFT D2b, bosons D2c, 2ᵉ boucle D2d) reste inscrite au
+registre, chacune avec son écart chiffré attendu.
+
+**Leçon 2.** Le comité demandait : « dérivez le glissement continu des
+couplages ». L'écosystème répond désormais en deux étages publiés :
+la β existe et est la β standard à contenu habillé (D2a) ; et le
+contenu habillé, mesuré indépendamment par la spectroscopie baryonique,
+vaut la VP hadronique expérimentale à 0,39 % (D2e). Ce qui reste dû :
+le *pourquoi* dynamique — nommé, daté, chiffré.
+
+*Révision uniquement par note datée. Les scripts `src/dette_d2_beta.py`
+et `src/dette_d2e_pont.py` reproduisent chaque chiffre de cette note.*
