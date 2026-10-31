@@ -106,3 +106,54 @@ le *pourquoi* dynamique — nommé, daté, chiffré.
 
 *Révision uniquement par note datée. Les scripts `src/dette_d2_beta.py`
 et `src/dette_d2e_pont.py` reproduisent chaque chiffre de cette note.*
+
+## 3. D2c (première passe, 2026-10-31) — convention, bilan comptable,
+tempérance
+
+**Convention sourcée.** La quantité canonique Δα^(5)(M_Z²) = 0,059 0
+est *par convention fermionique* : « conventionally, we take α(M_Z) to
+contain only the corrections from all leptons and quarks except the
+top » (Erler–Langacker, formulation de la revue PDG électrofaible,
+hep-ph/9411255). Les contributions bosoniques W/Z/H à la polarisation
+du vide du photon existent à une boucle mais sont conventionnellement
+rangées dans le reste électrofaible (Δr_rem), hors de Δα^(5).
+
+**Conséquence pour le modèle — espace de comparaison aligné.**
+L'escalier est exactement le même objet : fermions chargés, top fermé
+par Heaviside à M_Z. Le modèle et Δα^(5) vivent dans le même espace ;
+les comparaisons D2a/D2e sont donc *à périmètre égal*. C'est une
+clarification de doctrine : le modèle n'omet pas les bosons par
+oubli — il calcule le même objet que la référence fermionique.
+
+**Bilan comptable complet (fermeture de D2a).** Le résidu de D2a
+(modèle 0,063 05 vs canon 0,059 00, écart +0,004 05) se décompose
+intégralement :
+
+| Terme | Écart (Δα) | Origine |
+|---|---|---|
+| Leptons, 1 boucle vs 3 boucles | **+0,003 79** | ordres supérieurs QED absents du modèle |
+| Secteur quark (seuils habillés) | +0,000 18 | surcroît des seuils vs VP hadronique (0,39 %, D2e) |
+| Total | +0,003 97 ≈ +0,004 05 | ✓ fermé |
+
+**Tempérance — la mesure que la doctrine exige.** La célébrée
+concordance à 0,35 % de l'escalier avec l'expérience (128,397 vs
+127,951) est en partie une **cancellation** : les fermions canoniques
+seuls s'écartent de l'expérience de 0,78 % (α⁻¹ = 128,95) ; le modèle,
+en omettant les boucles leptoniques d'ordre supérieur, retire
+précisément ~la moitié de cet écart, et le surcroît hadronique de
+0,000 2 compense le reste. La partie structurelle et authentique du
+résultat est l'équivalence hadronique (0,39 %, D2e) ; la partie 0,35 %
+globale est un mélange d'architecture et de hasard comptable. Les deux
+doivent être dites ensemble — c'est écrit ici.
+
+**Périmètre restant (inscrit).** La dérivation propre des termes
+bosoniques (une boucle, réduction Passarino–Veltman de la self-énergie
+W et du mélange γ–Z) = D2c passe 2, travail d'un jour ouvré avec
+sources ; attendu ~10⁻⁴–10⁻³ en Δα, sans effet sur les conclusions
+ci-dessus. Le matching EFT aux seuils (D2b) et la 2ᵉ boucle QCD/QED
+hors leptons (D2d) demeurent ouverts, chacun avec son ordre de grandeur
+attendu.
+
+**Leçon 3.** La dette D2 a produit ce que la rhétorique ne produit
+jamais : un *bilan* où chaque chiffre sait d'où il vient, y compris
+ceux qui défendent le modèle, **et surtout ceux qui le tempèrent**.
