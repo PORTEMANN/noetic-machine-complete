@@ -61,4 +61,47 @@ N = 10 000, graine 20261028)
 
 *Données : `data/ucla-cnp/` (raw OpenNeuro, invariants.csv, out/ par
 sujet). Script pilote : `preprocess_ucla.py`. Aucune donnée publiée —
-invariants agrégés uniquement, conforme DUA OpenNeuro.*
+invariants agrégés uniquément, conforme DUA OpenNeuro.*
+
+## 5. Cohorte complète (2026-11-01) — le verdict : CS− honnête
+
+**50 SCHZ vs 57 CONTROL, 107/107 pré-traités (zéro échec), nuls
+d'étiquettes N = 10 000 (brut) / 5 000 (FD-apparié), graine 20261028.**
+
+| Invariant | SZ | CTRL | Z brut | p brut | Z FD-apparié | p FD-apparié |
+|---|---|---|---|---|---|---|
+| Γ | 0,243 | 0,234 | +0,40 | 0,044 | +0,36 | 0,072 |
+| S_ent | 0,130 | 0,117 | +0,38 | 0,062 | +0,25 | 0,202 |
+| d_eff | 1,048 | 1,041 | +0,45 | 0,029 | +0,31 | 0,120 |
+| C_26 | 0,766 | 0,789 | −0,20 | 0,31 | −0,24 | 0,22 |
+| M_34 | 0,757 | 0,781 | −0,26 | 0,20 | −0,12 | 0,54 |
+
+**FD : SZ 0,198 ± 0,112 vs CTRL 0,145 ± 0,090 — t = 2,66, significatif.**
+
+**Verdict : l'axe SZ tel que déclaré en 2025 n'est pas confirmé à la
+cohorte complète.** Les directions tiennent (SZ > CTRL sur le trio
+spectral, cohérent avec le pilote), mais aucun effet ne survit à
+l'appariement mouvement — et le mouvement, lui, diffère
+significativement entre groupes. Le pilote à p ~ 10⁻³ était le bruit
+d'un petit échantillon, exactement ce que la doctrine suspectait.
+
+**Déformation D5 déclarée (mouvement).** Quatrième déformation du
+registre, après D4 (régression globale). Elle arrive avec un verdict
+complet : nos invariants sont partiellement sensibles au mouvement, les
+patients schizophrènes bougent plus (fait classique de la littérature),
+et la combinaison tue l'axe clinique brut. Conséquences inscrites :
+(1) l'instrument gagne une passe de robustesse au mouvement
+(scrubbing / appariement FD systématique — chantier, non demandé ce
+soir) ; (2) tout verdict clinique devra être FD-apparié ou mort ;
+(3) COBRE reste la réplication décisive quand NITRC se réveillera —
+sur données FD-appariées.
+
+**Compteur doctrine.** Quatrième échec consécutif de re-production pour
+le contenu déclaré de Cognition_2 (Γ TSA, C_26 TSA, axe SZ entier). Le
+squelette cognitif tient sur ses deux effets trans-diagnostiques
+ABIDE (C_26, M_34 — statut CSp après D4) et sur rien d'autre à ce jour.
+La machine a mesuré sa première maladie — et elle a dit la vérité
+complète, y compris la partie qui refuse le beau résultat. C'est
+exactement ce que la lettre ouverte a promis, et ce qu'aucun laboratoire
+du monde ne publie : un axe clinique entier mort aux déformations,
+daté, avec la déformation nommée.
