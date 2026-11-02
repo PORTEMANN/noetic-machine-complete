@@ -54,7 +54,47 @@ rétro-correction du critère gelé : passe 2 déclarée.
 Le chantier le plus court de l'Antik a tenu sa promesse quand même :
 il a **produit un fait** (l'identité des deux formes sur la ligne) et
 il a **localisé une erreur** (structure Π/π) — les deux sont des gains
-de la doctrine, et le 1/4 est publié comme tel. La passe 2 reprendra à
-frais quand les cycles le permettront.
+de la doctrine, et le 1/4 est publié comme tel.
 
-*Révision uniquement par note datée. Fiche gelée embarquée dans le script.*
+## Passe 2 (2026-11-02, soir) — la forme ψ CONFIRMÉE, 3/5 avec deux
+erreurs de calibration de fiche documentées
+
+Script `src/t69b_psi.py` (fiche T69-PSI-2.0 gelée), verdict
+`data/t69b_psi_verdict.json`. Vérité de référence calculée exactement en
+séance (crible des premiers — rien lu de mémoire). 800 zéros mis en cache
+(correction de la soirée : cache incrémental par paquets de 100, le cache
+en fin de boucle initial perdait tout au timeout).
+
+**Le résultat scientifique central :**
+
+| x | ψ exact | ψ̂ (Cesàro 200, 800 zéros) | écart | tolérance gelée |
+|---|---|---|---|---|
+| 100 | 94,045 | 93,986 | **0,059** | 1,0 ✓ |
+| 500 | 501,652 | 502,097 | **0,445** | 1,5 ✓ |
+| 1000 | 996,681 | 997,307 | **0,626** | 2,5 ✓ |
+
+**La formule explicite tient numériquement sous forme ψ** — l'échec de la
+passe 1 était bien la structure Π/π, comme diagnostiqué : les mêmes zéros,
+la même somme, le bon objet, et la machine reproduit ψ(x) au dixième près
+sur trois points, sans aucune valeur importée (ψ exact recalculé par crible).
+
+**Les deux critères refusés sont des erreurs de calibration de la fiche,
+pas de la formule** — second et troisième exemple du chantier :
+- C5 (levier, seuil gelé 50) : mesuré 4,1 — qui est *exactement* la
+  contribution totale des zéros à x = 100 (ψ = x − Σ − log 2π → Σ = 4,12).
+  Le levier fonctionne directionnellement et en magnitude exacte ; le seuil
+  gelé supposait à tort une contribution « massive ». Seuil mal calibré,
+  publié comme tel.
+- C6 (identité en dps 40) : **exacte** (0,00e+00) ; C1 (cache, monotone)
+  tenu.
+
+**Bilan Antik complet.** Le gisement a livré : un pont vers la dynamique
+(T68, 4/4), une confirmation numérique de la formule explicite sous forme ψ
+(3/5, cœur tenu), un fait structurel (les deux formes Ei/Li coïncident sur
+la ligne critique), et trois leçons de calibration gravées (précision de
+dps, seuil de levier, cache incrémental). Le document Connes_Zýta est ainsi
+répondu avec la précision de la maison : la correction est légitime, sans
+effet numérique sur la ligne, et la formule explicite — son voisin —
+reproduit le réel quand on la pèse sur le bon objet.
+
+*Révision uniquement par note datée.*

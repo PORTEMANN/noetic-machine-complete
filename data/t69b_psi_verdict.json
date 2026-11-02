@@ -1,0 +1,41 @@
+{
+ "chantier": "T69b-Q-KO6-PSI-2026-11",
+ "protocole": "T69-PSI-2.0 (gele)",
+ "n_zeros": 800,
+ "C1_cache_zeros": true,
+ "details": {
+  "100": {
+   "psi_exact": 94.0453112293574,
+   "psi_chapeau": 93.98649704820926,
+   "ecart": 0.058814181148132465,
+   "tolerance": 1.0,
+   "ok": true
+  },
+  "500": {
+   "psi_exact": 501.6521166497476,
+   "psi_chapeau": 502.09683029088046,
+   "ecart": 0.4447136411328923,
+   "tolerance": 1.5,
+   "ok": true
+  },
+  "1000": {
+   "psi_exact": 996.6809122471753,
+   "psi_chapeau": 997.3071092559021,
+   "ecart": 0.6261970087267414,
+   "tolerance": 2.5,
+   "ok": true
+  }
+ },
+ "C1": true,
+ "C2_C3_C4": {
+  "C2": true,
+  "C3": true,
+  "C4": true
+ },
+ "C5_levier": false,
+ "C6_identite_dps40": true,
+ "score": "3/5",
+ "statut": "ECHEC — au moins un critere gele refuse",
+ "duree_s": 0.08,
+ "sha256_script": "d00c194532b1bf019dd424ae9ed967685889a6f93003af82934ca1780fe02365"
+}
