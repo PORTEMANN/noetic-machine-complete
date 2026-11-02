@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Pipeline de pre-traitement reproductible — branche B-light (ANTsPy).
 
-Version 0.1 (28/10/2026). Parametres figes : PARAMS.json (meme dossier).
+Version 0.2 (02/11/2026) = v0.1 + scrubbing temporel (D5). Parametres : PARAMS.json.
 Chaine : BIDS brut -> T1 MNI (SyNRA, 2 mm) -> EPI mouvement (rigide)
 -> EPI->T1 (rigide) -> normalisation MNI -> regression de nuisance
 (WM, CSF, mouvement, derive) -> band-pass 0.01-0.1 Hz -> series AAL-116
@@ -107,6 +107,26 @@ def run(t1_path, bold_path, tr, out_dir):
     beta, *_ = np.linalg.lstsq(X, Y.T, rcond=None)
     Y = (Y.T - X @ beta).T
 
+    # --- Scrubbing temporel (PARAMS v0.2, deformation D5 passe 2)
+    scrub = PARAMS.get("scrub", {})
+    bad = np.zeros(nvol, dtype=bool)
+    if scrub.get("actif") and fd_arr.size == nvol:
+        thr = scrub["seuil_fd_mm"]
+        bad = fd_arr > thr
+        for _ in range(int(scrub.get("volumes_adjacents_amont", 1))):
+            bad[1:] |= bad[:-1].copy()
+            bad[0] = False
+        # interpolation lineaire des volumes censures (filtre valide)
+        idx = np.arange(nvol)
+        for v in range(Y.shape[0]):
+            Y[v, bad] = np.interp(idx[bad], idx[~bad], Y[v, ~bad])
+        frac = float(bad.mean())
+        log["scrub_seuil_fd_mm"] = thr
+        log["scrub_fraction_censuree"] = round(frac, 4)
+        log["scrub_excessif"] = bool(frac > scrub.get("fraction_max_censuree", 0.5))
+    else:
+        log["scrub"] = "inactif (FD indisponible ou desactive)"
+
     # --- Band-pass 0.01-0.1 Hz
     from scipy.signal import butter, filtfilt
     fs = 1.0 / tr
@@ -125,6 +145,9 @@ def run(t1_path, bold_path, tr, out_dir):
                                standardize=PARAMS["atlas"]["standardize"],
                                detrend=False, verbose=0)
     series = masker.fit_transform(clean_img)  # (nvol, 116)
+    if bad.any():  # exclusion a la correlation (PARAMS v0.2)
+        series = series[~bad]
+    log["n_volumes_correlation"] = int(series.shape[0])
     C = np.corrcoef(series.T)
     Cz = np.arctanh(np.clip(C, -0.9999, 0.9999))
     # ROIs hors champ (variance nulle apres extraction) -> NaN ; mis a 0
@@ -136,7 +159,7 @@ def run(t1_path, bold_path, tr, out_dir):
     np.save(f"{out_dir}/connectome_fisherz_116.npy", Cz.astype(np.float32))
 
     log.update({
-        "pipeline": "ants_pipeline v0.1 (branche B-light)",
+        "pipeline": "ants_pipeline v0.2 (branche B-light + scrub D5)",
         "params_version": PARAMS["version"],
         "tr_s": tr,
         "n_volumes": int(nvol),

@@ -1,7 +1,8 @@
 {
-  "version": "0.1",
-  "date_figeage": "2026-10-28",
-  "description": "Parametres figes du pipeline de pre-traitement ANTsPy (branche B-light). Toute modification exige une nouvelle version et une note de changement.",
+  "version": "0.2",
+  "date_figeage": "2026-11-02",
+  "description": "Params figes B-light v0.2 = v0.1 + scrubbing temporel (deformation D5, passe 2). Toute modification exige une nouvelle version et une note de changement.",
+  "filiation": "v0.1 (2026-10-28) ; NOTE-D5-MOUVEMENT (passe 1 : appariement exact, Simpson grave)",
   "t1_to_mni": {
     "transform": "SyNRA",
     "mni_resolution_mm": 2
@@ -13,9 +14,19 @@
     "transform": "Rigid",
     "type_of_transform": "ants_motion_correction"
   },
+  "scrub": {
+    "actif": true,
+    "source_fd": "ants.motion_correction FD par volume (deja calcule)",
+    "seuil_fd_mm": 0.5,
+    "volumes_adjacents_amont": 1,
+    "interpolation_avant_filtre": "lineaire (les volumes censures sont interpoles pour garder le filtrage valide)",
+    "exclusion_a_la_correlation": "les indices censurees sont retires des series avant corrcoef",
+    "fraction_max_censuree": 0.5,
+    "action_si_depassement": "sujet traite quand meme, flag 'scrub_excessif' dans le sidecar"
+  },
   "nuisance": {
     "regressors": ["wm_mean", "csf_mean", "linear_drift"],
-    "motion_regression": "chantier v0.2 (ants.motion_correction n'expose pas les parametres en tableau)",
+    "motion_regression": "chantier v0.3 (idem v0.1)",
     "wm_threshold": 0.9,
     "csf_threshold": 0.9,
     "erode_voxels": 1
