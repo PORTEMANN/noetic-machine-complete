@@ -1,0 +1,67 @@
+{
+ "chantier": "T68-Q-KO6-RESIDU-2026-11",
+ "protocole": "T68-RESIDU-1.0 (gele)",
+ "objets": {
+  "porteur": {
+   "Rζ": 7.999999999999998,
+   "Rtop": 3,
+   "Rdyn": 0.0,
+   "autoadjoint": true,
+   "spectre": [
+    -2.0,
+    0.0,
+    0.0,
+    0.0,
+    2.0
+   ]
+  },
+  "MS_Y=I": {
+   "Rζ": 31.999999999999986,
+   "Rtop": 0,
+   "Rdyn": 0.0,
+   "autoadjoint": true,
+   "spectre": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ]
+  }
+ },
+ "C1_regression": true,
+ "C2_Rdyn_nul_auto_adjoint": true,
+ "C3_levier_Rdyn": true,
+ "C4_levier_Rtop": true,
+ "score": "4/4",
+ "statut": "SUCCES — le triplet de residus (Rζ, Rtop, Rdyn) est mesure sur les triplets certifies du banc ; les objets reposent sur la Ligne Critique (Rdyn = 0) ; les leviers de deformation sont detectes",
+ "duree_s": 0.01,
+ "sha256_script": "1848673b7b1de21f3a6a7ea2dc760fee3d6fde3f714cea46b323212ce408b4f1"
+}
