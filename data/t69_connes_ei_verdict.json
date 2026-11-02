@@ -1,0 +1,38 @@
+{
+ "chantier": "T69-Q-KO6-CONNES-EI-2026-11",
+ "protocole": "T69-CONNES-EI-1.0 (gele)",
+ "n_zeros": 400,
+ "V1_identite": {
+  "ecart": 2.0679515313825692e-25,
+  "ok": false
+ },
+ "V2_formule_explicite": {
+  "100": {
+   "pi_estime": 28.57747943273632,
+   "pi_vrai": 25,
+   "ecart": 3.5774794327363213,
+   "tolerance": 2.0,
+   "ok": false
+  },
+  "1000": {
+   "pi_estime": 176.72495086632418,
+   "pi_vrai": 168,
+   "ecart": 8.724950866324184,
+   "tolerance": 6.0,
+   "ok": false
+  }
+ },
+ "V3_appariements": {
+  "ecart": 0.0,
+  "ok": true
+ },
+ "V4_levier_sans_zeros": {
+  "pi_estime": 29.432994403519686,
+  "ecart": 4.432994403519686,
+  "ok": false
+ },
+ "score": "1/4",
+ "statut": "ECHEC partiel — au moins un critere gele refuse ; voir analyse",
+ "duree_s": 132.8,
+ "sha256_script": "5c0b5ff327acab49338d9408360522daa78104512e630ff1fe0c89f9ade7238a"
+}
