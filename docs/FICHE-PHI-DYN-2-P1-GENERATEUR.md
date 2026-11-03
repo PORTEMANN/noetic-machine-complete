@@ -1,7 +1,7 @@
 # Fiche chantier Φ-DYN-2 partie 1 — Le générateur reconnu (Fricke comme charge conservée)
 
-**Date :** 2026-11-03 · **Auteur :** Kimi (assistant IA), pour Patrice Portemann
-**Statut :** **PRÊTE À GELER — non scellée.** Aucune mesure n'a été lancée depuis cette fiche. Toute exécution exige le scellement de la section 3 (objets déclarés) et la signature de la section 8.
+**Date :** 2026-11-03 · **Version :** 1.0 · **Auteur :** Kimi (assistant IA), pour Patrice Portemann
+**Statut :** **SCELLÉE le 2026-11-03 — v1.0.** Les cinq points de décision d'auteur (ancienne section 8) sont tranchés et inscrits dans la section 8 ci-dessous. Toute exécution doit suivre cette version à la lettre ; tout écart la tue (T-4). Toute modification exige une version +0.1 et une note de changement datée.
 **Références :** NOTE-PONT-PHI-CHANTIERS-DYNAMIQUE.md (v2, commit 4d657fb), T24, T41–T47, T55, NOTE-VINEN-T47-T51.md, NOTE-CREATION-MORT-T52-T54.md.
 **Portée :** partie 1 seulement (reconnaissance de la trace map comme générateur + sous-test d'invariance adiabatique). La partie 2 (construction de la trace map du porteur seesaw) fait l'objet d'une fiche distincte, ultérieure.
 
@@ -42,7 +42,7 @@ La trace map de T24, reprise **telle quelle** depuis la note T24 (convention d'i
 
 ### 3.3 Grille de déformations phason (gelée)
 
-La chaîne Fibonacci est déformée par retournements de phason (flips locaux du mot) à densité déclarée ρ ∈ {0 (contrôle), 0.001, 0.01, 0.05, 0.15} — cinq valeurs, gelées, motivées par la littérature des quasicristaux désordonnés, aucune choisie après coup. Pour chaque ρ : 20 réalisations du désordre avec la graine de générateur aléatoire gelée **20261103**.
+La chaîne Fibonacci est déformée par retournements de phason (flips locaux du mot) à densité déclarée ρ ∈ {0 (contrôle), 0.001, 0.01, 0.05, 0.15, 0.3} — **six valeurs, gelées** (la valeur 0.3 ajoutée au scellement, point 4 de la section 8), motivées par la littérature des quasicristaux désordonnés, aucune choisie après coup. Pour chaque ρ : 20 réalisations du désordre avec la graine de générateur aléatoire gelée **20261103**.
 
 ### 3.4 Observables (gelées)
 
@@ -117,13 +117,13 @@ Exécution numérique pure (Python/NumPy, pas de donnée externe, pas de simulat
 
 ---
 
-## 8. Points de décision d'auteur (à trancher avant scellement)
+## 8. Décisions d'auteur tranchées au scellement (2026-11-03, v1.0)
 
-1. **Graine phason 20261103** — valide ou à remplacer par une autre valeur déclarée ?
-2. **Seuil de réussite §3.6 (95 % / 0,02 / 99 %)** — valide ou à resserrer/relâcher *avant* run ?
-3. **Sous-test D (adiabatique, §3.5)** — le maintenir dans cette fiche ou le sortir en note autonome de moindre force épistémique ?
-4. **Densités phason {0.001, 0.01, 0.05, 0.15}** — la grille est-elle la bonne échelle, ou faut-il une décade supplémentaire (ρ = 0.3) pour forcer la mort propre ?
-5. **Nom de scellement** : Φ-DYN-2-P1 est le sigle de travail ; le verdict publié portera-t-il un numéro T (T70 ?) ou restera-t-il hors série Φ-DYN ?
+1. **Graine phason 20261103 — VALIDÉE telle quelle.** Une graine n'a de valeur que dans sa déclaration préalable ; la remplacer après coup n'ajouterait que du churn. Toute graine arbitraire déclarée avant run est équivalente ; celle-ci est la gelée.
+2. **Seuils §3.6 (95 % / 0,02 / 99 %) — VALIDÉS.** Justification : 95 % sur O1 est honnête car la grille S3 échantillonne l'intervalle spectral à l'aveugle, sans présélection bande/gap — les orbites de gap ont le droit de ne pas porter Fricke, et le rapport les comptera explicitement comme « non portées », pas comme échecs. 0,02 sur O2 avec 8 bandes seulement est la tolérance naturelle d'une suite convergente dont les premiers termes oscillent. 99 % sur O3 est tenable car T24 a déjà prouvé la conjugaison de la map — la classification est sa fonction élémentaire. Clause ajoutée : **aucune tolérance de cette fiche n'est modifiable après le premier run** (T-4 s'applique).
+3. **Sous-test D (adiabatique) — MAINTENU dans la fiche**, en annexe de force réduite. Une note autonome pour un sous-test d'une heure serait de la bureaucratie ; la fiche le porte explicitement comme analyse a posteriori, jamais au titre d'un verdict de classe (iii). La frontière épistémique est inscrite au §3.5.
+4. **Décade ρ = 0.3 — AJOUTÉE** (grille §3.3 = six valeurs). Motif : si la structure à ratio φ survit à ρ = 0.15 mais meurt à 0.3, la maison mesure une **frontière de phase** au lieu d'un oui/non ; si elle survit à 0.3, la claim est plus forte encore. Coût marginal négligeable, information maximale.
+5. **Nom de scellement — HORS-SÉRIE Φ-DYN.** Le verdict sera publié comme **VERDICT-ΦDYN2-P1 (daté)**, non comme T70. Motif : la série T est le registre des campagnes de mesure du pont φ ; Φ-DYN est un namespacing dédié (NOTE v2, changelog 1) et mélanger les deux retirerait au scellement son rôle de garde-fou anti-collision. Rétro-référence T24 inscrite dans le registre canonique au moment de la publication du verdict.
 
 ---
 
