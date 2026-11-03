@@ -1,0 +1,31 @@
+{
+  "chantier": "PHI-DYN-2-P2-PALIER-Ap",
+  "fiche": "FICHE-PHI-DYN-2-P2-PORTEUR v1.1 (erratum criteres relatifs, scellee 2026-11-03)",
+  "graine": 20261103,
+  "n_random": 10000,
+  "V1_fricke_generalisee": {
+    "formes_testees": {
+      "A1_I=(k+1)/2": 2.1291774676384186e-11,
+      "A2_I=k/2": 0.5000000000000338,
+      "A3_I=k": 1.9999828590955149,
+      "A4_2I=k+1": 4.258354935276837e-11
+    },
+    "forme_retenue": "A1_I=(k+1)/2",
+    "residu": 2.1291774676384186e-11,
+    "pass": true
+  },
+  "V2_det_Mv": {
+    "max_abs_det_moins_1": 4.440892098500626e-16,
+    "pass": true
+  },
+  "V3_identite_trace_AB": {
+    "residu_max": 5.526656722594226e-13,
+    "pass": true
+  },
+  "V4_collapse": {
+    "pass": true
+  },
+  "palier_Ap_pass": true,
+  "duree_s": 0.19,
+  "sha256_script": "5559425e91e01185d4f53a0a233540ae4c2134d7013cde43a526943f33e34a51"
+}

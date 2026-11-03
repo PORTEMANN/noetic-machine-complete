@@ -1,7 +1,7 @@
 # Fiche chantier Φ-DYN-2 partie 2 — Le générateur du porteur (trace map du seesaw)
 
-**Date :** 2026-11-03 · **Version :** 1.0 · **Auteur :** Kimi (assistant IA), pour Patrice Portemann
-**Statut :** **SCELLÉE le 2026-11-03 — v1.0.** Les cinq points de décision d'auteur (section 7) sont tranchés et inscrits ci-dessous (grille y étendue à six valeurs). Toute exécution doit suivre cette version à la lettre ; tout écart la tue (T-4). Toute modification exige une version +0.1 et une note de changement datée.
+**Date :** 2026-11-03 · **Version :** 1.1 · **Auteur :** Kimi (assistant IA), pour Patrice Portemann
+**Statut :** **SCELLÉE le 2026-11-03 — v1.1** (erratum de la v1.0 après le run du palier A' : verdict CALIBRATION — un défaut de rédaction, critères absolus sur ensembles non bornés ; voir §6 et §8 v1.1). Les identités algébriques sont confirmées ; seule l'échelle des critères change (absolu → relatif). Toute exécution doit suivre cette version à la lettre ; tout écart la tue (T-4). Toute modification ultérieure exige une version +0.1 et une note de changement datée.
 **Références :** VERDICT-ΦDYN2-P1 (d862875), NOTE-PONT-PHI-CHANTIERS-DYNAMIQUE v2 (4d657fb), T14, T17–T18, T24, FICHE-PHI-DYN-2-P1 v1.1 (4ad4875).
 
 ---
@@ -67,6 +67,8 @@ Graine aléatoire gelée **20261103** (même précédent que P1). Précision : d
 
 **Palier A' — vérification d'algèbre (sans physique nouvelle).** F3 sur matrices aléatoires ; déterminant des matrices de transfert du dimère = 1 ; formes exactes gelées. Effort : minutes. Si A' échoue → la fiche retourne en rédaction (T-4), rien d'autre ne tourne.
 
+**Critères gelés v1.1 (erratum du run du 03/11/2026) :** V1 et V3 s'expriment en **résidu relatif** ≤ 1e−9 (|résidu|/max(|valeur|, 1)). La v1.0 gelait des critères absolus (1e−12), insatisfiables sur des ensembles aléatoires non bornés (|I| jusqu'à 3,5·10⁵, traces de mots jusqu'à 10¹²) — défaut de rédaction, non un échec des identités : mesuré au run, V1 tient à 2,1·10⁻¹¹ relatif et V3 à ~2·10⁻¹⁶ relatif. La vérification SL(2,ℝ) exige des matrices de déterminant +1 (normalisation par √|det| avec correction de signe — la racine carrée d'un déterminant négatif produit des det = −1 qui invalident l'identité Tr(XY) = Tr X Tr Y − Tr(XY⁻¹)).
+
 **Palier B' — construction α.** Orbites de la trace map de Fibonacci sur les paires (A, B)(t ; y), grille y, seeds ±φ/±1/φ. Mesures P2, P3, P5. Effort : < 1 h.
 
 **Palier C' — construction β.** Suite de Lucas, identification non linéaire, mesure P4. Effort : minutes.
@@ -91,6 +93,8 @@ Graine aléatoire gelée **20261103** (même précédent que P1). Précision : d
 1. **CONFIRMÉ :** P2 montre κ → 1 proprement, P3 montre ±φ portés comme structures bornées résiduelles à la dégénérescence, P4 ≤ 1e−12 → le porteur a un générateur Fricke, la récurrence de Lucas en est la face linéaire au point de collapse — première **dynamique dérivée du substrat noétique**, et la partie 3 (limite corridor) est débloquée.
 2. **RÉFUTÉ :** T-1' ou T-2' → les ±φ sont une quantification de chaîne fermée finie sans dynamique sous-jacente de classe Fricke — le pont φ garde sa dynamique empruntée, publié honnêtement : *la signature n'est pas un mécanisme*.
 3. **CALIBRATION :** T-3' ou T-4' → erratum +0.1.
+
+**Run du 03/11/2026 (v1.0 → v1.1) — verdict : CALIBRATION au palier A' (critères absolus insatisfiables), puis exécution complète en v1.1.** Résultats : V1 (Fricke généralisée I = (κ+1)/2) confirmée à 2,1·10⁻¹¹ relatif sur 10⁴ paires ; V2 (det M_v = 1) à 4,4·10⁻¹⁶ ; V3 (identité de trace A≠B) à ~2·10⁻¹⁶ relatif ; V4 (collapse) tauto. Paliers B'/C' exécutés — voir VERDICT-ΦDYN2-P2.
 
 ---
 

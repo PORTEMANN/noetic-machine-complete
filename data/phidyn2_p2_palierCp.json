@@ -1,0 +1,24 @@
+{
+  "chantier": "PHI-DYN-2-P2-PALIER-Cp",
+  "fiche": "FICHE-PHI-DYN-2-P2-PORTEUR v1.1 (erratum criteres relatifs, scellee 2026-11-03)",
+  "valeurs_propres": [
+    "(-1.6180339887498938+0j)",
+    "(-0.6180339887498951+0j)",
+    "(1.6180339887498942+0j)",
+    "(0.6180339887498947+0j)"
+  ],
+  "filiation_T17": {
+    "u_2m_egal_2_Lucas": true,
+    "recurrence_lineaire_residu": 1.919480138123911e-16
+  },
+  "P4": {
+    "a": 2.0319495534037484e-24,
+    "b": 0.0,
+    "c": 0.0,
+    "residu_max_abs": 2.1120612758622666e+24,
+    "residu_max_rel": 1.0,
+    "verdict": "NON_FRICKE (>1e-6)"
+  },
+  "duree_s": 0.0,
+  "sha256_script": "caed60a02644cf397e538a25230fd0a95aa24707dabfd24403042cccff022cc6"
+}
