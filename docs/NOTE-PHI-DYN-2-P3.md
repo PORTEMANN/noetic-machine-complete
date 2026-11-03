@@ -6,6 +6,12 @@
 
 ---
 
+## Registre épistémique (apposé le 2026-11-03 — audit à trois étages)
+
+| Mesuré | Interprété | Spéculé |
+|---|---|---|
+| Frontière de blocking : w* = 16, morte à 32 (déviations 2,8→7→14 %) · R² de Vinen augmentant sous blocking (0,93→0,97) · G3 = pathologie du détecteur documentée · G4 = un ratio sur deux dans la fenêtre φ · archives T47 reproduites à 1e−3 | « Le corridor et le porteur ont la même classe de convergence » · « la convergence est une hiérarchie de morts » (synthèse de trois mesures) | « Le continuum est la limite des orbites » comme statement physique général · l'export du concept « classe de convergence » au-delà de ces trois mondes |
+
 ## Synthèse en une phrase
 
 **Le corridor a sa frontière de blocking, nette et mesurée : w\* = 16 — et l'ordre de mort miroite P1 à l'identique : les observables fines (plateaux de paroi) meurent les premières, les invariants grossiers (loi de Vinen) survivent à tout le blocking — le corridor et le porteur ont la même classe de convergence : vivre sur les invariants, mourir sur les perturbations déclarées.**

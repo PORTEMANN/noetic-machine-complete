@@ -4,6 +4,12 @@
 
 ---
 
+## Registre épistémique (apposé le 2026-11-03 — audit à trois étages)
+
+| Mesuré | Interprété | Spéculé |
+|---|---|---|
+| Le défaut d'instrument (comptes = longueurs de mots, archives 233/377 vs 126/202) · ce qui tient (résidus d'identité) et ce qui tombe (frontière en comptes) · les leçons (produits grid-wide interdits) | « Un contrôle à valeur unique ne valide jamais un instrument » (la coïncidence 377/233 = φ comme piège numérique) | — (note procédurale : pas de couche spéculée) |
+
 ## Le défaut
 
 Le comptage de bandes par produit de matrices de transfert sur grille 2¹⁸ (`compte_bandes_mot`, src/phidyn2_p1_pilierB.py) est **numériquement instable** : aux niveaux 11–14, les entrées du produit explosent hors bande et la précision flottante s'effondre, produisant des croisements fantômes de |Tr/2| = 1. Mesuré ce soir : le comptage retourne la **longueur du mot** (89/144/233/377) — valeur aliasée, non spectrale. Les archives le confirment : comptes ρ = 0 = 233/377, alors que T24 donne 126/202.

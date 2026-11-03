@@ -6,6 +6,12 @@
 
 ---
 
+## Registre épistémique (apposé le 2026-11-03 — audit à trois étages)
+
+| Mesuré | Interprété | Spéculé |
+|---|---|---|
+| Renvois aux verdicts P1/P2/P3 (toutes les valeurs citées y sont mesurées) | La doctrine de la frontière elle-même : conditions d'usage, limites, équivalence de classe — une synthèse interprétative, pas une mesure | Le programme ouvert (Φ-DYN-1/3/4/5 relus) · « les deux mondes » comme physique commune · l'application de la doctrine à l'académique |
+
 ## 1. Le théorème de la soirée
 
 > **La convergence n'est pas une approximation : c'est une hiérarchie de morts. La frontière est la mesure de la limite.**

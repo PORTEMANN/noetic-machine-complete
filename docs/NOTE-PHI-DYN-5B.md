@@ -6,6 +6,12 @@
 
 ---
 
+## Registre épistémique (apposé le 2026-11-03 — audit à trois étages)
+
+| Mesuré | Interprété | Spéculé |
+|---|---|---|
+| D(12,13)=0,022 → D(13,14)=0,018 (anneau exact) · permutation gelée p = 1,0000 · fraction φ des ratios 2,3 % · F3 : 17/20 (ρ=0,001) et 13/20 (ρ=0,01) · anneau auto-cohérent (exactitude interne PASS) · profils phason reproductibles niveau 14 | « Point fixe de décimation existant, non φ-signé dans les gaps » · « deux canaux, deux seuils : une frontière déclare son canal » · « stable dans ce canal observable » | La généralité « structurelle (comptes, échelles), pas valueurale ni locale » · l'échelle de robustesse comme hiérarchie universelle de la matière |
+
 ## Synthèse en une phrase
 
 **La RG de décimation par substitution possède bien un point fixe dans les statistiques de gaps — convergence strictement monotone (D : 0,022 → 0,018), distributions finales indistinguables (p = 1,0000) — mais ce point fixe n'est PAS φ-signé dans les ratios de gaps (2,3 %), et il est STABLE sous désordre phason (17/20 à ρ = 0,001) : la générité de la convergence existe sans être dorée ni fragile, et la prédiction d'instabilité est réfutée pour ce canal observable.**

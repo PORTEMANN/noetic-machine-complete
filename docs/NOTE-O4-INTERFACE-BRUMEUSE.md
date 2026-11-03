@@ -6,6 +6,12 @@
 
 ---
 
+## Registre épistémique (apposé le 2026-11-03 — audit à trois étages)
+
+| Mesuré | Interprété | Spéculé |
+|---|---|---|
+| Renvois aux verdicts (toutes les valeurs y sont mesurées) · les cinq faits vérifiés de la correspondance (avant sa résolution) | « φ est du dictionnaire, pas de la dynamique » (synthèse des verdicts 5/5b) · « l'espace de phase est l'espace des invariants » (piste méthodologique) | Le programme « cartographier l'espace des couplants » · l'interface brumeuse comme objet d'étude · les implications pour Φ-DYN-4 · l'épaisseur de brume comme observable |
+
 ## I. Bilan de campagne — où φ est, où il n'est pas
 
 **Table de vérité de la soirée et de l'arc :**

@@ -6,6 +6,12 @@
 
 ---
 
+## Registre épistémique (apposé le 2026-11-03 — audit à trois étages)
+
+| Mesuré | Interprété | Spéculé |
+|---|---|---|
+| Fricke conservée à 2,6·10⁻³⁰ (30 chiffres, 5 orbites) · classification Fricke↔spectre 80/80 · ratios de comptes dans la fenêtre T24 · Lyapunov en bande 0,34–0,44 · trajectoire phason : résidu exact à 0 flip, brisé à 1 flip, mort à ~4 flips · reproductibilité T24 | « La trace map est un générateur » (l'orbite-bornée ⇔ spectre est un fait standard de la théorie de Kohmoto) · « φ est fine-structure » (lecture de la frontière 1–4 flips) · « Q adiabatiquement invariant » (analyse a posteriori, force réduite — déclarée comme telle) | La portée du générateur vers la physique du monde continu · l'Acte IV comme modèle de la nature · « l'orphelin de T15 » comme narratif de complétion |
+
 ## Synthèse en une phrase
 
 **La trace map est confirmée comme générateur : Fricke est une charge conservée exacte (dérive ≤ 2,6·10⁻³⁰ à 30 chiffres), la classification spectre/gap par l'orbite est parfaite (80/80), et la structure φ est exacte à zéro défaut de phason — mais elle est fine-structure : le premier flip phason la dégrade, quatre flips la tuent.**

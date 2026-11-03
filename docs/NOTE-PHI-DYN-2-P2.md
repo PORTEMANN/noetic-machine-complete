@@ -6,6 +6,12 @@
 
 ---
 
+## Registre épistémique (apposé le 2026-11-03 — audit à trois étages)
+
+| Mesuré | Interprété | Spéculé |
+|---|---|---|
+| Identité I = (κ+1)/2 à 2,1·10⁻¹¹ relatif (10⁴ paires SL(2,ℝ)) · dét M_v = 1 · identité de trace A≠B à 5,5·10⁻¹³ · κ(y) → 1 par approche quadratique · portées des orbites à ±φ/±1/φ (y−1 ≲ 1e−3 pour ±φ) · P4 = NON_FRICKE (résidu relatif 1,000) | « Le porteur a un générateur de classe Fricke par substitution » · « la relation natale↔Fricke est géologique (limite), pas dynamique (restriction) » | « Le pont φ possède une dynamique dérivée » comme statement physique · l'orphelin « a un foyer » · l'application au corridor comme limite des orbites |
+
 ## Synthèse en une phrase
 
 **Le porteur possède bien un générateur de classe Fricke — par la substitution à deux lettres (voie α) : κ(y) dégénère proprement vers 1 (approche quadratique) et les ±φ sont portés comme structures bornées résiduelles du collapse ; mais la récurrence native de Lucas n'est pas une restriction de Fricke (voie β réfutée, T-2') : la face linéaire du collapse n'est pas une orbite de la map non linéaire.**

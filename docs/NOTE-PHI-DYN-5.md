@@ -6,6 +6,12 @@
 
 ---
 
+## Registre épistémique (apposé le 2026-11-03 — audit à trois étages)
+
+| Mesuré | Interprété | Spéculé |
+|---|---|---|
+| 0 ratio φ dans la fenêtre à tous les δ de la grille gelée · ancre +8→+29 % avec saturation · trajectoires par itération (montée + chute terminale documentée) · robustesse : verdict unique sur {1/φ, 1/φ², 1/φ³, 1/φ⁴} · palier A 4/4 | « φ = direction qui s'écoule sous blocking de valeurs » · « l'ancre est un couplage qui tourne » (le vocabulaire « running coupling » est une identification) | « Accident UV, pas universalité infrarouge » comme statement sur la nature · « la générité n'est pas φ — c'est l'ancre » · le programme « une RG où φ est fixe » |
+
 ## Synthèse en une phrase
 
 **φ n'est pas un point fixe de la renormalisation spectrale déclarée : sous le blocking δ = 1/φ², la signature dorée des gaps s'écoule immédiatement (0 ratio dans la fenêtre à tous les δ testés), tandis que la relation d'ancre — se comportant exactement comme un couplage qui tourne — dérive de +8 % à +29 % selon l'échelle de blocking : pour cette RG, le pont φ est une structure UV qui s'intègre au cours du flot, pas une universalité infrarouge — B3-FAIL publié, avancée de la même taille qu'un succès.**

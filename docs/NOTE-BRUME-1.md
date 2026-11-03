@@ -6,6 +6,12 @@
 
 ---
 
+## Registre épistémique (apposé le 2026-11-03 — audit à trois étages)
+
+| Mesuré | Interprété | Spéculé |
+|---|---|---|
+| Table ρ complète : B1 varie de −0,6 % sur toute la grille · B3 figée 0,964–0,966 · B4 = 0,000 à tous les ρ (y compris 0,3) · B2 seule dérive (−1,3 %) · contrôle niveau 14 · pente log-log ancre/δ = −0,149 | « La brume est un invariant de régime, quasiment ρ-invariant » · « l'observable le plus grossier du corpus » (classement interne, valable dans ce corpus) · « l'ansatz est vérifié en signe, réfuté en exposant » | « La brume est le fond, pas une structure » · « la dernière chose à mourir, peut-être jamais » · la portée du concept « brume » au-delà de ce modèle spectral |
+
 ## Synthèse en une phrase
 
 **La brume — le profil imaginaire du spectre non-Hermitien — ne meurt pas sous phason : elle varie de moins d'un pour cent sur toute la grille gelée (ρ = 0 → 0,3), devenant de ce fait l'observable le plus robuste jamais mesuré par la maison — l'invariant le plus grossier du corpus, plus grossier que la loi de Vinen, et le premier objet à n'avoir montré aucune frontière phason dans son canal.**

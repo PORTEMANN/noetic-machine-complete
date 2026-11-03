@@ -5,6 +5,12 @@
 
 ---
 
+## Registre épistémique (apposé le 2026-11-03 — audit à trois étages)
+
+| Mesuré | Interprété | Spéculé |
+|---|---|---|
+| Les nombres du proxy (enveloppe 1,64, dérive de phase −0,21 tour, zéro saut) — mesurés et honnêtement limités | « À 60 points le signal analytique ne porte rien » (lecture de la mesure) · la distinction proxy / physique complexe | Le chantier GP-COMPLEXE comme programme · l'hypothèse « la paroi émet les modes évanescents » (motivée, non testée) |
+
 ## 1. La question
 
 Le chaînon spectral est devenu non-Hermitien (fbabe54) : son spectre a une partie imaginaire, et cette partie imaginaire *est* la brume (profil stable, ρ-invariant — BRUME-1). La question naturelle : **le corridor GP (T41–T47) possède-t-il un analogue complexe** — des modes à fréquence complexe (Bogoliubov évanescents, vortex-instables) dont la partie imaginaire serait la brume meso ?

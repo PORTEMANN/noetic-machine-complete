@@ -5,6 +5,12 @@
 
 ---
 
+## Registre épistémique (apposé le 2026-11-03 — audit à trois étages)
+
+| Mesuré | Interprété | Spéculé |
+|---|---|---|
+| Renvois aux mesures (correspondance, BRUME-1) · la colonne de réalité des objets (seesaw Hermitien, chaînon non-Hermitien) | Ce qui survit au complexe (unimodularité) et ce qui se brise (Hermitianité) · « l'isomorphisme T14↔T24 est un isomorphisme de réels-projections, pas d'opérateurs » | « La brume est l'empreinte du flux autour du monde » · « on ne peut pas épuiser la phase en faisant le tour du monde » · la protection de McKay/Ê8 comme doctrine |
+
 ## 1. Ce que la correspondance a changé
 
 T24 revendiquait un « chaînon SL(2, ℝ) » : même unimodularité que la chaîne du seesaw (T14, det B = 1) et l'inflation de Penrose (T20, det M = 1). La résolution du problème inverse a montré que le chaînon spectral est en réalité **SL(2, ℂ) non-Hermitien** (c = e^{2iπ/3}). La filiation doit donc être relue avec une question nouvelle : **quel élément du chaînon survit au passage au complexe, et lequel se brise ?**

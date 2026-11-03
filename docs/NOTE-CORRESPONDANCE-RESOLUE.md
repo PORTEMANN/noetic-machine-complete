@@ -6,6 +6,12 @@
 
 ---
 
+## Registre épistémique (apposé le 2026-11-03 — audit à trois étages)
+
+| Mesuré | Interprété | Spéculé |
+|---|---|---|
+| La paire M (algèbre vérifiée mot à mot, mots 2–4) · 233/233 eigenvalues dans le discriminant à 40 chiffres · unicité de la solution (c + 1/c = −1) · scan Hermitien exhaustif négatif (25 phases) · profil imaginaire : médiane 0,626 stable aux niveaux 12/13/14, max 0,880, ~97 % des modes | « Chaîne de Fibonacci non-Hermitienne de type Hatano-Nelson » (identification à une classe de modèles connus) · « les bandes réelles sont la projection réelle du spectre complexe » · « le chaînon est SL(2,ℂ) » (relèvement de l'énoncé SL(2,ℝ) de T24) | « La partie imaginaire EST la brume » — la connexion au formalisme de janvier 2026 est suggestive, non démontrée · « la résistance du réel à l'information du vide » · « la brume avait un spectre depuis le début » |
+
 ## 1. La solution
 
 **Le discriminant de T24 (récurrence `x_{N+1} = 2x_N x_{N−1} − x_{N−2}` à graines `t/2`, `0,5(t²−t−1)`, `0,5(t³−t²−2t+1)`) est exactement le discriminant de la paire :**
