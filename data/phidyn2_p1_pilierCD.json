@@ -1,0 +1,120 @@
+{
+  "chantier": "PHI-DYN-2-P1-PILIER-C-D",
+  "fiche": "FICHE-PHI-DYN-2-P1-GENERATEUR v1.1 SCELLÉE (4ad4875)",
+  "pilier_C": {
+    "carte_orbites": [
+      {
+        "niveau": 9,
+        "n_bandes": 19,
+        "bande_max": 3.0250473978207455,
+        "bande_med": 0.017566747920181758,
+        "gap_max": 0.08306534982887248,
+        "etendue_spectre": 3.6889026218836403
+      },
+      {
+        "niveau": 10,
+        "n_bandes": 30,
+        "bande_max": 3.0255814574752136,
+        "bande_med": 0.008373292439695756,
+        "gap_max": 0.08289368779707917,
+        "etendue_spectre": 3.688883548324552,
+        "ratio_bandes_max_sur_phi": 1.6183196459840832,
+        "ratio_gap_max": 0.9979334098737084
+      },
+      {
+        "niveau": 11,
+        "n_bandes": 48,
+        "bande_max": 3.0254097954434203,
+        "bande_med": 0.004386918590273403,
+        "gap_max": 0.08274109932437401,
+        "etendue_spectre": 3.6889026218836403,
+        "ratio_bandes_max_sur_phi": 1.61794218656049,
+        "ratio_gap_max": 0.9981592268752876
+      },
+      {
+        "niveau": 12,
+        "n_bandes": 78,
+        "bande_max": 3.00803378311412,
+        "bande_med": 0.002450952342826662,
+        "gap_max": 0.08272202576528587,
+        "etendue_spectre": 3.6889216954427284,
+        "ratio_bandes_max_sur_phi": 1.6087410398805917,
+        "ratio_gap_max": 0.9997694790225911
+      },
+      {
+        "niveau": 13,
+        "n_bandes": 126,
+        "bande_max": 3.0087967254776458,
+        "bande_med": 0.0012970020179938757,
+        "gap_max": 0.08268387864710958,
+        "etendue_spectre": 3.6889216954427284,
+        "ratio_bandes_max_sur_phi": 1.6184443786472995,
+        "ratio_gap_max": 0.9995388517408347
+      },
+      {
+        "niveau": 14,
+        "n_bandes": 202,
+        "bande_max": 3.0090256081867035,
+        "bande_med": 0.0006771113476291557,
+        "gap_max": 0.08268387864710958,
+        "etendue_spectre": 3.688883548324552,
+        "ratio_bandes_max_sur_phi": 1.6181570745002738,
+        "ratio_gap_max": 1.0
+      }
+    ],
+    "ratios_gap_max": [
+      0.9979334098737084,
+      0.9981592268752876,
+      0.9997694790225911,
+      0.9995388517408347,
+      1.0
+    ],
+    "carte_corridor": {
+      "T43": {
+        "saut_Lk": "t = 7.5 exact",
+        "Lk_avant_apres": [
+          1.0226,
+          -0.0041
+        ]
+      },
+      "T44": {
+        "sauts_unitaires_dated": [
+          3.5,
+          3.55
+        ],
+        "etat_intermediaire": true
+      },
+      "T47": {
+        "plateaux_4_filaments_par_quantum": [
+          9.8125,
+          15.9375,
+          31.4375
+        ],
+        "regime_n": [
+          2,
+          4,
+          8
+        ],
+        "drainage": "÷43"
+      },
+      "T42": {
+        "Q_verrouille": 1.0,
+        "mort_exige": "singularite SU(2)"
+      }
+    },
+    "statut": "ANNEXE DESCRIPTIVE — hors critères §3.6 (pas de tolérance gelée pour la coïncidence des cartes d'échelles)"
+  },
+  "pilier_D": {
+    "stable": [
+      {
+        "delta": 0.1,
+        "max_dQ": 0.98583,
+        "n_paires": 13
+      }
+    ],
+    "Q_hors_singularite": 0.7787,
+    "statut": "ANALYSE A POSTERIORI — force réduite, jamais au titre de classe (iii)"
+  },
+  "duree_s": 0.15,
+  "sha256_script": "e0379506acd14efea4e548d84e7c369665a4c06c18cbe75d2e3c928e8750850d"
+}
