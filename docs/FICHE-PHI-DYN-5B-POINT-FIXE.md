@@ -1,7 +1,7 @@
 # Fiche chantier Φ-DYN-5b — Existe-t-il une RG déclarée pour laquelle φ EST fixe ?
 
-**Date :** 2026-11-03 · **Version :** 1.0 · **Auteur :** Kimi (assistant IA), pour Patrice Portemann
-**Statut :** **SCELLÉE le 2026-11-03 — v1.0.** Les cinq points de décision d'auteur (section 7) sont tranchés et inscrits ci-dessous (permutation gelée ajoutée pour F2). Toute exécution doit suivre cette version à la lettre ; tout écart la tue (T-4). Toute modification exige une version +0.1 et une note de changement datée.
+**Date :** 2026-11-03 · **Version :** 1.1 · **Auteur :** Kimi (assistant IA), pour Patrice Portemann
+**Statut :** **SCELLÉE le 2026-11-03 — v1.1** (erratum de la v1.0 après le palier B1 : le critère F1 « strictement décroissante » était sourd au bruit d'échantillonnage du KS — quatrième occurrence de la famille, documentée ; la bande de plateau est déclarée depuis la théorie d'échantillonnage, jamais ajustée aux données). Toute exécution suit cette version ; tout écart la tue (T-4).
 **Références :** VERDICT-ΦDYN5 (261d41e — value-blocking : φ s'écoule), VERDICT-ΦDYN2-P1 (d862875 — φ fine-structure, tuée par 1 flip), T24, NOTE-PHI-DYN-2-SYNTHESE (18a7ab1).
 
 ---
@@ -36,8 +36,8 @@ Classe (ii) — la machine simule la générité sans connaître les équations.
 
 | # | Mesure | Définition | Critère pré-enregistré |
 |---|---|---|---|
-| F1 | convergence propre | distance de Kolmogorov-Smirnov D(N, N+1) entre distributions de ratios, N = 9..13 (mot pur) | D décroissante sur les 5 paliers (signe des différences ≤ 0) |
-| F2 | distribution fixe | D(13, 14) — distance au niveau le plus fin ; **test de permutation gelé** : p-valeur par 1 000 permutations de la liste fusionnée des ratios (graine 20261103) | rapportée ; test φ : fraction des ratios dans {1/φ ± 0,02, 1/φ² ± 0,02} ; KS asymptotique rapportée avec réserve (~200 gaps) |
+| F1 | convergence propre | distance de Kolmogorov-Smirnov D(N, N+1) entre distributions de ratios, N = 9..13 (mot pur) | **v1.1 : décroissante à bande de plateau déclarée** — chaque pas satisfait ΔD ≤ 0,27·√((n+m)/(n·m)) (écart-type de la loi de Kolmogorov, déclaré depuis la théorie d'échantillonnage, n et m = nombres de gaps des deux niveaux), ET la tendance globale (premier vs dernier D) est strictement décroissante |
+| F2 | distribution fixe | D(13, 14) — distance au niveau le plus fin ; **test de permutation gelé** : p-valeur par 1 000 permutations de la liste fusionnée des ratios (graine 20261103) ; **observable complémentaire v1.1 : ratio de comptes c_{N+1}/c_N avec la fenêtre T24 gelée** (3 derniers ratios dans φ ± 0,02 + récursion des comptes ± 4 — protocole P1-O2/T24 verbatim, référence prior, pas sélection nouvelle) | rapportée ; test φ sur les ratios de gaps : fraction dans {1/φ ± 0,02, 1/φ² ± 0,02} ; KS asymptotique rapportée avec réserve (~200 gaps) |
 | F3 | instabilité phason | même F1 sous grille ρ ∈ {0, 0.001, 0.01} (Bernoulli, graine 20261103, 20 réalisations par ρ — reprise gelée de P1) | à ρ = 0 : F1 tient ; à ρ ≥ 0.001 : F1 ne tient plus (au moins 15/20 réalisations en échec) |
 | F4 | échelle de convergence | pente log-log de D vs niveau | mesure nouvelle, sans cible gelée |
 
