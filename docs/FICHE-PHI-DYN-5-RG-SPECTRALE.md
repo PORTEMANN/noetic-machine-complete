@@ -1,7 +1,7 @@
 # Fiche chantier Φ-DYN-5 — La RG spectrale (φ comme point fixe de la renormalisation déclarée)
 
-**Date :** 2026-11-03 · **Version :** 1.0 · **Auteur :** Kimi (assistant IA), pour Patrice Portemann
-**Statut :** **SCELLÉE le 2026-11-03 — v1.0.** Les cinq points de décision d'auteur (section 7) sont tranchés et inscrits ci-dessous (grille δ′ étendue à trois valeurs). Toute exécution doit suivre cette version à la lettre ; tout écart la tue (T-4). Toute modification exige une version +0.1 et une note de changement datée.
+**Date :** 2026-11-03 · **Version :** 1.1 · **Auteur :** Kimi (assistant IA), pour Patrice Portemann
+**Statut :** **SCELLÉE le 2026-11-03 — v1.1** (erratum de la v1.0 après le run du palier A : un contrôle physiquement invalide et une clarification d'indexation — voir §6). Toute exécution doit suivre cette version à la lettre ; tout écart la tue (T-4). Toute modification ultérieure exige une version +0.1 et une note de changement datée.
 **Références :** NOTE-PONT-PHI-CHANTIERS-DYNAMIQUE v2 (4d657fb, § II.5 — protocole de blocking déclaré), NOTE-PHI-DYN-2-SYNTHESE (18a7ab1 — doctrine de la frontière : la RG spectrale est une machine à frontière), VERDICT-ΦDYN2-P1/P2/P3, T24 (chaînon SL(2,ℝ)), T30 (rapport y₁/y₂ et plancher 59 meV — texture, non re-mesurée ici).
 
 ---
@@ -65,7 +65,9 @@ Graine gelée **20261103**. Double 64 bits. Critères relatifs partout où les o
 
 ## 4. Programme
 
-**Palier A — instrument et algèbre.** Construction W₁₃/Jacobi ; contrôles 3.1(a,b) ; blocking implémenté, idempotence vérifiée (blocking² = blocking au fixpoint) ; validation de la lecture 3.3 (à y=1 : ρ = 2, a₂/a₀ = 2, Λ²_sel = 4 + 3 − 2 = 5 — valeur de contrôle calculable à la main). Effort : minutes. Échec → la fiche retourne en rédaction, rien d'autre ne tourne.
+**Palier A — instrument et algèbre.** Construction W₁₃/Jacobi — **clarification gelée v1.1 : W₁₃ = mot de Fibonacci de longueur F₁₃ = 233, c'est-à-dire `mot_fibonacci(11)` dans la convention T24 (mot_fibonacci(n) a longueur F_{n+2})** — piège d'indexation identique à P1-B, mort une fois, pas deux. Contrôles : (a) à y = 1, le spectre coïncide avec la chaîne uniforme 2cos(k) à 1e−12 ; (b) **v1.1 : spectre réel, N = L = 233, trace nulle à 1e−12** — le contrôle v1.0 « symétrie spectrale » était physiquement invalide : une chaîne annulaire de longueur impaire (233 est impair) contient un cycle impair et n'est pas bipartite, son spectre n'est pas symétrique (mesuré 1,0·10⁻², conforme à la théorie des graphes) ; (c) blocking idempotent ; (d) validation de la lecture 3.3 : valeur de contrôle **v1.1 : Λ²_sel calculée sur le vrai spectre uniforme à y = 1** (ρ = 2, a₂/a₀ = moyenne des λ² = 2, donc Λ²_sel = 4 + 3 − 2 = 5 — la v1.0 testait un spectre jouet de 2 points où a₂/a₀ = 4, arithmétique de contrôle fautive). Effort : minutes. Échec → la fiche retourne en rédaction, rien d'autre ne tourne.
+
+**Run du 03/11/2026 (v1.0 → v1.1) — verdict : CALIBRATION au palier A (contrôle bipartite invalide pour L impair + indexation du mot + arithmétique du contrôle ancre), puis exécution v1.1.**
 
 **Palier B — mesure.** Blocking δ = 1/φ², trajectoires R1–R4 ; re-run δ′ ∈ {1/φ, 1/φ³} ; contrôle niveau 14. Effort : < 1 h.
 
