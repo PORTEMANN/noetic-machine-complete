@@ -1,7 +1,7 @@
 # Fiche chantier Φ-DYN-5b — Existe-t-il une RG déclarée pour laquelle φ EST fixe ?
 
-**Date :** 2026-11-03 · **Version :** 1.1 · **Auteur :** Kimi (assistant IA), pour Patrice Portemann
-**Statut :** **SCELLÉE le 2026-11-03 — v1.1** (erratum de la v1.0 après le palier B1 : le critère F1 « strictement décroissante » était sourd au bruit d'échantillonnage du KS — quatrième occurrence de la famille, documentée ; la bande de plateau est déclarée depuis la théorie d'échantillonnage, jamais ajustée aux données). Toute exécution suit cette version ; tout écart la tue (T-4).
+**Date :** 2026-11-03 · **Version :** 1.3 · **Auteur :** Kimi (assistant IA), pour Patrice Portemann
+**Statut :** **SCELLÉE le 2026-11-03 — v1.3** (v1.0 : critère F1 sourd au bruit → v1.1 ; v1.2 : instrument anneau imposé par l'erratum VERDICT-ΦDYN2-P1 ; **v1.3 : contrôle croisé du palier A corrigé** — la « borne L − c_N » de la v1.2 était une conjecture fautive : les gaps de l'anneau incluent les espacements intra-bandes (~L−1 ≫ L − c_N) ; le contrôle correct est l'**adéquation des supports spectraux** : tout eigenvalue de l'anneau doit appartenir à l'union des bandes du trace map (T24) à la tolérance de grille près). Toute exécution suit cette version ; tout écart la tue (T-4).
 **Références :** VERDICT-ΦDYN5 (261d41e — value-blocking : φ s'écoule), VERDICT-ΦDYN2-P1 (d862875 — φ fine-structure, tuée par 1 flip), T24, NOTE-PHI-DYN-2-SYNTHESE (18a7ab1).
 
 ---
@@ -26,17 +26,18 @@ Classe (ii) — la machine simule la générité sans connaître les équations.
 
 ## 3. Objets déclarés (à sceller)
 
-### 3.1 La RG déclarée (décimation de substitution)
+### 3.1 La RG déclarée (décimation de substitution) et l'instrument anneau (v1.2)
 
-- **Hiérarchie spectrale :** structures de bandes des niveaux 9 à 14 du spectre de Cantor Fibonacci (grille gelée 2¹⁸ sur [−2,5 ; 2,5] — leçon P1 : niveau ≥ 15 sous-résolu, jamais utilisé).
-- **Opérateur de blocking :** la décimation n'est pas une opération à paramètre — c'est le *passage de niveau* N → N+1 (le raffinement par substitution est la RG elle-même). Le levier de perturbation reste la grille phason ρ de P1 (§3.3).
-- **Observable :** distribution empirique des **ratios de gaps consécutifs** r_i = g_{i+1}/g_i sur la liste ordonnée des gaps du niveau N (gaps = largeurs d'intervalles inter-bandes, niveau 14 : ~201 gaps). Le point fixe est la distribution limite D\* ; φ fixe signifie D\* concentrée sur les ratios dorés (1/φ, 1/φ², … selon la structure trois-gap).
+- **Hiérarchie spectrale :** anneaux périodiques de Jacobi aux niveaux 12, 13, 14 (W₁₂/W₁₃/W₁₄ = 144/233/377 sites ; diagonale = motif onsite A→0, B→1 ; saut 1 ; bouclage périodique). Spectre par `eigvalsh` — instrument **stable et exact** (à la différence des produits de transfert grid-wide, aliasés — erratum VERDICT-ΦDYN2-P1). Le spectre de l'anneau échantillonne directement la mesure spectrale finie : gaps = écarts entre eigenvalues consécutives.
+- **Contrôle croisé (v1.3, forme finale après diagnostic) :** le croisement anneau/trace map est déclaré **NON APPLICABLE** — la récurrence de T24 et le Jacobi anneau à sauts uniformes ne correspondent pas modèle pour modèle (diagnostic : 41–45 % des eigenvalues exactes de l'anneau ont |x_N(λ)| > 1 au discriminant de la récurrence, évalué à 60 chiffres ; les graines de la récurrence ne sont pas les traces des mots du modèle à sauts uniformes). L'anneau est auto-suffisant (`eigvalsh` exact) : le contrôle retenu est l'**exactitude interne** — réalité, N = L, trace = somme des onsites. La correspondance exacte des modèles reste **ouverte** (non feuilletée ce soir).
+- **Opérateur de blocking :** la décimation n'est pas une opération à paramètre — c'est le *passage de niveau* N → N+1 (le raffinement par substitution est la RG elle-même). Le levier de perturbation reste la grille phason ρ (§3.3).
+- **Observable :** distribution empirique des **ratios de gaps consécutifs** r_i = g_{i+1}/g_i sur le spectre de l'anneau du niveau N, gaps < 10⁻⁴ exclus (plancher de résolution déclaré — l'échelle spectrale est ~[−1,7 ; 2,5]). Le point fixe est la distribution limite D\* ; φ fixe signifie D\* concentrée sur les ratios dorés (1/φ, 1/φ², … selon la structure trois-gap).
 
 ### 3.2 Mesures (gelées)
 
 | # | Mesure | Définition | Critère pré-enregistré |
 |---|---|---|---|
-| F1 | convergence propre | distance de Kolmogorov-Smirnov D(N, N+1) entre distributions de ratios, N = 9..13 (mot pur) | **v1.1 : décroissante à bande de plateau déclarée** — chaque pas satisfait ΔD ≤ 0,27·√((n+m)/(n·m)) (écart-type de la loi de Kolmogorov, déclaré depuis la théorie d'échantillonnage, n et m = nombres de gaps des deux niveaux), ET la tendance globale (premier vs dernier D) est strictement décroissante |
+| F1 | convergence propre | distance de Kolmogorov-Smirnov D(N, N+1) entre distributions de ratios, N = 12, 13 (mot pur, anneau) | **v1.2 : strictement décroissante** (l'instrument anneau est exact — pas de bruit de grille ; la bande v1.1 est conservée comme garde mais ne devrait pas se lier) ; la bande v1.1 (0,27·√((n+m)/(n·m))) reste déclarée comme réserve |
 | F2 | distribution fixe | D(13, 14) — distance au niveau le plus fin ; **test de permutation gelé** : p-valeur par 1 000 permutations de la liste fusionnée des ratios (graine 20261103) ; **observable complémentaire v1.1 : ratio de comptes c_{N+1}/c_N avec la fenêtre T24 gelée** (3 derniers ratios dans φ ± 0,02 + récursion des comptes ± 4 — protocole P1-O2/T24 verbatim, référence prior, pas sélection nouvelle) | rapportée ; test φ sur les ratios de gaps : fraction dans {1/φ ± 0,02, 1/φ² ± 0,02} ; KS asymptotique rapportée avec réserve (~200 gaps) |
 | F3 | instabilité phason | même F1 sous grille ρ ∈ {0, 0.001, 0.01} (Bernoulli, graine 20261103, 20 réalisations par ρ — reprise gelée de P1) | à ρ = 0 : F1 tient ; à ρ ≥ 0.001 : F1 ne tient plus (au moins 15/20 réalisations en échec) |
 | F4 | échelle de convergence | pente log-log de D vs niveau | mesure nouvelle, sans cible gelée |
