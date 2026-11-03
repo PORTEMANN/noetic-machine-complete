@@ -1,7 +1,7 @@
 # Fiche chantier Φ-DYN-2 partie 1 — Le générateur reconnu (Fricke comme charge conservée)
 
-**Date :** 2026-11-03 · **Version :** 1.0 · **Auteur :** Kimi (assistant IA), pour Patrice Portemann
-**Statut :** **SCELLÉE le 2026-11-03 — v1.0.** Les cinq points de décision d'auteur (ancienne section 8) sont tranchés et inscrits dans la section 8 ci-dessous. Toute exécution doit suivre cette version à la lettre ; tout écart la tue (T-4). Toute modification exige une version +0.1 et une note de changement datée.
+**Date :** 2026-11-03 · **Version :** 1.1 · **Auteur :** Kimi (assistant IA), pour Patrice Portemann
+**Statut :** **SCELLÉE le 2026-11-03 — v1.1** (erratum de la v1.0 après le run 1 : verdict CALIBRATION, trois défauts de rédaction documentés — voir §6.3 et §8 v1.1). Les corrections portent sur les **références d'implémentation** et la **fenêtre O2** (retour au protocole canonique T24) ; aucune tolérance numérique ne change de valeur. Toute exécution doit suivre cette version à la lettre ; tout écart la tue (T-4). Toute modification ultérieure exige une version +0.1 et une note de changement datée.
 **Références :** NOTE-PONT-PHI-CHANTIERS-DYNAMIQUE.md (v2, commit 4d657fb), T24, T41–T47, T55, NOTE-VINEN-T47-T51.md, NOTE-CREATION-MORT-T52-T54.md.
 **Portée :** partie 1 seulement (reconnaissance de la trace map comme générateur + sous-test d'invariance adiabatique). La partie 2 (construction de la trace map du porteur seesaw) fait l'objet d'une fiche distincte, ultérieure.
 
@@ -65,12 +65,12 @@ Pour les invariants de l'Acte IV mesurés dans le corridor — Q (T41), quantum 
 
 **Limite honnête :** ce sous-test est une analyse à posteriori sur données existantes ; il n'a pas la force d'un run gelé avant mesure. Il sera rapporté comme tel, jamais au même titre qu'un verdict de classe (iii).
 
-### 3.6 Tolérances (gelées)
+### 3.6 Tolérances (gelées — v1.0, références v1.1)
 
-- O1 : écart ≤ 1e−12 (double précision) attendu ; toute orbite à écart > 1e−9 est comptée comme **orbite non portée** (signature du gap, pas échec numérique — à distinguer explicitement dans le rapport).
-- O2 : conforme si |c_{N+1}/c_N − φ| ≤ 0.02 sur les 6 dernières bandes.
-- O3 : taux de classification ≥ 99 % exigé.
-- Le seuil de réussite global est **pré-enregistré ici** : la partie 1 est tenue si O1 tient sur ≥ 95 % des orbites S1–S3, O2 conforme, O3 ≥ 99 %, et O6 fournit une réponse nette (robuste OU tué proprement — voir tueurs).
+- O1 : écart ≤ 1e−12 (double précision) attendu ; toute orbite à écart > 1e−9 est comptée comme **orbite non portée** (signature du gap, pas échec numérique — à distinguer explicitement dans le rapport). **Référence v1.1 : l'échantillonnage aveugle de [−2,5 ; 2,5] touche majoritairement des gaps (le spectre de Cantor y est de mesure nulle) — le taux de portées s'entend donc *parmi les seeds classées bandes par la référence exacte (O3)*, seuil ≥ 95 % des seeds de bandes.**
+- O2 : **conforme si les 3 derniers ratios (niveaux 12, 13, 14 — fenêtre canonique reprise verbatim de T24) sont dans φ ± 0,02 ET que la récursion des comptes c_N ≈ c_{N−1}+c_{N−2} tient à ±4** (les deux critères validés de T24 ; la fenêtre 7–14 de la v1.0 était un défaut de rédaction — la convergence c_{N+1}/c_N → φ est lente et les premiers niveaux en dévient).
+- O3 : **référence exacte v1.1 : seed classé « bande » ssi limsup_{N ≤ 120} |x_N(t)| ≤ 1, calculé en arithmétique directe au seed** (le test grille par interpolation de |x₂₀| est invalide : x_N est un polynôme de degré F_N en t — pente locale jusqu'à 3e4 par cellule de grille à 2^18, démontré au run 1 sur 5 seeds). taux d'accord ≥ 99 % exigé.
+- Le seuil de réussite global est **pré-enregistré ici** : la partie 1 est tenue si O1 tient sur ≥ 95 % des seeds **de bandes** (référence exacte O3), O2 conforme (fenêtre T24), O3 ≥ 99 %, et O6 fournit une réponse nette (robuste OU tué proprement — voir tueurs).
 
 ---
 
@@ -107,6 +107,14 @@ Pour les invariants de l'Acte IV mesurés dans le corridor — Q (T41), quantum 
 2. **RÉFUTÉ** : T-1 ou T-3 déclenché → le pont φ reste un dictionnaire, et la maison sait *précisément pourquoi* — publié au même titre qu'un succès.
 3. **CALIBRATION** : T-2 ou T-4 → erratum de fiche, version +0.1, scellement repoussé.
 
+**Run 1 du 03/11/2026 (v1.0) — verdict : CALIBRATION, 0/3 critères, trois défauts de rédaction documentés, aucun physique :**
+- O3 = 93,75 % : la référence grille (interpolation de |x₂₀|, 2^18) est sous-résolue — démontré en arithmétique exacte sur les 5 désaccords (tous gaps : |x_N| dépasse 1 à N = 20–23). La classification Fricke était juste sur 80/80 avec la référence exacte.
+- O1 = 48,75 % : seuil appliqué sur l'ensemble des seeds, gaps inclus — physique mal posée (spectre de Cantor de mesure nulle dans [−2,5 ; 2,5]).
+- O2 : fenêtre 7–14 non conforme au protocole T24 ; les ratios des niveaux 7–9 dévient de > 0,02 (convergence lente connue).
+- O4 : non conclusif (relation rotation/IDOS non spécifiée) — reporté en note, hors critères.
+- Mesures nouvelles conservées : Lyapunov en bande ≈ 0,38–0,44 ; ≈ 11 près d'arête.
+Corrections en v1.1 (feu vert de l'auteur du 03/11/2026) : références exactes pour O1/O3, fenêtre O2 = protocole T24 verbatim, O4 reporté, contrôle 30 chiffres sur seeds de bandes.
+
 Consignation : NOTE-PHI-DYN-2-P1.md dans docs/, données brutes (orbites, CSV O1–O6) dans data/, verdict daté, leviers réglés en annexe.
 
 ---
@@ -124,6 +132,16 @@ Exécution numérique pure (Python/NumPy, pas de donnée externe, pas de simulat
 3. **Sous-test D (adiabatique) — MAINTENU dans la fiche**, en annexe de force réduite. Une note autonome pour un sous-test d'une heure serait de la bureaucratie ; la fiche le porte explicitement comme analyse a posteriori, jamais au titre d'un verdict de classe (iii). La frontière épistémique est inscrite au §3.5.
 4. **Décade ρ = 0.3 — AJOUTÉE** (grille §3.3 = six valeurs). Motif : si la structure à ratio φ survit à ρ = 0.15 mais meurt à 0.3, la maison mesure une **frontière de phase** au lieu d'un oui/non ; si elle survit à 0.3, la claim est plus forte encore. Coût marginal négligeable, information maximale.
 5. **Nom de scellement — HORS-SÉRIE Φ-DYN.** Le verdict sera publié comme **VERDICT-ΦDYN2-P1 (daté)**, non comme T70. Motif : la série T est le registre des campagnes de mesure du pont φ ; Φ-DYN est un namespacing dédié (NOTE v2, changelog 1) et mélanger les deux retirerait au scellement son rôle de garde-fou anti-collision. Rétro-référence T24 inscrite dans le registre canonique au moment de la publication du verdict.
+
+## 8 bis. Changelog v1.1 (scellé le 2026-11-03 après run 1, feu vert auteur)
+
+| Point | v1.0 | v1.1 | Motif |
+|---|---|---|---|
+| Référence O3 | test grille \|x₂₀\| ≤ 1 par interpolation | limsup exact N ≤ 120 au seed | sous-résolution démontrée (degré F_N du polynôme) |
+| Périmètre O1 | taux de portées sur toutes les seeds | taux de portées **parmi seeds de bandes** (réf. O3) | échantillonnage aveugle majoritairement en gaps — physique mal posée |
+| Fenêtre O2 | niveaux 7–14, 6 derniers ratios | niveaux 9–14, **3 derniers ratios ± 0,02 + récursion comptes ± 4 (protocole T24 verbatim)** | retour au précédent canonique gelé ; convergence lente des premiers niveaux |
+| O4 | observable des critères annexes | **reporté en note** (spécification à rédiger), hors critères | relation rotation/IDOS non spécifiée ; deux implémentations divergent — pas de troisième tentative d'implémentation (pas de calibration à l'aveugle) |
+| Contrôle 30 chiffres | 5 premières seeds S3 | 5 seeds S3 **de bandes** | les 5 premières seeds S3 étaient toutes dans le gap du bas (spectre ≥ −1,4916) — contrôle sans objet |
 
 ---
 
