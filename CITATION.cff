@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "Si vous utilisez cet instrument, veuillez le citer ainsi."
+title: "Le banc spectral KO-6 — corpus P0–P48 et chantiers T"
+version: "T65"
+date-released: 2026-11-04
+authors:
+  - family-names: Portemann
+    given-names: Patrice
+    orcid: "https://orcid.org/0009-0009-4016-8389"
+repository-code: "https://github.com/PORTEMANN/noetic-machine-complete"
+license: MIT
+keywords:
+  - géométrie non commutative
+  - triplets spectraux finis
+  - KO-dimension 6
+  - loi KO-6
+  - sqf
+abstract: >-
+  Banc d'épreuve des triplets spectraux finis (A, H, D) rendus exécutables :
+  matrices exactes, spectres diagonalisés, propriétés structurelles testées
+  comme assertions. Loi de sélection KO-6 (M_min = sqf(R), 622 560 cas),
+  zéro protégé de ℂ ⊕ M₂(ℂ) (T13), mort du junk U(1) par sa trace (T9/T10),
+  spectre seesaw ±φ, ±1/φ à M_R = 1 (Σm_ν = 59,0 meV pré-publié).
+  Corpus P0–P48 conservé figé ; errata datés.
